@@ -1,0 +1,4136 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 4,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\p4_北英雄3吟游诗人与德鲁伊能量门方向英雄齐聚北4北3西1北1补1题_哔哩哔哩_bilibili.mp4",
+  "video_sha256": "e0970d3c0549753a7f04b2000c264c22049970f88dca4d85a89b58c838f2e495",
+  "duration": 3031.699625,
+  "time_basis": "seconds from current part start; fade boundaries approximate +/-0.5s",
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "events": [
+    {
+      "event_id": "p4-01",
+      "level_id": "heroes3_10",
+      "overworld_approach_time": 9,
+      "entry_transition_time": 11.375,
+      "puzzle_start_time": 11.75,
+      "puzzle_end_time": 58.375,
+      "exit_time": 58.625,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "heroes3_10",
+          "area": "heroes3",
+          "phash_distance": 4,
+          "hist_distance": 0.1272,
+          "sift_inliers": 167,
+          "sift_good": 169
+        },
+        {
+          "level_id": "button_playground",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 22,
+          "hist_distance": 0.964,
+          "sift_inliers": 5,
+          "sift_good": 6
+        },
+        {
+          "level_id": "endpoint_weapon",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.0184,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "arcadia_surprise_big2",
+          "area": "clones",
+          "phash_distance": 18,
+          "hist_distance": 1.1565,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "arcadiav2_big",
+          "area": "clones",
+          "phash_distance": 20,
+          "hist_distance": 1.1914,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "heroes3_10",
+        "area": "heroes3",
+        "phash_distance": 4,
+        "hist_distance": 0.1272,
+        "sift_inliers": 167,
+        "sift_good": 169,
+        "status": "visually_confirmed",
+        "consistent_samples": 9
+      },
+      "overworld_match": {
+        "time": 9,
+        "level_id": "heroes3_10",
+        "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_heroes3_raw.jpg",
+        "bounds": [
+          69,
+          113,
+          90,
+          129
+        ],
+        "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\heroes3_10\\approach.jpg",
+        "status": "verified_by_agent",
+        "inliers": 113,
+        "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+        "query_coverage": 0.4153,
+        "homography": [
+          [
+            1.4712047073993118,
+            0.26283262613184266,
+            -152.94929112454082
+          ],
+          [
+            -0.002193374608890016,
+            1.7743656842894004,
+            -8.939823691976821
+          ],
+          [
+            1.200036066409723e-07,
+            0.0005554620131186512,
+            1.0
+          ]
+        ],
+        "projected_entrance": [
+          462.4413146972656,
+          390.2312927246094
+        ],
+        "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\heroes3_10\\overlay.jpg",
+        "verification_scope": "terrain_and_entry_cell",
+        "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\heroes3_10\\approach_10.775.jpg",
+        "close_time": 10.775,
+        "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+        "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 20.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\00020.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_10.webp",
+          "reason": "长条草丛走廊、左上粉门、底部三个紫按钮。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 11.375,
+            "end": 11.75,
+            "black_ratio": 0.995,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 58.375,
+            "end": 58.625,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "sample_count": 9
+        },
+        {
+          "type": "overworld",
+          "time": 9,
+          "level_id": "heroes3_10",
+          "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_heroes3_raw.jpg",
+          "bounds": [
+            69,
+            113,
+            90,
+            129
+          ],
+          "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\heroes3_10\\approach.jpg",
+          "status": "verified_by_agent",
+          "inliers": 113,
+          "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+          "query_coverage": 0.4153,
+          "homography": [
+            [
+              1.4712047073993118,
+              0.26283262613184266,
+              -152.94929112454082
+            ],
+            [
+              -0.002193374608890016,
+              1.7743656842894004,
+              -8.939823691976821
+            ],
+            [
+              1.200036066409723e-07,
+              0.0005554620131186512,
+              1.0
+            ]
+          ],
+          "projected_entrance": [
+            462.4413146972656,
+            390.2312927246094
+          ],
+          "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\heroes3_10\\overlay.jpg",
+          "verification_scope": "terrain_and_entry_cell",
+          "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\heroes3_10\\approach_10.775.jpg",
+          "close_time": 10.775,
+          "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+          "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_00.jpg"
+    },
+    {
+      "event_id": "p4-02",
+      "level_id": "heroes3_11_v2",
+      "overworld_approach_time": null,
+      "entry_transition_time": 58.375,
+      "puzzle_start_time": 58.625,
+      "puzzle_end_time": 119.625,
+      "exit_time": 119.75,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "heroes3_11_v2",
+          "area": "heroes3",
+          "phash_distance": 2,
+          "hist_distance": 0.3086,
+          "sift_inliers": 188,
+          "sift_good": 190
+        },
+        {
+          "level_id": "team_building_exercise",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.3481,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "close_to_button",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3304,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "goblin_parity",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 16,
+          "hist_distance": 1.0644,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "crystal_bridges",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.3216,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "heroes3_11_v2",
+        "area": "heroes3",
+        "phash_distance": 2,
+        "hist_distance": 0.3086,
+        "sift_inliers": 188,
+        "sift_good": 190,
+        "status": "visually_confirmed",
+        "consistent_samples": 12
+      },
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "该次转场前直接是上一谜题；邻近30秒未显示主世界入口。"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 75.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\00075.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_11_v2.webp",
+          "reason": "金色雕像背景，竖向草丛分隔，右侧紫按钮及门柱。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 58.375,
+            "end": 58.625,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 119.625,
+            "end": 119.75,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "sample_count": 12
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_00.jpg"
+    },
+    {
+      "event_id": "p4-03",
+      "level_id": "druid_and_dragon",
+      "overworld_approach_time": null,
+      "entry_transition_time": 119.625,
+      "puzzle_start_time": 119.75,
+      "puzzle_end_time": 216.75,
+      "exit_time": 217.0,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "druid_and_dragon",
+          "area": "heroes3",
+          "phash_distance": 4,
+          "hist_distance": 0.143,
+          "sift_inliers": 145,
+          "sift_good": 152
+        },
+        {
+          "level_id": "torc_blocked_easier",
+          "area": "beaming_objects",
+          "phash_distance": 20,
+          "hist_distance": 1.3679,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "bard_stack_intro",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.4055,
+          "sift_inliers": 4,
+          "sift_good": 8
+        },
+        {
+          "level_id": "forbidden_room",
+          "area": "promesst1_and_2",
+          "phash_distance": 18,
+          "hist_distance": 1.0521,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "heroes3_15_v4",
+          "area": "heroes3",
+          "phash_distance": 20,
+          "hist_distance": 0.6709,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "druid_and_dragon",
+        "area": "heroes3",
+        "phash_distance": 4,
+        "hist_distance": 0.143,
+        "sift_inliers": 145,
+        "sift_good": 152,
+        "status": "visually_confirmed",
+        "consistent_samples": 20
+      },
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "该次转场前直接是上一谜题；邻近30秒未显示主世界入口。"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 160.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\00160.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\druid_and_dragon.webp",
+          "reason": "纵向窄室，中间折线高墙，左下粉门与双圆目标。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 119.625,
+            "end": 119.75,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 216.75,
+            "end": 217.0,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "sample_count": 20
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_00.jpg"
+    },
+    {
+      "event_id": "p4-04",
+      "level_id": "wizard_and_druid_alt_5",
+      "overworld_approach_time": null,
+      "entry_transition_time": 216.75,
+      "puzzle_start_time": 217.0,
+      "puzzle_end_time": 294.375,
+      "exit_time": 294.625,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "wizard_and_druid_alt_5",
+          "area": "heroes3",
+          "phash_distance": 4,
+          "hist_distance": 0.138,
+          "sift_inliers": 171,
+          "sift_good": 181
+        },
+        {
+          "level_id": "gully_alt",
+          "area": "heroes_and_water",
+          "phash_distance": 14,
+          "hist_distance": 1.4013,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "stone_stopper5",
+          "area": "heroes_and_stones",
+          "phash_distance": 16,
+          "hist_distance": 1.3328,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "torc_blocked_easier",
+          "area": "beaming_objects",
+          "phash_distance": 16,
+          "hist_distance": 1.3699,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "target_practice_gem",
+          "area": "promesst1_and_2",
+          "phash_distance": 18,
+          "hist_distance": 1.1301,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "wizard_and_druid_alt_5",
+        "area": "heroes3",
+        "phash_distance": 4,
+        "hist_distance": 0.138,
+        "sift_inliers": 171,
+        "sift_good": 181,
+        "status": "visually_confirmed",
+        "consistent_samples": 15
+      },
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "该次转场前直接是上一谜题；邻近30秒未显示主世界入口。"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 220.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\00220.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\wizard_and_druid_alt_5.webp",
+          "reason": "左侧双圆目标与黄门，上方蓝门、双高柱、右上水晶。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 216.75,
+            "end": 217.0,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 294.375,
+            "end": 294.625,
+            "black_ratio": 0.9948,
+            "kind": "possible_transition"
+          },
+          "sample_count": 15
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_00.jpg"
+    },
+    {
+      "event_id": "p4-05",
+      "level_id": "heroes3_15_v4",
+      "overworld_approach_time": null,
+      "entry_transition_time": 294.375,
+      "puzzle_start_time": 294.625,
+      "puzzle_end_time": 431.375,
+      "exit_time": 431.625,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "heroes3_15_v4",
+          "area": "heroes3",
+          "phash_distance": 8,
+          "hist_distance": 0.7319,
+          "sift_inliers": 122,
+          "sift_good": 125
+        },
+        {
+          "level_id": "heroes3_2_v4",
+          "area": "heroes3",
+          "phash_distance": 18,
+          "hist_distance": 1.2115,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "indirect_skip_2",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3939,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "middle_smash",
+          "area": "beaming_objects",
+          "phash_distance": 20,
+          "hist_distance": 0.8569,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "heroes1_17",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 1.2138,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "heroes3_15_v4",
+        "area": "heroes3",
+        "phash_distance": 8,
+        "hist_distance": 0.7319,
+        "sift_inliers": 122,
+        "sift_good": 125,
+        "status": "visually_confirmed",
+        "consistent_samples": 28
+      },
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "该次转场前直接是上一谜题；邻近30秒未显示主世界入口。"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 295.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\00295.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_15_v4.webp",
+          "reason": "L形草丛/石块走廊，右侧两个圆目标，植物与火山墙体一致。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 294.375,
+            "end": 294.625,
+            "black_ratio": 0.9948,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 431.375,
+            "end": 431.625,
+            "black_ratio": 0.995,
+            "kind": "possible_transition"
+          },
+          "sample_count": 28
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_00.jpg"
+    },
+    {
+      "event_id": "p4-06",
+      "level_id": "heroes3_13_v2",
+      "overworld_approach_time": null,
+      "entry_transition_time": 431.375,
+      "puzzle_start_time": 431.625,
+      "puzzle_end_time": 506.75,
+      "exit_time": 507.0,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "heroes3_13_v2",
+          "area": "heroes3",
+          "phash_distance": 2,
+          "hist_distance": 0.1576,
+          "sift_inliers": 123,
+          "sift_good": 134
+        },
+        {
+          "level_id": "double_break",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.2018,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes2_2b",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 1.4061,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "mirror_hallway_v2",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.264,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "heroes2_10a_intro",
+          "area": "heroes2",
+          "phash_distance": 20,
+          "hist_distance": 1.2952,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "heroes3_13_v2",
+        "area": "heroes3",
+        "phash_distance": 2,
+        "hist_distance": 0.1576,
+        "sift_inliers": 123,
+        "sift_good": 134,
+        "status": "visually_confirmed",
+        "consistent_samples": 15
+      },
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "该次转场前直接是上一谜题；邻近30秒未显示主世界入口。"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 440.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\00440.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_13_v2.webp",
+          "reason": "横向沙地，右侧粉门与三个紫按钮，四角人物配置及墙体一致。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 431.375,
+            "end": 431.625,
+            "black_ratio": 0.995,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 506.75,
+            "end": 507.0,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "sample_count": 15
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_00.jpg"
+    },
+    {
+      "event_id": "p4-07",
+      "level_id": "heroes3_druid_b_v2",
+      "overworld_approach_time": null,
+      "entry_transition_time": 506.75,
+      "puzzle_start_time": 507.0,
+      "puzzle_end_time": 576.75,
+      "exit_time": 577.0,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "heroes3_druid_b_v2",
+          "area": "heroes3",
+          "phash_distance": 2,
+          "hist_distance": 0.1163,
+          "sift_inliers": 136,
+          "sift_good": 150
+        },
+        {
+          "level_id": "magic_square",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.2263,
+          "sift_inliers": 4,
+          "sift_good": 10
+        },
+        {
+          "level_id": "bard_range4",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.2421,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "synchronized_swimmers",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.3648,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "invisible_hand",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 22,
+          "hist_distance": 1.0092,
+          "sift_inliers": 4,
+          "sift_good": 7
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "heroes3_druid_b_v2",
+        "area": "heroes3",
+        "phash_distance": 2,
+        "hist_distance": 0.1163,
+        "sift_inliers": 136,
+        "sift_good": 150,
+        "status": "visually_confirmed",
+        "consistent_samples": 14
+      },
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "该次转场前直接是上一谜题；邻近30秒未显示主世界入口。"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 515.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\00515.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_druid_b_v2.webp",
+          "reason": "中央高台绕行，顶端粉门，右上蓝盆，左下三个石块。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 506.75,
+            "end": 507.0,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 576.75,
+            "end": 577.0,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "sample_count": 14
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_01.jpg"
+    },
+    {
+      "event_id": "p4-08",
+      "level_id": "heroes3_druid_a",
+      "overworld_approach_time": null,
+      "entry_transition_time": 576.75,
+      "puzzle_start_time": 577.0,
+      "puzzle_end_time": 635.75,
+      "exit_time": 636.875,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "heroes3_druid_a",
+          "area": "heroes3",
+          "phash_distance": 8,
+          "hist_distance": 0.1518,
+          "sift_inliers": 72,
+          "sift_good": 81
+        },
+        {
+          "level_id": "magic_shield",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 24,
+          "hist_distance": 0.9072,
+          "sift_inliers": 5,
+          "sift_good": 6
+        },
+        {
+          "level_id": "submarine",
+          "area": "beams_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4098,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "clone_goblin",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.4123,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "sidestone_zach_1",
+          "area": "mirrorable_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.4125,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "heroes3_druid_a",
+        "area": "heroes3",
+        "phash_distance": 8,
+        "hist_distance": 0.1518,
+        "sift_inliers": 72,
+        "sift_good": 81,
+        "status": "visually_confirmed",
+        "consistent_samples": 12
+      },
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "该次转场前直接是上一谜题；邻近30秒未显示主世界入口。"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 605.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\00605.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_druid_a.webp",
+          "reason": "开阔矩形平台，右侧三枚圆目标，左侧窄草地；非空白主世界。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 576.75,
+            "end": 577.0,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 635.75,
+            "end": 636.875,
+            "black_ratio": 0.9453,
+            "kind": "possible_transition"
+          },
+          "sample_count": 12
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_01.jpg"
+    },
+    {
+      "event_id": "p4-09",
+      "level_id": "wizard_and_druid_alt",
+      "overworld_approach_time": 643,
+      "entry_transition_time": 645.375,
+      "puzzle_start_time": 645.875,
+      "puzzle_end_time": 813.75,
+      "exit_time": 814.75,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "wizard_and_druid_alt",
+          "area": "heroes3",
+          "phash_distance": 4,
+          "hist_distance": 0.3482,
+          "sift_inliers": 153,
+          "sift_good": 161
+        },
+        {
+          "level_id": "through_intro",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 16,
+          "hist_distance": 1.4018,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes1_2_v2",
+          "area": "heroes1",
+          "phash_distance": 18,
+          "hist_distance": 1.3987,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes1_8_v2",
+          "area": "heroes1",
+          "phash_distance": 18,
+          "hist_distance": 1.4011,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "tricky_swappers_v3",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.4134,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "wizard_and_druid_alt",
+        "area": "heroes3",
+        "phash_distance": 4,
+        "hist_distance": 0.3482,
+        "sift_inliers": 153,
+        "sift_good": 161,
+        "status": "visually_confirmed",
+        "consistent_samples": 33
+      },
+      "overworld_match": {
+        "time": 643,
+        "level_id": "wizard_and_druid_alt",
+        "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_heroes3_raw.jpg",
+        "bounds": [
+          69,
+          113,
+          90,
+          129
+        ],
+        "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\wizard_and_druid_alt\\approach.jpg",
+        "status": "verified_by_agent",
+        "inliers": 50,
+        "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+        "query_coverage": 0.3538,
+        "homography": [
+          [
+            1.4647275778847364,
+            0.2629332479673276,
+            -148.26827434689395
+          ],
+          [
+            -0.003690608233365701,
+            1.7683888126304486,
+            -8.422683261728485
+          ],
+          [
+            -5.319796520629065e-06,
+            0.0005549653972085385,
+            0.9999999999999999
+          ]
+        ],
+        "projected_entrance": [
+          354.3020935058594,
+          355.4638671875
+        ],
+        "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\wizard_and_druid_alt\\overlay.jpg",
+        "verification_scope": "terrain_and_entry_cell",
+        "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\wizard_and_druid_alt\\approach_644.775.jpg",
+        "close_time": 644.775,
+        "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+        "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 650.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\00650.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\wizard_and_druid_alt.webp",
+          "reason": "下方双房间，上方横通道，中央蓝色能量栅栏和植物。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 645.375,
+            "end": 645.875,
+            "black_ratio": 0.995,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 813.75,
+            "end": 814.75,
+            "black_ratio": 0.9453,
+            "kind": "possible_transition"
+          },
+          "sample_count": 33
+        },
+        {
+          "type": "overworld",
+          "time": 643,
+          "level_id": "wizard_and_druid_alt",
+          "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_heroes3_raw.jpg",
+          "bounds": [
+            69,
+            113,
+            90,
+            129
+          ],
+          "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\wizard_and_druid_alt\\approach.jpg",
+          "status": "verified_by_agent",
+          "inliers": 50,
+          "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+          "query_coverage": 0.3538,
+          "homography": [
+            [
+              1.4647275778847364,
+              0.2629332479673276,
+              -148.26827434689395
+            ],
+            [
+              -0.003690608233365701,
+              1.7683888126304486,
+              -8.422683261728485
+            ],
+            [
+              -5.319796520629065e-06,
+              0.0005549653972085385,
+              0.9999999999999999
+            ]
+          ],
+          "projected_entrance": [
+            354.3020935058594,
+            355.4638671875
+          ],
+          "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\wizard_and_druid_alt\\overlay.jpg",
+          "verification_scope": "terrain_and_entry_cell",
+          "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\wizard_and_druid_alt\\approach_644.775.jpg",
+          "close_time": 644.775,
+          "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+          "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_01.jpg"
+    },
+    {
+      "event_id": "p4-10",
+      "level_id": "heroes3_1_v3",
+      "overworld_approach_time": 822,
+      "entry_transition_time": 824.75,
+      "puzzle_start_time": 825.125,
+      "puzzle_end_time": 887.25,
+      "exit_time": 887.625,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "heroes3_1_v3",
+          "area": "heroes3",
+          "phash_distance": 6,
+          "hist_distance": 0.3007,
+          "sift_inliers": 136,
+          "sift_good": 143
+        },
+        {
+          "level_id": "heroes3_15_v4",
+          "area": "heroes3",
+          "phash_distance": 18,
+          "hist_distance": 1.0517,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "half_tutorial",
+          "area": "promesst3",
+          "phash_distance": 18,
+          "hist_distance": 1.4105,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "arcadiav2_big",
+          "area": "clones",
+          "phash_distance": 18,
+          "hist_distance": 1.4131,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "surrounded",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.2235,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "heroes3_1_v3",
+        "area": "heroes3",
+        "phash_distance": 6,
+        "hist_distance": 0.3007,
+        "sift_inliers": 136,
+        "sift_good": 143,
+        "status": "visually_confirmed",
+        "consistent_samples": 12
+      },
+      "overworld_match": {
+        "time": 822,
+        "level_id": "heroes3_1_v3",
+        "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_heroes3_raw.jpg",
+        "bounds": [
+          69,
+          113,
+          90,
+          129
+        ],
+        "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\heroes3_1_v3\\approach.jpg",
+        "status": "verified_by_agent",
+        "inliers": 48,
+        "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+        "query_coverage": 0.3918,
+        "homography": [
+          [
+            1.468401107780364,
+            0.2619482485995271,
+            -152.412099215971
+          ],
+          [
+            -0.003499106513137979,
+            1.7696877529261201,
+            -8.582989463723399
+          ],
+          [
+            -2.231722802335822e-06,
+            0.0005542663043326114,
+            1.0
+          ]
+        ],
+        "projected_entrance": [
+          302.31689453125,
+          108.77645111083984
+        ],
+        "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\heroes3_1_v3\\overlay.jpg",
+        "verification_scope": "terrain_and_entry_cell",
+        "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\heroes3_1_v3\\approach_824.150.jpg",
+        "close_time": 824.15,
+        "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+        "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 850.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\00850.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_1_v3.webp",
+          "reason": "熔岩围绕，中间两枚灰石，L形围墙，左下人物与圆目标。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 824.75,
+            "end": 825.125,
+            "black_ratio": 0.995,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 887.25,
+            "end": 887.625,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "sample_count": 12
+        },
+        {
+          "type": "overworld",
+          "time": 822,
+          "level_id": "heroes3_1_v3",
+          "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_heroes3_raw.jpg",
+          "bounds": [
+            69,
+            113,
+            90,
+            129
+          ],
+          "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\heroes3_1_v3\\approach.jpg",
+          "status": "verified_by_agent",
+          "inliers": 48,
+          "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+          "query_coverage": 0.3918,
+          "homography": [
+            [
+              1.468401107780364,
+              0.2619482485995271,
+              -152.412099215971
+            ],
+            [
+              -0.003499106513137979,
+              1.7696877529261201,
+              -8.582989463723399
+            ],
+            [
+              -2.231722802335822e-06,
+              0.0005542663043326114,
+              1.0
+            ]
+          ],
+          "projected_entrance": [
+            302.31689453125,
+            108.77645111083984
+          ],
+          "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\heroes3_1_v3\\overlay.jpg",
+          "verification_scope": "terrain_and_entry_cell",
+          "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\heroes3_1_v3\\approach_824.150.jpg",
+          "close_time": 824.15,
+          "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+          "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_01.jpg"
+    },
+    {
+      "event_id": "p4-11",
+      "level_id": "heroes3_2_v4",
+      "overworld_approach_time": null,
+      "entry_transition_time": 887.25,
+      "puzzle_start_time": 887.625,
+      "puzzle_end_time": 915.0,
+      "exit_time": 915.25,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "heroes3_2_v4",
+          "area": "heroes3",
+          "phash_distance": 10,
+          "hist_distance": 0.2665,
+          "sift_inliers": 137,
+          "sift_good": 145
+        },
+        {
+          "level_id": "heroes3_16_v4_alt",
+          "area": "heroes3",
+          "phash_distance": 14,
+          "hist_distance": 1.3797,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "metamirror_same_dir_2_alt_2",
+          "area": "metamirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.4132,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "magic_square",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 0.8298,
+          "sift_inliers": 0,
+          "sift_good": 6
+        },
+        {
+          "level_id": "wizard_and_druid_alt_5",
+          "area": "heroes3",
+          "phash_distance": 20,
+          "hist_distance": 1.2798,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "heroes3_2_v4",
+        "area": "heroes3",
+        "phash_distance": 10,
+        "hist_distance": 0.2665,
+        "sift_inliers": 137,
+        "sift_good": 145,
+        "status": "visually_confirmed",
+        "consistent_samples": 5
+      },
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "该次转场前直接是上一谜题；邻近30秒未显示主世界入口。"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 895.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\00895.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_2_v4.webp",
+          "reason": "同色火山场景但变为U形内墙、右侧黄门；14:47切换后独立一关。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 887.25,
+            "end": 887.625,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 915.0,
+            "end": 915.25,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "sample_count": 5
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_01.jpg"
+    },
+    {
+      "event_id": "p4-12",
+      "level_id": "heroes3_3_v2",
+      "overworld_approach_time": null,
+      "entry_transition_time": 915.0,
+      "puzzle_start_time": 915.25,
+      "puzzle_end_time": 963.125,
+      "exit_time": 963.375,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "heroes3_3_v2",
+          "area": "heroes3",
+          "phash_distance": 4,
+          "hist_distance": 0.2236,
+          "sift_inliers": 148,
+          "sift_good": 153
+        },
+        {
+          "level_id": "breath_skip",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.398,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "heroes1_2_v2",
+          "area": "heroes1",
+          "phash_distance": 18,
+          "hist_distance": 1.4057,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "heroes2_15",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 1.4067,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes3_11_v2",
+          "area": "heroes3",
+          "phash_distance": 20,
+          "hist_distance": 1.062,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "heroes3_3_v2",
+        "area": "heroes3",
+        "phash_distance": 4,
+        "hist_distance": 0.2236,
+        "sift_inliers": 148,
+        "sift_good": 153,
+        "status": "visually_confirmed",
+        "consistent_samples": 9
+      },
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "该次转场前直接是上一谜题；邻近30秒未显示主世界入口。"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 935.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\00935.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_3_v2.webp",
+          "reason": "长方形盆地，左上粉光、中央横水渠和绿石，右侧吊臂。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 915.0,
+            "end": 915.25,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 963.125,
+            "end": 963.375,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "sample_count": 9
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_01.jpg"
+    },
+    {
+      "event_id": "p4-13",
+      "level_id": "heroes3_4",
+      "overworld_approach_time": null,
+      "entry_transition_time": 963.125,
+      "puzzle_start_time": 963.375,
+      "puzzle_end_time": 978.625,
+      "exit_time": 979.625,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "heroes3_4",
+          "area": "heroes3",
+          "phash_distance": 8,
+          "hist_distance": 0.5296,
+          "sift_inliers": 103,
+          "sift_good": 115
+        },
+        {
+          "level_id": "pushing_crystal_near_orange_v2",
+          "area": "beaming_objects",
+          "phash_distance": 22,
+          "hist_distance": 1.343,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "heroes2_9",
+          "area": "heroes2",
+          "phash_distance": 22,
+          "hist_distance": 0.9773,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes2_10.5",
+          "area": "heroes2",
+          "phash_distance": 22,
+          "hist_distance": 1.413,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "skip_wand_v6",
+          "area": "beams_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.4138,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "heroes3_4",
+        "area": "heroes3",
+        "phash_distance": 8,
+        "hist_distance": 0.5296,
+        "sift_inliers": 103,
+        "sift_good": 115,
+        "status": "visually_confirmed",
+        "consistent_samples": 3
+      },
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "该次转场前直接是上一谜题；邻近30秒未显示主世界入口。"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 970.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\00970.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_4.webp",
+          "reason": "短暂沙地小关：中央单柱、右粉门和蓝圆按钮；16:03–16:18。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 963.125,
+            "end": 963.375,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 978.625,
+            "end": 979.625,
+            "black_ratio": 0.9452,
+            "kind": "possible_transition"
+          },
+          "sample_count": 3
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_02.jpg"
+    },
+    {
+      "event_id": "p4-14",
+      "level_id": "heroes3_5",
+      "overworld_approach_time": 985,
+      "entry_transition_time": 986.875,
+      "puzzle_start_time": 987.25,
+      "puzzle_end_time": 1048.375,
+      "exit_time": 1048.625,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "heroes3_5",
+          "area": "heroes3",
+          "phash_distance": 10,
+          "hist_distance": 0.3171,
+          "sift_inliers": 96,
+          "sift_good": 104
+        },
+        {
+          "level_id": "side_kick",
+          "area": "sideways_gates",
+          "phash_distance": 20,
+          "hist_distance": 1.3621,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "bypass_gates",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.4094,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes2_17",
+          "area": "heroes2",
+          "phash_distance": 22,
+          "hist_distance": 1.0142,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "reflect_momentum",
+          "area": "mirrorable_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.1749,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "heroes3_5",
+        "area": "heroes3",
+        "phash_distance": 10,
+        "hist_distance": 0.3171,
+        "sift_inliers": 96,
+        "sift_good": 104,
+        "status": "visually_confirmed",
+        "consistent_samples": 12
+      },
+      "overworld_match": {
+        "time": 985,
+        "level_id": "heroes3_5",
+        "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_heroes3_raw.jpg",
+        "bounds": [
+          69,
+          113,
+          90,
+          129
+        ],
+        "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\heroes3_5\\approach.jpg",
+        "status": "verified_by_agent",
+        "inliers": 46,
+        "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+        "query_coverage": 0.3382,
+        "homography": [
+          [
+            1.4618459484757471,
+            0.2607262284038246,
+            -148.6905648808066
+          ],
+          [
+            -0.006126246667554184,
+            1.7622686422853455,
+            -6.0641394063385965
+          ],
+          [
+            -7.99423749779857e-06,
+            0.0005480789625360583,
+            0.9999999999999999
+          ]
+        ],
+        "projected_entrance": [
+          168.8517303466797,
+          163.9145965576172
+        ],
+        "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\heroes3_5\\overlay.jpg",
+        "verification_scope": "terrain_and_entry_cell",
+        "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\heroes3_5\\approach_986.275.jpg",
+        "close_time": 986.275,
+        "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+        "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 995.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\00995.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_5.webp",
+          "reason": "沙地四角四角色、右侧上下两个蓝格及黄门。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 986.875,
+            "end": 987.25,
+            "black_ratio": 0.995,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 1048.375,
+            "end": 1048.625,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "sample_count": 12
+        },
+        {
+          "type": "overworld",
+          "time": 985,
+          "level_id": "heroes3_5",
+          "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_heroes3_raw.jpg",
+          "bounds": [
+            69,
+            113,
+            90,
+            129
+          ],
+          "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\heroes3_5\\approach.jpg",
+          "status": "verified_by_agent",
+          "inliers": 46,
+          "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+          "query_coverage": 0.3382,
+          "homography": [
+            [
+              1.4618459484757471,
+              0.2607262284038246,
+              -148.6905648808066
+            ],
+            [
+              -0.006126246667554184,
+              1.7622686422853455,
+              -6.0641394063385965
+            ],
+            [
+              -7.99423749779857e-06,
+              0.0005480789625360583,
+              0.9999999999999999
+            ]
+          ],
+          "projected_entrance": [
+            168.8517303466797,
+            163.9145965576172
+          ],
+          "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\heroes3_5\\overlay.jpg",
+          "verification_scope": "terrain_and_entry_cell",
+          "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\heroes3_5\\approach_986.275.jpg",
+          "close_time": 986.275,
+          "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+          "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_02.jpg"
+    },
+    {
+      "event_id": "p4-15",
+      "level_id": "heroes3_8_thief",
+      "overworld_approach_time": null,
+      "entry_transition_time": 1048.375,
+      "puzzle_start_time": 1048.625,
+      "puzzle_end_time": 1118.0,
+      "exit_time": 1118.25,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "heroes3_8_thief",
+          "area": "heroes3",
+          "phash_distance": 4,
+          "hist_distance": 0.0953,
+          "sift_inliers": 133,
+          "sift_good": 141
+        },
+        {
+          "level_id": "untrap",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.3328,
+          "sift_inliers": 5,
+          "sift_good": 7
+        },
+        {
+          "level_id": "smash_or_dash_vs2",
+          "area": "beams_and_mirrors",
+          "phash_distance": 16,
+          "hist_distance": 1.1877,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "heroes2_5.5v5",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 1.4088,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "mirror_2",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.4137,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "heroes3_8_thief",
+        "area": "heroes3",
+        "phash_distance": 4,
+        "hist_distance": 0.0953,
+        "sift_inliers": 133,
+        "sift_good": 141,
+        "status": "visually_confirmed",
+        "consistent_samples": 14
+      },
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "该次转场前直接是上一谜题；邻近30秒未显示主世界入口。"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 1050.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\01050.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_8_thief.webp",
+          "reason": "方形棋盘，左侧两红块、右上黄门，中央金属踏板。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 1048.375,
+            "end": 1048.625,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 1118.0,
+            "end": 1118.25,
+            "black_ratio": 0.995,
+            "kind": "possible_transition"
+          },
+          "sample_count": 14
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_02.jpg"
+    },
+    {
+      "event_id": "p4-16",
+      "level_id": "heroes3_6_v3",
+      "overworld_approach_time": null,
+      "entry_transition_time": 1118.0,
+      "puzzle_start_time": 1118.25,
+      "puzzle_end_time": 1212.125,
+      "exit_time": 1212.375,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "heroes3_6_v3",
+          "area": "heroes3",
+          "phash_distance": 2,
+          "hist_distance": 0.1233,
+          "sift_inliers": 119,
+          "sift_good": 130
+        },
+        {
+          "level_id": "heroes1_5_v2",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 1.3132,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "first_diversions",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.355,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "wizard_and_druid_alt_5",
+          "area": "heroes3",
+          "phash_distance": 22,
+          "hist_distance": 0.7527,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "purple_wizard_maze",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 22,
+          "hist_distance": 0.7909,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "heroes3_6_v3",
+        "area": "heroes3",
+        "phash_distance": 2,
+        "hist_distance": 0.1233,
+        "sift_inliers": 119,
+        "sift_good": 130,
+        "status": "visually_confirmed",
+        "consistent_samples": 19
+      },
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "该次转场前直接是上一谜题；邻近30秒未显示主世界入口。"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 1160.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\01160.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_6_v3.webp",
+          "reason": "花园三条横向植槽，左上长竖通道和紫按钮，右侧圆柱。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 1118.0,
+            "end": 1118.25,
+            "black_ratio": 0.995,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 1212.125,
+            "end": 1212.375,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "sample_count": 19
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_02.jpg"
+    },
+    {
+      "event_id": "p4-17",
+      "level_id": "heroes3_7_v4",
+      "overworld_approach_time": null,
+      "entry_transition_time": 1212.125,
+      "puzzle_start_time": 1212.375,
+      "puzzle_end_time": 1284.0,
+      "exit_time": 1284.25,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "heroes3_7_v4",
+          "area": "heroes3",
+          "phash_distance": 2,
+          "hist_distance": 0.1009,
+          "sift_inliers": 96,
+          "sift_good": 104
+        },
+        {
+          "level_id": "gem_transport",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.3781,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "worlds_collide_heroes_and_promesst_v4",
+          "area": "worlds_collide",
+          "phash_distance": 20,
+          "hist_distance": 0.9573,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "pushing_orange",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.1458,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "double_break",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.2272,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "heroes3_7_v4",
+        "area": "heroes3",
+        "phash_distance": 2,
+        "hist_distance": 0.1009,
+        "sift_inliers": 96,
+        "sift_good": 104,
+        "status": "visually_confirmed",
+        "consistent_samples": 14
+      },
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "该次转场前直接是上一谜题；邻近30秒未显示主世界入口。"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 1235.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\01235.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_7_v4.webp",
+          "reason": "纵向中央花槽/柱体，左右独立狭道，右侧黄门、左上粉门。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 1212.125,
+            "end": 1212.375,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 1284.0,
+            "end": 1284.25,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "sample_count": 14
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_02.jpg"
+    },
+    {
+      "event_id": "p4-18",
+      "level_id": "heroes3_8_v4_alt",
+      "overworld_approach_time": null,
+      "entry_transition_time": 1284.0,
+      "puzzle_start_time": 1284.25,
+      "puzzle_end_time": 1370.625,
+      "exit_time": 1370.875,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "heroes3_8_v4_alt",
+          "area": "heroes3",
+          "phash_distance": 6,
+          "hist_distance": 0.0806,
+          "sift_inliers": 233,
+          "sift_good": 235
+        },
+        {
+          "level_id": "heroes2_21b",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 1.2857,
+          "sift_inliers": 6,
+          "sift_good": 8
+        },
+        {
+          "level_id": "heroes3_8_v3_alt3",
+          "area": "heroes3",
+          "phash_distance": 18,
+          "hist_distance": 0.8062,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "endpoint_object",
+          "area": "beaming_objects",
+          "phash_distance": 20,
+          "hist_distance": 1.3693,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "synchronized_swimmers",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.3756,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "heroes3_8_v4_alt",
+        "area": "heroes3",
+        "phash_distance": 6,
+        "hist_distance": 0.0806,
+        "sift_inliers": 233,
+        "sift_good": 235,
+        "status": "visually_confirmed",
+        "consistent_samples": 18
+      },
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "该次转场前直接是上一谜题；邻近30秒未显示主世界入口。"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 1300.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\01300.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_8_v4_alt.webp",
+          "reason": "多层方形回廊，右侧粉门、中央两个横向台座。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 1284.0,
+            "end": 1284.25,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 1370.625,
+            "end": 1370.875,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "sample_count": 18
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_02.jpg"
+    },
+    {
+      "event_id": "p4-19",
+      "level_id": "heroes3_8_v3_alt3",
+      "overworld_approach_time": null,
+      "entry_transition_time": 1370.625,
+      "puzzle_start_time": 1370.875,
+      "puzzle_end_time": 1431.375,
+      "exit_time": 1432.5,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "heroes3_8_v3_alt3",
+          "area": "heroes3",
+          "phash_distance": 6,
+          "hist_distance": 0.1857,
+          "sift_inliers": 89,
+          "sift_good": 106
+        },
+        {
+          "level_id": "heroes1_3",
+          "area": "heroes1",
+          "phash_distance": 18,
+          "hist_distance": 1.3324,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "heroes2_5.5v5",
+          "area": "heroes2",
+          "phash_distance": 16,
+          "hist_distance": 1.3934,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "pull_skip_twins_v3",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3915,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "easy_situation_v2",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.1107,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "heroes3_8_v3_alt3",
+        "area": "heroes3",
+        "phash_distance": 6,
+        "hist_distance": 0.1857,
+        "sift_inliers": 89,
+        "sift_good": 106,
+        "status": "visually_confirmed",
+        "consistent_samples": 12
+      },
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "该次转场前直接是上一谜题；邻近30秒未显示主世界入口。"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 1385.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\01385.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_8_v3_alt3.webp",
+          "reason": "蓝紫方室，左下黄门，上方横隔墙与右侧竖通道。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 1370.625,
+            "end": 1370.875,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 1431.375,
+            "end": 1432.5,
+            "black_ratio": 0.9454,
+            "kind": "possible_transition"
+          },
+          "sample_count": 12
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_03.jpg"
+    },
+    {
+      "event_id": "p4-20",
+      "level_id": "heroes3_14_v3",
+      "overworld_approach_time": 1513,
+      "entry_transition_time": 1515.375,
+      "puzzle_start_time": 1515.75,
+      "puzzle_end_time": 1616.875,
+      "exit_time": 1617.125,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "heroes3_14_v3",
+          "area": "heroes3",
+          "phash_distance": 2,
+          "hist_distance": 0.1846,
+          "sift_inliers": 106,
+          "sift_good": 116
+        },
+        {
+          "level_id": "purple_clm_v4",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3697,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "partial_pull",
+          "area": "heroes_and_water",
+          "phash_distance": 22,
+          "hist_distance": 1.0739,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "wizard_with_a_capital_w_2_v2",
+          "area": "heroes_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.1705,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "break_send_lily_c",
+          "area": "beams_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.2799,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "heroes3_14_v3",
+        "area": "heroes3",
+        "phash_distance": 2,
+        "hist_distance": 0.1846,
+        "sift_inliers": 106,
+        "sift_good": 116,
+        "status": "visually_confirmed",
+        "consistent_samples": 20
+      },
+      "overworld_match": {
+        "time": 1513,
+        "level_id": "heroes3_14_v3",
+        "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_heroes3_raw.jpg",
+        "bounds": [
+          69,
+          113,
+          90,
+          129
+        ],
+        "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\heroes3_14_v3\\approach.jpg",
+        "status": "verified_by_agent",
+        "inliers": 29,
+        "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+        "query_coverage": 0.2432,
+        "homography": [
+          [
+            1.4888161893804257,
+            0.28541268169697687,
+            -162.22587807754843
+          ],
+          [
+            -0.000327054784364231,
+            1.80734912811369,
+            -14.244800090129011
+          ],
+          [
+            3.636943205669001e-06,
+            0.0005918152758006024,
+            1.0
+          ]
+        ],
+        "projected_entrance": [
+          459.2126770019531,
+          137.2098846435547
+        ],
+        "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\heroes3_14_v3\\overlay.jpg",
+        "verification_scope": "terrain_and_entry_cell",
+        "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\heroes3_14_v3\\approach_1514.775.jpg",
+        "close_time": 1514.775,
+        "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+        "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 1525.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\01525.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_14_v3.webp",
+          "reason": "横向紫色石台，中间竖列黄门，右侧竖列粉门，右下红按钮。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 1515.375,
+            "end": 1515.75,
+            "black_ratio": 0.995,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 1616.875,
+            "end": 1617.125,
+            "black_ratio": 0.995,
+            "kind": "possible_transition"
+          },
+          "sample_count": 20
+        },
+        {
+          "type": "overworld",
+          "time": 1513,
+          "level_id": "heroes3_14_v3",
+          "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_heroes3_raw.jpg",
+          "bounds": [
+            69,
+            113,
+            90,
+            129
+          ],
+          "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\heroes3_14_v3\\approach.jpg",
+          "status": "verified_by_agent",
+          "inliers": 29,
+          "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+          "query_coverage": 0.2432,
+          "homography": [
+            [
+              1.4888161893804257,
+              0.28541268169697687,
+              -162.22587807754843
+            ],
+            [
+              -0.000327054784364231,
+              1.80734912811369,
+              -14.244800090129011
+            ],
+            [
+              3.636943205669001e-06,
+              0.0005918152758006024,
+              1.0
+            ]
+          ],
+          "projected_entrance": [
+            459.2126770019531,
+            137.2098846435547
+          ],
+          "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\heroes3_14_v3\\overlay.jpg",
+          "verification_scope": "terrain_and_entry_cell",
+          "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\heroes3_14_v3\\approach_1514.775.jpg",
+          "close_time": 1514.775,
+          "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+          "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_03.jpg"
+    },
+    {
+      "event_id": "p4-21",
+      "level_id": "heroes3_16_v4_alt",
+      "overworld_approach_time": null,
+      "entry_transition_time": 1616.875,
+      "puzzle_start_time": 1617.125,
+      "puzzle_end_time": 1702.25,
+      "exit_time": 1703.375,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "heroes3_16_v4_alt",
+          "area": "heroes3",
+          "phash_distance": 8,
+          "hist_distance": 0.1974,
+          "sift_inliers": 96,
+          "sift_good": 103
+        },
+        {
+          "level_id": "heroes3_2_v4",
+          "area": "heroes3",
+          "phash_distance": 16,
+          "hist_distance": 1.3664,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes2_3_v2",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 1.3848,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "heroes2_13",
+          "area": "heroes2",
+          "phash_distance": 20,
+          "hist_distance": 1.3779,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "unblock_block_alt",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3936,
+          "sift_inliers": 0,
+          "sift_good": 5
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "heroes3_16_v4_alt",
+        "area": "heroes3",
+        "phash_distance": 8,
+        "hist_distance": 0.1974,
+        "sift_inliers": 96,
+        "sift_good": 103,
+        "status": "visually_confirmed",
+        "consistent_samples": 17
+      },
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "该次转场前直接是上一谜题；邻近30秒未显示主世界入口。"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 1620.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\01620.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_16_v4_alt.webp",
+          "reason": "暗蓝L形狭道，上方横通道和右端红圆目标，右侧熔岩。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 1616.875,
+            "end": 1617.125,
+            "black_ratio": 0.995,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 1702.25,
+            "end": 1703.375,
+            "black_ratio": 0.9452,
+            "kind": "possible_transition"
+          },
+          "sample_count": 17
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_03.jpg"
+    },
+    {
+      "event_id": "p4-22",
+      "level_id": "compactor_v2",
+      "overworld_approach_time": 1724,
+      "entry_transition_time": 1726.625,
+      "puzzle_start_time": 1727.0,
+      "puzzle_end_time": 1890.25,
+      "exit_time": 1891.375,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "compactor_v2",
+          "area": "heroes3",
+          "phash_distance": 2,
+          "hist_distance": 0.2291,
+          "sift_inliers": 96,
+          "sift_good": 98
+        },
+        {
+          "level_id": "oneway_beam",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.3651,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes3_8_v3_alt3",
+          "area": "heroes3",
+          "phash_distance": 18,
+          "hist_distance": 1.3973,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "adjust_explorer_v4",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.1449,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "orange_floaty_reflect_v3",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.2422,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "compactor_v2",
+        "area": "heroes3",
+        "phash_distance": 2,
+        "hist_distance": 0.2291,
+        "sift_inliers": 96,
+        "sift_good": 98,
+        "status": "visually_confirmed",
+        "consistent_samples": 32
+      },
+      "overworld_match": {
+        "time": 1724,
+        "level_id": "compactor_v2",
+        "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_heroes3_raw.jpg",
+        "bounds": [
+          69,
+          113,
+          90,
+          129
+        ],
+        "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\compactor_v2\\approach.jpg",
+        "status": "verified_by_agent",
+        "inliers": 37,
+        "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+        "query_coverage": 0.3925,
+        "homography": [
+          [
+            1.490856098872539,
+            0.2790582898490658,
+            -160.10568897554745
+          ],
+          [
+            0.003987229985751446,
+            1.803883386239504,
+            -15.99784733604632
+          ],
+          [
+            8.378200406341822e-06,
+            0.0005844802692804796,
+            1.0
+          ]
+        ],
+        "projected_entrance": [
+          664.9784545898438,
+          288.18218994140625
+        ],
+        "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\compactor_v2\\overlay.jpg",
+        "verification_scope": "terrain_and_entry_cell",
+        "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\compactor_v2\\approach_1726.025.jpg",
+        "close_time": 1726.025,
+        "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+        "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 1750.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\01750.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\compactor_v2.webp",
+          "reason": "暗蓝长方室，中间四黄按钮，右侧粉/黄门和双圆目标。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 1726.625,
+            "end": 1727.0,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 1890.25,
+            "end": 1891.375,
+            "black_ratio": 0.9453,
+            "kind": "possible_transition"
+          },
+          "sample_count": 32
+        },
+        {
+          "type": "overworld",
+          "time": 1724,
+          "level_id": "compactor_v2",
+          "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_heroes3_raw.jpg",
+          "bounds": [
+            69,
+            113,
+            90,
+            129
+          ],
+          "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\compactor_v2\\approach.jpg",
+          "status": "verified_by_agent",
+          "inliers": 37,
+          "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+          "query_coverage": 0.3925,
+          "homography": [
+            [
+              1.490856098872539,
+              0.2790582898490658,
+              -160.10568897554745
+            ],
+            [
+              0.003987229985751446,
+              1.803883386239504,
+              -15.99784733604632
+            ],
+            [
+              8.378200406341822e-06,
+              0.0005844802692804796,
+              1.0
+            ]
+          ],
+          "projected_entrance": [
+            664.9784545898438,
+            288.18218994140625
+          ],
+          "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\compactor_v2\\overlay.jpg",
+          "verification_scope": "terrain_and_entry_cell",
+          "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\compactor_v2\\approach_1726.025.jpg",
+          "close_time": 1726.025,
+          "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+          "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_03.jpg"
+    },
+    {
+      "event_id": "p4-23",
+      "level_id": "gatekeeping_v3",
+      "overworld_approach_time": 1900,
+      "entry_transition_time": 1901.75,
+      "puzzle_start_time": 1902.125,
+      "puzzle_end_time": 2025.75,
+      "exit_time": 2026.75,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "gatekeeping_v3",
+          "area": "heroes3",
+          "phash_distance": 6,
+          "hist_distance": 0.065,
+          "sift_inliers": 144,
+          "sift_good": 153
+        },
+        {
+          "level_id": "right_hand_man",
+          "area": "promesst1_and_2",
+          "phash_distance": 18,
+          "hist_distance": 1.3941,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "druids_stone_2_v4",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4053,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "synchronized_swimmers",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.4113,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes3_15_v4",
+          "area": "heroes3",
+          "phash_distance": 20,
+          "hist_distance": 1.3898,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "gatekeeping_v3",
+        "area": "heroes3",
+        "phash_distance": 6,
+        "hist_distance": 0.065,
+        "sift_inliers": 144,
+        "sift_good": 153,
+        "status": "visually_confirmed",
+        "consistent_samples": 25
+      },
+      "overworld_match": {
+        "time": 1900,
+        "level_id": "gatekeeping_v3",
+        "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_heroes3_raw.jpg",
+        "bounds": [
+          69,
+          113,
+          90,
+          129
+        ],
+        "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\gatekeeping_v3\\approach.jpg",
+        "status": "verified_by_agent",
+        "inliers": 31,
+        "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+        "query_coverage": 0.3582,
+        "homography": [
+          [
+            1.4725309998496787,
+            0.2615727167266327,
+            -152.10232609934667
+          ],
+          [
+            -0.0006368263448337563,
+            1.7753100099349723,
+            -11.731830907426943
+          ],
+          [
+            -6.284703648442335e-07,
+            0.0005502296701369984,
+            1.0
+          ]
+        ],
+        "projected_entrance": [
+          486.70684814453125,
+          82.99466705322266
+        ],
+        "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\gatekeeping_v3\\overlay.jpg",
+        "verification_scope": "terrain_and_entry_cell",
+        "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\gatekeeping_v3\\approach_1901.150.jpg",
+        "close_time": 1901.15,
+        "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+        "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 1955.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\01955.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\gatekeeping_v3.webp",
+          "reason": "上方三圆目标，中央竖向石室及草丛，下方横廊粉门。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 1901.75,
+            "end": 1902.125,
+            "black_ratio": 0.995,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 2025.75,
+            "end": 2026.75,
+            "black_ratio": 0.9462,
+            "kind": "possible_transition"
+          },
+          "sample_count": 25
+        },
+        {
+          "type": "overworld",
+          "time": 1900,
+          "level_id": "gatekeeping_v3",
+          "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_heroes3_raw.jpg",
+          "bounds": [
+            69,
+            113,
+            90,
+            129
+          ],
+          "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\gatekeeping_v3\\approach.jpg",
+          "status": "verified_by_agent",
+          "inliers": 31,
+          "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+          "query_coverage": 0.3582,
+          "homography": [
+            [
+              1.4725309998496787,
+              0.2615727167266327,
+              -152.10232609934667
+            ],
+            [
+              -0.0006368263448337563,
+              1.7753100099349723,
+              -11.731830907426943
+            ],
+            [
+              -6.284703648442335e-07,
+              0.0005502296701369984,
+              1.0
+            ]
+          ],
+          "projected_entrance": [
+            486.70684814453125,
+            82.99466705322266
+          ],
+          "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\gatekeeping_v3\\overlay.jpg",
+          "verification_scope": "terrain_and_entry_cell",
+          "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\gatekeeping_v3\\approach_1901.150.jpg",
+          "close_time": 1901.15,
+          "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+          "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_03.jpg"
+    },
+    {
+      "event_id": "p4-24",
+      "level_id": "heroes3_21_condensed",
+      "overworld_approach_time": 2032,
+      "entry_transition_time": 2033.75,
+      "puzzle_start_time": 2034.125,
+      "puzzle_end_time": 2154.0,
+      "exit_time": 2155.125,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "heroes3_21_condensed",
+          "area": "heroes3",
+          "phash_distance": 10,
+          "hist_distance": 0.215,
+          "sift_inliers": 124,
+          "sift_good": 125
+        },
+        {
+          "level_id": "middle_smash",
+          "area": "beaming_objects",
+          "phash_distance": 18,
+          "hist_distance": 1.2335,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "emergency_brake",
+          "area": "mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.386,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "crystal_bridges",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.3052,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "immobilize",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.3085,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "heroes3_21_condensed",
+        "area": "heroes3",
+        "phash_distance": 10,
+        "hist_distance": 0.215,
+        "sift_inliers": 124,
+        "sift_good": 125,
+        "status": "visually_confirmed",
+        "consistent_samples": 24
+      },
+      "overworld_match": {
+        "time": 2032,
+        "level_id": "heroes3_21_condensed",
+        "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_heroes3_raw.jpg",
+        "bounds": [
+          69,
+          113,
+          90,
+          129
+        ],
+        "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\heroes3_21_condensed\\approach.jpg",
+        "status": "verified_by_agent",
+        "inliers": 22,
+        "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+        "query_coverage": 0.3167,
+        "homography": [
+          [
+            1.485760246830487,
+            0.27137577238444033,
+            -156.94968000489175
+          ],
+          [
+            0.002909127938463556,
+            1.7914551702859236,
+            -13.846221082962032
+          ],
+          [
+            5.972792910178454e-06,
+            0.0005662027503450086,
+            1.0
+          ]
+        ],
+        "projected_entrance": [
+          642.7066650390625,
+          109.34964752197266
+        ],
+        "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\heroes3_21_condensed\\overlay.jpg",
+        "verification_scope": "terrain_and_entry_cell",
+        "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\heroes3_21_condensed\\approach_2033.150.jpg",
+        "close_time": 2033.15,
+        "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+        "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 2040.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\02040.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_21_condensed.webp",
+          "reason": "红色横向大室，左右各三圆目标，下方三个小室。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 2033.75,
+            "end": 2034.125,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 2154.0,
+            "end": 2155.125,
+            "black_ratio": 0.9454,
+            "kind": "possible_transition"
+          },
+          "sample_count": 24
+        },
+        {
+          "type": "overworld",
+          "time": 2032,
+          "level_id": "heroes3_21_condensed",
+          "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_heroes3_raw.jpg",
+          "bounds": [
+            69,
+            113,
+            90,
+            129
+          ],
+          "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\heroes3_21_condensed\\approach.jpg",
+          "status": "verified_by_agent",
+          "inliers": 22,
+          "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+          "query_coverage": 0.3167,
+          "homography": [
+            [
+              1.485760246830487,
+              0.27137577238444033,
+              -156.94968000489175
+            ],
+            [
+              0.002909127938463556,
+              1.7914551702859236,
+              -13.846221082962032
+            ],
+            [
+              5.972792910178454e-06,
+              0.0005662027503450086,
+              1.0
+            ]
+          ],
+          "projected_entrance": [
+            642.7066650390625,
+            109.34964752197266
+          ],
+          "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\heroes3_21_condensed\\overlay.jpg",
+          "verification_scope": "terrain_and_entry_cell",
+          "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\heroes3_21_condensed\\approach_2033.150.jpg",
+          "close_time": 2033.15,
+          "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+          "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_03.jpg"
+    },
+    {
+      "event_id": "p4-25",
+      "level_id": "side_slide_intro_v2",
+      "overworld_approach_time": 2269,
+      "entry_transition_time": 2271.125,
+      "puzzle_start_time": 2271.5,
+      "puzzle_end_time": 2444.125,
+      "exit_time": 2445.25,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "side_slide_intro_v2",
+          "area": "sideways_gates",
+          "phash_distance": 2,
+          "hist_distance": 0.1535,
+          "sift_inliers": 176,
+          "sift_good": 181
+        },
+        {
+          "level_id": "emergency_brake",
+          "area": "mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3278,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "one_vs_three",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.282,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "thats_my_ride",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.2903,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "heroes2_reprise",
+          "area": "heroes2",
+          "phash_distance": 20,
+          "hist_distance": 1.3343,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "side_slide_intro_v2",
+        "area": "sideways_gates",
+        "phash_distance": 2,
+        "hist_distance": 0.1535,
+        "sift_inliers": 176,
+        "sift_good": 181,
+        "status": "visually_confirmed",
+        "consistent_samples": 34
+      },
+      "overworld_match": {
+        "time": 2269,
+        "level_id": "side_slide_intro_v2",
+        "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_side_raw.jpg",
+        "bounds": [
+          53,
+          104,
+          69,
+          117
+        ],
+        "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\side_slide_intro_v2\\approach.jpg",
+        "status": "verified_by_agent",
+        "inliers": 29,
+        "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+        "query_coverage": 0.1278,
+        "homography": [
+          [
+            1.4636843459255124,
+            0.1950160760752322,
+            -281.22462059951323
+          ],
+          [
+            -0.0031903250912988664,
+            1.798792454979102,
+            34.314737785674524
+          ],
+          [
+            -5.795759218301091e-06,
+            0.0005597419395105679,
+            1.0
+          ]
+        ],
+        "projected_entrance": [
+          550.4061889648438,
+          82.04006958007812
+        ],
+        "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\side_slide_intro_v2\\overlay.jpg",
+        "verification_scope": "terrain_and_entry_cell",
+        "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\side_slide_intro_v2\\approach_2270.525.jpg",
+        "close_time": 2270.525,
+        "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+        "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 2275.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\02275.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\side_slide_intro_v2.webp",
+          "reason": "双层绿石室，上层黄/蓝门，下层紫/绿门和双圆按钮。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 2271.125,
+            "end": 2271.5,
+            "black_ratio": 0.995,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 2444.125,
+            "end": 2445.25,
+            "black_ratio": 0.945,
+            "kind": "possible_transition"
+          },
+          "sample_count": 34
+        },
+        {
+          "type": "overworld",
+          "time": 2269,
+          "level_id": "side_slide_intro_v2",
+          "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_side_raw.jpg",
+          "bounds": [
+            53,
+            104,
+            69,
+            117
+          ],
+          "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\side_slide_intro_v2\\approach.jpg",
+          "status": "verified_by_agent",
+          "inliers": 29,
+          "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+          "query_coverage": 0.1278,
+          "homography": [
+            [
+              1.4636843459255124,
+              0.1950160760752322,
+              -281.22462059951323
+            ],
+            [
+              -0.0031903250912988664,
+              1.798792454979102,
+              34.314737785674524
+            ],
+            [
+              -5.795759218301091e-06,
+              0.0005597419395105679,
+              1.0
+            ]
+          ],
+          "projected_entrance": [
+            550.4061889648438,
+            82.04006958007812
+          ],
+          "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\side_slide_intro_v2\\overlay.jpg",
+          "verification_scope": "terrain_and_entry_cell",
+          "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\side_slide_intro_v2\\approach_2270.525.jpg",
+          "close_time": 2270.525,
+          "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+          "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_04.jpg"
+    },
+    {
+      "event_id": "p4-26",
+      "level_id": "side_kick",
+      "overworld_approach_time": 2512,
+      "entry_transition_time": 2514.25,
+      "puzzle_start_time": 2514.75,
+      "puzzle_end_time": 2580.875,
+      "exit_time": 2582.0,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "side_kick",
+          "area": "sideways_gates",
+          "phash_distance": 2,
+          "hist_distance": 0.1948,
+          "sift_inliers": 151,
+          "sift_good": 155
+        },
+        {
+          "level_id": "heroes1_7.5",
+          "area": "heroes1",
+          "phash_distance": 18,
+          "hist_distance": 1.2397,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "heroes2_5_altE",
+          "area": "heroes2",
+          "phash_distance": 20,
+          "hist_distance": 1.1295,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "top_green_purple_v3",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.2107,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "cyan_torc_maze_vs",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.2207,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "side_kick",
+        "area": "sideways_gates",
+        "phash_distance": 2,
+        "hist_distance": 0.1948,
+        "sift_inliers": 151,
+        "sift_good": 155,
+        "status": "visually_confirmed",
+        "consistent_samples": 14
+      },
+      "overworld_match": {
+        "time": 2512,
+        "level_id": "side_kick",
+        "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_side_raw.jpg",
+        "bounds": [
+          53,
+          104,
+          69,
+          117
+        ],
+        "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\side_kick\\approach.jpg",
+        "status": "verified_by_agent",
+        "inliers": 17,
+        "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+        "query_coverage": 0.1066,
+        "homography": [
+          [
+            1.4506699365414522,
+            0.19467833085045022,
+            -278.1060343322046
+          ],
+          [
+            -0.007591783964238874,
+            1.7857279938378636,
+            37.15613670814112
+          ],
+          [
+            -9.39290282652311e-06,
+            0.0005368141233653424,
+            1.0
+          ]
+        ],
+        "projected_entrance": [
+          296.8623352050781,
+          193.49008178710938
+        ],
+        "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\side_kick\\overlay.jpg",
+        "verification_scope": "terrain_and_entry_cell",
+        "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\side_kick\\approach_2513.650.jpg",
+        "close_time": 2513.65,
+        "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+        "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 2520.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\02520.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\side_kick.webp",
+          "reason": "林地横向双室，右上三角障碍/粉门，左下绿门，紫圆按钮。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 2514.25,
+            "end": 2514.75,
+            "black_ratio": 0.995,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 2580.875,
+            "end": 2582.0,
+            "black_ratio": 0.9453,
+            "kind": "possible_transition"
+          },
+          "sample_count": 14
+        },
+        {
+          "type": "overworld",
+          "time": 2512,
+          "level_id": "side_kick",
+          "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_side_raw.jpg",
+          "bounds": [
+            53,
+            104,
+            69,
+            117
+          ],
+          "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\side_kick\\approach.jpg",
+          "status": "verified_by_agent",
+          "inliers": 17,
+          "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+          "query_coverage": 0.1066,
+          "homography": [
+            [
+              1.4506699365414522,
+              0.19467833085045022,
+              -278.1060343322046
+            ],
+            [
+              -0.007591783964238874,
+              1.7857279938378636,
+              37.15613670814112
+            ],
+            [
+              -9.39290282652311e-06,
+              0.0005368141233653424,
+              1.0
+            ]
+          ],
+          "projected_entrance": [
+            296.8623352050781,
+            193.49008178710938
+          ],
+          "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\side_kick\\overlay.jpg",
+          "verification_scope": "terrain_and_entry_cell",
+          "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\side_kick\\approach_2513.650.jpg",
+          "close_time": 2513.65,
+          "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+          "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_04.jpg"
+    },
+    {
+      "event_id": "p4-27",
+      "level_id": "multipush_for_me2",
+      "overworld_approach_time": 2587,
+      "entry_transition_time": 2589.25,
+      "puzzle_start_time": 2589.625,
+      "puzzle_end_time": 2696.875,
+      "exit_time": 2697.875,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "multipush_for_me2",
+          "area": "sideways_gates",
+          "phash_distance": 6,
+          "hist_distance": 0.2158,
+          "sift_inliers": 176,
+          "sift_good": 178
+        },
+        {
+          "level_id": "pull_skip_twins_v3",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 0.8759,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "trick_shot",
+          "area": "heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.124,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "double_break",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.1651,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes2_5.5v5",
+          "area": "heroes2",
+          "phash_distance": 20,
+          "hist_distance": 1.2652,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "multipush_for_me2",
+        "area": "sideways_gates",
+        "phash_distance": 6,
+        "hist_distance": 0.2158,
+        "sift_inliers": 176,
+        "sift_good": 178,
+        "status": "visually_confirmed",
+        "consistent_samples": 22
+      },
+      "overworld_match": {
+        "time": 2587,
+        "level_id": "multipush_for_me2",
+        "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_side_raw.jpg",
+        "bounds": [
+          53,
+          104,
+          69,
+          117
+        ],
+        "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\multipush_for_me2\\approach.jpg",
+        "status": "verified_by_agent",
+        "inliers": 27,
+        "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+        "query_coverage": 0.165,
+        "homography": [
+          [
+            1.4781852353358849,
+            0.1916797677209769,
+            -280.3726001620566
+          ],
+          [
+            0.003767644365605932,
+            1.8079304313364193,
+            32.502824018464075
+          ],
+          [
+            1.3854360393982593e-05,
+            0.0005545311146642868,
+            0.9999999999999999
+          ]
+        ],
+        "projected_entrance": [
+          326.984375,
+          193.85179138183594
+        ],
+        "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\multipush_for_me2\\overlay.jpg",
+        "verification_scope": "terrain_and_entry_cell",
+        "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\multipush_for_me2\\approach_2588.650.jpg",
+        "close_time": 2588.65,
+        "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+        "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 2610.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\02610.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\multipush_for_me2.webp",
+          "reason": "林地纵向上下室，上方高台与黄门，中间竖列蓝门。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 2589.25,
+            "end": 2589.625,
+            "black_ratio": 0.995,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 2696.875,
+            "end": 2697.875,
+            "black_ratio": 0.9455,
+            "kind": "possible_transition"
+          },
+          "sample_count": 22
+        },
+        {
+          "type": "overworld",
+          "time": 2587,
+          "level_id": "multipush_for_me2",
+          "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_side_raw.jpg",
+          "bounds": [
+            53,
+            104,
+            69,
+            117
+          ],
+          "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\multipush_for_me2\\approach.jpg",
+          "status": "verified_by_agent",
+          "inliers": 27,
+          "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+          "query_coverage": 0.165,
+          "homography": [
+            [
+              1.4781852353358849,
+              0.1916797677209769,
+              -280.3726001620566
+            ],
+            [
+              0.003767644365605932,
+              1.8079304313364193,
+              32.502824018464075
+            ],
+            [
+              1.3854360393982593e-05,
+              0.0005545311146642868,
+              0.9999999999999999
+            ]
+          ],
+          "projected_entrance": [
+            326.984375,
+            193.85179138183594
+          ],
+          "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\multipush_for_me2\\overlay.jpg",
+          "verification_scope": "terrain_and_entry_cell",
+          "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\multipush_for_me2\\approach_2588.650.jpg",
+          "close_time": 2588.65,
+          "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+          "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_04.jpg"
+    },
+    {
+      "event_id": "p4-28",
+      "level_id": "dragon_on_the_wall",
+      "overworld_approach_time": 2703,
+      "entry_transition_time": 2705.5,
+      "puzzle_start_time": 2706.0,
+      "puzzle_end_time": 2813.125,
+      "exit_time": 2814.25,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "dragon_on_the_wall",
+          "area": "sideways_gates",
+          "phash_distance": 4,
+          "hist_distance": 0.2759,
+          "sift_inliers": 174,
+          "sift_good": 180
+        },
+        {
+          "level_id": "orange_beam_deal",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.3838,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "corner_loop",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.2241,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "half_tutorial",
+          "area": "promesst3",
+          "phash_distance": 18,
+          "hist_distance": 1.375,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "bypass_gates",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.2782,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "dragon_on_the_wall",
+        "area": "sideways_gates",
+        "phash_distance": 4,
+        "hist_distance": 0.2759,
+        "sift_inliers": 174,
+        "sift_good": 180,
+        "status": "visually_confirmed",
+        "consistent_samples": 21
+      },
+      "overworld_match": {
+        "time": 2703,
+        "level_id": "dragon_on_the_wall",
+        "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_side_raw.jpg",
+        "bounds": [
+          53,
+          104,
+          69,
+          117
+        ],
+        "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\dragon_on_the_wall\\approach.jpg",
+        "status": "verified_by_agent",
+        "inliers": 25,
+        "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+        "query_coverage": 0.0951,
+        "homography": [
+          [
+            1.457668300808753,
+            0.1955681490055258,
+            -278.32675146073996
+          ],
+          [
+            -0.005593923818326647,
+            1.7937204713417958,
+            35.12748633611915
+          ],
+          [
+            -1.706739901596172e-05,
+            0.000561606323027213,
+            1.0
+          ]
+        ],
+        "projected_entrance": [
+          326.82476806640625,
+          224.20538330078125
+        ],
+        "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\dragon_on_the_wall\\overlay.jpg",
+        "verification_scope": "terrain_and_entry_cell",
+        "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\dragon_on_the_wall\\approach_2704.900.jpg",
+        "close_time": 2704.9,
+        "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+        "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 2715.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\02715.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\dragon_on_the_wall.webp",
+          "reason": "大方格庭院，左上龙吐火，右侧黄门、左下粉门和黄门。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 2705.5,
+            "end": 2706.0,
+            "black_ratio": 0.995,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 2813.125,
+            "end": 2814.25,
+            "black_ratio": 0.9453,
+            "kind": "possible_transition"
+          },
+          "sample_count": 21
+        },
+        {
+          "type": "overworld",
+          "time": 2703,
+          "level_id": "dragon_on_the_wall",
+          "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_side_raw.jpg",
+          "bounds": [
+            53,
+            104,
+            69,
+            117
+          ],
+          "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\dragon_on_the_wall\\approach.jpg",
+          "status": "verified_by_agent",
+          "inliers": 25,
+          "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+          "query_coverage": 0.0951,
+          "homography": [
+            [
+              1.457668300808753,
+              0.1955681490055258,
+              -278.32675146073996
+            ],
+            [
+              -0.005593923818326647,
+              1.7937204713417958,
+              35.12748633611915
+            ],
+            [
+              -1.706739901596172e-05,
+              0.000561606323027213,
+              1.0
+            ]
+          ],
+          "projected_entrance": [
+            326.82476806640625,
+            224.20538330078125
+          ],
+          "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\dragon_on_the_wall\\overlay.jpg",
+          "verification_scope": "terrain_and_entry_cell",
+          "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\dragon_on_the_wall\\approach_2704.900.jpg",
+          "close_time": 2704.9,
+          "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+          "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_04.jpg"
+    },
+    {
+      "event_id": "p4-29",
+      "level_id": "victory_lap",
+      "overworld_approach_time": 2858,
+      "entry_transition_time": 2859.75,
+      "puzzle_start_time": 2860.25,
+      "puzzle_end_time": 3005.5,
+      "exit_time": 3005.75,
+      "timing_uncertainty_seconds": 0.5,
+      "status": "visited",
+      "outcome": "unknown",
+      "review_status": "confirmed",
+      "reviewer": "Codex visual comparison (not user acceptance)",
+      "candidate_levels": [
+        {
+          "level_id": "victory_lap",
+          "area": "heroes3",
+          "phash_distance": 2,
+          "hist_distance": 0.1297,
+          "sift_inliers": 212,
+          "sift_good": 219
+        },
+        {
+          "level_id": "thats_my_ride",
+          "area": "mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3939,
+          "sift_inliers": 5,
+          "sift_good": 6
+        },
+        {
+          "level_id": "emergency_brake",
+          "area": "mirrors_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.3845,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "purple_beam_intro_v2_alt",
+          "area": "beams_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.3924,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "heroes2_10.5",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 1.4019,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "confidence": null,
+      "confidence_note": "未校准概率；按静态布局及连续样本确认，不能把SIFT内点数解释为置信百分比。",
+      "puzzle_match": {
+        "level_id": "victory_lap",
+        "area": "heroes3",
+        "phash_distance": 2,
+        "hist_distance": 0.1297,
+        "sift_inliers": 212,
+        "sift_good": 219,
+        "status": "visually_confirmed",
+        "consistent_samples": 29
+      },
+      "overworld_match": {
+        "time": 2858,
+        "level_id": "victory_lap",
+        "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_victory_raw.jpg",
+        "bounds": [
+          75,
+          73,
+          85,
+          83
+        ],
+        "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\victory_lap\\approach.jpg",
+        "status": "verified_by_agent",
+        "inliers": 172,
+        "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+        "query_coverage": 0.1348,
+        "homography": [
+          [
+            1.462710283555595,
+            0.1278097601022603,
+            -411.31116542787925
+          ],
+          [
+            -0.0029301954122183866,
+            1.614080652523029,
+            -311.89631911564385
+          ],
+          [
+            -2.7405617161217364e-05,
+            0.0005914529004061842,
+            0.9999999999999999
+          ]
+        ],
+        "projected_entrance": [
+          427.1269226074219,
+          354.309326171875
+        ],
+        "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\victory_lap\\overlay.jpg",
+        "verification_scope": "terrain_and_entry_cell",
+        "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\victory_lap\\approach_2859.150.jpg",
+        "close_time": 2859.15,
+        "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+        "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+      },
+      "speech_evidence": null,
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "time": 2880.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p4_check\\samples\\02880.000.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\victory_lap.webp",
+          "reason": "白色方格中央高台，四周八种人物/机关，右侧瀑布，图形布局唯一。"
+        },
+        {
+          "type": "temporal",
+          "entry_black": {
+            "start": 2859.75,
+            "end": 2860.25,
+            "black_ratio": 0.9949,
+            "kind": "possible_transition"
+          },
+          "exit_black": {
+            "start": 3005.5,
+            "end": 3005.75,
+            "black_ratio": 0.995,
+            "kind": "possible_transition"
+          },
+          "sample_count": 29
+        },
+        {
+          "type": "overworld",
+          "time": 2858,
+          "level_id": "victory_lap",
+          "terrain": "F:\\Video\\OotSS_Sand\\runs\\p4\\terrain_victory_raw.jpg",
+          "bounds": [
+            75,
+            73,
+            85,
+            83
+          ],
+          "approach_image": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\victory_lap\\approach.jpg",
+          "status": "verified_by_agent",
+          "inliers": 172,
+          "note": "Geometric alignment alone is not entrance verification. Inspect projected marker against player/entrance.",
+          "query_coverage": 0.1348,
+          "homography": [
+            [
+              1.462710283555595,
+              0.1278097601022603,
+              -411.31116542787925
+            ],
+            [
+              -0.0029301954122183866,
+              1.614080652523029,
+              -311.89631911564385
+            ],
+            [
+              -2.7405617161217364e-05,
+              0.0005914529004061842,
+              0.9999999999999999
+            ]
+          ],
+          "projected_entrance": [
+            427.1269226074219,
+            354.309326171875
+          ],
+          "overlay": "F:\\Video\\OotSS_Sand\\runs\\p4\\world\\victory_lap\\overlay.jpg",
+          "verification_scope": "terrain_and_entry_cell",
+          "close_frame": "F:\\Video\\OotSS_Sand\\runs\\p4\\world_close\\victory_lap\\approach_2859.150.jpg",
+          "close_time": 2859.15,
+          "reason": "地形对应关系已对齐；复看进入前较早帧和盾牌出现前后的近帧，玩家落在对应入口格。关卡入口是地面星形节点，不要求门框。",
+          "reviewer": "Codex primary; Luna supplied conservative image-only second opinion"
+        }
+      ],
+      "manual_corrections": [],
+      "evidence_gallery": "evidence/identity_04.jpg"
+    }
+  ],
+  "review_note": "身份经Codex静态布局对照及连续样本复核。完成/跳过结局未逐帧判读，保持unknown；用户尚未验收。",
+  "non_target_intervals": [
+    {
+      "start": 0,
+      "end": 11.375,
+      "kind": "overworld",
+      "level_id": null
+    },
+    {
+      "start": 636.875,
+      "end": 645.375,
+      "kind": "overworld",
+      "level_id": null
+    },
+    {
+      "start": 814.75,
+      "end": 824.75,
+      "kind": "overworld",
+      "level_id": null
+    },
+    {
+      "start": 979.625,
+      "end": 986.875,
+      "kind": "overworld",
+      "level_id": null
+    },
+    {
+      "start": 1432.5,
+      "end": 1515.375,
+      "kind": "overworld",
+      "level_id": null
+    },
+    {
+      "start": 1703.375,
+      "end": 1726.625,
+      "kind": "overworld",
+      "level_id": null
+    },
+    {
+      "start": 1891.375,
+      "end": 1901.75,
+      "kind": "overworld",
+      "level_id": null
+    },
+    {
+      "start": 2026.75,
+      "end": 2033.75,
+      "kind": "overworld",
+      "level_id": null
+    },
+    {
+      "start": 2155.125,
+      "end": 2271.125,
+      "kind": "overworld",
+      "level_id": null
+    },
+    {
+      "start": 2445.25,
+      "end": 2514.25,
+      "kind": "overworld",
+      "level_id": null
+    },
+    {
+      "start": 2582,
+      "end": 2589.25,
+      "kind": "overworld",
+      "level_id": null
+    },
+    {
+      "start": 2697.875,
+      "end": 2705.5,
+      "kind": "overworld",
+      "level_id": null
+    },
+    {
+      "start": 2814.25,
+      "end": 2859.75,
+      "kind": "overworld",
+      "level_id": null
+    },
+    {
+      "start": 3005.75,
+      "end": 3031.699625,
+      "kind": "overworld",
+      "level_id": null
+    }
+  ],
+  "galleries": [
+    {
+      "label": "关卡内部画面与参考图 1",
+      "path": "evidence/identity_00.jpg"
+    },
+    {
+      "label": "关卡内部画面与参考图 2",
+      "path": "evidence/identity_01.jpg"
+    },
+    {
+      "label": "关卡内部画面与参考图 3",
+      "path": "evidence/identity_02.jpg"
+    },
+    {
+      "label": "关卡内部画面与参考图 4",
+      "path": "evidence/identity_03.jpg"
+    },
+    {
+      "label": "关卡内部画面与参考图 5",
+      "path": "evidence/identity_04.jpg"
+    },
+    {
+      "label": "进入前主世界与投影入口 1",
+      "path": "evidence/world_00.jpg"
+    },
+    {
+      "label": "进入前主世界与投影入口 2",
+      "path": "evidence/world_01.jpg"
+    },
+    {
+      "label": "进入前主世界与投影入口 3",
+      "path": "evidence/world_02.jpg"
+    },
+    {
+      "label": "进入前近帧复核 1",
+      "path": "evidence/world_close_00.jpg"
+    },
+    {
+      "label": "进入前近帧复核 2",
+      "path": "evidence/world_close_01.jpg"
+    },
+    {
+      "label": "进入前近帧复核 3",
+      "path": "evidence/world_close_02.jpg"
+    },
+    {
+      "label": "原始地形与关卡编号 heroes3",
+      "path": "evidence/terrain_heroes3.jpg"
+    },
+    {
+      "label": "原始地形与关卡编号 side",
+      "path": "evidence/terrain_side.jpg"
+    },
+    {
+      "label": "原始地形与关卡编号 victory",
+      "path": "evidence/terrain_victory.jpg"
+    }
+  ]
+}

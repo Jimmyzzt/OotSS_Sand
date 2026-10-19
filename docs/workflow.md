@@ -9,6 +9,41 @@
 7. 可用 Luna 子 agent 对有界图册复核；明确要求返回 evidence/unknown/conflicts，不发送全视频，不调用外部模型 API。
 8. `python -m ootss export --review results/p4/reviewed.json --out results/p4`，生成 JSON/CSV/Markdown 和静态 SVG/PNG 坐标图。地图跳转使用上游 `#level_id`。
 
+主世界核验示例（坐标顺序 LEFT BOTTOM RIGHT TOP；先用参考图候选缩小地图范围）：
+
+```powershell
+python -m ootss terrain --bounds 69 113 90 129 --out runs/p4/terrain_heroes3_raw.jpg --raw
+python -m ootss world-check --run runs/p4 --time 9 --level heroes3_10 --terrain runs/p4/terrain_heroes3_raw.jpg --bounds 69 113 90 129 --out runs/p4/check_001
+```
+
+查看 overlay.jpg；地形对齐充分仍不等于关卡验证完成。红圈应在可见入口格，角色接近/进入前的连续帧也应对应。分数不足时改用较早、未被盾牌遮挡的帧；不要降低阈值强行接受。多入口的关卡必须先消除歧义。
+
+审核文件最小结构（真实关卡替换 null；身份未确认可保持 null 和 unknown）：
+
+```json
+{
+  "video_bvid": "BV...",
+  "part_number": 5,
+  "duration": 120,
+  "events": [{
+    "event_id": "p5-01",
+    "level_id": null,
+    "puzzle_start_time": 10,
+    "puzzle_end_time": 30,
+    "entry_transition_time": 9.5,
+    "overworld_approach_time": null,
+    "exit_time": 30.5,
+    "review_status": "unknown",
+    "outcome": "unknown",
+    "evidence": []
+  }]
+}
+```
+
+完整字段和本次判断理由可参考 `results/p4/reviewed.json`。`scripts/curate_p4.py` 只保存本次已完成的视觉判断，并拒绝覆盖现有审核；不可把它当自动确认器用于新视频。`scripts/p4_evidence.py` 复现本次主世界图包；`scripts/snapshot_p4.py` 保存机器候选和固定版本素材核验。
+
 全部时间为当前分 P 开始后的秒数。扫描时间为 fps 采样近似值；不能用平均 FPS 推算可变帧率视频的精确帧号。必要时从 FFmpeg 输出 PTS 复查。更换视频、采样参数或算法版本会失效扫描缓存；不要在同一个输出目录处理不同视频。机器重跑永远不写 reviewed.json。
+
+若需要5秒增密和允许短黑场，使用 `scan --interval 5 --black-min 0.125`。P4 的01:59转场只有一个8fps采样，0.25秒默认过滤会漏掉；允许单帧后应看前后截图过滤误报。扫描留存 `black_scores.npz`，无需重新解码即可试验黑场合并规则。图像样本损坏/缺失会触发重算；同目录换成另一个视频版本则报错，防止局部图包混用。
 
 原 starting_guide.md 已由上述工作流及实际结果说明替代：不实现 ASR 服务、Web 审核平台、复杂 Agent Adapter、自动训练、GitHub Issue 工程管理。GitHub CLI 凭证失效时继续本地提交。

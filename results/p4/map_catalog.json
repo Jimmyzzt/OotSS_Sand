@@ -1,0 +1,765 @@
+{
+  "source": "https://github.com/joric/ootss.git",
+  "commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "license": "Unlicense",
+  "audit": {
+    "index_count": 922,
+    "target_level_count": 466,
+    "missing_images": [],
+    "multiple_entries": [],
+    "index_without_any_marker": [
+      "mirror8_v5",
+      "mirror_6"
+    ]
+  },
+  "asset_commit": "4e7b655375fbc104d69d742ad42d69fd5dd7fd5c",
+  "levels": [
+    {
+      "level_id": "compactor_v2",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 87037340,
+          "coordinates": [
+            87.0,
+            119.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#compactor_v2",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\compactor_v2.webp"
+    },
+    {
+      "level_id": "dragon_on_the_wall",
+      "area": "sideways_gates",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 90204160,
+          "coordinates": [
+            58.0,
+            108.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#dragon_on_the_wall",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\dragon_on_the_wall.webp"
+    },
+    {
+      "level_id": "druid_and_dragon",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 95464854,
+          "coordinates": [
+            79.0,
+            116.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#druid_and_dragon",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\druid_and_dragon.webp"
+    },
+    {
+      "level_id": "gatekeeping_v3",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 95449831,
+          "coordinates": [
+            82.0,
+            126.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#gatekeeping_v3",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\gatekeeping_v3.webp"
+    },
+    {
+      "level_id": "heroes3_10",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 14681114,
+          "coordinates": [
+            81.0,
+            116.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#heroes3_10",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_10.webp"
+    },
+    {
+      "level_id": "heroes3_11_v2",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 14681098,
+          "coordinates": [
+            80.0,
+            116.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#heroes3_11_v2",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_11_v2.webp"
+    },
+    {
+      "level_id": "heroes3_13_v2",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 14681128,
+          "coordinates": [
+            78.0,
+            118.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#heroes3_13_v2",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_13_v2.webp"
+    },
+    {
+      "level_id": "heroes3_14_v3",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 14681112,
+          "coordinates": [
+            81.0,
+            124.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#heroes3_14_v3",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_14_v3.webp"
+    },
+    {
+      "level_id": "heroes3_15_v4",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 115424499,
+          "coordinates": [
+            79.0,
+            118.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#heroes3_15_v4",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_15_v4.webp"
+    },
+    {
+      "level_id": "heroes3_16_v4_alt",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 14681110,
+          "coordinates": [
+            81.0,
+            125.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#heroes3_16_v4_alt",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_16_v4_alt.webp"
+    },
+    {
+      "level_id": "heroes3_1_v3",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 14681094,
+          "coordinates": [
+            76.0,
+            125.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#heroes3_1_v3",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_1_v3.webp"
+    },
+    {
+      "level_id": "heroes3_21_condensed",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 14681124,
+          "coordinates": [
+            87.0,
+            125.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#heroes3_21_condensed",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_21_condensed.webp"
+    },
+    {
+      "level_id": "heroes3_2_v4",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 14681138,
+          "coordinates": [
+            75.0,
+            125.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#heroes3_2_v4",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_2_v4.webp"
+    },
+    {
+      "level_id": "heroes3_3_v2",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 14681122,
+          "coordinates": [
+            74.0,
+            125.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#heroes3_3_v2",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_3_v2.webp"
+    },
+    {
+      "level_id": "heroes3_4",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 14681142,
+          "coordinates": [
+            73.0,
+            125.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#heroes3_4",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_4.webp"
+    },
+    {
+      "level_id": "heroes3_5",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 14681126,
+          "coordinates": [
+            72.0,
+            123.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#heroes3_5",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_5.webp"
+    },
+    {
+      "level_id": "heroes3_6_v3",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 14681108,
+          "coordinates": [
+            72.0,
+            121.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#heroes3_6_v3",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_6_v3.webp"
+    },
+    {
+      "level_id": "heroes3_7_v4",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 14681130,
+          "coordinates": [
+            72.0,
+            120.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#heroes3_7_v4",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_7_v4.webp"
+    },
+    {
+      "level_id": "heroes3_8_thief",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 87036602,
+          "coordinates": [
+            72.0,
+            122.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#heroes3_8_thief",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_8_thief.webp"
+    },
+    {
+      "level_id": "heroes3_8_v3_alt3",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 46141244,
+          "coordinates": [
+            72.0,
+            118.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#heroes3_8_v3_alt3",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_8_v3_alt3.webp"
+    },
+    {
+      "level_id": "heroes3_8_v4_alt",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 14681102,
+          "coordinates": [
+            72.0,
+            119.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#heroes3_8_v4_alt",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_8_v4_alt.webp"
+    },
+    {
+      "level_id": "heroes3_druid_a",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 90203876,
+          "coordinates": [
+            76.0,
+            118.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#heroes3_druid_a",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_druid_a.webp"
+    },
+    {
+      "level_id": "heroes3_druid_b_v2",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 90203878,
+          "coordinates": [
+            77.0,
+            118.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#heroes3_druid_b_v2",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes3_druid_b_v2.webp"
+    },
+    {
+      "level_id": "multipush_for_me2",
+      "area": "sideways_gates",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 46141313,
+          "coordinates": [
+            58.0,
+            109.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#multipush_for_me2",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\multipush_for_me2.webp"
+    },
+    {
+      "level_id": "side_kick",
+      "area": "sideways_gates",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 46142414,
+          "coordinates": [
+            57.0,
+            109.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#side_kick",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\side_kick.webp"
+    },
+    {
+      "level_id": "side_slide_intro_v2",
+      "area": "sideways_gates",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 46141309,
+          "coordinates": [
+            65.0,
+            113.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#side_slide_intro_v2",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\side_slide_intro_v2.webp"
+    },
+    {
+      "level_id": "victory_lap",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 14681140,
+          "coordinates": [
+            80.0,
+            78.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#victory_lap",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\victory_lap.webp"
+    },
+    {
+      "level_id": "wizard_and_druid_alt",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 63038256,
+          "coordinates": [
+            78.0,
+            117.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#wizard_and_druid_alt",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\wizard_and_druid_alt.webp"
+    },
+    {
+      "level_id": "wizard_and_druid_alt_5",
+      "area": "heroes3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 14681144,
+          "coordinates": [
+            79.0,
+            117.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#wizard_and_druid_alt_5",
+      "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\wizard_and_druid_alt_5.webp"
+    }
+  ],
+  "asset_verification": [
+    {
+      "path": "images/levels/compactor_v2.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/compactor_v2.webp",
+      "sha256": "95d28a693ceede86450879d5a678460584a6838d218b222b10f8000122621f14",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/dragon_on_the_wall.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/dragon_on_the_wall.webp",
+      "sha256": "80a400928353f36d1059817767f90f75dda4f464d130b601bc3b0433a07b8a82",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/druid_and_dragon.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/druid_and_dragon.webp",
+      "sha256": "c6a313d469c31c9520f0443e813c46b437719907d5b3619017a3130d899016ac",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/gatekeeping_v3.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/gatekeeping_v3.webp",
+      "sha256": "c761dfa0b92e681015966240da4420c6eb27fc373c396b37690f42aebd622fc0",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/heroes3_10.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/heroes3_10.webp",
+      "sha256": "461a4ca66d7223bdd2e70e9dad3dbb5a87a7aea5646fc7e802c98d0914c8b9d0",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/heroes3_11_v2.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/heroes3_11_v2.webp",
+      "sha256": "8ad5031e451babbab102b2d4587f65cf28d67ac3a3bd05d1fa60639ce5067be3",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/heroes3_13_v2.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/heroes3_13_v2.webp",
+      "sha256": "1ebce7e98acee9c46019bf7c56510015a7fbe95463105c215957a38abb2c4370",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/heroes3_14_v3.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/heroes3_14_v3.webp",
+      "sha256": "7a95b94f993c2b66fc50d565aa965812b5190267c4dc30917ef13f746b83e922",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/heroes3_15_v4.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/heroes3_15_v4.webp",
+      "sha256": "e6f87bba1660dacfa2b0ab023600aa219f051a4866fe66e97bbbe0beb7cfc01d",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/heroes3_16_v4_alt.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/heroes3_16_v4_alt.webp",
+      "sha256": "ff553f97fa08a8d01de747ec5cb6d38a1e6b81481f7748dbb26a8e03ddeb3317",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/heroes3_1_v3.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/heroes3_1_v3.webp",
+      "sha256": "9bb2262e389d58daad9c12e193ddd001bafdba83a8f9fd36fda6e6fa71d8a1d1",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/heroes3_21_condensed.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/heroes3_21_condensed.webp",
+      "sha256": "7554a02e7d93fb2b73c0558a47d1be41232aa4fb1affc8e9a7d3575cae914a1f",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/heroes3_2_v4.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/heroes3_2_v4.webp",
+      "sha256": "bc31b91ffe277bcc75ea716f31a45235a310c6442de66185d136a93bec7eb422",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/heroes3_3_v2.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/heroes3_3_v2.webp",
+      "sha256": "b68830c02ea706889993eb69c37c7dbbcbc3fb0bf84a3751c47fb4898d711bf2",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/heroes3_4.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/heroes3_4.webp",
+      "sha256": "f1c207c2241846b77bb337fefd684ab6ed672383dfc2fb615225dee372d10f91",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/heroes3_5.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/heroes3_5.webp",
+      "sha256": "38f426cf3a02a08e2788829944ba84b1ef5fd0b0463f9179ba5ffba22353405e",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/heroes3_6_v3.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/heroes3_6_v3.webp",
+      "sha256": "b4047579b3e1412f12f114944a636d309ff901f1e40047c0e30515623aedc68b",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/heroes3_7_v4.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/heroes3_7_v4.webp",
+      "sha256": "291983b3218da79105c141fa138ada020e489588018a46d79f7a035583a57464",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/heroes3_8_thief.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/heroes3_8_thief.webp",
+      "sha256": "55324917b053fe3ea7198f206a3f1455ad27338d7fa2124074ae54e8fa5396c8",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/heroes3_8_v3_alt3.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/heroes3_8_v3_alt3.webp",
+      "sha256": "4146d9bc1c8b9321dcc7420472af031fb4e650a74a504477ada5b5ef4786ec7b",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/heroes3_8_v4_alt.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/heroes3_8_v4_alt.webp",
+      "sha256": "53892b53adf7a3e61d017d180ba89aef881b7cff514378327be4f31224d7e29e",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/heroes3_druid_a.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/heroes3_druid_a.webp",
+      "sha256": "c77a874c7a7f7b0160bec098454a77e6ed9c98f8c041948025a9f54cac1292c6",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/heroes3_druid_b_v2.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/heroes3_druid_b_v2.webp",
+      "sha256": "ff9f673f8964ca4b4e1f8335dcaa1eebc88efb8bc72588df8f13efd3e403438c",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/multipush_for_me2.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/multipush_for_me2.webp",
+      "sha256": "357eda33aff24d5cd9270a8817accc8a7cd6fcbb7d23482ba5948d1f63965795",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/side_kick.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/side_kick.webp",
+      "sha256": "aa59049f3a5af870a336cbc8d16d71a59622afcfa50d6facf573365b35f4b65d",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/side_slide_intro_v2.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/side_slide_intro_v2.webp",
+      "sha256": "1ae72d1d6d24f7051e385f4de61303f8c01731d0888cee02fa08a15a51b0873a",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/victory_lap.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/victory_lap.webp",
+      "sha256": "44d9bb1d3b558f785e2989431879be9fdcc875dbe10acb102517992fad82ca18",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/wizard_and_druid_alt.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/wizard_and_druid_alt.webp",
+      "sha256": "aef45b53093369ccfa520a6581b3ea5ea34818b6ccff6b6787cd88d5b5f5bcb1",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "images/levels/wizard_and_druid_alt_5.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/images/levels/wizard_and_druid_alt_5.webp",
+      "sha256": "bed2c4c0da9e7dcf6fd95e3ed41dfe5d41f66aea9fd457c60b5709c30177d2e5",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "tiles/overworld_64k/4/3/7.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/tiles/overworld_64k/4/3/7.webp",
+      "sha256": "b31839752b2ea529966e061f288e0a4671996c9642be338238d8b0c88c284c4a",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "tiles/overworld_64k/4/3/8.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/tiles/overworld_64k/4/3/8.webp",
+      "sha256": "e3760e10e9efc07b5b2cb39ffc9fa83698b6791b7a0041e54d14ec99accdb259",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "tiles/overworld_64k/4/3/9.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/tiles/overworld_64k/4/3/9.webp",
+      "sha256": "1ce5fb8b54e7bb05db34e24eb27100ea0b16a945d25aceef309e0f08f6279132",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "tiles/overworld_64k/4/4/6.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/tiles/overworld_64k/4/4/6.webp",
+      "sha256": "cc0ff9bfe250c20d8b93ca2253b4ae688ad50432dffc6072967b19c6aca6e688",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "tiles/overworld_64k/4/4/7.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/tiles/overworld_64k/4/4/7.webp",
+      "sha256": "3ad3cdeeacd14b2ab05ae1967a1c6ca014150e1f886f2cf5ccdc192d460cad33",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "tiles/overworld_64k/4/4/8.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/tiles/overworld_64k/4/4/8.webp",
+      "sha256": "931348ad2c9927475f02edbf300f964de3807a775155ad0ed169d891af5c179f",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "tiles/overworld_64k/4/4/9.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/tiles/overworld_64k/4/4/9.webp",
+      "sha256": "d45ed982d9084edbcf50f680fe0c263c91ed1e4a9104c9386f8db8ffe332188f",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "tiles/overworld_64k/4/5/6.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/tiles/overworld_64k/4/5/6.webp",
+      "sha256": "7e995acf478b741d1bc1c0789f0422ab9a0947e7942524fe27aeec3c61da5565",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "tiles/overworld_64k/4/5/7.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/tiles/overworld_64k/4/5/7.webp",
+      "sha256": "da601d1213b15ae002e262be4153d8c243faa18635f0b04810e6350e97794f6d",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "tiles/overworld_64k/4/7/8.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/tiles/overworld_64k/4/7/8.webp",
+      "sha256": "879f9187fa816513ed231e8b871d47b16a04a94e54578acbf2c6320cf8577b2b",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "tiles/overworld_64k/4/7/9.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/tiles/overworld_64k/4/7/9.webp",
+      "sha256": "05df003bf6d001cb83a3020688cf8fd770a8da237b6f9ac1f733deb58fea5a1d",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "tiles/overworld_64k/4/8/8.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/tiles/overworld_64k/4/8/8.webp",
+      "sha256": "258e12d54a9d982f9ed7d1a73d9d49a863290ea126413129c8c5bc0130a0a3df",
+      "matches_pinned_commit": true
+    },
+    {
+      "path": "tiles/overworld_64k/4/8/9.webp",
+      "url": "https://raw.githubusercontent.com/joric/ootss_tileset/4e7b655375fbc104d69d742ad42d69fd5dd7fd5c/tiles/overworld_64k/4/8/9.webp",
+      "sha256": "a65a4270b52b827c5f06b27a7cc904e73aa01a628b62f668b322fd1bbf74c32c",
+      "matches_pinned_commit": true
+    }
+  ]
+}

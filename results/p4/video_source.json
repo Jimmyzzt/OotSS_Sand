@@ -1,0 +1,24 @@
+{
+  "endpoint": "https://api.bilibili.com/x/web-interface/view?bvid=BV13FH96bE4m",
+  "code": 0,
+  "title": "【全网最速/塞德莎】思路全解！《沉星之序》100%全谜题全隐藏 详细解说攻略（完结，共68P）",
+  "bvid": "BV13FH96bE4m",
+  "page": {
+    "cid": 42574283342,
+    "page": 4,
+    "from": "vupload",
+    "part": "【北】英雄3：吟游诗人与德鲁伊+能量门方向+英雄齐聚[北4+北3西1+北1补1题]",
+    "duration": 3032,
+    "vid": "",
+    "weblink": "",
+    "dimension": {
+      "width": 1920,
+      "height": 1080,
+      "rotate": 0
+    },
+    "first_frame": "http://i2.hdslb.com/bfs/storyff/_00000oub06lre0heu2fupt1qm4zmawb_firsti.jpg",
+    "ctime": 1791474831
+  },
+  "parameter_documentation": "https://player.bilibili.com/",
+  "link_validation": "Official player documentation confirms p (1-based) and t (seconds). API confirms P4 CID/duration. Browser playback itself was not tested."
+}
