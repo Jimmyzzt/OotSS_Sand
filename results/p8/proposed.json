@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 8,
+  "duration": 1997.466313,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage1\\P08__【西】光束发射器之库[西1_西2].mp4",
+  "title": "【西】光束发射器之库[西1/西2]",
+  "stage": 1,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "Unreviewed machine proposals; require bounded visual comparison, reject false matches, inspect unknown spans.",
+  "events": [
+    {
+      "event_id": "p8-001",
+      "level_id": "promesst2_streamlined",
+      "puzzle_start_time": 885.625,
+      "puzzle_end_time": 900.0,
+      "entry_transition_time": 885.125,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "promesst2_streamlined",
+          "area": "promesst1_and_2",
+          "phash_distance": 16,
+          "hist_distance": 1.1842,
+          "sift_inliers": 34,
+          "sift_good": 38
+        },
+        {
+          "level_id": "gem_pushers",
+          "area": "promesst1_and_2",
+          "phash_distance": 18,
+          "hist_distance": 1.3898,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "druids_stone_0_v2",
+          "area": "heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3737,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "trick_kills",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3818,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "infinite_crystal_hack_v5",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3907,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "promesst2_streamlined",
+        "area": "promesst1_and_2",
+        "phash_distance": 16,
+        "hist_distance": 1.1842,
+        "sift_inliers": 34,
+        "sift_good": 38,
+        "consistent_samples": 2
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p8\\samples\\00890.000.jpg",
+          "time": 890.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\promesst2_streamlined.webp",
+          "first_sample": 890.0,
+          "last_sample": 895.0,
+          "sample_count": 2
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p8-002",
+      "level_id": "promesst2_streamlined",
+      "puzzle_start_time": 1840.0,
+      "puzzle_end_time": 1873.875,
+      "entry_transition_time": null,
+      "exit_time": 1875.125,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "promesst2_streamlined",
+          "area": "promesst1_and_2",
+          "phash_distance": 4,
+          "hist_distance": 0.2792,
+          "sift_inliers": 82,
+          "sift_good": 83
+        },
+        {
+          "level_id": "gem_pushers",
+          "area": "promesst1_and_2",
+          "phash_distance": 14,
+          "hist_distance": 1.3113,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "trick_kills",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3284,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "dragon_compass",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.1747,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "right_hand_man",
+          "area": "promesst1_and_2",
+          "phash_distance": 20,
+          "hist_distance": 1.3962,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "promesst2_streamlined",
+        "area": "promesst1_and_2",
+        "phash_distance": 4,
+        "hist_distance": 0.2792,
+        "sift_inliers": 82,
+        "sift_good": 83,
+        "consistent_samples": 6
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p8\\samples\\01845.000.jpg",
+          "time": 1845.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\promesst2_streamlined.webp",
+          "first_sample": 1845.0,
+          "last_sample": 1870.0,
+          "sample_count": 6
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": []
+    }
+  ]
+}

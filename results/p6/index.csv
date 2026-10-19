@@ -1,0 +1,2 @@
+﻿event_id,level_id,area,puzzle_start_time,puzzle_end_time,overworld_approach_time,entry_transition_time,review_status,outcome,map_entries,video_url,map_url
+p6-001,skipping_stones,skipping_stones,54.25,1820.0,,,confirmed,unknown,"[{'marker_id': 1049988, 'coordinates': [80.0, 54.0, 0.0]}]",https://www.bilibili.com/video/BV13FH96bE4m/?p=6&t=54,https://joric.github.io/ootss/#skipping_stones

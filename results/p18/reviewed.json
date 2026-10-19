@@ -1,0 +1,1356 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 18,
+  "duration": 2376.666688,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage1\\P18__【西南】黄金谜题+光照之石[南2西1_南3西1_南4西1_南3西2_南3西3].mp4",
+  "title": "【西南】黄金谜题+光照之石[南2西1/南3西1/南4西1/南3西2/南3西3]",
+  "stage": 1,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "Luna visual comparison reviewed bounded galleries and full sheets. P18 entry identity is grounded in the initial C-shaped island room matched to skipping_near_beams_v2 and its overworld Level_Entry marker. The continuous visit includes multiple arrow-linked internal rooms and a 21:35 connected-room map; those later room layouts are not individually matched or assigned other level IDs. The event ends at the 1681.875 return transition. Overworld approach was not independently verified; outcome remains unknown. Other confirmed events retain their observed exit transitions.",
+  "events": [
+    {
+      "event_id": "p18-001",
+      "level_id": "worlds_collide_ps",
+      "puzzle_start_time": 98.125,
+      "puzzle_end_time": 200.375,
+      "entry_transition_time": 97.625,
+      "exit_time": 201.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "worlds_collide_ps",
+          "area": "worlds_collide",
+          "phash_distance": 2,
+          "hist_distance": 0.1537,
+          "sift_inliers": 159,
+          "sift_good": 168
+        },
+        {
+          "level_id": "mirror_12",
+          "area": "mirror",
+          "phash_distance": 22,
+          "hist_distance": 1.197,
+          "sift_inliers": 5,
+          "sift_good": 6
+        },
+        {
+          "level_id": "first_flight",
+          "area": "double_beam_falling_dropdown",
+          "phash_distance": 20,
+          "hist_distance": 1.1176,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "double_tempo",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.3456,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "blue_revolution_v2",
+          "area": "promesst1_and_2",
+          "phash_distance": 22,
+          "hist_distance": 0.9367,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "worlds_collide_ps",
+        "area": "worlds_collide",
+        "phash_distance": 2,
+        "hist_distance": 0.1537,
+        "sift_inliers": 159,
+        "sift_good": 168,
+        "consistent_samples": 20,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p18\\samples\\00100.000.jpg",
+          "time": 100.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\worlds_collide_ps.webp",
+          "first_sample": 100.0,
+          "last_sample": 195.0,
+          "sample_count": 20,
+          "reason": "左侧砖地庭院、中央水道与右侧草岛及蓝色球体的相对位置均与参考图一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查 runs/p18 全片图册；转场前后按最近可见淡入/淡出划定，未把主世界探索当作独立关卡。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p18-002",
+      "level_id": "through_way",
+      "puzzle_start_time": 234.75,
+      "puzzle_end_time": 308.375,
+      "entry_transition_time": 234.25,
+      "exit_time": 308.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "through_way",
+          "area": "beams_and_stones",
+          "phash_distance": 4,
+          "hist_distance": 0.6811,
+          "sift_inliers": 131,
+          "sift_good": 133
+        },
+        {
+          "level_id": "orange_clm_s",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3467,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "mirror_sink",
+          "area": "mirror",
+          "phash_distance": 22,
+          "hist_distance": 1.0881,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "surfing_lesson_alt",
+          "area": "heroes_and_water",
+          "phash_distance": 22,
+          "hist_distance": 1.1703,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "metamirror_same_dir_2_alt_2",
+          "area": "metamirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.2934,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "through_way",
+        "area": "beams_and_stones",
+        "phash_distance": 4,
+        "hist_distance": 0.6811,
+        "sift_inliers": 131,
+        "sift_good": 133,
+        "consistent_samples": 15,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p18\\samples\\00280.000.jpg",
+          "time": 280.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\through_way.webp",
+          "first_sample": 235.0,
+          "last_sample": 305.0,
+          "sample_count": 15,
+          "reason": "两段石墙回廊围成的上下通路、中央竖向光束和底端石块位置与参考图一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查 runs/p18 全片图册；转场前后按最近可见淡入/淡出划定，未把主世界探索当作独立关卡。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p18-003",
+      "level_id": "sp_crystal_tuto",
+      "puzzle_start_time": 308.75,
+      "puzzle_end_time": 435.875,
+      "entry_transition_time": 308.375,
+      "exit_time": 436.125,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "sp_crystal_tuto",
+          "area": "beams_and_stones",
+          "phash_distance": 4,
+          "hist_distance": 0.3558,
+          "sift_inliers": 81,
+          "sift_good": 91
+        },
+        {
+          "level_id": "stonewalled",
+          "area": "beams_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 0.5076,
+          "sift_inliers": 5,
+          "sift_good": 7
+        },
+        {
+          "level_id": "mirror_8_v5",
+          "area": "mirror",
+          "phash_distance": 20,
+          "hist_distance": 1.1052,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "river_push_v4",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.2027,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "launch_and_collect",
+          "area": "mirrorable_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3143,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "sp_crystal_tuto",
+        "area": "beams_and_stones",
+        "phash_distance": 4,
+        "hist_distance": 0.3558,
+        "sift_inliers": 81,
+        "sift_good": 91,
+        "consistent_samples": 26,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p18\\samples\\00310.000.jpg",
+          "time": 310.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\sp_crystal_tuto.webp",
+          "first_sample": 310.0,
+          "last_sample": 435.0,
+          "sample_count": 26,
+          "reason": "横向双层通路、左右绿色光束发射器及分散石块与参考图的轮廓和相对位置一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查 runs/p18 全片图册；转场前后按最近可见淡入/淡出划定，未把主世界探索当作独立关卡。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p18-004",
+      "level_id": "stonewalled",
+      "puzzle_start_time": 436.125,
+      "puzzle_end_time": 555.875,
+      "entry_transition_time": 435.875,
+      "exit_time": 555.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "stonewalled",
+          "area": "beams_and_stones",
+          "phash_distance": 6,
+          "hist_distance": 1.1087,
+          "sift_inliers": 79,
+          "sift_good": 85
+        },
+        {
+          "level_id": "right_hand_man",
+          "area": "promesst1_and_2",
+          "phash_distance": 16,
+          "hist_distance": 1.3984,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "beam_rooms",
+          "area": "promesst1_and_2",
+          "phash_distance": 16,
+          "hist_distance": 1.4056,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "river_plinko_v2_actual",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.2697,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "druids_stone_0_v2",
+          "area": "heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.4003,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "stonewalled",
+        "area": "beams_and_stones",
+        "phash_distance": 6,
+        "hist_distance": 1.1087,
+        "sift_inliers": 79,
+        "sift_good": 85,
+        "consistent_samples": 2,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p18\\samples\\00440.000.jpg",
+          "time": 440.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\stonewalled.webp",
+          "first_sample": 440.0,
+          "last_sample": 445.0,
+          "sample_count": 2,
+          "reason": "交叉光束、中央狭长石岛和上下方孤立平台与参考图一致；全片图册显示两组匹配之间持续是同一房间和连续解题过程。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查 runs/p18 全片图册；转场前后按最近可见淡入/淡出划定，未把主世界探索当作独立关卡。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [
+        {
+          "type": "merge_fragmented_match",
+          "source_event_ids": [
+            "p18-004",
+            "p18-005"
+          ],
+          "reason": "图册中7:20至9:00持续显示同一石岛与交叉光束，连续人物操作没有离开房间；合并稀疏匹配片段，边界取后续房间入口转场。"
+        }
+      ],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p18-006",
+      "level_id": "purple_beam_intro_v2_alt",
+      "puzzle_start_time": 556.25,
+      "puzzle_end_time": 584.375,
+      "entry_transition_time": 555.875,
+      "exit_time": 584.375,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "purple_beam_intro_v2_alt",
+          "area": "beams_and_stones",
+          "phash_distance": 6,
+          "hist_distance": 0.1409,
+          "sift_inliers": 20,
+          "sift_good": 22
+        },
+        {
+          "level_id": "meta_orange_purple_2",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 0.9916,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "goblin_express",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 0.9936,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "a_wiz_out_of_water",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.1012,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "beam_rooms",
+          "area": "promesst1_and_2",
+          "phash_distance": 20,
+          "hist_distance": 1.3291,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "purple_beam_intro_v2_alt",
+        "area": "beams_and_stones",
+        "phash_distance": 6,
+        "hist_distance": 0.1409,
+        "sift_inliers": 20,
+        "sift_good": 22,
+        "consistent_samples": 1,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p18\\samples\\00560.000.jpg",
+          "time": 560.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\purple_beam_intro_v2_alt.webp",
+          "first_sample": 560.0,
+          "last_sample": 560.0,
+          "sample_count": 1,
+          "reason": "上方折角平台、左侧紫色光束发射器、中央开关及右端高台布局与参考图一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查 runs/p18 全片图册；转场前后按最近可见淡入/淡出划定，未把主世界探索当作独立关卡。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "HQ570帧匹配SIFT 32；全片图册显示关卡持续至584.375附近转场。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p18-007",
+      "level_id": "skipping_near_beams_v2",
+      "puzzle_start_time": 629.75,
+      "puzzle_end_time": 1681.875,
+      "entry_transition_time": 629.0,
+      "exit_time": 1681.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "skipping_near_beams_v2",
+          "area": "beams_and_stones",
+          "phash_distance": 16,
+          "hist_distance": 0.4784,
+          "sift_inliers": 55,
+          "sift_good": 58
+        },
+        {
+          "level_id": "bard_range5",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4054,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "oneway_dragon_toast",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.312,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "mirror_10_d",
+          "area": "mirror",
+          "phash_distance": 20,
+          "hist_distance": 1.3291,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "walk_into_fire",
+          "area": "heroes_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.091,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "skipping_near_beams_v2",
+        "area": "beams_and_stones",
+        "phash_distance": 16,
+        "hist_distance": 0.4784,
+        "sift_inliers": 55,
+        "sift_good": 58,
+        "consistent_samples": 9,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p18\\samples\\00640.000.jpg",
+          "time": 640.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\skipping_near_beams_v2.webp",
+          "first_sample": 630.0,
+          "last_sample": 675.0,
+          "sample_count": 9,
+          "reason": "629.0–629.75黑场后，视频最初的C形浅色岛、左侧角色与蓝色球石、底部灰色球石及右侧紫色方块平台，与参考图的关键相对布局一致。此证据确认入口后的初始房间布局，不声称其余内部房间逐一匹配此参考。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "全片图册显示首次入口后连续进入多个以箭头连接的内部房间；期间没有可见黑场/返回主世界转场。21:35（1295s）出现包含分支房间和光束走廊的连通地图，28:01.875附近黑场后才离开该连续区域。"
+        },
+        {
+          "type": "level_entry_catalog",
+          "source": "cache/map/catalog.json; cache/map/upstream/data/markers.json",
+          "level_id": "skipping_near_beams_v2",
+          "map_layer": "overworld",
+          "marker_id": 46140812,
+          "coordinates": [
+            68.0,
+            27.0,
+            0.0
+          ],
+          "reason": "地图目录将 skipping_near_beams_v2 记为 overworld 层 Level_Entry（marker 46140812）。21:35的地图是连通内部房间图，不足以确认其中各房间对应其他独立 overworld Level_Entry；本事件仅记录这次已匹配入口的访问，不把后续各房间布局宣称为同一张棋盘，也不替它们分配未证实的其他 level_id。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [
+        {
+          "type": "clarify_multi_room_entry_identity",
+          "source_event_ids": [
+            "p18-007"
+          ],
+          "reason": "纠正先前“整段是同一大棋盘滚屏”的过度概括。初始C形岛房布局与 skipping_near_beams_v2 参考图匹配；随后视频通过箭头连续切换多个房间，并在21:35显示互相连接的房间地图。目录证明该ID对应一个 overworld Level_Entry，且没有可靠证据确认内部房间为其他独立目标入口。因此保留单次入口访问至1681.875离开黑场，但仅将初始房间记为布局匹配，不声称后续房间具有该参考布局。"
+        }
+      ],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p18-008",
+      "level_id": "faster_than_stone",
+      "puzzle_start_time": 1695.875,
+      "puzzle_end_time": 1729.25,
+      "entry_transition_time": 1695.375,
+      "exit_time": 1729.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "faster_than_stone",
+          "area": "beams_and_stones",
+          "phash_distance": 8,
+          "hist_distance": 0.0708,
+          "sift_inliers": 79,
+          "sift_good": 84
+        },
+        {
+          "level_id": "crystal_bridges",
+          "area": "heroes_and_water",
+          "phash_distance": 14,
+          "hist_distance": 1.3459,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "holes",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3124,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "druids_stone_0_v2",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3343,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "heroes2_5.5v5",
+          "area": "heroes2",
+          "phash_distance": 20,
+          "hist_distance": 0.5428,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "faster_than_stone",
+        "area": "beams_and_stones",
+        "phash_distance": 8,
+        "hist_distance": 0.0708,
+        "sift_inliers": 79,
+        "sift_good": 84,
+        "consistent_samples": 5,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p18\\samples\\01700.000.jpg",
+          "time": 1700.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\faster_than_stone.webp",
+          "first_sample": 1700.0,
+          "last_sample": 1720.0,
+          "sample_count": 5,
+          "reason": "横长石砖地面、顶部蓝色开关及中部紫色光束发射器位置与参考图吻合。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查 runs/p18 全片图册；转场前后按最近可见淡入/淡出划定，未把主世界探索当作独立关卡。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p18-009",
+      "level_id": "hustle_v2",
+      "puzzle_start_time": 1729.625,
+      "puzzle_end_time": 1799.25,
+      "entry_transition_time": 1729.25,
+      "exit_time": 1799.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "hustle_v2",
+          "area": "beams_and_stones",
+          "phash_distance": 4,
+          "hist_distance": 0.0547,
+          "sift_inliers": 46,
+          "sift_good": 49
+        },
+        {
+          "level_id": "adjust_explorer_v4",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.2495,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "mirror_2",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.3504,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "dipping_your_toes_in",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.4087,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "metamirror_different_dir_2_alt",
+          "area": "metamirrors",
+          "phash_distance": 20,
+          "hist_distance": 0.9762,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "hustle_v2",
+        "area": "beams_and_stones",
+        "phash_distance": 4,
+        "hist_distance": 0.0547,
+        "sift_inliers": 46,
+        "sift_good": 49,
+        "consistent_samples": 3,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p18\\samples\\01735.000.jpg",
+          "time": 1735.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\hustle_v2.webp",
+          "first_sample": 1730.0,
+          "last_sample": 1740.0,
+          "sample_count": 3,
+          "reason": "两道平行紫色光束及中央相邻平台、球体布局与参考图一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查 runs/p18 全片图册；转场前后按最近可见淡入/淡出划定，未把主世界探索当作独立关卡。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "HQ1750与1775仍为此关卡；按随后的关卡入口转场延展连续访问至1799.25。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p18-010",
+      "level_id": "skip_orange_block_c",
+      "puzzle_start_time": 1799.75,
+      "puzzle_end_time": 1877.875,
+      "entry_transition_time": 1799.25,
+      "exit_time": 1878.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "skip_orange_block_c",
+          "area": "beams_and_stones",
+          "phash_distance": 4,
+          "hist_distance": 0.4299,
+          "sift_inliers": 113,
+          "sift_good": 117
+        },
+        {
+          "level_id": "mirror_11",
+          "area": "mirror",
+          "phash_distance": 20,
+          "hist_distance": 1.2704,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "heroes2_10.5",
+          "area": "heroes2",
+          "phash_distance": 22,
+          "hist_distance": 1.0968,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "boxes_vs_crystals",
+          "area": "beaming_objects",
+          "phash_distance": 22,
+          "hist_distance": 1.3218,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "heroes2_reprise",
+          "area": "heroes2",
+          "phash_distance": 22,
+          "hist_distance": 1.3315,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "skip_orange_block_c",
+        "area": "beams_and_stones",
+        "phash_distance": 4,
+        "hist_distance": 0.4299,
+        "sift_inliers": 113,
+        "sift_good": 117,
+        "consistent_samples": 16,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p18\\samples\\01810.000.jpg",
+          "time": 1810.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\skip_orange_block_c.webp",
+          "first_sample": 1800.0,
+          "last_sample": 1875.0,
+          "sample_count": 16,
+          "reason": "左侧庭院与橙色十字光束、右上方成列方块和球体的布局与参考图一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查 runs/p18 全片图册；转场前后按最近可见淡入/淡出划定，未把主世界探索当作独立关卡。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p18-011",
+      "level_id": "doorstop",
+      "puzzle_start_time": 1906.25,
+      "puzzle_end_time": 1935.625,
+      "entry_transition_time": 1905.75,
+      "exit_time": 1935.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "doorstop",
+          "area": "beams_and_stones",
+          "phash_distance": 4,
+          "hist_distance": 0.4127,
+          "sift_inliers": 65,
+          "sift_good": 93
+        },
+        {
+          "level_id": "mirror_10_d",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.3959,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "gully_alt",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.1491,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "mirror_14",
+          "area": "mirror",
+          "phash_distance": 20,
+          "hist_distance": 1.224,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "cyan_torc_maze_vs",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3165,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "doorstop",
+        "area": "beams_and_stones",
+        "phash_distance": 4,
+        "hist_distance": 0.4127,
+        "sift_inliers": 65,
+        "sift_good": 93,
+        "consistent_samples": 5,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p18\\samples\\01910.000.jpg",
+          "time": 1910.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\doorstop.webp",
+          "first_sample": 1910.0,
+          "last_sample": 1930.0,
+          "sample_count": 5,
+          "reason": "红色光束穿过阶梯状方块，左侧发射器、右侧金色圆盘及散布球石相对位置与参考图一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查 runs/p18 全片图册；转场前后按最近可见淡入/淡出划定，未把主世界探索当作独立关卡。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p18-012",
+      "level_id": "doorstop_reprise_easier",
+      "puzzle_start_time": 1935.875,
+      "puzzle_end_time": 2004.25,
+      "entry_transition_time": 1935.625,
+      "exit_time": 2005.375,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "doorstop_reprise_easier",
+          "area": "beams_and_stones",
+          "phash_distance": 10,
+          "hist_distance": 0.501,
+          "sift_inliers": 54,
+          "sift_good": 72
+        },
+        {
+          "level_id": "doorstop",
+          "area": "beams_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 0.8787,
+          "sift_inliers": 7,
+          "sift_good": 7
+        },
+        {
+          "level_id": "druid_and_dragon",
+          "area": "heroes3",
+          "phash_distance": 22,
+          "hist_distance": 1.1782,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "in_the_way_alt_3",
+          "area": "mirrors_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.1884,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "mirror_14",
+          "area": "mirror",
+          "phash_distance": 22,
+          "hist_distance": 1.2806,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "doorstop_reprise_easier",
+        "area": "beams_and_stones",
+        "phash_distance": 10,
+        "hist_distance": 0.501,
+        "sift_inliers": 54,
+        "sift_good": 72,
+        "consistent_samples": 13,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p18\\samples\\01955.000.jpg",
+          "time": 1955.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\doorstop_reprise_easier.webp",
+          "first_sample": 1940.0,
+          "last_sample": 2000.0,
+          "sample_count": 13,
+          "reason": "红色光束路径、三块方块和平台形状与参考图一致，且与前一房间有独立转场。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查 runs/p18 全片图册；转场前后按最近可见淡入/淡出划定，未把主世界探索当作独立关卡。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p18-013",
+      "level_id": "glass_beach",
+      "puzzle_start_time": 2020.375,
+      "puzzle_end_time": 2112.0,
+      "entry_transition_time": 2019.875,
+      "exit_time": 2113.125,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "glass_beach",
+          "area": "beams_and_stones",
+          "phash_distance": 12,
+          "hist_distance": 0.1771,
+          "sift_inliers": 48,
+          "sift_good": 62
+        },
+        {
+          "level_id": "wizard_with_a_capital_w_2_v2",
+          "area": "heroes_and_stones",
+          "phash_distance": 16,
+          "hist_distance": 1.2791,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "push_and_pull_zach",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.1648,
+          "sift_inliers": 0,
+          "sift_good": 7
+        },
+        {
+          "level_id": "come_closer",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.25,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "binary_maze",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.3895,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "glass_beach",
+        "area": "beams_and_stones",
+        "phash_distance": 12,
+        "hist_distance": 0.1771,
+        "sift_inliers": 48,
+        "sift_good": 62,
+        "consistent_samples": 15,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p18\\samples\\02030.000.jpg",
+          "time": 2030.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\glass_beach.webp",
+          "first_sample": 2025.0,
+          "last_sample": 2110.0,
+          "sample_count": 15,
+          "reason": "两侧平台间的黄色水平光束、上下方笼子及左侧球石组合与参考图一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查 runs/p18 全片图册；转场前后按最近可见淡入/淡出划定，未把主世界探索当作独立关卡。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p18-014",
+      "level_id": "break_send_lily_c",
+      "puzzle_start_time": 2140.75,
+      "puzzle_end_time": 2206.625,
+      "entry_transition_time": 2140.25,
+      "exit_time": 2207.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "break_send_lily_c",
+          "area": "beams_and_stones",
+          "phash_distance": 0,
+          "hist_distance": 0.3811,
+          "sift_inliers": 49,
+          "sift_good": 64
+        },
+        {
+          "level_id": "through_sokoban",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.3597,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "dragon_garden",
+          "area": "heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.4051,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "there_and_back",
+          "area": "mirrors_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 0.8063,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "heroes3_14_v3",
+          "area": "heroes3",
+          "phash_distance": 22,
+          "hist_distance": 1.2643,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "break_send_lily_c",
+        "area": "beams_and_stones",
+        "phash_distance": 0,
+        "hist_distance": 0.3811,
+        "sift_inliers": 49,
+        "sift_good": 64,
+        "consistent_samples": 13,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p18\\samples\\02145.000.jpg",
+          "time": 2145.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\break_send_lily_c.webp",
+          "first_sample": 2145.0,
+          "last_sample": 2205.0,
+          "sample_count": 13,
+          "reason": "右侧小平台上的一组球石、横贯画面的黄色光束及左下方发射器与参考图一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查 runs/p18 全片图册；转场前后按最近可见淡入/淡出划定，未把主世界探索当作独立关卡。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p18-015",
+      "level_id": "frantic_factory_v2",
+      "puzzle_start_time": 2226.5,
+      "puzzle_end_time": 2280.625,
+      "entry_transition_time": 2226.125,
+      "exit_time": 2281.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "frantic_factory_v2",
+          "area": "beams_and_stones",
+          "phash_distance": 0,
+          "hist_distance": 0.0986,
+          "sift_inliers": 99,
+          "sift_good": 102
+        },
+        {
+          "level_id": "two_through_alt_2",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 16,
+          "hist_distance": 1.4126,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "mundane_mirror",
+          "area": "mirror",
+          "phash_distance": 20,
+          "hist_distance": 0.9267,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "dont_push_the_button",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.1552,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "place_to_stand",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3417,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "frantic_factory_v2",
+        "area": "beams_and_stones",
+        "phash_distance": 0,
+        "hist_distance": 0.0986,
+        "sift_inliers": 99,
+        "sift_good": 102,
+        "consistent_samples": 11,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p18\\samples\\02235.000.jpg",
+          "time": 2235.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\frantic_factory_v2.webp",
+          "first_sample": 2230.0,
+          "last_sample": 2280.0,
+          "sample_count": 11,
+          "reason": "长形不规则岛屿、顶部发射器、散布圆石与植被轮廓同参考图一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查 runs/p18 全片图册；转场前后按最近可见淡入/淡出划定，未把主世界探索当作独立关卡。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p18-016",
+      "level_id": "skipping_cyan_precise_c_v3",
+      "puzzle_start_time": 2314.25,
+      "puzzle_end_time": 2353.0,
+      "entry_transition_time": 2313.875,
+      "exit_time": 2354.125,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "skipping_cyan_precise_c_v3",
+          "area": "beams_and_stones",
+          "phash_distance": 10,
+          "hist_distance": 0.6108,
+          "sift_inliers": 97,
+          "sift_good": 103
+        },
+        {
+          "level_id": "dragon_compass",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.1108,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "a_wiz_out_of_water",
+          "area": "heroes_and_water",
+          "phash_distance": 22,
+          "hist_distance": 0.9411,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "cyan_counter_med3",
+          "area": "beams_and_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.2263,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "greenhouse",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.2529,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "skipping_cyan_precise_c_v3",
+        "area": "beams_and_stones",
+        "phash_distance": 10,
+        "hist_distance": 0.6108,
+        "sift_inliers": 97,
+        "sift_good": 103,
+        "consistent_samples": 7,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p18\\samples\\02320.000.jpg",
+          "time": 2320.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\skipping_cyan_precise_c_v3.webp",
+          "first_sample": 2320.0,
+          "last_sample": 2350.0,
+          "sample_count": 7,
+          "reason": "左侧青色纵向光束、两块相邻石岛、右侧金色开关和球石布局与参考图一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查 runs/p18 全片图册；转场前后按最近可见淡入/淡出划定，未把主世界探索当作独立关卡。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    }
+  ]
+}

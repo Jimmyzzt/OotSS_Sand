@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 8,
+  "duration": 1997.466313,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage1\\P08__【西】光束发射器之库[西1_西2].mp4",
+  "title": "【西】光束发射器之库[西1/西2]",
+  "stage": 1,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "Luna reviewed all 12 full-video sheets, candidate pairs, and the world-check overlay for the first region. The first full region (36.375–829.125) is confirmed as promesst1_streamlined by the projected overworld entrance matching the player at the Vault of the Beamcasters marker; local interior layout comparison alone remains unconfirmed. The two sparse promesst2 hits are one continuous visit (885.625–1873.875); the isolated 0.125-second dark frame at 1190.625 does not split it. Outcomes remain unknown.",
+  "events": [
+    {
+      "event_id": "p8-001",
+      "level_id": "promesst1_streamlined",
+      "puzzle_start_time": 36.375,
+      "puzzle_end_time": 829.125,
+      "entry_transition_time": 35.875,
+      "exit_time": 829.125,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "promesst1_streamlined",
+          "area": "promesst1_and_2"
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "promesst1_streamlined",
+        "area": "promesst1_and_2",
+        "status": "unconfirmed",
+        "reason": "室内参考样本对应卷屏中的局部房间，无法仅凭此处样本单独确认完整大关；身份由主世界入口几何位置核实。"
+      },
+      "overworld_match": {
+        "status": "verified_by_agent",
+        "verified_by": "root",
+        "level_id": "promesst1_streamlined",
+        "time": 33.0,
+        "reason": "Luna复看world-check对位图：主世界入口星格投影至约[426.66,193.37]，红圈落在“VAULT OF THE BEAMCASTERS”入口标记下方的角色入口位置；地形匹配32个内点，覆盖9.77%，根agent已核验原地形与overlay。"
+      },
+      "evidence": [
+        {
+          "type": "full_video_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p8\\sheet_00.jpg",
+          "time": 45.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\promesst1_streamlined.webp",
+          "reason": "全片图册显示该入口后持续呈现大型地下机关区；promesst1_streamlined参考图拍摄的是该大关中段卷屏房间，初始室内画面不必直接复现参考小窗。根agent的主世界几何对位确认了入口对应此关。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 35.875,
+          "exit_time": 829.125,
+          "reason": "以35.875–36.375入口转场及829.125–830.125离开转场界定连续首段；417.5附近为同一段内短暂过黑/镜头变化，不拆成独立访问。"
+        },
+        {
+          "type": "overworld_approach",
+          "time": 33.0,
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p8\\world_first\\approach_33.000.jpg",
+          "overlay": "F:\\Video\\OotSS_Sand\\runs\\p8\\world_first\\overlay.jpg",
+          "terrain": "F:\\Video\\OotSS_Sand\\runs\\p8\\terrain_first.jpg",
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\promesst1_streamlined.webp",
+          "inliers": 32,
+          "query_coverage": 0.0977,
+          "projected_entrance": [
+            426.6599,
+            193.3682
+          ],
+          "reason": "Luna视觉检查overlay及入口帧：投影红圈与VAULT OF THE BEAMCASTERS门前的入口星格和玩家重合；根agent核对原始地形/overlay后确认world entry。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [
+        "补入此前漏记的完整首段；其范围按35.875–36.375入口转场至829.125–830.125离开转场界定。"
+      ],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "主世界入口对应关系已由地图几何对位与入口帧确认；室内局部布局未独立复核，puzzle_match保留unconfirmed。"
+    },
+    {
+      "event_id": "p8-002",
+      "level_id": "promesst2_streamlined",
+      "puzzle_start_time": 885.625,
+      "puzzle_end_time": 1873.875,
+      "entry_transition_time": 885.125,
+      "exit_time": 1873.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "promesst2_streamlined",
+          "area": "promesst1_and_2",
+          "phash_distance": 4,
+          "hist_distance": 0.2792,
+          "sift_inliers": 82,
+          "sift_good": 83
+        },
+        {
+          "level_id": "gem_pushers",
+          "area": "promesst1_and_2",
+          "phash_distance": 14,
+          "hist_distance": 1.3113,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "trick_kills",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3284,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "dragon_compass",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.1747,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "right_hand_man",
+          "area": "promesst1_and_2",
+          "phash_distance": 20,
+          "hist_distance": 1.3962,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "promesst2_streamlined",
+        "area": "promesst1_and_2",
+        "phash_distance": 4,
+        "hist_distance": 0.2792,
+        "sift_inliers": 82,
+        "sift_good": 83,
+        "consistent_samples": 6,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p8\\samples\\01845.000.jpg",
+          "time": 1845.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\promesst2_streamlined.webp",
+          "first_sample": 1845.0,
+          "last_sample": 1870.0,
+          "sample_count": 6,
+          "reason": "首次命中处浅色方砖间的中央图案、右侧蓝色石块及圆形装置/绿色光束布局，与promesst2_streamlined参考图吻合；后续图册中视角随角色在同一巨大地下关卡内移动。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 885.125,
+          "exit_time": 1873.875,
+          "reason": "以885.125–885.625入口转场与1873.875–1875.125离开转场界定同一段。1190.625–1190.75的极短暗帧未伴随可见地图或房间重置，前后布局连续，因此并入同一次promesst2访问；14:50与30:45附近是局部参考命中。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [
+        "将此前两个局部promesst2命中并为同一次长访问；中间1190.625附近仅有0.125秒低黑比短帧，画面前后连续，无证据证明离关再进入。"
+      ],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；身份依据配对图中石室方形浅色地砖、中央地板标记、右侧蓝色巨石及门/发光通道的位置关系。"
+    }
+  ],
+  "manual_corrections": [
+    {
+      "event_id": "p8-001",
+      "reason": "补入遗漏的大关首段；Luna查看world-check overlay确认入口投影与VAULT OF THE BEAMCASTERS标记下的玩家位置重合，身份确认为promesst1_streamlined；puzzle_match单独保持unconfirmed。"
+    },
+    {
+      "event_id": "p8-002",
+      "reason": "把此前检测到的两个局部promesst2命中窗口归并为同一次连续访问；1190.625附近短暂暗帧不形成独立转场。"
+    }
+  ]
+}

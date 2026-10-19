@@ -1,0 +1,1593 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 14,
+  "duration": 1694.932938,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage1\\P14__【东南】魔镜与飞石[南4东4_南4东1_南4东2_南4东3].mp4",
+  "title": "【东南】魔镜与飞石[南4东4/南4东1/南4东2/南4东3]",
+  "stage": 1,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "Unreviewed machine proposals; require bounded visual comparison, reject false matches, inspect unknown spans.",
+  "events": [
+    {
+      "event_id": "p14-001",
+      "level_id": "mirror_motion",
+      "puzzle_start_time": 14.375,
+      "puzzle_end_time": 30.0,
+      "entry_transition_time": 13.875,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_motion",
+          "area": "mirrors_and_stones",
+          "phash_distance": 4,
+          "hist_distance": 0.148,
+          "sift_inliers": 25,
+          "sift_good": 28
+        },
+        {
+          "level_id": "worlds_collide_mirrors_and_stones_v2",
+          "area": "worlds_collide",
+          "phash_distance": 16,
+          "hist_distance": 1.3884,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "infinite_crystal_hack_v5",
+          "area": "mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.2803,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "dragon_drag",
+          "area": "beams_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3882,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "there_and_back",
+          "area": "mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3882,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_motion",
+        "area": "mirrors_and_stones",
+        "phash_distance": 4,
+        "hist_distance": 0.148,
+        "sift_inliers": 25,
+        "sift_good": 28,
+        "consistent_samples": 2
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p14\\samples\\00020.000.jpg",
+          "time": 20.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_motion.webp",
+          "first_sample": 20.0,
+          "last_sample": 25.0,
+          "sample_count": 2,
+          "reason": "中央不规则小岛上镜子的朝向、左下长桥及桥端圆形机关，与mirror_motion参考布局一致。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 14,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 59778900,
+          "coordinates": [
+            161.0,
+            11.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirrors_and_stones",
+      "map_url": "https://joric.github.io/ootss/#mirror_motion",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=14&t=14"
+    },
+    {
+      "event_id": "p14-002",
+      "level_id": "diag_slide",
+      "puzzle_start_time": 46.625,
+      "puzzle_end_time": 173.75,
+      "entry_transition_time": 46.125,
+      "exit_time": 174.125,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "diag_slide",
+          "area": "mirrors_and_stones",
+          "phash_distance": 6,
+          "hist_distance": 0.17,
+          "sift_inliers": 79,
+          "sift_good": 79
+        },
+        {
+          "level_id": "mirror_18",
+          "area": "mirror",
+          "phash_distance": 16,
+          "hist_distance": 1.1935,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "one_vs_three",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.2832,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "dont_push_the_button",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.3272,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "wrapping_mirror_red_v4",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3345,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "diag_slide",
+        "area": "mirrors_and_stones",
+        "phash_distance": 6,
+        "hist_distance": 0.17,
+        "sift_inliers": 79,
+        "sift_good": 79,
+        "consistent_samples": 25
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p14\\samples\\00095.000.jpg",
+          "time": 95.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\diag_slide.webp",
+          "first_sample": 50.0,
+          "last_sample": 170.0,
+          "sample_count": 25,
+          "reason": "左右分离的橙色平台围出中间方格水域，左侧L形台和右侧镜子/障碍物的位置与diag_slide参考图相符。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 14,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 59778902,
+          "coordinates": [
+            162.0,
+            11.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirrors_and_stones",
+      "map_url": "https://joric.github.io/ootss/#diag_slide",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=14&t=46"
+    },
+    {
+      "event_id": "p14-003",
+      "level_id": "the_long_way",
+      "puzzle_start_time": 174.125,
+      "puzzle_end_time": 280.0,
+      "entry_transition_time": 173.75,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "the_long_way",
+          "area": "mirrors_and_stones",
+          "phash_distance": 0,
+          "hist_distance": 0.0848,
+          "sift_inliers": 114,
+          "sift_good": 115
+        },
+        {
+          "level_id": "mirror_14",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.1913,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "tricky_swappers_v3",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 10,
+          "hist_distance": 1.4101,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "flame_wand",
+          "area": "heroes_and_artifacts",
+          "phash_distance": 14,
+          "hist_distance": 1.3536,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "endpoint_object",
+          "area": "beaming_objects",
+          "phash_distance": 16,
+          "hist_distance": 1.3718,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "the_long_way",
+        "area": "mirrors_and_stones",
+        "phash_distance": 0,
+        "hist_distance": 0.0848,
+        "sift_inliers": 114,
+        "sift_good": 115,
+        "consistent_samples": 21
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p14\\samples\\00175.000.jpg",
+          "time": 175.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\the_long_way.webp",
+          "first_sample": 175.0,
+          "last_sample": 275.0,
+          "sample_count": 21,
+          "reason": "宽阔L形岛中央的长窄桥、上方纵向岛端及右侧黄色漂浮机关对应the_long_way参考图。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 14,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 59778904,
+          "coordinates": [
+            163.0,
+            11.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirrors_and_stones",
+      "map_url": "https://joric.github.io/ootss/#the_long_way",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=14&t=174"
+    },
+    {
+      "event_id": "p14-004",
+      "level_id": "ride_together",
+      "puzzle_start_time": 303.5,
+      "puzzle_end_time": 400.0,
+      "entry_transition_time": 303.125,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "ride_together",
+          "area": "mirrors_and_stones",
+          "phash_distance": 2,
+          "hist_distance": 0.0922,
+          "sift_inliers": 33,
+          "sift_good": 37
+        },
+        {
+          "level_id": "a_wiz_out_of_water",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.3448,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "heroes1_2_v2",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 0.8012,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "heroes1_12_v2_alt",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 1.3975,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "skip_orange_wall_v3",
+          "area": "beams_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.399,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "ride_together",
+        "area": "mirrors_and_stones",
+        "phash_distance": 2,
+        "hist_distance": 0.0922,
+        "sift_inliers": 33,
+        "sift_good": 37,
+        "consistent_samples": 19
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p14\\samples\\00305.000.jpg",
+          "time": 305.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\ride_together.webp",
+          "first_sample": 305.0,
+          "last_sample": 395.0,
+          "sample_count": 19,
+          "reason": "长条码头上镜子与三颗圆石成簇，绿蓝机关分布在岸边，右端石柱与ride_together参考图一致。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 14,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 59778906,
+          "coordinates": [
+            157.0,
+            17.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirrors_and_stones",
+      "map_url": "https://joric.github.io/ootss/#ride_together",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=14&t=303"
+    },
+    {
+      "event_id": "p14-005",
+      "level_id": "two_bounce_v2",
+      "puzzle_start_time": 413.75,
+      "puzzle_end_time": 520.0,
+      "entry_transition_time": 413.25,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "two_bounce_v2",
+          "area": "mirrors_and_stones",
+          "phash_distance": 2,
+          "hist_distance": 0.359,
+          "sift_inliers": 85,
+          "sift_good": 91
+        },
+        {
+          "level_id": "meta_orange_purple_2",
+          "area": "beams_and_mirrors",
+          "phash_distance": 16,
+          "hist_distance": 1.2309,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "heroes3_8_thief",
+          "area": "heroes3",
+          "phash_distance": 18,
+          "hist_distance": 1.3085,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "purple_beam_intro_v2_alt",
+          "area": "beams_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3587,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "bypass_gates",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.3701,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "two_bounce_v2",
+        "area": "mirrors_and_stones",
+        "phash_distance": 2,
+        "hist_distance": 0.359,
+        "sift_inliers": 85,
+        "sift_good": 91,
+        "consistent_samples": 21
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p14\\samples\\00415.000.jpg",
+          "time": 415.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\two_bounce_v2.webp",
+          "first_sample": 415.0,
+          "last_sample": 515.0,
+          "sample_count": 21,
+          "reason": "左右两块大岛由低处窄桥连接，顶部独立小岛和右侧紫色圆球排列均吻合two_bounce_v2。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 14,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 115347698,
+          "coordinates": [
+            155.0,
+            23.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirrors_and_stones",
+      "map_url": "https://joric.github.io/ootss/#two_bounce_v2",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=14&t=413"
+    },
+    {
+      "event_id": "p14-006",
+      "level_id": "first_diversions",
+      "puzzle_start_time": 538.625,
+      "puzzle_end_time": 575.0,
+      "entry_transition_time": 538.125,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "first_diversions",
+          "area": "mirrors_and_stones",
+          "phash_distance": 4,
+          "hist_distance": 0.2172,
+          "sift_inliers": 104,
+          "sift_good": 118
+        },
+        {
+          "level_id": "pugo",
+          "area": "clones",
+          "phash_distance": 20,
+          "hist_distance": 0.8072,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "heroes2_21b",
+          "area": "heroes2",
+          "phash_distance": 20,
+          "hist_distance": 1.0421,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "metamirror_different_dir_alt",
+          "area": "metamirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.0758,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "drowner",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.2991,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "first_diversions",
+        "area": "mirrors_and_stones",
+        "phash_distance": 4,
+        "hist_distance": 0.2172,
+        "sift_inliers": 104,
+        "sift_good": 118,
+        "consistent_samples": 7
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p14\\samples\\00540.000.jpg",
+          "time": 540.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\first_diversions.webp",
+          "first_sample": 540.0,
+          "last_sample": 570.0,
+          "sample_count": 7,
+          "reason": "多块岛屿环绕中心水道，左上和下方平台上的机关分布及右侧城堡/瀑布结构与first_diversions一致。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 14,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 59772022,
+          "coordinates": [
+            103.0,
+            20.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirrors_and_stones",
+      "map_url": "https://joric.github.io/ootss/#first_diversions",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=14&t=538"
+    },
+    {
+      "event_id": "p14-007",
+      "level_id": "river_dictionary_alt_up",
+      "puzzle_start_time": 594.75,
+      "puzzle_end_time": 782.125,
+      "entry_transition_time": 594.25,
+      "exit_time": 782.125,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "river_dictionary_alt_up",
+          "area": "mirrors_and_stones",
+          "phash_distance": 6,
+          "hist_distance": 0.1607,
+          "sift_inliers": 124,
+          "sift_good": 132
+        },
+        {
+          "level_id": "bard_range6",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.165,
+          "sift_inliers": 4,
+          "sift_good": 8
+        },
+        {
+          "level_id": "smash_or_dash_vs2",
+          "area": "beams_and_mirrors",
+          "phash_distance": 16,
+          "hist_distance": 1.0792,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "easy_situation_v2",
+          "area": "heroes_and_water",
+          "phash_distance": 16,
+          "hist_distance": 1.2218,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "synchronized_swimmers",
+          "area": "heroes_and_water",
+          "phash_distance": 16,
+          "hist_distance": 1.3639,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "river_dictionary_alt_up",
+        "area": "mirrors_and_stones",
+        "phash_distance": 6,
+        "hist_distance": 0.1607,
+        "sift_inliers": 124,
+        "sift_good": 132,
+        "consistent_samples": 8
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p14\\samples\\00600.000.jpg",
+          "time": 600.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\river_dictionary_alt_up.webp",
+          "first_sample": 600.0,
+          "last_sample": 640.0,
+          "sample_count": 8,
+          "reason": "纵向城市水渠左侧有两块棕色障碍，右侧为平直水道并带上端绿色机关；后续镜头保持同一地图连续解题。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [
+        {
+          "type": "merge_adjacent_fragment",
+          "source_event_id": "p14-008",
+          "reason": "同一river_dictionary场景连续推进；两候选间没有黑屏转场，合并为一次访问。"
+        }
+      ],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 14,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 46144632,
+          "coordinates": [
+            104.0,
+            15.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirrors_and_stones",
+      "map_url": "https://joric.github.io/ootss/#river_dictionary_alt_up",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=14&t=594"
+    },
+    {
+      "event_id": "p14-009",
+      "level_id": "far_river",
+      "puzzle_start_time": 782.625,
+      "puzzle_end_time": 835.0,
+      "entry_transition_time": 782.125,
+      "exit_time": 835.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "far_river",
+          "area": "mirrors_and_stones",
+          "phash_distance": 4,
+          "hist_distance": 0.0648,
+          "sift_inliers": 110,
+          "sift_good": 117
+        },
+        {
+          "level_id": "worlds_collide_heroes_and_promesst_v4",
+          "area": "worlds_collide",
+          "phash_distance": 20,
+          "hist_distance": 1.3884,
+          "sift_inliers": 5,
+          "sift_good": 20
+        },
+        {
+          "level_id": "floating_gardens",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.2454,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "submarine_far_away",
+          "area": "beams_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.4118,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "monkey_in_the_midpoint",
+          "area": "promesst3",
+          "phash_distance": 22,
+          "hist_distance": 1.2607,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "far_river",
+        "area": "mirrors_and_stones",
+        "phash_distance": 4,
+        "hist_distance": 0.0648,
+        "sift_inliers": 110,
+        "sift_good": 117,
+        "consistent_samples": 10
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p14\\samples\\00800.000.jpg",
+          "time": 800.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\far_river.webp",
+          "first_sample": 785.0,
+          "last_sample": 830.0,
+          "sample_count": 10,
+          "reason": "弯曲的窄岛从下方平台向右上延伸，路径上绿机关和圆石位置与far_river参考图一致。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 14,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681163,
+          "coordinates": [
+            115.0,
+            16.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirrors_and_stones",
+      "map_url": "https://joric.github.io/ootss/#far_river",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=14&t=782"
+    },
+    {
+      "event_id": "p14-010",
+      "level_id": "ditching_cargo",
+      "puzzle_start_time": 835.25,
+      "puzzle_end_time": 909.375,
+      "entry_transition_time": 835.0,
+      "exit_time": 909.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "ditching_cargo",
+          "area": "mirrors_and_stones",
+          "phash_distance": 2,
+          "hist_distance": 0.4822,
+          "sift_inliers": 75,
+          "sift_good": 81
+        },
+        {
+          "level_id": "mirror_10_b_v2",
+          "area": "mirror",
+          "phash_distance": 16,
+          "hist_distance": 1.411,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "flamethrower",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.2329,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "bard_range4",
+          "area": "heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3934,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "thats_my_ride",
+          "area": "mirrors_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.0073,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "ditching_cargo",
+        "area": "mirrors_and_stones",
+        "phash_distance": 2,
+        "hist_distance": 0.4822,
+        "sift_inliers": 75,
+        "sift_good": 81,
+        "consistent_samples": 14
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p14\\samples\\00855.000.jpg",
+          "time": 855.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\ditching_cargo.webp",
+          "first_sample": 840.0,
+          "last_sample": 905.0,
+          "sample_count": 14,
+          "reason": "狭长上方岛与下方独立方形岛被横向水流分开，右下平台有金色圆形机关，对应ditching_cargo。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 14,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681157,
+          "coordinates": [
+            116.0,
+            16.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirrors_and_stones",
+      "map_url": "https://joric.github.io/ootss/#ditching_cargo",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=14&t=835"
+    },
+    {
+      "event_id": "p14-011",
+      "level_id": "unblock_block_alt",
+      "puzzle_start_time": 909.75,
+      "puzzle_end_time": 984.0,
+      "entry_transition_time": 909.375,
+      "exit_time": 984.375,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "unblock_block_alt",
+          "area": "mirrors_and_stones",
+          "phash_distance": 6,
+          "hist_distance": 0.0721,
+          "sift_inliers": 89,
+          "sift_good": 95
+        },
+        {
+          "level_id": "metamirror_c_alt",
+          "area": "metamirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.2003,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "elope",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.2276,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "synchronized_swimmers",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.2839,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "endpoint_object",
+          "area": "beaming_objects",
+          "phash_distance": 18,
+          "hist_distance": 1.2994,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "unblock_block_alt",
+        "area": "mirrors_and_stones",
+        "phash_distance": 6,
+        "hist_distance": 0.0721,
+        "sift_inliers": 89,
+        "sift_good": 95,
+        "consistent_samples": 15
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p14\\samples\\00960.000.jpg",
+          "time": 960.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\unblock_block_alt.webp",
+          "first_sample": 910.0,
+          "last_sample": 980.0,
+          "sample_count": 15,
+          "reason": "上、下两块雪白边缘橙色平台分处水域两侧，黑色石块与右侧木台金色机关位置匹配unblock_block_alt。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 14,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681203,
+          "coordinates": [
+            117.0,
+            16.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirrors_and_stones",
+      "map_url": "https://joric.github.io/ootss/#unblock_block_alt",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=14&t=909"
+    },
+    {
+      "event_id": "p14-012",
+      "level_id": "there_and_back",
+      "puzzle_start_time": 984.375,
+      "puzzle_end_time": 1045.0,
+      "entry_transition_time": 984.0,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "there_and_back",
+          "area": "mirrors_and_stones",
+          "phash_distance": 2,
+          "hist_distance": 0.142,
+          "sift_inliers": 58,
+          "sift_good": 64
+        },
+        {
+          "level_id": "gem_transport_2",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.3693,
+          "sift_inliers": 4,
+          "sift_good": 8
+        },
+        {
+          "level_id": "infinite_crystal_hack_v5",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 0.8571,
+          "sift_inliers": 0,
+          "sift_good": 11
+        },
+        {
+          "level_id": "through_push",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.3328,
+          "sift_inliers": 0,
+          "sift_good": 22
+        },
+        {
+          "level_id": "promesst3_streamlined",
+          "area": "promesst3",
+          "phash_distance": 20,
+          "hist_distance": 1.4063,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "there_and_back",
+        "area": "mirrors_and_stones",
+        "phash_distance": 2,
+        "hist_distance": 0.142,
+        "sift_inliers": 58,
+        "sift_good": 64,
+        "consistent_samples": 12
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p14\\samples\\00985.000.jpg",
+          "time": 985.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\there_and_back.webp",
+          "first_sample": 985.0,
+          "last_sample": 1040.0,
+          "sample_count": 12,
+          "reason": "窄小弯折岛居于开阔水面中央，左侧一排绿色漂浮机关和上边缘黄色方块与there_and_back吻合。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 14,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681187,
+          "coordinates": [
+            118.0,
+            16.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirrors_and_stones",
+      "map_url": "https://joric.github.io/ootss/#there_and_back",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=14&t=984"
+    },
+    {
+      "event_id": "p14-013",
+      "level_id": "sink_together",
+      "puzzle_start_time": 1080.75,
+      "puzzle_end_time": 1159.75,
+      "entry_transition_time": 1080.25,
+      "exit_time": 1160.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "sink_together",
+          "area": "mirrors_and_stones",
+          "phash_distance": 4,
+          "hist_distance": 0.0871,
+          "sift_inliers": 64,
+          "sift_good": 68
+        },
+        {
+          "level_id": "easy_situation_v2",
+          "area": "heroes_and_water",
+          "phash_distance": 22,
+          "hist_distance": 1.363,
+          "sift_inliers": 6,
+          "sift_good": 9
+        },
+        {
+          "level_id": "multipurpose",
+          "area": "mirrorable_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3828,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "metamirror_different_dir_3_alt",
+          "area": "metamirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3884,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "heroes1_3",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 1.3022,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "sink_together",
+        "area": "mirrors_and_stones",
+        "phash_distance": 4,
+        "hist_distance": 0.0871,
+        "sift_inliers": 64,
+        "sift_good": 68,
+        "consistent_samples": 14
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p14\\samples\\01095.000.jpg",
+          "time": 1095.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\sink_together.webp",
+          "first_sample": 1085.0,
+          "last_sample": 1150.0,
+          "sample_count": 14,
+          "reason": "宽阔L形浅橙平台围住水面，右下孤立浮台带黄色机关，布局对应sink_together。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 14,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 87044915,
+          "coordinates": [
+            124.0,
+            16.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirrors_and_stones",
+      "map_url": "https://joric.github.io/ootss/#sink_together",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=14&t=1080"
+    },
+    {
+      "event_id": "p14-014",
+      "level_id": "in_the_way_alt_3",
+      "puzzle_start_time": 1160.25,
+      "puzzle_end_time": 1230.0,
+      "entry_transition_time": 1159.75,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "in_the_way_alt_3",
+          "area": "mirrors_and_stones",
+          "phash_distance": 2,
+          "hist_distance": 0.0905,
+          "sift_inliers": 67,
+          "sift_good": 85
+        },
+        {
+          "level_id": "friendly_nudges",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.3879,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "mirror_1",
+          "area": "mirror",
+          "phash_distance": 20,
+          "hist_distance": 1.3217,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "submarine_far_away",
+          "area": "beams_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.4106,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "heroes1_9",
+          "area": "heroes1",
+          "phash_distance": 22,
+          "hist_distance": 1.3155,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "in_the_way_alt_3",
+        "area": "mirrors_and_stones",
+        "phash_distance": 2,
+        "hist_distance": 0.0905,
+        "sift_inliers": 67,
+        "sift_good": 85,
+        "consistent_samples": 13
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p14\\samples\\01165.000.jpg",
+          "time": 1165.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\in_the_way_alt_3.webp",
+          "first_sample": 1165.0,
+          "last_sample": 1225.0,
+          "sample_count": 13,
+          "reason": "上方横桥和右侧下折平台、两道向下水流及多颗球体与in_the_way_alt_3参考图一致。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 14,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681193,
+          "coordinates": [
+            124.0,
+            15.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirrors_and_stones",
+      "map_url": "https://joric.github.io/ootss/#in_the_way_alt_3",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=14&t=1160"
+    },
+    {
+      "event_id": "p14-015",
+      "level_id": "coax_a_lot",
+      "puzzle_start_time": 1244.125,
+      "puzzle_end_time": 1378.875,
+      "entry_transition_time": 1243.625,
+      "exit_time": 1379.375,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "coax_a_lot",
+          "area": "mirrors_and_stones",
+          "phash_distance": 6,
+          "hist_distance": 0.3335,
+          "sift_inliers": 105,
+          "sift_good": 116
+        },
+        {
+          "level_id": "heroes2_12_v2",
+          "area": "heroes2",
+          "phash_distance": 14,
+          "hist_distance": 1.3464,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "bard_stack_intro",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 0.8275,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "metamirror_c_alt",
+          "area": "metamirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.1101,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "mirror_dweller",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.2132,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "coax_a_lot",
+        "area": "mirrors_and_stones",
+        "phash_distance": 6,
+        "hist_distance": 0.3335,
+        "sift_inliers": 105,
+        "sift_good": 116,
+        "consistent_samples": 26
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p14\\samples\\01300.000.jpg",
+          "time": 1300.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\coax_a_lot.webp",
+          "first_sample": 1245.0,
+          "last_sample": 1370.0,
+          "sample_count": 26,
+          "reason": "中央长条岛横跨瀑布水道，岛上两颗蓝色装置及下方孤立木筏相对位置吻合coax_a_lot。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 14,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681651,
+          "coordinates": [
+            130.0,
+            14.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirrors_and_stones",
+      "map_url": "https://joric.github.io/ootss/#coax_a_lot",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=14&t=1244"
+    },
+    {
+      "event_id": "p14-016",
+      "level_id": "river_push_v4",
+      "puzzle_start_time": 1379.375,
+      "puzzle_end_time": 1465.0,
+      "entry_transition_time": 1378.875,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "river_push_v4",
+          "area": "mirrors_and_stones",
+          "phash_distance": 6,
+          "hist_distance": 0.4277,
+          "sift_inliers": 83,
+          "sift_good": 91
+        },
+        {
+          "level_id": "mirror_sink",
+          "area": "mirror",
+          "phash_distance": 22,
+          "hist_distance": 1.2103,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "sp_crystal_tuto",
+          "area": "beams_and_stones",
+          "phash_distance": 16,
+          "hist_distance": 1.3572,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "skipping_shores_v3",
+          "area": "skipping_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.391,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "new_new_new_slam",
+          "area": "mirrorable_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3763,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "river_push_v4",
+        "area": "mirrors_and_stones",
+        "phash_distance": 6,
+        "hist_distance": 0.4277,
+        "sift_inliers": 83,
+        "sift_good": 91,
+        "consistent_samples": 17
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p14\\samples\\01395.000.jpg",
+          "time": 1395.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\river_push_v4.webp",
+          "first_sample": 1380.0,
+          "last_sample": 1460.0,
+          "sample_count": 17,
+          "reason": "中央横向长岛上有两颗圆石和深色障碍，周围水道及远处竖桩与river_push_v4相符。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 14,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 58721246,
+          "coordinates": [
+            131.0,
+            14.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirrors_and_stones",
+      "map_url": "https://joric.github.io/ootss/#river_push_v4",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=14&t=1379"
+    },
+    {
+      "event_id": "p14-017",
+      "level_id": "river_plinko_v2_actual",
+      "puzzle_start_time": 1470.75,
+      "puzzle_end_time": 1620.0,
+      "entry_transition_time": 1470.25,
+      "exit_time": 1620.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "river_plinko_v2_actual",
+          "area": "mirrors_and_stones",
+          "phash_distance": 2,
+          "hist_distance": 0.2209,
+          "sift_inliers": 79,
+          "sift_good": 92
+        },
+        {
+          "level_id": "purple_wall_around_easier_vp",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.2539,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "pull_together",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.2592,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "reel_it_in",
+          "area": "mirrorable_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.2892,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "beam_rooms",
+          "area": "promesst1_and_2",
+          "phash_distance": 20,
+          "hist_distance": 1.3081,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "river_plinko_v2_actual",
+        "area": "mirrors_and_stones",
+        "phash_distance": 2,
+        "hist_distance": 0.2209,
+        "sift_inliers": 79,
+        "sift_good": 92,
+        "consistent_samples": 11
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p14\\samples\\01475.000.jpg",
+          "time": 1475.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\river_plinko_v2_actual.webp",
+          "first_sample": 1475.0,
+          "last_sample": 1525.0,
+          "sample_count": 11,
+          "reason": "同一橙色平台上有三颗浅色球和石块，平台两端的水道/栅栏关系与river_plinko_v2_actual一致；后续候选是同一连续关卡。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [
+        {
+          "type": "merge_adjacent_fragment",
+          "source_event_id": "p14-018",
+          "reason": "相同river_plinko布局的连续解题镜头；中间没有转场，按单次访问合并。"
+        }
+      ],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 14,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 115413365,
+          "coordinates": [
+            139.0,
+            18.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirrors_and_stones",
+      "map_url": "https://joric.github.io/ootss/#river_plinko_v2_actual",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=14&t=1470"
+    }
+  ]
+}

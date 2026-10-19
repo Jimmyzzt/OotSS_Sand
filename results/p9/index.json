@@ -1,0 +1,1066 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 9,
+  "duration": 1825.152,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage1\\P09__【西】推车与短杖+项环[北1西2_北1西1+南1西2_南1西1].mp4",
+  "title": "【西】推车与短杖+项环[北1西2/北1西1+南1西2/南1西1]",
+  "stage": 1,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "按候选图和全片图册逐项比对确认布局；过短或不一致的候选保留 unknown。主世界入口未逐个核验，保持 unverified；完成状态保持 unknown。",
+  "events": [
+    {
+      "event_id": "p9-001",
+      "level_id": "pushy",
+      "puzzle_start_time": 36.625,
+      "puzzle_end_time": 55.0,
+      "entry_transition_time": 36.25,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "pushy",
+          "area": "promesst1_and_2",
+          "phash_distance": 6,
+          "hist_distance": 0.145,
+          "sift_inliers": 118,
+          "sift_good": 126
+        },
+        {
+          "level_id": "metamirror_c_alt",
+          "area": "metamirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.4136,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "gem_pushers",
+          "area": "promesst1_and_2",
+          "phash_distance": 20,
+          "hist_distance": 1.2668,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "place_to_stand",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.4008,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "metamirror_different_dir_2_alt",
+          "area": "metamirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.4114,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "pushy",
+        "area": "promesst1_and_2",
+        "phash_distance": 6,
+        "hist_distance": 0.145,
+        "sift_inliers": 118,
+        "sift_good": 126,
+        "consistent_samples": 2,
+        "status": "visually_confirmed",
+        "visual_reason": "长条紫色水平光束横过石廊，左侧紫色发射器和下方青色光束/通道位置与 pushy 参考图一致。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p9\\samples\\00040.000.jpg",
+          "time": 40.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\pushy.webp",
+          "first_sample": 40.0,
+          "last_sample": 50.0,
+          "sample_count": 2,
+          "reason": "长条紫色水平光束横过石廊，左侧紫色发射器和下方青色光束/通道位置与 pushy 参考图一致。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 9,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 115362521,
+          "coordinates": [
+            41.0,
+            79.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "promesst1_and_2",
+      "map_url": "https://joric.github.io/ootss/#pushy",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=9&t=36"
+    },
+    {
+      "event_id": "p9-002",
+      "level_id": "right_hand_man",
+      "puzzle_start_time": 196.875,
+      "puzzle_end_time": 343.75,
+      "entry_transition_time": 196.5,
+      "exit_time": 344.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "right_hand_man",
+          "area": "promesst1_and_2",
+          "phash_distance": 6,
+          "hist_distance": 0.1058,
+          "sift_inliers": 153,
+          "sift_good": 159
+        },
+        {
+          "level_id": "druids_stone_alt",
+          "area": "heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3933,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "mirror_4",
+          "area": "mirror",
+          "phash_distance": 20,
+          "hist_distance": 1.4097,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "protrusions",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.414,
+          "sift_inliers": 4,
+          "sift_good": 8
+        },
+        {
+          "level_id": "crystals_not_stones",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.1713,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "right_hand_man",
+        "area": "promesst1_and_2",
+        "phash_distance": 6,
+        "hist_distance": 0.1058,
+        "sift_inliers": 153,
+        "sift_good": 159,
+        "consistent_samples": 29,
+        "status": "visually_confirmed",
+        "visual_reason": "浅色方形庭院、中央圆形装置、左下黄色石块与右侧箱体及人物位置关系吻合。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p9\\samples\\00205.000.jpg",
+          "time": 205.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\right_hand_man.webp",
+          "first_sample": 200.0,
+          "last_sample": 340.0,
+          "sample_count": 29,
+          "reason": "浅色方形庭院、中央圆形装置、左下黄色石块与右侧箱体及人物位置关系吻合。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 9,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 95471585,
+          "coordinates": [
+            38.0,
+            83.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "promesst1_and_2",
+      "map_url": "https://joric.github.io/ootss/#right_hand_man",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=9&t=196"
+    },
+    {
+      "event_id": "p9-003",
+      "level_id": "forbidden_room",
+      "puzzle_start_time": 351.5,
+      "puzzle_end_time": 464.875,
+      "entry_transition_time": 351.125,
+      "exit_time": 466.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "forbidden_room",
+          "area": "promesst1_and_2",
+          "phash_distance": 4,
+          "hist_distance": 0.1338,
+          "sift_inliers": 127,
+          "sift_good": 133
+        },
+        {
+          "level_id": "stones_not_crystals",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.1921,
+          "sift_inliers": 4,
+          "sift_good": 9
+        },
+        {
+          "level_id": "meta_orange_purple",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.2674,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "heroes2_5_altE",
+          "area": "heroes2",
+          "phash_distance": 20,
+          "hist_distance": 1.3779,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "crystals_not_stones",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.14,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "forbidden_room",
+        "area": "promesst1_and_2",
+        "phash_distance": 4,
+        "hist_distance": 0.1338,
+        "sift_inliers": 127,
+        "sift_good": 133,
+        "consistent_samples": 22,
+        "status": "visually_confirmed",
+        "visual_reason": "狭长石板场地左侧蓝色圆钮、中央红色符号板与黄石、右上红色晶体的相对位置一致。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p9\\samples\\00370.000.jpg",
+          "time": 370.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\forbidden_room.webp",
+          "first_sample": 355.0,
+          "last_sample": 460.0,
+          "sample_count": 22,
+          "reason": "狭长石板场地左侧蓝色圆钮、中央红色符号板与黄石、右上红色晶体的相对位置一致。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 9,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 115362523,
+          "coordinates": [
+            46.0,
+            83.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "promesst1_and_2",
+      "map_url": "https://joric.github.io/ootss/#forbidden_room",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=9&t=351"
+    },
+    {
+      "event_id": "p9-004",
+      "level_id": "beam_rooms",
+      "puzzle_start_time": 524.0,
+      "puzzle_end_time": 866.375,
+      "entry_transition_time": 523.625,
+      "exit_time": 867.375,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "beam_rooms",
+          "area": "promesst1_and_2",
+          "phash_distance": 6,
+          "hist_distance": 0.1745,
+          "sift_inliers": 101,
+          "sift_good": 105
+        },
+        {
+          "level_id": "sink_together",
+          "area": "mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4045,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "purple_beam_intro_v2_alt",
+          "area": "beams_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3455,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "invisible_hand",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 22,
+          "hist_distance": 1.1551,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes3_druid_a",
+          "area": "heroes3",
+          "phash_distance": 22,
+          "hist_distance": 1.23,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "beam_rooms",
+        "area": "promesst1_and_2",
+        "phash_distance": 6,
+        "hist_distance": 0.1745,
+        "sift_inliers": 101,
+        "sift_good": 105,
+        "consistent_samples": 62,
+        "status": "visually_confirmed",
+        "visual_reason": "洞穴中横向紫束、中央竖直琥珀束及下方绿色束三者交叉布局与参考图一致。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p9\\samples\\00545.000.jpg",
+          "time": 545.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\beam_rooms.webp",
+          "first_sample": 525.0,
+          "last_sample": 845.0,
+          "sample_count": 62,
+          "reason": "洞穴中横向紫束、中央竖直琥珀束及下方绿色束三者交叉布局与参考图一致。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [
+        {
+          "type": "boundary_extension",
+          "from": 850.0,
+          "to": 866.375,
+          "reason": "全片sheet_05中beam_rooms的同一双横竖光束洞窟持续显示至14:25（865秒）；14:30离开并切换至主世界。scan.json标记866.375–867.375为黑场转场，因此以转场起点866.375作为谜题画面结束边界。"
+        }
+      ],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 9,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 46139214,
+          "coordinates": [
+            37.0,
+            87.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "promesst1_and_2",
+      "map_url": "https://joric.github.io/ootss/#beam_rooms",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=9&t=524"
+    },
+    {
+      "event_id": "p9-005",
+      "level_id": "target_practice_gem",
+      "puzzle_start_time": 882.625,
+      "puzzle_end_time": 935.5,
+      "entry_transition_time": 882.25,
+      "exit_time": 936.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "target_practice_gem",
+          "area": "promesst1_and_2",
+          "phash_distance": 4,
+          "hist_distance": 0.1262,
+          "sift_inliers": 87,
+          "sift_good": 90
+        },
+        {
+          "level_id": "forbidden_room",
+          "area": "promesst1_and_2",
+          "phash_distance": 18,
+          "hist_distance": 1.0502,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "wizard_and_druid_alt_5",
+          "area": "heroes3",
+          "phash_distance": 18,
+          "hist_distance": 1.1358,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "middle_smash",
+          "area": "beaming_objects",
+          "phash_distance": 18,
+          "hist_distance": 1.2818,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "mirror_15",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.4103,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "target_practice_gem",
+        "area": "promesst1_and_2",
+        "phash_distance": 4,
+        "hist_distance": 0.1262,
+        "sift_inliers": 87,
+        "sift_good": 90,
+        "consistent_samples": 10,
+        "status": "visually_confirmed",
+        "visual_reason": "狭长洞室底端三块黄色石头成排，右侧有圆形橙色装置、左下绿色图标，布局吻合。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p9\\samples\\00890.000.jpg",
+          "time": 890.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\target_practice_gem.webp",
+          "first_sample": 885.0,
+          "last_sample": 930.0,
+          "sample_count": 10,
+          "reason": "狭长洞室底端三块黄色石头成排，右侧有圆形橙色装置、左下绿色图标，布局吻合。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 9,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 115362524,
+          "coordinates": [
+            49.0,
+            87.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "promesst1_and_2",
+      "map_url": "https://joric.github.io/ootss/#target_practice_gem",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=9&t=882"
+    },
+    {
+      "event_id": "p9-006",
+      "level_id": "gem_pushers",
+      "puzzle_start_time": 962.375,
+      "puzzle_end_time": 1133.875,
+      "entry_transition_time": 961.875,
+      "exit_time": 1135.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "gem_pushers",
+          "area": "promesst1_and_2",
+          "phash_distance": 8,
+          "hist_distance": 0.5528,
+          "sift_inliers": 29,
+          "sift_good": 32
+        },
+        {
+          "level_id": "pushy",
+          "area": "promesst1_and_2",
+          "phash_distance": 18,
+          "hist_distance": 1.2786,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "promesst2_streamlined",
+          "area": "promesst1_and_2",
+          "phash_distance": 18,
+          "hist_distance": 1.3056,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "right_hand_man",
+          "area": "promesst1_and_2",
+          "phash_distance": 18,
+          "hist_distance": 1.347,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "dual_screen",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3155,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "gem_pushers",
+        "area": "promesst1_and_2",
+        "phash_distance": 8,
+        "hist_distance": 0.5528,
+        "sift_inliers": 29,
+        "sift_good": 32,
+        "consistent_samples": 2,
+        "status": "visually_confirmed",
+        "visual_reason": "16:07的起始灰石3×3机关房与gem_pushers参考图左上房一致：中央圆形机关、右侧橙色推块/绿色方块和边缘蓝晶的位置吻合。随后镜头沿同一连续画面向右移动到另一间3×3石室，再向下展示带蓝晶及橙色方块的相邻石室（这些房间在参考图下方和右侧可见），18:35又回到同一蓝边框起始房。全段可见连续的蓝色活动边框/同一地牢石墙环境，scan只在961.875–962.375标记入场黑场、1133.875–1135标记离场黑场，中间无新转场。因此稀疏候选造成的片段与unknown段属于同一次gem_pushers大关访问，不是独立新关。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p9\\packets\\962.000_1135.000_5.000_1280\\00967.000.jpg",
+          "time": 967.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\gem_pushers.webp",
+          "reason": "16:07的起始灰石3×3机关房与gem_pushers参考图左上房一致：中央圆形机关、右侧橙色推块/绿色方块和边缘蓝晶的位置吻合。随后镜头沿同一连续画面向右移动到另一间3×3石室，再向下展示带蓝晶及橙色方块的相邻石室（这些房间在参考图下方和右侧可见），18:35又回到同一蓝边框起始房。全段可见连续的蓝色活动边框/同一地牢石墙环境，scan只在961.875–962.375标记入场黑场、1133.875–1135标记离场黑场，中间无新转场。因此稀疏候选造成的片段与unknown段属于同一次gem_pushers大关访问，不是独立新关。"
+        },
+        {
+          "type": "continuous_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p9\\packets\\962.000_1135.000_5.000_1280\\00977.000.jpg",
+          "time": 977.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\gem_pushers.webp",
+          "reason": "右移后的带蓝色轮廓石室继续与参考图中起始3×3房右侧相邻区域连通；未发生黑场转场。"
+        },
+        {
+          "type": "continuous_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p9\\packets\\962.000_1135.000_5.000_1280\\01072.000.jpg",
+          "time": 1072.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\gem_pushers.webp",
+          "reason": "向下滚动显示相邻灰石机关房，其蓝色晶体和橙色推块对应参考图底部/右侧可见区域。"
+        },
+        {
+          "type": "continuous_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p9\\packets\\962.000_1135.000_5.000_1280\\01117.000.jpg",
+          "time": 1117.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\gem_pushers.webp",
+          "reason": "画面回到同一蓝色活动边框围住的起始石室，佐证前段为同一巨大连续地图的滚屏探索。"
+        },
+        {
+          "type": "transition",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p9\\samples\\01135.000.jpg",
+          "time": 1135.0,
+          "reason": "scan.json将1133.875–1135.0标记为离场黑场转场；据此以1133.875结束谜题画面。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [
+        {
+          "type": "merge_and_reclassify_continuous_visit",
+          "removed_event_ids": [
+            "p9-007",
+            "p9-012"
+          ],
+          "from": 962.375,
+          "old_end": 980.0,
+          "new_start": 962.375,
+          "new_end": 1133.875,
+          "reason": "16:07的起始灰石3×3机关房与gem_pushers参考图左上房一致：中央圆形机关、右侧橙色推块/绿色方块和边缘蓝晶的位置吻合。随后镜头沿同一连续画面向右移动到另一间3×3石室，再向下展示带蓝晶及橙色方块的相邻石室（这些房间在参考图下方和右侧可见），18:35又回到同一蓝边框起始房。全段可见连续的蓝色活动边框/同一地牢石墙环境，scan只在961.875–962.375标记入场黑场、1133.875–1135标记离场黑场，中间无新转场。因此稀疏候选造成的片段与unknown段属于同一次gem_pushers大关访问，不是独立新关。 原p9-007为同一gem_pushers布局的稀疏滚动镜头候选；p9-012先前因低质量全局搜索失配暂列unknown，现结合1280宽/5秒packet和完整参考图认定皆为同一访问，故统一为单条事件。"
+        }
+      ],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 9,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 115362522,
+          "coordinates": [
+            57.0,
+            85.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "promesst1_and_2",
+      "map_url": "https://joric.github.io/ootss/#gem_pushers",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=9&t=962"
+    },
+    {
+      "event_id": "p9-008",
+      "level_id": "green_revolution",
+      "puzzle_start_time": 1178.75,
+      "puzzle_end_time": 1251.25,
+      "entry_transition_time": 1178.375,
+      "exit_time": 1252.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "green_revolution",
+          "area": "promesst1_and_2",
+          "phash_distance": 4,
+          "hist_distance": 0.5288,
+          "sift_inliers": 80,
+          "sift_good": 81
+        },
+        {
+          "level_id": "pushy",
+          "area": "promesst1_and_2",
+          "phash_distance": 22,
+          "hist_distance": 0.8694,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "purple_perpendicular",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 22,
+          "hist_distance": 1.0587,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "smash_grid_4",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 22,
+          "hist_distance": 1.2084,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "quadrants",
+          "area": "heroes_and_water",
+          "phash_distance": 22,
+          "hist_distance": 1.2478,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "green_revolution",
+        "area": "promesst1_and_2",
+        "phash_distance": 4,
+        "hist_distance": 0.5288,
+        "sift_inliers": 80,
+        "sift_good": 81,
+        "consistent_samples": 15,
+        "status": "visually_confirmed",
+        "visual_reason": "方形地面四周分布绿色发射器，中央蓝色圆形宝石及下侧出口位置与参考图一致。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p9\\samples\\01180.000.jpg",
+          "time": 1180.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\green_revolution.webp",
+          "first_sample": 1180.0,
+          "last_sample": 1250.0,
+          "sample_count": 15,
+          "reason": "方形地面四周分布绿色发射器，中央蓝色圆形宝石及下侧出口位置与参考图一致。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 9,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 59769946,
+          "coordinates": [
+            48.0,
+            58.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "promesst1_and_2",
+      "map_url": "https://joric.github.io/ootss/#green_revolution",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=9&t=1178"
+    },
+    {
+      "event_id": "p9-009",
+      "level_id": "torcoban_2",
+      "puzzle_start_time": 1261.875,
+      "puzzle_end_time": 1370.875,
+      "entry_transition_time": 1261.375,
+      "exit_time": 1372.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "torcoban_2",
+          "area": "promesst1_and_2",
+          "phash_distance": 4,
+          "hist_distance": 0.0853,
+          "sift_inliers": 127,
+          "sift_good": 136
+        },
+        {
+          "level_id": "mirror_hallway_v2",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 16,
+          "hist_distance": 1.352,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "through_maze_v2",
+          "area": "beaming_objects",
+          "phash_distance": 20,
+          "hist_distance": 0.6851,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "gatekeeping_v3",
+          "area": "heroes3",
+          "phash_distance": 20,
+          "hist_distance": 1.3624,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes2_22_v2",
+          "area": "heroes2",
+          "phash_distance": 22,
+          "hist_distance": 1.0938,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "torcoban_2",
+        "area": "promesst1_and_2",
+        "phash_distance": 4,
+        "hist_distance": 0.0853,
+        "sift_inliers": 127,
+        "sift_good": 136,
+        "consistent_samples": 22,
+        "status": "visually_confirmed",
+        "visual_reason": "青色光束从左上横贯通道，浅色砖路、蓝色圆钮与右下金色圆装置布局吻合。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p9\\samples\\01270.000.jpg",
+          "time": 1270.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\torcoban_2.webp",
+          "first_sample": 1265.0,
+          "last_sample": 1370.0,
+          "sample_count": 22,
+          "reason": "青色光束从左上横贯通道，浅色砖路、蓝色圆钮与右下金色圆装置布局吻合。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 9,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 115362525,
+          "coordinates": [
+            36.0,
+            57.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "promesst1_and_2",
+      "map_url": "https://joric.github.io/ootss/#torcoban_2",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=9&t=1261"
+    },
+    {
+      "event_id": "p9-010",
+      "level_id": "blue_revolution_v2",
+      "puzzle_start_time": 1444.0,
+      "puzzle_end_time": 1552.625,
+      "entry_transition_time": 1443.5,
+      "exit_time": 1553.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "blue_revolution_v2",
+          "area": "promesst1_and_2",
+          "phash_distance": 2,
+          "hist_distance": 0.0851,
+          "sift_inliers": 155,
+          "sift_good": 169
+        },
+        {
+          "level_id": "flame_wand",
+          "area": "heroes_and_artifacts",
+          "phash_distance": 16,
+          "hist_distance": 0.9795,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "quadrants",
+          "area": "heroes_and_water",
+          "phash_distance": 16,
+          "hist_distance": 1.1832,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "goblin_parity",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3653,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "heroes2_5_altE",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 1.41,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "blue_revolution_v2",
+        "area": "promesst1_and_2",
+        "phash_distance": 2,
+        "hist_distance": 0.0851,
+        "sift_inliers": 155,
+        "sift_good": 169,
+        "consistent_samples": 22,
+        "status": "visually_confirmed",
+        "visual_reason": "中央纵向通道两侧青色光柱，中央绿色发射器与右侧蓝色圆钮相对位置一致。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p9\\samples\\01480.000.jpg",
+          "time": 1480.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\blue_revolution_v2.webp",
+          "first_sample": 1445.0,
+          "last_sample": 1550.0,
+          "sample_count": 22,
+          "reason": "中央纵向通道两侧青色光柱，中央绿色发射器与右侧蓝色圆钮相对位置一致。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 9,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 95471584,
+          "coordinates": [
+            36.0,
+            52.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "promesst1_and_2",
+      "map_url": "https://joric.github.io/ootss/#blue_revolution_v2",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=9&t=1444"
+    },
+    {
+      "event_id": "p9-011",
+      "level_id": "cyan_overlap_intro_longer",
+      "puzzle_start_time": 1592.125,
+      "puzzle_end_time": 1763.5,
+      "entry_transition_time": 1591.75,
+      "exit_time": 1764.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "cyan_overlap_intro_longer",
+          "area": "promesst1_and_2",
+          "phash_distance": 4,
+          "hist_distance": 0.2878,
+          "sift_inliers": 73,
+          "sift_good": 80
+        },
+        {
+          "level_id": "wall_sneak",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.4108,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "mirror_pals",
+          "area": "mirror",
+          "phash_distance": 20,
+          "hist_distance": 1.4137,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes2_10",
+          "area": "heroes2",
+          "phash_distance": 22,
+          "hist_distance": 1.2595,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "gate_shatter",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.3502,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "cyan_overlap_intro_longer",
+        "area": "promesst1_and_2",
+        "phash_distance": 4,
+        "hist_distance": 0.2878,
+        "sift_inliers": 73,
+        "sift_good": 80,
+        "consistent_samples": 6,
+        "status": "visually_confirmed",
+        "visual_reason": "宽幅工业平台上左侧蓝色圆钮、中央分层平台和横向青色光束与参考图布局吻合。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "puzzle_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p9\\samples\\01595.000.jpg",
+          "time": 1595.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\cyan_overlap_intro_longer.webp",
+          "first_sample": 1595.0,
+          "last_sample": 1630.0,
+          "sample_count": 6,
+          "reason": "根agent对640宽补帧1600、1630、1675、1745及原始2048参考图复核，SIFT内点131/90/95/114、pHash 2/4/6/4；四处布局均对应cyan_overlap_intro_longer。全片仅有一次进入转场并于1763.5后返回主世界，期间为同一大关滚屏。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [
+        {
+          "type": "merge_scroll_fragments",
+          "source_event_ids": [
+            "p9-012",
+            "p9-013"
+          ],
+          "reason": "根agent高分辨率复核确认这是同一cyan_overlap_intro_longer关卡的连续滚屏，删除算法产生的两个弱匹配碎片。"
+        }
+      ],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 9,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 115557442,
+          "coordinates": [
+            56.0,
+            60.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "promesst1_and_2",
+      "map_url": "https://joric.github.io/ootss/#cyan_overlap_intro_longer",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=9&t=1592"
+    }
+  ]
+}

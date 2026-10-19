@@ -1,0 +1,3 @@
+﻿event_id,level_id,area,puzzle_start_time,puzzle_end_time,overworld_approach_time,entry_transition_time,review_status,outcome,map_entries,video_url,map_url
+p8-001,promesst1_streamlined,promesst1_and_2,36.375,829.125,,35.875,confirmed,unknown,"[{'marker_id': 75497730, 'coordinates': [61.0, 70.0, 0.0]}]",https://www.bilibili.com/video/BV13FH96bE4m/?p=8&t=36,https://joric.github.io/ootss/#promesst1_streamlined
+p8-002,promesst2_streamlined,promesst1_and_2,885.625,1873.875,,885.125,confirmed,unknown,"[{'marker_id': 75497732, 'coordinates': [44.0, 70.0, 0.0]}]",https://www.bilibili.com/video/BV13FH96bE4m/?p=8&t=885,https://joric.github.io/ootss/#promesst2_streamlined

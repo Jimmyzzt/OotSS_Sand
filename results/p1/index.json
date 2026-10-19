@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 1,
+  "duration": 404.583313,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage1\\P01__前言【务必观看】和基础操作教学.mp4",
+  "title": "前言【务必观看】和基础操作教学",
+  "stage": 1,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "全片图册显示本分主要是前言、按键/移动/撤销等基础操作示范、演示房间及主世界行走说明。未见清晰完整的独立谜题访问；室内画面作为基础教学示范而非可确认关卡记录。机器候选为零，故保留空事件列表。",
+  "events": [],
+  "reviewer": "Luna visual comparison",
+  "review_status": "reviewed_no_confirmable_visits"
+}

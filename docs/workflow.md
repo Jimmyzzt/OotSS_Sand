@@ -44,6 +44,16 @@ python -m ootss world-check --run runs/p4 --time 9 --level heroes3_10 --terrain 
 
 全部时间为当前分 P 开始后的秒数。扫描时间为 fps 采样近似值；不能用平均 FPS 推算可变帧率视频的精确帧号。必要时从 FFmpeg 输出 PTS 复查。更换视频、采样参数或算法版本会失效扫描缓存；不要在同一个输出目录处理不同视频。机器重跑永远不写 reviewed.json。
 
+## 整个系列与真实地图
+
+`python -m ootss series --discover-only` 更新作者的68个分P元数据；`python -m ootss series` 默认两路并发，yt-dlp下载最高480p与低码率音频，FFmpeg流复制合并。作者标题确定P1–24/P25–44/P45–68的阶段边界。`results/series/manifest.json`是可续传台账，记录实际路径、CID、完成状态及ffprobe时长；重跑保留同CID已有修复文件的路径，不要随意改名破坏抽帧来源。普通提取失败时，使用公开playurl授权返回的普通备用CDN，仍用yt-dlp下载；失败保留为failed，不伪造完成。
+
+已下载后 `python -m ootss.batch 25` 可以为指定分P做5秒采样、检索与候选对照图册，但只写proposed.json。看完全部时间轴图册后再写reviewed.json；不要将稀疏匹配的最后一帧当作关卡结束。大幅滚屏或内部房间切换会让pHash/局部特征失效，`python -m ootss.recovery 25`可在审核未覆盖区间请求640宽局部帧，不自动裁决。
+
+同一入口可能通往多个相连房间。需检查进出黑场、世界画面、箭头连续移动及返回起始参考布局的证据，再决定是否为一次Level_Entry访问；既不要把风格一致的所有房间强配成一张棋盘，也不要把每次镜头滚动当成一个新地表入口。不能确定则保留unknown。
+
+`python -m ootss atlas` 读取P1–24审核JSON，生成 `results/stage1/index.html`、index.json和visits.csv。默认只标confirmed且属于目标目录的ID，不填入未出现的入口；同关多次访问共用地图点。HTML内嵌数据，Leaflet、0–3级地图瓦片及关卡缩略图本地保存，直接双击可用，更高倍率瓦片联网加载。`?p=22`可直接筛选分P。`export`的SVG/PNG默认也使用真实地形背景。
+
 若需要5秒增密和允许短黑场，使用 `scan --interval 5 --black-min 0.125`。P4 的01:59转场只有一个8fps采样，0.25秒默认过滤会漏掉；允许单帧后应看前后截图过滤误报。扫描留存 `black_scores.npz`，无需重新解码即可试验黑场合并规则。图像样本损坏/缺失会触发重算；同目录换成另一个视频版本则报错，防止局部图包混用。
 
 原 starting_guide.md 已由上述工作流及实际结果说明替代：不实现 ASR 服务、Web 审核平台、复杂 Agent Adapter、自动训练、GitHub Issue 工程管理。GitHub CLI 凭证失效时继续本地提交。

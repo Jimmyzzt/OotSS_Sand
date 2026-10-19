@@ -1,6 +1,6 @@
 # P4 验收说明
 
-直接打开 [index.html](index.html) 查看29个关卡、视频跳转、地图位置和可展开的证据图册；[index.md](index.md) 适合复制或快速查看。[map.png](map.png) 是按真实坐标绘制的分区示意图，不是完整地形地图。原始地形对照图也在证据图册中。
+直接打开 [index.html](index.html) 查看29个关卡、视频跳转、地图位置和可展开的证据图册；[index.md](index.md) 适合复制或快速查看。[map.png](map.png) 和 [map.svg](map.svg) 已换成真实 Joric 地形背景，分区分别缩放；[P4互动地图](atlas/index.html) 可自由拖动、缩放并点击关卡。全部一阶段汇总见 [互动大地图](../stage1/index.html)。
 
 本地视频：50:31.7、852×480、HEVC、约30fps、无嵌入字幕。B站接口确认此 BV 的 P4 CID 为 `42574283342`、发布时长3032秒。接口返回和官方参数说明见 [video_source.json](video_source.json)。`p=4&t=秒数` 由官方播放器文档确认，实际网页播放跳转尚未实测。
 

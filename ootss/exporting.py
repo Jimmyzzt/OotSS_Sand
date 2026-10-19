@@ -132,10 +132,14 @@ def write_report(result, out):
         "<style>body{font:16px/1.6 system-ui;margin:24px auto;padding:0 20px;max-width:1200px;background:#101b26;color:#e1edf7}a{color:#73e3df}table{border-collapse:collapse;width:100%}td,th{padding:9px;text-align:left;border-bottom:1px solid #375064}img,svg{max-width:100%;height:auto}details{margin:18px 0}code{overflow-wrap:anywhere} .scroll{overflow:auto}</style>",
         f"<h1>P{result['part_number']} · {len(result['events'])} 次关卡访问</h1>",
         f"<p>点击时间跳转视频，点击地图位置打开 Joric 地图。confirmed 表示已对照关卡身份；candidate / unknown / conflict 待审核，不绘制地图位置。完成或跳过状态另行记录。{timing_note}尚待用户验收。</p>",
-        "<p><a href='index.json'>JSON</a> · <a href='index.csv'>CSV</a> · <a href='index.md'>Markdown</a> · <a href='map.svg'>SVG 坐标示意图</a> · <a href='map.png'>PNG</a></p>",
+        "<p><a href='index.json'>JSON</a> · <a href='index.csv'>CSV</a> · <a href='index.md'>Markdown</a> · <a href='map.svg'>SVG 地图</a> · <a href='map.png'>PNG</a></p>",
     ]
     if (out / "atlas/index.html").exists():
         lines.append('<p><a href="atlas/index.html">打开可缩放的真实地图 ↗</a></p>')
+    if (out.parent / "stage1/index.html").exists():
+        lines.append(
+            f'<p><a href="../stage1/index.html?p={result["part_number"]}">在一阶段总图中查看此分 P ↗</a></p>'
+        )
     if (out / "map.svg").exists():
         lines.append((out / "map.svg").read_text(encoding="utf-8"))
     lines.append(
@@ -202,6 +206,9 @@ def draw_map(rows, out, background=True):
         clusters.append(cluster)
     clusters.sort(key=len, reverse=True)
     width, height = 1700, max(1100, len(rows) * 28 + 130)
+    if len(clusters) >= 3:
+        columns = min(3, len(clusters) - 1)
+        height = max(height, 780 + math.ceil((len(clusters) - 1) / columns) * 240)
     svg = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
         '<rect width="100%" height="100%" fill="#101b26"/>',
@@ -251,7 +258,15 @@ def draw_map(rows, out, background=True):
     for panel, (cluster, box) in enumerate(zip(clusters, boxes, strict=True), 1):
         bx, by, bw, bh = box
         xs, ys = [p[2][0] for p in cluster], [p[2][1] for p in cluster]
-        left, right, bottom, top = min(xs) - 1, max(xs) + 1, min(ys) - 1, max(ys) + 1
+        # Keep enough terrain around isolated markers for actual navigation.
+        margin_x = max(1, (7 - (max(xs) - min(xs))) / 2)
+        margin_y = max(1, (7 - (max(ys) - min(ys))) / 2)
+        left, right, bottom, top = (
+            max(-24.5, min(xs) - margin_x),
+            min(165.5, max(xs) + margin_x),
+            max(-18.5, min(ys) - margin_y),
+            min(170.5, max(ys) + margin_y),
+        )
         scale = min((bw - 100) / (right - left), (bh - 100) / (top - bottom))
         ox, oy = bx + 55, by + 50
         title = (

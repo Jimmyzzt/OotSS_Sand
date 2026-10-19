@@ -13,12 +13,23 @@ uv run python -m ootss --help
 
 你以后直接把视频路径、BVID 和分 P 给 Codex 即可，不需要自己逐条操作。操作步骤见 [docs/workflow.md](docs/workflow.md)。
 
-**本次验收先打开 [P4 索引](results/p4/index.html)**（本地静态文件，双击即可，无需启动服务）；也可直接读 [Markdown 表格](results/p4/index.md) 和 [验收说明](results/p4/REPORT.md)。共29个关卡身份已由 Codex 对照画面确认，13个入口有独立主世界证据，尚待你验收。
+**先打开 [一阶段互动大地图](results/stage1/index.html)**：真实 Joric 地形，可拖动、缩放、搜索关卡、按分 P 筛选；点击标记查看参考布局，再点击时间跳转对应攻略。双击本地 HTML 即可，低倍率地图离线可用，高倍率瓦片需要联网。
+
+一阶段按作者标题界定为 **P1–P24**，24个分 P 全部看图审核，共收录 **395个不同的 Overworld Level_Entry、403段访问**，仅按视频出现收录，没有将全部466个Overworld入口填入。一阶段验收、统计及限制见 [REPORT.md](results/stage1/REPORT.md)，明细可用 [CSV](results/stage1/visits.csv)。P1为前言/操作说明，没有独立关卡访问。大型关卡内部的相邻房间归入对应入口访问，不额外杜撰地表坐标。
+
+完整系列 **68/68个分 P 已下载**，最高480p、保留音频，共约43小时57分钟、6.21GiB。文件在 `inputs/series/stage1`、`stage2`、`stage3`，以 `P编号__原标题` 命名；[下载清单](results/series/inventory.md) / [CSV](results/series/inventory.csv) / [可续传台账](results/series/manifest.json)。P4复用原视频；P17修复版文件名带 `__recovered`，台账保留实际路径，避免抽帧缓存失去来源。
+
+[P4详细索引](results/p4/index.html) 与 [P4互动地图](results/p4/atlas/index.html) 也已换成真实地形；原有29关的审核不变。
 
 Windows 快捷入口（自动把临时目录放进项目，首次自动同步依赖）：
 
 ```powershell
 .\ootss.ps1 import-map
+.\ootss.ps1 series --discover-only
+# 首次批量下载或断点续传（默认两路并发）：
+.\ootss.ps1 series
+# 从各分 P 的 reviewed.json 重建一阶段大地图：
+.\ootss.ps1 atlas
 .\ootss.ps1 scan --video 'inputs/你的文件.mp4' --out runs/p5 --interval 5 --black-min 0.125
 .\ootss.ps1 match --run runs/p5
 .\ootss.ps1 packet --run runs/p5 --start 100 --end 120 --step 2
@@ -34,4 +45,4 @@ Windows 快捷入口（自动把临时目录放进项目，首次自动同步依
 
 机器检索只提供候选；没有视觉证据就写 unknown。进入前主世界的核验单独记录，不因候选坐标存在而声称验证成功。该工具不依赖字幕或付费模型；需要时由 Codex 读取局部图册补充判断。
 
-本地验证：`uv run pytest -q --basetemp runs/tests`、`uv run ruff check ootss tests scripts`。8项测试通过；实现取舍、真实计时及质量限制见 [实施记录](docs/implementation_notes.md)。
+本地验证：`uv run pytest -q --basetemp runs/tests`、`uv run ruff check ootss tests scripts`。12项测试通过；实现取舍、真实计时及质量限制见 [实施记录](docs/implementation_notes.md)。

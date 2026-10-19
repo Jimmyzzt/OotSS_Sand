@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 6,
+  "duration": 1872.799625,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage1\\P06__【南】飞石成径[南1全6宝藏].mp4",
+  "title": "【南】飞石成径[南1全6宝藏]",
+  "stage": 1,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "All 12 full-video contact sheets and all candidate pairs reviewed. Six sparse proposals correspond to one continuous skipping_stones visit beginning after the only black transition (53.625–54.25 s) and continuing until return to the overworld around 30:20. Camera scrolling across the huge board makes layout matching sparse; no long unknown gap splits the visit. Overworld entry unverified; outcome unknown.",
+  "events": [
+    {
+      "event_id": "p6-001",
+      "level_id": "skipping_stones",
+      "puzzle_start_time": 54.25,
+      "puzzle_end_time": 1820.0,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "skipping_stones",
+          "area": "skipping_stones",
+          "phash_distance": 18,
+          "hist_distance": 0.3792,
+          "sift_inliers": 60,
+          "sift_good": 68
+        },
+        {
+          "level_id": "sidestone_zach_3",
+          "area": "mirrorable_stones",
+          "phash_distance": 20,
+          "hist_distance": 0.7897,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "partial_pull",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.4088,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "skip_orange_block_c",
+          "area": "beams_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.3594,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "break_through_focused",
+          "area": "beams_and_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.3956,
+          "sift_inliers": 0,
+          "sift_good": 6
+        },
+        {
+          "level_id": "skipping_stones",
+          "area": "skipping_stones",
+          "phash_distance": 14,
+          "hist_distance": 0.2149,
+          "sift_inliers": 66,
+          "sift_good": 84
+        },
+        {
+          "level_id": "mirror_12",
+          "area": "mirror",
+          "phash_distance": 22,
+          "hist_distance": 1.1514,
+          "sift_inliers": 5,
+          "sift_good": 6
+        },
+        {
+          "level_id": "sidestone_zach_3",
+          "area": "mirrorable_stones",
+          "phash_distance": 24,
+          "hist_distance": 0.8156,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "walk_it_over",
+          "area": "mirror",
+          "phash_distance": 24,
+          "hist_distance": 1.2824,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "break_through_focused",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3993,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "skipping_stones",
+          "area": "skipping_stones",
+          "phash_distance": 10,
+          "hist_distance": 0.2356,
+          "sift_inliers": 58,
+          "sift_good": 73
+        },
+        {
+          "level_id": "partial_pull",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.4094,
+          "sift_inliers": 6,
+          "sift_good": 12
+        },
+        {
+          "level_id": "heroes1_21_v3",
+          "area": "heroes1",
+          "phash_distance": 22,
+          "hist_distance": 1.3414,
+          "sift_inliers": 5,
+          "sift_good": 6
+        },
+        {
+          "level_id": "sidestone_zach_3",
+          "area": "mirrorable_stones",
+          "phash_distance": 24,
+          "hist_distance": 0.8342,
+          "sift_inliers": 5,
+          "sift_good": 9
+        },
+        {
+          "level_id": "pull_skip_twins_v3",
+          "area": "heroes_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.3888,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "skipping_stones",
+          "area": "skipping_stones",
+          "phash_distance": 10,
+          "hist_distance": 0.1119,
+          "sift_inliers": 59,
+          "sift_good": 76
+        },
+        {
+          "level_id": "one_vs_three",
+          "area": "heroes_and_water",
+          "phash_distance": 24,
+          "hist_distance": 1.2039,
+          "sift_inliers": 5,
+          "sift_good": 7
+        },
+        {
+          "level_id": "mirror_4",
+          "area": "mirror",
+          "phash_distance": 22,
+          "hist_distance": 1.3161,
+          "sift_inliers": 4,
+          "sift_good": 10
+        },
+        {
+          "level_id": "heroes1_1",
+          "area": "heroes1",
+          "phash_distance": 22,
+          "hist_distance": 1.3412,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "lock_picky",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 22,
+          "hist_distance": 1.3567,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "skipping_stones",
+        "area": "skipping_stones",
+        "phash_distance": 18,
+        "hist_distance": 0.3792,
+        "sift_inliers": 60,
+        "sift_good": 68,
+        "consistent_samples": 22,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p6\\samples\\00090.000.jpg",
+          "time": 90.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\skipping_stones.webp",
+          "first_sample": 90.0,
+          "last_sample": 90.0,
+          "sample_count": 1,
+          "reason": "连续全片图册显示同一巨大 skipping_stones 棋盘在镜头滚动中持续展开；岛块、石块与船只的局部视角随角色移动变化，但并未离开该关。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 53.625,
+          "exit_time": 1820.0,
+          "reason": "53.625–54.25 秒为全片唯一黑转场，此后连续处于同一巨大 skipping_stones 棋盘，直到约30:20返回主地图；算法仅在若干局部时窗匹配到参考，稀疏命中不代表多次进入。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [
+        "将p6-002、p6-003、p6-004、p6-005、p6-006视为同一段长访问：全片图册在唯一黑转场后持续显示同一巨大 skipping_stones 棋盘；摄像机随角色在棋盘上滚动，造成匹配稀疏，不能以候选空档切断。"
+      ],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；身份依据岛屿及圆石布局配对、连续图册确认。",
+      "temporal_review_note": "融合6个proposal的命中时窗；全片连续性边界优先于稀疏算法检测。"
+    }
+  ],
+  "manual_corrections": [
+    {
+      "removed_event_id": "p6-004",
+      "reason": "并入p6-001的同一长访问；局部匹配空档来自大棋盘滚动导致的检测稀疏，期间无离关转场。"
+    },
+    {
+      "removed_event_id": "p6-005",
+      "reason": "并入p6-001的同一长访问；局部匹配空档来自大棋盘滚动导致的检测稀疏，期间无离关转场。"
+    },
+    {
+      "removed_event_id": "p6-006",
+      "reason": "并入p6-001的同一长访问；局部匹配空档来自大棋盘滚动导致的检测稀疏，期间无离关转场。"
+    }
+  ]
+}

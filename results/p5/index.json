@@ -1,0 +1,3223 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 5,
+  "duration": 2003.466313,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage1\\P05__【东】镜之群岛[东1_东2_北1东2_北1东1_南1东3_南1东2].mp4",
+  "title": "【东】镜之群岛[东1/东2/北1东2/北1东1/南1东3/南1东2]",
+  "stage": 1,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "Luna visually checked all candidate/reference pairs and all 13 full-video contact sheets. All 30 candidate identities match distinct island layouts. Overworld entry remains unverified; outcome remains unknown.",
+  "events": [
+    {
+      "event_id": "p5-001",
+      "level_id": "mirror_1",
+      "puzzle_start_time": 20.625,
+      "puzzle_end_time": 42.375,
+      "entry_transition_time": 20.125,
+      "exit_time": 42.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_1",
+          "area": "mirror",
+          "phash_distance": 10,
+          "hist_distance": 0.1046,
+          "sift_inliers": 76,
+          "sift_good": 81
+        },
+        {
+          "level_id": "top_green_purple_v3",
+          "area": "beams_and_mirrors",
+          "phash_distance": 14,
+          "hist_distance": 1.3936,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "quadrants",
+          "area": "heroes_and_water",
+          "phash_distance": 16,
+          "hist_distance": 1.4102,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "dipping_your_toes_in",
+          "area": "heroes_and_water",
+          "phash_distance": 16,
+          "hist_distance": 1.4141,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes1_17",
+          "area": "heroes1",
+          "phash_distance": 18,
+          "hist_distance": 1.4108,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_1",
+        "area": "mirror",
+        "phash_distance": 10,
+        "hist_distance": 0.1046,
+        "sift_inliers": 76,
+        "sift_good": 81,
+        "consistent_samples": 4,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\00025.000.jpg",
+          "time": 25.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_1.webp",
+          "first_sample": 25.0,
+          "last_sample": 40.0,
+          "sample_count": 4,
+          "reason": "十字状绿岛群，东侧镜门、南侧橙色圆钮和中央单位位置吻合。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 20.125,
+          "exit_time": 42.625,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681557,
+          "coordinates": [
+            94.0,
+            68.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_1",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=20"
+    },
+    {
+      "event_id": "p5-002",
+      "level_id": "mirror_2",
+      "puzzle_start_time": 42.625,
+      "puzzle_end_time": 56.625,
+      "entry_transition_time": 42.375,
+      "exit_time": 56.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_2",
+          "area": "mirror",
+          "phash_distance": 4,
+          "hist_distance": 0.0403,
+          "sift_inliers": 62,
+          "sift_good": 64
+        },
+        {
+          "level_id": "mirror_20",
+          "area": "mirror",
+          "phash_distance": 16,
+          "hist_distance": 0.3849,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "heroes2_17_intro",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 1.4116,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "double_break",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.0856,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "hustle_v2",
+          "area": "beams_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3402,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_2",
+        "area": "mirror",
+        "phash_distance": 4,
+        "hist_distance": 0.0403,
+        "sift_inliers": 62,
+        "sift_good": 64,
+        "consistent_samples": 3,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\00045.000.jpg",
+          "time": 45.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_2.webp",
+          "first_sample": 45.0,
+          "last_sample": 55.0,
+          "sample_count": 3,
+          "reason": "三块分离绿岛，北岛与西南岛各有镜门、东岛有橙钮，布局一致。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 42.375,
+          "exit_time": 56.875,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681531,
+          "coordinates": [
+            95.0,
+            68.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_2",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=42"
+    },
+    {
+      "event_id": "p5-003",
+      "level_id": "mirror_3",
+      "puzzle_start_time": 56.875,
+      "puzzle_end_time": 103.5,
+      "entry_transition_time": 56.625,
+      "exit_time": 103.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_3",
+          "area": "mirror",
+          "phash_distance": 6,
+          "hist_distance": 0.1922,
+          "sift_inliers": 113,
+          "sift_good": 116
+        },
+        {
+          "level_id": "metamirror_same_dir_v2",
+          "area": "metamirrors",
+          "phash_distance": 10,
+          "hist_distance": 1.3529,
+          "sift_inliers": 29,
+          "sift_good": 33
+        },
+        {
+          "level_id": "mirror_15",
+          "area": "mirror",
+          "phash_distance": 10,
+          "hist_distance": 0.8761,
+          "sift_inliers": 9,
+          "sift_good": 12
+        },
+        {
+          "level_id": "heroes2_16v4",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 1.3949,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "mirror_8_v5",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.3522,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_3",
+        "area": "mirror",
+        "phash_distance": 6,
+        "hist_distance": 0.1922,
+        "sift_inliers": 113,
+        "sift_good": 116,
+        "consistent_samples": 9,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\00060.000.jpg",
+          "time": 60.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_3.webp",
+          "first_sample": 60.0,
+          "last_sample": 100.0,
+          "sample_count": 9,
+          "reason": "四块岛由水域隔开，西侧镜门、东侧圆钮及上下两岛石块相对位置相符。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 56.625,
+          "exit_time": 103.75,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681513,
+          "coordinates": [
+            96.0,
+            68.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_3",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=56"
+    },
+    {
+      "event_id": "p5-004",
+      "level_id": "mirror_4",
+      "puzzle_start_time": 103.75,
+      "puzzle_end_time": 130.0,
+      "entry_transition_time": 103.5,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_4",
+          "area": "mirror",
+          "phash_distance": 8,
+          "hist_distance": 0.1347,
+          "sift_inliers": 68,
+          "sift_good": 71
+        },
+        {
+          "level_id": "metamirror_same_dir_5_alt",
+          "area": "metamirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.267,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "endpoint1_skipping",
+          "area": "beams_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3834,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "mirror_factory_v2",
+          "area": "mirror",
+          "phash_distance": 22,
+          "hist_distance": 1.1621,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "heroes2_14",
+          "area": "heroes2",
+          "phash_distance": 22,
+          "hist_distance": 1.2272,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_4",
+        "area": "mirror",
+        "phash_distance": 8,
+        "hist_distance": 0.1347,
+        "sift_inliers": 68,
+        "sift_good": 71,
+        "consistent_samples": 5,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\00125.000.jpg",
+          "time": 125.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_4.webp",
+          "first_sample": 105.0,
+          "last_sample": 125.0,
+          "sample_count": 5,
+          "reason": "中央黑色镜/岩障、左上橙钮、右上石块和南端岛位置一致。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 103.5,
+          "exit_time": null,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681575,
+          "coordinates": [
+            97.0,
+            68.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_4",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=103"
+    },
+    {
+      "event_id": "p5-005",
+      "level_id": "mirror_4",
+      "puzzle_start_time": 145.0,
+      "puzzle_end_time": 155.0,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_4",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 0.2623,
+          "sift_inliers": 47,
+          "sift_good": 55
+        },
+        {
+          "level_id": "easy_situation_v2",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.3584,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "untrap",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.0218,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "heroes2_12_v2",
+          "area": "heroes2",
+          "phash_distance": 22,
+          "hist_distance": 1.3868,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "orange_floaty_reflect_v3",
+          "area": "beams_and_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.394,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_4",
+        "area": "mirror",
+        "phash_distance": 18,
+        "hist_distance": 0.2623,
+        "sift_inliers": 47,
+        "sift_good": 55,
+        "consistent_samples": 1,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\00150.000.jpg",
+          "time": 150.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_4.webp",
+          "first_sample": 150.0,
+          "last_sample": 150.0,
+          "sample_count": 1,
+          "reason": "中央黑色镜/岩障、左上橙钮、右上石块和南端岛位置一致。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": null,
+          "exit_time": null,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681575,
+          "coordinates": [
+            97.0,
+            68.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_4",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=145"
+    },
+    {
+      "event_id": "p5-006",
+      "level_id": "mirror_4",
+      "puzzle_start_time": 185.0,
+      "puzzle_end_time": 220.0,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_4",
+          "area": "mirror",
+          "phash_distance": 4,
+          "hist_distance": 0.1567,
+          "sift_inliers": 55,
+          "sift_good": 58
+        },
+        {
+          "level_id": "endpoint1_skipping",
+          "area": "beams_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3835,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "bitstring_small",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3947,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "untrap",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 22,
+          "hist_distance": 1.0086,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "metamirror_same_dir_5_alt",
+          "area": "metamirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.2646,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_4",
+        "area": "mirror",
+        "phash_distance": 4,
+        "hist_distance": 0.1567,
+        "sift_inliers": 55,
+        "sift_good": 58,
+        "consistent_samples": 6,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\00200.000.jpg",
+          "time": 200.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_4.webp",
+          "first_sample": 190.0,
+          "last_sample": 215.0,
+          "sample_count": 6,
+          "reason": "中央黑色镜/岩障、左上橙钮、右上石块和南端岛位置一致。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": null,
+          "exit_time": null,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681575,
+          "coordinates": [
+            97.0,
+            68.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_4",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=185"
+    },
+    {
+      "event_id": "p5-007",
+      "level_id": "mirror_5",
+      "puzzle_start_time": 235.25,
+      "puzzle_end_time": 268.25,
+      "entry_transition_time": 234.875,
+      "exit_time": 268.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_5",
+          "area": "mirror",
+          "phash_distance": 4,
+          "hist_distance": 0.1787,
+          "sift_inliers": 55,
+          "sift_good": 58
+        },
+        {
+          "level_id": "heroes1_2_v2",
+          "area": "heroes1",
+          "phash_distance": 18,
+          "hist_distance": 1.3979,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "dipping_your_toes_in",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.0093,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "monster_mover",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.0543,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "cancel_out",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.1396,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_5",
+        "area": "mirror",
+        "phash_distance": 4,
+        "hist_distance": 0.1787,
+        "sift_inliers": 55,
+        "sift_good": 58,
+        "consistent_samples": 6,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\00240.000.jpg",
+          "time": 240.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_5.webp",
+          "first_sample": 240.0,
+          "last_sample": 265.0,
+          "sample_count": 6,
+          "reason": "碎岛矩阵中两块棕色石块、北侧镜门与东岛圆钮布局吻合。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 234.875,
+          "exit_time": 268.5,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681561,
+          "coordinates": [
+            103.0,
+            70.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_5",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=235"
+    },
+    {
+      "event_id": "p5-008",
+      "level_id": "mirror_6_alt",
+      "puzzle_start_time": 268.5,
+      "puzzle_end_time": 305.0,
+      "entry_transition_time": 268.25,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_6_alt",
+          "area": "mirror",
+          "phash_distance": 6,
+          "hist_distance": 0.2215,
+          "sift_inliers": 65,
+          "sift_good": 66
+        },
+        {
+          "level_id": "shunt2_alt",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.1341,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "torc_blocked_easier",
+          "area": "beaming_objects",
+          "phash_distance": 18,
+          "hist_distance": 1.3415,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "heroes3_8_v4_alt",
+          "area": "heroes3",
+          "phash_distance": 20,
+          "hist_distance": 1.2626,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "worlds_collide_heroes_and_mirrors_v3",
+          "area": "worlds_collide",
+          "phash_distance": 20,
+          "hist_distance": 1.3105,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_6_alt",
+        "area": "mirror",
+        "phash_distance": 6,
+        "hist_distance": 0.2215,
+        "sift_inliers": 65,
+        "sift_good": 66,
+        "consistent_samples": 7,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\00275.000.jpg",
+          "time": 275.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_6_alt.webp",
+          "first_sample": 270.0,
+          "last_sample": 300.0,
+          "sample_count": 7,
+          "reason": "两条斜向岛链、中央黑色障碍和多块棕色石块与参考相符。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 268.25,
+          "exit_time": null,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681543,
+          "coordinates": [
+            104.0,
+            70.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_6_alt",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=268"
+    },
+    {
+      "event_id": "p5-009",
+      "level_id": "mirror_7",
+      "puzzle_start_time": 330.125,
+      "puzzle_end_time": 367.5,
+      "entry_transition_time": 329.75,
+      "exit_time": 367.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_7",
+          "area": "mirror",
+          "phash_distance": 14,
+          "hist_distance": 0.1158,
+          "sift_inliers": 46,
+          "sift_good": 55
+        },
+        {
+          "level_id": "airmail",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3631,
+          "sift_inliers": 5,
+          "sift_good": 7
+        },
+        {
+          "level_id": "place_to_stand",
+          "area": "mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3403,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "trick_kills",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3702,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "rover_shift_p",
+          "area": "beams_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4059,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_7",
+        "area": "mirror",
+        "phash_distance": 14,
+        "hist_distance": 0.1158,
+        "sift_inliers": 46,
+        "sift_good": 55,
+        "consistent_samples": 7,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\00340.000.jpg",
+          "time": 340.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_7.webp",
+          "first_sample": 335.0,
+          "last_sample": 365.0,
+          "sample_count": 7,
+          "reason": "上方镜门、中央石块、南部英雄和东侧圆钮组成的分岛布局一致。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 329.75,
+          "exit_time": 367.75,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681523,
+          "coordinates": [
+            102.0,
+            64.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_7",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=330"
+    },
+    {
+      "event_id": "p5-010",
+      "level_id": "mirror_8_v5",
+      "puzzle_start_time": 367.75,
+      "puzzle_end_time": 420.0,
+      "entry_transition_time": 367.5,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_8_v5",
+          "area": "mirror",
+          "phash_distance": 0,
+          "hist_distance": 0.1384,
+          "sift_inliers": 55,
+          "sift_good": 56
+        },
+        {
+          "level_id": "mirror_15",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.1855,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "mirror_3",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.3503,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "mirror_17",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.4102,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "two_bounce_v2",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 0.6733,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_8_v5",
+        "area": "mirror",
+        "phash_distance": 0,
+        "hist_distance": 0.1384,
+        "sift_inliers": 55,
+        "sift_good": 56,
+        "consistent_samples": 10,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\00380.000.jpg",
+          "time": 380.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_8_v5.webp",
+          "first_sample": 370.0,
+          "last_sample": 415.0,
+          "sample_count": 10,
+          "reason": "狭长曲折岛链、两枚棕石及右端镜门的相对位置吻合。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 367.5,
+          "exit_time": null,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681585,
+          "coordinates": [
+            103.0,
+            64.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_8_v5",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=367"
+    },
+    {
+      "event_id": "p5-011",
+      "level_id": "mirror_11",
+      "puzzle_start_time": 441.375,
+      "puzzle_end_time": 546.375,
+      "entry_transition_time": 440.875,
+      "exit_time": 546.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_11",
+          "area": "mirror",
+          "phash_distance": 2,
+          "hist_distance": 0.2486,
+          "sift_inliers": 75,
+          "sift_good": 75
+        },
+        {
+          "level_id": "pushing_near_orange",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 16,
+          "hist_distance": 1.3893,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "crystal_bridges",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.3611,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "security_checkpoints_v2",
+          "area": "beams_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3851,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "mosh_pit_small",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 1.3974,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_11",
+        "area": "mirror",
+        "phash_distance": 2,
+        "hist_distance": 0.2486,
+        "sift_inliers": 75,
+        "sift_good": 75,
+        "consistent_samples": 21,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\00445.000.jpg",
+          "time": 445.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_11.webp",
+          "first_sample": 445.0,
+          "last_sample": 545.0,
+          "sample_count": 21,
+          "reason": "浅褐色三岛布局，北侧双镜门和左右岛上的圆钮位置对应。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 440.875,
+          "exit_time": 546.625,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681509,
+          "coordinates": [
+            110.0,
+            66.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_11",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=441"
+    },
+    {
+      "event_id": "p5-012",
+      "level_id": "mirror_12",
+      "puzzle_start_time": 546.625,
+      "puzzle_end_time": 590.0,
+      "entry_transition_time": 546.375,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_12",
+          "area": "mirror",
+          "phash_distance": 6,
+          "hist_distance": 0.113,
+          "sift_inliers": 65,
+          "sift_good": 69
+        },
+        {
+          "level_id": "mirror_13",
+          "area": "mirror",
+          "phash_distance": 16,
+          "hist_distance": 0.4203,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "mirror_11",
+          "area": "mirror",
+          "phash_distance": 16,
+          "hist_distance": 1.1926,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "heroes2_21b",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 1.4058,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes1_7.5",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 1.1493,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_12",
+        "area": "mirror",
+        "phash_distance": 6,
+        "hist_distance": 0.113,
+        "sift_inliers": 65,
+        "sift_good": 69,
+        "consistent_samples": 8,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\00550.000.jpg",
+          "time": 550.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_12.webp",
+          "first_sample": 550.0,
+          "last_sample": 585.0,
+          "sample_count": 8,
+          "reason": "上下长岛、上岛双镜门与下岛三枚圆钮排列相符。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 546.375,
+          "exit_time": null,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681571,
+          "coordinates": [
+            111.0,
+            66.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_12",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=546"
+    },
+    {
+      "event_id": "p5-013",
+      "level_id": "mirror_15",
+      "puzzle_start_time": 608.75,
+      "puzzle_end_time": 666.625,
+      "entry_transition_time": 608.25,
+      "exit_time": 666.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_15",
+          "area": "mirror",
+          "phash_distance": 4,
+          "hist_distance": 0.4091,
+          "sift_inliers": 113,
+          "sift_good": 122
+        },
+        {
+          "level_id": "mirror_3",
+          "area": "mirror",
+          "phash_distance": 16,
+          "hist_distance": 1.031,
+          "sift_inliers": 12,
+          "sift_good": 28
+        },
+        {
+          "level_id": "metamirror_same_dir_v2",
+          "area": "metamirrors",
+          "phash_distance": 8,
+          "hist_distance": 0.9633,
+          "sift_inliers": 11,
+          "sift_good": 23
+        },
+        {
+          "level_id": "diag_slide",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.1371,
+          "sift_inliers": 7,
+          "sift_good": 19
+        },
+        {
+          "level_id": "druids_stone_2_v4",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4135,
+          "sift_inliers": 5,
+          "sift_good": 13
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_15",
+        "area": "mirror",
+        "phash_distance": 4,
+        "hist_distance": 0.4091,
+        "sift_inliers": 113,
+        "sift_good": 122,
+        "consistent_samples": 12,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\00615.000.jpg",
+          "time": 615.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_15.webp",
+          "first_sample": 610.0,
+          "last_sample": 665.0,
+          "sample_count": 12,
+          "reason": "多块浅色岛屿，西侧镜门、中央棕石、北侧粉晶与东岛圆钮一致。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 608.25,
+          "exit_time": 666.875,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681515,
+          "coordinates": [
+            118.0,
+            66.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_15",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=608"
+    },
+    {
+      "event_id": "p5-014",
+      "level_id": "mirror_19",
+      "puzzle_start_time": 666.875,
+      "puzzle_end_time": 698.125,
+      "entry_transition_time": 666.625,
+      "exit_time": 698.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_19",
+          "area": "mirror",
+          "phash_distance": 10,
+          "hist_distance": 0.0908,
+          "sift_inliers": 48,
+          "sift_good": 57
+        },
+        {
+          "level_id": "pushback",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.4105,
+          "sift_inliers": 0,
+          "sift_good": 6
+        },
+        {
+          "level_id": "skipping_stones",
+          "area": "skipping_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.1173,
+          "sift_inliers": 0,
+          "sift_good": 6
+        },
+        {
+          "level_id": "metamirror_different_dir_3_alt",
+          "area": "metamirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.1576,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "purple_beam_intro_v2_alt",
+          "area": "beams_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.4024,
+          "sift_inliers": 0,
+          "sift_good": 6
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_19",
+        "area": "mirror",
+        "phash_distance": 10,
+        "hist_distance": 0.0908,
+        "sift_inliers": 48,
+        "sift_good": 57,
+        "consistent_samples": 6,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\00670.000.jpg",
+          "time": 670.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_19.webp",
+          "first_sample": 670.0,
+          "last_sample": 695.0,
+          "sample_count": 6,
+          "reason": "冰岛场景，中央蓝色镜障、上岛绿色圆钮和右侧深色障碍相同。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 666.625,
+          "exit_time": 698.25,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681517,
+          "coordinates": [
+            119.0,
+            66.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_19",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=666"
+    },
+    {
+      "event_id": "p5-015",
+      "level_id": "mirror_17",
+      "puzzle_start_time": 698.25,
+      "puzzle_end_time": 720.0,
+      "entry_transition_time": 698.125,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_17",
+          "area": "mirror",
+          "phash_distance": 4,
+          "hist_distance": 0.1673,
+          "sift_inliers": 86,
+          "sift_good": 97
+        },
+        {
+          "level_id": "bard_range6",
+          "area": "heroes_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.3242,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "heroes2_11_v2_easier",
+          "area": "heroes2",
+          "phash_distance": 22,
+          "hist_distance": 1.4015,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "mirror_8_v5",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.4091,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "both_ways",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.4036,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_17",
+        "area": "mirror",
+        "phash_distance": 4,
+        "hist_distance": 0.1673,
+        "sift_inliers": 86,
+        "sift_good": 97,
+        "consistent_samples": 4,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\00700.000.jpg",
+          "time": 700.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_17.webp",
+          "first_sample": 700.0,
+          "last_sample": 715.0,
+          "sample_count": 4,
+          "reason": "左侧冰岛带镜门与石块、横向冰带和右端橙色圆钮布局吻合。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 698.125,
+          "exit_time": null,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681559,
+          "coordinates": [
+            120.0,
+            66.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_17",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=698"
+    },
+    {
+      "event_id": "p5-016",
+      "level_id": "mirror_sink",
+      "puzzle_start_time": 748.0,
+      "puzzle_end_time": 796.25,
+      "entry_transition_time": 747.625,
+      "exit_time": 796.375,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_sink",
+          "area": "mirror",
+          "phash_distance": 2,
+          "hist_distance": 0.3472,
+          "sift_inliers": 119,
+          "sift_good": 124
+        },
+        {
+          "level_id": "mirror_18",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.0165,
+          "sift_inliers": 5,
+          "sift_good": 14
+        },
+        {
+          "level_id": "diag_slide",
+          "area": "mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3264,
+          "sift_inliers": 5,
+          "sift_good": 10
+        },
+        {
+          "level_id": "metamirror_same_dir_3_alt_2",
+          "area": "metamirrors",
+          "phash_distance": 16,
+          "hist_distance": 1.3299,
+          "sift_inliers": 4,
+          "sift_good": 19
+        },
+        {
+          "level_id": "first_diversions",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.2356,
+          "sift_inliers": 4,
+          "sift_good": 7
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_sink",
+        "area": "mirror",
+        "phash_distance": 2,
+        "hist_distance": 0.3472,
+        "sift_inliers": 119,
+        "sift_good": 124,
+        "consistent_samples": 10,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\00750.000.jpg",
+          "time": 750.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_sink.webp",
+          "first_sample": 750.0,
+          "last_sample": 795.0,
+          "sample_count": 10,
+          "reason": "十字冰岛、两处深色镜体及北侧橙色圆钮的位置对应。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 747.625,
+          "exit_time": 796.375,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681577,
+          "coordinates": [
+            124.0,
+            64.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_sink",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=748"
+    },
+    {
+      "event_id": "p5-017",
+      "level_id": "mirror_20",
+      "puzzle_start_time": 796.375,
+      "puzzle_end_time": 857.5,
+      "entry_transition_time": 796.25,
+      "exit_time": 857.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_20",
+          "area": "mirror",
+          "phash_distance": 2,
+          "hist_distance": 0.0191,
+          "sift_inliers": 122,
+          "sift_good": 126
+        },
+        {
+          "level_id": "mirror_2",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 0.3679,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "metamirror_different_dir_2_alt",
+          "area": "metamirrors",
+          "phash_distance": 18,
+          "hist_distance": 0.9793,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "wider_ocean",
+          "area": "mirrorable_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.4023,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "use_and_remove",
+          "area": "mirrors_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.3984,
+          "sift_inliers": 4,
+          "sift_good": 8
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_20",
+        "area": "mirror",
+        "phash_distance": 2,
+        "hist_distance": 0.0191,
+        "sift_inliers": 122,
+        "sift_good": 126,
+        "consistent_samples": 12,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\00800.000.jpg",
+          "time": 800.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_20.webp",
+          "first_sample": 800.0,
+          "last_sample": 855.0,
+          "sample_count": 12,
+          "reason": "三块冰岛，左侧圆钮、中央与右上粉晶、右上镜门布局一致。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 796.25,
+          "exit_time": 857.75,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681579,
+          "coordinates": [
+            123.0,
+            64.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_20",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=796"
+    },
+    {
+      "event_id": "p5-018",
+      "level_id": "mirror_18",
+      "puzzle_start_time": 857.75,
+      "puzzle_end_time": 910.0,
+      "entry_transition_time": 857.5,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_18",
+          "area": "mirror",
+          "phash_distance": 4,
+          "hist_distance": 0.0701,
+          "sift_inliers": 68,
+          "sift_good": 86
+        },
+        {
+          "level_id": "one_vs_three",
+          "area": "heroes_and_water",
+          "phash_distance": 16,
+          "hist_distance": 1.3126,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "cyan_counter_med3",
+          "area": "beams_and_mirrors",
+          "phash_distance": 16,
+          "hist_distance": 1.3739,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "reflect_momentum",
+          "area": "mirrorable_stones",
+          "phash_distance": 16,
+          "hist_distance": 1.4106,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "button_clone_journey",
+          "area": "clones",
+          "phash_distance": 18,
+          "hist_distance": 0.8995,
+          "sift_inliers": 4,
+          "sift_good": 9
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_18",
+        "area": "mirror",
+        "phash_distance": 4,
+        "hist_distance": 0.0701,
+        "sift_inliers": 68,
+        "sift_good": 86,
+        "consistent_samples": 10,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\00860.000.jpg",
+          "time": 860.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_18.webp",
+          "first_sample": 860.0,
+          "last_sample": 905.0,
+          "sample_count": 10,
+          "reason": "三块冰岛分布、两块棕石、左侧镜门与下方圆钮位置相符。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 857.5,
+          "exit_time": null,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681537,
+          "coordinates": [
+            122.0,
+            64.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_18",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=857"
+    },
+    {
+      "event_id": "p5-019",
+      "level_id": "mirror_10_alt2",
+      "puzzle_start_time": 941.625,
+      "puzzle_end_time": 995.0,
+      "entry_transition_time": 941.125,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_10_alt2",
+          "area": "mirror",
+          "phash_distance": 4,
+          "hist_distance": 0.389,
+          "sift_inliers": 113,
+          "sift_good": 122
+        },
+        {
+          "level_id": "baby_steps_line",
+          "area": "heroes_and_water",
+          "phash_distance": 22,
+          "hist_distance": 1.265,
+          "sift_inliers": 6,
+          "sift_good": 17
+        },
+        {
+          "level_id": "mirror_non_turner_v3",
+          "area": "beams_and_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.3869,
+          "sift_inliers": 6,
+          "sift_good": 12
+        },
+        {
+          "level_id": "square_dance",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.405,
+          "sift_inliers": 5,
+          "sift_good": 13
+        },
+        {
+          "level_id": "unblock_block_alt",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.4138,
+          "sift_inliers": 5,
+          "sift_good": 9
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_10_alt2",
+        "area": "mirror",
+        "phash_distance": 4,
+        "hist_distance": 0.389,
+        "sift_inliers": 113,
+        "sift_good": 122,
+        "consistent_samples": 10,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\00945.000.jpg",
+          "time": 945.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_10_alt2.webp",
+          "first_sample": 945.0,
+          "last_sample": 990.0,
+          "sample_count": 10,
+          "reason": "橙色岛链形成折线路径，左右镜门与东岛圆钮配置一致。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 941.125,
+          "exit_time": null,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681527,
+          "coordinates": [
+            121.0,
+            83.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_10_alt2",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=941"
+    },
+    {
+      "event_id": "p5-020",
+      "level_id": "mundane_mirror",
+      "puzzle_start_time": 1012.0,
+      "puzzle_end_time": 1065.0,
+      "entry_transition_time": 1011.5,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "mundane_mirror",
+          "area": "mirror",
+          "phash_distance": 4,
+          "hist_distance": 0.065,
+          "sift_inliers": 98,
+          "sift_good": 110
+        },
+        {
+          "level_id": "mirror_5",
+          "area": "mirror",
+          "phash_distance": 16,
+          "hist_distance": 1.3731,
+          "sift_inliers": 5,
+          "sift_good": 12
+        },
+        {
+          "level_id": "tug_boat",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.3842,
+          "sift_inliers": 5,
+          "sift_good": 9
+        },
+        {
+          "level_id": "indirect_skip_2",
+          "area": "heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.4126,
+          "sift_inliers": 5,
+          "sift_good": 14
+        },
+        {
+          "level_id": "short_ride_option_b",
+          "area": "mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3601,
+          "sift_inliers": 4,
+          "sift_good": 9
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mundane_mirror",
+        "area": "mirror",
+        "phash_distance": 4,
+        "hist_distance": 0.065,
+        "sift_inliers": 98,
+        "sift_good": 110,
+        "consistent_samples": 10,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\01025.000.jpg",
+          "time": 1025.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mundane_mirror.webp",
+          "first_sample": 1015.0,
+          "last_sample": 1060.0,
+          "sample_count": 10,
+          "reason": "两组浅橙岛、左侧紫色圆钮与南部镜障位置吻合。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 1011.5,
+          "exit_time": null,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 95448826,
+          "coordinates": [
+            98.0,
+            79.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mundane_mirror",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=1012"
+    },
+    {
+      "event_id": "p5-021",
+      "level_id": "mirror_10_b_v2",
+      "puzzle_start_time": 1072.0,
+      "puzzle_end_time": 1128.75,
+      "entry_transition_time": 1071.5,
+      "exit_time": 1128.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_10_b_v2",
+          "area": "mirror",
+          "phash_distance": 4,
+          "hist_distance": 0.3134,
+          "sift_inliers": 132,
+          "sift_good": 134
+        },
+        {
+          "level_id": "short_ride_option_b",
+          "area": "mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3613,
+          "sift_inliers": 5,
+          "sift_good": 9
+        },
+        {
+          "level_id": "flamethrower",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.3689,
+          "sift_inliers": 5,
+          "sift_good": 6
+        },
+        {
+          "level_id": "endpoint1_skipping",
+          "area": "beams_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4061,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "heroes3_13_v2",
+          "area": "heroes3",
+          "phash_distance": 22,
+          "hist_distance": 1.0766,
+          "sift_inliers": 4,
+          "sift_good": 7
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_10_b_v2",
+        "area": "mirror",
+        "phash_distance": 4,
+        "hist_distance": 0.3134,
+        "sift_inliers": 132,
+        "sift_good": 134,
+        "consistent_samples": 11,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\01085.000.jpg",
+          "time": 1085.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_10_b_v2.webp",
+          "first_sample": 1075.0,
+          "last_sample": 1125.0,
+          "sample_count": 11,
+          "reason": "长条橙色岛由中间平台连接，西端双镜门、东端圆钮配置相同。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 1071.5,
+          "exit_time": 1128.875,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_04.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 59770190,
+          "coordinates": [
+            100.0,
+            79.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_10_b_v2",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=1072"
+    },
+    {
+      "event_id": "p5-022",
+      "level_id": "mirror_10_d",
+      "puzzle_start_time": 1128.875,
+      "puzzle_end_time": 1240.0,
+      "entry_transition_time": 1128.75,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_10_d",
+          "area": "mirror",
+          "phash_distance": 2,
+          "hist_distance": 0.2297,
+          "sift_inliers": 101,
+          "sift_good": 112
+        },
+        {
+          "level_id": "bard_range6",
+          "area": "heroes_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.3813,
+          "sift_inliers": 5,
+          "sift_good": 7
+        },
+        {
+          "level_id": "push_and_pull_zach",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.4012,
+          "sift_inliers": 4,
+          "sift_good": 10
+        },
+        {
+          "level_id": "rover_water_purple_v9",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3335,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "run_the_clock_alt",
+          "area": "mirrorable_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3765,
+          "sift_inliers": 4,
+          "sift_good": 7
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_10_d",
+        "area": "mirror",
+        "phash_distance": 2,
+        "hist_distance": 0.2297,
+        "sift_inliers": 101,
+        "sift_good": 112,
+        "consistent_samples": 22,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\01130.000.jpg",
+          "time": 1130.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_10_d.webp",
+          "first_sample": 1130.0,
+          "last_sample": 1235.0,
+          "sample_count": 22,
+          "reason": "L形岛链、左侧紫晶、北岛镜门和右侧圆钮位置吻合。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 1128.75,
+          "exit_time": null,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_04.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 59770192,
+          "coordinates": [
+            101.0,
+            79.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_10_d",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=1128"
+    },
+    {
+      "event_id": "p5-023",
+      "level_id": "mirror_pals",
+      "puzzle_start_time": 1288.75,
+      "puzzle_end_time": 1348.0,
+      "entry_transition_time": 1288.375,
+      "exit_time": 1348.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_pals",
+          "area": "mirror",
+          "phash_distance": 2,
+          "hist_distance": 0.2478,
+          "sift_inliers": 44,
+          "sift_good": 50
+        },
+        {
+          "level_id": "airmail",
+          "area": "mirrors_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.3094,
+          "sift_inliers": 4,
+          "sift_good": 8
+        },
+        {
+          "level_id": "moving_bridge",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.2514,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "mirror_non_turner_v3",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.4107,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "orange_doubleback",
+          "area": "beams_and_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.1425,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_pals",
+        "area": "mirror",
+        "phash_distance": 2,
+        "hist_distance": 0.2478,
+        "sift_inliers": 44,
+        "sift_good": 50,
+        "consistent_samples": 10,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\01290.000.jpg",
+          "time": 1290.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_pals.webp",
+          "first_sample": 1290.0,
+          "last_sample": 1345.0,
+          "sample_count": 10,
+          "reason": "狭长岛上两枚圆钮、中央镜体与单位聚集的位置相符。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 1288.375,
+          "exit_time": 1348.25,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_04.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 62924060,
+          "coordinates": [
+            126.0,
+            76.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_pals",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=1288"
+    },
+    {
+      "event_id": "p5-024",
+      "level_id": "walk_it_over",
+      "puzzle_start_time": 1348.25,
+      "puzzle_end_time": 1545.0,
+      "entry_transition_time": 1348.0,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "walk_it_over",
+          "area": "mirror",
+          "phash_distance": 2,
+          "hist_distance": 0.1337,
+          "sift_inliers": 50,
+          "sift_good": 56
+        },
+        {
+          "level_id": "worlds_collide_heroes_and_stones",
+          "area": "worlds_collide",
+          "phash_distance": 24,
+          "hist_distance": 1.1693,
+          "sift_inliers": 5,
+          "sift_good": 6
+        },
+        {
+          "level_id": "mirror_pals",
+          "area": "mirror",
+          "phash_distance": 24,
+          "hist_distance": 1.3954,
+          "sift_inliers": 5,
+          "sift_good": 10
+        },
+        {
+          "level_id": "rover_water_purple_sequel_v3",
+          "area": "beams_and_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.1716,
+          "sift_inliers": 0,
+          "sift_good": 6
+        },
+        {
+          "level_id": "push_against",
+          "area": "heroes_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.2428,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "walk_it_over",
+        "area": "mirror",
+        "phash_distance": 2,
+        "hist_distance": 0.1337,
+        "sift_inliers": 50,
+        "sift_good": 56,
+        "consistent_samples": 39,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\01360.000.jpg",
+          "time": 1360.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\walk_it_over.webp",
+          "first_sample": 1350.0,
+          "last_sample": 1540.0,
+          "sample_count": 39,
+          "reason": "极窄折线冰桥、两端小平台及桥上移动单位与参考布局吻合。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 1348.0,
+          "exit_time": null,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_04.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 95464094,
+          "coordinates": [
+            126.0,
+            77.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#walk_it_over",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=1348"
+    },
+    {
+      "event_id": "p5-025",
+      "level_id": "mirror_21",
+      "puzzle_start_time": 1560.25,
+      "puzzle_end_time": 1637.25,
+      "entry_transition_time": 1559.875,
+      "exit_time": 1637.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_21",
+          "area": "mirror",
+          "phash_distance": 4,
+          "hist_distance": 0.0786,
+          "sift_inliers": 84,
+          "sift_good": 88
+        },
+        {
+          "level_id": "new_new_new_slam",
+          "area": "mirrorable_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.204,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "dont_push_the_button",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.1939,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "plus_signs_v3",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.3989,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "double_break",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.0944,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_21",
+        "area": "mirror",
+        "phash_distance": 4,
+        "hist_distance": 0.0786,
+        "sift_inliers": 84,
+        "sift_good": 88,
+        "consistent_samples": 15,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\01585.000.jpg",
+          "time": 1585.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_21.webp",
+          "first_sample": 1565.0,
+          "last_sample": 1635.0,
+          "sample_count": 15,
+          "reason": "左右冰岛由狭桥连接，左侧圆钮、右侧粉色障碍及镜门一致。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 1559.875,
+          "exit_time": 1637.5,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_04.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681563,
+          "coordinates": [
+            135.0,
+            58.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_21",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=1560"
+    },
+    {
+      "event_id": "p5-026",
+      "level_id": "mirror_22_v2",
+      "puzzle_start_time": 1637.5,
+      "puzzle_end_time": 1700.0,
+      "entry_transition_time": 1637.25,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_22_v2",
+          "area": "mirror",
+          "phash_distance": 2,
+          "hist_distance": 0.3512,
+          "sift_inliers": 102,
+          "sift_good": 106
+        },
+        {
+          "level_id": "remote_work",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.414,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "metamirror_same_dir_2_alt_2",
+          "area": "metamirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.2318,
+          "sift_inliers": 0,
+          "sift_good": 7
+        },
+        {
+          "level_id": "little_faith_alt",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.3719,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "launch_and_collect",
+          "area": "mirrorable_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3896,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_22_v2",
+        "area": "mirror",
+        "phash_distance": 2,
+        "hist_distance": 0.3512,
+        "sift_inliers": 102,
+        "sift_good": 106,
+        "consistent_samples": 12,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\01665.000.jpg",
+          "time": 1665.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_22_v2.webp",
+          "first_sample": 1640.0,
+          "last_sample": 1695.0,
+          "sample_count": 12,
+          "reason": "北侧镜门、左侧绿色石块、中央孤立蓝钮和水域断口的布局吻合。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 1637.25,
+          "exit_time": null,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_05.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681545,
+          "coordinates": [
+            136.0,
+            58.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_22_v2",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=1637"
+    },
+    {
+      "event_id": "p5-027",
+      "level_id": "mirror_factory_v2",
+      "puzzle_start_time": 1729.625,
+      "puzzle_end_time": 1795.0,
+      "entry_transition_time": 1729.125,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_factory_v2",
+          "area": "mirror",
+          "phash_distance": 4,
+          "hist_distance": 0.0957,
+          "sift_inliers": 101,
+          "sift_good": 115
+        },
+        {
+          "level_id": "launch_and_collect",
+          "area": "mirrorable_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3728,
+          "sift_inliers": 4,
+          "sift_good": 9
+        },
+        {
+          "level_id": "little_faith_alt",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.3835,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "right_hand_man",
+          "area": "promesst1_and_2",
+          "phash_distance": 18,
+          "hist_distance": 1.413,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "the_swappers",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.4141,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_factory_v2",
+        "area": "mirror",
+        "phash_distance": 4,
+        "hist_distance": 0.0957,
+        "sift_inliers": 101,
+        "sift_good": 115,
+        "consistent_samples": 13,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\01735.000.jpg",
+          "time": 1735.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_factory_v2.webp",
+          "first_sample": 1730.0,
+          "last_sample": 1790.0,
+          "sample_count": 13,
+          "reason": "三条并行冰岛、多个镜门/障碍与东侧独立圆钮配置相符。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 1729.125,
+          "exit_time": null,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_05.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 95420850,
+          "coordinates": [
+            124.0,
+            60.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_factory_v2",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=1729"
+    },
+    {
+      "event_id": "p5-028",
+      "level_id": "mirror_13",
+      "puzzle_start_time": 1806.75,
+      "puzzle_end_time": 1884.0,
+      "entry_transition_time": 1806.25,
+      "exit_time": 1884.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_13",
+          "area": "mirror",
+          "phash_distance": 6,
+          "hist_distance": 0.1686,
+          "sift_inliers": 105,
+          "sift_good": 109
+        },
+        {
+          "level_id": "metamirror_block_v2",
+          "area": "metamirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.2203,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "quadrants_follow_up",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.3823,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "heroes2_10",
+          "area": "heroes2",
+          "phash_distance": 20,
+          "hist_distance": 1.4086,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "double_team",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.4138,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_13",
+        "area": "mirror",
+        "phash_distance": 6,
+        "hist_distance": 0.1686,
+        "sift_inliers": 105,
+        "sift_good": 109,
+        "consistent_samples": 14,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\01810.000.jpg",
+          "time": 1810.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_13.webp",
+          "first_sample": 1810.0,
+          "last_sample": 1875.0,
+          "sample_count": 14,
+          "reason": "上方双圆钮岛、中央镜门及右下棕石岛的位置一致。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 1806.25,
+          "exit_time": 1884.5,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_05.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681555,
+          "coordinates": [
+            124.0,
+            51.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_13",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=1806"
+    },
+    {
+      "event_id": "p5-029",
+      "level_id": "mirror_14",
+      "puzzle_start_time": 1884.5,
+      "puzzle_end_time": 1905.0,
+      "entry_transition_time": 1884.0,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_14",
+          "area": "mirror",
+          "phash_distance": 4,
+          "hist_distance": 0.347,
+          "sift_inliers": 81,
+          "sift_good": 86
+        },
+        {
+          "level_id": "middle_smash",
+          "area": "beaming_objects",
+          "phash_distance": 16,
+          "hist_distance": 1.3883,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "the_long_way",
+          "area": "mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.1837,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "dragon_compass",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 0.8571,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "mirror_10_b_v2",
+          "area": "mirror",
+          "phash_distance": 20,
+          "hist_distance": 1.2188,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_14",
+        "area": "mirror",
+        "phash_distance": 4,
+        "hist_distance": 0.347,
+        "sift_inliers": 81,
+        "sift_good": 86,
+        "consistent_samples": 4,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\01895.000.jpg",
+          "time": 1895.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_14.webp",
+          "first_sample": 1885.0,
+          "last_sample": 1900.0,
+          "sample_count": 4,
+          "reason": "左侧碎岛与右侧大岛相对，中央镜门、棕石和圆钮对应。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 1884.0,
+          "exit_time": null,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_05.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681533,
+          "coordinates": [
+            116.0,
+            53.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_14",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=1884"
+    },
+    {
+      "event_id": "p5-030",
+      "level_id": "mirror_14",
+      "puzzle_start_time": 1920.0,
+      "puzzle_end_time": 1930.0,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_14",
+          "area": "mirror",
+          "phash_distance": 16,
+          "hist_distance": 0.3173,
+          "sift_inliers": 36,
+          "sift_good": 40
+        },
+        {
+          "level_id": "diag_slide",
+          "area": "mirrors_and_stones",
+          "phash_distance": 16,
+          "hist_distance": 1.1336,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes3_15_v4",
+          "area": "heroes3",
+          "phash_distance": 18,
+          "hist_distance": 1.3913,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "sidestone_zach_2",
+          "area": "mirrorable_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4109,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "arcadiav2_big",
+          "area": "clones",
+          "phash_distance": 20,
+          "hist_distance": 1.2642,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_14",
+        "area": "mirror",
+        "phash_distance": 16,
+        "hist_distance": 0.3173,
+        "sift_inliers": 36,
+        "sift_good": 40,
+        "consistent_samples": 1,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p5\\samples\\01925.000.jpg",
+          "time": 1925.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_14.webp",
+          "first_sample": 1925.0,
+          "last_sample": 1925.0,
+          "sample_count": 1,
+          "reason": "左侧碎岛与右侧大岛相对，中央镜门、棕石和圆钮对应。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": null,
+          "exit_time": null,
+          "reason": "已结合前后图册检查转场；区间在本分视频内且不与相邻事件重叠。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_05.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 5,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 14681533,
+          "coordinates": [
+            116.0,
+            53.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "mirror",
+      "map_url": "https://joric.github.io/ootss/#mirror_14",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=1920"
+    }
+  ]
+}

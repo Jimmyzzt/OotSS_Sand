@@ -1,0 +1,528 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 24,
+  "duration": 1977.666313,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage1\\P24__【结局1】对映之地+出口[北6西5+北5西5].mp4",
+  "title": "【结局1】对映之地+出口[北6西5+北5西5]",
+  "stage": 1,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "Luna visual comparison confirmed the distinctive end1 board layout in all five candidate frames, checking all 13 contact sheets. Several later views are ending-stage presentation or exterior-world footage; only clear board intervals are recorded. Overworld entry is unverified and outcome remains unknown.",
+  "events": [
+    {
+      "event_id": "p24-001",
+      "level_id": "end1",
+      "puzzle_start_time": 63.875,
+      "puzzle_end_time": 213.375,
+      "entry_transition_time": 62.875,
+      "exit_time": 213.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "end1",
+          "area": "endgame1",
+          "phash_distance": 8,
+          "hist_distance": 0.0463,
+          "sift_inliers": 145,
+          "sift_good": 157
+        },
+        {
+          "level_id": "metamirror_different_dir_3_alt",
+          "area": "metamirrors",
+          "phash_distance": 24,
+          "hist_distance": 1.3624,
+          "sift_inliers": 5,
+          "sift_good": 8
+        },
+        {
+          "level_id": "promesst1_streamlined",
+          "area": "promesst1_and_2",
+          "phash_distance": 22,
+          "hist_distance": 1.3692,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "mirror_19",
+          "area": "mirror",
+          "phash_distance": 24,
+          "hist_distance": 1.2483,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "sink_together",
+          "area": "mirrors_and_stones",
+          "phash_distance": 24,
+          "hist_distance": 1.2789,
+          "sift_inliers": 0,
+          "sift_good": 15
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "end1",
+        "area": "endgame1",
+        "phash_distance": 8,
+        "hist_distance": 0.0463,
+        "sift_inliers": 145,
+        "sift_good": 157,
+        "consistent_samples": 30,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p24\\samples\\00130.000.jpg",
+          "time": 130.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end1.webp",
+          "first_sample": 65.0,
+          "last_sample": 210.0,
+          "sample_count": 30,
+          "reason": "五个圆形节点与金色连线构成的对称方形棋盘、四角蓝黄色机关和边缘绳索框在视频画面与end1参考图中逐一对应；中心人物和可移动黄块随解题进展变化，不改变棋盘身份。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查本P全部13张全片图册；该棋盘多次显现，其间的外部岛屿与片尾演示/片尾画面不计入此事件。候选边界按棋盘出现/离开附近的画面切换记录。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 24,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 111200165,
+          "coordinates": [
+            -15.0,
+            147.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "endgame1",
+      "map_url": "https://joric.github.io/ootss/#end1",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=63"
+    },
+    {
+      "event_id": "p24-002",
+      "level_id": "end1",
+      "puzzle_start_time": 304.25,
+      "puzzle_end_time": 370.0,
+      "entry_transition_time": 304.125,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "end1",
+          "area": "endgame1",
+          "phash_distance": 12,
+          "hist_distance": 0.069,
+          "sift_inliers": 101,
+          "sift_good": 112
+        },
+        {
+          "level_id": "metamirror_different_dir_3_alt",
+          "area": "metamirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3616,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "double_tempo",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.3811,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "wizard_finesse_2",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 22,
+          "hist_distance": 1.4129,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "red_yellow_alter_with_intro_v2",
+          "area": "beams_and_mirrors",
+          "phash_distance": 24,
+          "hist_distance": 1.201,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "end1",
+        "area": "endgame1",
+        "phash_distance": 12,
+        "hist_distance": 0.069,
+        "sift_inliers": 101,
+        "sift_good": 112,
+        "consistent_samples": 11,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p24\\samples\\00335.000.jpg",
+          "time": 335.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end1.webp",
+          "first_sample": 310.0,
+          "last_sample": 365.0,
+          "sample_count": 11,
+          "reason": "五个圆形节点与金色连线构成的对称方形棋盘、四角蓝黄色机关和边缘绳索框在视频画面与end1参考图中逐一对应；中心人物和可移动黄块随解题进展变化，不改变棋盘身份。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查本P全部13张全片图册；该棋盘多次显现，其间的外部岛屿与片尾演示/片尾画面不计入此事件。候选边界按棋盘出现/离开附近的画面切换记录。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 24,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 111200165,
+          "coordinates": [
+            -15.0,
+            147.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "endgame1",
+      "map_url": "https://joric.github.io/ootss/#end1",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=304"
+    },
+    {
+      "event_id": "p24-003",
+      "level_id": "end1",
+      "puzzle_start_time": 615.0,
+      "puzzle_end_time": 625.0,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "end1",
+          "area": "endgame1",
+          "phash_distance": 18,
+          "hist_distance": 0.0791,
+          "sift_inliers": 58,
+          "sift_good": 63
+        },
+        {
+          "level_id": "wizard_finesse_3",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.4099,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "double_tempo",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 22,
+          "hist_distance": 1.3795,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "blocking_issue",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.4082,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "metamirror_different_dir_3_alt",
+          "area": "metamirrors",
+          "phash_distance": 24,
+          "hist_distance": 1.3616,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "end1",
+        "area": "endgame1",
+        "phash_distance": 18,
+        "hist_distance": 0.0791,
+        "sift_inliers": 58,
+        "sift_good": 63,
+        "consistent_samples": 1,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p24\\samples\\00620.000.jpg",
+          "time": 620.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end1.webp",
+          "first_sample": 620.0,
+          "last_sample": 620.0,
+          "sample_count": 1,
+          "reason": "五个圆形节点与金色连线构成的对称方形棋盘、四角蓝黄色机关和边缘绳索框在视频画面与end1参考图中逐一对应；中心人物和可移动黄块随解题进展变化，不改变棋盘身份。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查本P全部13张全片图册；该棋盘多次显现，其间的外部岛屿与片尾演示/片尾画面不计入此事件。候选边界按棋盘出现/离开附近的画面切换记录。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 24,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 111200165,
+          "coordinates": [
+            -15.0,
+            147.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "endgame1",
+      "map_url": "https://joric.github.io/ootss/#end1",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=615"
+    },
+    {
+      "event_id": "p24-004",
+      "level_id": "end1",
+      "puzzle_start_time": 655.0,
+      "puzzle_end_time": 668.5,
+      "entry_transition_time": null,
+      "exit_time": 668.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "end1",
+          "area": "endgame1",
+          "phash_distance": 18,
+          "hist_distance": 0.0762,
+          "sift_inliers": 47,
+          "sift_good": 49
+        },
+        {
+          "level_id": "detachment",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.4124,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "island_friends",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4137,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "double_tempo",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 22,
+          "hist_distance": 1.383,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "sidestone_zach_2",
+          "area": "mirrorable_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.3985,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "end1",
+        "area": "endgame1",
+        "phash_distance": 18,
+        "hist_distance": 0.0762,
+        "sift_inliers": 47,
+        "sift_good": 49,
+        "consistent_samples": 1,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p24\\samples\\00660.000.jpg",
+          "time": 660.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end1.webp",
+          "first_sample": 660.0,
+          "last_sample": 660.0,
+          "sample_count": 1,
+          "reason": "五个圆形节点与金色连线构成的对称方形棋盘、四角蓝黄色机关和边缘绳索框在视频画面与end1参考图中逐一对应；中心人物和可移动黄块随解题进展变化，不改变棋盘身份。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查本P全部13张全片图册；该棋盘多次显现，其间的外部岛屿与片尾演示/片尾画面不计入此事件。候选边界按棋盘出现/离开附近的画面切换记录。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 24,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 111200165,
+          "coordinates": [
+            -15.0,
+            147.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "endgame1",
+      "map_url": "https://joric.github.io/ootss/#end1",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=655"
+    },
+    {
+      "event_id": "p24-005",
+      "level_id": "end1",
+      "puzzle_start_time": 955.0,
+      "puzzle_end_time": 967.125,
+      "entry_transition_time": null,
+      "exit_time": 967.375,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "end1",
+          "area": "endgame1",
+          "phash_distance": 18,
+          "hist_distance": 0.0945,
+          "sift_inliers": 19,
+          "sift_good": 23
+        },
+        {
+          "level_id": "close_to_button",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.405,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "prisoners_dilemma_alt",
+          "area": "heroes_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.2887,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "detachment",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.412,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "wizard_finesse_2",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 22,
+          "hist_distance": 1.4128,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "end1",
+        "area": "endgame1",
+        "phash_distance": 18,
+        "hist_distance": 0.0945,
+        "sift_inliers": 19,
+        "sift_good": 23,
+        "consistent_samples": 1,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p24\\samples\\00960.000.jpg",
+          "time": 960.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end1.webp",
+          "first_sample": 960.0,
+          "last_sample": 960.0,
+          "sample_count": 1,
+          "reason": "五个圆形节点与金色连线构成的对称方形棋盘、四角蓝黄色机关和边缘绳索框在视频画面与end1参考图中逐一对应；中心人物和可移动黄块随解题进展变化，不改变棋盘身份。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查本P全部13张全片图册；该棋盘多次显现，其间的外部岛屿与片尾演示/片尾画面不计入此事件。候选边界按棋盘出现/离开附近的画面切换记录。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 24,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 111200165,
+          "coordinates": [
+            -15.0,
+            147.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "endgame1",
+      "map_url": "https://joric.github.io/ootss/#end1",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=955"
+    }
+  ]
+}

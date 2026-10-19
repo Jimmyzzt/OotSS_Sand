@@ -1,0 +1,6 @@
+﻿event_id,level_id,area,puzzle_start_time,puzzle_end_time,overworld_approach_time,entry_transition_time,review_status,outcome,map_entries,video_url,map_url
+p24-001,end1,endgame1,63.875,213.375,,62.875,confirmed,unknown,"[{'marker_id': 111200165, 'coordinates': [-15.0, 147.0, 0.0]}]",https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=63,https://joric.github.io/ootss/#end1
+p24-002,end1,endgame1,304.25,370.0,,304.125,confirmed,unknown,"[{'marker_id': 111200165, 'coordinates': [-15.0, 147.0, 0.0]}]",https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=304,https://joric.github.io/ootss/#end1
+p24-003,end1,endgame1,615.0,625.0,,,confirmed,unknown,"[{'marker_id': 111200165, 'coordinates': [-15.0, 147.0, 0.0]}]",https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=615,https://joric.github.io/ootss/#end1
+p24-004,end1,endgame1,655.0,668.5,,,confirmed,unknown,"[{'marker_id': 111200165, 'coordinates': [-15.0, 147.0, 0.0]}]",https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=655,https://joric.github.io/ootss/#end1
+p24-005,end1,endgame1,955.0,967.125,,,confirmed,unknown,"[{'marker_id': 111200165, 'coordinates': [-15.0, 147.0, 0.0]}]",https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=955,https://joric.github.io/ootss/#end1

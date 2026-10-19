@@ -1,0 +1,4 @@
+﻿event_id,level_id,area,puzzle_start_time,puzzle_end_time,overworld_approach_time,entry_transition_time,review_status,outcome,map_entries,video_url,map_url
+p7-001,time_tutorial,skipping_stones,36.375,245.875,,35.875,confirmed,unknown,"[{'marker_id': 46149837, 'coordinates': [78.0, 35.0, 0.0]}]",https://www.bilibili.com/video/BV13FH96bE4m/?p=7&t=36,https://joric.github.io/ootss/#time_tutorial
+p7-003,skipping_pals,skipping_stones,246.375,1387.125,,245.875,confirmed,unknown,"[{'marker_id': 59770151, 'coordinates': [82.0, 33.0, 0.0]}]",https://www.bilibili.com/video/BV13FH96bE4m/?p=7&t=246,https://joric.github.io/ootss/#skipping_pals
+p7-005,skipping_shores_v3,skipping_stones,1387.625,1828.532938,,1387.125,confirmed,unknown,"[{'marker_id': 90204156, 'coordinates': [77.0, 9.0, 0.0]}]",https://www.bilibili.com/video/BV13FH96bE4m/?p=7&t=1387,https://joric.github.io/ootss/#skipping_shores_v3

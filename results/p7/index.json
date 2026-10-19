@@ -1,0 +1,359 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 7,
+  "duration": 1828.532938,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage1\\P07__【南】飞石成径[南2_南4].mp4",
+  "title": "【南】飞石成径[南2/南4]",
+  "stage": 1,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "Luna reviewed the candidate/reference gallery, all 12 full-video sheets, and checked black-transition boundaries. The video has only three transitions: time_tutorial 36.375–245.875; one continuous giant skipping_pals board visit 246.375–1387.125 (sparse local matches at 246–300 and 1325–1350 merged due continuous scrolling); then skipping_shores_v3 from 1387.625 through the video end. Entry into overworld remains unverified; outcomes unknown.",
+  "events": [
+    {
+      "event_id": "p7-001",
+      "level_id": "time_tutorial",
+      "puzzle_start_time": 36.375,
+      "puzzle_end_time": 245.875,
+      "entry_transition_time": 35.875,
+      "exit_time": 245.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 2.5,
+      "candidate_levels": [
+        {
+          "level_id": "time_tutorial",
+          "area": "skipping_stones",
+          "phash_distance": 6,
+          "hist_distance": 0.173,
+          "sift_inliers": 20,
+          "sift_good": 22
+        },
+        {
+          "level_id": "heroes2_10a_intro",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 1.4,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "new_new_new_slam",
+          "area": "mirrorable_stones",
+          "phash_distance": 20,
+          "hist_distance": 0.8414,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "surfing_lesson_alt",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.3281,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "cyan_counter_med3",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3308,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "time_tutorial",
+        "area": "skipping_stones",
+        "phash_distance": 6,
+        "hist_distance": 0.173,
+        "sift_inliers": 20,
+        "sift_good": 22,
+        "consistent_samples": 6,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p7\\samples\\00045.000.jpg",
+          "time": 45.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\time_tutorial.webp",
+          "first_sample": 40.0,
+          "last_sample": 75.0,
+          "sample_count": 5,
+          "reason": "入口冰圈、中央草地桥及右侧带圆形标记的冰圈，与 time_tutorial 参考图的三段横向布局、石块和角色位置相符。"
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p7\\samples\\00195.000.jpg",
+          "time": 195.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\time_tutorial.webp",
+          "first_sample": 195.0,
+          "last_sample": 195.0,
+          "sample_count": 1,
+          "reason": "后段同一三平台布局仍在持续演示，单个重复匹配并非重新进入。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 35.875,
+          "exit_time": 245.875,
+          "reason": "全片册显示约36秒进入time_tutorial，至245.875秒转场前持续呈现同一冰圈三平台教程布局；随后黑转场开启下一段巨型棋盘区域。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [
+        "将p7-002合并入本次time_tutorial访问；全片图册显示从进入到约3:55为同一连续教程，并非独立重访。"
+      ],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；身份依据候选与参考配对中可核对的岛屿/障碍物相对布局。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 7,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 46149837,
+          "coordinates": [
+            78.0,
+            35.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "skipping_stones",
+      "map_url": "https://joric.github.io/ootss/#time_tutorial",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=7&t=36"
+    },
+    {
+      "event_id": "p7-003",
+      "level_id": "skipping_pals",
+      "puzzle_start_time": 246.375,
+      "puzzle_end_time": 1387.125,
+      "entry_transition_time": 245.875,
+      "exit_time": 1387.125,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "skipping_pals",
+          "area": "skipping_stones",
+          "phash_distance": 8,
+          "hist_distance": 0.4639,
+          "sift_inliers": 83,
+          "sift_good": 96
+        },
+        {
+          "level_id": "crystal_bridges",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.4106,
+          "sift_inliers": 6,
+          "sift_good": 28
+        },
+        {
+          "level_id": "across_the_fence_vtrader_m_p",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.408,
+          "sift_inliers": 5,
+          "sift_good": 8
+        },
+        {
+          "level_id": "heroes3_druid_a",
+          "area": "heroes3",
+          "phash_distance": 18,
+          "hist_distance": 1.4117,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "sidestone_zach_3",
+          "area": "mirrorable_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.0289,
+          "sift_inliers": 0,
+          "sift_good": 5
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "skipping_pals",
+        "area": "skipping_stones",
+        "phash_distance": 8,
+        "hist_distance": 0.4639,
+        "sift_inliers": 83,
+        "sift_good": 96,
+        "consistent_samples": 13,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p7\\samples\\00270.000.jpg",
+          "time": 270.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\skipping_pals.webp",
+          "first_sample": 250.0,
+          "last_sample": 295.0,
+          "sample_count": 9,
+          "reason": "横向沙色岛链、上下边界水流、左侧双绿圆标、中央紫色圆石与小船位置均对应 skipping_pals 参考；逐格布局在配对图中吻合。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 245.875,
+          "exit_time": 1387.125,
+          "reason": "全片只在245.875–246.375处转黑进入本段，直到1387.125–1387.625下一次明确黑转场之前都处于同一巨大 skipping_pals 棋盘区域。4:30与22:10两处布局命中是同一长访问中镜头滚动后的局部视角；中间大段的场景形状和连续地图移动表明算法命中稀疏，不能据此拆成两次。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [
+        "把p7-004的稀疏命中合并到本事件；两命中之间均为同一巨大可滚动棋盘的连续探索，期间无下一次黑转场。"
+      ],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；身份依据候选与参考配对中可核对的岛屿/障碍物相对布局。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 7,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 59770151,
+          "coordinates": [
+            82.0,
+            33.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "skipping_stones",
+      "map_url": "https://joric.github.io/ootss/#skipping_pals",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=7&t=246"
+    },
+    {
+      "event_id": "p7-005",
+      "level_id": "skipping_shores_v3",
+      "puzzle_start_time": 1387.625,
+      "puzzle_end_time": 1828.532938,
+      "entry_transition_time": 1387.125,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "skipping_shores_v3",
+          "area": "skipping_stones",
+          "phash_distance": 0,
+          "hist_distance": 0.1303,
+          "sift_inliers": 82,
+          "sift_good": 89
+        },
+        {
+          "level_id": "gem_transport_2",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 22,
+          "hist_distance": 1.069,
+          "sift_inliers": 5,
+          "sift_good": 8
+        },
+        {
+          "level_id": "indirect_skip_2",
+          "area": "heroes_and_stones",
+          "phash_distance": 14,
+          "hist_distance": 1.4042,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "sp_crystal_tuto",
+          "area": "beams_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.1099,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes1_2_v2",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 1.1857,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "skipping_shores_v3",
+        "area": "skipping_stones",
+        "phash_distance": 0,
+        "hist_distance": 0.1303,
+        "sift_inliers": 82,
+        "sift_good": 89,
+        "consistent_samples": 6,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p7\\samples\\01390.000.jpg",
+          "time": 1390.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\skipping_shores_v3.webp",
+          "first_sample": 1390.0,
+          "last_sample": 1415.0,
+          "sample_count": 6,
+          "reason": "双条状草沙平台、上下两道白色水流、左侧深色立方体及中间人物位置与 skipping_shores_v3 参考图吻合。"
+        },
+        {
+          "type": "temporal",
+          "entry_transition": 1387.125,
+          "exit_time": null,
+          "reason": "1387.125–1387.625是本段入口黑转场；其后直到片尾未见下一个符合离关的黑转场，候选布局之外的同域镜头视为大棋盘滚动的连续访问。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "confidence": null,
+      "confidence_note": "未校准概率；身份依据候选与参考配对中可核对的岛屿/障碍物相对布局。",
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 7,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 90204156,
+          "coordinates": [
+            77.0,
+            9.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "skipping_stones",
+      "map_url": "https://joric.github.io/ootss/#skipping_shores_v3",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=7&t=1387"
+    }
+  ],
+  "manual_corrections": [
+    {
+      "removed_event_id": "p7-002",
+      "reason": "与p7-001同一time_tutorial连续访问。"
+    },
+    {
+      "merged_event_id": "p7-004",
+      "into_event_id": "p7-003",
+      "reason": "候选命中是同一巨大滚动棋盘上的稀疏窗口；245.875与1387.125两次黑转场界定整段连续访问。"
+    }
+  ]
+}
