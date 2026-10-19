@@ -1,5 +1,6 @@
 import json
 import subprocess
+from pathlib import Path
 
 import numpy as np
 import pytest
@@ -8,7 +9,7 @@ from PIL import Image
 from ootss.common import read_json, write_json
 from ootss.exporting import export, validate, video_url
 from ootss.maps import layer
-from ootss.matching import features
+from ootss.matching import Matcher, features
 from ootss.video import black_score, merge_black, scan
 
 
@@ -112,6 +113,38 @@ def test_invalid_identity_and_times_rejected():
         validate(r, cat)
 
 
+def test_unknown_match_and_export(tmp_path):
+    rng = np.random.default_rng(8)
+    reference = tmp_path / "ref.png"
+    Image.fromarray(rng.integers(0, 255, (180, 320, 3), dtype=np.uint8)).save(reference)
+    query = tmp_path / "black.png"
+    Image.new("RGB", (320, 180)).save(query)
+    catalog = tmp_path / "cat.json"
+    write_json(
+        catalog,
+        {
+            "commit": "test",
+            "levels": [{"level_id": "a", "reference": str(reference), "area": "test"}],
+        },
+    )
+    assert Matcher(catalog).search(query)["status"] == "unknown"
+    r = fixture_review()
+    r["events"] = [
+        {
+            "event_id": "unknown",
+            "level_id": None,
+            "puzzle_start_time": 1,
+            "puzzle_end_time": 3,
+            "review_status": "unknown",
+        }
+    ]
+    review = tmp_path / "review.json"
+    write_json(review, r)
+    result = export(review, tmp_path / "out", catalog)
+    assert result["events"][0]["level_id"] is None
+    assert "](None)" not in (tmp_path / "out/index.md").read_text(encoding="utf-8")
+
+
 def test_ffmpeg_scan_cache_and_recovery(tmp_path):
     video = tmp_path / "sample.mp4"
     subprocess.run(
@@ -141,3 +174,11 @@ def test_ffmpeg_scan_cache_and_recovery(tmp_path):
     scan(video, out, interval=0.25)
     assert len(read_json(target)["samples"]) == 4
     assert json.loads(target.read_text())["cache_key"]["interval"] == 0.25
+    sample = Path(read_json(target)["samples"][0]["image"])
+    sample.unlink()
+    scan(video, out, interval=0.25)
+    assert sample.exists()
+    other = tmp_path / "other.mp4"
+    other.write_bytes(video.read_bytes())
+    with pytest.raises(ValueError, match="another video"):
+        scan(other, out)

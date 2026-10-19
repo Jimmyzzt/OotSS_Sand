@@ -41,6 +41,10 @@ class Matcher:
             for r in self.catalog["levels"]
             if r["reference"] and Path(r["reference"]).exists()
         ]
+        if not self.rows:
+            raise ValueError(
+                "No local Overworld references; run import-map and inspect download errors"
+            )
         self.sift = cv2.SIFT_create(nfeatures=700)
         self.local_features = {}
         key = hashlib.sha256(

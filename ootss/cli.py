@@ -5,6 +5,7 @@ from .common import read_json, stamp, write_json
 from .exporting import export
 from .maps import import_map, terrain_crop
 from .matching import Matcher, match_run
+from .overworld import check
 from .video import contact_sheet, frame, probe, scan
 
 
@@ -62,6 +63,16 @@ def main():
     p.add_argument("--out", required=True)
     p.add_argument("--zoom", type=int, default=4)
     p.add_argument("--raw", action="store_true")
+    p = sub.add_parser(
+        "world-check",
+        help="Project candidate entry onto an approach frame using terrain features",
+    )
+    p.add_argument("--run", required=True)
+    p.add_argument("--time", type=float, required=True)
+    p.add_argument("--level", required=True)
+    p.add_argument("--terrain", required=True)
+    p.add_argument("--bounds", nargs=4, type=float, required=True)
+    p.add_argument("--out", required=True)
     p = sub.add_parser("export")
     p.add_argument("--review", required=True)
     p.add_argument("--out", required=True)
@@ -91,6 +102,10 @@ def main():
         print(f"{len(r['samples'])} candidate records")
     elif args.command == "search":
         print(Matcher(args.catalog).search(args.image))
+    elif args.command == "world-check":
+        print(
+            check(args.run, args.time, args.level, args.terrain, args.bounds, args.out)
+        )
     elif args.command == "terrain":
         left, bottom, right, top = args.bounds
         if (

@@ -125,13 +125,21 @@ def scan(video, out, interval=15.0, fps=8.0, start=0.0, end=None, black_min=0.25
         "version": 2,
     }
     target = out / "scan.json"
-    if target.exists() and read_json(target).get("cache_key") == key:
-        return read_json(target)
+    if target.exists():
+        previous = read_json(target)
+        if previous.get("cache_key", {}).get("video") != key["video"]:
+            raise ValueError(
+                "This output directory belongs to another video version; use a new --out directory"
+            )
+        if previous.get("cache_key") == key and all(
+            Path(s["image"]).exists() for s in previous["samples"]
+        ):
+            return previous
     begun = time.monotonic()
     meta = probe(video)
     duration = float(meta["format"]["duration"])
     stop = min(end if end is not None else duration, duration)
-    if not 0 <= start < stop or interval <= 0 or fps <= 0:
+    if not 0 <= start < stop or fps <= 0 or interval < 1 / fps or black_min <= 0:
         raise ValueError("Invalid range, sampling interval, or fps")
     cmd = [
         "ffmpeg",
