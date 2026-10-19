@@ -1,11 +1,13 @@
 import argparse
 from pathlib import Path
 
+from .atlas import build_atlas
 from .common import read_json, stamp, write_json
 from .exporting import export
 from .maps import import_map, terrain_crop
 from .matching import Matcher, match_run
 from .overworld import check
+from .series import discover, download_series
 from .video import contact_sheet, frame, probe, scan
 
 
@@ -35,6 +37,12 @@ def main():
     )
     p.add_argument("--run", required=True)
     p.add_argument("--catalog", default="cache/map/catalog.json")
+    p = sub.add_parser("series", help="Discover or resume the full Bilibili anthology")
+    p.add_argument("--discover-only", action="store_true")
+    p.add_argument("--workers", type=int, default=2)
+    p.add_argument("--stage", type=int, choices=[1, 2, 3])
+    p = sub.add_parser("atlas", help="Build the local phase-one real-map atlas")
+    p.add_argument("--out", default="results/stage1")
     p = sub.add_parser(
         "packet", help="Bounded frame and candidate contact sheets for agent judgment"
     )
@@ -78,6 +86,14 @@ def main():
     p.add_argument("--out", required=True)
     p.add_argument("--catalog", default="cache/map/catalog.json")
     args = parser.parse_args()
+    if args.command == "series":
+        discover()
+        if not args.discover_only:
+            download_series(workers=args.workers, only_stage=args.stage)
+        return
+    if args.command == "atlas":
+        build_atlas(args.out)
+        return
     if args.command == "import-map":
         r = import_map(args.cache)
         print(r["audit"])

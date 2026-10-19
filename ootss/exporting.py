@@ -1,3 +1,4 @@
+import base64
 import csv
 import html
 import math
@@ -7,6 +8,7 @@ from urllib.parse import urlencode
 from PIL import Image, ImageDraw
 
 from .common import read_json, stamp, write_json
+from .maps import terrain_crop
 
 
 def video_url(bvid, part, seconds):
@@ -50,7 +52,7 @@ def validate(review, catalog):
     return review
 
 
-def export(review_path, out, catalog="cache/map/catalog.json"):
+def export(review_path, out, catalog="cache/map/catalog.json", background=True):
     review, cat = read_json(review_path), read_json(catalog)
     validate(review, cat)
     by_name = {r["level_id"]: r for r in cat["levels"]}
@@ -110,7 +112,7 @@ def export(review_path, out, catalog="cache/map/catalog.json"):
             f"| {i} | {e['level_id'] or 'unknown'} | [{stamp(e['puzzle_start_time'])}]({e['video_url']})–{stamp(e['puzzle_end_time'])} | {e['review_status']} | {location} |"
         )
     (out / "index.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
-    draw_map(rows, out)
+    draw_map(rows, out, background=background)
     write_report(result, out)
     return result
 
@@ -132,6 +134,8 @@ def write_report(result, out):
         f"<p>点击时间跳转视频，点击地图位置打开 Joric 地图。confirmed 表示已对照关卡身份；candidate / unknown / conflict 待审核，不绘制地图位置。完成或跳过状态另行记录。{timing_note}尚待用户验收。</p>",
         "<p><a href='index.json'>JSON</a> · <a href='index.csv'>CSV</a> · <a href='index.md'>Markdown</a> · <a href='map.svg'>SVG 坐标示意图</a> · <a href='map.png'>PNG</a></p>",
     ]
+    if (out / "atlas/index.html").exists():
+        lines.append('<p><a href="atlas/index.html">打开可缩放的真实地图 ↗</a></p>')
     if (out / "map.svg").exists():
         lines.append((out / "map.svg").read_text(encoding="utf-8"))
     lines.append(
@@ -163,7 +167,7 @@ def write_report(result, out):
     (out / "index.html").write_text("\n".join(lines), encoding="utf-8")
 
 
-def draw_map(rows, out):
+def draw_map(rows, out, background=True):
     """Separate distant coordinate clusters so adjacent entrance labels stay legible."""
     points = [
         (i, e, m["coordinates"])
@@ -202,20 +206,20 @@ def draw_map(rows, out):
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
         '<rect width="100%" height="100%" fill="#101b26"/>',
         '<g fill="#e1edf7" font-family="monospace" font-size="16">',
-        '<text x="30" y="30">OotSS - video level coordinate schematic (X right, Y up)</text>',
+        '<text x="30" y="30">OotSS - Joric Overworld map / video index</text>',
         '<text x="30" y="56">Local panels use independent scales. X right, Y up. Click dots or legend for video.</text>',
     ]
     image = Image.new("RGB", (width, height), "#101b26")
     draw = ImageDraw.Draw(image)
     draw.text(
         (30, 25),
-        "OotSS - video level coordinate schematic (X right, Y up)",
+        "OotSS - Joric Overworld map / video index",
         fill="white",
         font_size=21,
     )
     draw.text(
         (30, 55),
-        "Local panels use independent scales. Numbers follow video order; terrain not shown.",
+        "Local panels use independent scales. Numbers follow video order. Terrain: Joric / Unlicense.",
         fill="white",
         font_size=17,
     )
@@ -259,12 +263,27 @@ def draw_map(rows, out):
         svg.append(f'<text x="{bx + 12}" y="{by + 26}">{title}</text>')
         draw.rectangle((bx, by, bx + bw, by + bh), outline="#375064")
         draw.text((bx + 12, by + 10), title, fill="white", font_size=18)
+        if background:
+            cache = Path("cache/map/crops") / f"{left}_{bottom}_{right}_{top}.jpg"
+            terrain_crop([left, bottom, right, top], cache, annotate=False)
+            with Image.open(cache) as terrain:
+                image.paste(
+                    terrain.resize(
+                        (round((right - left) * scale), round((top - bottom) * scale))
+                    ),
+                    (round(ox), round(oy)),
+                )
+            encoded = base64.b64encode(cache.read_bytes()).decode("ascii")
+            svg.append(
+                f'<image x="{ox}" y="{oy}" width="{(right - left) * scale}" height="{(top - bottom) * scale}" href="data:image/jpeg;base64,{encoded}"/>'
+            )
         for x in range(math.ceil(left), math.floor(right) + 1):
             px = ox + (x - left) * scale
             svg.append(
-                f'<path d="M {px:.1f} {oy} v {(top - bottom) * scale:.1f}" stroke="#26394b"/><text x="{px - 8:.1f}" y="{oy + (top - bottom) * scale + 25:.1f}" font-size="12">{x}</text>'
+                f'<text x="{px - 8:.1f}" y="{oy + (top - bottom) * scale + 25:.1f}" font-size="12">{x}</text>'
             )
-            draw.line((px, oy, px, oy + (top - bottom) * scale), fill="#26394b")
+            if not background:
+                draw.line((px, oy, px, oy + (top - bottom) * scale), fill="#26394b")
             draw.text(
                 (px - 8, oy + (top - bottom) * scale + 8),
                 str(x),
@@ -274,9 +293,10 @@ def draw_map(rows, out):
         for y in range(math.ceil(bottom), math.floor(top) + 1):
             py = oy + (top - y) * scale
             svg.append(
-                f'<path d="M {ox} {py:.1f} h {(right - left) * scale:.1f}" stroke="#26394b"/><text x="{ox - 35}" y="{py + 5:.1f}" font-size="12">{y}</text>'
+                f'<text x="{ox - 35}" y="{py + 5:.1f}" font-size="12">{y}</text>'
             )
-            draw.line((ox, py, ox + (right - left) * scale, py), fill="#26394b")
+            if not background:
+                draw.line((ox, py, ox + (right - left) * scale, py), fill="#26394b")
             draw.text((ox - 35, py - 8), str(y), fill="#a1b4c7", font_size=12)
         seen = {}
         for i, e, c in cluster:
@@ -287,11 +307,16 @@ def draw_map(rows, out):
             offset = seen.get(tuple(c), 0)
             seen[tuple(c)] = offset + 1
             svg.append(
-                f'<text x="{x + 10:.1f}" y="{y - 10 + offset * 20:.1f}" font-size="20">{i}</text>'
+                f'<text x="{x + 10:.1f}" y="{y - 10 + offset * 20:.1f}" font-size="20" stroke="#101b26" stroke-width="3" paint-order="stroke">{i}</text>'
             )
             draw.ellipse((x - 6, y - 6, x + 6, y + 6), fill="#61d3d0")
             draw.text(
-                (x + 10, y - 24 + offset * 20), str(i), fill="white", font_size=20
+                (x + 10, y - 24 + offset * 20),
+                str(i),
+                fill="white",
+                font_size=20,
+                stroke_width=2,
+                stroke_fill="#101b26",
             )
     for i, e in enumerate(rows, 1):
         y = 115 + (i - 1) * 28

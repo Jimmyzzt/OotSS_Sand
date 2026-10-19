@@ -90,7 +90,7 @@ def test_export_preserves_repeat_visits_and_review(tmp_path):
         },
     )
     before = review.read_bytes()
-    r = export(review, tmp_path / "out", catalog)
+    r = export(review, tmp_path / "out", catalog, background=False)
     assert len(r["events"]) == 2
     assert review.read_bytes() == before
     assert r["events"][0]["video_url"].endswith("p=4&t=1")
