@@ -1,0 +1,22 @@
+[project]
+name = "ootss-video-notes"
+version = "0.1.0"
+description = "Local video evidence tools for agent-assisted OotSS indexing"
+requires-python = ">=3.13"
+dependencies = ["numpy", "scipy", "opencv-python-headless", "pillow"]
+
+[project.scripts]
+ootss = "ootss.cli:main"
+
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = ["pytest", "ruff"]
+
+[tool.setuptools.packages.find]
+include = ["ootss*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
