@@ -10,7 +10,7 @@ from ootss.common import read_json, write_json
 from ootss.exporting import export, validate, video_url
 from ootss.maps import layer
 from ootss.matching import Matcher, features
-from ootss.video import black_score, merge_black, scan
+from ootss.video import black_score, frame, merge_black, scan
 
 
 def test_center_icon_transition_and_noise():
@@ -111,6 +111,10 @@ def test_invalid_identity_and_times_rejected():
     r["events"][0]["level_id"] = "sky_level"
     with pytest.raises(ValueError, match="Overworld"):
         validate(r, cat)
+    r = fixture_review()
+    r["events"][0]["review_status"] = "unknown"
+    with pytest.raises(ValueError, match="level_id=null"):
+        validate(r, cat)
 
 
 def test_unknown_match_and_export(tmp_path):
@@ -143,6 +147,13 @@ def test_unknown_match_and_export(tmp_path):
     result = export(review, tmp_path / "out", catalog)
     assert result["events"][0]["level_id"] is None
     assert "](None)" not in (tmp_path / "out/index.md").read_text(encoding="utf-8")
+    r = fixture_review()
+    r["events"] = [r["events"][0]]
+    r["events"][0]["review_status"] = "candidate"
+    write_json(review, r)
+    result = export(review, tmp_path / "out", catalog)
+    assert result["events"][0]["map_entries"] == []
+    assert result["events"][0]["map_url"] is None
 
 
 def test_ffmpeg_scan_cache_and_recovery(tmp_path):
@@ -182,3 +193,37 @@ def test_ffmpeg_scan_cache_and_recovery(tmp_path):
     other.write_bytes(video.read_bytes())
     with pytest.raises(ValueError, match="another video"):
         scan(other, out)
+
+
+def test_frame_cache_is_bound_to_video_and_time(tmp_path):
+    def make_video(name, color):
+        p = tmp_path / name
+        subprocess.run(
+            [
+                "ffmpeg",
+                "-v",
+                "error",
+                "-f",
+                "lavfi",
+                "-i",
+                f"color=c={color}:s=160x90:r=24:d=1",
+                "-y",
+                str(p),
+            ],
+            check=True,
+        )
+        return p
+
+    red, blue = make_video("red.mp4", "red"), make_video("blue.mp4", "blue")
+    target = tmp_path / "same-output.jpg"
+    frame(red, 0.1, target)
+    with Image.open(target) as im:
+        assert im.getpixel((10, 10))[0] > 200
+    mtime = target.stat().st_mtime_ns
+    frame(red, 0.1, target)
+    assert target.stat().st_mtime_ns == mtime
+    frame(blue, 0.1, target)
+    with Image.open(target) as im:
+        assert im.getpixel((10, 10))[2] > 200
+    frame(blue, 0.5, target)
+    assert read_json(target.with_suffix(".jpg.source.json"))["time"] == 0.5

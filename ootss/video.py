@@ -38,7 +38,9 @@ def fingerprint(video):
 
 def frame(video, time, destination, width=852):
     destination = Path(destination)
-    if not destination.exists():
+    source = destination.with_suffix(destination.suffix + ".source.json")
+    key = {"video": fingerprint(video), "time": max(0, float(time)), "width": width}
+    if not destination.exists() or not source.exists() or read_json(source) != key:
         destination.parent.mkdir(parents=True, exist_ok=True)
         subprocess.run(
             [
@@ -60,6 +62,7 @@ def frame(video, time, destination, width=852):
             ],
             check=True,
         )
+        write_json(source, key)
     return destination
 
 

@@ -35,6 +35,10 @@ def validate(review, catalog):
             "conflict",
         }:
             raise ValueError("Missing or invalid review status")
+        if e.get("review_status") == "unknown" and e["level_id"] is not None:
+            raise ValueError(
+                "Unknown identity requires level_id=null; keep proposals in candidate_levels"
+            )
         if e.get("review_status") == "confirmed" and (
             e["level_id"] is None or not e.get("evidence")
         ):
@@ -54,7 +58,10 @@ def export(review_path, out, catalog="cache/map/catalog.json"):
     out.mkdir(parents=True, exist_ok=True)
     rows = []
     for e in review["events"]:
-        level = by_name.get(e["level_id"], {})
+        # Proposed/conflicting identities must not acquire authoritative map pins.
+        level = (
+            by_name.get(e["level_id"], {}) if e["review_status"] == "confirmed" else {}
+        )
         rows.append(
             {
                 **e,
@@ -110,13 +117,19 @@ def export(review_path, out, catalog="cache/map/catalog.json"):
 
 def write_report(result, out):
     esc = html.escape
+    errors = {e.get("timing_uncertainty_seconds") for e in result["events"]}
+    timing_note = (
+        f"时间边界约 ±{next(iter(errors)):g} 秒。"
+        if len(errors) == 1 and None not in errors
+        else "时间边界误差以逐条审核记录为准。"
+    )
     lines = [
         "<!doctype html><html lang='zh-CN'><meta charset='utf-8'>",
         "<meta name='viewport' content='width=device-width,initial-scale=1'>",
         "<title>OotSS 视频关卡索引</title>",
         "<style>body{font:16px/1.6 system-ui;margin:24px auto;padding:0 20px;max-width:1200px;background:#101b26;color:#e1edf7}a{color:#73e3df}table{border-collapse:collapse;width:100%}td,th{padding:9px;text-align:left;border-bottom:1px solid #375064}img,svg{max-width:100%;height:auto}details{margin:18px 0}code{overflow-wrap:anywhere} .scroll{overflow:auto}</style>",
         f"<h1>P{result['part_number']} · {len(result['events'])} 次关卡访问</h1>",
-        "<p>点击时间跳转视频，点击地图位置打开 Joric 地图。关卡身份由 Codex 对照画面确认，尚待用户验收；完成或跳过状态未确认。时间边界约 ±0.5 秒。</p>",
+        f"<p>点击时间跳转视频，点击地图位置打开 Joric 地图。confirmed 表示已对照关卡身份；candidate / unknown / conflict 待审核，不绘制地图位置。完成或跳过状态另行记录。{timing_note}尚待用户验收。</p>",
         "<p><a href='index.json'>JSON</a> · <a href='index.csv'>CSV</a> · <a href='index.md'>Markdown</a> · <a href='map.svg'>SVG 坐标示意图</a> · <a href='map.png'>PNG</a></p>",
     ]
     if (out / "map.svg").exists():
@@ -137,7 +150,7 @@ def write_report(result, out):
             else "unknown"
         )
         lines.append(
-            f'<tr id="{esc(e["event_id"])}"><td>{i}</td><td><code>{esc(e["level_id"] or "unknown")}</code></td><td><a href="{esc(e["video_url"], quote=True)}">{stamp(e["puzzle_start_time"])}–{stamp(e["puzzle_end_time"])}</a></td><td>{map_link}</td><td>{esc(status)}</td></tr>'
+            f'<tr id="{esc(e["event_id"])}"><td>{i}</td><td><code>{esc(e["level_id"] or "unknown")}</code><br><small>{esc(e["review_status"])}</small></td><td><a href="{esc(e["video_url"], quote=True)}">{stamp(e["puzzle_start_time"])}–{stamp(e["puzzle_end_time"])}</a></td><td>{map_link}</td><td>{esc(status)}</td></tr>'
         )
     lines.append("</table></div>")
     for item in result.get("galleries", []):
