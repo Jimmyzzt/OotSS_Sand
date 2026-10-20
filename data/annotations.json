@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "note": "人工标注。levels以level_id为键，可设置multi_save、big_star布尔值和notes文字。浏览器标注可导出后替换此文件并重建。",
+  "levels": {}
+}

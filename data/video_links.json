@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "note": "source part编号保持不变；索引视频插入后按CID更新parts内的实际part编号，只改变跳转目标。",
+  "parts": {}
+}

@@ -11,6 +11,7 @@ from PIL import Image
 from .common import read_json, write_json
 from .exporting import validate, video_url
 from .maps import ASSETS, download
+from .regions import enrich
 
 
 def build_atlas(out="results/stage1", parts=range(1, 25), offline_zoom=3):
@@ -126,12 +127,27 @@ def build_atlas(out="results/stage1", parts=range(1, 25), offline_zoom=3):
         "offline_zoom": offline_zoom,
         "tile_url": f"{ASSETS}/tiles/overworld_64k/{{z}}/{{y}}/{{x}}.webp",
     }
+    marker_file = Path("cache/map/upstream/data/markers.json")
+    enrich(
+        data,
+        read_json(marker_file)["features"] if marker_file.exists() else [],
+        read_json("data/annotations.json")
+        if Path("data/annotations.json").exists()
+        else {},
+        read_json("data/video_links.json")
+        if Path("data/video_links.json").exists()
+        else {},
+    )
     write_json(out / "index.json", data)
+    for filename in ("atlas.css", "atlas.js"):
+        shutil.copyfile(Path(__file__).parent / "templates" / filename, out / filename)
     with (out / "visits.csv").open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(
             f,
             fieldnames=[
                 "part",
+                "display_part",
+                "ordinal",
                 "event_id",
                 "level_id",
                 "area",
@@ -149,7 +165,15 @@ def build_atlas(out="results/stage1", parts=range(1, 25), offline_zoom=3):
                     {
                         **{
                             k: visit[k]
-                            for k in ("part", "event_id", "start", "end", "url")
+                            for k in (
+                                "part",
+                                "display_part",
+                                "ordinal",
+                                "event_id",
+                                "start",
+                                "end",
+                                "url",
+                            )
                         },
                         "level_id": level["level_id"],
                         "area": level["area"],

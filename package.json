@@ -1,0 +1,13 @@
+{
+  "name": "ootss-sand-atlas",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:worker": "node --test deployment/worker.test.js",
+    "worker:check": "wrangler deploy --dry-run",
+    "worker:deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.151.2"
+  }
+}

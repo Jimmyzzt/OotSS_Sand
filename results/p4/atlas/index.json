@@ -9,7 +9,26 @@
       "duration": 3032,
       "download_status": "complete",
       "reviewed": true,
-      "visits": 29
+      "visits": 29,
+      "display_part": 4,
+      "level_count": 29,
+      "route": [
+        {
+          "region_id": "0,4",
+          "start": 11.75,
+          "first_ordinal": 1
+        },
+        {
+          "region_id": "-1,3",
+          "start": 2271.5,
+          "first_ordinal": 25
+        },
+        {
+          "region_id": "0,1",
+          "start": 2860.25,
+          "first_ordinal": 29
+        }
+      ]
     }
   ],
   "levels": [
@@ -35,10 +54,29 @@
           "end": 58.375,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=11",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 1,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/heroes3_10.webp"
+      "preview": "assets/previews/heroes3_10.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "heroes3_11_v2",
@@ -62,10 +100,29 @@
           "end": 119.625,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=58",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 2,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/heroes3_11_v2.webp"
+      "preview": "assets/previews/heroes3_11_v2.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "druid_and_dragon",
@@ -89,10 +146,29 @@
           "end": 216.75,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=119",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 3,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/druid_and_dragon.webp"
+      "preview": "assets/previews/druid_and_dragon.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "wizard_and_druid_alt_5",
@@ -116,10 +192,29 @@
           "end": 294.375,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=217",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 4,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/wizard_and_druid_alt_5.webp"
+      "preview": "assets/previews/wizard_and_druid_alt_5.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "heroes3_15_v4",
@@ -143,10 +238,29 @@
           "end": 431.375,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=294",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 5,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/heroes3_15_v4.webp"
+      "preview": "assets/previews/heroes3_15_v4.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "heroes3_13_v2",
@@ -170,10 +284,29 @@
           "end": 506.75,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=431",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 6,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/heroes3_13_v2.webp"
+      "preview": "assets/previews/heroes3_13_v2.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "heroes3_druid_b_v2",
@@ -197,10 +330,29 @@
           "end": 576.75,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=507",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 7,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/heroes3_druid_b_v2.webp"
+      "preview": "assets/previews/heroes3_druid_b_v2.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "heroes3_druid_a",
@@ -224,10 +376,29 @@
           "end": 635.75,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=577",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 8,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/heroes3_druid_a.webp"
+      "preview": "assets/previews/heroes3_druid_a.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "wizard_and_druid_alt",
@@ -251,10 +422,29 @@
           "end": 813.75,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=645",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 9,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/wizard_and_druid_alt.webp"
+      "preview": "assets/previews/wizard_and_druid_alt.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "heroes3_1_v3",
@@ -278,10 +468,29 @@
           "end": 887.25,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=825",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 10,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/heroes3_1_v3.webp"
+      "preview": "assets/previews/heroes3_1_v3.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "heroes3_2_v4",
@@ -305,10 +514,29 @@
           "end": 915.0,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=887",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 11,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/heroes3_2_v4.webp"
+      "preview": "assets/previews/heroes3_2_v4.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "heroes3_3_v2",
@@ -332,10 +560,29 @@
           "end": 963.125,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=915",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 12,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/heroes3_3_v2.webp"
+      "preview": "assets/previews/heroes3_3_v2.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "heroes3_4",
@@ -359,10 +606,29 @@
           "end": 978.625,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=963",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 13,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/heroes3_4.webp"
+      "preview": "assets/previews/heroes3_4.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "heroes3_5",
@@ -386,10 +652,29 @@
           "end": 1048.375,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=987",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 14,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/heroes3_5.webp"
+      "preview": "assets/previews/heroes3_5.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "heroes3_8_thief",
@@ -413,10 +698,29 @@
           "end": 1118.0,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=1048",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 15,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/heroes3_8_thief.webp"
+      "preview": "assets/previews/heroes3_8_thief.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "heroes3_6_v3",
@@ -440,10 +744,29 @@
           "end": 1212.125,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=1118",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 16,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/heroes3_6_v3.webp"
+      "preview": "assets/previews/heroes3_6_v3.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "heroes3_7_v4",
@@ -467,10 +790,29 @@
           "end": 1284.0,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=1212",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 17,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/heroes3_7_v4.webp"
+      "preview": "assets/previews/heroes3_7_v4.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "heroes3_8_v4_alt",
@@ -494,10 +836,29 @@
           "end": 1370.625,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=1284",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 18,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/heroes3_8_v4_alt.webp"
+      "preview": "assets/previews/heroes3_8_v4_alt.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "heroes3_8_v3_alt3",
@@ -521,10 +882,29 @@
           "end": 1431.375,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=1370",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 19,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/heroes3_8_v3_alt3.webp"
+      "preview": "assets/previews/heroes3_8_v3_alt3.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "heroes3_14_v3",
@@ -548,10 +928,29 @@
           "end": 1616.875,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=1515",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 20,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/heroes3_14_v3.webp"
+      "preview": "assets/previews/heroes3_14_v3.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "heroes3_16_v4_alt",
@@ -575,10 +974,29 @@
           "end": 1702.25,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=1617",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 21,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/heroes3_16_v4_alt.webp"
+      "preview": "assets/previews/heroes3_16_v4_alt.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "compactor_v2",
@@ -602,10 +1020,29 @@
           "end": 1890.25,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=1727",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 22,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/compactor_v2.webp"
+      "preview": "assets/previews/compactor_v2.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "gatekeeping_v3",
@@ -629,10 +1066,29 @@
           "end": 2025.75,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=1902",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 23,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/gatekeeping_v3.webp"
+      "preview": "assets/previews/gatekeeping_v3.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "heroes3_21_condensed",
@@ -656,10 +1112,29 @@
           "end": 2154.0,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=2034",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 24,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/heroes3_21_condensed.webp"
+      "preview": "assets/previews/heroes3_21_condensed.webp",
+      "region_ids": [
+        "0,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊1"
+      ]
     },
     {
       "level_id": "side_slide_intro_v2",
@@ -683,10 +1158,29 @@
           "end": 2444.125,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=2271",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 25,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/side_slide_intro_v2.webp"
+      "preview": "assets/previews/side_slide_intro_v2.webp",
+      "region_ids": [
+        "-1,3"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "能量门方向1"
+      ]
     },
     {
       "level_id": "side_kick",
@@ -710,10 +1204,29 @@
           "end": 2580.875,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=2514",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 26,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/side_kick.webp"
+      "preview": "assets/previews/side_kick.webp",
+      "region_ids": [
+        "-1,3"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "能量门方向1"
+      ]
     },
     {
       "level_id": "multipush_for_me2",
@@ -737,10 +1250,29 @@
           "end": 2696.875,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=2589",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 27,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/multipush_for_me2.webp"
+      "preview": "assets/previews/multipush_for_me2.webp",
+      "region_ids": [
+        "-1,3"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "能量门方向1"
+      ]
     },
     {
       "level_id": "dragon_on_the_wall",
@@ -764,10 +1296,29 @@
           "end": 2813.125,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=2706",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 28,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/dragon_on_the_wall.webp"
+      "preview": "assets/previews/dragon_on_the_wall.webp",
+      "region_ids": [
+        "-1,3"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "能量门方向1"
+      ]
     },
     {
       "level_id": "victory_lap",
@@ -791,10 +1342,29 @@
           "end": 3005.5,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=4&t=2860",
           "reviewer": "Codex visual comparison (not user acceptance)",
-          "uncertainty": 0.5
+          "uncertainty": 0.5,
+          "ordinal": 29,
+          "source_part": 4,
+          "display_part": 4
         }
       ],
-      "preview": "assets/previews/victory_lap.webp"
+      "preview": "assets/previews/victory_lap.webp",
+      "region_ids": [
+        "0,1"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄3·吟游诗人与德鲁伊2"
+      ]
     }
   ],
   "unknown_events": [],
@@ -1239,5 +1809,118 @@
     "zig_zag"
   ],
   "offline_zoom": 3,
-  "tile_url": "https://joric.github.io/ootss_tileset/tiles/overworld_64k/{z}/{y}/{x}.webp"
+  "tile_url": "https://joric.github.io/ootss_tileset/tiles/overworld_64k/{z}/{y}/{x}.webp",
+  "grid": {
+    "width": 19,
+    "height": 13,
+    "center": [
+      80,
+      69
+    ],
+    "source": "joric/ootss index.html gridLayer: gw=19, gh=13, cx=80, cy=69"
+  },
+  "regions": [
+    {
+      "id": "0,4",
+      "col": 0,
+      "row": 4,
+      "direction": "北4",
+      "theme": "英雄3·吟游诗人与德鲁伊",
+      "bounds": [
+        70.5,
+        114.5,
+        89.5,
+        127.5
+      ],
+      "parts": [
+        4
+      ],
+      "first": [
+        4,
+        11.75
+      ],
+      "level_ids": [
+        "heroes3_10",
+        "heroes3_11_v2",
+        "druid_and_dragon",
+        "wizard_and_druid_alt_5",
+        "heroes3_15_v4",
+        "heroes3_13_v2",
+        "heroes3_druid_b_v2",
+        "heroes3_druid_a",
+        "wizard_and_druid_alt",
+        "heroes3_1_v3",
+        "heroes3_2_v4",
+        "heroes3_3_v2",
+        "heroes3_4",
+        "heroes3_5",
+        "heroes3_8_thief",
+        "heroes3_6_v3",
+        "heroes3_7_v4",
+        "heroes3_8_v4_alt",
+        "heroes3_8_v3_alt3",
+        "heroes3_14_v3",
+        "heroes3_16_v4_alt",
+        "compactor_v2",
+        "gatekeeping_v3",
+        "heroes3_21_condensed"
+      ],
+      "order": 1,
+      "title": "英雄3·吟游诗人与德鲁伊1"
+    },
+    {
+      "id": "-1,3",
+      "col": -1,
+      "row": 3,
+      "direction": "北3西1",
+      "theme": "能量门方向",
+      "bounds": [
+        51.5,
+        101.5,
+        70.5,
+        114.5
+      ],
+      "parts": [
+        4
+      ],
+      "first": [
+        4,
+        2271.5
+      ],
+      "level_ids": [
+        "side_slide_intro_v2",
+        "side_kick",
+        "multipush_for_me2",
+        "dragon_on_the_wall"
+      ],
+      "order": 2,
+      "title": "能量门方向1"
+    },
+    {
+      "id": "0,1",
+      "col": 0,
+      "row": 1,
+      "direction": "北1",
+      "theme": "英雄3·吟游诗人与德鲁伊",
+      "bounds": [
+        70.5,
+        75.5,
+        89.5,
+        88.5
+      ],
+      "parts": [
+        4
+      ],
+      "first": [
+        4,
+        2860.25
+      ],
+      "level_ids": [
+        "victory_lap"
+      ],
+      "order": 3,
+      "title": "英雄3·吟游诗人与德鲁伊2"
+    }
+  ],
+  "annotation_version": 1
 }

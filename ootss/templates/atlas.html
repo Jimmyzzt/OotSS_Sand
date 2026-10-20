@@ -1,49 +1,44 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="light">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>沉星之序 · 一阶段攻略地图</title>
-<link rel="stylesheet" href="assets/leaflet.css">
-<style>
-:root{color-scheme:dark;font:15px/1.55 system-ui,sans-serif;color:#e9ece6;background:#111b20}*{box-sizing:border-box}body{margin:0}button,input,select{font:inherit;min-width:0;max-width:100%}button,select,input{background:#1d2b31;color:#e9ece6;border:1px solid #476066;border-radius:7px;padding:7px 10px}button,a,select{cursor:pointer}button:hover{border-color:#dfbf79}a{color:#f0ce89}header{height:78px;display:flex;align-items:center;justify-content:space-between;padding:12px 22px;border-bottom:1px solid #33464b;gap:12px}h1{font-size:20px;letter-spacing:2px;margin:0}header p{margin:2px 0 0;color:#b0bfc1;font-size:12px}.badge{color:#f0ce89;font-variant-numeric:tabular-nums}main{display:grid;grid-template-columns:minmax(0,1fr) 340px;height:calc(100dvh - 78px)}#map{height:100%;background:#15222a}.leaflet-container{font-family:inherit}.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#18262d;color:#e9ece6}.leaflet-popup-content{min-width:225px;max-height:380px;overflow:auto}.leaflet-popup-content a{color:#f0ce89}.leaflet-control-attribution{background:#18262de8!important;color:#b0bfc1}.leaflet-control-attribution a{color:#f0ce89}aside{border-left:1px solid #33464b;display:flex;flex-direction:column;min-height:0}.filters{padding:14px;display:grid;gap:9px}.actions{display:flex;gap:6px}.actions button{flex:1}#list{overflow:auto;flex:1;padding:0 12px 12px}.entry{display:block;width:100%;text-align:left;padding:10px;margin:7px 0;border-color:#33464b}.entry strong{font-size:13px;overflow-wrap:anywhere;font-family:ui-monospace,monospace}.entry small{display:block;color:#adbec0;margin-top:4px}.empty{padding:22px;color:#adbec0}footer{padding:12px 15px;font-size:11px;color:#a8babc;border-top:1px solid #33464b}summary{cursor:pointer;color:#e3c68d}details{padding:0 14px 12px}#coverage{max-height:140px;overflow:auto;font-size:12px;color:#adbec0}.popup-title{font:600 14px ui-monospace,monospace;overflow-wrap:anywhere}.visit{padding:7px 0;border-bottom:1px solid #33464b}.visit small{display:block;color:#a8babc}.leaflet-tooltip{background:#18262d;color:#fff;border-color:#e5c47e}.leaflet-bar a{background:#23373e;color:white}.leaflet-bar a:hover{background:#3a5258}.status{font-size:12px;color:#adbec0}@media(max-width:760px){header{height:auto;min-height:78px;padding:10px 14px}main{height:auto;display:flex;flex-direction:column}#map{height:67dvh;min-height:350px}aside{height:440px;border-left:0;border-top:1px solid #33464b}h1{font-size:17px}header .badge{font-size:12px;white-space:nowrap}}
-</style>
+<meta name="description" content="塞德莎沉星之序攻略：区域顺序、关卡编号与视频时间索引。">
+<title>沉星之序 · 攻略区域与关卡索引</title>
+<link rel="stylesheet" href="assets/leaflet.css"><link rel="stylesheet" href="atlas.css">
 </head>
 <body>
-<header><div><h1>沉星之序 · 一阶段攻略地图</h1><p>塞德莎攻略 · 真实 Overworld 地图 · 本地索引</p></div><div class="badge" id="counts"></div></header>
-<main><div id="map" aria-label="可缩放拖动的关卡地图"></div><aside>
-<div class="filters"><input id="search" aria-label="搜索关卡" placeholder="搜索关卡 ID / 区域"><select id="part" aria-label="筛选分 P"><option value="">全部分 P</option></select><div class="actions"><button id="fit">已标关卡</button><button id="world">完整地图</button></div><div class="status" id="status"></div></div>
-<div id="list"></div><details id="unresolved"><summary>待核查片段</summary><div id="unknowns"></div></details><details><summary>视频处理覆盖情况</summary><div id="coverage"></div></details>
-<footer>点击地图标记查看对应视频区间。仅收录本阶段视频中经画面对照的关卡，可一关多次访问。低倍率底图离线可用；高倍率瓦片需联网。<br><a href="https://joric.github.io/ootss/" target="_blank" rel="noopener">地图：Joric / Unlicense</a> · <a href="assets/LEAFLET-LICENSE.txt">Leaflet 1.9.4</a> · <a href="index.json">完整数据</a> · <a href="visits.csv">CSV</a></footer>
-</aside></main>
-<script src="assets/leaflet.js"></script>
-<script>
-const DATA=__ATLAS_DATA__;
-const escapeHTML=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const clock=t=>`${Math.floor(t/60).toString().padStart(2,'0')}:${Math.floor(t%60).toString().padStart(2,'0')}`;
-const crs=L.extend({},L.CRS.Simple,{transformation:new L.Transformation(512/190,24.5*512/190,-512/190,170.5*512/190)});
-const map=L.map('map',{crs,minZoom:-1,maxZoom:7,zoomSnap:.25,preferCanvas:true}).setView([76,70],1);
-const Tiles=L.TileLayer.extend({getTileUrl(c){const relative=`tiles/overworld_64k/${c.z}/${c.y}/${c.x}.webp`;return c.z<=DATA.offline_zoom?'assets/'+relative:DATA.tile_url.replace('{z}',c.z).replace('{y}',c.y).replace('{x}',c.x)}});
-new Tiles('',{tileSize:512,minZoom:-1,minNativeZoom:0,maxNativeZoom:7,noWrap:true,bounds:[[-18.5,-24.5],[170.5,165.5]],attribution:'Map: Joric / Unlicense'}).addTo(map);
-const group=L.featureGroup().addTo(map), colors=['#f8cb75','#76ded0','#c7a1f0','#fa9c8a','#9ed776','#88baf4'];
-const select=document.getElementById('part'), search=document.getElementById('search'), list=document.getElementById('list');
-DATA.parts.forEach(p=>{const o=document.createElement('option');o.value=p.part;o.textContent=`P${p.part.toString().padStart(2,'0')} · ${p.title}`;select.append(o)});
-const initialPart=new URLSearchParams(location.search).get('p');if(DATA.parts.some(p=>String(p.part)===initialPart))select.value=initialPart;
-document.getElementById('coverage').innerHTML=DATA.parts.map(p=>`<div>P${p.part.toString().padStart(2,'0')} · ${p.reviewed?`已审核 ${p.visits} 段`:p.download_status==='complete'?'已下载，待审核':'待下载'}</div>`).join('');
-const visits=DATA.levels.reduce((n,l)=>n+l.visits.length,0), reviewed=DATA.parts.filter(p=>p.reviewed).length;
-document.getElementById('counts').textContent=`${DATA.levels.length} 关 · ${visits} 次访问 · ${reviewed}/${DATA.parts.length} P`;
-document.getElementById('unresolved').hidden=!DATA.unknown_events.length;
-document.getElementById('unknowns').innerHTML=DATA.unknown_events.map(e=>`<div class="visit"><a href="https://www.bilibili.com/video/${encodeURIComponent(DATA.bvid)}/?p=${e.part}&t=${Math.floor(e.puzzle_start_time)}" target="_blank" rel="noopener">P${e.part} ${clock(e.puzzle_start_time)}–${clock(e.puzzle_end_time)}</a><small>身份未确认；暂不放置地图标记。</small></div>`).join('');
-function visible(){const q=search.value.trim().toLowerCase(),p=Number(select.value);return DATA.levels.map(l=>({...l,shown:l.visits.filter(v=>!p||v.part===p)})).filter(l=>l.shown.length&&(!q||`${l.level_id} ${l.area}`.toLowerCase().includes(q)))}
-function popup(level){return `<div class="popup-title">${escapeHTML(level.level_id)}</div><div class="status">${escapeHTML(level.area)} · ${level.entries.map(m=>m.coordinates.join(', ')).join(' / ')}</div>${level.preview?`<img src="${escapeHTML(level.preview)}" alt="${escapeHTML(level.level_id)} 参考布局" width="240" height="135" style="width:100%;height:auto;margin-top:8px;border-radius:4px">`:''}${level.shown.map(v=>`<div class="visit"><a href="${escapeHTML(v.url)}" target="_blank" rel="noopener">▶ P${v.part.toString().padStart(2,'0')} · ${clock(v.start)}–${clock(v.end)}</a><small>时间边界约 ±${escapeHTML(v.uncertainty??'待核查')} 秒</small></div>`).join('')}<p><a href="${escapeHTML(level.map_url)}" target="_blank" rel="noopener">在 Joric 原地图查看 ↗</a></p>`}
-function markerRadius(){return Math.max(2,Math.min(6,3+map.getZoom()))}
-map.on('zoomend',()=>group.eachLayer(m=>{m.setRadius(markerRadius());m.setStyle({weight:map.getZoom()<1?1:2})}));
-function render(){group.clearLayers();list.replaceChildren();const levels=visible();document.getElementById('status').textContent=`显示 ${levels.length} 关；拖动 / 滚轮缩放，点击标记打开视频链接。`;
-levels.forEach(level=>{const markers=level.entries.map(m=>L.circleMarker([m.coordinates[1],m.coordinates[0]],{radius:markerRadius(),color:'#101b20',weight:map.getZoom()<1?1:2,fillColor:colors[(level.shown[0].part-1)%colors.length],fillOpacity:.95}).bindTooltip(level.level_id).bindPopup(popup(level),{maxHeight:300,autoPanPadding:[18,18]}).addTo(group));const button=document.createElement('button');button.className='entry';button.innerHTML=`<strong>${escapeHTML(level.level_id)}</strong><small>${level.shown.map(v=>`P${v.part.toString().padStart(2,'0')} ${clock(v.start)}`).join(' · ')}</small>`;button.onclick=()=>{const marker=markers[0];map.setView(marker.getLatLng(),Math.max(map.getZoom(),4),{animate:false});marker.openPopup();revealMap()};list.append(button)});
-if(!levels.length)list.innerHTML='<div class="empty">没有匹配的已确认关卡。</div>';}
-function revealMap(){if(window.matchMedia('(max-width:760px)').matches)window.scrollTo({top:0,behavior:'smooth'})}
-function fit(){if(group.getLayers().length)map.fitBounds(group.getBounds(),{padding:[35,35],maxZoom:4,animate:false});revealMap()}
-search.addEventListener('input',render);select.addEventListener('change',()=>{render();fit()});document.getElementById('fit').onclick=fit;document.getElementById('world').onclick=()=>{map.fitBounds([[-18.5,-24.5],[170.5,165.5]],{animate:false});revealMap()};render();fit();
-// A small, read-only QA surface also lets a future agent inspect exact layer counts.
-window.atlas={data:DATA,map,group,visible};
-</script>
+<header class="topbar">
+<div class="brand"><span class="brand-star">✦</span><div><h1>沉星之序 <span>攻略索引</span></h1><p>塞德莎 · 一阶段 Overworld</p></div></div>
+<div class="stats" id="counts"></div>
+<div class="toolbar"><button id="theme" aria-label="切换深浅主题">☾ 深色</button><button id="settings-open">设置</button><button id="present">演示模式</button></div>
+</header>
+<div class="controlbar">
+<div class="segments" role="group" aria-label="地图视图"><button id="view-regions" aria-pressed="true">区域划分</button><button id="view-levels" aria-pressed="false">关卡地图</button></div>
+<select id="part" aria-label="选择分 P"><option value="">全部分 P</option></select>
+<select id="region" aria-label="选择区域"><option value="">全部涉及区域</option></select>
+<input id="search" aria-label="搜索关卡或区域" placeholder="搜索关卡 / 区域">
+<button id="fit">适应当前范围</button><button id="world">完整地图</button>
+</div>
+<main>
+<section class="map-shell"><div id="map" aria-label="可缩放拖动的真实地图"></div>
+<div class="map-caption" id="map-caption"><span>一阶段区域总览</span><strong>按攻略先后浏览</strong></div>
+<div class="map-key"><span class="gold">★ 大星星</span><span class="cyan">▣ 多存档</span><span>编号按所选分 P 首次出现顺序</span></div>
+<div class="route-controls"><button id="previous" aria-label="上一个区域">←</button><span id="route-position">区域路线</span><button id="next" aria-label="下一个区域">→</button><button id="exit-present" hidden>退出演示</button></div>
+</section>
+<aside>
+<div class="side-heading"><div class="eyebrow">WALKTHROUGH INDEX</div><h2 id="list-title">关卡顺序</h2><p id="status"></p></div>
+<div id="route-list" aria-label="区域顺序"></div>
+<div id="list" aria-label="谜题开始时间列表"></div>
+<footer><p>点击关卡定位；点击时间播放对应攻略。手动标注保存在本机，可在设置中导出。</p><a href="https://joric.github.io/ootss/" target="_blank" rel="noopener">原地图 Joric</a> · <a href="visits.csv">CSV</a> · <a href="index.json">数据</a><details><summary>处理范围与来源</summary><div id="coverage"></div><p>仅收录视频中已确认的入口访问；内部房间不另造地表坐标。浅层底图本地保存，深层瓦片联网加载。地图 Unlicense / <a href="assets/LEAFLET-LICENSE.txt">Leaflet BSD</a>。</p></details></footer>
+</aside>
+</main>
+<dialog id="settings"><form method="dialog"><div class="dialog-title"><h2>阅读与标注设置</h2><button aria-label="关闭设置">×</button></div></form>
+<label>页面主题<select id="theme-select"><option value="light">米白浅色</option><option value="dark">柔和深色</option></select></label>
+<label>标点大小 <output id="point-value"></output><input id="point-size" aria-label="标点大小" type="range" min="0.6" max="2" step="0.1"></label>
+<label>标签大小 <output id="label-value"></output><input id="label-size" aria-label="标签大小" type="range" min="10" max="28" step="1"></label>
+<p class="hint">地图上的编号、区域名称随标签大小调整。放大地图后显示关卡编号；选择分 P 后，以该分 P 的关卡顺序编号。</p>
+<div class="settings-actions"><button id="export-annotations">导出手动标注</button><label class="file-button">导入手动标注<input id="import-annotations" type="file" accept="application/json,.json"></label></div>
+<p id="annotation-status" class="hint" role="status"></p><p class="hint">多存档关只由人工勾选。大星星初值来自原地图，可手动调整。导出文件可交回维护者更新站点。</p>
+</dialog>
+<script src="assets/leaflet.js"></script><script>const DATA=__ATLAS_DATA__;</script><script src="atlas.js"></script>
 </body></html>

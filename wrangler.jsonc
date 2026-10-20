@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ootss-sand",
+  "main": "deployment/worker.js",
+  "compatibility_date": "2026-10-20",
+  "account_id": "e8f2bb86459172e43e34fb3509041e02",
+  "workers_dev": true,
+  "routes": [{"pattern": "sand.zzt.si", "custom_domain": true}],
+  "vars": {"PAGES_ORIGIN": "https://jimmyzzt.github.io/OotSS_Sand/"},
+  "observability": {"enabled": true, "head_sampling_rate": 0.1, "traces": {"enabled": true, "head_sampling_rate": 0.1}}
+}
