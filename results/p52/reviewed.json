@@ -7,7 +7,7 @@
   "title": "【下南】扁平物件挪一挪+魔镜跳石进阶[南3/南4+南3东1/南3东2]",
   "stage": 3,
   "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
-  "review_note": "Reviewed all seven complete timeline sheets and both candidate galleries against local full-catalog references. Confirmed 7 visits: adjacent gem_slot_on_lily proposal fragments (4:56–7:55) and sombreros fragments (10:51–12:25) are continuous same-board gameplay and merged; other distinct IDs are retained separately. Two independent boards without visually supported identities are structured unknowns. Remaining screen-map transitions, travel and title/tutorial footage are not assigned puzzle IDs; no overworld entry was independently verified and no outcome inferred.",
+  "review_note": "已按用户docs/校对.md修订身份和连续区间。未切关的匹配窗合并为一次访问；明确未进关的大世界片段移入excluded_segments，不再列为未知关卡。原片段完整记录保存在superseded_events。具体依据见各事件human_review证据。",
   "events": [
     {
       "event_id": "p52-001",
@@ -89,38 +89,6 @@
         }
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p52-u01",
-      "level_id": null,
-      "puzzle_start_time": 165,
-      "puzzle_end_time": 210,
-      "entry_transition_time": 164.5,
-      "exit_time": 210.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "runs/p52/sheet_01.jpg",
-          "time": 165,
-          "reference": null,
-          "reason": "A separate blue-gray water chamber appears after the Gothic button room: pale stepping tiles and a large yellow square block sit on a small platform, with dark disconnected paths and a diagonal object. It persists briefly before the next confirmed four-platform room; no catalog reference was visually conclusive."
-        }
-      ],
-      "evidence_gallery": null,
       "manual_corrections": [],
       "reviewer": "Luna visual comparison"
     },
@@ -570,38 +538,6 @@
       "reviewer": "Luna visual comparison"
     },
     {
-      "event_id": "p52-u02",
-      "level_id": null,
-      "puzzle_start_time": 920,
-      "puzzle_end_time": 945,
-      "entry_transition_time": 919.5,
-      "exit_time": 945.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "runs/p52/sheet_06.jpg",
-          "time": 920,
-          "reference": null,
-          "reason": "A broad blue cavern board with a bright pink horizontal frame/beam, separated cyan tiles and a long central path is shown from about 15:20–15:45. It differs from the later tiny detached island matched to reroute_3; no local reference was confirmed."
-        }
-      ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
       "event_id": "p52-010",
       "level_id": "reroute_3",
       "puzzle_start_time": 947.0,
@@ -684,5 +620,133 @@
       "manual_corrections": [],
       "reviewer": "Luna visual comparison"
     }
-  ]
+  ],
+  "superseded_events": [
+    {
+      "event": {
+        "event_id": "p52-u01",
+        "level_id": null,
+        "puzzle_start_time": 165,
+        "puzzle_end_time": 210,
+        "entry_transition_time": 164.5,
+        "exit_time": 210.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p52/sheet_01.jpg",
+            "time": 165,
+            "reference": null,
+            "reason": "A separate blue-gray water chamber appears after the Gothic button room: pale stepping tiles and a large yellow square block sit on a small platform, with dark disconnected paths and a diagonal object. It persists briefly before the next confirmed four-platform room; no catalog reference was visually conclusive."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p52-u02",
+        "level_id": null,
+        "puzzle_start_time": 920,
+        "puzzle_end_time": 945,
+        "entry_transition_time": 919.5,
+        "exit_time": 945.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p52/sheet_06.jpg",
+            "time": 920,
+            "reference": null,
+            "reason": "A broad blue cavern board with a bright pink horizontal frame/beam, separated cyan tiles and a long central path is shown from about 15:20–15:45. It differs from the later tiny detached island matched to reroute_3; no local reference was confirmed."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    }
+  ],
+  "excluded_segments": [
+    {
+      "segment_id": "world-p52-u01",
+      "kind": "world",
+      "start": 165,
+      "end": 210,
+      "source_event_ids": [
+        "p52-u01"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            8
+          ],
+          "reason": "用户确认02:45–03:30、15:20–15:45均未进关。"
+        }
+      ]
+    },
+    {
+      "segment_id": "world-p52-u02",
+      "kind": "world",
+      "start": 920,
+      "end": 945,
+      "source_event_ids": [
+        "p52-u02"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            8
+          ],
+          "reason": "用户确认02:45–03:30、15:20–15:45均未进关。"
+        }
+      ]
+    }
+  ],
+  "revision_history": [
+    {
+      "previous_review_note": "Reviewed all seven complete timeline sheets and both candidate galleries against local full-catalog references. Confirmed 7 visits: adjacent gem_slot_on_lily proposal fragments (4:56–7:55) and sombreros fragments (10:51–12:25) are continuous same-board gameplay and merged; other distinct IDs are retained separately. Two independent boards without visually supported identities are structured unknowns. Remaining screen-map transitions, travel and title/tutorial footage are not assigned puzzle IDs; no overworld entry was independently verified and no outcome inferred.",
+      "source": "docs/校对.md",
+      "items": [
+        8
+      ]
+    }
+  ],
+  "human_review": {
+    "source": "docs/校对.md",
+    "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+    "item_count": 19
+  }
 }

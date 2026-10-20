@@ -7,15 +7,15 @@
   "title": "【下东】双倍光束+三者齐上阵[北3东4+北5东4]",
   "stage": 3,
   "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
-  "review_note": "Reviewed the complete 13-sheet timeline and all three proposal galleries against the local full-catalog reference images. Confirmed 11 visits (10 repeated magnitudes_v3 visits kept separate at intervening layout changes, plus 3wcn_shm_dragon_lily). Recorded 14 clearly independent but unidentified puzzle/traversal intervals as structured unknowns; several are map or island exploration, and long connected water sequences have uncertain internal entry boundaries. Remaining unclassified portions include transitions, map/tutorial screens, travel and commentary; no overworld entries were verified and no outcomes were inferred. The long 15:00–17:25 unresolved island sequence is split around the visually confirmed magnitudes_v3 visit at 15:40–15:50, so no unknown interval duplicates a known event.",
+  "review_note": "已按用户docs/校对.md修订身份和连续区间。未切关的匹配窗合并为一次访问；明确未进关的大世界片段移入excluded_segments，不再列为未知关卡。原片段完整记录保存在superseded_events。具体依据见各事件human_review证据。",
   "events": [
     {
       "event_id": "p50-001",
       "level_id": "magnitudes_v3",
-      "puzzle_start_time": 17.25,
-      "puzzle_end_time": 65.0,
-      "entry_transition_time": 16.75,
-      "exit_time": 65.5,
+      "puzzle_start_time": 0,
+      "puzzle_end_time": 1785,
+      "entry_transition_time": null,
+      "exit_time": 1785,
       "overworld_approach_time": null,
       "review_status": "confirmed",
       "status": "visited",
@@ -65,13 +65,8 @@
       ],
       "puzzle_match": {
         "level_id": "magnitudes_v3",
-        "area": "orange_beam_highway_mirrors_and_promesst",
-        "phash_distance": 8,
-        "hist_distance": 0.3066,
-        "sift_inliers": 185,
-        "sift_good": 189,
-        "consistent_samples": 9,
-        "status": "visually_confirmed"
+        "status": "human_confirmed",
+        "method": "owner_identity_and_continuity_review"
       },
       "overworld_match": {
         "status": "unverified"
@@ -86,1226 +81,57 @@
           "last_sample": 60.0,
           "sample_count": 9,
           "reason": "The exact magnitudes board appears at 0:20: a broad brown industrial platform with a central pale square, green blocks on the right and purple blocks at the bottom. The same fixed walls and objects persist through 1:00; the scene changes to a forest board by 1:05."
+        },
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            5
+          ],
+          "reason": "开头到29:45均为同一关卡，内部房间与总览切换不另计入口。"
         }
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison",
-      "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-      "audit_anchor": "repeat-magnitudes_v3"
-    },
-    {
-      "event_id": "p50-u01",
-      "level_id": null,
-      "puzzle_start_time": 70,
-      "puzzle_end_time": 220,
-      "entry_transition_time": 69.5,
-      "exit_time": 220.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
+      "manual_corrections": [
         {
-          "type": "visual_layout_comparison",
-          "image": "runs/p50/sheet_00.jpg",
-          "time": 70,
-          "reference": null,
-          "reason": "A separate forest-side courtyard board: pale square paving with clustered small buildings/props, green foliage enclosing the top and sides, and colored round pieces. The board persists from about 1:10 to 3:40; no local catalog image could be confirmed visually."
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            5
+          ],
+          "reason": "开头到29:45均为同一关卡，内部房间与总览切换不另计入口。"
         }
       ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p50-u02",
-      "level_id": null,
-      "puzzle_start_time": 245,
-      "puzzle_end_time": 285,
-      "entry_transition_time": 244.5,
-      "exit_time": 285.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "runs/p50/sheet_01.jpg",
-          "time": 245,
-          "reference": null,
-          "reason": "A sandy waterfront square with scattered stone/crate props, blue and cyan tiles and a vertical timber boundary at the right. This is a distinct board from the forest courtyard and the subsequent water-beam layout."
-        }
-      ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p50-002",
-      "level_id": "magnitudes_v3",
-      "puzzle_start_time": 290,
-      "puzzle_end_time": 310,
-      "entry_transition_time": 289.5,
-      "exit_time": 310.5,
-      "overworld_approach_time": null,
-      "review_status": "confirmed",
-      "status": "visited",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 1,
-      "candidate_levels": [
-        {
-          "level_id": "magnitudes_v3",
-          "area": "orange_beam_highway_mirrors_and_promesst",
-          "phash_distance": 10,
-          "hist_distance": 0.3438,
-          "sift_inliers": 116,
-          "sift_good": 124
-        },
-        {
-          "level_id": "mobile_cover_2",
-          "area": "underworld_skipping_and_promesst",
-          "phash_distance": 18,
-          "hist_distance": 1.3494,
-          "sift_inliers": 4,
-          "sift_good": 6
-        },
-        {
-          "level_id": "heroes2_17_intro",
-          "area": "heroes2",
-          "phash_distance": 18,
-          "hist_distance": 0.8474,
-          "sift_inliers": 0,
-          "sift_good": 3
-        },
-        {
-          "level_id": "magic_shield",
-          "area": "beams_and_basic_heroes",
-          "phash_distance": 18,
-          "hist_distance": 1.1998,
-          "sift_inliers": 0,
-          "sift_good": 5
-        },
-        {
-          "level_id": "retro",
-          "area": "skipping_in_3d",
-          "phash_distance": 18,
-          "hist_distance": 1.385,
-          "sift_inliers": 0,
-          "sift_good": 3
-        }
-      ],
-      "puzzle_match": {
-        "level_id": "magnitudes_v3",
-        "area": "orange_beam_highway_mirrors_and_promesst",
-        "phash_distance": 10,
-        "hist_distance": 0.3438,
-        "sift_inliers": 116,
-        "sift_good": 124,
-        "consistent_samples": 5,
-        "status": "visually_confirmed"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p50\\samples\\00300.000.jpg",
-          "time": 300.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\magnitudes_v3.webp",
-          "first_sample": 295.0,
-          "last_sample": 315.0,
-          "sample_count": 5,
-          "reason": "At 4:50–5:05 the video returns to the same magnitudes board, with the central pale square, right-side green block column and lower purple blocks in matching positions. At 5:15 the view has changed to a separate water-and-beam board."
-        }
-      ],
-      "evidence_gallery": "evidence/candidates_00.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison",
-      "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-      "audit_anchor": "repeat-magnitudes_v3"
-    },
-    {
-      "event_id": "p50-u03",
-      "level_id": null,
-      "puzzle_start_time": 315,
-      "puzzle_end_time": 420,
-      "entry_transition_time": 314.5,
-      "exit_time": 420.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "runs/p50/sheet_02.jpg",
-          "time": 315,
-          "reference": null,
-          "reason": "A series of connected water-and-beam views: small sandy islands and stone piers linked by a long gold beam over tiled water, with successive camera/board shifts. The imagery is puzzle gameplay, but no single catalog layout could be confirmed, so retained as an unknown segment pending finer entry-boundary review."
-        }
-      ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p50-003",
-      "level_id": "magnitudes_v3",
-      "puzzle_start_time": 455,
-      "puzzle_end_time": 465,
-      "entry_transition_time": 454.5,
-      "exit_time": 465.5,
-      "overworld_approach_time": null,
-      "review_status": "confirmed",
-      "status": "visited",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 1,
-      "candidate_levels": [
-        {
-          "level_id": "magnitudes_v3",
-          "area": "orange_beam_highway_mirrors_and_promesst",
-          "phash_distance": 8,
-          "hist_distance": 0.3575,
-          "sift_inliers": 121,
-          "sift_good": 128
-        },
-        {
-          "level_id": "through_maze_v2",
-          "area": "beaming_objects",
-          "phash_distance": 22,
-          "hist_distance": 1.2274,
-          "sift_inliers": 4,
-          "sift_good": 10
-        },
-        {
-          "level_id": "elevator_cyan",
-          "area": "elevators",
-          "phash_distance": 18,
-          "hist_distance": 1.1561,
-          "sift_inliers": 0,
-          "sift_good": 2
-        },
-        {
-          "level_id": "river_rotate_beams_gr",
-          "area": "underworld_skipping_and_promesst",
-          "phash_distance": 20,
-          "hist_distance": 1.3037,
-          "sift_inliers": 0,
-          "sift_good": 1
-        },
-        {
-          "level_id": "end2_river_place",
-          "area": "endgame2",
-          "phash_distance": 20,
-          "hist_distance": 1.3799,
-          "sift_inliers": 0,
-          "sift_good": 5
-        }
-      ],
-      "puzzle_match": {
-        "level_id": "magnitudes_v3",
-        "area": "orange_beam_highway_mirrors_and_promesst",
-        "phash_distance": 8,
-        "hist_distance": 0.3575,
-        "sift_inliers": 121,
-        "sift_good": 128,
-        "consistent_samples": 6,
-        "status": "visually_confirmed"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p50\\samples\\00455.000.jpg",
-          "time": 455.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\magnitudes_v3.webp",
-          "first_sample": 435.0,
-          "last_sample": 460.0,
-          "sample_count": 6,
-          "reason": "At 7:35–7:40 the same industrial magnitudes layout is visible, including its central basin and bright green and purple block groups. Adjacent footage shows different water/island boards, so this short return is retained separately."
-        }
-      ],
-      "evidence_gallery": "evidence/candidates_00.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison",
-      "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-      "audit_anchor": "repeat-magnitudes_v3"
-    },
-    {
-      "event_id": "p50-u04",
-      "level_id": null,
-      "puzzle_start_time": 480,
-      "puzzle_end_time": 555,
-      "entry_transition_time": 479.5,
-      "exit_time": 555.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "runs/p50/sheet_03.jpg",
-          "time": 480,
-          "reference": null,
-          "reason": "A broad rectangular flooded room with opposing pale platforms and a long gold beam spanning the water; its arrangement differs from the confirmed magnitudes board and remains unidentified."
-        }
-      ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p50-004",
-      "level_id": "magnitudes_v3",
-      "puzzle_start_time": 580,
-      "puzzle_end_time": 590,
-      "entry_transition_time": 579.5,
-      "exit_time": 590.5,
-      "overworld_approach_time": null,
-      "review_status": "confirmed",
-      "status": "visited",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 1,
-      "candidate_levels": [
-        {
-          "level_id": "magnitudes_v3",
-          "area": "orange_beam_highway_mirrors_and_promesst",
-          "phash_distance": 8,
-          "hist_distance": 0.343,
-          "sift_inliers": 96,
-          "sift_good": 102
-        },
-        {
-          "level_id": "elevator_cyan",
-          "area": "elevators",
-          "phash_distance": 18,
-          "hist_distance": 1.1417,
-          "sift_inliers": 0,
-          "sift_good": 3
-        },
-        {
-          "level_id": "river_rotate_beams_gr",
-          "area": "underworld_skipping_and_promesst",
-          "phash_distance": 20,
-          "hist_distance": 1.3064,
-          "sift_inliers": 0,
-          "sift_good": 2
-        },
-        {
-          "level_id": "place_lily_pushstyle_v6",
-          "area": "endgame2",
-          "phash_distance": 20,
-          "hist_distance": 1.3563,
-          "sift_inliers": 0,
-          "sift_good": 1
-        },
-        {
-          "level_id": "green_crystal_rover",
-          "area": "beams_and_mirrors",
-          "phash_distance": 20,
-          "hist_distance": 1.3764,
-          "sift_inliers": 0,
-          "sift_good": 9
-        }
-      ],
-      "puzzle_match": {
-        "level_id": "magnitudes_v3",
-        "area": "orange_beam_highway_mirrors_and_promesst",
-        "phash_distance": 8,
-        "hist_distance": 0.343,
-        "sift_inliers": 96,
-        "sift_good": 102,
-        "consistent_samples": 5,
-        "status": "visually_confirmed"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p50\\samples\\00585.000.jpg",
-          "time": 585.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\magnitudes_v3.webp",
-          "first_sample": 565.0,
-          "last_sample": 585.0,
-          "sample_count": 5,
-          "reason": "At 9:40–9:45 the candidate comparison shows the same magnitudes board and fixed object placement. The surrounding timeline shows the board again after separate water-area footage; this visit remains distinct."
-        }
-      ],
-      "evidence_gallery": "evidence/candidates_00.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison",
-      "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-      "audit_anchor": "repeat-magnitudes_v3"
-    },
-    {
-      "event_id": "p50-u05",
-      "level_id": null,
-      "puzzle_start_time": 600,
-      "puzzle_end_time": 715,
-      "entry_transition_time": 599.5,
-      "exit_time": 715.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "runs/p50/sheet_04.jpg",
-          "time": 600,
-          "reference": null,
-          "reason": "A pale stone courtyard with a long raised central strip, block props and beam interaction, followed by a separate green-edged courtyard view. At this resolution the identity and exact internal transition are unresolved; recorded as an unknown gameplay interval."
-        }
-      ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p50-005",
-      "level_id": "magnitudes_v3",
-      "puzzle_start_time": 725,
-      "puzzle_end_time": 735,
-      "entry_transition_time": 724.5,
-      "exit_time": 735.5,
-      "overworld_approach_time": null,
-      "review_status": "confirmed",
-      "status": "visited",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 1,
-      "candidate_levels": [
-        {
-          "level_id": "magnitudes_v3",
-          "area": "orange_beam_highway_mirrors_and_promesst",
-          "phash_distance": 8,
-          "hist_distance": 0.3563,
-          "sift_inliers": 98,
-          "sift_good": 104
-        },
-        {
-          "level_id": "elevator_cyan",
-          "area": "elevators",
-          "phash_distance": 20,
-          "hist_distance": 1.1396,
-          "sift_inliers": 0,
-          "sift_good": 3
-        },
-        {
-          "level_id": "push_against",
-          "area": "heroes_and_stones",
-          "phash_distance": 20,
-          "hist_distance": 1.2311,
-          "sift_inliers": 0,
-          "sift_good": 4
-        },
-        {
-          "level_id": "river_rotate_beams_gr",
-          "area": "underworld_skipping_and_promesst",
-          "phash_distance": 20,
-          "hist_distance": 1.3022,
-          "sift_inliers": 0,
-          "sift_good": 3
-        },
-        {
-          "level_id": "end2_river_place",
-          "area": "endgame2",
-          "phash_distance": 20,
-          "hist_distance": 1.3799,
-          "sift_inliers": 0,
-          "sift_good": 5
-        }
-      ],
-      "puzzle_match": {
-        "level_id": "magnitudes_v3",
-        "area": "orange_beam_highway_mirrors_and_promesst",
-        "phash_distance": 8,
-        "hist_distance": 0.3563,
-        "sift_inliers": 98,
-        "sift_good": 104,
-        "consistent_samples": 1,
-        "status": "visually_confirmed"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p50\\samples\\00730.000.jpg",
-          "time": 730.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\magnitudes_v3.webp",
-          "first_sample": 730.0,
-          "last_sample": 730.0,
-          "sample_count": 1,
-          "reason": "At 12:05–12:10 the same magnitudes board appears briefly after another courtyard shot; its central square, green right-side blocks and purple lower blocks match the reference."
-        }
-      ],
-      "evidence_gallery": "evidence/candidates_00.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison",
-      "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-      "audit_anchor": "repeat-magnitudes_v3"
-    },
-    {
-      "event_id": "p50-006",
-      "level_id": "magnitudes_v3",
-      "puzzle_start_time": 750,
-      "puzzle_end_time": 765,
-      "entry_transition_time": 749.5,
-      "exit_time": 765.5,
-      "overworld_approach_time": null,
-      "review_status": "confirmed",
-      "status": "visited",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 1,
-      "candidate_levels": [
-        {
-          "level_id": "magnitudes_v3",
-          "area": "orange_beam_highway_mirrors_and_promesst",
-          "phash_distance": 10,
-          "hist_distance": 0.3586,
-          "sift_inliers": 94,
-          "sift_good": 101
-        },
-        {
-          "level_id": "oneway_beam",
-          "area": "beams_and_basic_heroes",
-          "phash_distance": 22,
-          "hist_distance": 1.2597,
-          "sift_inliers": 4,
-          "sift_good": 6
-        },
-        {
-          "level_id": "elevator_cyan",
-          "area": "elevators",
-          "phash_distance": 20,
-          "hist_distance": 1.1404,
-          "sift_inliers": 0,
-          "sift_good": 4
-        },
-        {
-          "level_id": "push_against",
-          "area": "heroes_and_stones",
-          "phash_distance": 20,
-          "hist_distance": 1.2332,
-          "sift_inliers": 0,
-          "sift_good": 1
-        },
-        {
-          "level_id": "end2_river_place",
-          "area": "endgame2",
-          "phash_distance": 20,
-          "hist_distance": 1.3818,
-          "sift_inliers": 0,
-          "sift_good": 5
-        }
-      ],
-      "puzzle_match": {
-        "level_id": "magnitudes_v3",
-        "area": "orange_beam_highway_mirrors_and_promesst",
-        "phash_distance": 10,
-        "hist_distance": 0.3586,
-        "sift_inliers": 94,
-        "sift_good": 101,
-        "consistent_samples": 2,
-        "status": "visually_confirmed"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p50\\samples\\00760.000.jpg",
-          "time": 760.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\magnitudes_v3.webp",
-          "first_sample": 755.0,
-          "last_sample": 760.0,
-          "sample_count": 2,
-          "reason": "At 12:30–12:40 the magnitudes board returns with the same central square and colored block groups. This is separated from the earlier 12:05 occurrence by a different forest-courtyard view."
-        }
-      ],
-      "evidence_gallery": "evidence/candidates_01.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison",
-      "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-      "audit_anchor": "repeat-magnitudes_v3"
-    },
-    {
-      "event_id": "p50-u06",
-      "level_id": null,
-      "puzzle_start_time": 780,
-      "puzzle_end_time": 855,
-      "entry_transition_time": 779.5,
-      "exit_time": 855.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "runs/p50/sheet_05.jpg",
-          "time": 780,
-          "reference": null,
-          "reason": "A dark, narrow stone chamber with a vertical gold beam and small fixtures along the wall. The tiled room is distinct from the water arenas, but no full-catalog reference matched visually."
-        }
-      ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p50-007",
-      "level_id": "magnitudes_v3",
-      "puzzle_start_time": 865,
-      "puzzle_end_time": 875,
-      "entry_transition_time": 864.5,
-      "exit_time": 875.5,
-      "overworld_approach_time": null,
-      "review_status": "confirmed",
-      "status": "visited",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 1,
-      "candidate_levels": [
-        {
-          "level_id": "magnitudes_v3",
-          "area": "orange_beam_highway_mirrors_and_promesst",
-          "phash_distance": 8,
-          "hist_distance": 0.3604,
-          "sift_inliers": 80,
-          "sift_good": 86
-        },
-        {
-          "level_id": "sidetrack",
-          "area": "beams_and_mirrors",
-          "phash_distance": 22,
-          "hist_distance": 0.9487,
-          "sift_inliers": 5,
-          "sift_good": 11
-        },
-        {
-          "level_id": "elevator_cyan",
-          "area": "elevators",
-          "phash_distance": 20,
-          "hist_distance": 1.1333,
-          "sift_inliers": 0,
-          "sift_good": 3
-        },
-        {
-          "level_id": "push_against",
-          "area": "heroes_and_stones",
-          "phash_distance": 20,
-          "hist_distance": 1.2319,
-          "sift_inliers": 0,
-          "sift_good": 3
-        },
-        {
-          "level_id": "crystals_not_stones",
-          "area": "heroes_and_stones",
-          "phash_distance": 20,
-          "hist_distance": 1.2464,
-          "sift_inliers": 0,
-          "sift_good": 2
-        }
-      ],
-      "puzzle_match": {
-        "level_id": "magnitudes_v3",
-        "area": "orange_beam_highway_mirrors_and_promesst",
-        "phash_distance": 8,
-        "hist_distance": 0.3604,
-        "sift_inliers": 80,
-        "sift_good": 86,
-        "consistent_samples": 1,
-        "status": "visually_confirmed"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p50\\samples\\00870.000.jpg",
-          "time": 870.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\magnitudes_v3.webp",
-          "first_sample": 870.0,
-          "last_sample": 870.0,
-          "sample_count": 1,
-          "reason": "At 14:25–14:30 the recognizable magnitudes layout returns, including the broad tiled platform and central basin. It is a short return before the video cuts to a separate island puzzle."
-        }
-      ],
-      "evidence_gallery": "evidence/candidates_01.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison",
-      "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-      "audit_anchor": "repeat-magnitudes_v3"
-    },
-    {
-      "event_id": "p50-u07",
-      "level_id": null,
-      "puzzle_start_time": 900,
-      "puzzle_end_time": 939.5,
-      "entry_transition_time": 899.5,
-      "exit_time": 939.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "runs/p50/sheet_06.jpg",
-          "time": 900,
-          "reference": null,
-          "reason": "From 15:00 to 15:39 the timeline shows overhead island-map navigation and small isolated island/beam-crossing views without a stable identifiable puzzle layout. This unresolved traversal interval ends at the cut into the confirmed magnitudes_v3 board."
-        }
-      ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p50-u07b",
-      "level_id": null,
-      "puzzle_start_time": 950.5,
-      "puzzle_end_time": 1045,
-      "entry_transition_time": 950.5,
-      "exit_time": 1045.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "runs/p50/sheet_06.jpg",
-          "time": 950.5,
-          "reference": null,
-          "reason": "After the confirmed magnitudes_v3 visit ends at 15:50, the timeline returns to overhead island-map navigation and several small water/island board views through 17:25. These are independent unresolved traversal/puzzle views; the montage does not provide a stable reference match."
-        }
-      ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p50-008",
-      "level_id": "magnitudes_v3",
-      "puzzle_start_time": 940,
-      "puzzle_end_time": 950,
-      "entry_transition_time": 939.5,
-      "exit_time": 950.5,
-      "overworld_approach_time": null,
-      "review_status": "confirmed",
-      "status": "visited",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 1,
-      "candidate_levels": [
-        {
-          "level_id": "magnitudes_v3",
-          "area": "orange_beam_highway_mirrors_and_promesst",
-          "phash_distance": 10,
-          "hist_distance": 0.3628,
-          "sift_inliers": 87,
-          "sift_good": 95
-        },
-        {
-          "level_id": "push_against",
-          "area": "heroes_and_stones",
-          "phash_distance": 20,
-          "hist_distance": 1.2307,
-          "sift_inliers": 5,
-          "sift_good": 7
-        },
-        {
-          "level_id": "elevator_cyan",
-          "area": "elevators",
-          "phash_distance": 20,
-          "hist_distance": 1.1292,
-          "sift_inliers": 0,
-          "sift_good": 3
-        },
-        {
-          "level_id": "crystals_not_stones",
-          "area": "heroes_and_stones",
-          "phash_distance": 20,
-          "hist_distance": 1.2373,
-          "sift_inliers": 0,
-          "sift_good": 4
-        },
-        {
-          "level_id": "stones_not_crystals",
-          "area": "heroes_and_stones",
-          "phash_distance": 20,
-          "hist_distance": 1.3144,
-          "sift_inliers": 0,
-          "sift_good": 2
-        }
-      ],
-      "puzzle_match": {
-        "level_id": "magnitudes_v3",
-        "area": "orange_beam_highway_mirrors_and_promesst",
-        "phash_distance": 10,
-        "hist_distance": 0.3628,
-        "sift_inliers": 87,
-        "sift_good": 95,
-        "consistent_samples": 1,
-        "status": "visually_confirmed"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p50\\samples\\00945.000.jpg",
-          "time": 945.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\magnitudes_v3.webp",
-          "first_sample": 945.0,
-          "last_sample": 945.0,
-          "sample_count": 1,
-          "reason": "At 15:40–15:45 the same magnitudes platform is shown again, with central basin and distinct green and purple block groups in the reference positions. Separate island and beam footage intervenes."
-        }
-      ],
-      "evidence_gallery": "evidence/candidates_01.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison",
-      "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-      "audit_anchor": "repeat-magnitudes_v3"
-    },
-    {
-      "event_id": "p50-009",
-      "level_id": "magnitudes_v3",
-      "puzzle_start_time": 1055,
-      "puzzle_end_time": 1070,
-      "entry_transition_time": 1054.5,
-      "exit_time": 1070.5,
-      "overworld_approach_time": null,
-      "review_status": "confirmed",
-      "status": "visited",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 1,
-      "candidate_levels": [
-        {
-          "level_id": "magnitudes_v3",
-          "area": "orange_beam_highway_mirrors_and_promesst",
-          "phash_distance": 8,
-          "hist_distance": 0.3372,
-          "sift_inliers": 95,
-          "sift_good": 101
-        },
-        {
-          "level_id": "elevator_cyan",
-          "area": "elevators",
-          "phash_distance": 16,
-          "hist_distance": 1.1334,
-          "sift_inliers": 0,
-          "sift_good": 5
-        },
-        {
-          "level_id": "place_lily_pushstyle_v6",
-          "area": "endgame2",
-          "phash_distance": 18,
-          "hist_distance": 1.3635,
-          "sift_inliers": 0,
-          "sift_good": 5
-        },
-        {
-          "level_id": "immobilize",
-          "area": "beams_and_basic_heroes",
-          "phash_distance": 20,
-          "hist_distance": 0.9853,
-          "sift_inliers": 0,
-          "sift_good": 3
-        },
-        {
-          "level_id": "magic_square",
-          "area": "beams_and_basic_heroes",
-          "phash_distance": 20,
-          "hist_distance": 1.1683,
-          "sift_inliers": 0,
-          "sift_good": 1
-        }
-      ],
-      "puzzle_match": {
-        "level_id": "magnitudes_v3",
-        "area": "orange_beam_highway_mirrors_and_promesst",
-        "phash_distance": 8,
-        "hist_distance": 0.3372,
-        "sift_inliers": 95,
-        "sift_good": 101,
-        "consistent_samples": 2,
-        "status": "visually_confirmed"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p50\\samples\\01065.000.jpg",
-          "time": 1065.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\magnitudes_v3.webp",
-          "first_sample": 1060.0,
-          "last_sample": 1065.0,
-          "sample_count": 2,
-          "reason": "At 17:35–17:45 the magnitudes board returns with its central pale square and right/bottom colored groups. It is a distinct brief return amid unrelated island footage."
-        }
-      ],
-      "evidence_gallery": "evidence/candidates_01.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison",
-      "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-      "audit_anchor": "repeat-magnitudes_v3"
-    },
-    {
-      "event_id": "p50-010",
-      "level_id": "magnitudes_v3",
-      "puzzle_start_time": 1105,
-      "puzzle_end_time": 1145,
-      "entry_transition_time": 1104.5,
-      "exit_time": 1145.5,
-      "overworld_approach_time": null,
-      "review_status": "confirmed",
-      "status": "visited",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 1,
-      "candidate_levels": [
-        {
-          "level_id": "magnitudes_v3",
-          "area": "orange_beam_highway_mirrors_and_promesst",
-          "phash_distance": 8,
-          "hist_distance": 0.3261,
-          "sift_inliers": 95,
-          "sift_good": 99
-        },
-        {
-          "level_id": "elevator_cyan",
-          "area": "elevators",
-          "phash_distance": 18,
-          "hist_distance": 1.1365,
-          "sift_inliers": 0,
-          "sift_good": 2
-        },
-        {
-          "level_id": "push_against",
-          "area": "heroes_and_stones",
-          "phash_distance": 20,
-          "hist_distance": 1.2257,
-          "sift_inliers": 0,
-          "sift_good": 4
-        },
-        {
-          "level_id": "crystals_not_stones",
-          "area": "heroes_and_stones",
-          "phash_distance": 20,
-          "hist_distance": 1.229,
-          "sift_inliers": 0,
-          "sift_good": 2
-        },
-        {
-          "level_id": "river_rotate_beams_gr",
-          "area": "underworld_skipping_and_promesst",
-          "phash_distance": 20,
-          "hist_distance": 1.305,
-          "sift_inliers": 0,
-          "sift_good": 3
-        }
-      ],
-      "puzzle_match": {
-        "level_id": "magnitudes_v3",
-        "area": "orange_beam_highway_mirrors_and_promesst",
-        "phash_distance": 8,
-        "hist_distance": 0.3261,
-        "sift_inliers": 95,
-        "sift_good": 99,
-        "consistent_samples": 7,
-        "status": "visually_confirmed"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p50\\samples\\01110.000.jpg",
-          "time": 1110.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\magnitudes_v3.webp",
-          "first_sample": 1110.0,
-          "last_sample": 1140.0,
-          "sample_count": 7,
-          "reason": "From 18:25 through 19:00 the full magnitudes board remains visible; the central square, pipes, green block column and purple bottom blocks match the catalog reference."
-        }
-      ],
-      "evidence_gallery": "evidence/candidates_01.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison",
-      "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-      "audit_anchor": "repeat-magnitudes_v3"
-    },
-    {
-      "event_id": "p50-u08",
-      "level_id": null,
-      "puzzle_start_time": 1155,
-      "puzzle_end_time": 1290,
-      "entry_transition_time": 1154.5,
-      "exit_time": 1290.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "runs/p50/sheet_07.jpg",
-          "time": 1155,
-          "reference": null,
-          "reason": "Water-island gameplay with small tan platforms, a long horizontal gold beam and blue markers, then a transition to a larger green/tan courtyard around 21:45. The first island section lacks a confirmed catalog identity."
-        }
-      ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p50-u09",
-      "level_id": null,
-      "puzzle_start_time": 1305,
-      "puzzle_end_time": 1380,
-      "entry_transition_time": 1304.5,
-      "exit_time": 1380.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "runs/p50/sheet_08.jpg",
-          "time": 1305,
-          "reference": null,
-          "reason": "A green-and-tan courtyard board with a raised wooden structure along the upper edge, scattered stone blocks and blue markers. Distinct from the preceding horizontal-beam island; unknown ID."
-        }
-      ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p50-u10",
-      "level_id": null,
-      "puzzle_start_time": 1385,
-      "puzzle_end_time": 1520,
-      "entry_transition_time": 1384.5,
-      "exit_time": 1520.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "runs/p50/sheet_09.jpg",
-          "time": 1385,
-          "reference": null,
-          "reason": "A narrow waterway board centered on a tall stone post and crosswise gold beam, with a small blue-tiled landing and detached markers. Its stable layout remains through the 25:20 transition to a waterfall bridge."
-        }
-      ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p50-u11",
-      "level_id": null,
-      "puzzle_start_time": 1525,
-      "puzzle_end_time": 1605,
-      "entry_transition_time": 1524.5,
-      "exit_time": 1605.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "runs/p50/sheet_10.jpg",
-          "time": 1525,
-          "reference": null,
-          "reason": "A bridge and waterfall board with a horizontal wooden crossing and central vertical beam above falling water. No catalog reference was visually conclusive."
-        }
-      ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p50-u12",
-      "level_id": null,
-      "puzzle_start_time": 1610,
-      "puzzle_end_time": 1710,
-      "entry_transition_time": 1609.5,
-      "exit_time": 1710.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "runs/p50/sheet_10.jpg",
-          "time": 1610,
-          "reference": null,
-          "reason": "A shallow green courtyard enclosed by water, with an L-shaped sandy path and several large red/brown objects; distinct board, unknown identity."
-        }
-      ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p50-u13",
-      "level_id": null,
-      "puzzle_start_time": 1715,
-      "puzzle_end_time": 1785,
-      "entry_transition_time": 1714.5,
-      "exit_time": 1785.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "runs/p50/sheet_11.jpg",
-          "time": 1715,
-          "reference": null,
-          "reason": "A small isolated water island with a short gold beam and sparse objects, visibly different from the preceding L-shaped courtyard."
-        }
-      ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "User continuity/identity review (docs/校对.md)",
+      "map_layer": "underworld",
+      "source_event_ids": [
+        "p50-001",
+        "p50-002",
+        "p50-003",
+        "p50-004",
+        "p50-005",
+        "p50-006",
+        "p50-007",
+        "p50-008",
+        "p50-009",
+        "p50-010",
+        "p50-u01",
+        "p50-u02",
+        "p50-u03",
+        "p50-u04",
+        "p50-u05",
+        "p50-u06",
+        "p50-u07",
+        "p50-u08",
+        "p50-u09",
+        "p50-u10",
+        "p50-u11",
+        "p50-u12",
+        "p50-u13",
+        "p50-u07b"
+      ]
     },
     {
       "event_id": "p50-011",
@@ -1390,5 +216,1392 @@
       "manual_corrections": [],
       "reviewer": "Luna visual comparison"
     }
-  ]
+  ],
+  "superseded_events": [
+    {
+      "event": {
+        "event_id": "p50-001",
+        "level_id": "magnitudes_v3",
+        "puzzle_start_time": 17.25,
+        "puzzle_end_time": 65.0,
+        "entry_transition_time": 16.75,
+        "exit_time": 65.5,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 1,
+        "candidate_levels": [
+          {
+            "level_id": "magnitudes_v3",
+            "area": "orange_beam_highway_mirrors_and_promesst",
+            "phash_distance": 8,
+            "hist_distance": 0.3066,
+            "sift_inliers": 185,
+            "sift_good": 189
+          },
+          {
+            "level_id": "elevator_cyan",
+            "area": "elevators",
+            "phash_distance": 18,
+            "hist_distance": 1.1376,
+            "sift_inliers": 0,
+            "sift_good": 3
+          },
+          {
+            "level_id": "magic_square",
+            "area": "beams_and_basic_heroes",
+            "phash_distance": 18,
+            "hist_distance": 1.1441,
+            "sift_inliers": 0,
+            "sift_good": 3
+          },
+          {
+            "level_id": "end2_heroes_1_5",
+            "area": "endgame2",
+            "phash_distance": 18,
+            "hist_distance": 1.2312,
+            "sift_inliers": 0,
+            "sift_good": 2
+          },
+          {
+            "level_id": "ride_together",
+            "area": "mirrors_and_stones",
+            "phash_distance": 18,
+            "hist_distance": 1.411,
+            "sift_inliers": 0,
+            "sift_good": 4
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "magnitudes_v3",
+          "area": "orange_beam_highway_mirrors_and_promesst",
+          "phash_distance": 8,
+          "hist_distance": 0.3066,
+          "sift_inliers": 185,
+          "sift_good": 189,
+          "consistent_samples": 9,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p50\\samples\\00020.000.jpg",
+            "time": 20.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\magnitudes_v3.webp",
+            "first_sample": 20.0,
+            "last_sample": 60.0,
+            "sample_count": 9,
+            "reason": "The exact magnitudes board appears at 0:20: a broad brown industrial platform with a central pale square, green blocks on the right and purple blocks at the bottom. The same fixed walls and objects persist through 1:00; the scene changes to a forest board by 1:05."
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_00.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison",
+        "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
+        "audit_anchor": "repeat-magnitudes_v3"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-u01",
+        "level_id": null,
+        "puzzle_start_time": 70,
+        "puzzle_end_time": 220,
+        "entry_transition_time": 69.5,
+        "exit_time": 220.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p50/sheet_00.jpg",
+            "time": 70,
+            "reference": null,
+            "reason": "A separate forest-side courtyard board: pale square paving with clustered small buildings/props, green foliage enclosing the top and sides, and colored round pieces. The board persists from about 1:10 to 3:40; no local catalog image could be confirmed visually."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-u02",
+        "level_id": null,
+        "puzzle_start_time": 245,
+        "puzzle_end_time": 285,
+        "entry_transition_time": 244.5,
+        "exit_time": 285.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p50/sheet_01.jpg",
+            "time": 245,
+            "reference": null,
+            "reason": "A sandy waterfront square with scattered stone/crate props, blue and cyan tiles and a vertical timber boundary at the right. This is a distinct board from the forest courtyard and the subsequent water-beam layout."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-002",
+        "level_id": "magnitudes_v3",
+        "puzzle_start_time": 290,
+        "puzzle_end_time": 310,
+        "entry_transition_time": 289.5,
+        "exit_time": 310.5,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 1,
+        "candidate_levels": [
+          {
+            "level_id": "magnitudes_v3",
+            "area": "orange_beam_highway_mirrors_and_promesst",
+            "phash_distance": 10,
+            "hist_distance": 0.3438,
+            "sift_inliers": 116,
+            "sift_good": 124
+          },
+          {
+            "level_id": "mobile_cover_2",
+            "area": "underworld_skipping_and_promesst",
+            "phash_distance": 18,
+            "hist_distance": 1.3494,
+            "sift_inliers": 4,
+            "sift_good": 6
+          },
+          {
+            "level_id": "heroes2_17_intro",
+            "area": "heroes2",
+            "phash_distance": 18,
+            "hist_distance": 0.8474,
+            "sift_inliers": 0,
+            "sift_good": 3
+          },
+          {
+            "level_id": "magic_shield",
+            "area": "beams_and_basic_heroes",
+            "phash_distance": 18,
+            "hist_distance": 1.1998,
+            "sift_inliers": 0,
+            "sift_good": 5
+          },
+          {
+            "level_id": "retro",
+            "area": "skipping_in_3d",
+            "phash_distance": 18,
+            "hist_distance": 1.385,
+            "sift_inliers": 0,
+            "sift_good": 3
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "magnitudes_v3",
+          "area": "orange_beam_highway_mirrors_and_promesst",
+          "phash_distance": 10,
+          "hist_distance": 0.3438,
+          "sift_inliers": 116,
+          "sift_good": 124,
+          "consistent_samples": 5,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p50\\samples\\00300.000.jpg",
+            "time": 300.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\magnitudes_v3.webp",
+            "first_sample": 295.0,
+            "last_sample": 315.0,
+            "sample_count": 5,
+            "reason": "At 4:50–5:05 the video returns to the same magnitudes board, with the central pale square, right-side green block column and lower purple blocks in matching positions. At 5:15 the view has changed to a separate water-and-beam board."
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_00.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison",
+        "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
+        "audit_anchor": "repeat-magnitudes_v3"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-u03",
+        "level_id": null,
+        "puzzle_start_time": 315,
+        "puzzle_end_time": 420,
+        "entry_transition_time": 314.5,
+        "exit_time": 420.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p50/sheet_02.jpg",
+            "time": 315,
+            "reference": null,
+            "reason": "A series of connected water-and-beam views: small sandy islands and stone piers linked by a long gold beam over tiled water, with successive camera/board shifts. The imagery is puzzle gameplay, but no single catalog layout could be confirmed, so retained as an unknown segment pending finer entry-boundary review."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-003",
+        "level_id": "magnitudes_v3",
+        "puzzle_start_time": 455,
+        "puzzle_end_time": 465,
+        "entry_transition_time": 454.5,
+        "exit_time": 465.5,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 1,
+        "candidate_levels": [
+          {
+            "level_id": "magnitudes_v3",
+            "area": "orange_beam_highway_mirrors_and_promesst",
+            "phash_distance": 8,
+            "hist_distance": 0.3575,
+            "sift_inliers": 121,
+            "sift_good": 128
+          },
+          {
+            "level_id": "through_maze_v2",
+            "area": "beaming_objects",
+            "phash_distance": 22,
+            "hist_distance": 1.2274,
+            "sift_inliers": 4,
+            "sift_good": 10
+          },
+          {
+            "level_id": "elevator_cyan",
+            "area": "elevators",
+            "phash_distance": 18,
+            "hist_distance": 1.1561,
+            "sift_inliers": 0,
+            "sift_good": 2
+          },
+          {
+            "level_id": "river_rotate_beams_gr",
+            "area": "underworld_skipping_and_promesst",
+            "phash_distance": 20,
+            "hist_distance": 1.3037,
+            "sift_inliers": 0,
+            "sift_good": 1
+          },
+          {
+            "level_id": "end2_river_place",
+            "area": "endgame2",
+            "phash_distance": 20,
+            "hist_distance": 1.3799,
+            "sift_inliers": 0,
+            "sift_good": 5
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "magnitudes_v3",
+          "area": "orange_beam_highway_mirrors_and_promesst",
+          "phash_distance": 8,
+          "hist_distance": 0.3575,
+          "sift_inliers": 121,
+          "sift_good": 128,
+          "consistent_samples": 6,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p50\\samples\\00455.000.jpg",
+            "time": 455.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\magnitudes_v3.webp",
+            "first_sample": 435.0,
+            "last_sample": 460.0,
+            "sample_count": 6,
+            "reason": "At 7:35–7:40 the same industrial magnitudes layout is visible, including its central basin and bright green and purple block groups. Adjacent footage shows different water/island boards, so this short return is retained separately."
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_00.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison",
+        "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
+        "audit_anchor": "repeat-magnitudes_v3"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-u04",
+        "level_id": null,
+        "puzzle_start_time": 480,
+        "puzzle_end_time": 555,
+        "entry_transition_time": 479.5,
+        "exit_time": 555.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p50/sheet_03.jpg",
+            "time": 480,
+            "reference": null,
+            "reason": "A broad rectangular flooded room with opposing pale platforms and a long gold beam spanning the water; its arrangement differs from the confirmed magnitudes board and remains unidentified."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-004",
+        "level_id": "magnitudes_v3",
+        "puzzle_start_time": 580,
+        "puzzle_end_time": 590,
+        "entry_transition_time": 579.5,
+        "exit_time": 590.5,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 1,
+        "candidate_levels": [
+          {
+            "level_id": "magnitudes_v3",
+            "area": "orange_beam_highway_mirrors_and_promesst",
+            "phash_distance": 8,
+            "hist_distance": 0.343,
+            "sift_inliers": 96,
+            "sift_good": 102
+          },
+          {
+            "level_id": "elevator_cyan",
+            "area": "elevators",
+            "phash_distance": 18,
+            "hist_distance": 1.1417,
+            "sift_inliers": 0,
+            "sift_good": 3
+          },
+          {
+            "level_id": "river_rotate_beams_gr",
+            "area": "underworld_skipping_and_promesst",
+            "phash_distance": 20,
+            "hist_distance": 1.3064,
+            "sift_inliers": 0,
+            "sift_good": 2
+          },
+          {
+            "level_id": "place_lily_pushstyle_v6",
+            "area": "endgame2",
+            "phash_distance": 20,
+            "hist_distance": 1.3563,
+            "sift_inliers": 0,
+            "sift_good": 1
+          },
+          {
+            "level_id": "green_crystal_rover",
+            "area": "beams_and_mirrors",
+            "phash_distance": 20,
+            "hist_distance": 1.3764,
+            "sift_inliers": 0,
+            "sift_good": 9
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "magnitudes_v3",
+          "area": "orange_beam_highway_mirrors_and_promesst",
+          "phash_distance": 8,
+          "hist_distance": 0.343,
+          "sift_inliers": 96,
+          "sift_good": 102,
+          "consistent_samples": 5,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p50\\samples\\00585.000.jpg",
+            "time": 585.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\magnitudes_v3.webp",
+            "first_sample": 565.0,
+            "last_sample": 585.0,
+            "sample_count": 5,
+            "reason": "At 9:40–9:45 the candidate comparison shows the same magnitudes board and fixed object placement. The surrounding timeline shows the board again after separate water-area footage; this visit remains distinct."
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_00.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison",
+        "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
+        "audit_anchor": "repeat-magnitudes_v3"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-u05",
+        "level_id": null,
+        "puzzle_start_time": 600,
+        "puzzle_end_time": 715,
+        "entry_transition_time": 599.5,
+        "exit_time": 715.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p50/sheet_04.jpg",
+            "time": 600,
+            "reference": null,
+            "reason": "A pale stone courtyard with a long raised central strip, block props and beam interaction, followed by a separate green-edged courtyard view. At this resolution the identity and exact internal transition are unresolved; recorded as an unknown gameplay interval."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-005",
+        "level_id": "magnitudes_v3",
+        "puzzle_start_time": 725,
+        "puzzle_end_time": 735,
+        "entry_transition_time": 724.5,
+        "exit_time": 735.5,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 1,
+        "candidate_levels": [
+          {
+            "level_id": "magnitudes_v3",
+            "area": "orange_beam_highway_mirrors_and_promesst",
+            "phash_distance": 8,
+            "hist_distance": 0.3563,
+            "sift_inliers": 98,
+            "sift_good": 104
+          },
+          {
+            "level_id": "elevator_cyan",
+            "area": "elevators",
+            "phash_distance": 20,
+            "hist_distance": 1.1396,
+            "sift_inliers": 0,
+            "sift_good": 3
+          },
+          {
+            "level_id": "push_against",
+            "area": "heroes_and_stones",
+            "phash_distance": 20,
+            "hist_distance": 1.2311,
+            "sift_inliers": 0,
+            "sift_good": 4
+          },
+          {
+            "level_id": "river_rotate_beams_gr",
+            "area": "underworld_skipping_and_promesst",
+            "phash_distance": 20,
+            "hist_distance": 1.3022,
+            "sift_inliers": 0,
+            "sift_good": 3
+          },
+          {
+            "level_id": "end2_river_place",
+            "area": "endgame2",
+            "phash_distance": 20,
+            "hist_distance": 1.3799,
+            "sift_inliers": 0,
+            "sift_good": 5
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "magnitudes_v3",
+          "area": "orange_beam_highway_mirrors_and_promesst",
+          "phash_distance": 8,
+          "hist_distance": 0.3563,
+          "sift_inliers": 98,
+          "sift_good": 104,
+          "consistent_samples": 1,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p50\\samples\\00730.000.jpg",
+            "time": 730.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\magnitudes_v3.webp",
+            "first_sample": 730.0,
+            "last_sample": 730.0,
+            "sample_count": 1,
+            "reason": "At 12:05–12:10 the same magnitudes board appears briefly after another courtyard shot; its central square, green right-side blocks and purple lower blocks match the reference."
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_00.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison",
+        "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
+        "audit_anchor": "repeat-magnitudes_v3"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-006",
+        "level_id": "magnitudes_v3",
+        "puzzle_start_time": 750,
+        "puzzle_end_time": 765,
+        "entry_transition_time": 749.5,
+        "exit_time": 765.5,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 1,
+        "candidate_levels": [
+          {
+            "level_id": "magnitudes_v3",
+            "area": "orange_beam_highway_mirrors_and_promesst",
+            "phash_distance": 10,
+            "hist_distance": 0.3586,
+            "sift_inliers": 94,
+            "sift_good": 101
+          },
+          {
+            "level_id": "oneway_beam",
+            "area": "beams_and_basic_heroes",
+            "phash_distance": 22,
+            "hist_distance": 1.2597,
+            "sift_inliers": 4,
+            "sift_good": 6
+          },
+          {
+            "level_id": "elevator_cyan",
+            "area": "elevators",
+            "phash_distance": 20,
+            "hist_distance": 1.1404,
+            "sift_inliers": 0,
+            "sift_good": 4
+          },
+          {
+            "level_id": "push_against",
+            "area": "heroes_and_stones",
+            "phash_distance": 20,
+            "hist_distance": 1.2332,
+            "sift_inliers": 0,
+            "sift_good": 1
+          },
+          {
+            "level_id": "end2_river_place",
+            "area": "endgame2",
+            "phash_distance": 20,
+            "hist_distance": 1.3818,
+            "sift_inliers": 0,
+            "sift_good": 5
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "magnitudes_v3",
+          "area": "orange_beam_highway_mirrors_and_promesst",
+          "phash_distance": 10,
+          "hist_distance": 0.3586,
+          "sift_inliers": 94,
+          "sift_good": 101,
+          "consistent_samples": 2,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p50\\samples\\00760.000.jpg",
+            "time": 760.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\magnitudes_v3.webp",
+            "first_sample": 755.0,
+            "last_sample": 760.0,
+            "sample_count": 2,
+            "reason": "At 12:30–12:40 the magnitudes board returns with the same central square and colored block groups. This is separated from the earlier 12:05 occurrence by a different forest-courtyard view."
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_01.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison",
+        "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
+        "audit_anchor": "repeat-magnitudes_v3"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-u06",
+        "level_id": null,
+        "puzzle_start_time": 780,
+        "puzzle_end_time": 855,
+        "entry_transition_time": 779.5,
+        "exit_time": 855.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p50/sheet_05.jpg",
+            "time": 780,
+            "reference": null,
+            "reason": "A dark, narrow stone chamber with a vertical gold beam and small fixtures along the wall. The tiled room is distinct from the water arenas, but no full-catalog reference matched visually."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-007",
+        "level_id": "magnitudes_v3",
+        "puzzle_start_time": 865,
+        "puzzle_end_time": 875,
+        "entry_transition_time": 864.5,
+        "exit_time": 875.5,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 1,
+        "candidate_levels": [
+          {
+            "level_id": "magnitudes_v3",
+            "area": "orange_beam_highway_mirrors_and_promesst",
+            "phash_distance": 8,
+            "hist_distance": 0.3604,
+            "sift_inliers": 80,
+            "sift_good": 86
+          },
+          {
+            "level_id": "sidetrack",
+            "area": "beams_and_mirrors",
+            "phash_distance": 22,
+            "hist_distance": 0.9487,
+            "sift_inliers": 5,
+            "sift_good": 11
+          },
+          {
+            "level_id": "elevator_cyan",
+            "area": "elevators",
+            "phash_distance": 20,
+            "hist_distance": 1.1333,
+            "sift_inliers": 0,
+            "sift_good": 3
+          },
+          {
+            "level_id": "push_against",
+            "area": "heroes_and_stones",
+            "phash_distance": 20,
+            "hist_distance": 1.2319,
+            "sift_inliers": 0,
+            "sift_good": 3
+          },
+          {
+            "level_id": "crystals_not_stones",
+            "area": "heroes_and_stones",
+            "phash_distance": 20,
+            "hist_distance": 1.2464,
+            "sift_inliers": 0,
+            "sift_good": 2
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "magnitudes_v3",
+          "area": "orange_beam_highway_mirrors_and_promesst",
+          "phash_distance": 8,
+          "hist_distance": 0.3604,
+          "sift_inliers": 80,
+          "sift_good": 86,
+          "consistent_samples": 1,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p50\\samples\\00870.000.jpg",
+            "time": 870.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\magnitudes_v3.webp",
+            "first_sample": 870.0,
+            "last_sample": 870.0,
+            "sample_count": 1,
+            "reason": "At 14:25–14:30 the recognizable magnitudes layout returns, including the broad tiled platform and central basin. It is a short return before the video cuts to a separate island puzzle."
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_01.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison",
+        "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
+        "audit_anchor": "repeat-magnitudes_v3"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-u07",
+        "level_id": null,
+        "puzzle_start_time": 900,
+        "puzzle_end_time": 939.5,
+        "entry_transition_time": 899.5,
+        "exit_time": 939.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p50/sheet_06.jpg",
+            "time": 900,
+            "reference": null,
+            "reason": "From 15:00 to 15:39 the timeline shows overhead island-map navigation and small isolated island/beam-crossing views without a stable identifiable puzzle layout. This unresolved traversal interval ends at the cut into the confirmed magnitudes_v3 board."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-u07b",
+        "level_id": null,
+        "puzzle_start_time": 950.5,
+        "puzzle_end_time": 1045,
+        "entry_transition_time": 950.5,
+        "exit_time": 1045.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p50/sheet_06.jpg",
+            "time": 950.5,
+            "reference": null,
+            "reason": "After the confirmed magnitudes_v3 visit ends at 15:50, the timeline returns to overhead island-map navigation and several small water/island board views through 17:25. These are independent unresolved traversal/puzzle views; the montage does not provide a stable reference match."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-008",
+        "level_id": "magnitudes_v3",
+        "puzzle_start_time": 940,
+        "puzzle_end_time": 950,
+        "entry_transition_time": 939.5,
+        "exit_time": 950.5,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 1,
+        "candidate_levels": [
+          {
+            "level_id": "magnitudes_v3",
+            "area": "orange_beam_highway_mirrors_and_promesst",
+            "phash_distance": 10,
+            "hist_distance": 0.3628,
+            "sift_inliers": 87,
+            "sift_good": 95
+          },
+          {
+            "level_id": "push_against",
+            "area": "heroes_and_stones",
+            "phash_distance": 20,
+            "hist_distance": 1.2307,
+            "sift_inliers": 5,
+            "sift_good": 7
+          },
+          {
+            "level_id": "elevator_cyan",
+            "area": "elevators",
+            "phash_distance": 20,
+            "hist_distance": 1.1292,
+            "sift_inliers": 0,
+            "sift_good": 3
+          },
+          {
+            "level_id": "crystals_not_stones",
+            "area": "heroes_and_stones",
+            "phash_distance": 20,
+            "hist_distance": 1.2373,
+            "sift_inliers": 0,
+            "sift_good": 4
+          },
+          {
+            "level_id": "stones_not_crystals",
+            "area": "heroes_and_stones",
+            "phash_distance": 20,
+            "hist_distance": 1.3144,
+            "sift_inliers": 0,
+            "sift_good": 2
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "magnitudes_v3",
+          "area": "orange_beam_highway_mirrors_and_promesst",
+          "phash_distance": 10,
+          "hist_distance": 0.3628,
+          "sift_inliers": 87,
+          "sift_good": 95,
+          "consistent_samples": 1,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p50\\samples\\00945.000.jpg",
+            "time": 945.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\magnitudes_v3.webp",
+            "first_sample": 945.0,
+            "last_sample": 945.0,
+            "sample_count": 1,
+            "reason": "At 15:40–15:45 the same magnitudes platform is shown again, with central basin and distinct green and purple block groups in the reference positions. Separate island and beam footage intervenes."
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_01.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison",
+        "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
+        "audit_anchor": "repeat-magnitudes_v3"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-009",
+        "level_id": "magnitudes_v3",
+        "puzzle_start_time": 1055,
+        "puzzle_end_time": 1070,
+        "entry_transition_time": 1054.5,
+        "exit_time": 1070.5,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 1,
+        "candidate_levels": [
+          {
+            "level_id": "magnitudes_v3",
+            "area": "orange_beam_highway_mirrors_and_promesst",
+            "phash_distance": 8,
+            "hist_distance": 0.3372,
+            "sift_inliers": 95,
+            "sift_good": 101
+          },
+          {
+            "level_id": "elevator_cyan",
+            "area": "elevators",
+            "phash_distance": 16,
+            "hist_distance": 1.1334,
+            "sift_inliers": 0,
+            "sift_good": 5
+          },
+          {
+            "level_id": "place_lily_pushstyle_v6",
+            "area": "endgame2",
+            "phash_distance": 18,
+            "hist_distance": 1.3635,
+            "sift_inliers": 0,
+            "sift_good": 5
+          },
+          {
+            "level_id": "immobilize",
+            "area": "beams_and_basic_heroes",
+            "phash_distance": 20,
+            "hist_distance": 0.9853,
+            "sift_inliers": 0,
+            "sift_good": 3
+          },
+          {
+            "level_id": "magic_square",
+            "area": "beams_and_basic_heroes",
+            "phash_distance": 20,
+            "hist_distance": 1.1683,
+            "sift_inliers": 0,
+            "sift_good": 1
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "magnitudes_v3",
+          "area": "orange_beam_highway_mirrors_and_promesst",
+          "phash_distance": 8,
+          "hist_distance": 0.3372,
+          "sift_inliers": 95,
+          "sift_good": 101,
+          "consistent_samples": 2,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p50\\samples\\01065.000.jpg",
+            "time": 1065.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\magnitudes_v3.webp",
+            "first_sample": 1060.0,
+            "last_sample": 1065.0,
+            "sample_count": 2,
+            "reason": "At 17:35–17:45 the magnitudes board returns with its central pale square and right/bottom colored groups. It is a distinct brief return amid unrelated island footage."
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_01.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison",
+        "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
+        "audit_anchor": "repeat-magnitudes_v3"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-010",
+        "level_id": "magnitudes_v3",
+        "puzzle_start_time": 1105,
+        "puzzle_end_time": 1145,
+        "entry_transition_time": 1104.5,
+        "exit_time": 1145.5,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 1,
+        "candidate_levels": [
+          {
+            "level_id": "magnitudes_v3",
+            "area": "orange_beam_highway_mirrors_and_promesst",
+            "phash_distance": 8,
+            "hist_distance": 0.3261,
+            "sift_inliers": 95,
+            "sift_good": 99
+          },
+          {
+            "level_id": "elevator_cyan",
+            "area": "elevators",
+            "phash_distance": 18,
+            "hist_distance": 1.1365,
+            "sift_inliers": 0,
+            "sift_good": 2
+          },
+          {
+            "level_id": "push_against",
+            "area": "heroes_and_stones",
+            "phash_distance": 20,
+            "hist_distance": 1.2257,
+            "sift_inliers": 0,
+            "sift_good": 4
+          },
+          {
+            "level_id": "crystals_not_stones",
+            "area": "heroes_and_stones",
+            "phash_distance": 20,
+            "hist_distance": 1.229,
+            "sift_inliers": 0,
+            "sift_good": 2
+          },
+          {
+            "level_id": "river_rotate_beams_gr",
+            "area": "underworld_skipping_and_promesst",
+            "phash_distance": 20,
+            "hist_distance": 1.305,
+            "sift_inliers": 0,
+            "sift_good": 3
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "magnitudes_v3",
+          "area": "orange_beam_highway_mirrors_and_promesst",
+          "phash_distance": 8,
+          "hist_distance": 0.3261,
+          "sift_inliers": 95,
+          "sift_good": 99,
+          "consistent_samples": 7,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p50\\samples\\01110.000.jpg",
+            "time": 1110.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\magnitudes_v3.webp",
+            "first_sample": 1110.0,
+            "last_sample": 1140.0,
+            "sample_count": 7,
+            "reason": "From 18:25 through 19:00 the full magnitudes board remains visible; the central square, pipes, green block column and purple bottom blocks match the catalog reference."
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_01.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison",
+        "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
+        "audit_anchor": "repeat-magnitudes_v3"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-u08",
+        "level_id": null,
+        "puzzle_start_time": 1155,
+        "puzzle_end_time": 1290,
+        "entry_transition_time": 1154.5,
+        "exit_time": 1290.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p50/sheet_07.jpg",
+            "time": 1155,
+            "reference": null,
+            "reason": "Water-island gameplay with small tan platforms, a long horizontal gold beam and blue markers, then a transition to a larger green/tan courtyard around 21:45. The first island section lacks a confirmed catalog identity."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-u09",
+        "level_id": null,
+        "puzzle_start_time": 1305,
+        "puzzle_end_time": 1380,
+        "entry_transition_time": 1304.5,
+        "exit_time": 1380.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p50/sheet_08.jpg",
+            "time": 1305,
+            "reference": null,
+            "reason": "A green-and-tan courtyard board with a raised wooden structure along the upper edge, scattered stone blocks and blue markers. Distinct from the preceding horizontal-beam island; unknown ID."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-u10",
+        "level_id": null,
+        "puzzle_start_time": 1385,
+        "puzzle_end_time": 1520,
+        "entry_transition_time": 1384.5,
+        "exit_time": 1520.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p50/sheet_09.jpg",
+            "time": 1385,
+            "reference": null,
+            "reason": "A narrow waterway board centered on a tall stone post and crosswise gold beam, with a small blue-tiled landing and detached markers. Its stable layout remains through the 25:20 transition to a waterfall bridge."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-u11",
+        "level_id": null,
+        "puzzle_start_time": 1525,
+        "puzzle_end_time": 1605,
+        "entry_transition_time": 1524.5,
+        "exit_time": 1605.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p50/sheet_10.jpg",
+            "time": 1525,
+            "reference": null,
+            "reason": "A bridge and waterfall board with a horizontal wooden crossing and central vertical beam above falling water. No catalog reference was visually conclusive."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-u12",
+        "level_id": null,
+        "puzzle_start_time": 1610,
+        "puzzle_end_time": 1710,
+        "entry_transition_time": 1609.5,
+        "exit_time": 1710.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p50/sheet_10.jpg",
+            "time": 1610,
+            "reference": null,
+            "reason": "A shallow green courtyard enclosed by water, with an L-shaped sandy path and several large red/brown objects; distinct board, unknown identity."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p50-u13",
+        "level_id": null,
+        "puzzle_start_time": 1715,
+        "puzzle_end_time": 1785,
+        "entry_transition_time": 1714.5,
+        "exit_time": 1785.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p50/sheet_11.jpg",
+            "time": 1715,
+            "reference": null,
+            "reason": "A small isolated water island with a short gold beam and sparse objects, visibly different from the preceding L-shaped courtyard."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    }
+  ],
+  "excluded_segments": [],
+  "revision_history": [
+    {
+      "previous_review_note": "Reviewed the complete 13-sheet timeline and all three proposal galleries against the local full-catalog reference images. Confirmed 11 visits (10 repeated magnitudes_v3 visits kept separate at intervening layout changes, plus 3wcn_shm_dragon_lily). Recorded 14 clearly independent but unidentified puzzle/traversal intervals as structured unknowns; several are map or island exploration, and long connected water sequences have uncertain internal entry boundaries. Remaining unclassified portions include transitions, map/tutorial screens, travel and commentary; no overworld entries were verified and no outcomes were inferred. The long 15:00–17:25 unresolved island sequence is split around the visually confirmed magnitudes_v3 visit at 15:40–15:50, so no unknown interval duplicates a known event.",
+      "source": "docs/校对.md",
+      "items": [
+        5
+      ]
+    }
+  ],
+  "human_review": {
+    "source": "docs/校对.md",
+    "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+    "item_count": 19
+  }
 }

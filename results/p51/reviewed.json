@@ -7,47 +7,15 @@
   "title": "【下南】魔镜与河流[南1/南2/南2东1/南2东2/南2东3]",
   "stage": 3,
   "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
-  "review_note": "Reviewed all 10 complete timeline sheets and all three candidate galleries against local full-catalog images. Confirmed 13 visits, including a second water_bender_v3 return at 20:15–21:05; raft corner variants and mirror variants are separate boards, and repeated water_bender_v3 visits are split by intervening distinct layouts. Four independently visible but unidentified boards/course sections are retained as structured unknowns, including an extensive continuous lily/raft water course whose internal entry boundaries remain uncertain. Remaining footage includes transitions, map/tutorial screens and travel; no external map entry was verified and no outcome inferred.",
+  "review_note": "已按用户docs/校对.md修订身份和连续区间。未切关的匹配窗合并为一次访问；明确未进关的大世界片段移入excluded_segments，不再列为未知关卡。原片段完整记录保存在superseded_events。具体依据见各事件human_review证据。",
   "events": [
-    {
-      "event_id": "p51-u01",
-      "level_id": null,
-      "puzzle_start_time": 14.5,
-      "puzzle_end_time": 24.5,
-      "entry_transition_time": 14.0,
-      "exit_time": 25.0,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "runs/p51/sheet_00.jpg",
-          "time": 14.5,
-          "reference": null,
-          "reason": "A brief purple-lit square room with a raised cyan-blue tiled enclosure, a white object at the left, and a separate pale platform below. It is an independent board immediately before the confirmed water/lily layout, but no local catalog entry was visually established."
-        }
-      ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
     {
       "event_id": "p51-001",
       "level_id": "zach_lilies_v3",
-      "puzzle_start_time": 25.5,
-      "puzzle_end_time": 35.0,
+      "puzzle_start_time": 25,
+      "puzzle_end_time": 250,
       "entry_transition_time": 25.0,
-      "exit_time": 35.5,
+      "exit_time": 250,
       "overworld_approach_time": null,
       "review_status": "confirmed",
       "status": "visited",
@@ -97,13 +65,8 @@
       ],
       "puzzle_match": {
         "level_id": "zach_lilies_v3",
-        "area": "underworld_lilies",
-        "phash_distance": 12,
-        "hist_distance": 0.2714,
-        "sift_inliers": 57,
-        "sift_good": 60,
-        "consistent_samples": 1,
-        "status": "visually_confirmed"
+        "status": "human_confirmed",
+        "method": "owner_identity_and_continuity_review"
       },
       "overworld_match": {
         "status": "unverified"
@@ -118,43 +81,35 @@
           "last_sample": 30.0,
           "sample_count": 1,
           "reason": "The candidate and local reference show the same sunset-lit water area: a short stone spur at upper left, the central square stepping island, a white floating object and the long angular brown path with green/purple pieces. This brief stable layout is visible around 0:30 before the video cuts to the much longer water course."
+        },
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            6
+          ],
+          "reason": "用户确认00:25进入、04:10离开；其间全部为同一关。"
         }
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p51-u02",
-      "level_id": null,
-      "puzzle_start_time": 35,
-      "puzzle_end_time": 265,
-      "entry_transition_time": 34.5,
-      "exit_time": 265.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
+      "manual_corrections": [
         {
-          "type": "visual_layout_comparison",
-          "image": "runs/p51/sheet_00.jpg",
-          "time": 35,
-          "reference": null,
-          "reason": "Continuous sunset-water gameplay across a long connected lily/raft course: multiple separated stone piers, green pieces and narrow paths remain on a broad tiled-water field, with the camera travelling between sections. The full timeline shows changing board views without enough evidence to assign individual catalog IDs or precise interior entry boundaries; retained as unknown traversal."
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            6
+          ],
+          "reason": "用户确认00:25进入、04:10离开；其间全部为同一关。"
         }
       ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "User continuity/identity review (docs/校对.md)",
+      "map_layer": "underworld",
+      "source_event_ids": [
+        "p51-001",
+        "p51-u02"
+      ]
     },
     {
       "event_id": "p51-002",
@@ -821,38 +776,6 @@
       "reviewer": "Luna visual comparison"
     },
     {
-      "event_id": "p51-u03",
-      "level_id": null,
-      "puzzle_start_time": 960,
-      "puzzle_end_time": 1015,
-      "entry_transition_time": 959.5,
-      "exit_time": 1015.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "runs/p51/sheet_06.jpg",
-          "time": 960,
-          "reference": null,
-          "reason": "A distinct archipelago/water board sequence with several tiny stone-and-grass islands, blue-white blocks and detached landing tiles, intercut with a map view. The image is puzzle gameplay but not a confirmed reference match."
-        }
-      ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
       "event_id": "p51-010",
       "level_id": "river_maze_clear_tenacious_race_v2",
       "puzzle_start_time": 1020.25,
@@ -1183,38 +1106,329 @@
       "evidence_gallery": "evidence/candidates_02.jpg",
       "manual_corrections": [],
       "reviewer": "Luna visual comparison"
+    }
+  ],
+  "superseded_events": [
+    {
+      "event": {
+        "event_id": "p51-u01",
+        "level_id": null,
+        "puzzle_start_time": 14.5,
+        "puzzle_end_time": 24.5,
+        "entry_transition_time": 14.0,
+        "exit_time": 25.0,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p51/sheet_00.jpg",
+            "time": 14.5,
+            "reference": null,
+            "reason": "A brief purple-lit square room with a raised cyan-blue tiled enclosure, a white object at the left, and a separate pale platform below. It is an independent board immediately before the confirmed water/lily layout, but no local catalog entry was visually established."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
     },
     {
-      "event_id": "p51-u04",
-      "level_id": null,
-      "puzzle_start_time": 1490,
-      "puzzle_end_time": 1520,
-      "entry_transition_time": 1489.5,
-      "exit_time": 1520.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
+      "event": {
+        "event_id": "p51-001",
+        "level_id": "zach_lilies_v3",
+        "puzzle_start_time": 25.5,
+        "puzzle_end_time": 35.0,
+        "entry_transition_time": 25.0,
+        "exit_time": 35.5,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 1,
+        "candidate_levels": [
+          {
+            "level_id": "zach_lilies_v3",
+            "area": "underworld_lilies",
+            "phash_distance": 12,
+            "hist_distance": 0.2714,
+            "sift_inliers": 57,
+            "sift_good": 60
+          },
+          {
+            "level_id": "protrusions",
+            "area": "beams_and_mirrors",
+            "phash_distance": 20,
+            "hist_distance": 1.2888,
+            "sift_inliers": 0,
+            "sift_good": 2
+          },
+          {
+            "level_id": "heroes3_druid_a",
+            "area": "heroes3",
+            "phash_distance": 20,
+            "hist_distance": 1.3049,
+            "sift_inliers": 0,
+            "sift_good": 3
+          },
+          {
+            "level_id": "single_out",
+            "area": "heroes_in_3d",
+            "phash_distance": 22,
+            "hist_distance": 0.792,
+            "sift_inliers": 0,
+            "sift_good": 0
+          },
+          {
+            "level_id": "4wc_dragon_cyan_s_v2",
+            "area": "orange_beam_highway_worlds_collide",
+            "phash_distance": 22,
+            "hist_distance": 0.9595,
+            "sift_inliers": 0,
+            "sift_good": 3
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "zach_lilies_v3",
+          "area": "underworld_lilies",
+          "phash_distance": 12,
+          "hist_distance": 0.2714,
+          "sift_inliers": 57,
+          "sift_good": 60,
+          "consistent_samples": 1,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p51\\samples\\00030.000.jpg",
+            "time": 30.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\zach_lilies_v3.webp",
+            "first_sample": 30.0,
+            "last_sample": 30.0,
+            "sample_count": 1,
+            "reason": "The candidate and local reference show the same sunset-lit water area: a short stone spur at upper left, the central square stepping island, a white floating object and the long angular brown path with green/purple pieces. This brief stable layout is visible around 0:30 before the video cuts to the much longer water course."
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_00.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
       },
-      "overworld_match": {
-        "status": "unverified"
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p51-u02",
+        "level_id": null,
+        "puzzle_start_time": 35,
+        "puzzle_end_time": 265,
+        "entry_transition_time": 34.5,
+        "exit_time": 265.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p51/sheet_00.jpg",
+            "time": 35,
+            "reference": null,
+            "reason": "Continuous sunset-water gameplay across a long connected lily/raft course: multiple separated stone piers, green pieces and narrow paths remain on a broad tiled-water field, with the camera travelling between sections. The full timeline shows changing board views without enough evidence to assign individual catalog IDs or precise interior entry boundaries; retained as unknown traversal."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
       },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p51-u03",
+        "level_id": null,
+        "puzzle_start_time": 960,
+        "puzzle_end_time": 1015,
+        "entry_transition_time": 959.5,
+        "exit_time": 1015.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p51/sheet_06.jpg",
+            "time": 960,
+            "reference": null,
+            "reason": "A distinct archipelago/water board sequence with several tiny stone-and-grass islands, blue-white blocks and detached landing tiles, intercut with a map view. The image is puzzle gameplay but not a confirmed reference match."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p51-u04",
+        "level_id": null,
+        "puzzle_start_time": 1490,
+        "puzzle_end_time": 1520,
+        "entry_transition_time": 1489.5,
+        "exit_time": 1520.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p51/sheet_09.jpg",
+            "time": 1490,
+            "reference": null,
+            "reason": "Final shown board after the 24:45 transition: a blue-purple area with scattered pale tiles, central pink mechanism/beam and small detached platforms. It is an independent puzzle view, identity unconfirmed."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    }
+  ],
+  "excluded_segments": [
+    {
+      "segment_id": "world-p51-u01",
+      "kind": "world",
+      "start": 14.5,
+      "end": 24.5,
+      "source_event_ids": [
+        "p51-u01"
+      ],
       "evidence": [
         {
-          "type": "visual_layout_comparison",
-          "image": "runs/p51/sheet_09.jpg",
-          "time": 1490,
-          "reference": null,
-          "reason": "Final shown board after the 24:45 transition: a blue-purple area with scattered pale tiles, central pink mechanism/beam and small detached platforms. It is an independent puzzle view, identity unconfirmed."
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            6
+          ],
+          "reason": "00:25进入第一关，此前片段属于大世界。"
         }
+      ]
+    },
+    {
+      "segment_id": "p51-world-after-first",
+      "kind": "world",
+      "start": 250,
+      "end": 265,
+      "source_event_ids": [],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            6
+          ],
+          "reason": "04:10已离开第一关，到下一入口之前为大世界。"
+        }
+      ]
+    },
+    {
+      "segment_id": "world-p51-u03",
+      "kind": "world",
+      "start": 960,
+      "end": 1015,
+      "source_event_ids": [
+        "p51-u03"
       ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            7
+          ],
+          "reason": "用户确认16:00–16:55、24:50–25:20在大世界，没有进关。"
+        }
+      ]
+    },
+    {
+      "segment_id": "world-p51-u04",
+      "kind": "world",
+      "start": 1490,
+      "end": 1520,
+      "source_event_ids": [
+        "p51-u04"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            7
+          ],
+          "reason": "用户确认16:00–16:55、24:50–25:20在大世界，没有进关。"
+        }
+      ]
     }
-  ]
+  ],
+  "revision_history": [
+    {
+      "previous_review_note": "Reviewed all 10 complete timeline sheets and all three candidate galleries against local full-catalog images. Confirmed 13 visits, including a second water_bender_v3 return at 20:15–21:05; raft corner variants and mirror variants are separate boards, and repeated water_bender_v3 visits are split by intervening distinct layouts. Four independently visible but unidentified boards/course sections are retained as structured unknowns, including an extensive continuous lily/raft water course whose internal entry boundaries remain uncertain. Remaining footage includes transitions, map/tutorial screens and travel; no external map entry was verified and no outcome inferred.",
+      "source": "docs/校对.md",
+      "items": [
+        6,
+        7
+      ]
+    }
+  ],
+  "human_review": {
+    "source": "docs/校对.md",
+    "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+    "item_count": 19
+  }
 }

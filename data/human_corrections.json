@@ -1,0 +1,367 @@
+{
+  "version": 1,
+  "source": "docs/校对.md",
+  "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+  "item_count": 19,
+  "actions": [
+    {
+      "part": 37,
+      "kind": "identify",
+      "target_event_id": "p37-u01",
+      "level_id": "promesst2.5_deeper",
+      "event_ids": [
+        "p37-u01"
+      ],
+      "items": [
+        1
+      ],
+      "reason": "用户确认该长段对应promesst2.5_deeper。"
+    },
+    {
+      "part": 38,
+      "kind": "merge",
+      "target_event_id": "p38-001",
+      "level_id": "promesst3_streamlined",
+      "event_ids": [
+        "p38-001",
+        "p38-u01"
+      ],
+      "items": [
+        2
+      ],
+      "reason": "后续长段仍在同一关卡，无切关。",
+      "end": 2290
+    },
+    {
+      "part": 38,
+      "kind": "merge",
+      "target_event_id": "p38-003",
+      "level_id": "gem_beam_placement",
+      "event_ids": [
+        "p38-003",
+        "p38-u02"
+      ],
+      "items": [
+        3
+      ],
+      "reason": "后续长段仍在38:10开始的同一关卡。",
+      "end": 2564
+    },
+    {
+      "part": 43,
+      "kind": "merge",
+      "target_event_id": "p43-002",
+      "level_id": "end2_heroes_1_2",
+      "event_ids": [
+        "p43-002",
+        "p43-003",
+        "p43-004",
+        "p43-005",
+        "p43-006"
+      ],
+      "items": [
+        4
+      ],
+      "reason": "13:54/14:10均为上一关内部视角；14:05短暂匹配end2_heroes_1_5也处于同一连续过程，合回首个入口。",
+      "end": 860.25
+    },
+    {
+      "part": 43,
+      "kind": "merge",
+      "target_event_id": "p43-007",
+      "level_id": "end2_heroes_1_5",
+      "event_ids": [
+        "p43-007",
+        "p43-008",
+        "p43-009",
+        "p43-010"
+      ],
+      "items": [
+        4
+      ],
+      "reason": "16:41仍是前一段相同关卡的内部视角，重复匹配合并。14:20–14:24有界图册保留相邻两关交界。",
+      "start": 861,
+      "end": 1025
+    },
+    {
+      "part": 50,
+      "kind": "merge",
+      "target_event_id": "p50-001",
+      "level_id": "magnitudes_v3",
+      "event_ids": [
+        "p50-001",
+        "p50-002",
+        "p50-003",
+        "p50-004",
+        "p50-005",
+        "p50-006",
+        "p50-007",
+        "p50-008",
+        "p50-009",
+        "p50-010",
+        "p50-u01",
+        "p50-u02",
+        "p50-u03",
+        "p50-u04",
+        "p50-u05",
+        "p50-u06",
+        "p50-u07",
+        "p50-u08",
+        "p50-u09",
+        "p50-u10",
+        "p50-u11",
+        "p50-u12",
+        "p50-u13",
+        "p50-u07b"
+      ],
+      "items": [
+        5
+      ],
+      "reason": "开头到29:45均为同一关卡，内部房间与总览切换不另计入口。",
+      "start": 0,
+      "end": 1785
+    },
+    {
+      "part": 51,
+      "kind": "merge",
+      "target_event_id": "p51-001",
+      "level_id": "zach_lilies_v3",
+      "event_ids": [
+        "p51-001",
+        "p51-u02"
+      ],
+      "items": [
+        6
+      ],
+      "reason": "用户确认00:25进入、04:10离开；其间全部为同一关。",
+      "start": 25,
+      "end": 250
+    },
+    {
+      "part": 51,
+      "kind": "world",
+      "target_event_id": null,
+      "level_id": null,
+      "event_ids": [
+        "p51-u01"
+      ],
+      "items": [
+        6
+      ],
+      "reason": "00:25进入第一关，此前片段属于大世界。"
+    },
+    {
+      "part": 51,
+      "kind": "world",
+      "target_event_id": "p51-world-after-first",
+      "level_id": null,
+      "event_ids": [],
+      "items": [
+        6
+      ],
+      "reason": "04:10已离开第一关，到下一入口之前为大世界。",
+      "start": 250,
+      "end": 265
+    },
+    {
+      "part": 51,
+      "kind": "world",
+      "target_event_id": null,
+      "level_id": null,
+      "event_ids": [
+        "p51-u03",
+        "p51-u04"
+      ],
+      "items": [
+        7
+      ],
+      "reason": "用户确认16:00–16:55、24:50–25:20在大世界，没有进关。"
+    },
+    {
+      "part": 52,
+      "kind": "world",
+      "target_event_id": null,
+      "level_id": null,
+      "event_ids": [
+        "p52-u01",
+        "p52-u02"
+      ],
+      "items": [
+        8
+      ],
+      "reason": "用户确认02:45–03:30、15:20–15:45均未进关。"
+    },
+    {
+      "part": 53,
+      "kind": "world",
+      "target_event_id": null,
+      "level_id": null,
+      "event_ids": [
+        "p53-u01",
+        "p53-u02",
+        "p53-u04"
+      ],
+      "items": [
+        9
+      ],
+      "reason": "用户确认03:05–03:22、13:00–13:20、28:15–28:50均为大世界。"
+    },
+    {
+      "part": 53,
+      "kind": "merge",
+      "target_event_id": "p53-013",
+      "level_id": "monster_promesst_v3",
+      "event_ids": [
+        "p53-013",
+        "p53-u03"
+      ],
+      "items": [
+        10
+      ],
+      "reason": "22:25–25:55仍与上一片段同关，无切换。",
+      "end": 1555
+    },
+    {
+      "part": 61,
+      "kind": "identify",
+      "target_event_id": "p61-031",
+      "level_id": "best_beam_colors",
+      "event_ids": [
+        "p61-031"
+      ],
+      "items": [
+        11
+      ],
+      "reason": "用户确认36:03–42:32是原61·7左边的best_beam_colors。"
+    },
+    {
+      "part": 64,
+      "kind": "merge",
+      "target_event_id": "p64-009",
+      "level_id": "end2_mirror1",
+      "event_ids": [
+        "p64-009",
+        "p64-010",
+        "p64-011",
+        "p64-012"
+      ],
+      "items": [
+        12
+      ],
+      "reason": "29:25–29:53、34:21–34:40均属end2_mirror1，与前段无切关。",
+      "end": 2080
+    },
+    {
+      "part": 65,
+      "kind": "merge",
+      "target_event_id": "p65-001",
+      "level_id": "end3_off_topic_alt",
+      "event_ids": [
+        "p65-001",
+        "p65-009",
+        "p65-010"
+      ],
+      "items": [
+        13
+      ],
+      "reason": "02:35–07:00及之后直到08:49都属于同关。",
+      "end": 529
+    },
+    {
+      "part": 65,
+      "kind": "merge",
+      "target_event_id": "p65-002",
+      "level_id": "end3_off_topic_mirror",
+      "event_ids": [
+        "p65-002",
+        "p65-011",
+        "p65-003",
+        "p65-017"
+      ],
+      "items": [
+        14
+      ],
+      "reason": "11:00–12:28仍属end3_off_topic_mirror，与前段连续。",
+      "end": 748
+    },
+    {
+      "part": 65,
+      "kind": "merge",
+      "target_event_id": "p65-004",
+      "level_id": "end3_off_topic_heroes",
+      "event_ids": [
+        "p65-004",
+        "p65-012"
+      ],
+      "items": [
+        15
+      ],
+      "reason": "13:10–21:30属于同关的连续内部过程。",
+      "end": 1290
+    },
+    {
+      "part": 65,
+      "kind": "merge",
+      "target_event_id": "p65-005",
+      "level_id": "end3_reorder_skipping_fix",
+      "event_ids": [
+        "p65-005",
+        "p65-013",
+        "p65-006",
+        "p65-014"
+      ],
+      "items": [
+        16
+      ],
+      "reason": "21:38–28:28全部属于同一关。",
+      "end": 1708
+    },
+    {
+      "part": 65,
+      "kind": "merge",
+      "target_event_id": "p65-007",
+      "level_id": "end3_reorder_mirror",
+      "event_ids": [
+        "p65-007",
+        "p65-015",
+        "p65-008",
+        "p65-016"
+      ],
+      "items": [
+        17
+      ],
+      "reason": "28:29–34:43全部属于同一关。",
+      "end": 2083,
+      "start": 1709
+    },
+    {
+      "part": 67,
+      "kind": "world",
+      "target_event_id": null,
+      "level_id": null,
+      "event_ids": [
+        "p67-009",
+        "p67-010",
+        "p67-011"
+      ],
+      "items": [
+        18
+      ],
+      "reason": "用户确认19:00–21:10、21:25–26:30、26:40–30:30均未进关。"
+    },
+    {
+      "part": 67,
+      "kind": "world",
+      "target_event_id": null,
+      "level_id": null,
+      "event_ids": [
+        "p67-012"
+      ],
+      "items": [
+        19
+      ],
+      "reason": "用户确认31:00–32:04为大世界，未进关。",
+      "end": 1924
+    }
+  ]
+}

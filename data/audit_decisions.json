@@ -29,16 +29,17 @@
       "end": 845.0,
       "old_ordinal": 3,
       "previous_level_id": "heroes1_2_v2",
-      "level_id": null,
+      "level_id": "end2_heroes_1_2",
       "map_layer": "sky",
-      "action": "withdrawn_pending_manual",
-      "reason": "结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
+      "action": "merged_after_human_review",
+      "reason": "13:54/14:10均为上一关内部视角；14:05短暂匹配end2_heroes_1_5也处于同一连续过程，合回首个入口。 用户已确认无切关，旧片段已并回连续访问。",
       "evidence": [
         "endgame_p43_sheet_05.jpg"
       ],
       "candidates": [
         "end2_heroes_1_2"
-      ]
+      ],
+      "merged_into": "p43-002"
     },
     {
       "event_id": "p43-005",
@@ -47,16 +48,17 @@
       "end": 855.0,
       "old_ordinal": 3,
       "previous_level_id": "heroes1_2_v2",
-      "level_id": null,
+      "level_id": "end2_heroes_1_2",
       "map_layer": "sky",
-      "action": "withdrawn_pending_manual",
-      "reason": "结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
+      "action": "merged_after_human_review",
+      "reason": "13:54/14:10均为上一关内部视角；14:05短暂匹配end2_heroes_1_5也处于同一连续过程，合回首个入口。 用户已确认无切关，旧片段已并回连续访问。",
       "evidence": [
         "endgame_p43_sheet_05.jpg"
       ],
       "candidates": [
         "end2_heroes_1_2"
-      ]
+      ],
+      "merged_into": "p43-002"
     },
     {
       "event_id": "p43-009",
@@ -65,16 +67,17 @@
       "end": 1010.0,
       "old_ordinal": 5,
       "previous_level_id": "heroes1_5_v2",
-      "level_id": null,
+      "level_id": "end2_heroes_1_5",
       "map_layer": "sky",
-      "action": "withdrawn_pending_manual",
-      "reason": "结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
+      "action": "merged_after_human_review",
+      "reason": "16:41仍是前一段相同关卡的内部视角，重复匹配合并。14:20–14:24有界图册保留相邻两关交界。 用户已确认无切关，旧片段已并回连续访问。",
       "evidence": [
         "endgame_p43_sheet_06.jpg"
       ],
       "candidates": [
         "end2_heroes_1_5"
-      ]
+      ],
+      "merged_into": "p43-007"
     },
     {
       "event_id": "p64-010",
@@ -83,17 +86,18 @@
       "end": 1793.125,
       "old_ordinal": 6,
       "previous_level_id": "mirror_1",
-      "level_id": null,
+      "level_id": "end2_mirror1",
       "map_layer": "underworld",
-      "action": "withdrawn_pending_manual",
-      "reason": "结局三地下关卡内部复用镜面棋盘；原匹配引用主世界mirror_1，相似布局不能证明返回主世界。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
+      "action": "merged_after_human_review",
+      "reason": "29:25–29:53、34:21–34:40均属end2_mirror1，与前段无切关。 用户已确认无切关，旧片段已并回连续访问。",
       "evidence": [
         "endgame_p64_candidates_01.jpg",
         "endgame_p64_candidates_02.jpg"
       ],
       "candidates": [
         "end2_mirror1"
-      ]
+      ],
+      "merged_into": "p64-009"
     },
     {
       "event_id": "p64-012",
@@ -102,18 +106,18 @@
       "end": 2080.0,
       "old_ordinal": 6,
       "previous_level_id": "mirror_1",
-      "level_id": null,
+      "level_id": "end2_mirror1",
       "map_layer": "underworld",
-      "action": "withdrawn_pending_manual",
-      "reason": "结局三地下关卡内部复用镜面棋盘；原匹配引用主世界mirror_1，相似布局不能证明返回主世界。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
+      "action": "merged_after_human_review",
+      "reason": "29:25–29:53、34:21–34:40均属end2_mirror1，与前段无切关。 用户已确认无切关，旧片段已并回连续访问。",
       "evidence": [
         "endgame_p64_candidates_01.jpg",
         "endgame_p64_candidates_02.jpg"
       ],
       "candidates": [
-        "end2_mirror1",
-        "end2_mirror_4_islands_v2"
-      ]
+        "end2_mirror1"
+      ],
+      "merged_into": "p64-009"
     }
   ],
   "repeat_notes": {
@@ -123,9 +127,11 @@
     },
     "24": {
       "end1": "大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。"
-    },
-    "50": {
-      "magnitudes_v3": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。"
     }
+  },
+  "human_review": {
+    "source": "docs/校对.md",
+    "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+    "item_count": 19
   }
 }

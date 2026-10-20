@@ -7,7 +7,7 @@
   "title": "【下西】怪物穿行+开启界门[北1西1/北2西1+北2西2/北3西2]",
   "stage": 3,
   "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
-  "review_note": "Reviewed all 12 timeline sheets and all four candidate galleries against local full-catalog references. Confirmed 12 visits, merging only contiguous fragments of the same room: thief_dragger_v2 (15:50–18:30), open_monster (18:38–21:25) and monster_promesst_v3 (21:45–22:20). A short button_and_beam_v3 re-entry at 21:30–21:40 is separately retained after the open_monster interval. Four clearly distinct unidentified boards are structured unknown events; additional footage includes map/title transitions and travel, with no inferred overworld entry or outcome.",
+  "review_note": "已按用户docs/校对.md修订身份和连续区间。未切关的匹配窗合并为一次访问；明确未进关的大世界片段移入excluded_segments，不再列为未知关卡。原片段完整记录保存在superseded_events。具体依据见各事件human_review证据。",
   "events": [
     {
       "event_id": "p53-001",
@@ -172,38 +172,6 @@
         }
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p53-u01",
-      "level_id": null,
-      "puzzle_start_time": 185,
-      "puzzle_end_time": 202,
-      "entry_transition_time": 184.5,
-      "exit_time": 202.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "runs/p53/sheet_01.jpg",
-          "time": 185,
-          "reference": null,
-          "reason": "A tall blue-gray multilevel stone room with narrow bridges, paired tile platforms and small figures appears after the two weapon-wizard layouts and before dragonsweeper. This is an independent puzzle-like board, but no catalog reference was visually confirmed."
-        }
-      ],
-      "evidence_gallery": null,
       "manual_corrections": [],
       "reviewer": "Luna visual comparison"
     },
@@ -453,38 +421,6 @@
         }
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p53-u02",
-      "level_id": null,
-      "puzzle_start_time": 780,
-      "puzzle_end_time": 800,
-      "entry_transition_time": 779.5,
-      "exit_time": 800.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "runs/p53/sheet_05.jpg",
-          "time": 780,
-          "reference": null,
-          "reason": "A blue stone city/courtyard view with a separate square mechanism and scattered tiles appears around 13:00–13:20, after the en_root_alt island board and before the confirmed button-and-beam room. Its identity is unresolved."
-        }
-      ],
-      "evidence_gallery": null,
       "manual_corrections": [],
       "reviewer": "Luna visual comparison"
     },
@@ -864,9 +800,9 @@
       "event_id": "p53-013",
       "level_id": "monster_promesst_v3",
       "puzzle_start_time": 1305.0,
-      "puzzle_end_time": 1340.0,
+      "puzzle_end_time": 1555,
       "entry_transition_time": 1304.5,
-      "exit_time": 1340.5,
+      "exit_time": 1555,
       "overworld_approach_time": null,
       "review_status": "confirmed",
       "status": "visited",
@@ -916,13 +852,8 @@
       ],
       "puzzle_match": {
         "level_id": "monster_promesst_v3",
-        "area": "monsters_and_beams",
-        "phash_distance": 10,
-        "hist_distance": 0.2647,
-        "sift_inliers": 48,
-        "sift_good": 50,
-        "consistent_samples": 1,
-        "status": "visually_confirmed"
+        "status": "human_confirmed",
+        "method": "owner_identity_and_continuity_review"
       },
       "overworld_match": {
         "status": "unverified"
@@ -947,43 +878,35 @@
           "last_sample": 1330.0,
           "sample_count": 2,
           "reason": "The large stone floor with rust-colored fence pens, paired blue round pieces at upper left, scattered dark creatures and a bright pink movable block matches the reference; both fragments are from one uninterrupted board visit."
+        },
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            10
+          ],
+          "reason": "22:25–25:55仍与上一片段同关，无切换。"
         }
       ],
       "evidence_gallery": "evidence/candidates_02.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p53-u03",
-      "level_id": null,
-      "puzzle_start_time": 1345,
-      "puzzle_end_time": 1555,
-      "entry_transition_time": 1344.5,
-      "exit_time": 1555.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
+      "manual_corrections": [
         {
-          "type": "visual_layout_comparison",
-          "image": "runs/p53/sheet_08.jpg",
-          "time": 1345,
-          "reference": null,
-          "reason": "A broad overhead stone grid with a dark-blue border, repeated blue circular markers, fenced rectangular bays and colored pieces remains on screen from about 22:25 to 25:55. It is clearly a large puzzle board, but none of the full-catalog reference images was visually conclusive; retained as one unknown continuous visit."
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            10
+          ],
+          "reason": "22:25–25:55仍与上一片段同关，无切换。"
         }
       ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "User continuity/identity review (docs/校对.md)",
+      "map_layer": "underworld",
+      "source_event_ids": [
+        "p53-013",
+        "p53-u03"
+      ]
     },
     {
       "event_id": "p53-015",
@@ -1065,38 +988,6 @@
         }
       ],
       "evidence_gallery": "evidence/candidates_02.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p53-u04",
-      "level_id": null,
-      "puzzle_start_time": 1695,
-      "puzzle_end_time": 1730,
-      "entry_transition_time": 1694.5,
-      "exit_time": 1730.5,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "runs/p53/sheet_11.jpg",
-          "time": 1695,
-          "reference": null,
-          "reason": "After the tan goblin courtyard, the video shows a separate watery tile field with a green island/growth cluster and pink blocks, before cutting to the confirmed rotating-cavalry arena. No catalog identity was confirmed."
-        }
-      ],
-      "evidence_gallery": null,
       "manual_corrections": [],
       "reviewer": "Luna visual comparison"
     },
@@ -1183,5 +1074,320 @@
       "manual_corrections": [],
       "reviewer": "Luna visual comparison"
     }
-  ]
+  ],
+  "superseded_events": [
+    {
+      "event": {
+        "event_id": "p53-u01",
+        "level_id": null,
+        "puzzle_start_time": 185,
+        "puzzle_end_time": 202,
+        "entry_transition_time": 184.5,
+        "exit_time": 202.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p53/sheet_01.jpg",
+            "time": 185,
+            "reference": null,
+            "reason": "A tall blue-gray multilevel stone room with narrow bridges, paired tile platforms and small figures appears after the two weapon-wizard layouts and before dragonsweeper. This is an independent puzzle-like board, but no catalog reference was visually confirmed."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p53-u02",
+        "level_id": null,
+        "puzzle_start_time": 780,
+        "puzzle_end_time": 800,
+        "entry_transition_time": 779.5,
+        "exit_time": 800.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p53/sheet_05.jpg",
+            "time": 780,
+            "reference": null,
+            "reason": "A blue stone city/courtyard view with a separate square mechanism and scattered tiles appears around 13:00–13:20, after the en_root_alt island board and before the confirmed button-and-beam room. Its identity is unresolved."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p53-013",
+        "level_id": "monster_promesst_v3",
+        "puzzle_start_time": 1305.0,
+        "puzzle_end_time": 1340.0,
+        "entry_transition_time": 1304.5,
+        "exit_time": 1340.5,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 1,
+        "candidate_levels": [
+          {
+            "level_id": "monster_promesst_v3",
+            "area": "monsters_and_beams",
+            "phash_distance": 10,
+            "hist_distance": 0.2647,
+            "sift_inliers": 48,
+            "sift_good": 50
+          },
+          {
+            "level_id": "best_beam_colors",
+            "area": "endgame3",
+            "phash_distance": 16,
+            "hist_distance": 1.3476,
+            "sift_inliers": 0,
+            "sift_good": 1
+          },
+          {
+            "level_id": "bard_range6",
+            "area": "heroes_and_stones",
+            "phash_distance": 18,
+            "hist_distance": 1.3477,
+            "sift_inliers": 0,
+            "sift_good": 2
+          },
+          {
+            "level_id": "heroes1_8_v2",
+            "area": "heroes1",
+            "phash_distance": 20,
+            "hist_distance": 1.1939,
+            "sift_inliers": 0,
+            "sift_good": 1
+          },
+          {
+            "level_id": "laser_stop_surprise",
+            "area": "double_beam_falling",
+            "phash_distance": 20,
+            "hist_distance": 1.2528,
+            "sift_inliers": 0,
+            "sift_good": 1
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "monster_promesst_v3",
+          "area": "monsters_and_beams",
+          "phash_distance": 10,
+          "hist_distance": 0.2647,
+          "sift_inliers": 48,
+          "sift_good": 50,
+          "consistent_samples": 1,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\01305.000.jpg",
+            "time": 1305.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\monster_promesst_v3.webp",
+            "first_sample": 1305.0,
+            "last_sample": 1305.0,
+            "sample_count": 1,
+            "reason": "The large stone floor with rust-colored fence pens, paired blue round pieces at upper left, scattered dark creatures and a bright pink movable block matches the reference; both fragments are from one uninterrupted board visit."
+          },
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\01325.000.jpg",
+            "time": 1325.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\monster_promesst_v3.webp",
+            "first_sample": 1325.0,
+            "last_sample": 1330.0,
+            "sample_count": 2,
+            "reason": "The large stone floor with rust-colored fence pens, paired blue round pieces at upper left, scattered dark creatures and a bright pink movable block matches the reference; both fragments are from one uninterrupted board visit."
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_02.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p53-u03",
+        "level_id": null,
+        "puzzle_start_time": 1345,
+        "puzzle_end_time": 1555,
+        "entry_transition_time": 1344.5,
+        "exit_time": 1555.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p53/sheet_08.jpg",
+            "time": 1345,
+            "reference": null,
+            "reason": "A broad overhead stone grid with a dark-blue border, repeated blue circular markers, fenced rectangular bays and colored pieces remains on screen from about 22:25 to 25:55. It is clearly a large puzzle board, but none of the full-catalog reference images was visually conclusive; retained as one unknown continuous visit."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p53-u04",
+        "level_id": null,
+        "puzzle_start_time": 1695,
+        "puzzle_end_time": 1730,
+        "entry_transition_time": 1694.5,
+        "exit_time": 1730.5,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p53/sheet_11.jpg",
+            "time": 1695,
+            "reference": null,
+            "reason": "After the tan goblin courtyard, the video shows a separate watery tile field with a green island/growth cluster and pink blocks, before cutting to the confirmed rotating-cavalry arena. No catalog identity was confirmed."
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    }
+  ],
+  "excluded_segments": [
+    {
+      "segment_id": "world-p53-u01",
+      "kind": "world",
+      "start": 185,
+      "end": 202,
+      "source_event_ids": [
+        "p53-u01"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            9
+          ],
+          "reason": "用户确认03:05–03:22、13:00–13:20、28:15–28:50均为大世界。"
+        }
+      ]
+    },
+    {
+      "segment_id": "world-p53-u02",
+      "kind": "world",
+      "start": 780,
+      "end": 800,
+      "source_event_ids": [
+        "p53-u02"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            9
+          ],
+          "reason": "用户确认03:05–03:22、13:00–13:20、28:15–28:50均为大世界。"
+        }
+      ]
+    },
+    {
+      "segment_id": "world-p53-u04",
+      "kind": "world",
+      "start": 1695,
+      "end": 1730,
+      "source_event_ids": [
+        "p53-u04"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            9
+          ],
+          "reason": "用户确认03:05–03:22、13:00–13:20、28:15–28:50均为大世界。"
+        }
+      ]
+    }
+  ],
+  "revision_history": [
+    {
+      "previous_review_note": "Reviewed all 12 timeline sheets and all four candidate galleries against local full-catalog references. Confirmed 12 visits, merging only contiguous fragments of the same room: thief_dragger_v2 (15:50–18:30), open_monster (18:38–21:25) and monster_promesst_v3 (21:45–22:20). A short button_and_beam_v3 re-entry at 21:30–21:40 is separately retained after the open_monster interval. Four clearly distinct unidentified boards are structured unknown events; additional footage includes map/title transitions and travel, with no inferred overworld entry or outcome.",
+      "source": "docs/校对.md",
+      "items": [
+        9,
+        10
+      ]
+    }
+  ],
+  "human_review": {
+    "source": "docs/校对.md",
+    "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+    "item_count": 19
+  }
 }

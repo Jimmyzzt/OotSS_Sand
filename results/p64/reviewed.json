@@ -7,7 +7,7 @@
   "title": "【结局3 P5】直观性[北3西3]",
   "stage": 3,
   "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
-  "review_note": "已检查runs/p64全部16张全时间轴图册（约0:00–40:20）和3张候选对照图。逐段确认目录候选，并对连续同布局碎片合并。后段岛屿演示中先后出现不同固定参考布局的视角/构型，因此按各自候选支持的短窗口保留不同Level_Entry身份；时间上不重叠。Clarity大厅画面为解说/展示，不作为进入。外部入口未验证，结果保持unknown。",
+  "review_note": "已按用户docs/校对.md修订身份和连续区间。未切关的匹配窗合并为一次访问；明确未进关的大世界片段移入excluded_segments，不再列为未知关卡。原片段完整记录保存在superseded_events。具体依据见各事件human_review证据。",
   "events": [
     {
       "event_id": "p64-001",
@@ -269,12 +269,12 @@
       "event_id": "p64-009",
       "level_id": "end2_mirror1",
       "puzzle_start_time": 1726.625,
-      "puzzle_end_time": 1764.75,
+      "puzzle_end_time": 2080,
       "entry_transition_time": 1726.25,
-      "exit_time": 1764.75,
+      "exit_time": 2080,
       "overworld_approach_time": null,
       "review_status": "confirmed",
-      "status": "possible_visit",
+      "status": "visited",
       "outcome": "unknown",
       "timing_uncertainty_seconds": 5,
       "candidate_levels": [
@@ -289,14 +289,8 @@
       ],
       "puzzle_match": {
         "level_id": "end2_mirror1",
-        "area": "endgame3",
-        "phash_distance": 4,
-        "hist_distance": 0.2089,
-        "sift_inliers": 56,
-        "sift_good": 59,
-        "consistent_samples": 1,
-        "status": "visually_confirmed",
-        "visual_reason": "边界清晰的岛屿迷宫静态参考与视频片段一致：中心水道/石像、下沿障碍、右上粉色出口等特征逐项对应。"
+        "status": "human_confirmed",
+        "method": "owner_identity_and_continuity_review"
       },
       "overworld_match": {
         "status": "unverified"
@@ -314,195 +308,37 @@
         {
           "type": "visual_comparison",
           "reason": "视频与参考均为绿岛关卡的红框全景版本：中心水道/石像、下沿方块障碍和右上粉色出口构件相对位置一致；两个匹配段位于连续同一场景且没有新入口。"
+        },
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            12
+          ],
+          "reason": "29:25–29:53、34:21–34:40均属end2_mirror1，与前段无切关。"
         }
       ],
       "evidence_gallery": "evidence/candidates_01.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p64-010",
-      "level_id": null,
-      "puzzle_start_time": 1765.0,
-      "puzzle_end_time": 1793.125,
-      "entry_transition_time": 1764.75,
-      "exit_time": 1793.125,
-      "overworld_approach_time": null,
-      "review_status": "conflict",
-      "status": "identity_conflict",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [
+      "manual_corrections": [
         {
-          "level_id": "mirror_1",
-          "area": "mirror",
-          "phash_distance": 14,
-          "hist_distance": 0.7719,
-          "sift_inliers": 16,
-          "sift_good": 16
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            12
+          ],
+          "reason": "29:25–29:53、34:21–34:40均属end2_mirror1，与前段无切关。"
         }
       ],
-      "puzzle_match": {
-        "status": "rejected_original_identity",
-        "previous_level_id": "mirror_1"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_comparison",
-          "reason": "视频与参考均呈由分离绿岛构成的水面关卡，上方两座独立岛、中间窄连岛和下方长岛/橙色圆点的轮廓吻合；与红框全景版同处连续场景段，身份仍按静态参考ID记录。"
-        },
-        {
-          "type": "identity_audit",
-          "reason": "结局三地下关卡内部复用镜面棋盘；原匹配引用主世界mirror_1，相似布局不能证明返回主世界。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
-          "image": "results/audit/evidence/endgame_p64_candidates_01.jpg"
-        }
-      ],
-      "evidence_gallery": "evidence/candidates_01.jpg",
-      "manual_corrections": [],
-      "reviewer": "Codex physical-map identity audit",
-      "superseded_identification": {
-        "level_id": "mirror_1",
-        "puzzle_match": {
-          "level_id": "mirror_1",
-          "area": "mirror",
-          "phash_distance": 14,
-          "hist_distance": 0.7719,
-          "sift_inliers": 16,
-          "sift_good": 16,
-          "consistent_samples": 4,
-          "status": "visually_confirmed",
-          "visual_reason": "绿岛分离式静态参考与视频的岛屿轮廓吻合，包含上方两独立岛、中间窄连岛和下方长岛及橙色圆点。"
-        },
-        "map_layer": "overworld"
-      },
-      "map_layer": "underworld"
-    },
-    {
-      "event_id": "p64-011",
-      "level_id": "end2_mirror1",
-      "puzzle_start_time": 1793.375,
-      "puzzle_end_time": 1800.0,
-      "entry_transition_time": 1793.125,
-      "exit_time": null,
-      "overworld_approach_time": null,
-      "review_status": "confirmed",
-      "status": "possible_visit",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [
-        {
-          "level_id": "end2_mirror1",
-          "area": "endgame3",
-          "phash_distance": 14,
-          "hist_distance": 0.3779,
-          "sift_inliers": 21,
-          "sift_good": 25
-        }
-      ],
-      "puzzle_match": {
-        "level_id": "end2_mirror1",
-        "area": "endgame3",
-        "phash_distance": 14,
-        "hist_distance": 0.3779,
-        "sift_inliers": 21,
-        "sift_good": 25,
-        "consistent_samples": 1,
-        "status": "visually_confirmed",
-        "visual_reason": "逐项对照固定参考的独特岛屿路径轮廓、颜色区域与出口/机关位置，均与当前视频画面吻合。"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "candidate_layout",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p64\\samples\\01795.000.jpg",
-          "time": 1795.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end2_mirror1.webp",
-          "first_sample": 1795.0,
-          "last_sample": 1795.0,
-          "sample_count": 1
-        },
-        {
-          "type": "visual_comparison",
-          "reason": "逐项对照固定参考的独特岛屿路径轮廓、颜色区域与出口/机关位置，均与当前视频画面吻合。"
-        }
-      ],
-      "evidence_gallery": "evidence/candidates_02.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p64-012",
-      "level_id": null,
-      "puzzle_start_time": 2061.75,
-      "puzzle_end_time": 2080.0,
-      "entry_transition_time": 2061.625,
-      "exit_time": null,
-      "overworld_approach_time": null,
-      "review_status": "conflict",
-      "status": "identity_conflict",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [
-        {
-          "level_id": "mirror_1",
-          "area": "mirror",
-          "phash_distance": 14,
-          "hist_distance": 0.7704,
-          "sift_inliers": 16,
-          "sift_good": 17
-        }
-      ],
-      "puzzle_match": {
-        "status": "rejected_original_identity",
-        "previous_level_id": "mirror_1"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "candidate_layout",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p64\\samples\\02075.000.jpg",
-          "time": 2075.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_1.webp",
-          "first_sample": 2070.0,
-          "last_sample": 2075.0,
-          "sample_count": 2
-        },
-        {
-          "type": "visual_comparison",
-          "reason": "逐项对照固定参考的独特岛屿路径轮廓、颜色区域与出口/机关位置，均与当前视频画面吻合。"
-        },
-        {
-          "type": "identity_audit",
-          "reason": "结局三地下关卡内部复用镜面棋盘；原匹配引用主世界mirror_1，相似布局不能证明返回主世界。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
-          "image": "results/audit/evidence/endgame_p64_candidates_01.jpg"
-        }
-      ],
-      "evidence_gallery": "evidence/candidates_02.jpg",
-      "manual_corrections": [],
-      "reviewer": "Codex physical-map identity audit",
-      "superseded_identification": {
-        "level_id": "mirror_1",
-        "puzzle_match": {
-          "level_id": "mirror_1",
-          "area": "mirror",
-          "phash_distance": 14,
-          "hist_distance": 0.7704,
-          "sift_inliers": 16,
-          "sift_good": 17,
-          "consistent_samples": 2,
-          "status": "visually_confirmed",
-          "visual_reason": "逐项对照固定参考的独特岛屿路径轮廓、颜色区域与出口/机关位置，均与当前视频画面吻合。"
-        },
-        "map_layer": "overworld"
-      },
-      "map_layer": "underworld"
+      "reviewer": "User continuity/identity review (docs/校对.md)",
+      "map_layer": "underworld",
+      "source_event_ids": [
+        "p64-009",
+        "p64-010",
+        "p64-011",
+        "p64-012"
+      ]
     },
     {
       "event_id": "p64-013",
@@ -568,5 +404,273 @@
       "manual_corrections": [],
       "reviewer": "Luna visual comparison"
     }
-  ]
+  ],
+  "superseded_events": [
+    {
+      "event": {
+        "event_id": "p64-009",
+        "level_id": "end2_mirror1",
+        "puzzle_start_time": 1726.625,
+        "puzzle_end_time": 1764.75,
+        "entry_transition_time": 1726.25,
+        "exit_time": 1764.75,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "possible_visit",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [
+          {
+            "level_id": "end2_mirror1",
+            "area": "endgame3",
+            "phash_distance": 4,
+            "hist_distance": 0.2089,
+            "sift_inliers": 56,
+            "sift_good": 59
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "end2_mirror1",
+          "area": "endgame3",
+          "phash_distance": 4,
+          "hist_distance": 0.2089,
+          "sift_inliers": 56,
+          "sift_good": 59,
+          "consistent_samples": 1,
+          "status": "visually_confirmed",
+          "visual_reason": "边界清晰的岛屿迷宫静态参考与视频片段一致：中心水道/石像、下沿障碍、右上粉色出口等特征逐项对应。"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "candidate_layout",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p64\\samples\\01730.000.jpg",
+            "time": 1730.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end2_mirror1.webp",
+            "first_sample": 1730.0,
+            "last_sample": 1730.0,
+            "sample_count": 1
+          },
+          {
+            "type": "visual_comparison",
+            "reason": "视频与参考均为绿岛关卡的红框全景版本：中心水道/石像、下沿方块障碍和右上粉色出口构件相对位置一致；两个匹配段位于连续同一场景且没有新入口。"
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_01.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p64-010",
+        "level_id": null,
+        "puzzle_start_time": 1765.0,
+        "puzzle_end_time": 1793.125,
+        "entry_transition_time": 1764.75,
+        "exit_time": 1793.125,
+        "overworld_approach_time": null,
+        "review_status": "conflict",
+        "status": "identity_conflict",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [
+          {
+            "level_id": "mirror_1",
+            "area": "mirror",
+            "phash_distance": 14,
+            "hist_distance": 0.7719,
+            "sift_inliers": 16,
+            "sift_good": 16
+          }
+        ],
+        "puzzle_match": {
+          "status": "rejected_original_identity",
+          "previous_level_id": "mirror_1"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_comparison",
+            "reason": "视频与参考均呈由分离绿岛构成的水面关卡，上方两座独立岛、中间窄连岛和下方长岛/橙色圆点的轮廓吻合；与红框全景版同处连续场景段，身份仍按静态参考ID记录。"
+          },
+          {
+            "type": "identity_audit",
+            "reason": "结局三地下关卡内部复用镜面棋盘；原匹配引用主世界mirror_1，相似布局不能证明返回主世界。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
+            "image": "results/audit/evidence/endgame_p64_candidates_01.jpg"
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_01.jpg",
+        "manual_corrections": [],
+        "reviewer": "Codex physical-map identity audit",
+        "superseded_identification": {
+          "level_id": "mirror_1",
+          "puzzle_match": {
+            "level_id": "mirror_1",
+            "area": "mirror",
+            "phash_distance": 14,
+            "hist_distance": 0.7719,
+            "sift_inliers": 16,
+            "sift_good": 16,
+            "consistent_samples": 4,
+            "status": "visually_confirmed",
+            "visual_reason": "绿岛分离式静态参考与视频的岛屿轮廓吻合，包含上方两独立岛、中间窄连岛和下方长岛及橙色圆点。"
+          },
+          "map_layer": "overworld"
+        },
+        "map_layer": "underworld"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p64-011",
+        "level_id": "end2_mirror1",
+        "puzzle_start_time": 1793.375,
+        "puzzle_end_time": 1800.0,
+        "entry_transition_time": 1793.125,
+        "exit_time": null,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "possible_visit",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [
+          {
+            "level_id": "end2_mirror1",
+            "area": "endgame3",
+            "phash_distance": 14,
+            "hist_distance": 0.3779,
+            "sift_inliers": 21,
+            "sift_good": 25
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "end2_mirror1",
+          "area": "endgame3",
+          "phash_distance": 14,
+          "hist_distance": 0.3779,
+          "sift_inliers": 21,
+          "sift_good": 25,
+          "consistent_samples": 1,
+          "status": "visually_confirmed",
+          "visual_reason": "逐项对照固定参考的独特岛屿路径轮廓、颜色区域与出口/机关位置，均与当前视频画面吻合。"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "candidate_layout",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p64\\samples\\01795.000.jpg",
+            "time": 1795.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end2_mirror1.webp",
+            "first_sample": 1795.0,
+            "last_sample": 1795.0,
+            "sample_count": 1
+          },
+          {
+            "type": "visual_comparison",
+            "reason": "逐项对照固定参考的独特岛屿路径轮廓、颜色区域与出口/机关位置，均与当前视频画面吻合。"
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_02.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p64-012",
+        "level_id": null,
+        "puzzle_start_time": 2061.75,
+        "puzzle_end_time": 2080.0,
+        "entry_transition_time": 2061.625,
+        "exit_time": null,
+        "overworld_approach_time": null,
+        "review_status": "conflict",
+        "status": "identity_conflict",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [
+          {
+            "level_id": "mirror_1",
+            "area": "mirror",
+            "phash_distance": 14,
+            "hist_distance": 0.7704,
+            "sift_inliers": 16,
+            "sift_good": 17
+          }
+        ],
+        "puzzle_match": {
+          "status": "rejected_original_identity",
+          "previous_level_id": "mirror_1"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "candidate_layout",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p64\\samples\\02075.000.jpg",
+            "time": 2075.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_1.webp",
+            "first_sample": 2070.0,
+            "last_sample": 2075.0,
+            "sample_count": 2
+          },
+          {
+            "type": "visual_comparison",
+            "reason": "逐项对照固定参考的独特岛屿路径轮廓、颜色区域与出口/机关位置，均与当前视频画面吻合。"
+          },
+          {
+            "type": "identity_audit",
+            "reason": "结局三地下关卡内部复用镜面棋盘；原匹配引用主世界mirror_1，相似布局不能证明返回主世界。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
+            "image": "results/audit/evidence/endgame_p64_candidates_01.jpg"
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_02.jpg",
+        "manual_corrections": [],
+        "reviewer": "Codex physical-map identity audit",
+        "superseded_identification": {
+          "level_id": "mirror_1",
+          "puzzle_match": {
+            "level_id": "mirror_1",
+            "area": "mirror",
+            "phash_distance": 14,
+            "hist_distance": 0.7704,
+            "sift_inliers": 16,
+            "sift_good": 17,
+            "consistent_samples": 2,
+            "status": "visually_confirmed",
+            "visual_reason": "逐项对照固定参考的独特岛屿路径轮廓、颜色区域与出口/机关位置，均与当前视频画面吻合。"
+          },
+          "map_layer": "overworld"
+        },
+        "map_layer": "underworld"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    }
+  ],
+  "excluded_segments": [],
+  "revision_history": [
+    {
+      "previous_review_note": "已检查runs/p64全部16张全时间轴图册（约0:00–40:20）和3张候选对照图。逐段确认目录候选，并对连续同布局碎片合并。后段岛屿演示中先后出现不同固定参考布局的视角/构型，因此按各自候选支持的短窗口保留不同Level_Entry身份；时间上不重叠。Clarity大厅画面为解说/展示，不作为进入。外部入口未验证，结果保持unknown。",
+      "source": "docs/校对.md",
+      "items": [
+        12
+      ]
+    }
+  ],
+  "human_review": {
+    "source": "docs/校对.md",
+    "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+    "item_count": 19
+  }
 }

@@ -3,11 +3,12 @@
   "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
   "counts": {
     "catalog_entries": 920,
-    "mapped_entries": 912,
-    "time_records": 956,
-    "unlocated_segments": 48,
-    "absent_catalog_entries": 8,
-    "repeated_identity_groups": 28
+    "mapped_entries": 914,
+    "time_records": 941,
+    "unlocated_segments": 2,
+    "absent_catalog_entries": 6,
+    "repeated_identity_groups": 21,
+    "world_segments_excluded": 13
   },
   "decisions": [
     {
@@ -36,16 +37,17 @@
       "end": 845.0,
       "old_ordinal": 3,
       "previous_level_id": "heroes1_2_v2",
-      "level_id": null,
+      "level_id": "end2_heroes_1_2",
       "map_layer": "sky",
-      "action": "withdrawn_pending_manual",
-      "reason": "结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
+      "action": "merged_after_human_review",
+      "reason": "13:54/14:10均为上一关内部视角；14:05短暂匹配end2_heroes_1_5也处于同一连续过程，合回首个入口。 用户已确认无切关，旧片段已并回连续访问。",
       "evidence": [
         "endgame_p43_sheet_05.jpg"
       ],
       "candidates": [
         "end2_heroes_1_2"
       ],
+      "merged_into": "p43-002",
       "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=834"
     },
     {
@@ -55,16 +57,17 @@
       "end": 855.0,
       "old_ordinal": 3,
       "previous_level_id": "heroes1_2_v2",
-      "level_id": null,
+      "level_id": "end2_heroes_1_2",
       "map_layer": "sky",
-      "action": "withdrawn_pending_manual",
-      "reason": "结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
+      "action": "merged_after_human_review",
+      "reason": "13:54/14:10均为上一关内部视角；14:05短暂匹配end2_heroes_1_5也处于同一连续过程，合回首个入口。 用户已确认无切关，旧片段已并回连续访问。",
       "evidence": [
         "endgame_p43_sheet_05.jpg"
       ],
       "candidates": [
         "end2_heroes_1_2"
       ],
+      "merged_into": "p43-002",
       "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=850"
     },
     {
@@ -74,16 +77,17 @@
       "end": 1010.0,
       "old_ordinal": 5,
       "previous_level_id": "heroes1_5_v2",
-      "level_id": null,
+      "level_id": "end2_heroes_1_5",
       "map_layer": "sky",
-      "action": "withdrawn_pending_manual",
-      "reason": "结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
+      "action": "merged_after_human_review",
+      "reason": "16:41仍是前一段相同关卡的内部视角，重复匹配合并。14:20–14:24有界图册保留相邻两关交界。 用户已确认无切关，旧片段已并回连续访问。",
       "evidence": [
         "endgame_p43_sheet_06.jpg"
       ],
       "candidates": [
         "end2_heroes_1_5"
       ],
+      "merged_into": "p43-007",
       "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=1001"
     },
     {
@@ -93,10 +97,10 @@
       "end": 1793.125,
       "old_ordinal": 6,
       "previous_level_id": "mirror_1",
-      "level_id": null,
+      "level_id": "end2_mirror1",
       "map_layer": "underworld",
-      "action": "withdrawn_pending_manual",
-      "reason": "结局三地下关卡内部复用镜面棋盘；原匹配引用主世界mirror_1，相似布局不能证明返回主世界。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
+      "action": "merged_after_human_review",
+      "reason": "29:25–29:53、34:21–34:40均属end2_mirror1，与前段无切关。 用户已确认无切关，旧片段已并回连续访问。",
       "evidence": [
         "endgame_p64_candidates_01.jpg",
         "endgame_p64_candidates_02.jpg"
@@ -104,6 +108,7 @@
       "candidates": [
         "end2_mirror1"
       ],
+      "merged_into": "p64-009",
       "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=1765"
     },
     {
@@ -113,18 +118,18 @@
       "end": 2080.0,
       "old_ordinal": 6,
       "previous_level_id": "mirror_1",
-      "level_id": null,
+      "level_id": "end2_mirror1",
       "map_layer": "underworld",
-      "action": "withdrawn_pending_manual",
-      "reason": "结局三地下关卡内部复用镜面棋盘；原匹配引用主世界mirror_1，相似布局不能证明返回主世界。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
+      "action": "merged_after_human_review",
+      "reason": "29:25–29:53、34:21–34:40均属end2_mirror1，与前段无切关。 用户已确认无切关，旧片段已并回连续访问。",
       "evidence": [
         "endgame_p64_candidates_01.jpg",
         "endgame_p64_candidates_02.jpg"
       ],
       "candidates": [
-        "end2_mirror1",
-        "end2_mirror_4_islands_v2"
+        "end2_mirror1"
       ],
+      "merged_into": "p64-009",
       "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=2061"
     }
   ],
@@ -248,112 +253,6 @@
       ]
     },
     {
-      "level_id": "magnitudes_v3",
-      "map_layer": "underworld",
-      "events": [
-        {
-          "part": 50,
-          "event_id": "p50-001",
-          "start": 17.25,
-          "end": 65.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=17",
-          "review_status": "confirmed",
-          "level_id": "magnitudes_v3",
-          "note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。"
-        },
-        {
-          "part": 50,
-          "event_id": "p50-002",
-          "start": 290,
-          "end": 310,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=290",
-          "review_status": "confirmed",
-          "level_id": "magnitudes_v3",
-          "note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。"
-        },
-        {
-          "part": 50,
-          "event_id": "p50-003",
-          "start": 455,
-          "end": 465,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=455",
-          "review_status": "confirmed",
-          "level_id": "magnitudes_v3",
-          "note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。"
-        },
-        {
-          "part": 50,
-          "event_id": "p50-004",
-          "start": 580,
-          "end": 590,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=580",
-          "review_status": "confirmed",
-          "level_id": "magnitudes_v3",
-          "note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。"
-        },
-        {
-          "part": 50,
-          "event_id": "p50-005",
-          "start": 725,
-          "end": 735,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=725",
-          "review_status": "confirmed",
-          "level_id": "magnitudes_v3",
-          "note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。"
-        },
-        {
-          "part": 50,
-          "event_id": "p50-006",
-          "start": 750,
-          "end": 765,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=750",
-          "review_status": "confirmed",
-          "level_id": "magnitudes_v3",
-          "note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。"
-        },
-        {
-          "part": 50,
-          "event_id": "p50-007",
-          "start": 865,
-          "end": 875,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=865",
-          "review_status": "confirmed",
-          "level_id": "magnitudes_v3",
-          "note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。"
-        },
-        {
-          "part": 50,
-          "event_id": "p50-008",
-          "start": 940,
-          "end": 950,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=940",
-          "review_status": "confirmed",
-          "level_id": "magnitudes_v3",
-          "note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。"
-        },
-        {
-          "part": 50,
-          "event_id": "p50-009",
-          "start": 1055,
-          "end": 1070,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1055",
-          "review_status": "confirmed",
-          "level_id": "magnitudes_v3",
-          "note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。"
-        },
-        {
-          "part": 50,
-          "event_id": "p50-010",
-          "start": 1105,
-          "end": 1145,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1105",
-          "review_status": "confirmed",
-          "level_id": "magnitudes_v3",
-          "note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。"
-        }
-      ]
-    },
-    {
       "level_id": "mirror_carry_duo",
       "map_layer": "sky",
       "events": [
@@ -401,78 +300,6 @@
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=36&t=480",
           "review_status": "confirmed",
           "level_id": "vertical_promesst_v2",
-          "note": ""
-        }
-      ]
-    },
-    {
-      "level_id": "end2_heroes_1_2",
-      "map_layer": "sky",
-      "events": [
-        {
-          "part": 43,
-          "event_id": "p43-002",
-          "start": 576.75,
-          "end": 833.875,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=576",
-          "review_status": "confirmed",
-          "level_id": "end2_heroes_1_2",
-          "note": ""
-        },
-        {
-          "part": 43,
-          "event_id": "p43-006",
-          "start": 855.0,
-          "end": 860.25,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=855",
-          "review_status": "confirmed",
-          "level_id": "end2_heroes_1_2",
-          "note": ""
-        }
-      ]
-    },
-    {
-      "level_id": "end2_heroes_1_5",
-      "map_layer": "sky",
-      "events": [
-        {
-          "part": 43,
-          "event_id": "p43-004",
-          "start": 845.0,
-          "end": 850.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=845",
-          "review_status": "confirmed",
-          "level_id": "end2_heroes_1_5",
-          "note": ""
-        },
-        {
-          "part": 43,
-          "event_id": "p43-007",
-          "start": 860.375,
-          "end": 875.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=860",
-          "review_status": "confirmed",
-          "level_id": "end2_heroes_1_5",
-          "note": ""
-        },
-        {
-          "part": 43,
-          "event_id": "p43-008",
-          "start": 995.0,
-          "end": 1000.875,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=995",
-          "review_status": "confirmed",
-          "level_id": "end2_heroes_1_5",
-          "note": ""
-        },
-        {
-          "part": 43,
-          "event_id": "p43-010",
-          "start": 1010.0,
-          "end": 1025.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=1010",
-          "review_status": "confirmed",
-          "level_id": "end2_heroes_1_5",
           "note": ""
         }
       ]
@@ -888,110 +715,6 @@
       ]
     },
     {
-      "level_id": "end2_mirror1",
-      "map_layer": "underworld",
-      "events": [
-        {
-          "part": 64,
-          "event_id": "p64-009",
-          "start": 1726.625,
-          "end": 1764.75,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=1726",
-          "review_status": "confirmed",
-          "level_id": "end2_mirror1",
-          "note": ""
-        },
-        {
-          "part": 64,
-          "event_id": "p64-011",
-          "start": 1793.375,
-          "end": 1800.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=1793",
-          "review_status": "confirmed",
-          "level_id": "end2_mirror1",
-          "note": ""
-        }
-      ]
-    },
-    {
-      "level_id": "end3_off_topic_mirror",
-      "map_layer": "underworld",
-      "events": [
-        {
-          "part": 65,
-          "event_id": "p65-002",
-          "start": 532.125,
-          "end": 544.875,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=532",
-          "review_status": "confirmed",
-          "level_id": "end3_off_topic_mirror",
-          "note": ""
-        },
-        {
-          "part": 65,
-          "event_id": "p65-003",
-          "start": 653.125,
-          "end": 660.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=653",
-          "review_status": "confirmed",
-          "level_id": "end3_off_topic_mirror",
-          "note": ""
-        }
-      ]
-    },
-    {
-      "level_id": "end3_reorder_skipping_fix",
-      "map_layer": "underworld",
-      "events": [
-        {
-          "part": 65,
-          "event_id": "p65-005",
-          "start": 1298.375,
-          "end": 1327.75,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1298",
-          "review_status": "confirmed",
-          "level_id": "end3_reorder_skipping_fix",
-          "note": ""
-        },
-        {
-          "part": 65,
-          "event_id": "p65-006",
-          "start": 1505.75,
-          "end": 1515.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1505",
-          "review_status": "confirmed",
-          "level_id": "end3_reorder_skipping_fix",
-          "note": ""
-        }
-      ]
-    },
-    {
-      "level_id": "end3_reorder_mirror",
-      "map_layer": "underworld",
-      "events": [
-        {
-          "part": 65,
-          "event_id": "p65-007",
-          "start": 1708.875,
-          "end": 1721.125,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1708",
-          "review_status": "confirmed",
-          "level_id": "end3_reorder_mirror",
-          "note": ""
-        },
-        {
-          "part": 65,
-          "event_id": "p65-008",
-          "start": 1875.625,
-          "end": 1885.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1875",
-          "review_status": "confirmed",
-          "level_id": "end3_reorder_mirror",
-          "note": ""
-        }
-      ]
-    },
-    {
       "level_id": "environment_art_grid",
       "map_layer": "underworld",
       "events": [
@@ -1020,78 +743,6 @@
   ],
   "unlocated_segments": [
     {
-      "part": 37,
-      "event_id": "p37-u01",
-      "start": 105.0,
-      "end": 1520.0,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=37&t=105",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "全时间轴00:00–01:40显示主世界外部地图/变形光束区域，不纳入谜题访问。约01:45开始进入由多个重复小棋盘拼接并持续卷屏的关卡内容，跨至约25:20才转入明确的 half_tutorial 独立棋盘；恢复抽查只有弱候选，无法确认前段拼接棋盘的Level_Entry身份及其内部边界，因此仅把01:45–25:20这段疑似连续棋盘探索列为unknown，未把前面的主世界地图包括进来。",
-      "previous_level_id": null
-    },
-    {
-      "part": 38,
-      "event_id": "p38-u01",
-      "start": 175.1,
-      "end": 2290.0,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=38&t=175",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "完整时间轴约2:55–38:10展示了大幅拼接的地下多室地图和多段彩色光束/房间变换，含若干不同房间静态布局；catalog_all与恢复抽查都未能可靠映射这些连续结构到单一Level_Entry，可能是连续探索的多个房间，也可能含不同关卡，边界和身份待人工细分，列unknown。",
-      "previous_level_id": null
-    },
-    {
-      "part": 38,
-      "event_id": "p38-u02",
-      "start": 2330.1,
-      "end": 2564.7,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=38&t=2330",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "约38:50后出现黑暗洞穴中的多格浅色石室、绿光束及白色横梁，随后布局持续变化到视频末尾；与 gem_beam_placement 已确认的初始两格区域不同，但未找到可确认的对应目录条目，作为独立待核片段保留unknown。",
-      "previous_level_id": null
-    },
-    {
-      "part": 43,
-      "event_id": "p43-003",
-      "start": 834.125,
-      "end": 845.0,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=834",
-      "review_status": "conflict",
-      "level_id": null,
-      "note": "",
-      "reason": "结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
-      "previous_level_id": "heroes1_2_v2"
-    },
-    {
-      "part": 43,
-      "event_id": "p43-005",
-      "start": 850.0,
-      "end": 855.0,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=850",
-      "review_status": "conflict",
-      "level_id": null,
-      "note": "",
-      "reason": "结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
-      "previous_level_id": "heroes1_2_v2"
-    },
-    {
-      "part": 43,
-      "event_id": "p43-009",
-      "start": 1001.125,
-      "end": 1010.0,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=1001",
-      "review_status": "conflict",
-      "level_id": null,
-      "note": "",
-      "reason": "结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
-      "previous_level_id": "heroes1_5_v2"
-    },
-    {
       "part": 44,
       "event_id": "p44-012",
       "start": 3100.0,
@@ -1113,486 +764,6 @@
       "level_id": null,
       "note": "",
       "reason": "Full timeline sheets 20–23 show the square icy-stone chamber with a pink-block rectangular loop beginning at 53:55 (3235s). The same board remains continuously on screen through 61:50 (3710s), with pieces moved around the loop. At 61:55 it cuts back to the separate warm-colored room; that transition bounds this unknown visit.",
-      "previous_level_id": null
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u01",
-      "start": 70,
-      "end": 220,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=70",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "A separate forest-side courtyard board: pale square paving with clustered small buildings/props, green foliage enclosing the top and sides, and colored round pieces. The board persists from about 1:10 to 3:40; no local catalog image could be confirmed visually.",
-      "previous_level_id": null
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u02",
-      "start": 245,
-      "end": 285,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=245",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "A sandy waterfront square with scattered stone/crate props, blue and cyan tiles and a vertical timber boundary at the right. This is a distinct board from the forest courtyard and the subsequent water-beam layout.",
-      "previous_level_id": null
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u03",
-      "start": 315,
-      "end": 420,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=315",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "A series of connected water-and-beam views: small sandy islands and stone piers linked by a long gold beam over tiled water, with successive camera/board shifts. The imagery is puzzle gameplay, but no single catalog layout could be confirmed, so retained as an unknown segment pending finer entry-boundary review.",
-      "previous_level_id": null
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u04",
-      "start": 480,
-      "end": 555,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=480",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "A broad rectangular flooded room with opposing pale platforms and a long gold beam spanning the water; its arrangement differs from the confirmed magnitudes board and remains unidentified.",
-      "previous_level_id": null
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u05",
-      "start": 600,
-      "end": 715,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=600",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "A pale stone courtyard with a long raised central strip, block props and beam interaction, followed by a separate green-edged courtyard view. At this resolution the identity and exact internal transition are unresolved; recorded as an unknown gameplay interval.",
-      "previous_level_id": null
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u06",
-      "start": 780,
-      "end": 855,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=780",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "A dark, narrow stone chamber with a vertical gold beam and small fixtures along the wall. The tiled room is distinct from the water arenas, but no full-catalog reference matched visually.",
-      "previous_level_id": null
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u07",
-      "start": 900,
-      "end": 939.5,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=900",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "From 15:00 to 15:39 the timeline shows overhead island-map navigation and small isolated island/beam-crossing views without a stable identifiable puzzle layout. This unresolved traversal interval ends at the cut into the confirmed magnitudes_v3 board.",
-      "previous_level_id": null
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u07b",
-      "start": 950.5,
-      "end": 1045,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=950",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "After the confirmed magnitudes_v3 visit ends at 15:50, the timeline returns to overhead island-map navigation and several small water/island board views through 17:25. These are independent unresolved traversal/puzzle views; the montage does not provide a stable reference match.",
-      "previous_level_id": null
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u08",
-      "start": 1155,
-      "end": 1290,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1155",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "Water-island gameplay with small tan platforms, a long horizontal gold beam and blue markers, then a transition to a larger green/tan courtyard around 21:45. The first island section lacks a confirmed catalog identity.",
-      "previous_level_id": null
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u09",
-      "start": 1305,
-      "end": 1380,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1305",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "A green-and-tan courtyard board with a raised wooden structure along the upper edge, scattered stone blocks and blue markers. Distinct from the preceding horizontal-beam island; unknown ID.",
-      "previous_level_id": null
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u10",
-      "start": 1385,
-      "end": 1520,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1385",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "A narrow waterway board centered on a tall stone post and crosswise gold beam, with a small blue-tiled landing and detached markers. Its stable layout remains through the 25:20 transition to a waterfall bridge.",
-      "previous_level_id": null
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u11",
-      "start": 1525,
-      "end": 1605,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1525",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "A bridge and waterfall board with a horizontal wooden crossing and central vertical beam above falling water. No catalog reference was visually conclusive.",
-      "previous_level_id": null
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u12",
-      "start": 1610,
-      "end": 1710,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1610",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "A shallow green courtyard enclosed by water, with an L-shaped sandy path and several large red/brown objects; distinct board, unknown identity.",
-      "previous_level_id": null
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u13",
-      "start": 1715,
-      "end": 1785,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1715",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "A small isolated water island with a short gold beam and sparse objects, visibly different from the preceding L-shaped courtyard.",
-      "previous_level_id": null
-    },
-    {
-      "part": 51,
-      "event_id": "p51-u01",
-      "start": 14.5,
-      "end": 24.5,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=14",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "A brief purple-lit square room with a raised cyan-blue tiled enclosure, a white object at the left, and a separate pale platform below. It is an independent board immediately before the confirmed water/lily layout, but no local catalog entry was visually established.",
-      "previous_level_id": null
-    },
-    {
-      "part": 51,
-      "event_id": "p51-u02",
-      "start": 35,
-      "end": 265,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=35",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "Continuous sunset-water gameplay across a long connected lily/raft course: multiple separated stone piers, green pieces and narrow paths remain on a broad tiled-water field, with the camera travelling between sections. The full timeline shows changing board views without enough evidence to assign individual catalog IDs or precise interior entry boundaries; retained as unknown traversal.",
-      "previous_level_id": null
-    },
-    {
-      "part": 51,
-      "event_id": "p51-u03",
-      "start": 960,
-      "end": 1015,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=960",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "A distinct archipelago/water board sequence with several tiny stone-and-grass islands, blue-white blocks and detached landing tiles, intercut with a map view. The image is puzzle gameplay but not a confirmed reference match.",
-      "previous_level_id": null
-    },
-    {
-      "part": 51,
-      "event_id": "p51-u04",
-      "start": 1490,
-      "end": 1520,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=1490",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "Final shown board after the 24:45 transition: a blue-purple area with scattered pale tiles, central pink mechanism/beam and small detached platforms. It is an independent puzzle view, identity unconfirmed.",
-      "previous_level_id": null
-    },
-    {
-      "part": 52,
-      "event_id": "p52-u01",
-      "start": 165,
-      "end": 210,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=52&t=165",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "A separate blue-gray water chamber appears after the Gothic button room: pale stepping tiles and a large yellow square block sit on a small platform, with dark disconnected paths and a diagonal object. It persists briefly before the next confirmed four-platform room; no catalog reference was visually conclusive.",
-      "previous_level_id": null
-    },
-    {
-      "part": 52,
-      "event_id": "p52-u02",
-      "start": 920,
-      "end": 945,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=52&t=920",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "A broad blue cavern board with a bright pink horizontal frame/beam, separated cyan tiles and a long central path is shown from about 15:20–15:45. It differs from the later tiny detached island matched to reroute_3; no local reference was confirmed.",
-      "previous_level_id": null
-    },
-    {
-      "part": 53,
-      "event_id": "p53-u01",
-      "start": 185,
-      "end": 202,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=185",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "A tall blue-gray multilevel stone room with narrow bridges, paired tile platforms and small figures appears after the two weapon-wizard layouts and before dragonsweeper. This is an independent puzzle-like board, but no catalog reference was visually confirmed.",
-      "previous_level_id": null
-    },
-    {
-      "part": 53,
-      "event_id": "p53-u02",
-      "start": 780,
-      "end": 800,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=780",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "A blue stone city/courtyard view with a separate square mechanism and scattered tiles appears around 13:00–13:20, after the en_root_alt island board and before the confirmed button-and-beam room. Its identity is unresolved.",
-      "previous_level_id": null
-    },
-    {
-      "part": 53,
-      "event_id": "p53-u03",
-      "start": 1345,
-      "end": 1555,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=1345",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "A broad overhead stone grid with a dark-blue border, repeated blue circular markers, fenced rectangular bays and colored pieces remains on screen from about 22:25 to 25:55. It is clearly a large puzzle board, but none of the full-catalog reference images was visually conclusive; retained as one unknown continuous visit.",
-      "previous_level_id": null
-    },
-    {
-      "part": 53,
-      "event_id": "p53-u04",
-      "start": 1695,
-      "end": 1730,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=1695",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "After the tan goblin courtyard, the video shows a separate watery tile field with a green island/growth cluster and pink blocks, before cutting to the confirmed rotating-cavalry arena. No catalog identity was confirmed.",
-      "previous_level_id": null
-    },
-    {
-      "part": 61,
-      "event_id": "p61-031",
-      "start": 2163.25,
-      "end": 2552.0,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=61&t=2163",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "在READING LEVEL大厅后出现独立的褐色/灰色棋盘：左侧土色块状区域、右侧蓝色幽灵/光束结构及多色方块，持续操作至再次黑场；不匹配当前本地目录静态参考，身份未知。",
-      "previous_level_id": null
-    },
-    {
-      "part": 64,
-      "event_id": "p64-010",
-      "start": 1765.0,
-      "end": 1793.125,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=1765",
-      "review_status": "conflict",
-      "level_id": null,
-      "note": "",
-      "reason": "结局三地下关卡内部复用镜面棋盘；原匹配引用主世界mirror_1，相似布局不能证明返回主世界。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
-      "previous_level_id": "mirror_1"
-    },
-    {
-      "part": 64,
-      "event_id": "p64-012",
-      "start": 2061.75,
-      "end": 2080.0,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=2061",
-      "review_status": "conflict",
-      "level_id": null,
-      "note": "",
-      "reason": "结局三地下关卡内部复用镜面棋盘；原匹配引用主世界mirror_1，相似布局不能证明返回主世界。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
-      "previous_level_id": "mirror_1"
-    },
-    {
-      "part": 65,
-      "event_id": "p65-009",
-      "start": 155,
-      "end": 420,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=155",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "多连续棋盘/拼接房间构图的游戏画面，未找到可静态对应的Level_Entry；无法判断是开发演示关还是目录未匹配关。",
-      "previous_level_id": null
-    },
-    {
-      "part": 65,
-      "event_id": "p65-010",
-      "start": 435,
-      "end": 530,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=435",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "冰蓝色浮岛/房间连续滚屏，多个布局变化但无可证实固定目录身份。",
-      "previous_level_id": null
-    },
-    {
-      "part": 65,
-      "event_id": "p65-011",
-      "start": 555,
-      "end": 652.0,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=555",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "多色岛屿地图及横向关卡总览/过场混杂，个别真实棋盘可见但无法可靠绑定单一Level_Entry。",
-      "previous_level_id": null
-    },
-    {
-      "part": 65,
-      "event_id": "p65-017",
-      "start": 660.0,
-      "end": 748.0,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=660",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "天空色背景上的连续冰岛棋盘段，固定布局身份未能确认；与后续已确认目录画面分开记录。",
-      "previous_level_id": null
-    },
-    {
-      "part": 65,
-      "event_id": "p65-012",
-      "start": 790,
-      "end": 1290,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=790",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "天空色背景上的连续冰岛棋盘群和角色演示，固定布局身份未能确认。",
-      "previous_level_id": null
-    },
-    {
-      "part": 65,
-      "event_id": "p65-013",
-      "start": 1330,
-      "end": 1500,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1330",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "再次连续演示冰岛/拼接棋盘；目录静态参考未能匹配。",
-      "previous_level_id": null
-    },
-    {
-      "part": 65,
-      "event_id": "p65-014",
-      "start": 1520,
-      "end": 1705,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1520",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "粉/黄/绿棋盘连续展示，含机关变化，未证实固定Level_Entry。",
-      "previous_level_id": null
-    },
-    {
-      "part": 65,
-      "event_id": "p65-015",
-      "start": 1725,
-      "end": 1870,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1725",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "多块红绿粉色岛屿棋盘的滚动展示，静态身份不明。",
-      "previous_level_id": null
-    },
-    {
-      "part": 65,
-      "event_id": "p65-016",
-      "start": 1888,
-      "end": 2070,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1888",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "夜景连接房间/棋盘的连续演示；当前可见结构与候选参考不足以确认固定入口身份。",
-      "previous_level_id": null
-    },
-    {
-      "part": 67,
-      "event_id": "p67-009",
-      "start": 1140,
-      "end": 1270,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=1140",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "切离关卡展示后进入一处白蓝色实际游戏房间，有角色移动与交互；未找到可确认的本地Level_Entry静态参考，身份未知。",
-      "previous_level_id": null
-    },
-    {
-      "part": 67,
-      "event_id": "p67-010",
-      "start": 1285,
-      "end": 1590,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=1285",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "出现READING LEVEL区域及后续多个不同样式的可玩房间/棋盘和滚动演示；虽能确认是关卡内容，但无法为各局部可靠匹配固定目录ID，合并记录未知段。",
-      "previous_level_id": null
-    },
-    {
-      "part": 67,
-      "event_id": "p67-011",
-      "start": 1600,
-      "end": 1830,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=1600",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "室内多个主题房间、谜题元素和过场连续切换；无明确目录匹配或进入/退出地图证据，身份保持unknown。",
-      "previous_level_id": null
-    },
-    {
-      "part": 67,
-      "event_id": "p67-012",
-      "start": 1860,
-      "end": 1924.5,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=1860",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "回到室内房间后展示角色与出口附近布局；具体Level_Entry未确认。",
       "previous_level_id": null
     }
   ],
@@ -1629,42 +800,6 @@
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=16&t=1639",
           "review_status": "confirmed",
           "level_id": "pushing_orange",
-          "note": ""
-        }
-      ]
-    },
-    {
-      "level_id": "best_beam_colors",
-      "map_layer": "underworld",
-      "area": "endgame3",
-      "coordinates": [
-        [
-          2.0,
-          132.0,
-          -24.0
-        ]
-      ],
-      "map_url": "https://joric.github.io/ootss/#best_beam_colors",
-      "preview": "assets/previews/best_beam_colors.webp",
-      "nearby_known_videos": [
-        {
-          "part": 61,
-          "event_id": "p61-030",
-          "start": 2552.375,
-          "end": 2770.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=61&t=2552",
-          "review_status": "confirmed",
-          "level_id": "end3_promesst_red",
-          "note": ""
-        },
-        {
-          "part": 61,
-          "event_id": "p61-002",
-          "start": 397.25,
-          "end": 410.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=61&t=397",
-          "review_status": "confirmed",
-          "level_id": "end3_heroes_1",
           "note": ""
         }
       ]
@@ -1742,42 +877,6 @@
       ]
     },
     {
-      "level_id": "promesst2.5_deeper",
-      "map_layer": "overworld",
-      "area": "promesst3",
-      "coordinates": [
-        [
-          -3.0,
-          73.0,
-          0.0
-        ]
-      ],
-      "map_url": "https://joric.github.io/ootss/#promesst2.5_deeper",
-      "preview": "assets/previews/promesst2.5_deeper.webp",
-      "nearby_known_videos": [
-        {
-          "part": 39,
-          "event_id": "p39-002",
-          "start": 355.875,
-          "end": 668.5,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=39&t=355",
-          "review_status": "confirmed",
-          "level_id": "druid_multismash_v3",
-          "note": ""
-        },
-        {
-          "part": 38,
-          "event_id": "p38-001",
-          "start": 14.25,
-          "end": 175.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=38&t=14",
-          "review_status": "confirmed",
-          "level_id": "promesst3_streamlined",
-          "note": ""
-        }
-      ]
-    },
-    {
       "level_id": "save_for_later",
       "map_layer": "underworld",
       "area": "underworld_mirrors_and_promesst",
@@ -1841,7 +940,7 @@
           "part": 38,
           "event_id": "p38-003",
           "start": 2290.875,
-          "end": 2330.0,
+          "end": 2564,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=38&t=2290",
           "review_status": "confirmed",
           "level_id": "gem_beam_placement",
@@ -1884,6 +983,449 @@
           "note": ""
         }
       ]
+    }
+  ],
+  "human_review": {
+    "source": "docs/校对.md",
+    "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+    "item_count": 19
+  },
+  "human_confirmed_visits": [
+    {
+      "part": 37,
+      "event_id": "p37-u01",
+      "start": 105.0,
+      "end": 1520.0,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=37&t=105",
+      "review_status": "confirmed",
+      "level_id": "promesst2.5_deeper",
+      "note": ""
+    },
+    {
+      "part": 38,
+      "event_id": "p38-001",
+      "start": 14.25,
+      "end": 2290,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=38&t=14",
+      "review_status": "confirmed",
+      "level_id": "promesst3_streamlined",
+      "note": ""
+    },
+    {
+      "part": 38,
+      "event_id": "p38-003",
+      "start": 2290.875,
+      "end": 2564,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=38&t=2290",
+      "review_status": "confirmed",
+      "level_id": "gem_beam_placement",
+      "note": ""
+    },
+    {
+      "part": 43,
+      "event_id": "p43-002",
+      "start": 576.75,
+      "end": 860.25,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=576",
+      "review_status": "confirmed",
+      "level_id": "end2_heroes_1_2",
+      "note": ""
+    },
+    {
+      "part": 43,
+      "event_id": "p43-007",
+      "start": 861,
+      "end": 1025,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=861",
+      "review_status": "confirmed",
+      "level_id": "end2_heroes_1_5",
+      "note": ""
+    },
+    {
+      "part": 50,
+      "event_id": "p50-001",
+      "start": 0,
+      "end": 1785,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=0",
+      "review_status": "confirmed",
+      "level_id": "magnitudes_v3",
+      "note": ""
+    },
+    {
+      "part": 51,
+      "event_id": "p51-001",
+      "start": 25,
+      "end": 250,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=25",
+      "review_status": "confirmed",
+      "level_id": "zach_lilies_v3",
+      "note": ""
+    },
+    {
+      "part": 53,
+      "event_id": "p53-013",
+      "start": 1305.0,
+      "end": 1555,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=1305",
+      "review_status": "confirmed",
+      "level_id": "monster_promesst_v3",
+      "note": ""
+    },
+    {
+      "part": 61,
+      "event_id": "p61-031",
+      "start": 2163.25,
+      "end": 2552.0,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=61&t=2163",
+      "review_status": "confirmed",
+      "level_id": "best_beam_colors",
+      "note": ""
+    },
+    {
+      "part": 64,
+      "event_id": "p64-009",
+      "start": 1726.625,
+      "end": 2080,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=1726",
+      "review_status": "confirmed",
+      "level_id": "end2_mirror1",
+      "note": ""
+    },
+    {
+      "part": 65,
+      "event_id": "p65-001",
+      "start": 118.0,
+      "end": 529,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=118",
+      "review_status": "confirmed",
+      "level_id": "end3_off_topic_alt",
+      "note": ""
+    },
+    {
+      "part": 65,
+      "event_id": "p65-002",
+      "start": 532.125,
+      "end": 748,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=532",
+      "review_status": "confirmed",
+      "level_id": "end3_off_topic_mirror",
+      "note": ""
+    },
+    {
+      "part": 65,
+      "event_id": "p65-004",
+      "start": 748.25,
+      "end": 1290,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=748",
+      "review_status": "confirmed",
+      "level_id": "end3_off_topic_heroes",
+      "note": ""
+    },
+    {
+      "part": 65,
+      "event_id": "p65-005",
+      "start": 1298.375,
+      "end": 1708,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1298",
+      "review_status": "confirmed",
+      "level_id": "end3_reorder_skipping_fix",
+      "note": ""
+    },
+    {
+      "part": 65,
+      "event_id": "p65-007",
+      "start": 1709,
+      "end": 2083,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1709",
+      "review_status": "confirmed",
+      "level_id": "end3_reorder_mirror",
+      "note": ""
+    }
+  ],
+  "excluded_world_segments": [
+    {
+      "segment_id": "world-p51-u01",
+      "kind": "world",
+      "start": 14.5,
+      "end": 24.5,
+      "source_event_ids": [
+        "p51-u01"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            6
+          ],
+          "reason": "00:25进入第一关，此前片段属于大世界。"
+        }
+      ],
+      "part": 51,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=14"
+    },
+    {
+      "segment_id": "p51-world-after-first",
+      "kind": "world",
+      "start": 250,
+      "end": 265,
+      "source_event_ids": [],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            6
+          ],
+          "reason": "04:10已离开第一关，到下一入口之前为大世界。"
+        }
+      ],
+      "part": 51,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=250"
+    },
+    {
+      "segment_id": "world-p51-u03",
+      "kind": "world",
+      "start": 960,
+      "end": 1015,
+      "source_event_ids": [
+        "p51-u03"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            7
+          ],
+          "reason": "用户确认16:00–16:55、24:50–25:20在大世界，没有进关。"
+        }
+      ],
+      "part": 51,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=960"
+    },
+    {
+      "segment_id": "world-p51-u04",
+      "kind": "world",
+      "start": 1490,
+      "end": 1520,
+      "source_event_ids": [
+        "p51-u04"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            7
+          ],
+          "reason": "用户确认16:00–16:55、24:50–25:20在大世界，没有进关。"
+        }
+      ],
+      "part": 51,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=1490"
+    },
+    {
+      "segment_id": "world-p52-u01",
+      "kind": "world",
+      "start": 165,
+      "end": 210,
+      "source_event_ids": [
+        "p52-u01"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            8
+          ],
+          "reason": "用户确认02:45–03:30、15:20–15:45均未进关。"
+        }
+      ],
+      "part": 52,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=52&t=165"
+    },
+    {
+      "segment_id": "world-p52-u02",
+      "kind": "world",
+      "start": 920,
+      "end": 945,
+      "source_event_ids": [
+        "p52-u02"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            8
+          ],
+          "reason": "用户确认02:45–03:30、15:20–15:45均未进关。"
+        }
+      ],
+      "part": 52,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=52&t=920"
+    },
+    {
+      "segment_id": "world-p53-u01",
+      "kind": "world",
+      "start": 185,
+      "end": 202,
+      "source_event_ids": [
+        "p53-u01"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            9
+          ],
+          "reason": "用户确认03:05–03:22、13:00–13:20、28:15–28:50均为大世界。"
+        }
+      ],
+      "part": 53,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=185"
+    },
+    {
+      "segment_id": "world-p53-u02",
+      "kind": "world",
+      "start": 780,
+      "end": 800,
+      "source_event_ids": [
+        "p53-u02"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            9
+          ],
+          "reason": "用户确认03:05–03:22、13:00–13:20、28:15–28:50均为大世界。"
+        }
+      ],
+      "part": 53,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=780"
+    },
+    {
+      "segment_id": "world-p53-u04",
+      "kind": "world",
+      "start": 1695,
+      "end": 1730,
+      "source_event_ids": [
+        "p53-u04"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            9
+          ],
+          "reason": "用户确认03:05–03:22、13:00–13:20、28:15–28:50均为大世界。"
+        }
+      ],
+      "part": 53,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=1695"
+    },
+    {
+      "segment_id": "world-p67-009",
+      "kind": "world",
+      "start": 1140,
+      "end": 1270,
+      "source_event_ids": [
+        "p67-009"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            18
+          ],
+          "reason": "用户确认19:00–21:10、21:25–26:30、26:40–30:30均未进关。"
+        }
+      ],
+      "part": 67,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=1140"
+    },
+    {
+      "segment_id": "world-p67-010",
+      "kind": "world",
+      "start": 1285,
+      "end": 1590,
+      "source_event_ids": [
+        "p67-010"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            18
+          ],
+          "reason": "用户确认19:00–21:10、21:25–26:30、26:40–30:30均未进关。"
+        }
+      ],
+      "part": 67,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=1285"
+    },
+    {
+      "segment_id": "world-p67-011",
+      "kind": "world",
+      "start": 1600,
+      "end": 1830,
+      "source_event_ids": [
+        "p67-011"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            18
+          ],
+          "reason": "用户确认19:00–21:10、21:25–26:30、26:40–30:30均未进关。"
+        }
+      ],
+      "part": 67,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=1600"
+    },
+    {
+      "segment_id": "world-p67-012",
+      "kind": "world",
+      "start": 1860,
+      "end": 1924,
+      "source_event_ids": [
+        "p67-012"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            19
+          ],
+          "reason": "用户确认31:00–32:04为大世界，未进关。"
+        }
+      ],
+      "part": 67,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=1860"
     }
   ]
 }

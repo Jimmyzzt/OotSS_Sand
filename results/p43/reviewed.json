@@ -7,7 +7,7 @@
   "title": "【结局2 P1】对映之地：高处[北6西5单世界关]",
   "stage": 2,
   "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
-  "review_note": "Reviewed all 25 five-second timeline sheets (00:00–65:40) and all seven candidate galleries. Confirmed static layouts are matched only where their distinguishing geometry is visible. Continuous fragments of see_no_evil, end2_mirror_3, place_lily_pushstyle_v6, end2_river_place, place_promesst_rooms and elevator_mechanic are combined only over intervals without an intervening confirmed target or boundary transition. Nearby endgame2 room changes remain separate entries where the timeline/reference shows a distinct layout; no whole endgame region was collapsed into one visit. Opening 00:00–07:57 and later overworld travel/discussion, exploration, and unproposed areas remain uncovered. High-overworld recap begins around 65:15. No external terrain entry was visually checked, so all overworld matches and outcomes remain unknown. Reviewed 24 distinct confirmed entry events. A timeline recheck removed interval overlaps between confirmed endgame2/hero-room visits at 14:05, 14:10, 14:15, and 16:50, using the visible layout transitions.",
+  "review_note": "已按用户docs/校对.md修订身份和连续区间。未切关的匹配窗合并为一次访问；明确未进关的大世界片段移入excluded_segments，不再列为未知关卡。原片段完整记录保存在superseded_events。具体依据见各事件human_review证据。",
   "events": [
     {
       "event_id": "p43-001",
@@ -93,9 +93,9 @@
       "event_id": "p43-002",
       "level_id": "end2_heroes_1_2",
       "puzzle_start_time": 576.75,
-      "puzzle_end_time": 833.875,
+      "puzzle_end_time": 860.25,
       "entry_transition_time": 576.375,
-      "exit_time": 834.125,
+      "exit_time": 860.25,
       "overworld_approach_time": null,
       "review_status": "confirmed",
       "status": "visited",
@@ -145,13 +145,8 @@
       ],
       "puzzle_match": {
         "level_id": "end2_heroes_1_2",
-        "area": "endgame2",
-        "phash_distance": 2,
-        "hist_distance": 0.1161,
-        "sift_inliers": 198,
-        "sift_good": 201,
-        "consistent_samples": 8,
-        "status": "visually_confirmed"
+        "status": "human_confirmed",
+        "method": "owner_identity_and_continuity_review"
       },
       "overworld_match": {
         "status": "unverified"
@@ -163,367 +158,46 @@
           "time": 600.0,
           "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end2_heroes_1_2.webp",
           "reason": "Between 10:00 and 13:50 the watery stone room retains the reference layout: two upper blocks, central orange stone, yellow outlined floor routes and green lower-left endpoint; same layout persists through internal camera movement."
+        },
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            4
+          ],
+          "reason": "13:54/14:10均为上一关内部视角；14:05短暂匹配end2_heroes_1_5也处于同一连续过程，合回首个入口。"
         }
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p43-003",
-      "level_id": null,
-      "puzzle_start_time": 834.125,
-      "puzzle_end_time": 845.0,
-      "entry_transition_time": 833.875,
-      "exit_time": 845.0,
-      "overworld_approach_time": null,
-      "review_status": "conflict",
-      "status": "identity_conflict",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [
+      "manual_corrections": [
         {
-          "level_id": "heroes1_2_v2",
-          "area": "heroes1",
-          "phash_distance": 18,
-          "hist_distance": 0.6277,
-          "sift_inliers": 57,
-          "sift_good": 71
-        },
-        {
-          "level_id": "end2_heroes_1_2",
-          "area": "endgame2",
-          "phash_distance": 8,
-          "hist_distance": 0.8996,
-          "sift_inliers": 42,
-          "sift_good": 50
-        },
-        {
-          "level_id": "end2_heroes_1_5",
-          "area": "endgame2",
-          "phash_distance": 20,
-          "hist_distance": 0.8238,
-          "sift_inliers": 12,
-          "sift_good": 13
-        },
-        {
-          "level_id": "lily_switch_p",
-          "area": "flat_things",
-          "phash_distance": 16,
-          "hist_distance": 1.3238,
-          "sift_inliers": 0,
-          "sift_good": 1
-        },
-        {
-          "level_id": "corner_loop",
-          "area": "beams_and_basic_heroes",
-          "phash_distance": 18,
-          "hist_distance": 1.0117,
-          "sift_inliers": 0,
-          "sift_good": 4
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            4
+          ],
+          "reason": "13:54/14:10均为上一关内部视角；14:05短暂匹配end2_heroes_1_5也处于同一连续过程，合回首个入口。"
         }
       ],
-      "puzzle_match": {
-        "status": "rejected_original_identity",
-        "previous_level_id": "heroes1_2_v2"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p43\\samples\\00835.000.jpg",
-          "time": 835.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes1_2_v2.webp",
-          "reason": "The separate chamber shows two raised stone platforms divided by a central bridge, purple blocks clustered on the right and green endpoint at lower left, matching this reference."
-        },
-        {
-          "type": "identity_audit",
-          "reason": "结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
-          "image": "results/audit/evidence/endgame_p43_sheet_05.jpg"
-        }
-      ],
-      "evidence_gallery": "evidence/candidates_00.jpg",
-      "manual_corrections": [],
-      "reviewer": "Codex physical-map identity audit",
-      "superseded_identification": {
-        "level_id": "heroes1_2_v2",
-        "puzzle_match": {
-          "level_id": "heroes1_2_v2",
-          "area": "heroes1",
-          "phash_distance": 18,
-          "hist_distance": 0.6277,
-          "sift_inliers": 57,
-          "sift_good": 71,
-          "consistent_samples": 3,
-          "status": "visually_confirmed"
-        },
-        "map_layer": "overworld"
-      },
-      "map_layer": "sky"
-    },
-    {
-      "event_id": "p43-004",
-      "level_id": "end2_heroes_1_5",
-      "puzzle_start_time": 845.0,
-      "puzzle_end_time": 850.0,
-      "entry_transition_time": 845.0,
-      "exit_time": 850.0,
-      "overworld_approach_time": null,
-      "review_status": "confirmed",
-      "status": "visited",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [
-        {
-          "level_id": "end2_heroes_1_5",
-          "area": "endgame2",
-          "phash_distance": 12,
-          "hist_distance": 0.8208,
-          "sift_inliers": 22,
-          "sift_good": 26
-        },
-        {
-          "level_id": "end2_heroes_1_2",
-          "area": "endgame2",
-          "phash_distance": 14,
-          "hist_distance": 0.8964,
-          "sift_inliers": 21,
-          "sift_good": 26
-        },
-        {
-          "level_id": "heroes1_2_v2",
-          "area": "heroes1",
-          "phash_distance": 12,
-          "hist_distance": 0.7309,
-          "sift_inliers": 13,
-          "sift_good": 18
-        },
-        {
-          "level_id": "heroes1_5_v2",
-          "area": "heroes1",
-          "phash_distance": 14,
-          "hist_distance": 0.7359,
-          "sift_inliers": 9,
-          "sift_good": 13
-        },
-        {
-          "level_id": "heroes1_8_v2",
-          "area": "heroes1",
-          "phash_distance": 18,
-          "hist_distance": 0.837,
-          "sift_inliers": 5,
-          "sift_good": 11
-        }
-      ],
-      "puzzle_match": {
-        "level_id": "end2_heroes_1_5",
-        "area": "endgame2",
-        "phash_distance": 12,
-        "hist_distance": 0.8208,
-        "sift_inliers": 22,
-        "sift_good": 26,
-        "consistent_samples": 1,
-        "status": "visually_confirmed"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p43\\samples\\00850.000.jpg",
-          "time": 850.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end2_heroes_1_5.webp",
-          "reason": "The pale tiled room has yellow outlined lanes, central orange stone, scattered violet blocks and gold endpoint along the bottom, matching the reference layout."
-        }
-      ],
-      "evidence_gallery": "evidence/candidates_00.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p43-005",
-      "level_id": null,
-      "puzzle_start_time": 850.0,
-      "puzzle_end_time": 855.0,
-      "entry_transition_time": 850.0,
-      "exit_time": 855.0,
-      "overworld_approach_time": null,
-      "review_status": "conflict",
-      "status": "identity_conflict",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [
-        {
-          "level_id": "heroes1_2_v2",
-          "area": "heroes1",
-          "phash_distance": 12,
-          "hist_distance": 0.7176,
-          "sift_inliers": 23,
-          "sift_good": 30
-        },
-        {
-          "level_id": "end2_heroes_1_2",
-          "area": "endgame2",
-          "phash_distance": 14,
-          "hist_distance": 0.8967,
-          "sift_inliers": 23,
-          "sift_good": 23
-        },
-        {
-          "level_id": "end2_heroes_1_5",
-          "area": "endgame2",
-          "phash_distance": 12,
-          "hist_distance": 0.821,
-          "sift_inliers": 18,
-          "sift_good": 21
-        },
-        {
-          "level_id": "heroes1_5_v2",
-          "area": "heroes1",
-          "phash_distance": 16,
-          "hist_distance": 0.7214,
-          "sift_inliers": 8,
-          "sift_good": 14
-        },
-        {
-          "level_id": "double_team",
-          "area": "beams_and_basic_heroes",
-          "phash_distance": 16,
-          "hist_distance": 1.3905,
-          "sift_inliers": 0,
-          "sift_good": 1
-        }
-      ],
-      "puzzle_match": {
-        "status": "rejected_original_identity",
-        "previous_level_id": "heroes1_2_v2"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p43\\samples\\00855.000.jpg",
-          "time": 855.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes1_2_v2.webp",
-          "reason": "The separate chamber shows two raised stone platforms divided by a central bridge, purple blocks clustered on the right and green endpoint at lower left, matching this reference."
-        },
-        {
-          "type": "identity_audit",
-          "reason": "结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
-          "image": "results/audit/evidence/endgame_p43_sheet_05.jpg"
-        }
-      ],
-      "evidence_gallery": "evidence/candidates_01.jpg",
-      "manual_corrections": [],
-      "reviewer": "Codex physical-map identity audit",
-      "superseded_identification": {
-        "level_id": "heroes1_2_v2",
-        "puzzle_match": {
-          "level_id": "heroes1_2_v2",
-          "area": "heroes1",
-          "phash_distance": 12,
-          "hist_distance": 0.7176,
-          "sift_inliers": 23,
-          "sift_good": 30,
-          "consistent_samples": 1,
-          "status": "visually_confirmed"
-        },
-        "map_layer": "overworld"
-      },
-      "map_layer": "sky"
-    },
-    {
-      "event_id": "p43-006",
-      "level_id": "end2_heroes_1_2",
-      "puzzle_start_time": 855.0,
-      "puzzle_end_time": 860.25,
-      "entry_transition_time": 855.0,
-      "exit_time": 860.375,
-      "overworld_approach_time": null,
-      "review_status": "confirmed",
-      "status": "visited",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [
-        {
-          "level_id": "end2_heroes_1_2",
-          "area": "endgame2",
-          "phash_distance": 18,
-          "hist_distance": 1.3064,
-          "sift_inliers": 15,
-          "sift_good": 15
-        },
-        {
-          "level_id": "end2_heroes_1_5",
-          "area": "endgame2",
-          "phash_distance": 16,
-          "hist_distance": 1.2949,
-          "sift_inliers": 12,
-          "sift_good": 16
-        },
-        {
-          "level_id": "heroes1_2_v2",
-          "area": "heroes1",
-          "phash_distance": 16,
-          "hist_distance": 0.8522,
-          "sift_inliers": 11,
-          "sift_good": 12
-        },
-        {
-          "level_id": "breath_skip",
-          "area": "heroes_and_stones",
-          "phash_distance": 16,
-          "hist_distance": 0.9981,
-          "sift_inliers": 0,
-          "sift_good": 0
-        },
-        {
-          "level_id": "heroes2_15",
-          "area": "heroes2",
-          "phash_distance": 16,
-          "hist_distance": 1.2507,
-          "sift_inliers": 0,
-          "sift_good": 3
-        }
-      ],
-      "puzzle_match": {
-        "level_id": "end2_heroes_1_2",
-        "area": "endgame2",
-        "phash_distance": 18,
-        "hist_distance": 1.3064,
-        "sift_inliers": 15,
-        "sift_good": 15,
-        "consistent_samples": 1,
-        "status": "visually_confirmed"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p43\\samples\\00860.000.jpg",
-          "time": 860.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end2_heroes_1_2.webp",
-          "reason": "Between 10:00 and 13:50 the watery stone room retains the reference layout: two upper blocks, central orange stone, yellow outlined floor routes and green lower-left endpoint; same layout persists through internal camera movement."
-        }
-      ],
-      "evidence_gallery": "evidence/candidates_01.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "User continuity/identity review (docs/校对.md)",
+      "map_layer": "sky",
+      "source_event_ids": [
+        "p43-002",
+        "p43-003",
+        "p43-004",
+        "p43-005",
+        "p43-006"
+      ]
     },
     {
       "event_id": "p43-007",
       "level_id": "end2_heroes_1_5",
-      "puzzle_start_time": 860.375,
-      "puzzle_end_time": 875.0,
+      "puzzle_start_time": 861,
+      "puzzle_end_time": 1025,
       "entry_transition_time": 860.25,
-      "exit_time": 875.0,
+      "exit_time": 1025,
       "overworld_approach_time": null,
       "review_status": "confirmed",
       "status": "visited",
@@ -573,13 +247,8 @@
       ],
       "puzzle_match": {
         "level_id": "end2_heroes_1_5",
-        "area": "endgame2",
-        "phash_distance": 6,
-        "hist_distance": 0.1458,
-        "sift_inliers": 175,
-        "sift_good": 176,
-        "consistent_samples": 2,
-        "status": "visually_confirmed"
+        "status": "human_confirmed",
+        "method": "owner_identity_and_continuity_review"
       },
       "overworld_match": {
         "status": "unverified"
@@ -591,265 +260,37 @@
           "time": 865.0,
           "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end2_heroes_1_5.webp",
           "reason": "The pale tiled room has yellow outlined lanes, central orange stone, scattered violet blocks and gold endpoint along the bottom, matching the reference layout."
+        },
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            4
+          ],
+          "reason": "16:41仍是前一段相同关卡的内部视角，重复匹配合并。14:20–14:24有界图册保留相邻两关交界。"
         }
       ],
       "evidence_gallery": "evidence/candidates_01.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p43-008",
-      "level_id": "end2_heroes_1_5",
-      "puzzle_start_time": 995.0,
-      "puzzle_end_time": 1000.875,
-      "entry_transition_time": null,
-      "exit_time": 1001.125,
-      "overworld_approach_time": null,
-      "review_status": "confirmed",
-      "status": "visited",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [
+      "manual_corrections": [
         {
-          "level_id": "end2_heroes_1_5",
-          "area": "endgame2",
-          "phash_distance": 2,
-          "hist_distance": 0.1482,
-          "sift_inliers": 162,
-          "sift_good": 164
-        },
-        {
-          "level_id": "end2_heroes_1_2",
-          "area": "endgame2",
-          "phash_distance": 18,
-          "hist_distance": 0.1943,
-          "sift_inliers": 34,
-          "sift_good": 36
-        },
-        {
-          "level_id": "heroes1_5_v2",
-          "area": "heroes1",
-          "phash_distance": 16,
-          "hist_distance": 1.0237,
-          "sift_inliers": 20,
-          "sift_good": 23
-        },
-        {
-          "level_id": "heroes1_2_v2",
-          "area": "heroes1",
-          "phash_distance": 14,
-          "hist_distance": 1.0215,
-          "sift_inliers": 11,
-          "sift_good": 17
-        },
-        {
-          "level_id": "torc_blocked_easier",
-          "area": "beaming_objects",
-          "phash_distance": 16,
-          "hist_distance": 1.1736,
-          "sift_inliers": 0,
-          "sift_good": 2
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            4
+          ],
+          "reason": "16:41仍是前一段相同关卡的内部视角，重复匹配合并。14:20–14:24有界图册保留相邻两关交界。"
         }
       ],
-      "puzzle_match": {
-        "level_id": "end2_heroes_1_5",
-        "area": "endgame2",
-        "phash_distance": 2,
-        "hist_distance": 0.1482,
-        "sift_inliers": 162,
-        "sift_good": 164,
-        "consistent_samples": 1,
-        "status": "visually_confirmed"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p43\\samples\\01000.000.jpg",
-          "time": 1000.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end2_heroes_1_5.webp",
-          "reason": "The pale tiled room has yellow outlined lanes, central orange stone, scattered violet blocks and gold endpoint along the bottom, matching the reference layout."
-        }
-      ],
-      "evidence_gallery": "evidence/candidates_01.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p43-009",
-      "level_id": null,
-      "puzzle_start_time": 1001.125,
-      "puzzle_end_time": 1010.0,
-      "entry_transition_time": 1000.875,
-      "exit_time": 1010.0,
-      "overworld_approach_time": null,
-      "review_status": "conflict",
-      "status": "identity_conflict",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [
-        {
-          "level_id": "heroes1_5_v2",
-          "area": "heroes1",
-          "phash_distance": 18,
-          "hist_distance": 0.7153,
-          "sift_inliers": 43,
-          "sift_good": 49
-        },
-        {
-          "level_id": "end2_heroes_1_5",
-          "area": "endgame2",
-          "phash_distance": 10,
-          "hist_distance": 0.8134,
-          "sift_inliers": 35,
-          "sift_good": 40
-        },
-        {
-          "level_id": "end2_heroes_1_2",
-          "area": "endgame2",
-          "phash_distance": 18,
-          "hist_distance": 0.8972,
-          "sift_inliers": 16,
-          "sift_good": 20
-        },
-        {
-          "level_id": "heroes1_2_v2",
-          "area": "heroes1",
-          "phash_distance": 18,
-          "hist_distance": 0.7147,
-          "sift_inliers": 11,
-          "sift_good": 17
-        },
-        {
-          "level_id": "worlds_collide_heroes_and_promesst_v4",
-          "area": "worlds_collide",
-          "phash_distance": 18,
-          "hist_distance": 1.3737,
-          "sift_inliers": 5,
-          "sift_good": 6
-        }
-      ],
-      "puzzle_match": {
-        "status": "rejected_original_identity",
-        "previous_level_id": "heroes1_5_v2"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p43\\samples\\01010.000.jpg",
-          "time": 1010.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes1_5_v2.webp",
-          "reason": "The view returns to the two-platform hall with purple block clusters and central bridge; the tiled room layout matches the heroes1_5_v2 reference."
-        },
-        {
-          "type": "identity_audit",
-          "reason": "结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
-          "image": "results/audit/evidence/endgame_p43_sheet_06.jpg"
-        }
-      ],
-      "evidence_gallery": "evidence/candidates_01.jpg",
-      "manual_corrections": [],
-      "reviewer": "Codex physical-map identity audit",
-      "superseded_identification": {
-        "level_id": "heroes1_5_v2",
-        "puzzle_match": {
-          "level_id": "heroes1_5_v2",
-          "area": "heroes1",
-          "phash_distance": 18,
-          "hist_distance": 0.7153,
-          "sift_inliers": 43,
-          "sift_good": 49,
-          "consistent_samples": 2,
-          "status": "visually_confirmed"
-        },
-        "map_layer": "overworld"
-      },
-      "map_layer": "sky"
-    },
-    {
-      "event_id": "p43-010",
-      "level_id": "end2_heroes_1_5",
-      "puzzle_start_time": 1010.0,
-      "puzzle_end_time": 1025.0,
-      "entry_transition_time": 1010.0,
-      "exit_time": 1025.0,
-      "overworld_approach_time": null,
-      "review_status": "confirmed",
-      "status": "visited",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [
-        {
-          "level_id": "end2_heroes_1_5",
-          "area": "endgame2",
-          "phash_distance": 12,
-          "hist_distance": 0.8124,
-          "sift_inliers": 30,
-          "sift_good": 33
-        },
-        {
-          "level_id": "heroes1_5_v2",
-          "area": "heroes1",
-          "phash_distance": 20,
-          "hist_distance": 0.7361,
-          "sift_inliers": 21,
-          "sift_good": 27
-        },
-        {
-          "level_id": "end2_heroes_1_2",
-          "area": "endgame2",
-          "phash_distance": 20,
-          "hist_distance": 0.894,
-          "sift_inliers": 21,
-          "sift_good": 24
-        },
-        {
-          "level_id": "heroes1_2_v2",
-          "area": "heroes1",
-          "phash_distance": 18,
-          "hist_distance": 0.7334,
-          "sift_inliers": 15,
-          "sift_good": 22
-        },
-        {
-          "level_id": "priest_water_back_goblin",
-          "area": "skipping_in_3d",
-          "phash_distance": 16,
-          "hist_distance": 1.3011,
-          "sift_inliers": 0,
-          "sift_good": 4
-        }
-      ],
-      "puzzle_match": {
-        "level_id": "end2_heroes_1_5",
-        "area": "endgame2",
-        "phash_distance": 12,
-        "hist_distance": 0.8124,
-        "sift_inliers": 30,
-        "sift_good": 33,
-        "consistent_samples": 2,
-        "status": "visually_confirmed"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p43\\samples\\01020.000.jpg",
-          "time": 1020.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end2_heroes_1_5.webp",
-          "reason": "The pale tiled room has yellow outlined lanes, central orange stone, scattered violet blocks and gold endpoint along the bottom, matching the reference layout."
-        }
-      ],
-      "evidence_gallery": "evidence/candidates_02.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "User continuity/identity review (docs/校对.md)",
+      "map_layer": "sky",
+      "source_event_ids": [
+        "p43-007",
+        "p43-008",
+        "p43-009",
+        "p43-010"
+      ]
     },
     {
       "event_id": "p43-011",
@@ -1972,5 +1413,811 @@
       "reviewer": "Luna visual comparison"
     }
   ],
-  "time_basis": "Seconds from current part start; scan boundaries approximate +/-0.5s."
+  "time_basis": "Seconds from current part start; scan boundaries approximate +/-0.5s.",
+  "superseded_events": [
+    {
+      "event": {
+        "event_id": "p43-002",
+        "level_id": "end2_heroes_1_2",
+        "puzzle_start_time": 576.75,
+        "puzzle_end_time": 833.875,
+        "entry_transition_time": 576.375,
+        "exit_time": 834.125,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [
+          {
+            "level_id": "end2_heroes_1_2",
+            "area": "endgame2",
+            "phash_distance": 2,
+            "hist_distance": 0.1161,
+            "sift_inliers": 198,
+            "sift_good": 201
+          },
+          {
+            "level_id": "end2_heroes_1_5",
+            "area": "endgame2",
+            "phash_distance": 16,
+            "hist_distance": 0.2043,
+            "sift_inliers": 47,
+            "sift_good": 53
+          },
+          {
+            "level_id": "heroes1_2_v2",
+            "area": "heroes1",
+            "phash_distance": 18,
+            "hist_distance": 1.0949,
+            "sift_inliers": 20,
+            "sift_good": 32
+          },
+          {
+            "level_id": "short_ride_option_b",
+            "area": "mirrors_and_stones",
+            "phash_distance": 16,
+            "hist_distance": 1.2867,
+            "sift_inliers": 0,
+            "sift_good": 2
+          },
+          {
+            "level_id": "tricky_swappers_v3",
+            "area": "heroes_and_mirrors",
+            "phash_distance": 16,
+            "hist_distance": 1.393,
+            "sift_inliers": 0,
+            "sift_good": 2
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "end2_heroes_1_2",
+          "area": "endgame2",
+          "phash_distance": 2,
+          "hist_distance": 0.1161,
+          "sift_inliers": 198,
+          "sift_good": 201,
+          "consistent_samples": 8,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p43\\samples\\00600.000.jpg",
+            "time": 600.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end2_heroes_1_2.webp",
+            "reason": "Between 10:00 and 13:50 the watery stone room retains the reference layout: two upper blocks, central orange stone, yellow outlined floor routes and green lower-left endpoint; same layout persists through internal camera movement."
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_00.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p43-003",
+        "level_id": null,
+        "puzzle_start_time": 834.125,
+        "puzzle_end_time": 845.0,
+        "entry_transition_time": 833.875,
+        "exit_time": 845.0,
+        "overworld_approach_time": null,
+        "review_status": "conflict",
+        "status": "identity_conflict",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [
+          {
+            "level_id": "heroes1_2_v2",
+            "area": "heroes1",
+            "phash_distance": 18,
+            "hist_distance": 0.6277,
+            "sift_inliers": 57,
+            "sift_good": 71
+          },
+          {
+            "level_id": "end2_heroes_1_2",
+            "area": "endgame2",
+            "phash_distance": 8,
+            "hist_distance": 0.8996,
+            "sift_inliers": 42,
+            "sift_good": 50
+          },
+          {
+            "level_id": "end2_heroes_1_5",
+            "area": "endgame2",
+            "phash_distance": 20,
+            "hist_distance": 0.8238,
+            "sift_inliers": 12,
+            "sift_good": 13
+          },
+          {
+            "level_id": "lily_switch_p",
+            "area": "flat_things",
+            "phash_distance": 16,
+            "hist_distance": 1.3238,
+            "sift_inliers": 0,
+            "sift_good": 1
+          },
+          {
+            "level_id": "corner_loop",
+            "area": "beams_and_basic_heroes",
+            "phash_distance": 18,
+            "hist_distance": 1.0117,
+            "sift_inliers": 0,
+            "sift_good": 4
+          }
+        ],
+        "puzzle_match": {
+          "status": "rejected_original_identity",
+          "previous_level_id": "heroes1_2_v2"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p43\\samples\\00835.000.jpg",
+            "time": 835.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes1_2_v2.webp",
+            "reason": "The separate chamber shows two raised stone platforms divided by a central bridge, purple blocks clustered on the right and green endpoint at lower left, matching this reference."
+          },
+          {
+            "type": "identity_audit",
+            "reason": "结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
+            "image": "results/audit/evidence/endgame_p43_sheet_05.jpg"
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_00.jpg",
+        "manual_corrections": [],
+        "reviewer": "Codex physical-map identity audit",
+        "superseded_identification": {
+          "level_id": "heroes1_2_v2",
+          "puzzle_match": {
+            "level_id": "heroes1_2_v2",
+            "area": "heroes1",
+            "phash_distance": 18,
+            "hist_distance": 0.6277,
+            "sift_inliers": 57,
+            "sift_good": 71,
+            "consistent_samples": 3,
+            "status": "visually_confirmed"
+          },
+          "map_layer": "overworld"
+        },
+        "map_layer": "sky"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p43-004",
+        "level_id": "end2_heroes_1_5",
+        "puzzle_start_time": 845.0,
+        "puzzle_end_time": 850.0,
+        "entry_transition_time": 845.0,
+        "exit_time": 850.0,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [
+          {
+            "level_id": "end2_heroes_1_5",
+            "area": "endgame2",
+            "phash_distance": 12,
+            "hist_distance": 0.8208,
+            "sift_inliers": 22,
+            "sift_good": 26
+          },
+          {
+            "level_id": "end2_heroes_1_2",
+            "area": "endgame2",
+            "phash_distance": 14,
+            "hist_distance": 0.8964,
+            "sift_inliers": 21,
+            "sift_good": 26
+          },
+          {
+            "level_id": "heroes1_2_v2",
+            "area": "heroes1",
+            "phash_distance": 12,
+            "hist_distance": 0.7309,
+            "sift_inliers": 13,
+            "sift_good": 18
+          },
+          {
+            "level_id": "heroes1_5_v2",
+            "area": "heroes1",
+            "phash_distance": 14,
+            "hist_distance": 0.7359,
+            "sift_inliers": 9,
+            "sift_good": 13
+          },
+          {
+            "level_id": "heroes1_8_v2",
+            "area": "heroes1",
+            "phash_distance": 18,
+            "hist_distance": 0.837,
+            "sift_inliers": 5,
+            "sift_good": 11
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "end2_heroes_1_5",
+          "area": "endgame2",
+          "phash_distance": 12,
+          "hist_distance": 0.8208,
+          "sift_inliers": 22,
+          "sift_good": 26,
+          "consistent_samples": 1,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p43\\samples\\00850.000.jpg",
+            "time": 850.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end2_heroes_1_5.webp",
+            "reason": "The pale tiled room has yellow outlined lanes, central orange stone, scattered violet blocks and gold endpoint along the bottom, matching the reference layout."
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_00.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p43-005",
+        "level_id": null,
+        "puzzle_start_time": 850.0,
+        "puzzle_end_time": 855.0,
+        "entry_transition_time": 850.0,
+        "exit_time": 855.0,
+        "overworld_approach_time": null,
+        "review_status": "conflict",
+        "status": "identity_conflict",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [
+          {
+            "level_id": "heroes1_2_v2",
+            "area": "heroes1",
+            "phash_distance": 12,
+            "hist_distance": 0.7176,
+            "sift_inliers": 23,
+            "sift_good": 30
+          },
+          {
+            "level_id": "end2_heroes_1_2",
+            "area": "endgame2",
+            "phash_distance": 14,
+            "hist_distance": 0.8967,
+            "sift_inliers": 23,
+            "sift_good": 23
+          },
+          {
+            "level_id": "end2_heroes_1_5",
+            "area": "endgame2",
+            "phash_distance": 12,
+            "hist_distance": 0.821,
+            "sift_inliers": 18,
+            "sift_good": 21
+          },
+          {
+            "level_id": "heroes1_5_v2",
+            "area": "heroes1",
+            "phash_distance": 16,
+            "hist_distance": 0.7214,
+            "sift_inliers": 8,
+            "sift_good": 14
+          },
+          {
+            "level_id": "double_team",
+            "area": "beams_and_basic_heroes",
+            "phash_distance": 16,
+            "hist_distance": 1.3905,
+            "sift_inliers": 0,
+            "sift_good": 1
+          }
+        ],
+        "puzzle_match": {
+          "status": "rejected_original_identity",
+          "previous_level_id": "heroes1_2_v2"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p43\\samples\\00855.000.jpg",
+            "time": 855.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes1_2_v2.webp",
+            "reason": "The separate chamber shows two raised stone platforms divided by a central bridge, purple blocks clustered on the right and green endpoint at lower left, matching this reference."
+          },
+          {
+            "type": "identity_audit",
+            "reason": "结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
+            "image": "results/audit/evidence/endgame_p43_sheet_05.jpg"
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_01.jpg",
+        "manual_corrections": [],
+        "reviewer": "Codex physical-map identity audit",
+        "superseded_identification": {
+          "level_id": "heroes1_2_v2",
+          "puzzle_match": {
+            "level_id": "heroes1_2_v2",
+            "area": "heroes1",
+            "phash_distance": 12,
+            "hist_distance": 0.7176,
+            "sift_inliers": 23,
+            "sift_good": 30,
+            "consistent_samples": 1,
+            "status": "visually_confirmed"
+          },
+          "map_layer": "overworld"
+        },
+        "map_layer": "sky"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p43-006",
+        "level_id": "end2_heroes_1_2",
+        "puzzle_start_time": 855.0,
+        "puzzle_end_time": 860.25,
+        "entry_transition_time": 855.0,
+        "exit_time": 860.375,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [
+          {
+            "level_id": "end2_heroes_1_2",
+            "area": "endgame2",
+            "phash_distance": 18,
+            "hist_distance": 1.3064,
+            "sift_inliers": 15,
+            "sift_good": 15
+          },
+          {
+            "level_id": "end2_heroes_1_5",
+            "area": "endgame2",
+            "phash_distance": 16,
+            "hist_distance": 1.2949,
+            "sift_inliers": 12,
+            "sift_good": 16
+          },
+          {
+            "level_id": "heroes1_2_v2",
+            "area": "heroes1",
+            "phash_distance": 16,
+            "hist_distance": 0.8522,
+            "sift_inliers": 11,
+            "sift_good": 12
+          },
+          {
+            "level_id": "breath_skip",
+            "area": "heroes_and_stones",
+            "phash_distance": 16,
+            "hist_distance": 0.9981,
+            "sift_inliers": 0,
+            "sift_good": 0
+          },
+          {
+            "level_id": "heroes2_15",
+            "area": "heroes2",
+            "phash_distance": 16,
+            "hist_distance": 1.2507,
+            "sift_inliers": 0,
+            "sift_good": 3
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "end2_heroes_1_2",
+          "area": "endgame2",
+          "phash_distance": 18,
+          "hist_distance": 1.3064,
+          "sift_inliers": 15,
+          "sift_good": 15,
+          "consistent_samples": 1,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p43\\samples\\00860.000.jpg",
+            "time": 860.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end2_heroes_1_2.webp",
+            "reason": "Between 10:00 and 13:50 the watery stone room retains the reference layout: two upper blocks, central orange stone, yellow outlined floor routes and green lower-left endpoint; same layout persists through internal camera movement."
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_01.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p43-007",
+        "level_id": "end2_heroes_1_5",
+        "puzzle_start_time": 860.375,
+        "puzzle_end_time": 875.0,
+        "entry_transition_time": 860.25,
+        "exit_time": 875.0,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [
+          {
+            "level_id": "end2_heroes_1_5",
+            "area": "endgame2",
+            "phash_distance": 6,
+            "hist_distance": 0.1458,
+            "sift_inliers": 175,
+            "sift_good": 176
+          },
+          {
+            "level_id": "end2_heroes_1_2",
+            "area": "endgame2",
+            "phash_distance": 18,
+            "hist_distance": 0.2098,
+            "sift_inliers": 37,
+            "sift_good": 37
+          },
+          {
+            "level_id": "heroes1_5_v2",
+            "area": "heroes1",
+            "phash_distance": 20,
+            "hist_distance": 1.0414,
+            "sift_inliers": 23,
+            "sift_good": 27
+          },
+          {
+            "level_id": "heroes1_2_v2",
+            "area": "heroes1",
+            "phash_distance": 18,
+            "hist_distance": 1.0384,
+            "sift_inliers": 5,
+            "sift_good": 9
+          },
+          {
+            "level_id": "heroes1_8_v2",
+            "area": "heroes1",
+            "phash_distance": 20,
+            "hist_distance": 1.0829,
+            "sift_inliers": 5,
+            "sift_good": 10
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "end2_heroes_1_5",
+          "area": "endgame2",
+          "phash_distance": 6,
+          "hist_distance": 0.1458,
+          "sift_inliers": 175,
+          "sift_good": 176,
+          "consistent_samples": 2,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p43\\samples\\00865.000.jpg",
+            "time": 865.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end2_heroes_1_5.webp",
+            "reason": "The pale tiled room has yellow outlined lanes, central orange stone, scattered violet blocks and gold endpoint along the bottom, matching the reference layout."
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_01.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p43-008",
+        "level_id": "end2_heroes_1_5",
+        "puzzle_start_time": 995.0,
+        "puzzle_end_time": 1000.875,
+        "entry_transition_time": null,
+        "exit_time": 1001.125,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [
+          {
+            "level_id": "end2_heroes_1_5",
+            "area": "endgame2",
+            "phash_distance": 2,
+            "hist_distance": 0.1482,
+            "sift_inliers": 162,
+            "sift_good": 164
+          },
+          {
+            "level_id": "end2_heroes_1_2",
+            "area": "endgame2",
+            "phash_distance": 18,
+            "hist_distance": 0.1943,
+            "sift_inliers": 34,
+            "sift_good": 36
+          },
+          {
+            "level_id": "heroes1_5_v2",
+            "area": "heroes1",
+            "phash_distance": 16,
+            "hist_distance": 1.0237,
+            "sift_inliers": 20,
+            "sift_good": 23
+          },
+          {
+            "level_id": "heroes1_2_v2",
+            "area": "heroes1",
+            "phash_distance": 14,
+            "hist_distance": 1.0215,
+            "sift_inliers": 11,
+            "sift_good": 17
+          },
+          {
+            "level_id": "torc_blocked_easier",
+            "area": "beaming_objects",
+            "phash_distance": 16,
+            "hist_distance": 1.1736,
+            "sift_inliers": 0,
+            "sift_good": 2
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "end2_heroes_1_5",
+          "area": "endgame2",
+          "phash_distance": 2,
+          "hist_distance": 0.1482,
+          "sift_inliers": 162,
+          "sift_good": 164,
+          "consistent_samples": 1,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p43\\samples\\01000.000.jpg",
+            "time": 1000.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end2_heroes_1_5.webp",
+            "reason": "The pale tiled room has yellow outlined lanes, central orange stone, scattered violet blocks and gold endpoint along the bottom, matching the reference layout."
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_01.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p43-009",
+        "level_id": null,
+        "puzzle_start_time": 1001.125,
+        "puzzle_end_time": 1010.0,
+        "entry_transition_time": 1000.875,
+        "exit_time": 1010.0,
+        "overworld_approach_time": null,
+        "review_status": "conflict",
+        "status": "identity_conflict",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [
+          {
+            "level_id": "heroes1_5_v2",
+            "area": "heroes1",
+            "phash_distance": 18,
+            "hist_distance": 0.7153,
+            "sift_inliers": 43,
+            "sift_good": 49
+          },
+          {
+            "level_id": "end2_heroes_1_5",
+            "area": "endgame2",
+            "phash_distance": 10,
+            "hist_distance": 0.8134,
+            "sift_inliers": 35,
+            "sift_good": 40
+          },
+          {
+            "level_id": "end2_heroes_1_2",
+            "area": "endgame2",
+            "phash_distance": 18,
+            "hist_distance": 0.8972,
+            "sift_inliers": 16,
+            "sift_good": 20
+          },
+          {
+            "level_id": "heroes1_2_v2",
+            "area": "heroes1",
+            "phash_distance": 18,
+            "hist_distance": 0.7147,
+            "sift_inliers": 11,
+            "sift_good": 17
+          },
+          {
+            "level_id": "worlds_collide_heroes_and_promesst_v4",
+            "area": "worlds_collide",
+            "phash_distance": 18,
+            "hist_distance": 1.3737,
+            "sift_inliers": 5,
+            "sift_good": 6
+          }
+        ],
+        "puzzle_match": {
+          "status": "rejected_original_identity",
+          "previous_level_id": "heroes1_5_v2"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p43\\samples\\01010.000.jpg",
+            "time": 1010.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes1_5_v2.webp",
+            "reason": "The view returns to the two-platform hall with purple block clusters and central bridge; the tiled room layout matches the heroes1_5_v2 reference."
+          },
+          {
+            "type": "identity_audit",
+            "reason": "结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
+            "image": "results/audit/evidence/endgame_p43_sheet_06.jpg"
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_01.jpg",
+        "manual_corrections": [],
+        "reviewer": "Codex physical-map identity audit",
+        "superseded_identification": {
+          "level_id": "heroes1_5_v2",
+          "puzzle_match": {
+            "level_id": "heroes1_5_v2",
+            "area": "heroes1",
+            "phash_distance": 18,
+            "hist_distance": 0.7153,
+            "sift_inliers": 43,
+            "sift_good": 49,
+            "consistent_samples": 2,
+            "status": "visually_confirmed"
+          },
+          "map_layer": "overworld"
+        },
+        "map_layer": "sky"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p43-010",
+        "level_id": "end2_heroes_1_5",
+        "puzzle_start_time": 1010.0,
+        "puzzle_end_time": 1025.0,
+        "entry_transition_time": 1010.0,
+        "exit_time": 1025.0,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [
+          {
+            "level_id": "end2_heroes_1_5",
+            "area": "endgame2",
+            "phash_distance": 12,
+            "hist_distance": 0.8124,
+            "sift_inliers": 30,
+            "sift_good": 33
+          },
+          {
+            "level_id": "heroes1_5_v2",
+            "area": "heroes1",
+            "phash_distance": 20,
+            "hist_distance": 0.7361,
+            "sift_inliers": 21,
+            "sift_good": 27
+          },
+          {
+            "level_id": "end2_heroes_1_2",
+            "area": "endgame2",
+            "phash_distance": 20,
+            "hist_distance": 0.894,
+            "sift_inliers": 21,
+            "sift_good": 24
+          },
+          {
+            "level_id": "heroes1_2_v2",
+            "area": "heroes1",
+            "phash_distance": 18,
+            "hist_distance": 0.7334,
+            "sift_inliers": 15,
+            "sift_good": 22
+          },
+          {
+            "level_id": "priest_water_back_goblin",
+            "area": "skipping_in_3d",
+            "phash_distance": 16,
+            "hist_distance": 1.3011,
+            "sift_inliers": 0,
+            "sift_good": 4
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "end2_heroes_1_5",
+          "area": "endgame2",
+          "phash_distance": 12,
+          "hist_distance": 0.8124,
+          "sift_inliers": 30,
+          "sift_good": 33,
+          "consistent_samples": 2,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p43\\samples\\01020.000.jpg",
+            "time": 1020.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end2_heroes_1_5.webp",
+            "reason": "The pale tiled room has yellow outlined lanes, central orange stone, scattered violet blocks and gold endpoint along the bottom, matching the reference layout."
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_02.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    }
+  ],
+  "excluded_segments": [],
+  "revision_history": [
+    {
+      "previous_review_note": "Reviewed all 25 five-second timeline sheets (00:00–65:40) and all seven candidate galleries. Confirmed static layouts are matched only where their distinguishing geometry is visible. Continuous fragments of see_no_evil, end2_mirror_3, place_lily_pushstyle_v6, end2_river_place, place_promesst_rooms and elevator_mechanic are combined only over intervals without an intervening confirmed target or boundary transition. Nearby endgame2 room changes remain separate entries where the timeline/reference shows a distinct layout; no whole endgame region was collapsed into one visit. Opening 00:00–07:57 and later overworld travel/discussion, exploration, and unproposed areas remain uncovered. High-overworld recap begins around 65:15. No external terrain entry was visually checked, so all overworld matches and outcomes remain unknown. Reviewed 24 distinct confirmed entry events. A timeline recheck removed interval overlaps between confirmed endgame2/hero-room visits at 14:05, 14:10, 14:15, and 16:50, using the visible layout transitions.",
+      "source": "docs/校对.md",
+      "items": [
+        4
+      ]
+    }
+  ],
+  "human_review": {
+    "source": "docs/校对.md",
+    "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+    "item_count": 19
+  }
 }

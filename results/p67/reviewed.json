@@ -7,7 +7,7 @@
   "title": "【结局3 P8】成为仓库设计师 主世界全谜题达成[北4西5]",
   "stage": 3,
   "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
-  "review_note": "已检查runs/p67全部13张全时间轴图册（0:00–32:05）及2张候选对照图。确认5种end3_pipeline固定目录布局；design与cleanup各自连续候选窗口按同一布局合并，cut、reorder、aesthetics保留为不同目录身份。约19分钟后进入多处实际游戏房间/READING LEVEL及内容展示，未能可靠匹配其静态目录身份，分段以null/unknown记录；没有仅凭连续滚屏拆成虚构入口。AESTHETICS/CLARITY大厅、标题菜单与讨论不计为进入。overworld入口未核，结果unknown。",
+  "review_note": "已按用户docs/校对.md修订身份和连续区间。未切关的匹配窗合并为一次访问；明确未进关的大世界片段移入excluded_segments，不再列为未知关卡。原片段完整记录保存在superseded_events。具体依据见各事件human_review证据。",
   "events": [
     {
       "event_id": "p67-001",
@@ -470,126 +470,237 @@
       "evidence_gallery": "evidence/candidates_01.jpg",
       "manual_corrections": [],
       "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p67-009",
-      "level_id": null,
-      "puzzle_start_time": 1140,
-      "puzzle_end_time": 1270,
-      "entry_transition_time": null,
-      "exit_time": null,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "possible_visit",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "level_id": null,
-        "status": "unknown",
-        "visual_reason": "切离关卡展示后进入一处白蓝色实际游戏房间，有角色移动与交互；未找到可确认的本地Level_Entry静态参考，身份未知。"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "timeline_review",
-          "reason": "切离关卡展示后进入一处白蓝色实际游戏房间，有角色移动与交互；未找到可确认的本地Level_Entry静态参考，身份未知。"
-        }
-      ],
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p67-010",
-      "level_id": null,
-      "puzzle_start_time": 1285,
-      "puzzle_end_time": 1590,
-      "entry_transition_time": null,
-      "exit_time": null,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "possible_visit",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "level_id": null,
-        "status": "unknown",
-        "visual_reason": "出现READING LEVEL区域及后续多个不同样式的可玩房间/棋盘和滚动演示；虽能确认是关卡内容，但无法为各局部可靠匹配固定目录ID，合并记录未知段。"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "timeline_review",
-          "reason": "出现READING LEVEL区域及后续多个不同样式的可玩房间/棋盘和滚动演示；虽能确认是关卡内容，但无法为各局部可靠匹配固定目录ID，合并记录未知段。"
-        }
-      ],
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p67-011",
-      "level_id": null,
-      "puzzle_start_time": 1600,
-      "puzzle_end_time": 1830,
-      "entry_transition_time": null,
-      "exit_time": null,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "possible_visit",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "level_id": null,
-        "status": "unknown",
-        "visual_reason": "室内多个主题房间、谜题元素和过场连续切换；无明确目录匹配或进入/退出地图证据，身份保持unknown。"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "timeline_review",
-          "reason": "室内多个主题房间、谜题元素和过场连续切换；无明确目录匹配或进入/退出地图证据，身份保持unknown。"
-        }
-      ],
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p67-012",
-      "level_id": null,
-      "puzzle_start_time": 1860,
-      "puzzle_end_time": 1924.5,
-      "entry_transition_time": null,
-      "exit_time": null,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "possible_visit",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "level_id": null,
-        "status": "unknown",
-        "visual_reason": "回到室内房间后展示角色与出口附近布局；具体Level_Entry未确认。"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "timeline_review",
-          "reason": "回到室内房间后展示角色与出口附近布局；具体Level_Entry未确认。"
-        }
-      ],
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
     }
-  ]
+  ],
+  "superseded_events": [
+    {
+      "event": {
+        "event_id": "p67-009",
+        "level_id": null,
+        "puzzle_start_time": 1140,
+        "puzzle_end_time": 1270,
+        "entry_transition_time": null,
+        "exit_time": null,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "possible_visit",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "level_id": null,
+          "status": "unknown",
+          "visual_reason": "切离关卡展示后进入一处白蓝色实际游戏房间，有角色移动与交互；未找到可确认的本地Level_Entry静态参考，身份未知。"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "timeline_review",
+            "reason": "切离关卡展示后进入一处白蓝色实际游戏房间，有角色移动与交互；未找到可确认的本地Level_Entry静态参考，身份未知。"
+          }
+        ],
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p67-010",
+        "level_id": null,
+        "puzzle_start_time": 1285,
+        "puzzle_end_time": 1590,
+        "entry_transition_time": null,
+        "exit_time": null,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "possible_visit",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "level_id": null,
+          "status": "unknown",
+          "visual_reason": "出现READING LEVEL区域及后续多个不同样式的可玩房间/棋盘和滚动演示；虽能确认是关卡内容，但无法为各局部可靠匹配固定目录ID，合并记录未知段。"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "timeline_review",
+            "reason": "出现READING LEVEL区域及后续多个不同样式的可玩房间/棋盘和滚动演示；虽能确认是关卡内容，但无法为各局部可靠匹配固定目录ID，合并记录未知段。"
+          }
+        ],
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p67-011",
+        "level_id": null,
+        "puzzle_start_time": 1600,
+        "puzzle_end_time": 1830,
+        "entry_transition_time": null,
+        "exit_time": null,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "possible_visit",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "level_id": null,
+          "status": "unknown",
+          "visual_reason": "室内多个主题房间、谜题元素和过场连续切换；无明确目录匹配或进入/退出地图证据，身份保持unknown。"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "timeline_review",
+            "reason": "室内多个主题房间、谜题元素和过场连续切换；无明确目录匹配或进入/退出地图证据，身份保持unknown。"
+          }
+        ],
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p67-012",
+        "level_id": null,
+        "puzzle_start_time": 1860,
+        "puzzle_end_time": 1924.5,
+        "entry_transition_time": null,
+        "exit_time": null,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "possible_visit",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "level_id": null,
+          "status": "unknown",
+          "visual_reason": "回到室内房间后展示角色与出口附近布局；具体Level_Entry未确认。"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "timeline_review",
+            "reason": "回到室内房间后展示角色与出口附近布局；具体Level_Entry未确认。"
+          }
+        ],
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    }
+  ],
+  "excluded_segments": [
+    {
+      "segment_id": "world-p67-009",
+      "kind": "world",
+      "start": 1140,
+      "end": 1270,
+      "source_event_ids": [
+        "p67-009"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            18
+          ],
+          "reason": "用户确认19:00–21:10、21:25–26:30、26:40–30:30均未进关。"
+        }
+      ]
+    },
+    {
+      "segment_id": "world-p67-010",
+      "kind": "world",
+      "start": 1285,
+      "end": 1590,
+      "source_event_ids": [
+        "p67-010"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            18
+          ],
+          "reason": "用户确认19:00–21:10、21:25–26:30、26:40–30:30均未进关。"
+        }
+      ]
+    },
+    {
+      "segment_id": "world-p67-011",
+      "kind": "world",
+      "start": 1600,
+      "end": 1830,
+      "source_event_ids": [
+        "p67-011"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            18
+          ],
+          "reason": "用户确认19:00–21:10、21:25–26:30、26:40–30:30均未进关。"
+        }
+      ]
+    },
+    {
+      "segment_id": "world-p67-012",
+      "kind": "world",
+      "start": 1860,
+      "end": 1924,
+      "source_event_ids": [
+        "p67-012"
+      ],
+      "evidence": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            19
+          ],
+          "reason": "用户确认31:00–32:04为大世界，未进关。"
+        }
+      ]
+    }
+  ],
+  "revision_history": [
+    {
+      "previous_review_note": "已检查runs/p67全部13张全时间轴图册（0:00–32:05）及2张候选对照图。确认5种end3_pipeline固定目录布局；design与cleanup各自连续候选窗口按同一布局合并，cut、reorder、aesthetics保留为不同目录身份。约19分钟后进入多处实际游戏房间/READING LEVEL及内容展示，未能可靠匹配其静态目录身份，分段以null/unknown记录；没有仅凭连续滚屏拆成虚构入口。AESTHETICS/CLARITY大厅、标题菜单与讨论不计为进入。overworld入口未核，结果unknown。",
+      "source": "docs/校对.md",
+      "items": [
+        18,
+        19
+      ]
+    }
+  ],
+  "human_review": {
+    "source": "docs/校对.md",
+    "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+    "item_count": 19
+  }
 }

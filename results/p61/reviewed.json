@@ -7,7 +7,7 @@
   "title": "【结局3 P2】读懂关卡[北5西4]",
   "stage": 3,
   "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
-  "review_note": "已检查runs/p61全部20张全时间轴图册（约0:00–53:04）、全部6张候选对照图及4张recovery候选对照图，并对未匹配时间轴复核。确认10次目录关卡访问，按黑场/大厅离开与重新进入保留重复访问；合并英雄、镜像、跳跃关卡内仅滚屏/房间片段且无新入口的候选段。36:03左右大厅后进入一张独立褐灰色棋盘并持续游玩至42:32，静态目录未能认出，列为结构化unknown；P61末段READING LEVEL陈列厅的白蓝棋盘与IMPLEMENTING IDEAS展示画面是大厅陈列/讨论而无独立Level_Entry，不记作另一次入关。未能核验任何外部入口，不推断结果。",
+  "review_note": "已按用户docs/校对.md修订身份和连续区间。未切关的匹配窗合并为一次访问；明确未进关的大世界片段移入excluded_segments，不再列为未知关卡。原片段完整记录保存在superseded_events。具体依据见各事件human_review证据。",
   "events": [
     {
       "event_id": "p61-001",
@@ -686,18 +686,22 @@
     },
     {
       "event_id": "p61-031",
-      "level_id": null,
+      "level_id": "best_beam_colors",
       "puzzle_start_time": 2163.25,
       "puzzle_end_time": 2552.0,
       "entry_transition_time": 2162.625,
       "exit_time": 2552.0,
       "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "possible_visit",
+      "review_status": "confirmed",
+      "status": "visited",
       "outcome": "unknown",
       "timing_uncertainty_seconds": 0.5,
       "candidate_levels": [],
-      "puzzle_match": null,
+      "puzzle_match": {
+        "level_id": "best_beam_colors",
+        "status": "human_confirmed",
+        "method": "owner_identity_and_continuity_review"
+      },
       "overworld_match": {
         "status": "unverified"
       },
@@ -707,9 +711,33 @@
           "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\02165.000.jpg",
           "time": 2165.0,
           "reason": "在READING LEVEL大厅后出现独立的褐色/灰色棋盘：左侧土色块状区域、右侧蓝色幽灵/光束结构及多色方块，持续操作至再次黑场；不匹配当前本地目录静态参考，身份未知。"
+        },
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            11
+          ],
+          "reason": "用户确认36:03–42:32是原61·7左边的best_beam_colors。"
         }
       ],
-      "manual_corrections": []
+      "manual_corrections": [
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            11
+          ],
+          "reason": "用户确认36:03–42:32是原61·7左边的best_beam_colors。"
+        }
+      ],
+      "map_layer": "underworld",
+      "reviewer": "User continuity/identity review (docs/校对.md)",
+      "source_event_ids": [
+        "p61-031"
+      ]
     },
     {
       "event_id": "p61-030",
@@ -766,5 +794,52 @@
       "manual_corrections": [],
       "reviewer": "Luna visual comparison"
     }
-  ]
+  ],
+  "superseded_events": [
+    {
+      "event": {
+        "event_id": "p61-031",
+        "level_id": null,
+        "puzzle_start_time": 2163.25,
+        "puzzle_end_time": 2552.0,
+        "entry_transition_time": 2162.625,
+        "exit_time": 2552.0,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "possible_visit",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 0.5,
+        "candidate_levels": [],
+        "puzzle_match": null,
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "unmatched_layout",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\02165.000.jpg",
+            "time": 2165.0,
+            "reason": "在READING LEVEL大厅后出现独立的褐色/灰色棋盘：左侧土色块状区域、右侧蓝色幽灵/光束结构及多色方块，持续操作至再次黑场；不匹配当前本地目录静态参考，身份未知。"
+          }
+        ],
+        "manual_corrections": []
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    }
+  ],
+  "excluded_segments": [],
+  "revision_history": [
+    {
+      "previous_review_note": "已检查runs/p61全部20张全时间轴图册（约0:00–53:04）、全部6张候选对照图及4张recovery候选对照图，并对未匹配时间轴复核。确认10次目录关卡访问，按黑场/大厅离开与重新进入保留重复访问；合并英雄、镜像、跳跃关卡内仅滚屏/房间片段且无新入口的候选段。36:03左右大厅后进入一张独立褐灰色棋盘并持续游玩至42:32，静态目录未能认出，列为结构化unknown；P61末段READING LEVEL陈列厅的白蓝棋盘与IMPLEMENTING IDEAS展示画面是大厅陈列/讨论而无独立Level_Entry，不记作另一次入关。未能核验任何外部入口，不推断结果。",
+      "source": "docs/校对.md",
+      "items": [
+        11
+      ]
+    }
+  ],
+  "human_review": {
+    "source": "docs/校对.md",
+    "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+    "item_count": 19
+  }
 }

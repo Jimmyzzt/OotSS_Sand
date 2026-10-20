@@ -442,9 +442,9 @@
       "duration": 1824,
       "download_status": "complete",
       "reviewed": true,
-      "visits": 2,
-      "unmapped_count": 1,
-      "level_count": 2,
+      "visits": 3,
+      "unmapped_count": 0,
+      "level_count": 3,
       "display_part": 37
     },
     {
@@ -455,7 +455,7 @@
       "download_status": "complete",
       "reviewed": true,
       "visits": 2,
-      "unmapped_count": 2,
+      "unmapped_count": 0,
       "level_count": 2,
       "display_part": 38
     },
@@ -514,8 +514,8 @@
       "duration": 3941,
       "download_status": "complete",
       "reviewed": true,
-      "visits": 21,
-      "unmapped_count": 3,
+      "visits": 17,
+      "unmapped_count": 0,
       "level_count": 17,
       "display_part": 43
     },
@@ -598,8 +598,8 @@
       "duration": 1941,
       "download_status": "complete",
       "reviewed": true,
-      "visits": 11,
-      "unmapped_count": 14,
+      "visits": 2,
+      "unmapped_count": 0,
       "level_count": 2,
       "display_part": 50
     },
@@ -611,7 +611,7 @@
       "download_status": "complete",
       "reviewed": true,
       "visits": 13,
-      "unmapped_count": 4,
+      "unmapped_count": 0,
       "level_count": 12,
       "display_part": 51
     },
@@ -623,7 +623,7 @@
       "download_status": "complete",
       "reviewed": true,
       "visits": 7,
-      "unmapped_count": 2,
+      "unmapped_count": 0,
       "level_count": 7,
       "display_part": 52
     },
@@ -635,7 +635,7 @@
       "download_status": "complete",
       "reviewed": true,
       "visits": 12,
-      "unmapped_count": 4,
+      "unmapped_count": 0,
       "level_count": 11,
       "display_part": 53
     },
@@ -730,9 +730,9 @@
       "duration": 3184,
       "download_status": "complete",
       "reviewed": true,
-      "visits": 10,
-      "unmapped_count": 1,
-      "level_count": 7,
+      "visits": 11,
+      "unmapped_count": 0,
+      "level_count": 8,
       "display_part": 61
     },
     {
@@ -766,8 +766,8 @@
       "duration": 2425,
       "download_status": "complete",
       "reviewed": true,
-      "visits": 7,
-      "unmapped_count": 2,
+      "visits": 6,
+      "unmapped_count": 0,
       "level_count": 6,
       "display_part": 64
     },
@@ -778,8 +778,8 @@
       "duration": 2270,
       "download_status": "complete",
       "reviewed": true,
-      "visits": 8,
-      "unmapped_count": 9,
+      "visits": 5,
+      "unmapped_count": 0,
       "level_count": 5,
       "display_part": 65
     },
@@ -803,7 +803,7 @@
       "download_status": "complete",
       "reviewed": true,
       "visits": 5,
-      "unmapped_count": 4,
+      "unmapped_count": 0,
       "level_count": 5,
       "display_part": 67
     }
@@ -30295,6 +30295,56 @@
       ]
     },
     {
+      "level_id": "promesst2.5_deeper",
+      "area": "promesst3",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 59769397,
+          "coordinates": [
+            -3.0,
+            73.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#promesst2.5_deeper",
+      "visits": [
+        {
+          "part": 37,
+          "event_id": "p37-u01",
+          "start": 105.0,
+          "end": 1520.0,
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=37&t=105",
+          "reviewer": "User continuity/identity review (docs/校对.md)",
+          "context": null,
+          "audit_note": null,
+          "audit_anchor": null,
+          "uncertainty": 5,
+          "ordinal": 1,
+          "source_part": 37,
+          "display_part": 37
+        }
+      ],
+      "preview": "assets/previews/promesst2.5_deeper.webp",
+      "region_ids": [
+        "-4,0"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "光束发射器之库再开1"
+      ]
+    },
+    {
       "level_id": "half_tutorial",
       "area": "promesst3",
       "map_layer": "overworld",
@@ -30321,7 +30371,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 0.5,
-          "ordinal": 1,
+          "ordinal": 2,
           "source_part": 37,
           "display_part": 37
         }
@@ -30371,7 +30421,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 0.5,
-          "ordinal": 2,
+          "ordinal": 3,
           "source_part": 37,
           "display_part": 37
         }
@@ -30414,9 +30464,9 @@
           "part": 38,
           "event_id": "p38-001",
           "start": 14.25,
-          "end": 175.0,
+          "end": 2290,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=38&t=14",
-          "reviewer": null,
+          "reviewer": "User continuity/identity review (docs/校对.md)",
           "context": null,
           "audit_note": null,
           "audit_anchor": null,
@@ -30464,9 +30514,9 @@
           "part": 38,
           "event_id": "p38-003",
           "start": 2290.875,
-          "end": 2330.0,
+          "end": 2564,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=38&t=2290",
-          "reviewer": null,
+          "reviewer": "User continuity/identity review (docs/校对.md)",
           "context": null,
           "audit_note": null,
           "audit_anchor": null,
@@ -34414,24 +34464,9 @@
           "part": 43,
           "event_id": "p43-002",
           "start": 576.75,
-          "end": 833.875,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=576",
-          "reviewer": "Luna visual comparison",
-          "context": null,
-          "audit_note": null,
-          "audit_anchor": null,
-          "uncertainty": 5,
-          "ordinal": 2,
-          "source_part": 43,
-          "display_part": 43
-        },
-        {
-          "part": 43,
-          "event_id": "p43-006",
-          "start": 855.0,
           "end": 860.25,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=855",
-          "reviewer": "Luna visual comparison",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=576",
+          "reviewer": "User continuity/identity review (docs/校对.md)",
           "context": null,
           "audit_note": null,
           "audit_anchor": null,
@@ -34477,56 +34512,11 @@
       "visits": [
         {
           "part": 43,
-          "event_id": "p43-004",
-          "start": 845.0,
-          "end": 850.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=845",
-          "reviewer": "Luna visual comparison",
-          "context": null,
-          "audit_note": null,
-          "audit_anchor": null,
-          "uncertainty": 5,
-          "ordinal": 3,
-          "source_part": 43,
-          "display_part": 43
-        },
-        {
-          "part": 43,
           "event_id": "p43-007",
-          "start": 860.375,
-          "end": 875.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=860",
-          "reviewer": "Luna visual comparison",
-          "context": null,
-          "audit_note": null,
-          "audit_anchor": null,
-          "uncertainty": 5,
-          "ordinal": 3,
-          "source_part": 43,
-          "display_part": 43
-        },
-        {
-          "part": 43,
-          "event_id": "p43-008",
-          "start": 995.0,
-          "end": 1000.875,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=995",
-          "reviewer": "Luna visual comparison",
-          "context": null,
-          "audit_note": null,
-          "audit_anchor": null,
-          "uncertainty": 5,
-          "ordinal": 3,
-          "source_part": 43,
-          "display_part": 43
-        },
-        {
-          "part": 43,
-          "event_id": "p43-010",
-          "start": 1010.0,
-          "end": 1025.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=1010",
-          "reviewer": "Luna visual comparison",
+          "start": 861,
+          "end": 1025,
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=861",
+          "reviewer": "User continuity/identity review (docs/校对.md)",
           "context": null,
           "audit_note": null,
           "audit_anchor": null,
@@ -38793,148 +38783,13 @@
         {
           "part": 50,
           "event_id": "p50-001",
-          "start": 17.25,
-          "end": 65.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=17",
-          "reviewer": "Luna visual comparison",
+          "start": 0,
+          "end": 1785,
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=0",
+          "reviewer": "User continuity/identity review (docs/校对.md)",
           "context": null,
-          "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-          "audit_anchor": "repeat-magnitudes_v3",
-          "uncertainty": 1,
-          "ordinal": 1,
-          "source_part": 50,
-          "display_part": 50
-        },
-        {
-          "part": 50,
-          "event_id": "p50-002",
-          "start": 290,
-          "end": 310,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=290",
-          "reviewer": "Luna visual comparison",
-          "context": null,
-          "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-          "audit_anchor": "repeat-magnitudes_v3",
-          "uncertainty": 1,
-          "ordinal": 1,
-          "source_part": 50,
-          "display_part": 50
-        },
-        {
-          "part": 50,
-          "event_id": "p50-003",
-          "start": 455,
-          "end": 465,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=455",
-          "reviewer": "Luna visual comparison",
-          "context": null,
-          "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-          "audit_anchor": "repeat-magnitudes_v3",
-          "uncertainty": 1,
-          "ordinal": 1,
-          "source_part": 50,
-          "display_part": 50
-        },
-        {
-          "part": 50,
-          "event_id": "p50-004",
-          "start": 580,
-          "end": 590,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=580",
-          "reviewer": "Luna visual comparison",
-          "context": null,
-          "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-          "audit_anchor": "repeat-magnitudes_v3",
-          "uncertainty": 1,
-          "ordinal": 1,
-          "source_part": 50,
-          "display_part": 50
-        },
-        {
-          "part": 50,
-          "event_id": "p50-005",
-          "start": 725,
-          "end": 735,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=725",
-          "reviewer": "Luna visual comparison",
-          "context": null,
-          "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-          "audit_anchor": "repeat-magnitudes_v3",
-          "uncertainty": 1,
-          "ordinal": 1,
-          "source_part": 50,
-          "display_part": 50
-        },
-        {
-          "part": 50,
-          "event_id": "p50-006",
-          "start": 750,
-          "end": 765,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=750",
-          "reviewer": "Luna visual comparison",
-          "context": null,
-          "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-          "audit_anchor": "repeat-magnitudes_v3",
-          "uncertainty": 1,
-          "ordinal": 1,
-          "source_part": 50,
-          "display_part": 50
-        },
-        {
-          "part": 50,
-          "event_id": "p50-007",
-          "start": 865,
-          "end": 875,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=865",
-          "reviewer": "Luna visual comparison",
-          "context": null,
-          "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-          "audit_anchor": "repeat-magnitudes_v3",
-          "uncertainty": 1,
-          "ordinal": 1,
-          "source_part": 50,
-          "display_part": 50
-        },
-        {
-          "part": 50,
-          "event_id": "p50-008",
-          "start": 940,
-          "end": 950,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=940",
-          "reviewer": "Luna visual comparison",
-          "context": null,
-          "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-          "audit_anchor": "repeat-magnitudes_v3",
-          "uncertainty": 1,
-          "ordinal": 1,
-          "source_part": 50,
-          "display_part": 50
-        },
-        {
-          "part": 50,
-          "event_id": "p50-009",
-          "start": 1055,
-          "end": 1070,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1055",
-          "reviewer": "Luna visual comparison",
-          "context": null,
-          "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-          "audit_anchor": "repeat-magnitudes_v3",
-          "uncertainty": 1,
-          "ordinal": 1,
-          "source_part": 50,
-          "display_part": 50
-        },
-        {
-          "part": 50,
-          "event_id": "p50-010",
-          "start": 1105,
-          "end": 1145,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1105",
-          "reviewer": "Luna visual comparison",
-          "context": null,
-          "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-          "audit_anchor": "repeat-magnitudes_v3",
+          "audit_note": null,
+          "audit_anchor": null,
           "uncertainty": 1,
           "ordinal": 1,
           "source_part": 50,
@@ -39028,10 +38883,10 @@
         {
           "part": 51,
           "event_id": "p51-001",
-          "start": 25.5,
-          "end": 35.0,
+          "start": 25,
+          "end": 250,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=25",
-          "reviewer": "Luna visual comparison",
+          "reviewer": "User continuity/identity review (docs/校对.md)",
           "context": null,
           "audit_note": null,
           "audit_anchor": null,
@@ -40409,9 +40264,9 @@
           "part": 53,
           "event_id": "p53-013",
           "start": 1305.0,
-          "end": 1340.0,
+          "end": 1555,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=1305",
-          "reviewer": "Luna visual comparison",
+          "reviewer": "User continuity/identity review (docs/校对.md)",
           "context": null,
           "audit_note": null,
           "audit_anchor": null,
@@ -45445,6 +45300,56 @@
       ]
     },
     {
+      "level_id": "best_beam_colors",
+      "area": "endgame3",
+      "map_layer": "underworld",
+      "entries": [
+        {
+          "marker_id": 115521055,
+          "coordinates": [
+            2.0,
+            132.0,
+            -24.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#best_beam_colors",
+      "visits": [
+        {
+          "part": 61,
+          "event_id": "p61-031",
+          "start": 2163.25,
+          "end": 2552.0,
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=61&t=2163",
+          "reviewer": "User continuity/identity review (docs/校对.md)",
+          "context": null,
+          "audit_note": null,
+          "audit_anchor": null,
+          "uncertainty": 0.5,
+          "ordinal": 7,
+          "source_part": 61,
+          "display_part": 61
+        }
+      ],
+      "preview": "assets/previews/best_beam_colors.webp",
+      "region_ids": [
+        "-4,5"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "出口·低处1"
+      ]
+    },
+    {
       "level_id": "end3_promesst_red",
       "area": "endgame3",
       "map_layer": "underworld",
@@ -45471,7 +45376,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 5,
-          "ordinal": 7,
+          "ordinal": 8,
           "source_part": 61,
           "display_part": 61
         }
@@ -46264,24 +46169,9 @@
           "part": 64,
           "event_id": "p64-009",
           "start": 1726.625,
-          "end": 1764.75,
+          "end": 2080,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=1726",
-          "reviewer": "Luna visual comparison",
-          "context": null,
-          "audit_note": null,
-          "audit_anchor": null,
-          "uncertainty": 5,
-          "ordinal": 5,
-          "source_part": 64,
-          "display_part": 64
-        },
-        {
-          "part": 64,
-          "event_id": "p64-011",
-          "start": 1793.375,
-          "end": 1800.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=1793",
-          "reviewer": "Luna visual comparison",
+          "reviewer": "User continuity/identity review (docs/校对.md)",
           "context": null,
           "audit_note": null,
           "audit_anchor": null,
@@ -46379,9 +46269,9 @@
           "part": 65,
           "event_id": "p65-001",
           "start": 118.0,
-          "end": 154.625,
+          "end": 529,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=118",
-          "reviewer": "Luna visual comparison",
+          "reviewer": "User continuity/identity review (docs/校对.md)",
           "context": null,
           "audit_note": null,
           "audit_anchor": null,
@@ -46429,28 +46319,13 @@
           "part": 65,
           "event_id": "p65-002",
           "start": 532.125,
-          "end": 544.875,
+          "end": 748,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=532",
-          "reviewer": "Luna visual comparison",
+          "reviewer": "User continuity/identity review (docs/校对.md)",
           "context": null,
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 0.5,
-          "ordinal": 2,
-          "source_part": 65,
-          "display_part": 65
-        },
-        {
-          "part": 65,
-          "event_id": "p65-003",
-          "start": 653.125,
-          "end": 660.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=653",
-          "reviewer": "Luna visual comparison",
-          "context": null,
-          "audit_note": null,
-          "audit_anchor": null,
-          "uncertainty": 5,
           "ordinal": 2,
           "source_part": 65,
           "display_part": 65
@@ -46494,9 +46369,9 @@
           "part": 65,
           "event_id": "p65-004",
           "start": 748.25,
-          "end": 767.125,
+          "end": 1290,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=748",
-          "reviewer": "Luna visual comparison",
+          "reviewer": "User continuity/identity review (docs/校对.md)",
           "context": null,
           "audit_note": null,
           "audit_anchor": null,
@@ -46544,28 +46419,13 @@
           "part": 65,
           "event_id": "p65-005",
           "start": 1298.375,
-          "end": 1327.75,
+          "end": 1708,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1298",
-          "reviewer": "Luna visual comparison",
+          "reviewer": "User continuity/identity review (docs/校对.md)",
           "context": null,
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 0.5,
-          "ordinal": 4,
-          "source_part": 65,
-          "display_part": 65
-        },
-        {
-          "part": 65,
-          "event_id": "p65-006",
-          "start": 1505.75,
-          "end": 1515.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1505",
-          "reviewer": "Luna visual comparison",
-          "context": null,
-          "audit_note": null,
-          "audit_anchor": null,
-          "uncertainty": 5,
           "ordinal": 4,
           "source_part": 65,
           "display_part": 65
@@ -46608,29 +46468,14 @@
         {
           "part": 65,
           "event_id": "p65-007",
-          "start": 1708.875,
-          "end": 1721.125,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1708",
-          "reviewer": "Luna visual comparison",
+          "start": 1709,
+          "end": 2083,
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1709",
+          "reviewer": "User continuity/identity review (docs/校对.md)",
           "context": null,
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 0.5,
-          "ordinal": 5,
-          "source_part": 65,
-          "display_part": 65
-        },
-        {
-          "part": 65,
-          "event_id": "p65-008",
-          "start": 1875.625,
-          "end": 1885.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1875",
-          "reviewer": "Luna visual comparison",
-          "context": null,
-          "audit_note": null,
-          "audit_anchor": null,
-          "uncertainty": 5,
           "ordinal": 5,
           "source_part": 65,
           "display_part": 65
@@ -47072,60 +46917,6 @@
   ],
   "unknown_events": [
     {
-      "part": 37,
-      "event_id": "p37-u01",
-      "start": 105.0,
-      "end": 1520.0,
-      "review_status": "unknown",
-      "reason": "全时间轴00:00–01:40显示主世界外部地图/变形光束区域，不纳入谜题访问。约01:45开始进入由多个重复小棋盘拼接并持续卷屏的关卡内容，跨至约25:20才转入明确的 half_tutorial 独立棋盘；恢复抽查只有弱候选，无法确认前段拼接棋盘的Level_Entry身份及其内部边界，因此仅把01:45–25:20这段疑似连续棋盘探索列为unknown，未把前面的主世界地图包括进来。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=37&t=105"
-    },
-    {
-      "part": 38,
-      "event_id": "p38-u01",
-      "start": 175.1,
-      "end": 2290.0,
-      "review_status": "unknown",
-      "reason": "完整时间轴约2:55–38:10展示了大幅拼接的地下多室地图和多段彩色光束/房间变换，含若干不同房间静态布局；catalog_all与恢复抽查都未能可靠映射这些连续结构到单一Level_Entry，可能是连续探索的多个房间，也可能含不同关卡，边界和身份待人工细分，列unknown。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=38&t=175"
-    },
-    {
-      "part": 38,
-      "event_id": "p38-u02",
-      "start": 2330.1,
-      "end": 2564.7,
-      "review_status": "unknown",
-      "reason": "约38:50后出现黑暗洞穴中的多格浅色石室、绿光束及白色横梁，随后布局持续变化到视频末尾；与 gem_beam_placement 已确认的初始两格区域不同，但未找到可确认的对应目录条目，作为独立待核片段保留unknown。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=38&t=2330"
-    },
-    {
-      "part": 43,
-      "event_id": "p43-003",
-      "start": 834.125,
-      "end": 845.0,
-      "review_status": "conflict",
-      "reason": "The separate chamber shows two raised stone platforms divided by a central bridge, purple blocks clustered on the right and green endpoint at lower left, matching this reference. / 结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=834"
-    },
-    {
-      "part": 43,
-      "event_id": "p43-005",
-      "start": 850.0,
-      "end": 855.0,
-      "review_status": "conflict",
-      "reason": "The separate chamber shows two raised stone platforms divided by a central bridge, purple blocks clustered on the right and green endpoint at lower left, matching this reference. / 结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=850"
-    },
-    {
-      "part": 43,
-      "event_id": "p43-009",
-      "start": 1001.125,
-      "end": 1010.0,
-      "review_status": "conflict",
-      "reason": "The view returns to the two-platform hall with purple block clusters and central bridge; the tiled room layout matches the heroes1_5_v2 reference. / 结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=1001"
-    },
-    {
       "part": 44,
       "event_id": "p44-012",
       "start": 3100.0,
@@ -47142,366 +46933,6 @@
       "review_status": "unknown",
       "reason": "Full timeline sheets 20–23 show the square icy-stone chamber with a pink-block rectangular loop beginning at 53:55 (3235s). The same board remains continuously on screen through 61:50 (3710s), with pieces moved around the loop. At 61:55 it cuts back to the separate warm-colored room; that transition bounds this unknown visit.",
       "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=44&t=3235"
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u01",
-      "start": 70,
-      "end": 220,
-      "review_status": "unknown",
-      "reason": "A separate forest-side courtyard board: pale square paving with clustered small buildings/props, green foliage enclosing the top and sides, and colored round pieces. The board persists from about 1:10 to 3:40; no local catalog image could be confirmed visually.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=70"
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u02",
-      "start": 245,
-      "end": 285,
-      "review_status": "unknown",
-      "reason": "A sandy waterfront square with scattered stone/crate props, blue and cyan tiles and a vertical timber boundary at the right. This is a distinct board from the forest courtyard and the subsequent water-beam layout.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=245"
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u03",
-      "start": 315,
-      "end": 420,
-      "review_status": "unknown",
-      "reason": "A series of connected water-and-beam views: small sandy islands and stone piers linked by a long gold beam over tiled water, with successive camera/board shifts. The imagery is puzzle gameplay, but no single catalog layout could be confirmed, so retained as an unknown segment pending finer entry-boundary review.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=315"
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u04",
-      "start": 480,
-      "end": 555,
-      "review_status": "unknown",
-      "reason": "A broad rectangular flooded room with opposing pale platforms and a long gold beam spanning the water; its arrangement differs from the confirmed magnitudes board and remains unidentified.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=480"
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u05",
-      "start": 600,
-      "end": 715,
-      "review_status": "unknown",
-      "reason": "A pale stone courtyard with a long raised central strip, block props and beam interaction, followed by a separate green-edged courtyard view. At this resolution the identity and exact internal transition are unresolved; recorded as an unknown gameplay interval.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=600"
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u06",
-      "start": 780,
-      "end": 855,
-      "review_status": "unknown",
-      "reason": "A dark, narrow stone chamber with a vertical gold beam and small fixtures along the wall. The tiled room is distinct from the water arenas, but no full-catalog reference matched visually.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=780"
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u07",
-      "start": 900,
-      "end": 939.5,
-      "review_status": "unknown",
-      "reason": "From 15:00 to 15:39 the timeline shows overhead island-map navigation and small isolated island/beam-crossing views without a stable identifiable puzzle layout. This unresolved traversal interval ends at the cut into the confirmed magnitudes_v3 board.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=900"
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u07b",
-      "start": 950.5,
-      "end": 1045,
-      "review_status": "unknown",
-      "reason": "After the confirmed magnitudes_v3 visit ends at 15:50, the timeline returns to overhead island-map navigation and several small water/island board views through 17:25. These are independent unresolved traversal/puzzle views; the montage does not provide a stable reference match.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=950"
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u08",
-      "start": 1155,
-      "end": 1290,
-      "review_status": "unknown",
-      "reason": "Water-island gameplay with small tan platforms, a long horizontal gold beam and blue markers, then a transition to a larger green/tan courtyard around 21:45. The first island section lacks a confirmed catalog identity.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1155"
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u09",
-      "start": 1305,
-      "end": 1380,
-      "review_status": "unknown",
-      "reason": "A green-and-tan courtyard board with a raised wooden structure along the upper edge, scattered stone blocks and blue markers. Distinct from the preceding horizontal-beam island; unknown ID.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1305"
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u10",
-      "start": 1385,
-      "end": 1520,
-      "review_status": "unknown",
-      "reason": "A narrow waterway board centered on a tall stone post and crosswise gold beam, with a small blue-tiled landing and detached markers. Its stable layout remains through the 25:20 transition to a waterfall bridge.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1385"
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u11",
-      "start": 1525,
-      "end": 1605,
-      "review_status": "unknown",
-      "reason": "A bridge and waterfall board with a horizontal wooden crossing and central vertical beam above falling water. No catalog reference was visually conclusive.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1525"
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u12",
-      "start": 1610,
-      "end": 1710,
-      "review_status": "unknown",
-      "reason": "A shallow green courtyard enclosed by water, with an L-shaped sandy path and several large red/brown objects; distinct board, unknown identity.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1610"
-    },
-    {
-      "part": 50,
-      "event_id": "p50-u13",
-      "start": 1715,
-      "end": 1785,
-      "review_status": "unknown",
-      "reason": "A small isolated water island with a short gold beam and sparse objects, visibly different from the preceding L-shaped courtyard.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1715"
-    },
-    {
-      "part": 51,
-      "event_id": "p51-u01",
-      "start": 14.5,
-      "end": 24.5,
-      "review_status": "unknown",
-      "reason": "A brief purple-lit square room with a raised cyan-blue tiled enclosure, a white object at the left, and a separate pale platform below. It is an independent board immediately before the confirmed water/lily layout, but no local catalog entry was visually established.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=14"
-    },
-    {
-      "part": 51,
-      "event_id": "p51-u02",
-      "start": 35,
-      "end": 265,
-      "review_status": "unknown",
-      "reason": "Continuous sunset-water gameplay across a long connected lily/raft course: multiple separated stone piers, green pieces and narrow paths remain on a broad tiled-water field, with the camera travelling between sections. The full timeline shows changing board views without enough evidence to assign individual catalog IDs or precise interior entry boundaries; retained as unknown traversal.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=35"
-    },
-    {
-      "part": 51,
-      "event_id": "p51-u03",
-      "start": 960,
-      "end": 1015,
-      "review_status": "unknown",
-      "reason": "A distinct archipelago/water board sequence with several tiny stone-and-grass islands, blue-white blocks and detached landing tiles, intercut with a map view. The image is puzzle gameplay but not a confirmed reference match.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=960"
-    },
-    {
-      "part": 51,
-      "event_id": "p51-u04",
-      "start": 1490,
-      "end": 1520,
-      "review_status": "unknown",
-      "reason": "Final shown board after the 24:45 transition: a blue-purple area with scattered pale tiles, central pink mechanism/beam and small detached platforms. It is an independent puzzle view, identity unconfirmed.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=1490"
-    },
-    {
-      "part": 52,
-      "event_id": "p52-u01",
-      "start": 165,
-      "end": 210,
-      "review_status": "unknown",
-      "reason": "A separate blue-gray water chamber appears after the Gothic button room: pale stepping tiles and a large yellow square block sit on a small platform, with dark disconnected paths and a diagonal object. It persists briefly before the next confirmed four-platform room; no catalog reference was visually conclusive.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=52&t=165"
-    },
-    {
-      "part": 52,
-      "event_id": "p52-u02",
-      "start": 920,
-      "end": 945,
-      "review_status": "unknown",
-      "reason": "A broad blue cavern board with a bright pink horizontal frame/beam, separated cyan tiles and a long central path is shown from about 15:20–15:45. It differs from the later tiny detached island matched to reroute_3; no local reference was confirmed.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=52&t=920"
-    },
-    {
-      "part": 53,
-      "event_id": "p53-u01",
-      "start": 185,
-      "end": 202,
-      "review_status": "unknown",
-      "reason": "A tall blue-gray multilevel stone room with narrow bridges, paired tile platforms and small figures appears after the two weapon-wizard layouts and before dragonsweeper. This is an independent puzzle-like board, but no catalog reference was visually confirmed.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=185"
-    },
-    {
-      "part": 53,
-      "event_id": "p53-u02",
-      "start": 780,
-      "end": 800,
-      "review_status": "unknown",
-      "reason": "A blue stone city/courtyard view with a separate square mechanism and scattered tiles appears around 13:00–13:20, after the en_root_alt island board and before the confirmed button-and-beam room. Its identity is unresolved.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=780"
-    },
-    {
-      "part": 53,
-      "event_id": "p53-u03",
-      "start": 1345,
-      "end": 1555,
-      "review_status": "unknown",
-      "reason": "A broad overhead stone grid with a dark-blue border, repeated blue circular markers, fenced rectangular bays and colored pieces remains on screen from about 22:25 to 25:55. It is clearly a large puzzle board, but none of the full-catalog reference images was visually conclusive; retained as one unknown continuous visit.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=1345"
-    },
-    {
-      "part": 53,
-      "event_id": "p53-u04",
-      "start": 1695,
-      "end": 1730,
-      "review_status": "unknown",
-      "reason": "After the tan goblin courtyard, the video shows a separate watery tile field with a green island/growth cluster and pink blocks, before cutting to the confirmed rotating-cavalry arena. No catalog identity was confirmed.",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=1695"
-    },
-    {
-      "part": 61,
-      "event_id": "p61-031",
-      "start": 2163.25,
-      "end": 2552.0,
-      "review_status": "unknown",
-      "reason": "在READING LEVEL大厅后出现独立的褐色/灰色棋盘：左侧土色块状区域、右侧蓝色幽灵/光束结构及多色方块，持续操作至再次黑场；不匹配当前本地目录静态参考，身份未知。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=61&t=2163"
-    },
-    {
-      "part": 64,
-      "event_id": "p64-010",
-      "start": 1765.0,
-      "end": 1793.125,
-      "review_status": "conflict",
-      "reason": "视频与参考均呈由分离绿岛构成的水面关卡，上方两座独立岛、中间窄连岛和下方长岛/橙色圆点的轮廓吻合；与红框全景版同处连续场景段，身份仍按静态参考ID记录。 / 结局三地下关卡内部复用镜面棋盘；原匹配引用主世界mirror_1，相似布局不能证明返回主世界。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=1765"
-    },
-    {
-      "part": 64,
-      "event_id": "p64-012",
-      "start": 2061.75,
-      "end": 2080.0,
-      "review_status": "conflict",
-      "reason": " / 逐项对照固定参考的独特岛屿路径轮廓、颜色区域与出口/机关位置，均与当前视频画面吻合。 / 结局三地下关卡内部复用镜面棋盘；原匹配引用主世界mirror_1，相似布局不能证明返回主世界。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=2061"
-    },
-    {
-      "part": 65,
-      "event_id": "p65-009",
-      "start": 155,
-      "end": 420,
-      "review_status": "unknown",
-      "reason": "多连续棋盘/拼接房间构图的游戏画面，未找到可静态对应的Level_Entry；无法判断是开发演示关还是目录未匹配关。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=155"
-    },
-    {
-      "part": 65,
-      "event_id": "p65-010",
-      "start": 435,
-      "end": 530,
-      "review_status": "unknown",
-      "reason": "冰蓝色浮岛/房间连续滚屏，多个布局变化但无可证实固定目录身份。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=435"
-    },
-    {
-      "part": 65,
-      "event_id": "p65-011",
-      "start": 555,
-      "end": 652.0,
-      "review_status": "unknown",
-      "reason": "多色岛屿地图及横向关卡总览/过场混杂，个别真实棋盘可见但无法可靠绑定单一Level_Entry。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=555"
-    },
-    {
-      "part": 65,
-      "event_id": "p65-017",
-      "start": 660.0,
-      "end": 748.0,
-      "review_status": "unknown",
-      "reason": "天空色背景上的连续冰岛棋盘段，固定布局身份未能确认；与后续已确认目录画面分开记录。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=660"
-    },
-    {
-      "part": 65,
-      "event_id": "p65-012",
-      "start": 790,
-      "end": 1290,
-      "review_status": "unknown",
-      "reason": "天空色背景上的连续冰岛棋盘群和角色演示，固定布局身份未能确认。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=790"
-    },
-    {
-      "part": 65,
-      "event_id": "p65-013",
-      "start": 1330,
-      "end": 1500,
-      "review_status": "unknown",
-      "reason": "再次连续演示冰岛/拼接棋盘；目录静态参考未能匹配。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1330"
-    },
-    {
-      "part": 65,
-      "event_id": "p65-014",
-      "start": 1520,
-      "end": 1705,
-      "review_status": "unknown",
-      "reason": "粉/黄/绿棋盘连续展示，含机关变化，未证实固定Level_Entry。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1520"
-    },
-    {
-      "part": 65,
-      "event_id": "p65-015",
-      "start": 1725,
-      "end": 1870,
-      "review_status": "unknown",
-      "reason": "多块红绿粉色岛屿棋盘的滚动展示，静态身份不明。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1725"
-    },
-    {
-      "part": 65,
-      "event_id": "p65-016",
-      "start": 1888,
-      "end": 2070,
-      "review_status": "unknown",
-      "reason": "夜景连接房间/棋盘的连续演示；当前可见结构与候选参考不足以确认固定入口身份。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1888"
-    },
-    {
-      "part": 67,
-      "event_id": "p67-009",
-      "start": 1140,
-      "end": 1270,
-      "review_status": "unknown",
-      "reason": "切离关卡展示后进入一处白蓝色实际游戏房间，有角色移动与交互；未找到可确认的本地Level_Entry静态参考，身份未知。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=1140"
-    },
-    {
-      "part": 67,
-      "event_id": "p67-010",
-      "start": 1285,
-      "end": 1590,
-      "review_status": "unknown",
-      "reason": "出现READING LEVEL区域及后续多个不同样式的可玩房间/棋盘和滚动演示；虽能确认是关卡内容，但无法为各局部可靠匹配固定目录ID，合并记录未知段。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=1285"
-    },
-    {
-      "part": 67,
-      "event_id": "p67-011",
-      "start": 1600,
-      "end": 1830,
-      "review_status": "unknown",
-      "reason": "室内多个主题房间、谜题元素和过场连续切换；无明确目录匹配或进入/退出地图证据，身份保持unknown。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=1600"
-    },
-    {
-      "part": 67,
-      "event_id": "p67-012",
-      "start": 1860,
-      "end": 1924.5,
-      "review_status": "unknown",
-      "reason": "回到室内房间后展示角色与出口附近布局；具体Level_Entry未确认。",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=1860"
     }
   ],
   "excluded_parts": [
@@ -47510,10 +46941,8 @@
   "catalog_level_count": 920,
   "not_observed": [
     "arcadia_surprise_big",
-    "best_beam_colors",
     "design_fts",
     "end3_pipeline_setup",
-    "promesst2.5_deeper",
     "save_for_later",
     "snipperclips_diagonal",
     "snipperclips_square"
@@ -68933,6 +68362,56 @@
           ]
         },
         {
+          "level_id": "promesst2.5_deeper",
+          "area": "promesst3",
+          "map_layer": "overworld",
+          "entries": [
+            {
+              "marker_id": 59769397,
+              "coordinates": [
+                -3.0,
+                73.0,
+                0.0
+              ]
+            }
+          ],
+          "map_url": "https://joric.github.io/ootss/#promesst2.5_deeper",
+          "visits": [
+            {
+              "part": 37,
+              "event_id": "p37-u01",
+              "start": 105.0,
+              "end": 1520.0,
+              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=37&t=105",
+              "reviewer": "User continuity/identity review (docs/校对.md)",
+              "context": null,
+              "audit_note": null,
+              "audit_anchor": null,
+              "uncertainty": 5,
+              "ordinal": 1,
+              "source_part": 37,
+              "display_part": 37
+            }
+          ],
+          "preview": "assets/previews/promesst2.5_deeper.webp",
+          "region_ids": [
+            "-4,0"
+          ],
+          "manual": {},
+          "tags": {
+            "big_star": false,
+            "multi_save": false,
+            "notes": ""
+          },
+          "tag_source": {
+            "big_star": "Joric Level_Entry Hero mesh",
+            "multi_save": "manual only"
+          },
+          "region_titles": [
+            "光束发射器之库再开1"
+          ]
+        },
+        {
           "level_id": "half_tutorial",
           "area": "promesst3",
           "map_layer": "overworld",
@@ -68959,7 +68438,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 0.5,
-              "ordinal": 1,
+              "ordinal": 2,
               "source_part": 37,
               "display_part": 37
             }
@@ -69009,7 +68488,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 0.5,
-              "ordinal": 2,
+              "ordinal": 3,
               "source_part": 37,
               "display_part": 37
             }
@@ -69052,9 +68531,9 @@
               "part": 38,
               "event_id": "p38-001",
               "start": 14.25,
-              "end": 175.0,
+              "end": 2290,
               "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=38&t=14",
-              "reviewer": null,
+              "reviewer": "User continuity/identity review (docs/校对.md)",
               "context": null,
               "audit_note": null,
               "audit_anchor": null,
@@ -69102,9 +68581,9 @@
               "part": 38,
               "event_id": "p38-003",
               "start": 2290.875,
-              "end": 2330.0,
+              "end": 2564,
               "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=38&t=2290",
-              "reviewer": null,
+              "reviewer": "User continuity/identity review (docs/校对.md)",
               "context": null,
               "audit_note": null,
               "audit_anchor": null,
@@ -71586,14 +71065,14 @@
           "duration": 1824,
           "download_status": "complete",
           "reviewed": true,
-          "visits": 2,
-          "unmapped_count": 1,
-          "level_count": 2,
+          "visits": 3,
+          "unmapped_count": 0,
+          "level_count": 3,
           "display_part": 37,
           "route": [
             {
               "region_id": "-4,0",
-              "start": 1521.125,
+              "start": 105.0,
               "first_ordinal": 1
             }
           ]
@@ -71606,7 +71085,7 @@
           "download_status": "complete",
           "reviewed": true,
           "visits": 2,
-          "unmapped_count": 2,
+          "unmapped_count": 0,
           "level_count": 2,
           "display_part": 38,
           "route": [
@@ -74349,9 +73828,10 @@
           ],
           "first": [
             37,
-            1521.125
+            105.0
           ],
           "level_ids": [
+            "promesst2.5_deeper",
             "half_tutorial",
             "monkey_in_the_midpoint",
             "promesst3_streamlined",
@@ -84963,24 +84443,9 @@
               "part": 43,
               "event_id": "p43-002",
               "start": 576.75,
-              "end": 833.875,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=576",
-              "reviewer": "Luna visual comparison",
-              "context": null,
-              "audit_note": null,
-              "audit_anchor": null,
-              "uncertainty": 5,
-              "ordinal": 2,
-              "source_part": 43,
-              "display_part": 43
-            },
-            {
-              "part": 43,
-              "event_id": "p43-006",
-              "start": 855.0,
               "end": 860.25,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=855",
-              "reviewer": "Luna visual comparison",
+              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=576",
+              "reviewer": "User continuity/identity review (docs/校对.md)",
               "context": null,
               "audit_note": null,
               "audit_anchor": null,
@@ -85026,56 +84491,11 @@
           "visits": [
             {
               "part": 43,
-              "event_id": "p43-004",
-              "start": 845.0,
-              "end": 850.0,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=845",
-              "reviewer": "Luna visual comparison",
-              "context": null,
-              "audit_note": null,
-              "audit_anchor": null,
-              "uncertainty": 5,
-              "ordinal": 3,
-              "source_part": 43,
-              "display_part": 43
-            },
-            {
-              "part": 43,
               "event_id": "p43-007",
-              "start": 860.375,
-              "end": 875.0,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=860",
-              "reviewer": "Luna visual comparison",
-              "context": null,
-              "audit_note": null,
-              "audit_anchor": null,
-              "uncertainty": 5,
-              "ordinal": 3,
-              "source_part": 43,
-              "display_part": 43
-            },
-            {
-              "part": 43,
-              "event_id": "p43-008",
-              "start": 995.0,
-              "end": 1000.875,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=995",
-              "reviewer": "Luna visual comparison",
-              "context": null,
-              "audit_note": null,
-              "audit_anchor": null,
-              "uncertainty": 5,
-              "ordinal": 3,
-              "source_part": 43,
-              "display_part": 43
-            },
-            {
-              "part": 43,
-              "event_id": "p43-010",
-              "start": 1010.0,
-              "end": 1025.0,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=1010",
-              "reviewer": "Luna visual comparison",
+              "start": 861,
+              "end": 1025,
+              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=861",
+              "reviewer": "User continuity/identity review (docs/校对.md)",
               "context": null,
               "audit_note": null,
               "audit_anchor": null,
@@ -86780,8 +86200,8 @@
           "duration": 3941,
           "download_status": "complete",
           "reviewed": true,
-          "visits": 21,
-          "unmapped_count": 3,
+          "visits": 17,
+          "unmapped_count": 0,
           "level_count": 17,
           "display_part": 43,
           "route": [
@@ -91429,148 +90849,13 @@
             {
               "part": 50,
               "event_id": "p50-001",
-              "start": 17.25,
-              "end": 65.0,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=17",
-              "reviewer": "Luna visual comparison",
+              "start": 0,
+              "end": 1785,
+              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=0",
+              "reviewer": "User continuity/identity review (docs/校对.md)",
               "context": null,
-              "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-              "audit_anchor": "repeat-magnitudes_v3",
-              "uncertainty": 1,
-              "ordinal": 1,
-              "source_part": 50,
-              "display_part": 50
-            },
-            {
-              "part": 50,
-              "event_id": "p50-002",
-              "start": 290,
-              "end": 310,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=290",
-              "reviewer": "Luna visual comparison",
-              "context": null,
-              "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-              "audit_anchor": "repeat-magnitudes_v3",
-              "uncertainty": 1,
-              "ordinal": 1,
-              "source_part": 50,
-              "display_part": 50
-            },
-            {
-              "part": 50,
-              "event_id": "p50-003",
-              "start": 455,
-              "end": 465,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=455",
-              "reviewer": "Luna visual comparison",
-              "context": null,
-              "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-              "audit_anchor": "repeat-magnitudes_v3",
-              "uncertainty": 1,
-              "ordinal": 1,
-              "source_part": 50,
-              "display_part": 50
-            },
-            {
-              "part": 50,
-              "event_id": "p50-004",
-              "start": 580,
-              "end": 590,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=580",
-              "reviewer": "Luna visual comparison",
-              "context": null,
-              "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-              "audit_anchor": "repeat-magnitudes_v3",
-              "uncertainty": 1,
-              "ordinal": 1,
-              "source_part": 50,
-              "display_part": 50
-            },
-            {
-              "part": 50,
-              "event_id": "p50-005",
-              "start": 725,
-              "end": 735,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=725",
-              "reviewer": "Luna visual comparison",
-              "context": null,
-              "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-              "audit_anchor": "repeat-magnitudes_v3",
-              "uncertainty": 1,
-              "ordinal": 1,
-              "source_part": 50,
-              "display_part": 50
-            },
-            {
-              "part": 50,
-              "event_id": "p50-006",
-              "start": 750,
-              "end": 765,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=750",
-              "reviewer": "Luna visual comparison",
-              "context": null,
-              "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-              "audit_anchor": "repeat-magnitudes_v3",
-              "uncertainty": 1,
-              "ordinal": 1,
-              "source_part": 50,
-              "display_part": 50
-            },
-            {
-              "part": 50,
-              "event_id": "p50-007",
-              "start": 865,
-              "end": 875,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=865",
-              "reviewer": "Luna visual comparison",
-              "context": null,
-              "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-              "audit_anchor": "repeat-magnitudes_v3",
-              "uncertainty": 1,
-              "ordinal": 1,
-              "source_part": 50,
-              "display_part": 50
-            },
-            {
-              "part": 50,
-              "event_id": "p50-008",
-              "start": 940,
-              "end": 950,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=940",
-              "reviewer": "Luna visual comparison",
-              "context": null,
-              "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-              "audit_anchor": "repeat-magnitudes_v3",
-              "uncertainty": 1,
-              "ordinal": 1,
-              "source_part": 50,
-              "display_part": 50
-            },
-            {
-              "part": 50,
-              "event_id": "p50-009",
-              "start": 1055,
-              "end": 1070,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1055",
-              "reviewer": "Luna visual comparison",
-              "context": null,
-              "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-              "audit_anchor": "repeat-magnitudes_v3",
-              "uncertainty": 1,
-              "ordinal": 1,
-              "source_part": 50,
-              "display_part": 50
-            },
-            {
-              "part": 50,
-              "event_id": "p50-010",
-              "start": 1105,
-              "end": 1145,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1105",
-              "reviewer": "Luna visual comparison",
-              "context": null,
-              "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
-              "audit_anchor": "repeat-magnitudes_v3",
+              "audit_note": null,
+              "audit_anchor": null,
               "uncertainty": 1,
               "ordinal": 1,
               "source_part": 50,
@@ -91664,10 +90949,10 @@
             {
               "part": 51,
               "event_id": "p51-001",
-              "start": 25.5,
-              "end": 35.0,
+              "start": 25,
+              "end": 250,
               "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=25",
-              "reviewer": "Luna visual comparison",
+              "reviewer": "User continuity/identity review (docs/校对.md)",
               "context": null,
               "audit_note": null,
               "audit_anchor": null,
@@ -93045,9 +92330,9 @@
               "part": 53,
               "event_id": "p53-013",
               "start": 1305.0,
-              "end": 1340.0,
+              "end": 1555,
               "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=1305",
-              "reviewer": "Luna visual comparison",
+              "reviewer": "User continuity/identity review (docs/校对.md)",
               "context": null,
               "audit_note": null,
               "audit_anchor": null,
@@ -98081,6 +97366,56 @@
           ]
         },
         {
+          "level_id": "best_beam_colors",
+          "area": "endgame3",
+          "map_layer": "underworld",
+          "entries": [
+            {
+              "marker_id": 115521055,
+              "coordinates": [
+                2.0,
+                132.0,
+                -24.0
+              ]
+            }
+          ],
+          "map_url": "https://joric.github.io/ootss/#best_beam_colors",
+          "visits": [
+            {
+              "part": 61,
+              "event_id": "p61-031",
+              "start": 2163.25,
+              "end": 2552.0,
+              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=61&t=2163",
+              "reviewer": "User continuity/identity review (docs/校对.md)",
+              "context": null,
+              "audit_note": null,
+              "audit_anchor": null,
+              "uncertainty": 0.5,
+              "ordinal": 7,
+              "source_part": 61,
+              "display_part": 61
+            }
+          ],
+          "preview": "assets/previews/best_beam_colors.webp",
+          "region_ids": [
+            "-4,5"
+          ],
+          "manual": {},
+          "tags": {
+            "big_star": false,
+            "multi_save": false,
+            "notes": ""
+          },
+          "tag_source": {
+            "big_star": "Joric Level_Entry Hero mesh",
+            "multi_save": "manual only"
+          },
+          "region_titles": [
+            "出口·低处1"
+          ]
+        },
+        {
           "level_id": "end3_promesst_red",
           "area": "endgame3",
           "map_layer": "underworld",
@@ -98107,7 +97442,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 5,
-              "ordinal": 7,
+              "ordinal": 8,
               "source_part": 61,
               "display_part": 61
             }
@@ -98900,24 +98235,9 @@
               "part": 64,
               "event_id": "p64-009",
               "start": 1726.625,
-              "end": 1764.75,
+              "end": 2080,
               "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=1726",
-              "reviewer": "Luna visual comparison",
-              "context": null,
-              "audit_note": null,
-              "audit_anchor": null,
-              "uncertainty": 5,
-              "ordinal": 5,
-              "source_part": 64,
-              "display_part": 64
-            },
-            {
-              "part": 64,
-              "event_id": "p64-011",
-              "start": 1793.375,
-              "end": 1800.0,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=1793",
-              "reviewer": "Luna visual comparison",
+              "reviewer": "User continuity/identity review (docs/校对.md)",
               "context": null,
               "audit_note": null,
               "audit_anchor": null,
@@ -99015,9 +98335,9 @@
               "part": 65,
               "event_id": "p65-001",
               "start": 118.0,
-              "end": 154.625,
+              "end": 529,
               "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=118",
-              "reviewer": "Luna visual comparison",
+              "reviewer": "User continuity/identity review (docs/校对.md)",
               "context": null,
               "audit_note": null,
               "audit_anchor": null,
@@ -99065,28 +98385,13 @@
               "part": 65,
               "event_id": "p65-002",
               "start": 532.125,
-              "end": 544.875,
+              "end": 748,
               "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=532",
-              "reviewer": "Luna visual comparison",
+              "reviewer": "User continuity/identity review (docs/校对.md)",
               "context": null,
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 0.5,
-              "ordinal": 2,
-              "source_part": 65,
-              "display_part": 65
-            },
-            {
-              "part": 65,
-              "event_id": "p65-003",
-              "start": 653.125,
-              "end": 660.0,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=653",
-              "reviewer": "Luna visual comparison",
-              "context": null,
-              "audit_note": null,
-              "audit_anchor": null,
-              "uncertainty": 5,
               "ordinal": 2,
               "source_part": 65,
               "display_part": 65
@@ -99130,9 +98435,9 @@
               "part": 65,
               "event_id": "p65-004",
               "start": 748.25,
-              "end": 767.125,
+              "end": 1290,
               "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=748",
-              "reviewer": "Luna visual comparison",
+              "reviewer": "User continuity/identity review (docs/校对.md)",
               "context": null,
               "audit_note": null,
               "audit_anchor": null,
@@ -99180,28 +98485,13 @@
               "part": 65,
               "event_id": "p65-005",
               "start": 1298.375,
-              "end": 1327.75,
+              "end": 1708,
               "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1298",
-              "reviewer": "Luna visual comparison",
+              "reviewer": "User continuity/identity review (docs/校对.md)",
               "context": null,
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 0.5,
-              "ordinal": 4,
-              "source_part": 65,
-              "display_part": 65
-            },
-            {
-              "part": 65,
-              "event_id": "p65-006",
-              "start": 1505.75,
-              "end": 1515.0,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1505",
-              "reviewer": "Luna visual comparison",
-              "context": null,
-              "audit_note": null,
-              "audit_anchor": null,
-              "uncertainty": 5,
               "ordinal": 4,
               "source_part": 65,
               "display_part": 65
@@ -99244,29 +98534,14 @@
             {
               "part": 65,
               "event_id": "p65-007",
-              "start": 1708.875,
-              "end": 1721.125,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1708",
-              "reviewer": "Luna visual comparison",
+              "start": 1709,
+              "end": 2083,
+              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1709",
+              "reviewer": "User continuity/identity review (docs/校对.md)",
               "context": null,
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 0.5,
-              "ordinal": 5,
-              "source_part": 65,
-              "display_part": 65
-            },
-            {
-              "part": 65,
-              "event_id": "p65-008",
-              "start": 1875.625,
-              "end": 1885.0,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1875",
-              "reviewer": "Luna visual comparison",
-              "context": null,
-              "audit_note": null,
-              "audit_anchor": null,
-              "uncertainty": 5,
               "ordinal": 5,
               "source_part": 65,
               "display_part": 65
@@ -99914,14 +99189,14 @@
           "duration": 1941,
           "download_status": "complete",
           "reviewed": true,
-          "visits": 11,
-          "unmapped_count": 14,
+          "visits": 2,
+          "unmapped_count": 0,
           "level_count": 2,
           "display_part": 50,
           "route": [
             {
               "region_id": "4,3",
-              "start": 17.25,
+              "start": 0,
               "first_ordinal": 1
             },
             {
@@ -99939,13 +99214,13 @@
           "download_status": "complete",
           "reviewed": true,
           "visits": 13,
-          "unmapped_count": 4,
+          "unmapped_count": 0,
           "level_count": 12,
           "display_part": 51,
           "route": [
             {
               "region_id": "0,-1",
-              "start": 25.5,
+              "start": 25,
               "first_ordinal": 1
             },
             {
@@ -99988,7 +99263,7 @@
           "download_status": "complete",
           "reviewed": true,
           "visits": 7,
-          "unmapped_count": 2,
+          "unmapped_count": 0,
           "level_count": 7,
           "display_part": 52,
           "route": [
@@ -100022,7 +99297,7 @@
           "download_status": "complete",
           "reviewed": true,
           "visits": 12,
-          "unmapped_count": 4,
+          "unmapped_count": 0,
           "level_count": 11,
           "display_part": 53,
           "route": [
@@ -100299,9 +99574,9 @@
           "duration": 3184,
           "download_status": "complete",
           "reviewed": true,
-          "visits": 10,
-          "unmapped_count": 1,
-          "level_count": 7,
+          "visits": 11,
+          "unmapped_count": 0,
+          "level_count": 8,
           "display_part": 61,
           "route": [
             {
@@ -100356,8 +99631,8 @@
           "duration": 2425,
           "download_status": "complete",
           "reviewed": true,
-          "visits": 7,
-          "unmapped_count": 2,
+          "visits": 6,
+          "unmapped_count": 0,
           "level_count": 6,
           "display_part": 64,
           "route": [
@@ -100375,8 +99650,8 @@
           "duration": 2270,
           "download_status": "complete",
           "reviewed": true,
-          "visits": 8,
-          "unmapped_count": 9,
+          "visits": 5,
+          "unmapped_count": 0,
           "level_count": 5,
           "display_part": 65,
           "route": [
@@ -100414,7 +99689,7 @@
           "download_status": "complete",
           "reviewed": true,
           "visits": 5,
-          "unmapped_count": 4,
+          "unmapped_count": 0,
           "level_count": 5,
           "display_part": 67,
           "route": [
@@ -101137,7 +100412,7 @@
           ],
           "first": [
             50,
-            17.25
+            0
           ],
           "level_ids": [
             "magnitudes_v3"
@@ -101187,7 +100462,7 @@
           ],
           "first": [
             51,
-            25.5
+            25
           ],
           "level_ids": [
             "zach_lilies_v3"
@@ -102396,6 +101671,7 @@
             "end3_mirror_2_alt2",
             "end3_skipping_1",
             "end3_skipping_red",
+            "best_beam_colors",
             "end3_promesst_red"
           ],
           "order": 74,

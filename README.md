@@ -50,7 +50,7 @@ Windows 快捷入口（自动把临时目录放进项目，首次自动同步依
 
 机器检索只提供候选；没有视觉证据就写 unknown。进入前主世界的核验单独记录，不因候选坐标存在而声称验证成功。该工具不依赖字幕或付费模型；需要时由 Codex 读取局部图册补充判断。
 
-本地验证：`uv run pytest -q --basetemp runs/tests`、`uv run ruff check ootss tests scripts`。19项Python测试、8项Worker/前端Node测试通过；实现取舍、真实计时及质量限制见 [实施记录](docs/implementation_notes.md)。
+本地验证：`uv run pytest -q --basetemp runs/tests`、`uv run ruff check ootss tests scripts`。22项Python测试、8项Worker/前端Node测试通过；实现取舍、真实计时及质量限制见 [实施记录](docs/implementation_notes.md)。
 
 
 区域视图沿用原地图19×13网格，三地图分别维护区域；原一阶段快照涉及85个区域。选定分P后，右栏显示该P的关卡序号和开始时间；同一关重复访问沿用首次编号。点击区域放大，地图左下显示区域名。P5的镜之群岛1–6与参考图一致。演示模式隐藏顶栏，用左右箭头沿区域路线前进，Esc退出，适合录制阶段索引。

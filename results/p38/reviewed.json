@@ -7,15 +7,15 @@
   "title": "【西&西北·补】光束发射器之库再开+水晶与白光[西4补2题]",
   "stage": 2,
   "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
-  "review_note": "已逐张检查 runs/p38 的17张全时间轴联系表（00–16）、candidates_00和recovery_00。promesst3_streamlined的两个机器片段在同一连续洞穴走廊及邻接小室内反复回到同一窄竖向台，故合为一次，不把内部房间/镜头当多个入口。gem_beam_placement在38:15与参考静态构型对应。其余约2:55–38:10的多室拼接地下地图及38:50–结尾的黑暗多格石室没有可靠Level_Entry匹配，保留两个unknown区间供复查；recover对0–42:44全片有103个有界抽查，5个强帧均回到上述已确认布局，未能消除unknown。地图入口与结果均不猜。",
+  "review_note": "已按用户docs/校对.md修订身份和连续区间。未切关的匹配窗合并为一次访问；明确未进关的大世界片段移入excluded_segments，不再列为未知关卡。原片段完整记录保存在superseded_events。具体依据见各事件human_review证据。",
   "events": [
     {
       "event_id": "p38-001",
       "level_id": "promesst3_streamlined",
       "puzzle_start_time": 14.25,
-      "puzzle_end_time": 175.0,
+      "puzzle_end_time": 2290,
       "entry_transition_time": 13.75,
-      "exit_time": null,
+      "exit_time": 2290,
       "overworld_approach_time": null,
       "review_status": "confirmed",
       "status": "visited",
@@ -65,13 +65,8 @@
       ],
       "puzzle_match": {
         "level_id": "promesst3_streamlined",
-        "area": "promesst3",
-        "phash_distance": 12,
-        "hist_distance": 1.2767,
-        "sift_inliers": 49,
-        "sift_good": 50,
-        "consistent_samples": 19,
-        "status": "visually_confirmed"
+        "status": "human_confirmed",
+        "method": "owner_identity_and_continuity_review"
       },
       "overworld_match": {
         "status": "unverified"
@@ -86,20 +81,44 @@
           "last_sample": 105.0,
           "sample_count": 19,
           "reason": "视频约0:30–2:55的窄竖向粉石地台，左下蓝色圆球、中央铁栅笼、右侧紫绿方形机关与 promesst3_streamlined 参考中的初始构型一致；镜头沿相连的洞穴走廊移至邻接房间，约2:45回到同一竖向台面，因此相邻候选片段合并为一次连续访问。"
+        },
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            2
+          ],
+          "reason": "后续长段仍在同一关卡，无切关。"
         }
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
       "manual_corrections": [
-        "Merged adjacent fragments p38-001/p38-002: same promesst3 board with continuous walkthrough through adjacent cave rooms; no distinct new entry transition."
+        "Merged adjacent fragments p38-001/p38-002: same promesst3 board with continuous walkthrough through adjacent cave rooms; no distinct new entry transition.",
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            2
+          ],
+          "reason": "后续长段仍在同一关卡，无切关。"
+        }
+      ],
+      "map_layer": "overworld",
+      "reviewer": "User continuity/identity review (docs/校对.md)",
+      "source_event_ids": [
+        "p38-001",
+        "p38-u01"
       ]
     },
     {
       "event_id": "p38-003",
       "level_id": "gem_beam_placement",
       "puzzle_start_time": 2290.875,
-      "puzzle_end_time": 2330.0,
+      "puzzle_end_time": 2564,
       "entry_transition_time": 2290.375,
-      "exit_time": null,
+      "exit_time": 2564,
       "overworld_approach_time": null,
       "review_status": "confirmed",
       "status": "visited",
@@ -149,13 +168,8 @@
       ],
       "puzzle_match": {
         "level_id": "gem_beam_placement",
-        "area": "beams_and_basic_heroes",
-        "phash_distance": 8,
-        "hist_distance": 0.8624,
-        "sift_inliers": 71,
-        "sift_good": 76,
-        "consistent_samples": 5,
-        "status": "visually_confirmed"
+        "status": "human_confirmed",
+        "method": "owner_identity_and_continuity_review"
       },
       "overworld_match": {
         "status": "unverified"
@@ -170,74 +184,295 @@
           "last_sample": 2325.0,
           "sample_count": 5,
           "reason": "视频约38:15进入阴暗石室，左下浅蓝方形平台上有绿色斜角机关，中央两块方形棋盘间隔墙体，蓝色球与红衣角色在下方平台；与 gem_beam_placement 参考布局一致。"
+        },
+        {
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            3
+          ],
+          "reason": "后续长段仍在38:10开始的同一关卡。"
         }
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
-      "manual_corrections": []
-    },
-    {
-      "event_id": "p38-u01",
-      "level_id": null,
-      "puzzle_start_time": 175.1,
-      "puzzle_end_time": 2290.0,
-      "entry_transition_time": null,
-      "exit_time": null,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
+      "manual_corrections": [
         {
-          "type": "visual_layout_comparison",
-          "image": "runs/p38/sheet_01.jpg",
-          "time": 180.0,
-          "reference": null,
-          "reason": "完整时间轴约2:55–38:10展示了大幅拼接的地下多室地图和多段彩色光束/房间变换，含若干不同房间静态布局；catalog_all与恢复抽查都未能可靠映射这些连续结构到单一Level_Entry，可能是连续探索的多个房间，也可能含不同关卡，边界和身份待人工细分，列unknown。"
+          "type": "human_review",
+          "source": "docs/校对.md",
+          "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+          "items": [
+            3
+          ],
+          "reason": "后续长段仍在38:10开始的同一关卡。"
         }
       ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
-      "event_id": "p38-u02",
-      "level_id": null,
-      "puzzle_start_time": 2330.1,
-      "puzzle_end_time": 2564.7,
-      "entry_transition_time": null,
-      "exit_time": null,
-      "overworld_approach_time": null,
-      "review_status": "unknown",
-      "status": "unknown",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [],
-      "puzzle_match": {
-        "status": "unknown"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "runs/p38/sheet_15.jpg",
-          "time": 2335.0,
-          "reference": null,
-          "reason": "约38:50后出现黑暗洞穴中的多格浅色石室、绿光束及白色横梁，随后布局持续变化到视频末尾；与 gem_beam_placement 已确认的初始两格区域不同，但未找到可确认的对应目录条目，作为独立待核片段保留unknown。"
-        }
-      ],
-      "evidence_gallery": null,
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "map_layer": "overworld",
+      "reviewer": "User continuity/identity review (docs/校对.md)",
+      "source_event_ids": [
+        "p38-003",
+        "p38-u02"
+      ]
     }
-  ]
+  ],
+  "superseded_events": [
+    {
+      "event": {
+        "event_id": "p38-001",
+        "level_id": "promesst3_streamlined",
+        "puzzle_start_time": 14.25,
+        "puzzle_end_time": 175.0,
+        "entry_transition_time": 13.75,
+        "exit_time": null,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [
+          {
+            "level_id": "promesst3_streamlined",
+            "area": "promesst3",
+            "phash_distance": 12,
+            "hist_distance": 1.2767,
+            "sift_inliers": 49,
+            "sift_good": 50
+          },
+          {
+            "level_id": "torc_blocked",
+            "area": "beaming_objects",
+            "phash_distance": 16,
+            "hist_distance": 1.399,
+            "sift_inliers": 0,
+            "sift_good": 3
+          },
+          {
+            "level_id": "cliff_hopping",
+            "area": "mirrors_in_3d",
+            "phash_distance": 16,
+            "hist_distance": 1.4101,
+            "sift_inliers": 0,
+            "sift_good": 1
+          },
+          {
+            "level_id": "falloff_kill_goblins_v6",
+            "area": "heroes_in_3d",
+            "phash_distance": 18,
+            "hist_distance": 1.3529,
+            "sift_inliers": 0,
+            "sift_good": 3
+          },
+          {
+            "level_id": "make_a_right",
+            "area": "mirrors_in_3d",
+            "phash_distance": 18,
+            "hist_distance": 1.3826,
+            "sift_inliers": 0,
+            "sift_good": 4
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "promesst3_streamlined",
+          "area": "promesst3",
+          "phash_distance": 12,
+          "hist_distance": 1.2767,
+          "sift_inliers": 49,
+          "sift_good": 50,
+          "consistent_samples": 19,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "candidate_layout",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p38\\samples\\00040.000.jpg",
+            "time": 40.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\promesst3_streamlined.webp",
+            "first_sample": 15.0,
+            "last_sample": 105.0,
+            "sample_count": 19,
+            "reason": "视频约0:30–2:55的窄竖向粉石地台，左下蓝色圆球、中央铁栅笼、右侧紫绿方形机关与 promesst3_streamlined 参考中的初始构型一致；镜头沿相连的洞穴走廊移至邻接房间，约2:45回到同一竖向台面，因此相邻候选片段合并为一次连续访问。"
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_00.jpg",
+        "manual_corrections": [
+          "Merged adjacent fragments p38-001/p38-002: same promesst3 board with continuous walkthrough through adjacent cave rooms; no distinct new entry transition."
+        ]
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p38-003",
+        "level_id": "gem_beam_placement",
+        "puzzle_start_time": 2290.875,
+        "puzzle_end_time": 2330.0,
+        "entry_transition_time": 2290.375,
+        "exit_time": null,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [
+          {
+            "level_id": "gem_beam_placement",
+            "area": "beams_and_basic_heroes",
+            "phash_distance": 8,
+            "hist_distance": 0.8624,
+            "sift_inliers": 71,
+            "sift_good": 76
+          },
+          {
+            "level_id": "mirror_motion",
+            "area": "mirrors_and_stones",
+            "phash_distance": 18,
+            "hist_distance": 1.3782,
+            "sift_inliers": 0,
+            "sift_good": 2
+          },
+          {
+            "level_id": "fall_reset_v2",
+            "area": "spawners",
+            "phash_distance": 18,
+            "hist_distance": 1.4123,
+            "sift_inliers": 0,
+            "sift_good": 2
+          },
+          {
+            "level_id": "make_oneway",
+            "area": "endgame3",
+            "phash_distance": 20,
+            "hist_distance": 1.3085,
+            "sift_inliers": 0,
+            "sift_good": 2
+          },
+          {
+            "level_id": "gem_slot_on_lily",
+            "area": "flat_things",
+            "phash_distance": 20,
+            "hist_distance": 1.336,
+            "sift_inliers": 0,
+            "sift_good": 5
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "gem_beam_placement",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 8,
+          "hist_distance": 0.8624,
+          "sift_inliers": 71,
+          "sift_good": 76,
+          "consistent_samples": 5,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "candidate_layout",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p38\\samples\\02295.000.jpg",
+            "time": 2295.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\gem_beam_placement.webp",
+            "first_sample": 2295.0,
+            "last_sample": 2325.0,
+            "sample_count": 5,
+            "reason": "视频约38:15进入阴暗石室，左下浅蓝方形平台上有绿色斜角机关，中央两块方形棋盘间隔墙体，蓝色球与红衣角色在下方平台；与 gem_beam_placement 参考布局一致。"
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_00.jpg",
+        "manual_corrections": []
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p38-u01",
+        "level_id": null,
+        "puzzle_start_time": 175.1,
+        "puzzle_end_time": 2290.0,
+        "entry_transition_time": null,
+        "exit_time": null,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p38/sheet_01.jpg",
+            "time": 180.0,
+            "reference": null,
+            "reason": "完整时间轴约2:55–38:10展示了大幅拼接的地下多室地图和多段彩色光束/房间变换，含若干不同房间静态布局；catalog_all与恢复抽查都未能可靠映射这些连续结构到单一Level_Entry，可能是连续探索的多个房间，也可能含不同关卡，边界和身份待人工细分，列unknown。"
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p38-u02",
+        "level_id": null,
+        "puzzle_start_time": 2330.1,
+        "puzzle_end_time": 2564.7,
+        "entry_transition_time": null,
+        "exit_time": null,
+        "overworld_approach_time": null,
+        "review_status": "unknown",
+        "status": "unknown",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [],
+        "puzzle_match": {
+          "status": "unknown"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "runs/p38/sheet_15.jpg",
+            "time": 2335.0,
+            "reference": null,
+            "reason": "约38:50后出现黑暗洞穴中的多格浅色石室、绿光束及白色横梁，随后布局持续变化到视频末尾；与 gem_beam_placement 已确认的初始两格区域不同，但未找到可确认的对应目录条目，作为独立待核片段保留unknown。"
+          }
+        ],
+        "evidence_gallery": null,
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    }
+  ],
+  "excluded_segments": [],
+  "revision_history": [
+    {
+      "previous_review_note": "已逐张检查 runs/p38 的17张全时间轴联系表（00–16）、candidates_00和recovery_00。promesst3_streamlined的两个机器片段在同一连续洞穴走廊及邻接小室内反复回到同一窄竖向台，故合为一次，不把内部房间/镜头当多个入口。gem_beam_placement在38:15与参考静态构型对应。其余约2:55–38:10的多室拼接地下地图及38:50–结尾的黑暗多格石室没有可靠Level_Entry匹配，保留两个unknown区间供复查；recover对0–42:44全片有103个有界抽查，5个强帧均回到上述已确认布局，未能消除unknown。地图入口与结果均不猜。",
+      "source": "docs/校对.md",
+      "items": [
+        2,
+        3
+      ]
+    }
+  ],
+  "human_review": {
+    "source": "docs/校对.md",
+    "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
+    "item_count": 19
+  }
 }

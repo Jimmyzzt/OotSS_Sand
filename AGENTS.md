@@ -15,3 +15,5 @@ Do not build a general automatic recognition platform, server, or review app.
 - Run pytest and ruff for meaningful code changes. Commit runnable milestones locally. Never change unrelated repositories or remotes.
 
 - Entry identity must agree with initial character roles and physical-world approach, not only reused terrain. Finale internal boards can copy early-world layouts. Never count sparse reference windows as separate entrances without entry/exit evidence; keep an audit note when continuity is uncertain. Rebuild the manual difference list with scripts/audit_differences.py after identity edits.
+
+- The owner’s continuity notes in docs/校对.md supersede weak per-frame matches. The applied plan is data/human_corrections.json. Do not split its long confirmed visits on internal room/overview changes; excluded world segments are not unknown levels. Keep superseded source events for traceability.

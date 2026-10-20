@@ -34,10 +34,17 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
         return video_url(target.get("bvid", bvid), target.get("part", part), start)
 
     groups, missing_identity, observed = defaultdict(list), [], set()
+    world_segments, human_visits = [], []
+    human_metadata = decisions.get("human_review")
     confirmed_count = 0
     for part in range(1, 68):
         review = read_json(f"results/p{part}/reviewed.json")
         validate(review, catalog)
+        for segment in review.get("excluded_segments", []):
+            if segment.get("kind") == "world":
+                world_segments.append(
+                    {**segment, "part": part, "url": url(part, segment["start"])}
+                )
         for e in sorted(review["events"], key=lambda x: x["puzzle_start_time"]):
             row = {
                 "part": part,
@@ -53,6 +60,8 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
                 observed.add(e["level_id"])
                 groups[e["level_id"]].append(row)
                 confirmed_count += 1
+                if review.get("human_review") and e.get("source_event_ids"):
+                    human_visits.append(row)
             else:
                 reasons = [
                     item.get("reason", "")
@@ -127,11 +136,15 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
             "unlocated_segments": len(missing_identity),
             "absent_catalog_entries": len(absent),
             "repeated_identity_groups": len(repeated),
+            "world_segments_excluded": len(world_segments),
         },
         "decisions": fixes,
         "repeated_identities": repeated,
         "unlocated_segments": missing_identity,
         "absent_catalog_entries": absent,
+        "human_review": human_metadata,
+        "human_confirmed_visits": human_visits,
+        "excluded_world_segments": world_segments,
     }
     write_json(source / "differences.json", result)
     write_json(out / "audit.json", result)
@@ -167,7 +180,11 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
         action = (
             f"已改为 {d['level_id']}"
             if d["action"] == "corrected"
-            else "已撤销错误坐标；归属待人工核对"
+            else (
+                f"用户确认未切关；已并入 {d['level_id']}"
+                if d["action"] == "merged_after_human_review"
+                else "已撤销错误坐标；归属待人工核对"
+            )
         )
         candidates = "、".join(d["candidates"])
         fix_rows.append(
@@ -240,14 +257,35 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
             ]
         )
 
+    human_rows = [
+        [times(e), esc(e["level_id"]), "身份或连续区间已按用户确认更新"]
+        for e in human_visits
+    ]
+    world_rows = [
+        [times(e), "大世界；不计关卡", esc(e["evidence"][0]["reason"])]
+        for e in world_segments
+    ]
+    owner_section = (
+        (
+            f'<section id="human"><h2>用户校对已应用 · {human_metadata["item_count"]} 条</h2>'
+            '<p>依据 <a href="https://github.com/Jimmyzzt/OotSS_Sand/blob/master/docs/校对.md" target="_blank" rel="noopener">用户校对原文</a>，内部切换并回同一次访问；明确未进关的片段移出未知关卡清单。旧事件及证据保存在审核文件的superseded_events。</p>'
+            + table(["当前连续区间", "入口ID", "处理"], human_rows)
+            + "<details><summary>查看已排除的大世界片段</summary>"
+            + table(["视频区间", "分类", "依据"], world_rows)
+            + "</details></section>"
+        )
+        if human_metadata
+        else ""
+    )
     intro = (
         f"目录 {len(by_id)} 个入口；当前已映射 {len(observed)} 个，差集 {len(absent)} 个；"
         f"{len(missing_identity)} 段尚未定位，{len(repeated)} 组重复ID待核。P68已排除。"
     )
-    body = f"""<header><a href="index.html">← 返回地图</a><h1>入口差异与人工校对清单</h1><p>{intro}</p><p>“未定位”不等于“原地图不存在”；“目录未出现”不等于“视频一定没拍到”。重复ID也不直接等于重复关卡。这里只纠正有位置、角色或物理世界证据的错配，其他保留待核。</p><nav><a href="#fixes">本轮纠正</a> · <a href="#repeats">重复ID</a> · <a href="#unlocated">未定位片段</a> · <a href="#absent">目录差集</a> · <a href="audit.csv">下载CSV</a> · <a href="audit.json">JSON</a></nav></header>
+    body = f"""<header><a href="index.html">← 返回地图</a><h1>入口差异与人工校对清单</h1><p>{intro}</p><p>“未定位”不等于“原地图不存在”；“目录未出现”不等于“视频一定没拍到”。重复ID也不直接等于重复关卡。这里只纠正有位置、角色、物理世界或用户确认依据的错配，其他保留待核。</p><nav><a href="#human">用户校对</a> · <a href="#fixes">历史纠正</a> · <a href="#repeats">重复ID</a> · <a href="#unlocated">未定位片段</a> · <a href="#absent">目录差集</a> · <a href="audit.csv">下载CSV</a> · <a href="audit.json">JSON</a></nav></header>
+{owner_section}
 <section id="fixes"><h2>本轮纠正与撤销</h2>{table(["视频 / 原编号", "旧匹配", "处理", "证据与待核点"], fix_rows)}</section>
-<section id="repeats"><h2>重复ID：先核前四组，再检查其余组</h2><p>前四组已做有界视觉复核，其他组属于全量规则筛查。每段时间都是一个观察窗，不能直接当作一次独立进入。长关内部切换应核对整个进入到退出过程。</p>{table(["入口ID", "全部时间窗", "疑点与核对方法"], repeat_rows)}</section>
-<section id="unlocated"><h2>视频中暂未能对应原图的片段</h2><p>包含原有未知段和本轮撤销的跨世界错配。可能是内部房间、目录缺失、版本变体或检索遗漏，现阶段不能宣布原图没有这些关。</p>{table(["视频", "旧ID（如有）", "原因"], unknown_rows)}</section>
+<section id="repeats"><h2>其余重复ID待核</h2><p>用户已确认未切关的片段不再列为重复记录。其余组仍保留，优先检查带具体疑点的组；重复可能为正常重试或回访，不应仅由布局变化判定进出关卡。</p>{table(["入口ID", "全部时间窗", "疑点与核对方法"], repeat_rows)}</section>
+<section id="unlocated"><h2>剩余未定位片段</h2><p>已归入原关卡和明确在大世界的片段已移出此表。剩余片段仍需定位，不能据此宣布原图没有这些关。</p>{table(["视频", "旧ID（如有）", "原因"], unknown_rows)}</section>
 <section id="absent"><h2>原图有、当前尚无可靠记录的入口</h2><p>下面的就近视频仅按同一地图的空间距离排列，方便找进关前的位置；不是该关出现的证据，也没有据此自动填入地图。</p>{table(["原地图入口 / 坐标", "参考布局", "就近已知入口的视频（仅导航线索）"], absent_rows)}</section>
 <footer>固定原地图提交：{esc(catalog["commit"])}。本轮有界复核：P02、P05、P24、P43/P44、P50、P64；P61/P65/P67补做跨世界筛查。完整系列仅做目录差集与重复规则检查，未声称逐帧重审全部视频。数据与截图为公开攻略/原图的核对证据。</footer>"""
     css = """*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f5efdf;color:#303c38;font:14px/1.6 system-ui,"Microsoft YaHei",sans-serif}header,section,footer{max-width:1280px;margin:auto;padding:18px 24px}header{padding-top:26px}h1{font-size:25px}h2{font-size:19px;margin-top:10px}p{max-width:1000px;color:#657067}a{color:#366956}nav a{display:inline-block;margin:3px 0}section{scroll-margin-top:12px}small{display:block;color:#69756b;font-size:11px}table{border-collapse:collapse;width:100%;background:#fbf7ec}th,td{text-align:left;vertical-align:top;padding:10px 12px;border:1px solid #d6cfbd;overflow-wrap:anywhere}th{background:#e5ecdf;white-space:nowrap}td:first-child{min-width:180px}td:nth-child(2){min-width:170px}img{max-width:100%;border-radius:4px}.table-scroll{overflow-x:auto}footer{font-size:12px;color:#69756b}span[id]{scroll-margin-top:20px}@media(max-width:760px){header,section,footer{padding:12px}h1{font-size:21px}table{font-size:12px}th,td{padding:7px}}"""
@@ -261,6 +299,31 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
     (out / "audit.html").write_text(page, encoding="utf-8")
 
     csv_rows = []
+    for e in human_visits:
+        csv_rows.append(
+            {
+                "type": "用户已确认连续访问",
+                "id": e["event_id"],
+                "part": e["part"],
+                "start": e["start"],
+                "end": e["end"],
+                "level_id": e["level_id"],
+                "reason": "用户校对已应用，片段合并",
+                "url": e["url"],
+            }
+        )
+    for e in world_segments:
+        csv_rows.append(
+            {
+                "type": "大世界（已排除）",
+                "id": e["segment_id"],
+                "part": e["part"],
+                "start": e["start"],
+                "end": e["end"],
+                "reason": e["evidence"][0]["reason"],
+                "url": e["url"],
+            }
+        )
     for d in fixes:
         csv_rows.append(
             {
@@ -338,6 +401,11 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
         "## 已纠正/撤销",
         "",
     ]
+    if human_metadata:
+        md[6:6] = [
+            f"已应用用户[{human_metadata['source']}](../../{human_metadata['source']})的{human_metadata['item_count']}条校对；{len(human_visits)}条连续访问已合并/确认，{len(world_segments)}段大世界记录不再视作未知关卡。",
+            "",
+        ]
     for d in fixes:
         md.append(
             f"- [{d['event_id']} {clock(d['start'])}]({d['url']})：`{d['previous_level_id']}` → `{d['level_id'] or '未定位'}`。{d['reason']}"
