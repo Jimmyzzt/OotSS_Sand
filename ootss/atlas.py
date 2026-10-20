@@ -2,6 +2,7 @@
 
 import concurrent.futures
 import csv
+import hashlib
 import json
 import shutil
 from pathlib import Path
@@ -279,6 +280,10 @@ def build_atlas(
     template = (Path(__file__).parent / "templates/atlas.html").read_text(
         encoding="utf-8"
     )
+    # A new HTML response must not reuse a cached script or stylesheet from an older build.
+    for filename in ("atlas.css", "atlas.js", "atlas-ui.js"):
+        version = hashlib.sha256((out / filename).read_bytes()).hexdigest()[:12]
+        template = template.replace(f'"{filename}"', f'"{filename}?v={version}"')
     payload = json.dumps(data, ensure_ascii=False).replace("<", "\\u003c")
     (out / "index.html").write_text(
         template.replace("__ATLAS_DATA__", payload), encoding="utf-8"

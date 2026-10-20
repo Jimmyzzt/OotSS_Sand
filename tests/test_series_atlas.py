@@ -279,4 +279,10 @@ def test_combined_atlas_groups_later_returns_by_map_and_keeps_video_ordinals(
     assert next(p for p in data["parts"] if p["part"] == 25)["unmapped_count"] == 1
     assert all(l["level_id"] != "unseen" for l in data["levels"])
     assert "sky_64k" in maps["sky"]["tile_url"]
+    from hashlib import sha256
+
+    page = (Path("atlas") / "index.html").read_text(encoding="utf-8")
+    for filename in ("atlas.css", "atlas.js", "atlas-ui.js"):
+        token = sha256((Path("atlas") / filename).read_bytes()).hexdigest()[:12]
+        assert f'"{filename}?v={token}"' in page
     assert "map_layer" in (Path("atlas") / "visits.csv").read_text(encoding="utf-8-sig")
