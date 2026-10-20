@@ -1,0 +1,760 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 46,
+  "duration": 1290.933313,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage3\\P46__【下北】环绕法师+混合堆叠[北1_北2+北3].mp4",
+  "title": "【下北】环绕法师+混合堆叠[北1/北2+北3]",
+  "stage": 3,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "Reviewed all 9 timeline sheets (00:00–21:30) and both candidate galleries. Confirmed 9 visits by static layout comparison: torus_goblins, wasteland, torus_bard, two distinct torus_blocks_alt_v4 visits, grid_hopping0, two distinct jenga_assorted visits, and how_to_train_your_dragon. Repeated IDs are retained where a map/room transition or intervening confirmed puzzle separates them. Remaining map movement and incidental exploration are not counted as new entries. Physical overworld approaches were not checked; outcomes remain unknown.",
+  "events": [
+    {
+      "event_id": "p46-001",
+      "level_id": "torus_goblins",
+      "puzzle_start_time": 23.875,
+      "puzzle_end_time": 67.125,
+      "entry_transition_time": 23.5,
+      "exit_time": 68.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "torus_goblins",
+          "area": "underworld_heroes_and_promesst",
+          "phash_distance": 4,
+          "hist_distance": 0.1067,
+          "sift_inliers": 118,
+          "sift_good": 121
+        },
+        {
+          "level_id": "portable_stairs",
+          "area": "vertical_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3248,
+          "sift_inliers": 5,
+          "sift_good": 6
+        },
+        {
+          "level_id": "wrong_reset",
+          "area": "spawners",
+          "phash_distance": 18,
+          "hist_distance": 1.4058,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "duality_2",
+          "area": "lily_highway_stones_and_promesst",
+          "phash_distance": 20,
+          "hist_distance": 1.3149,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "blue_revolution_v2",
+          "area": "promesst1_and_2",
+          "phash_distance": 20,
+          "hist_distance": 1.3374,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "torus_goblins",
+        "area": "underworld_heroes_and_promesst",
+        "phash_distance": 4,
+        "hist_distance": 0.1067,
+        "sift_inliers": 118,
+        "sift_good": 121,
+        "consistent_samples": 9,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p46\\samples\\00050.000.jpg",
+          "time": 50.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\torus_goblins.webp",
+          "first_sample": 25.0,
+          "last_sample": 65.0,
+          "sample_count": 9,
+          "reason": "The dense orange-brown field has the reference’s paired green goblin figures and pink gate centered among repeated round stones; the same playfield remains through this continuous interval."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p46-002",
+      "level_id": "wasteland",
+      "puzzle_start_time": 79.25,
+      "puzzle_end_time": 124.875,
+      "entry_transition_time": 78.875,
+      "exit_time": 126.125,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "wasteland",
+          "area": "underworld_heroes_and_promesst",
+          "phash_distance": 6,
+          "hist_distance": 0.0878,
+          "sift_inliers": 139,
+          "sift_good": 145
+        },
+        {
+          "level_id": "reset_mirror",
+          "area": "spawners",
+          "phash_distance": 22,
+          "hist_distance": 1.3936,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "partial_pull",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.3963,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "useful_stone",
+          "area": "heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3953,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "how_to_train_your_dragon",
+          "area": "underworld_heroes_and_promesst",
+          "phash_distance": 20,
+          "hist_distance": 1.4091,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "wasteland",
+        "area": "underworld_heroes_and_promesst",
+        "phash_distance": 6,
+        "hist_distance": 0.0878,
+        "sift_inliers": 139,
+        "sift_good": 145,
+        "consistent_samples": 9,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p46\\samples\\00100.000.jpg",
+          "time": 100.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\wasteland.webp",
+          "first_sample": 80.0,
+          "last_sample": 120.0,
+          "sample_count": 9,
+          "reason": "The magenta tiled rectangular arena matches the reference’s perimeter, evenly spaced cyan stones, dark square devices and central yellow object; continuous movement occurs on one board."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p46-003",
+      "level_id": "torus_bard",
+      "puzzle_start_time": 171.0,
+      "puzzle_end_time": 191.125,
+      "entry_transition_time": 170.5,
+      "exit_time": 192.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "torus_bard",
+          "area": "underworld_heroes_and_promesst",
+          "phash_distance": 12,
+          "hist_distance": 0.3536,
+          "sift_inliers": 36,
+          "sift_good": 49
+        },
+        {
+          "level_id": "half_tutorial",
+          "area": "promesst3",
+          "phash_distance": 20,
+          "hist_distance": 1.3543,
+          "sift_inliers": 4,
+          "sift_good": 8
+        },
+        {
+          "level_id": "heroes2_10a",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 1.3058,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "break_send_lily_c",
+          "area": "beams_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.2539,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "pushing_crystal_near_orange_v2",
+          "area": "beaming_objects",
+          "phash_distance": 20,
+          "hist_distance": 1.2678,
+          "sift_inliers": 0,
+          "sift_good": 5
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "torus_bard",
+        "area": "underworld_heroes_and_promesst",
+        "phash_distance": 12,
+        "hist_distance": 0.3536,
+        "sift_inliers": 36,
+        "sift_good": 49,
+        "consistent_samples": 2,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p46\\samples\\00175.000.jpg",
+          "time": 175.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\torus_bard.webp",
+          "first_sample": 175.0,
+          "last_sample": 185.0,
+          "sample_count": 2,
+          "reason": "The bright checkerboard arena shows the same central bard figure, paired rows of purple crystal obstacles and glowing perimeter blocks as the reference."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p46-004",
+      "level_id": "torus_blocks_alt_v4",
+      "puzzle_start_time": 210.375,
+      "puzzle_end_time": 270.0,
+      "entry_transition_time": 210.0,
+      "exit_time": 271.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "torus_blocks_alt_v4",
+          "area": "underworld_heroes_and_promesst",
+          "phash_distance": 2,
+          "hist_distance": 0.1205,
+          "sift_inliers": 232,
+          "sift_good": 239
+        },
+        {
+          "level_id": "grid_hopping0",
+          "area": "underworld_heroes_and_promesst",
+          "phash_distance": 20,
+          "hist_distance": 1.2804,
+          "sift_inliers": 6,
+          "sift_good": 7
+        },
+        {
+          "level_id": "bard_metamirror",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.3856,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "torus_goblins",
+          "area": "underworld_heroes_and_promesst",
+          "phash_distance": 20,
+          "hist_distance": 1.371,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "missile_command",
+          "area": "advanced_bard_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.3904,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "torus_blocks_alt_v4",
+        "area": "underworld_heroes_and_promesst",
+        "phash_distance": 2,
+        "hist_distance": 0.1205,
+        "sift_inliers": 232,
+        "sift_good": 239,
+        "consistent_samples": 11,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p46\\samples\\00225.000.jpg",
+          "time": 225.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\torus_blocks_alt_v4.webp",
+          "first_sample": 215.0,
+          "last_sample": 265.0,
+          "sample_count": 11,
+          "reason": "The dark teal/blue forest floor, alternating pink round stones and yellow square blocks, with the same two large green ring mechanisms and central blue route match the reference arrangement."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p46-005",
+      "level_id": "torus_blocks_alt_v4",
+      "puzzle_start_time": 280.0,
+      "puzzle_end_time": 305.25,
+      "entry_transition_time": null,
+      "exit_time": 306.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "torus_blocks_alt_v4",
+          "area": "underworld_heroes_and_promesst",
+          "phash_distance": 18,
+          "hist_distance": 0.2466,
+          "sift_inliers": 19,
+          "sift_good": 40
+        },
+        {
+          "level_id": "sky_druid_kill",
+          "area": "heroes_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.3555,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "missile_command",
+          "area": "advanced_bard_and_water",
+          "phash_distance": 16,
+          "hist_distance": 1.3869,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "drop_tool",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3693,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "moving_a_mirror",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3726,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "torus_blocks_alt_v4",
+        "area": "underworld_heroes_and_promesst",
+        "phash_distance": 18,
+        "hist_distance": 0.2466,
+        "sift_inliers": 19,
+        "sift_good": 40,
+        "consistent_samples": 2,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p46\\samples\\00285.000.jpg",
+          "time": 285.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\torus_blocks_alt_v4.webp",
+          "first_sample": 285.0,
+          "last_sample": 300.0,
+          "sample_count": 2,
+          "reason": "At the later return, the same forest-board motif is visible, but this is kept as a distinct visit because the intervening content includes other confirmed rooms and a transition."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p46-006",
+      "level_id": "grid_hopping0",
+      "puzzle_start_time": 317.375,
+      "puzzle_end_time": 403.625,
+      "entry_transition_time": 316.875,
+      "exit_time": 404.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "grid_hopping0",
+          "area": "underworld_heroes_and_promesst",
+          "phash_distance": 6,
+          "hist_distance": 0.6793,
+          "sift_inliers": 99,
+          "sift_good": 108
+        },
+        {
+          "level_id": "red_rooms_v5",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.2757,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "wide_ocean",
+          "area": "mirrorable_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.397,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "double_break",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.114,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "drop_tool",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.2889,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "grid_hopping0",
+        "area": "underworld_heroes_and_promesst",
+        "phash_distance": 6,
+        "hist_distance": 0.6793,
+        "sift_inliers": 99,
+        "sift_good": 108,
+        "consistent_samples": 17,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p46\\samples\\00350.000.jpg",
+          "time": 350.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\grid_hopping0.webp",
+          "first_sample": 320.0,
+          "last_sample": 400.0,
+          "sample_count": 17,
+          "reason": "The lush green leaf-grid contains paired elevated pink squares at the top, a central red creature and the same narrow traversable row/obstacles as the reference."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p46-007",
+      "level_id": "jenga_assorted",
+      "puzzle_start_time": 463.5,
+      "puzzle_end_time": 490.0,
+      "entry_transition_time": 463.0,
+      "exit_time": 491.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "jenga_assorted",
+          "area": "underworld_heroes_and_promesst",
+          "phash_distance": 4,
+          "hist_distance": 0.0705,
+          "sift_inliers": 161,
+          "sift_good": 166
+        },
+        {
+          "level_id": "torc_blocked",
+          "area": "beaming_objects",
+          "phash_distance": 12,
+          "hist_distance": 0.7901,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "heroes2_5.5v5",
+          "area": "heroes2",
+          "phash_distance": 14,
+          "hist_distance": 1.4083,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "druid_3d_beam",
+          "area": "heroes_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.3904,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "bard_triangle",
+          "area": "heroes_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.4062,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "jenga_assorted",
+        "area": "underworld_heroes_and_promesst",
+        "phash_distance": 4,
+        "hist_distance": 0.0705,
+        "sift_inliers": 161,
+        "sift_good": 166,
+        "consistent_samples": 4,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p46\\samples\\00465.000.jpg",
+          "time": 465.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\jenga_assorted.webp",
+          "first_sample": 465.0,
+          "last_sample": 485.0,
+          "sample_count": 4,
+          "reason": "A small snowy island is bisected by a tall multicolored Jenga column; the visible laser beams, blue orb and stone obstacles align with the reference static layout."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p46-008",
+      "level_id": "jenga_assorted",
+      "puzzle_start_time": 850.0,
+      "puzzle_end_time": 902.5,
+      "entry_transition_time": null,
+      "exit_time": 903.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "jenga_assorted",
+          "area": "underworld_heroes_and_promesst",
+          "phash_distance": 14,
+          "hist_distance": 0.1505,
+          "sift_inliers": 55,
+          "sift_good": 57
+        },
+        {
+          "level_id": "vertical_unclone_3",
+          "area": "vertical_mirrors",
+          "phash_distance": 16,
+          "hist_distance": 1.4141,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "torc_blocked",
+          "area": "beaming_objects",
+          "phash_distance": 16,
+          "hist_distance": 0.7754,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "tippy_intro",
+          "area": "heroes_in_3d",
+          "phash_distance": 16,
+          "hist_distance": 1.3526,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "mirror_1",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.3885,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "jenga_assorted",
+        "area": "underworld_heroes_and_promesst",
+        "phash_distance": 14,
+        "hist_distance": 0.1505,
+        "sift_inliers": 55,
+        "sift_good": 57,
+        "consistent_samples": 10,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p46\\samples\\00875.000.jpg",
+          "time": 875.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\jenga_assorted.webp",
+          "first_sample": 855.0,
+          "last_sample": 900.0,
+          "sample_count": 10,
+          "reason": "A small snowy island is bisected by a tall multicolored Jenga column; the visible laser beams, blue orb and stone obstacles align with the reference static layout. This is a separate later visit after other confirmed entries."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p46-009",
+      "level_id": "how_to_train_your_dragon",
+      "puzzle_start_time": 944.75,
+      "puzzle_end_time": 1245.125,
+      "entry_transition_time": 944.25,
+      "exit_time": 1246.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "how_to_train_your_dragon",
+          "area": "underworld_heroes_and_promesst",
+          "phash_distance": 8,
+          "hist_distance": 0.3251,
+          "sift_inliers": 100,
+          "sift_good": 106
+        },
+        {
+          "level_id": "bridgey2b",
+          "area": "vertical_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.1915,
+          "sift_inliers": 5,
+          "sift_good": 11
+        },
+        {
+          "level_id": "gated_twice_v2",
+          "area": "heroes_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.2282,
+          "sift_inliers": 4,
+          "sift_good": 8
+        },
+        {
+          "level_id": "two_metamirrors",
+          "area": "metamirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.3023,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "ocean_blue",
+          "area": "beams_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3836,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "how_to_train_your_dragon",
+        "area": "underworld_heroes_and_promesst",
+        "phash_distance": 8,
+        "hist_distance": 0.3251,
+        "sift_inliers": 100,
+        "sift_good": 106,
+        "consistent_samples": 57,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p46\\samples\\01100.000.jpg",
+          "time": 1100.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\how_to_train_your_dragon.webp",
+          "first_sample": 945.0,
+          "last_sample": 1240.0,
+          "sample_count": 57,
+          "reason": "The pale tiled corridor board shows the reference pink-marked block near a standing stone, blue shrubs, and dark lower-side barriers in the same relative positions."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    }
+  ]
+}

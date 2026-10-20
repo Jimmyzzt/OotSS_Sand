@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 60,
+  "duration": 687.733313,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage3\\P60__【结局3 P1】进入出口：低处的方法.mp4",
+  "title": "【结局3 P1】进入出口：低处的方法",
+  "stage": 3,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "已检查runs/p60全部5张全时间轴图册及recovery高清spot checks。视频内容为地下大地图俯视层的外部移动与解锁：在交汇处激活光束并开启出口，末尾移动至READING LEVEL外部区域；没有进入独立Level_Entry棋盘，因此无谜题访问事件。无可确认的实际关卡访问，不推断外部入口身份或结果。",
+  "events": []
+}

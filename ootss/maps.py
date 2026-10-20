@@ -34,7 +34,9 @@ def download(url, path):
     return path
 
 
-def import_map(root="cache/map", workers=6):
+def import_map(
+    root="cache/map", workers=6, layers=("overworld",), catalog_name="catalog.json"
+):
     root = Path(root)
     upstream = root / "upstream"
     if not upstream.exists():
@@ -73,7 +75,7 @@ def import_map(root="cache/map", workers=6):
     levels = {}
     for f in markers:
         p, xyz = f["properties"], f["geometry"]["coordinates"]
-        if p.get("type") != "Level_Entry" or layer(xyz[2]) != "overworld":
+        if p.get("type") != "Level_Entry" or layer(xyz[2]) not in layers:
             continue
         name = p["name"]
         row = levels.setdefault(
@@ -81,7 +83,7 @@ def import_map(root="cache/map", workers=6):
             {
                 "level_id": name,
                 "area": p.get("area"),
-                "map_layer": "overworld",
+                "map_layer": layer(xyz[2]),
                 "entries": [],
                 "map_url": "https://joric.github.io/ootss/#" + quote(name),
                 "reference": str((root / "images" / (name + ".webp")).resolve())
@@ -121,11 +123,15 @@ def import_map(root="cache/map", workers=6):
             ),
         },
     }
-    write_json(root / "catalog.json", result)
+    write_json(root / catalog_name, result)
     return result
 
 
-def terrain_crop(bounds, out, root="cache/map", zoom=4, annotate=True):
+def terrain_crop(
+    bounds, out, root="cache/map", zoom=4, annotate=True, map_layer="overworld"
+):
+    if map_layer not in {"overworld", "sky", "underworld"}:
+        raise ValueError("Unknown physical map")
     """Joric CRS, bounds=(left,bottom,right,top). Only requested tiles downloaded."""
     left, bottom, right, top = bounds
     scale = 512 * 2**zoom / 190
@@ -134,13 +140,18 @@ def terrain_crop(bounds, out, root="cache/map", zoom=4, annotate=True):
     im = Image.new("RGB", (x1 - x0, y1 - y0))
     for tx in range(x0 // 512, (x1 - 1) // 512 + 1):
         for ty in range(y0 // 512, (y1 - 1) // 512 + 1):
-            name = f"tiles/overworld_64k/{zoom}/{ty}/{tx}.webp"
+            name = f"tiles/{map_layer}_64k/{zoom}/{ty}/{tx}.webp"
             tile = download(f"{ASSETS}/{name}", Path(root) / name)
             with Image.open(tile) as t:
                 im.paste(t.convert("RGB"), (tx * 512 - x0, ty * 512 - y0))
     if annotate:
         draw = ImageDraw.Draw(im)
-        for row in read_json(Path(root) / "catalog.json")["levels"]:
+        for row in read_json(
+            Path(root)
+            / ("catalog_all.json" if map_layer != "overworld" else "catalog.json")
+        )["levels"]:
+            if row.get("map_layer", "overworld") != map_layer:
+                continue
             for marker in row["entries"]:
                 x, y, _ = marker["coordinates"]
                 if left <= x <= right and bottom <= y <= top:

@@ -1,0 +1,739 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 25,
+  "duration": 999.7,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage2\\P25__【二阶段开始】进入二阶段的方法 交汇之地：高处.mp4",
+  "title": "【二阶段开始】进入二阶段的方法 交汇之地：高处",
+  "stage": 2,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "已查看全部7张全时间轴图册、2张候选对照图册，以及两处精细退场边界图。8个不同Sky Level_Entry均经静态布局对照；多层城堡镜头变化的两个机器簇合并成一次访问。前4分52.5秒及尾部/间隔是外部地图和机制说明，无新增主世界谜题。身份确认不等于外部入口核验或完成状态确认。",
+  "events": [
+    {
+      "event_id": "p25-001",
+      "level_id": "3d_intro_vanilla",
+      "puzzle_start_time": 293.125,
+      "puzzle_end_time": 335.375,
+      "entry_transition_time": 292.5,
+      "exit_time": 335.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "3d_intro_vanilla",
+          "area": "intro_to_3d",
+          "phash_distance": 2,
+          "hist_distance": 0.2066,
+          "sift_inliers": 159,
+          "sift_good": 166
+        },
+        {
+          "level_id": "en_root_alt",
+          "area": "monsters_and_beams",
+          "phash_distance": 16,
+          "hist_distance": 1.4134,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "tiger_lily_v2",
+          "area": "skipping_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.3892,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "sky_double_intro1",
+          "area": "double_beam_falling",
+          "phash_distance": 20,
+          "hist_distance": 1.2936,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "vertical_unclone_3",
+          "area": "vertical_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.4044,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "3d_intro_vanilla",
+        "area": "intro_to_3d",
+        "phash_distance": 2,
+        "hist_distance": 0.2066,
+        "sift_inliers": 159,
+        "sift_good": 166,
+        "consistent_samples": 9,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p25\\samples\\00305.000.jpg",
+          "time": 305.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\3d_intro_vanilla.webp",
+          "first_sample": 295.0,
+          "last_sample": 335.0,
+          "sample_count": 9,
+          "reason": "左侧三只橙色圆石、中央C形高台、右下独立黄色出口平台与3d_intro_vanilla参考逐一对应；角色和石头移动不改变台阶布局。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查全片7张5秒图册。00:00–04:52.5为主世界探索和进入天空的方法；08:20–08:45及各后续谜题间、14:59–片尾为天空交汇之地外部画面，不另算谜题入口访问。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Codex visual comparison",
+      "map_layer": "sky"
+    },
+    {
+      "event_id": "p25-002",
+      "level_id": "push_down_v2",
+      "puzzle_start_time": 335.5,
+      "puzzle_end_time": 377.75,
+      "entry_transition_time": 335.375,
+      "exit_time": 378.125,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "push_down_v2",
+          "area": "intro_to_3d",
+          "phash_distance": 2,
+          "hist_distance": 0.2499,
+          "sift_inliers": 217,
+          "sift_good": 224
+        },
+        {
+          "level_id": "connect_the_dots_v5",
+          "area": "heroes_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.2288,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "defender",
+          "area": "underworld_skipping_and_promesst",
+          "phash_distance": 22,
+          "hist_distance": 1.2823,
+          "sift_inliers": 4,
+          "sift_good": 10
+        },
+        {
+          "level_id": "heroes3_14_v3",
+          "area": "heroes3",
+          "phash_distance": 16,
+          "hist_distance": 1.3946,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "river_maze_clear_tenacious_race_v2",
+          "area": "lily_rotation",
+          "phash_distance": 18,
+          "hist_distance": 1.2953,
+          "sift_inliers": 0,
+          "sift_good": 5
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "push_down_v2",
+        "area": "intro_to_3d",
+        "phash_distance": 2,
+        "hist_distance": 0.2499,
+        "sift_inliers": 217,
+        "sift_good": 224,
+        "consistent_samples": 8,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p25\\samples\\00340.000.jpg",
+          "time": 340.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\push_down_v2.webp",
+          "first_sample": 340.0,
+          "last_sample": 375.0,
+          "sample_count": 8,
+          "reason": "左侧封闭方形低地与绿色目标、中央阶梯形高台、右侧紫色圆石起点和长条草地，与参考push_down_v2一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查全片7张5秒图册。00:00–04:52.5为主世界探索和进入天空的方法；08:20–08:45及各后续谜题间、14:59–片尾为天空交汇之地外部画面，不另算谜题入口访问。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Codex visual comparison",
+      "map_layer": "sky"
+    },
+    {
+      "event_id": "p25-003",
+      "level_id": "sister_staircase_harder",
+      "puzzle_start_time": 378.125,
+      "puzzle_end_time": 462.625,
+      "entry_transition_time": 377.75,
+      "exit_time": 462.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "sister_staircase_harder",
+          "area": "intro_to_3d",
+          "phash_distance": 4,
+          "hist_distance": 0.0413,
+          "sift_inliers": 80,
+          "sift_good": 88
+        },
+        {
+          "level_id": "top_green_purple_v3",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.4062,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "bottleneck",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.4067,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "fail_to_mirror_sequence_v2",
+          "area": "orange_beam_highway_mirrors_and_promesst",
+          "phash_distance": 20,
+          "hist_distance": 1.414,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "druid_vertical_mirror",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.2378,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "sister_staircase_harder",
+        "area": "intro_to_3d",
+        "phash_distance": 4,
+        "hist_distance": 0.0413,
+        "sift_inliers": 80,
+        "sift_good": 88,
+        "consistent_samples": 17,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p25\\samples\\00380.000.jpg",
+          "time": 380.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\sister_staircase_harder.webp",
+          "first_sample": 380.0,
+          "last_sample": 460.0,
+          "sample_count": 17,
+          "reason": "蓝绿色陡壁的分层阶梯、左上角色起台、中央橙色方块、底部火口及右下两枚出口标识相互位置，与sister_staircase_harder一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查全片7张5秒图册。00:00–04:52.5为主世界探索和进入天空的方法；08:20–08:45及各后续谜题间、14:59–片尾为天空交汇之地外部画面，不另算谜题入口访问。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Codex visual comparison",
+      "map_layer": "sky"
+    },
+    {
+      "event_id": "p25-004",
+      "level_id": "carry_simplified",
+      "puzzle_start_time": 462.875,
+      "puzzle_end_time": 498,
+      "entry_transition_time": 462.625,
+      "exit_time": 500,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "candidate_levels": [
+        {
+          "level_id": "carry_simplified",
+          "area": "intro_to_3d",
+          "phash_distance": 6,
+          "hist_distance": 0.0503,
+          "sift_inliers": 85,
+          "sift_good": 89
+        },
+        {
+          "level_id": "volcano_v3",
+          "area": "vertical_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.2862,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "end3_off_topic_alt",
+          "area": "endgame3",
+          "phash_distance": 20,
+          "hist_distance": 1.3937,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "square_dance",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.4049,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "pachinko",
+          "area": "vertical_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 0.8224,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "carry_simplified",
+        "area": "intro_to_3d",
+        "phash_distance": 6,
+        "hist_distance": 0.0503,
+        "sift_inliers": 85,
+        "sift_good": 89,
+        "consistent_samples": 7,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p25\\samples\\00470.000.jpg",
+          "time": 470.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\carry_simplified.webp",
+          "first_sample": 465.0,
+          "last_sample": 495.0,
+          "sample_count": 7,
+          "reason": "橙绿相接平台、左下孤立出口、上方独立出口柱和右侧两个人物的初始位置对应carry_simplified参考，497秒仍为该平台，498秒开始退场。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查全片7张5秒图册。00:00–04:52.5为主世界探索和进入天空的方法；08:20–08:45及各后续谜题间、14:59–片尾为天空交汇之地外部画面，不另算谜题入口访问。"
+        },
+        {
+          "type": "boundary_frames",
+          "image": "results/p25/evidence/boundaries.jpg",
+          "reason": "按496–500秒和691–695秒的1秒步长局部帧区分实际棋盘与退场、外部地图。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Codex visual comparison",
+      "map_layer": "sky"
+    },
+    {
+      "event_id": "p25-005",
+      "level_id": "3d_intro_heroes",
+      "puzzle_start_time": 525.5,
+      "puzzle_end_time": 618.125,
+      "entry_transition_time": 525.0,
+      "exit_time": 619.375,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "3d_intro_heroes",
+          "area": "intro_to_3d",
+          "phash_distance": 0,
+          "hist_distance": 0.1917,
+          "sift_inliers": 147,
+          "sift_good": 149
+        },
+        {
+          "level_id": "cliff_hopping",
+          "area": "mirrors_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.1364,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "sidestone_zach_2_end2",
+          "area": "endgame2",
+          "phash_distance": 20,
+          "hist_distance": 1.3195,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "gem_trap2",
+          "area": "gems",
+          "phash_distance": 20,
+          "hist_distance": 1.3422,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "rover_impulse_v2",
+          "area": "beams_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.2532,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "3d_intro_heroes",
+        "area": "intro_to_3d",
+        "phash_distance": 0,
+        "hist_distance": 0.1917,
+        "sift_inliers": 147,
+        "sift_good": 149,
+        "consistent_samples": 5,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p25\\samples\\00530.000.jpg",
+          "time": 530.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\3d_intro_heroes.webp",
+          "first_sample": 530.0,
+          "last_sample": 550.0,
+          "sample_count": 5,
+          "reason": "带哥布林、多个绿色方块和黄色出口的多层城堡露台与3d_intro_heroes一致。09:15–09:30仅镜头缩向下层露台，未出现进出黑场或新的外部入口；09:35返回同一城堡全景，故两个机器簇合为一次访问。"
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p25\\samples\\00590.000.jpg",
+          "time": 590.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\3d_intro_heroes.webp",
+          "first_sample": 580.0,
+          "last_sample": 615.0,
+          "sample_count": 8,
+          "reason": "带哥布林、多个绿色方块和黄色出口的多层城堡露台与3d_intro_heroes一致。09:15–09:30仅镜头缩向下层露台，未出现进出黑场或新的外部入口；09:35返回同一城堡全景，故两个机器簇合为一次访问。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查全片7张5秒图册。00:00–04:52.5为主世界探索和进入天空的方法；08:20–08:45及各后续谜题间、14:59–片尾为天空交汇之地外部画面，不另算谜题入口访问。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [
+        "Merged camera-only interval 555–575 and second candidate p25-006 into continuous castle visit."
+      ],
+      "reviewer": "Codex visual comparison",
+      "map_layer": "sky"
+    },
+    {
+      "event_id": "p25-007",
+      "level_id": "3d_intro_mirrors",
+      "puzzle_start_time": 625.5,
+      "puzzle_end_time": 693,
+      "entry_transition_time": 625.0,
+      "exit_time": 695,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "candidate_levels": [
+        {
+          "level_id": "3d_intro_mirrors",
+          "area": "intro_to_3d",
+          "phash_distance": 4,
+          "hist_distance": 0.213,
+          "sift_inliers": 168,
+          "sift_good": 182
+        },
+        {
+          "level_id": "bottom_adjust",
+          "area": "vertical_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.2499,
+          "sift_inliers": 5,
+          "sift_good": 9
+        },
+        {
+          "level_id": "cyan_counter_med3",
+          "area": "beams_and_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.1634,
+          "sift_inliers": 5,
+          "sift_good": 6
+        },
+        {
+          "level_id": "sky_druid_kill_tall_2_goblins",
+          "area": "heroes_in_3d",
+          "phash_distance": 22,
+          "hist_distance": 1.3532,
+          "sift_inliers": 5,
+          "sift_good": 12
+        },
+        {
+          "level_id": "pass_through_v2_same_z",
+          "area": "goblin_rotation",
+          "phash_distance": 22,
+          "hist_distance": 1.3914,
+          "sift_inliers": 5,
+          "sift_good": 9
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "3d_intro_mirrors",
+        "area": "intro_to_3d",
+        "phash_distance": 4,
+        "hist_distance": 0.213,
+        "sift_inliers": 168,
+        "sift_good": 182,
+        "consistent_samples": 13,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p25\\samples\\00640.000.jpg",
+          "time": 640.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\3d_intro_mirrors.webp",
+          "first_sample": 630.0,
+          "last_sample": 690.0,
+          "sample_count": 13,
+          "reason": "前景长草台上的红色角色和斜镜、后方三层窄岩台、右侧出口点相对位置与3d_intro_mirrors一致。691–692秒仍是同一岩台，693秒已进入退场图形。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查全片7张5秒图册。00:00–04:52.5为主世界探索和进入天空的方法；08:20–08:45及各后续谜题间、14:59–片尾为天空交汇之地外部画面，不另算谜题入口访问。"
+        },
+        {
+          "type": "boundary_frames",
+          "image": "results/p25/evidence/boundaries.jpg",
+          "reason": "按496–500秒和691–695秒的1秒步长局部帧区分实际棋盘与退场、外部地图。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Codex visual comparison",
+      "map_layer": "sky"
+    },
+    {
+      "event_id": "p25-008",
+      "level_id": "3d_intro_skipping",
+      "puzzle_start_time": 701.5,
+      "puzzle_end_time": 756.625,
+      "entry_transition_time": 701.0,
+      "exit_time": 757.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "3d_intro_skipping",
+          "area": "intro_to_3d",
+          "phash_distance": 4,
+          "hist_distance": 0.2609,
+          "sift_inliers": 124,
+          "sift_good": 130
+        },
+        {
+          "level_id": "limited_offsets",
+          "area": "underworld_heroes_and_promesst",
+          "phash_distance": 20,
+          "hist_distance": 1.2853,
+          "sift_inliers": 4,
+          "sift_good": 18
+        },
+        {
+          "level_id": "magic_square",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.3468,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "reset_trio",
+          "area": "spawners",
+          "phash_distance": 18,
+          "hist_distance": 1.412,
+          "sift_inliers": 0,
+          "sift_good": 6
+        },
+        {
+          "level_id": "depositor_bard",
+          "area": "skipping_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.1782,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "3d_intro_skipping",
+        "area": "intro_to_3d",
+        "phash_distance": 4,
+        "hist_distance": 0.2609,
+        "sift_inliers": 124,
+        "sift_good": 130,
+        "consistent_samples": 11,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p25\\samples\\00710.000.jpg",
+          "time": 710.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\3d_intro_skipping.webp",
+          "first_sample": 705.0,
+          "last_sample": 755.0,
+          "sample_count": 11,
+          "reason": "前方一排五个圆石、青色角色、两侧蓝墙、后方交错高低台和出口点，与3d_intro_skipping参考一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查全片7张5秒图册。00:00–04:52.5为主世界探索和进入天空的方法；08:20–08:45及各后续谜题间、14:59–片尾为天空交汇之地外部画面，不另算谜题入口访问。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Codex visual comparison",
+      "map_layer": "sky"
+    },
+    {
+      "event_id": "p25-009",
+      "level_id": "3d_intro_promesst_v5",
+      "puzzle_start_time": 764.75,
+      "puzzle_end_time": 897.5,
+      "entry_transition_time": 764.375,
+      "exit_time": 898.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "3d_intro_promesst_v5",
+          "area": "intro_to_3d",
+          "phash_distance": 4,
+          "hist_distance": 0.0426,
+          "sift_inliers": 132,
+          "sift_good": 144
+        },
+        {
+          "level_id": "place_slot_4x4_pushstyle",
+          "area": "endgame2",
+          "phash_distance": 18,
+          "hist_distance": 1.3495,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "buff_explorer",
+          "area": "strength",
+          "phash_distance": 18,
+          "hist_distance": 1.372,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "heroes3_16_v4_alt",
+          "area": "heroes3",
+          "phash_distance": 20,
+          "hist_distance": 0.889,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "heroes1_13_v2",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 1.2526,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "3d_intro_promesst_v5",
+        "area": "intro_to_3d",
+        "phash_distance": 4,
+        "hist_distance": 0.0426,
+        "sift_inliers": 132,
+        "sift_good": 144,
+        "consistent_samples": 27,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p25\\samples\\00770.000.jpg",
+          "time": 770.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\3d_intro_promesst_v5.webp",
+          "first_sample": 765.0,
+          "last_sample": 895.0,
+          "sample_count": 27,
+          "reason": "橙色峡谷、左侧紫色光束柱、前景石质射线端点、跨层横桥和后方阶梯走道对应3d_intro_promesst_v5；光束旋转与机关移动属于同一棋盘进展。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "已检查全片7张5秒图册。00:00–04:52.5为主世界探索和进入天空的方法；08:20–08:45及各后续谜题间、14:59–片尾为天空交汇之地外部画面，不另算谜题入口访问。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Codex visual comparison",
+      "map_layer": "sky"
+    }
+  ]
+}

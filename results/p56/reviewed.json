@@ -1,0 +1,883 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 56,
+  "duration": 2602.033313,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage3\\P56__【下西】宝石挡道+光束演算[南1西3_南2西3+南1西4_南2西4_南1西5].mp4",
+  "title": "【下西】宝石挡道+光束演算[南1西3/南2西3+南1西4/南2西4/南1西5]",
+  "stage": 3,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "已检查runs/p56全部17张5秒全时间轴图册（0–43:22）和2张候选对照图册。10组参考布局均经静态结构对照确认。P56-009在26:39–40:10持续经过多层相连的Zachtronics结构；没有完整离开关卡的证据，保留为一次访问，不按镜头和内部层间滚动拆分。未匹配区段如0–13秒地图切入、各事件间过场/地图画面及40:10之后的段落均未补造坐标；外部入口及完成结果保持未核验。",
+  "events": [
+    {
+      "event_id": "p56-001",
+      "level_id": "gem_trap",
+      "puzzle_start_time": 14.0,
+      "puzzle_end_time": 180.625,
+      "entry_transition_time": 13.625,
+      "exit_time": 180.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "gem_trap",
+          "area": "gems",
+          "phash_distance": 2,
+          "hist_distance": 0.1419,
+          "sift_inliers": 97,
+          "sift_good": 114
+        },
+        {
+          "level_id": "mirror_12",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.2379,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "mirror_dweller",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3842,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "hot_swap",
+          "area": "heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.2189,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "fix_exploit_promesst_overworld",
+          "area": "endgame3",
+          "phash_distance": 20,
+          "hist_distance": 1.2539,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "gem_trap",
+        "area": "gems",
+        "phash_distance": 2,
+        "hist_distance": 0.1419,
+        "sift_inliers": 97,
+        "sift_good": 114,
+        "consistent_samples": 32,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p56\\samples\\00025.000.jpg",
+          "time": 25.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\gem_trap.webp",
+          "first_sample": 15.0,
+          "last_sample": 180.0,
+          "sample_count": 32,
+          "reason": "视频和参考图均显示右侧大面积蓝色圆盘阵列、左侧封闭小室内的粉色圆点和黄色框，以及下缘金色栅栏；阵列外轮廓和左室相对位置一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "核对了该候选前后完整5秒采样序列。首尾黑场/画面转换处作为边界证据；连续内部房间或滚屏保留在同一事件。主世界入口未能与地形逐帧核验，outcome仍为unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p56-002",
+      "level_id": "gem_trap2",
+      "puzzle_start_time": 180.875,
+      "puzzle_end_time": 244.375,
+      "entry_transition_time": 180.625,
+      "exit_time": 245.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "gem_trap2",
+          "area": "gems",
+          "phash_distance": 4,
+          "hist_distance": 0.1883,
+          "sift_inliers": 84,
+          "sift_good": 93
+        },
+        {
+          "level_id": "drop_tool",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3515,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "mirror_11",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.3533,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "beam_shatter",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.4126,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "mirror_12",
+          "area": "mirror",
+          "phash_distance": 20,
+          "hist_distance": 1.2989,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "gem_trap2",
+        "area": "gems",
+        "phash_distance": 4,
+        "hist_distance": 0.1883,
+        "sift_inliers": 84,
+        "sift_good": 93,
+        "consistent_samples": 12,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p56\\samples\\00185.000.jpg",
+          "time": 185.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\gem_trap2.webp",
+          "first_sample": 185.0,
+          "last_sample": 240.0,
+          "sample_count": 12,
+          "reason": "视频与参考图的蓝色圆盘密集阵列内分布相同的红色/白色棋子，左下小室内仍有两枚粉色圆点，外侧岩洞边界和顶部建筑一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "核对了该候选前后完整5秒采样序列。首尾黑场/画面转换处作为边界证据；连续内部房间或滚屏保留在同一事件。主世界入口未能与地形逐帧核验，outcome仍为unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p56-003",
+      "level_id": "negative_space",
+      "puzzle_start_time": 263.5,
+      "puzzle_end_time": 331.375,
+      "entry_transition_time": 263.125,
+      "exit_time": 332.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "negative_space",
+          "area": "gems",
+          "phash_distance": 6,
+          "hist_distance": 0.1465,
+          "sift_inliers": 126,
+          "sift_good": 142
+        },
+        {
+          "level_id": "heroes1_10_inv_v4_b",
+          "area": "heroes1",
+          "phash_distance": 16,
+          "hist_distance": 1.3837,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "stasis_v2",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3255,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "orange_predicament",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3774,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "priest_two_warriors_v3",
+          "area": "heroes_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.3999,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "negative_space",
+        "area": "gems",
+        "phash_distance": 6,
+        "hist_distance": 0.1465,
+        "sift_inliers": 126,
+        "sift_good": 142,
+        "consistent_samples": 14,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p56\\samples\\00280.000.jpg",
+          "time": 280.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\negative_space.webp",
+          "first_sample": 265.0,
+          "last_sample": 330.0,
+          "sample_count": 14,
+          "reason": "两图均为中央矩形蓝色圆盘阵列、左侧粉色双点窄室、右侧有角色的窄平台和底部宽灰蓝台阶；固定外围结构相符。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "核对了该候选前后完整5秒采样序列。首尾黑场/画面转换处作为边界证据；连续内部房间或滚屏保留在同一事件。主世界入口未能与地形逐帧核验，outcome仍为unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p56-004",
+      "level_id": "numberlink_alt",
+      "puzzle_start_time": 341.375,
+      "puzzle_end_time": 516.75,
+      "entry_transition_time": 340.875,
+      "exit_time": 517.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "numberlink_alt",
+          "area": "gems",
+          "phash_distance": 10,
+          "hist_distance": 0.1684,
+          "sift_inliers": 186,
+          "sift_good": 200
+        },
+        {
+          "level_id": "best_beam_colors",
+          "area": "endgame3",
+          "phash_distance": 20,
+          "hist_distance": 1.1639,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "dragon_on_the_wall",
+          "area": "sideways_gates",
+          "phash_distance": 20,
+          "hist_distance": 1.2423,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "adjust_explorer_v4",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.2459,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "make_a_right",
+          "area": "mirrors_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.3194,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "numberlink_alt",
+        "area": "gems",
+        "phash_distance": 10,
+        "hist_distance": 0.1684,
+        "sift_inliers": 186,
+        "sift_good": 200,
+        "consistent_samples": 35,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p56\\samples\\00470.000.jpg",
+          "time": 470.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\numberlink_alt.webp",
+          "first_sample": 345.0,
+          "last_sample": 515.0,
+          "sample_count": 35,
+          "reason": "视频与参考图皆以大块蓝色圆盘方阵占左侧，右侧为绿色植被/石台小平台，右上角粉色机关和右下小角色位置吻合。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "核对了该候选前后完整5秒采样序列。首尾黑场/画面转换处作为边界证据；连续内部房间或滚屏保留在同一事件。主世界入口未能与地形逐帧核验，outcome仍为unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p56-005",
+      "level_id": "breaking_bread",
+      "puzzle_start_time": 537.625,
+      "puzzle_end_time": 655.0,
+      "entry_transition_time": 537.125,
+      "exit_time": 656.125,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "breaking_bread",
+          "area": "gems",
+          "phash_distance": 4,
+          "hist_distance": 0.1282,
+          "sift_inliers": 79,
+          "sift_good": 84
+        },
+        {
+          "level_id": "bottom_adjust",
+          "area": "vertical_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.2932,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "in_a_flash_alt_back",
+          "area": "lily_rotation",
+          "phash_distance": 20,
+          "hist_distance": 1.2943,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "sticky",
+          "area": "heroes_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.3246,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "break_through_focused",
+          "area": "beams_and_mirrors",
+          "phash_distance": 14,
+          "hist_distance": 1.3632,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "breaking_bread",
+        "area": "gems",
+        "phash_distance": 4,
+        "hist_distance": 0.1282,
+        "sift_inliers": 79,
+        "sift_good": 84,
+        "consistent_samples": 23,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p56\\samples\\00540.000.jpg",
+          "time": 540.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\breaking_bread.webp",
+          "first_sample": 540.0,
+          "last_sample": 650.0,
+          "sample_count": 23,
+          "reason": "两图呈现相同的中央蓝色石砖平台、左侧橙色圆点和灰色人物、右侧独立蓝色圆形按钮，平台上的白色石形机关相对位置对应。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "核对了该候选前后完整5秒采样序列。首尾黑场/画面转换处作为边界证据；连续内部房间或滚屏保留在同一事件。主世界入口未能与地形逐帧核验，outcome仍为unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p56-006",
+      "level_id": "zachtronics_identity",
+      "puzzle_start_time": 692.25,
+      "puzzle_end_time": 1060.375,
+      "entry_transition_time": 691.75,
+      "exit_time": 1061.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "zachtronics_identity",
+          "area": "zachtronics",
+          "phash_distance": 2,
+          "hist_distance": 0.1781,
+          "sift_inliers": 184,
+          "sift_good": 195
+        },
+        {
+          "level_id": "floating_gardens",
+          "area": "heroes_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.0883,
+          "sift_inliers": 7,
+          "sift_good": 14
+        },
+        {
+          "level_id": "simplify_wizard",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 0.8781,
+          "sift_inliers": 6,
+          "sift_good": 10
+        },
+        {
+          "level_id": "zachtronics",
+          "area": "zachtronics",
+          "phash_distance": 16,
+          "hist_distance": 0.764,
+          "sift_inliers": 4,
+          "sift_good": 8
+        },
+        {
+          "level_id": "breath_skip",
+          "area": "heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3772,
+          "sift_inliers": 4,
+          "sift_good": 7
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "zachtronics_identity",
+        "area": "zachtronics",
+        "phash_distance": 2,
+        "hist_distance": 0.1781,
+        "sift_inliers": 184,
+        "sift_good": 195,
+        "consistent_samples": 73,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p56\\samples\\01040.000.jpg",
+          "time": 1040.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\zachtronics_identity.webp",
+          "first_sample": 695.0,
+          "last_sample": 1060.0,
+          "sample_count": 73,
+          "reason": "视频与参考图均为沿纵向展开的棕色木石阶台，分层平台上布置绿色方块与粉色石块，底部贯穿的金色光束及左右端装置位置匹配。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "核对了该候选前后完整5秒采样序列。首尾黑场/画面转换处作为边界证据；连续内部房间或滚屏保留在同一事件。主世界入口未能与地形逐帧核验，outcome仍为unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p56-007",
+      "level_id": "zachtronics_or",
+      "puzzle_start_time": 1082.0,
+      "puzzle_end_time": 1365.375,
+      "entry_transition_time": 1081.5,
+      "exit_time": 1366.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "zachtronics_or",
+          "area": "zachtronics",
+          "phash_distance": 6,
+          "hist_distance": 0.2205,
+          "sift_inliers": 211,
+          "sift_good": 225
+        },
+        {
+          "level_id": "zachtronics_xor",
+          "area": "zachtronics",
+          "phash_distance": 8,
+          "hist_distance": 0.2242,
+          "sift_inliers": 113,
+          "sift_good": 135
+        },
+        {
+          "level_id": "zachtronics_identity",
+          "area": "zachtronics",
+          "phash_distance": 18,
+          "hist_distance": 0.7731,
+          "sift_inliers": 7,
+          "sift_good": 18
+        },
+        {
+          "level_id": "worlds_collide_heroes_and_stones",
+          "area": "worlds_collide",
+          "phash_distance": 18,
+          "hist_distance": 1.2228,
+          "sift_inliers": 5,
+          "sift_good": 7
+        },
+        {
+          "level_id": "forbidden_room",
+          "area": "promesst1_and_2",
+          "phash_distance": 20,
+          "hist_distance": 1.1046,
+          "sift_inliers": 4,
+          "sift_good": 8
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "zachtronics_or",
+        "area": "zachtronics",
+        "phash_distance": 6,
+        "hist_distance": 0.2205,
+        "sift_inliers": 211,
+        "sift_good": 225,
+        "consistent_samples": 57,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p56\\samples\\01125.000.jpg",
+          "time": 1125.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\zachtronics_or.webp",
+          "first_sample": 1085.0,
+          "last_sample": 1365.0,
+          "sample_count": 57,
+          "reason": "画面和参考图为同一多层竖向结构：左侧竖直光束、底部水平粉色光束、各层粉色/绿色方块及右上蓝色方块位置关系一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "核对了该候选前后完整5秒采样序列。首尾黑场/画面转换处作为边界证据；连续内部房间或滚屏保留在同一事件。主世界入口未能与地形逐帧核验，outcome仍为unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p56-008",
+      "level_id": "zachtronics_xor",
+      "puzzle_start_time": 1382.625,
+      "puzzle_end_time": 1573.875,
+      "entry_transition_time": 1382.125,
+      "exit_time": 1575.125,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "zachtronics_xor",
+          "area": "zachtronics",
+          "phash_distance": 6,
+          "hist_distance": 0.1995,
+          "sift_inliers": 204,
+          "sift_good": 210
+        },
+        {
+          "level_id": "zachtronics_or",
+          "area": "zachtronics",
+          "phash_distance": 8,
+          "hist_distance": 0.213,
+          "sift_inliers": 122,
+          "sift_good": 138
+        },
+        {
+          "level_id": "zachtronics_identity",
+          "area": "zachtronics",
+          "phash_distance": 22,
+          "hist_distance": 0.787,
+          "sift_inliers": 8,
+          "sift_good": 18
+        },
+        {
+          "level_id": "easy_reset_small",
+          "area": "spawners",
+          "phash_distance": 22,
+          "hist_distance": 1.1841,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "mirror_10_d",
+          "area": "mirror",
+          "phash_distance": 22,
+          "hist_distance": 1.2259,
+          "sift_inliers": 4,
+          "sift_good": 7
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "zachtronics_xor",
+        "area": "zachtronics",
+        "phash_distance": 6,
+        "hist_distance": 0.1995,
+        "sift_inliers": 204,
+        "sift_good": 210,
+        "consistent_samples": 38,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p56\\samples\\01425.000.jpg",
+          "time": 1425.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\zachtronics_xor.webp",
+          "first_sample": 1385.0,
+          "last_sample": 1570.0,
+          "sample_count": 38,
+          "reason": "视频与参考图都显示左侧竖向多层平台、底部横向粉色光束，以及平台边缘的黄色和粉色方块；层次轮廓和机关次序吻合。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "核对了该候选前后完整5秒采样序列。首尾黑场/画面转换处作为边界证据；连续内部房间或滚屏保留在同一事件。主世界入口未能与地形逐帧核验，outcome仍为unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p56-009",
+      "level_id": "zachtronics",
+      "puzzle_start_time": 1599.0,
+      "puzzle_end_time": 2410.0,
+      "entry_transition_time": 1598.625,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "zachtronics",
+          "area": "zachtronics",
+          "phash_distance": 6,
+          "hist_distance": 0.123,
+          "sift_inliers": 228,
+          "sift_good": 237
+        },
+        {
+          "level_id": "zachtronics_identity",
+          "area": "zachtronics",
+          "phash_distance": 18,
+          "hist_distance": 0.8262,
+          "sift_inliers": 4,
+          "sift_good": 9
+        },
+        {
+          "level_id": "pushing_crystal_near_orange_v2",
+          "area": "beaming_objects",
+          "phash_distance": 22,
+          "hist_distance": 1.2054,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "falloff_4",
+          "area": "heroes_in_3d",
+          "phash_distance": 22,
+          "hist_distance": 1.215,
+          "sift_inliers": 4,
+          "sift_good": 8
+        },
+        {
+          "level_id": "run_the_clock_alt",
+          "area": "mirrorable_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.218,
+          "sift_inliers": 0,
+          "sift_good": 5
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "zachtronics",
+        "area": "zachtronics",
+        "phash_distance": 6,
+        "hist_distance": 0.123,
+        "sift_inliers": 228,
+        "sift_good": 237,
+        "consistent_samples": 162,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p56\\samples\\01745.000.jpg",
+          "time": 1745.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\zachtronics.webp",
+          "first_sample": 1600.0,
+          "last_sample": 2405.0,
+          "sample_count": 162,
+          "reason": "参考图中的多层阶梯建筑、底部粉色光束、左侧多个竖直粉色光束发射器及上方蓝色晶块阵列均能在视频长段连续画面中辨认；镜头滚动和各层内部移动未改变这一关卡布局。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "核对了该候选前后完整5秒采样序列。首尾黑场/画面转换处作为边界证据；连续内部房间或滚屏保留在同一事件。主世界入口未能与地形逐帧核验，outcome仍为unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p56-010",
+      "level_id": "half_journey_vh",
+      "puzzle_start_time": 2490.875,
+      "puzzle_end_time": 2555.0,
+      "entry_transition_time": 2490.375,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "half_journey_vh",
+          "area": "underworld_mirrors_and_promesst",
+          "phash_distance": 2,
+          "hist_distance": 0.0469,
+          "sift_inliers": 51,
+          "sift_good": 52
+        },
+        {
+          "level_id": "wizard_with_a_capital_w_2_v2",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4139,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "purple_haze",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.3942,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "two_metamirrors",
+          "area": "metamirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3967,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "dunk_tank_alt",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.4135,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "half_journey_vh",
+        "area": "underworld_mirrors_and_promesst",
+        "phash_distance": 2,
+        "hist_distance": 0.0469,
+        "sift_inliers": 51,
+        "sift_good": 52,
+        "consistent_samples": 12,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p56\\samples\\02500.000.jpg",
+          "time": 2500.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\half_journey_vh.webp",
+          "first_sample": 2495.0,
+          "last_sample": 2550.0,
+          "sample_count": 12,
+          "reason": "小型浅粉色平台上的多色圆点、左侧紫色块和右侧远处斜向彩色光束，与参考图的孤立平台和斜光束位置一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "核对了该候选前后完整5秒采样序列。首尾黑场/画面转换处作为边界证据；连续内部房间或滚屏保留在同一事件。主世界入口未能与地形逐帧核验，outcome仍为unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    }
+  ]
+}

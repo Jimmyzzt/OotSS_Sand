@@ -1,0 +1,1381 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 41,
+  "duration": 2193.9,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage2\\P41__【东西&西南·补 地面层全清】水晶推车+光束相关杂项+光随镜转[南1西4+南1西3_南2西4_南2西3+南4西5].mp4",
+  "title": "【东西&西南·补 地面层全清】水晶推车+光束相关杂项+光随镜转[南1西4+南1西3/南2西4/南2西3+南4西5]",
+  "stage": 2,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "Reviewed all 14 five-second timeline sheets (00:00–36:34) and all four candidate galleries against the local static references. The two fragmented crystal_rover_intro hits are one continuous room sequence (00:31–01:31), ending at the observed black transition. Separate confirmed layouts are kept separate. Unmatched map/travel and exploration footage remains uncovered, notably 00:00–00:31, 01:31–02:06, 03:20–04:25, and other map intervals between confirmed entries. No overworld approach was checked against a physical map, so overworld_match remains unverified; outcomes remain unknown.",
+  "time_basis": "Seconds from current part start; scan boundaries approximate +/-0.5s.",
+  "events": [
+    {
+      "event_id": "p41-001",
+      "level_id": "crystal_rover_intro",
+      "puzzle_start_time": 31.375,
+      "puzzle_end_time": 70.0,
+      "entry_transition_time": 30.875,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "crystal_rover_intro",
+          "area": "promesst3",
+          "phash_distance": 16,
+          "hist_distance": 0.5966,
+          "sift_inliers": 54,
+          "sift_good": 59
+        },
+        {
+          "level_id": "chain_gang3",
+          "area": "goblin_rotation",
+          "phash_distance": 18,
+          "hist_distance": 1.3923,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "make_thief_goblin_maze_v2",
+          "area": "endgame3",
+          "phash_distance": 20,
+          "hist_distance": 1.3214,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "3d_intro_skipping",
+          "area": "intro_to_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.3667,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "heroes1_16_v3",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 1.3811,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "crystal_rover_intro",
+        "area": "promesst3",
+        "phash_distance": 16,
+        "hist_distance": 0.5966,
+        "sift_inliers": 54,
+        "sift_good": 59,
+        "consistent_samples": 2,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p41\\samples\\00035.000.jpg",
+          "time": 35.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\crystal_rover_intro.webp",
+          "reason": "VIDEO at 00:35 and 01:05 matches the reference: narrow tiled corridor, red crystal block to the left, central rover and cyan gate at the lower end; frames show uninterrupted traversal between adjoining chambers with no exit transition."
+        },
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p41\\samples\\00065.000.jpg",
+          "time": 65.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\crystal_rover_intro.webp",
+          "reason": "VIDEO at 00:35 and 01:05 matches the reference: narrow tiled corridor, red crystal block to the left, central rover and cyan gate at the lower end; frames show uninterrupted traversal between adjoining chambers with no exit transition."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p41-002",
+      "level_id": "green_crystal_rover",
+      "puzzle_start_time": 126.5,
+      "puzzle_end_time": 200.0,
+      "entry_transition_time": 126.0,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "green_crystal_rover",
+          "area": "beams_and_mirrors",
+          "phash_distance": 4,
+          "hist_distance": 0.1354,
+          "sift_inliers": 76,
+          "sift_good": 85
+        },
+        {
+          "level_id": "thats_my_ride",
+          "area": "mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4115,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "heroes2_5_no_crystal",
+          "area": "heroes2",
+          "phash_distance": 20,
+          "hist_distance": 1.3086,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes2_2",
+          "area": "heroes2",
+          "phash_distance": 20,
+          "hist_distance": 1.3305,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "end3_mirror_1_v3",
+          "area": "endgame3",
+          "phash_distance": 20,
+          "hist_distance": 1.3469,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "green_crystal_rover",
+        "area": "beams_and_mirrors",
+        "phash_distance": 4,
+        "hist_distance": 0.1354,
+        "sift_inliers": 76,
+        "sift_good": 85,
+        "consistent_samples": 14,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p41\\samples\\00130.000.jpg",
+          "time": 130.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\green_crystal_rover.webp",
+          "reason": "VIDEO at 02:10 matches the reference: separated stone ends, long green beam across the water and blue orb at the far right align."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p41-003",
+      "level_id": "mirror_rover_orange_2",
+      "puzzle_start_time": 265.25,
+      "puzzle_end_time": 375.0,
+      "entry_transition_time": 264.75,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_rover_orange_2",
+          "area": "beams_and_mirrors",
+          "phash_distance": 10,
+          "hist_distance": 0.1856,
+          "sift_inliers": 101,
+          "sift_good": 110
+        },
+        {
+          "level_id": "meta_orange_purple",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.2641,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "protrusions",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.2828,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "lemonade",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3876,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "trick_kills",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.0073,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_rover_orange_2",
+        "area": "beams_and_mirrors",
+        "phash_distance": 10,
+        "hist_distance": 0.1856,
+        "sift_inliers": 101,
+        "sift_good": 110,
+        "consistent_samples": 18,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p41\\samples\\00295.000.jpg",
+          "time": 295.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_rover_orange_2.webp",
+          "reason": "VIDEO at 04:55 matches the reference: the pale block-filled stone wall occupies the right half, with a beam emitter and orb on the open left ledge."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p41-004",
+      "level_id": "first_flight",
+      "puzzle_start_time": 410.375,
+      "puzzle_end_time": 454.875,
+      "entry_transition_time": 409.875,
+      "exit_time": 455.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "first_flight",
+          "area": "double_beam_falling_dropdown",
+          "phash_distance": 10,
+          "hist_distance": 0.2795,
+          "sift_inliers": 81,
+          "sift_good": 93
+        },
+        {
+          "level_id": "skip_orange_block_c",
+          "area": "beams_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.0714,
+          "sift_inliers": 5,
+          "sift_good": 10
+        },
+        {
+          "level_id": "heroes2_10.5",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 1.2699,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "protrusions",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 0.8333,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "orange_doubledoubleback",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3049,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "first_flight",
+        "area": "double_beam_falling_dropdown",
+        "phash_distance": 10,
+        "hist_distance": 0.2795,
+        "sift_inliers": 81,
+        "sift_good": 93,
+        "consistent_samples": 8,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p41\\samples\\00420.000.jpg",
+          "time": 420.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\first_flight.webp",
+          "reason": "VIDEO at 07:00 matches the reference: crossing horizontal/vertical beam paths and two blue orbs sit around the small lower-right platform."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p41-005",
+      "level_id": "double_trouble",
+      "puzzle_start_time": 470.25,
+      "puzzle_end_time": 551.25,
+      "entry_transition_time": 469.875,
+      "exit_time": 552.375,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "double_trouble",
+          "area": "double_beam_falling_dropdown",
+          "phash_distance": 4,
+          "hist_distance": 0.2458,
+          "sift_inliers": 38,
+          "sift_good": 42
+        },
+        {
+          "level_id": "detonator",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.4102,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "button_playground",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.3604,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "gem_trap",
+          "area": "gems",
+          "phash_distance": 20,
+          "hist_distance": 1.3853,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "mirror_4",
+          "area": "mirror",
+          "phash_distance": 20,
+          "hist_distance": 1.4003,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "double_trouble",
+        "area": "double_beam_falling_dropdown",
+        "phash_distance": 4,
+        "hist_distance": 0.2458,
+        "sift_inliers": 38,
+        "sift_good": 42,
+        "consistent_samples": 15,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p41\\samples\\00480.000.jpg",
+          "time": 480.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\double_trouble.webp",
+          "reason": "VIDEO at 08:00 matches the reference: the irregular linked tile path, central blue orb, yellow beam emitter and lower-left goal are in matching positions."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p41-006",
+      "level_id": "orange_cross",
+      "puzzle_start_time": 580.125,
+      "puzzle_end_time": 630.375,
+      "entry_transition_time": 579.625,
+      "exit_time": 631.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "orange_cross",
+          "area": "double_beam_falling_dropdown",
+          "phash_distance": 8,
+          "hist_distance": 0.3539,
+          "sift_inliers": 60,
+          "sift_good": 70
+        },
+        {
+          "level_id": "nowhere_to_smash_combo",
+          "area": "underworld_mirrors_and_promesst",
+          "phash_distance": 18,
+          "hist_distance": 1.3581,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "skipping_cyan_precise_c_v3",
+          "area": "beams_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3677,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "gated_twice_thief_v2",
+          "area": "heroes_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.2942,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "diag_slide",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.402,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "orange_cross",
+        "area": "double_beam_falling_dropdown",
+        "phash_distance": 8,
+        "hist_distance": 0.3539,
+        "sift_inliers": 60,
+        "sift_good": 70,
+        "consistent_samples": 9,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p41\\samples\\00600.000.jpg",
+          "time": 600.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\orange_cross.webp",
+          "reason": "VIDEO at 10:00 matches the reference: L-shaped upper ledge, cross beams, left crystal and lower-left blue orb align."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p41-007",
+      "level_id": "orange_predicament",
+      "puzzle_start_time": 667.25,
+      "puzzle_end_time": 790.0,
+      "entry_transition_time": 666.75,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "orange_predicament",
+          "area": "beams_and_mirrors",
+          "phash_distance": 6,
+          "hist_distance": 0.3094,
+          "sift_inliers": 173,
+          "sift_good": 175
+        },
+        {
+          "level_id": "sender_simplified_v2",
+          "area": "vertical_endpoint",
+          "phash_distance": 16,
+          "hist_distance": 1.4141,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "end3_pipeline_aesthetics",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 1.3636,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes1_10_inv_v4_b",
+          "area": "heroes1",
+          "phash_distance": 18,
+          "hist_distance": 1.367,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "highway",
+          "area": "mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4043,
+          "sift_inliers": 0,
+          "sift_good": 5
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "orange_predicament",
+        "area": "beams_and_mirrors",
+        "phash_distance": 6,
+        "hist_distance": 0.3094,
+        "sift_inliers": 173,
+        "sift_good": 175,
+        "consistent_samples": 24,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p41\\samples\\00680.000.jpg",
+          "time": 680.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\orange_predicament.webp",
+          "reason": "VIDEO at 11:20 matches the reference: checkerboard platform with four central mirrored pieces and round corner endpoints is the same layout."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p41-008",
+      "level_id": "double_sideways",
+      "puzzle_start_time": 803.625,
+      "puzzle_end_time": 865.0,
+      "entry_transition_time": 803.25,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "double_sideways",
+          "area": "beams_and_mirrors",
+          "phash_distance": 12,
+          "hist_distance": 0.3302,
+          "sift_inliers": 75,
+          "sift_good": 85
+        },
+        {
+          "level_id": "run_the_clock_alt",
+          "area": "mirrorable_stones",
+          "phash_distance": 20,
+          "hist_distance": 0.734,
+          "sift_inliers": 5,
+          "sift_good": 7
+        },
+        {
+          "level_id": "skip_orange_wall_v3",
+          "area": "beams_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3752,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "infinite_looping_skipper_mirrored_ikaruga_alt",
+          "area": "lily_highway_mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.4049,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "worlds_collide_heroes_and_stones",
+          "area": "worlds_collide",
+          "phash_distance": 18,
+          "hist_distance": 1.311,
+          "sift_inliers": 0,
+          "sift_good": 6
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "double_sideways",
+        "area": "beams_and_mirrors",
+        "phash_distance": 12,
+        "hist_distance": 0.3302,
+        "sift_inliers": 75,
+        "sift_good": 85,
+        "consistent_samples": 12,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p41\\samples\\00810.000.jpg",
+          "time": 810.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\double_sideways.webp",
+          "reason": "VIDEO at 13:30 matches the reference: separated mossy pads, center crossing beam, purple block on left and cyan switch below align."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p41-009",
+      "level_id": "floating_orange_purple",
+      "puzzle_start_time": 885.25,
+      "puzzle_end_time": 940.0,
+      "entry_transition_time": 884.75,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "floating_orange_purple",
+          "area": "beams_and_mirrors",
+          "phash_distance": 4,
+          "hist_distance": 0.205,
+          "sift_inliers": 142,
+          "sift_good": 150
+        },
+        {
+          "level_id": "magic_rover",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.2226,
+          "sift_inliers": 7,
+          "sift_good": 10
+        },
+        {
+          "level_id": "retro_hooks",
+          "area": "skipping_in_3d",
+          "phash_distance": 16,
+          "hist_distance": 1.3631,
+          "sift_inliers": 5,
+          "sift_good": 7
+        },
+        {
+          "level_id": "hover_corner_4",
+          "area": "underworld_skipping_and_promesst",
+          "phash_distance": 20,
+          "hist_distance": 1.1765,
+          "sift_inliers": 4,
+          "sift_good": 8
+        },
+        {
+          "level_id": "end3_heroes_1",
+          "area": "endgame3",
+          "phash_distance": 16,
+          "hist_distance": 1.3931,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "floating_orange_purple",
+        "area": "beams_and_mirrors",
+        "phash_distance": 4,
+        "hist_distance": 0.205,
+        "sift_inliers": 142,
+        "sift_good": 150,
+        "consistent_samples": 10,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p41\\samples\\00895.000.jpg",
+          "time": 895.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\floating_orange_purple.webp",
+          "reason": "VIDEO at 14:55 matches the reference: L-shaped stone island, paired horizontal orange/purple beams and lower-right cyan switch occupy matching positions."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p41-010",
+      "level_id": "skip_orange_maze_v3",
+      "puzzle_start_time": 1000.25,
+      "puzzle_end_time": 1119.625,
+      "entry_transition_time": 999.75,
+      "exit_time": 1120.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "skip_orange_maze_v3",
+          "area": "beams_and_stones",
+          "phash_distance": 4,
+          "hist_distance": 0.2177,
+          "sift_inliers": 131,
+          "sift_good": 138
+        },
+        {
+          "level_id": "orange_doubleback",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3852,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "thief_wand",
+          "area": "heroes_and_artifacts",
+          "phash_distance": 16,
+          "hist_distance": 1.3648,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "goblin_two_rovers_alt",
+          "area": "monsters_and_beams",
+          "phash_distance": 18,
+          "hist_distance": 1.335,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "orange_predicament",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.2842,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "skip_orange_maze_v3",
+        "area": "beams_and_stones",
+        "phash_distance": 4,
+        "hist_distance": 0.2177,
+        "sift_inliers": 131,
+        "sift_good": 138,
+        "consistent_samples": 23,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p41\\samples\\01060.000.jpg",
+          "time": 1060.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\skip_orange_maze_v3.webp",
+          "reason": "VIDEO at 17:40 matches the reference: water maze with staggered narrow platforms, central vertical beam, and purple blocks along the right route align."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p41-011",
+      "level_id": "orange_skip_place_v3",
+      "puzzle_start_time": 1139.125,
+      "puzzle_end_time": 1245.375,
+      "entry_transition_time": 1138.625,
+      "exit_time": 1246.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "orange_skip_place_v3",
+          "area": "beams_and_stones",
+          "phash_distance": 6,
+          "hist_distance": 0.0513,
+          "sift_inliers": 82,
+          "sift_good": 90
+        },
+        {
+          "level_id": "lily_pull",
+          "area": "skipping_in_3d",
+          "phash_distance": 16,
+          "hist_distance": 0.8202,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "goblin_two_rovers_alt",
+          "area": "monsters_and_beams",
+          "phash_distance": 18,
+          "hist_distance": 1.3697,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "target_practice_gem",
+          "area": "promesst1_and_2",
+          "phash_distance": 18,
+          "hist_distance": 1.4088,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "retro_hooks",
+          "area": "skipping_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 0.8267,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "orange_skip_place_v3",
+        "area": "beams_and_stones",
+        "phash_distance": 6,
+        "hist_distance": 0.0513,
+        "sift_inliers": 82,
+        "sift_good": 90,
+        "consistent_samples": 21,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p41\\samples\\01145.000.jpg",
+          "time": 1145.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\orange_skip_place_v3.webp",
+          "reason": "VIDEO at 19:05 matches the reference: small upper-left island under a long beam and a separate plant-covered lower island with two blue orbs match."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p41-012",
+      "level_id": "skip_orange_wall_v3",
+      "puzzle_start_time": 1272.625,
+      "puzzle_end_time": 1369.125,
+      "entry_transition_time": 1272.125,
+      "exit_time": 1370.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "skip_orange_wall_v3",
+          "area": "beams_and_stones",
+          "phash_distance": 2,
+          "hist_distance": 0.1636,
+          "sift_inliers": 110,
+          "sift_good": 127
+        },
+        {
+          "level_id": "untrap",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 16,
+          "hist_distance": 1.4086,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "river_rates_button",
+          "area": "lily_rotation",
+          "phash_distance": 18,
+          "hist_distance": 1.3908,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "heroes1_2_v2",
+          "area": "heroes1",
+          "phash_distance": 18,
+          "hist_distance": 1.395,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "endpoint1_skipping",
+          "area": "beams_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 0.5778,
+          "sift_inliers": 0,
+          "sift_good": 5
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "skip_orange_wall_v3",
+        "area": "beams_and_stones",
+        "phash_distance": 2,
+        "hist_distance": 0.1636,
+        "sift_inliers": 110,
+        "sift_good": 127,
+        "consistent_samples": 19,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p41\\samples\\01275.000.jpg",
+          "time": 1275.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\skip_orange_wall_v3.webp",
+          "reason": "VIDEO at 21:15 matches the reference: paired horizontal beams cross a long green-edged wall; two emitters at left and a detached lower fragment align."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p41-013",
+      "level_id": "the_spiral",
+      "puzzle_start_time": 1453.125,
+      "puzzle_end_time": 1565.0,
+      "entry_transition_time": 1452.75,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "the_spiral",
+          "area": "beams_and_mirrors",
+          "phash_distance": 6,
+          "hist_distance": 0.1148,
+          "sift_inliers": 133,
+          "sift_good": 137
+        },
+        {
+          "level_id": "push_and_pull_zach",
+          "area": "heroes_and_water",
+          "phash_distance": 16,
+          "hist_distance": 1.0715,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "lemonade",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.0053,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "allocate_heroes_end3",
+          "area": "endgame3",
+          "phash_distance": 20,
+          "hist_distance": 1.106,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "heroes3_14_v3",
+          "area": "heroes3",
+          "phash_distance": 20,
+          "hist_distance": 1.1918,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "the_spiral",
+        "area": "beams_and_mirrors",
+        "phash_distance": 6,
+        "hist_distance": 0.1148,
+        "sift_inliers": 133,
+        "sift_good": 137,
+        "consistent_samples": 22,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p41\\samples\\01455.000.jpg",
+          "time": 1455.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\the_spiral.webp",
+          "reason": "VIDEO at 24:15 matches the reference: red block within a spiral stone enclosure and pale pieces on the right side align."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p41-014",
+      "level_id": "green_metamirror",
+      "puzzle_start_time": 1583.875,
+      "puzzle_end_time": 1625.0,
+      "entry_transition_time": 1583.375,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "green_metamirror",
+          "area": "beams_and_mirrors",
+          "phash_distance": 16,
+          "hist_distance": 0.1573,
+          "sift_inliers": 35,
+          "sift_good": 37
+        },
+        {
+          "level_id": "surrounded",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.2578,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "mirror_dweller",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.2815,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "metamirror_different_dir_alt",
+          "area": "metamirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.0366,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "mirror_14",
+          "area": "mirror",
+          "phash_distance": 20,
+          "hist_distance": 1.0487,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "green_metamirror",
+        "area": "beams_and_mirrors",
+        "phash_distance": 16,
+        "hist_distance": 0.1573,
+        "sift_inliers": 35,
+        "sift_good": 37,
+        "consistent_samples": 8,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p41\\samples\\01595.000.jpg",
+          "time": 1595.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\green_metamirror.webp",
+          "reason": "VIDEO at 26:35 matches the reference: square mossy platform with central plant-patterned tile, blue orb below and separate right platform with pale prism align."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p41-015",
+      "level_id": "orange_floaty_reflect_v3",
+      "puzzle_start_time": 1782.125,
+      "puzzle_end_time": 1905.0,
+      "entry_transition_time": 1781.625,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "orange_floaty_reflect_v3",
+          "area": "beams_and_mirrors",
+          "phash_distance": 2,
+          "hist_distance": 0.1454,
+          "sift_inliers": 50,
+          "sift_good": 50
+        },
+        {
+          "level_id": "lily_pull",
+          "area": "skipping_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.3918,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "wizard_jailbreak_v2",
+          "area": "endgame3",
+          "phash_distance": 20,
+          "hist_distance": 1.1811,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "mirror_15",
+          "area": "mirror",
+          "phash_distance": 20,
+          "hist_distance": 1.185,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "front_side_bus3",
+          "area": "advanced_bard_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.3428,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "orange_floaty_reflect_v3",
+        "area": "beams_and_mirrors",
+        "phash_distance": 2,
+        "hist_distance": 0.1454,
+        "sift_inliers": 50,
+        "sift_good": 50,
+        "consistent_samples": 24,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p41\\samples\\01790.000.jpg",
+          "time": 1790.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\orange_floaty_reflect_v3.webp",
+          "reason": "VIDEO at 29:50 matches the reference: narrow left pillar with a vertical beam, detached center platform, and two small lower pads align."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p41-016",
+      "level_id": "meta_orange_purple",
+      "puzzle_start_time": 1930.75,
+      "puzzle_end_time": 1990.0,
+      "entry_transition_time": 1930.25,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "meta_orange_purple",
+          "area": "beams_and_mirrors",
+          "phash_distance": 8,
+          "hist_distance": 0.2144,
+          "sift_inliers": 74,
+          "sift_good": 76
+        },
+        {
+          "level_id": "meta_orange_purple_2",
+          "area": "beams_and_mirrors",
+          "phash_distance": 14,
+          "hist_distance": 1.1465,
+          "sift_inliers": 6,
+          "sift_good": 12
+        },
+        {
+          "level_id": "stones_not_crystals",
+          "area": "heroes_and_stones",
+          "phash_distance": 16,
+          "hist_distance": 1.3523,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "crystals_not_stones",
+          "area": "heroes_and_stones",
+          "phash_distance": 16,
+          "hist_distance": 1.3545,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "middle_smash",
+          "area": "beaming_objects",
+          "phash_distance": 18,
+          "hist_distance": 1.3903,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "meta_orange_purple",
+        "area": "beams_and_mirrors",
+        "phash_distance": 8,
+        "hist_distance": 0.2144,
+        "sift_inliers": 74,
+        "sift_good": 76,
+        "consistent_samples": 11,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p41\\samples\\01935.000.jpg",
+          "time": 1935.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\meta_orange_purple.webp",
+          "reason": "VIDEO at 32:15 matches the reference: rectangular room, recessed dark center, horizontal purple beam and right-side vertical beam align."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p41-017",
+      "level_id": "meta_orange_purple_2",
+      "puzzle_start_time": 1999.375,
+      "puzzle_end_time": 2070.0,
+      "entry_transition_time": 1998.875,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "meta_orange_purple_2",
+          "area": "beams_and_mirrors",
+          "phash_distance": 4,
+          "hist_distance": 0.1996,
+          "sift_inliers": 138,
+          "sift_good": 140
+        },
+        {
+          "level_id": "meta_orange_purple",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.1374,
+          "sift_inliers": 6,
+          "sift_good": 10
+        },
+        {
+          "level_id": "purple_beam_intro_v2_alt",
+          "area": "beams_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 0.9752,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "two_bounce_v2",
+          "area": "mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.2405,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "bypass_gates",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.3583,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "meta_orange_purple_2",
+        "area": "beams_and_mirrors",
+        "phash_distance": 4,
+        "hist_distance": 0.1996,
+        "sift_inliers": 138,
+        "sift_good": 140,
+        "consistent_samples": 14,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p41\\samples\\02005.000.jpg",
+          "time": 2005.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\meta_orange_purple_2.webp",
+          "reason": "VIDEO at 33:25 matches the reference: larger central square pool with three blocks and a cyan center switch, plus a vertical purple beam at right, align."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    }
+  ]
+}

@@ -1,0 +1,397 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 66,
+  "duration": 1518.833688,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage3\\P66__【结局3 P7】美术[北3西5].mp4",
+  "title": "【结局3 P7】美术[北3西5]",
+  "stage": 3,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "已检查runs/p66全部10张全时间轴图册（0:00–25:15）和2张候选对照图。将每组同一固定环境艺术布局的候选碎片合并为4段连续访问；中间仅为同一预览盘面的对象/网格状态变化，没有新入口证据。开头及21:50后的AESTHETICS大厅/讨论不作为谜题进入。入口地图未核，overworld_match保持unverified，结局未知。",
+  "events": [
+    {
+      "event_id": "p66-001",
+      "level_id": "environment_art_grid",
+      "puzzle_start_time": 166.0,
+      "puzzle_end_time": 280.0,
+      "entry_transition_time": 166.0,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "environment_art_grid",
+          "area": "endgame3",
+          "phash_distance": 6,
+          "hist_distance": 0.1736,
+          "sift_inliers": 45,
+          "sift_good": 51
+        },
+        {
+          "level_id": "remote_work",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.384,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "river_exploit_v2",
+          "area": "endgame3",
+          "phash_distance": 20,
+          "hist_distance": 1.3998,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "cleric_isles",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.4066,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "heroes1_12_v2_alt",
+          "area": "heroes1",
+          "phash_distance": 22,
+          "hist_distance": 1.3461,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "environment_art_grid",
+        "area": "endgame3",
+        "phash_distance": 6,
+        "hist_distance": 0.1736,
+        "sift_inliers": 45,
+        "sift_good": 51,
+        "consistent_samples": 1,
+        "status": "visually_confirmed",
+        "visual_reason": "视频与固定参考的环境艺术网格逐格吻合：上方红色导轨/彩色方块、右侧竖向轨道与发光构件、下方浅褐色阶梯地块、左上白色物件及左下红色方块位置一致；中间为同一演示视图的持续变化，无新入口证据。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p66\\samples\\00170.000.jpg",
+          "time": 170.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\environment_art_grid.webp",
+          "first_sample": 170.0,
+          "last_sample": 170.0,
+          "sample_count": 1
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p66\\samples\\00215.000.jpg",
+          "time": 215.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\environment_art_grid.webp",
+          "first_sample": 215.0,
+          "last_sample": 275.0,
+          "sample_count": 13
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "视频与固定参考的环境艺术网格逐格吻合：上方红色导轨/彩色方块、右侧竖向轨道与发光构件、下方浅褐色阶梯地块、左上白色物件及左下红色方块位置一致；中间为同一演示视图的持续变化，无新入口证据。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p66-003",
+      "level_id": "environment_art_grid",
+      "puzzle_start_time": 475.0,
+      "puzzle_end_time": 560.0,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "environment_art_grid",
+          "area": "endgame3",
+          "phash_distance": 6,
+          "hist_distance": 0.1694,
+          "sift_inliers": 13,
+          "sift_good": 18
+        },
+        {
+          "level_id": "vertical_promesst_v2",
+          "area": "vertical_promesst",
+          "phash_distance": 20,
+          "hist_distance": 1.322,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "bon_voyage",
+          "area": "underworld_skipping_and_promesst",
+          "phash_distance": 20,
+          "hist_distance": 1.3832,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "river_exploit_v2",
+          "area": "endgame3",
+          "phash_distance": 20,
+          "hist_distance": 1.3981,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "partial_pull",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.4083,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "environment_art_grid",
+        "area": "endgame3",
+        "phash_distance": 6,
+        "hist_distance": 0.1694,
+        "sift_inliers": 13,
+        "sift_good": 18,
+        "consistent_samples": 2,
+        "status": "visually_confirmed",
+        "visual_reason": "视频与参考同为雾灰背景上的浅橙色岛形网格，顶部红色导轨及彩色方块、右侧竖轨和机关位置一致；期间仅画面状态变化，无离开重入证据。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p66\\samples\\00480.000.jpg",
+          "time": 480.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\environment_art_grid.webp",
+          "first_sample": 480.0,
+          "last_sample": 490.0,
+          "sample_count": 2
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p66\\samples\\00550.000.jpg",
+          "time": 550.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\environment_art_grid.webp",
+          "first_sample": 550.0,
+          "last_sample": 555.0,
+          "sample_count": 2
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "视频与参考同为雾灰背景上的浅橙色岛形网格，顶部红色导轨及彩色方块、右侧竖轨和机关位置一致；期间仅画面状态变化，无离开重入证据。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p66-005",
+      "level_id": "environment_art_background",
+      "puzzle_start_time": 615.0,
+      "puzzle_end_time": 680.0,
+      "entry_transition_time": 614.875,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "environment_art_background",
+          "area": "endgame3",
+          "phash_distance": 8,
+          "hist_distance": 0.1706,
+          "sift_inliers": 82,
+          "sift_good": 87
+        },
+        {
+          "level_id": "bug_spray",
+          "area": "heroes_and_artifacts",
+          "phash_distance": 22,
+          "hist_distance": 1.168,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "catching_fire_v2",
+          "area": "heroes_in_3d",
+          "phash_distance": 22,
+          "hist_distance": 1.3555,
+          "sift_inliers": 4,
+          "sift_good": 8
+        },
+        {
+          "level_id": "another_stone_stopper",
+          "area": "heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.1688,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "button_shut_in",
+          "area": "skipping_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.2363,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "environment_art_background",
+        "area": "endgame3",
+        "phash_distance": 8,
+        "hist_distance": 0.1706,
+        "sift_inliers": 82,
+        "sift_good": 87,
+        "consistent_samples": 2,
+        "status": "visually_confirmed",
+        "visual_reason": "视频和参考的白砖/深蓝边缘房间、中央木桶、右侧青色方形机关与并列的红框导轨摆件布局相同；两候选间场景连续。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p66\\samples\\00625.000.jpg",
+          "time": 625.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\environment_art_background.webp",
+          "first_sample": 620.0,
+          "last_sample": 625.0,
+          "sample_count": 2
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p66\\samples\\00670.000.jpg",
+          "time": 670.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\environment_art_background.webp",
+          "first_sample": 660.0,
+          "last_sample": 675.0,
+          "sample_count": 4
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "视频和参考的白砖/深蓝边缘房间、中央木桶、右侧青色方形机关与并列的红框导轨摆件布局相同；两候选间场景连续。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p66-007",
+      "level_id": "environment_art_objects",
+      "puzzle_start_time": 1000.0,
+      "puzzle_end_time": 1259.9,
+      "entry_transition_time": 999.875,
+      "exit_time": 1260.125,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "environment_art_objects",
+          "area": "endgame3",
+          "phash_distance": 10,
+          "hist_distance": 0.3038,
+          "sift_inliers": 103,
+          "sift_good": 110
+        },
+        {
+          "level_id": "sidestone_zach_2_end2",
+          "area": "endgame2",
+          "phash_distance": 16,
+          "hist_distance": 1.4037,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "orange_predicament",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3467,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "metamirror_same_dir_5_alt",
+          "area": "metamirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.1832,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "priest_button_3d_revised",
+          "area": "heroes_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.3352,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "environment_art_objects",
+        "area": "endgame3",
+        "phash_distance": 10,
+        "hist_distance": 0.3038,
+        "sift_inliers": 103,
+        "sift_good": 110,
+        "consistent_samples": 3,
+        "status": "visually_confirmed",
+        "visual_reason": "视频与固定参考均为水面边缘网格、左下石块/植物岛、右侧石柱和上方红框导轨机关；地形及关键道具位置一致。中间内容为同一房间连续演示，未见离开再进入。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p66\\samples\\01015.000.jpg",
+          "time": 1015.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\environment_art_objects.webp",
+          "first_sample": 1005.0,
+          "last_sample": 1015.0,
+          "sample_count": 3
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p66\\samples\\01075.000.jpg",
+          "time": 1075.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\environment_art_objects.webp",
+          "first_sample": 1070.0,
+          "last_sample": 1255.0,
+          "sample_count": 38
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "视频与固定参考均为水面边缘网格、左下石块/植物岛、右侧石柱和上方红框导轨机关；地形及关键道具位置一致。中间内容为同一房间连续演示，未见离开再进入。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    }
+  ]
+}

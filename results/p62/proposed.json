@@ -1,0 +1,1693 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 62,
+  "duration": 2006.832938,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage3\\P62__【结局3 P3】落实构思[北5西3].mp4",
+  "title": "【结局3 P3】落实构思[北5西3]",
+  "stage": 3,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "Unreviewed machine proposals; require bounded visual comparison, reject false matches, inspect unknown spans.",
+  "events": [
+    {
+      "event_id": "p62-001",
+      "level_id": "spray_and_pray",
+      "puzzle_start_time": 0,
+      "puzzle_end_time": 10.0,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "spray_and_pray",
+          "area": "skipping_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.0786,
+          "sift_inliers": 22,
+          "sift_good": 31
+        },
+        {
+          "level_id": "magic_rover",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.1291,
+          "sift_inliers": 8,
+          "sift_good": 16
+        },
+        {
+          "level_id": "heroes1_10_inv_v4_b",
+          "area": "heroes1",
+          "phash_distance": 18,
+          "hist_distance": 1.1288,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "button_and_beam_v3",
+          "area": "monsters_and_beams",
+          "phash_distance": 20,
+          "hist_distance": 1.0759,
+          "sift_inliers": 0,
+          "sift_good": 45
+        },
+        {
+          "level_id": "first_flight",
+          "area": "double_beam_falling_dropdown",
+          "phash_distance": 20,
+          "hist_distance": 1.2648,
+          "sift_inliers": 0,
+          "sift_good": 5
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "spray_and_pray",
+        "area": "skipping_in_3d",
+        "phash_distance": 18,
+        "hist_distance": 1.0786,
+        "sift_inliers": 22,
+        "sift_good": 31,
+        "consistent_samples": 1
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00005.000.jpg",
+          "time": 5.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\spray_and_pray.webp",
+          "first_sample": 5.0,
+          "last_sample": 5.0,
+          "sample_count": 1
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p62-002",
+      "level_id": "a_wiz_out_of_water",
+      "puzzle_start_time": 5.0,
+      "puzzle_end_time": 15.0,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "a_wiz_out_of_water",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.1801,
+          "sift_inliers": 31,
+          "sift_good": 39
+        },
+        {
+          "level_id": "spray_and_pray",
+          "area": "skipping_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.0666,
+          "sift_inliers": 22,
+          "sift_good": 40
+        },
+        {
+          "level_id": "button_and_beam_v3",
+          "area": "monsters_and_beams",
+          "phash_distance": 20,
+          "hist_distance": 1.0503,
+          "sift_inliers": 0,
+          "sift_good": 55
+        },
+        {
+          "level_id": "heroes1_10_inv_v4_b",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 1.1219,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "end3_pipeline_cleanup",
+          "area": "endgame3",
+          "phash_distance": 20,
+          "hist_distance": 1.1358,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "a_wiz_out_of_water",
+        "area": "heroes_and_water",
+        "phash_distance": 18,
+        "hist_distance": 1.1801,
+        "sift_inliers": 31,
+        "sift_good": 39,
+        "consistent_samples": 1
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00010.000.jpg",
+          "time": 10.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\a_wiz_out_of_water.webp",
+          "first_sample": 10.0,
+          "last_sample": 10.0,
+          "sample_count": 1
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p62-003",
+      "level_id": "design_corner",
+      "puzzle_start_time": 81.125,
+      "puzzle_end_time": 88.125,
+      "entry_transition_time": 80.375,
+      "exit_time": 88.375,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "design_corner",
+          "area": "endgame3",
+          "phash_distance": 4,
+          "hist_distance": 0.1634,
+          "sift_inliers": 107,
+          "sift_good": 115
+        },
+        {
+          "level_id": "heroes2_5_altE",
+          "area": "heroes2",
+          "phash_distance": 16,
+          "hist_distance": 1.3155,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "mirror_7",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.3558,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "four_horsemen",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3806,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "dragon_garden",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3965,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "design_corner",
+        "area": "endgame3",
+        "phash_distance": 4,
+        "hist_distance": 0.1634,
+        "sift_inliers": 107,
+        "sift_good": 115,
+        "consistent_samples": 1
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00085.000.jpg",
+          "time": 85.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\design_corner.webp",
+          "first_sample": 85.0,
+          "last_sample": 85.0,
+          "sample_count": 1
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p62-004",
+      "level_id": "design_corner",
+      "puzzle_start_time": 102.625,
+      "puzzle_end_time": 115.0,
+      "entry_transition_time": 102.25,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "design_corner",
+          "area": "endgame3",
+          "phash_distance": 2,
+          "hist_distance": 0.1132,
+          "sift_inliers": 119,
+          "sift_good": 123
+        },
+        {
+          "level_id": "smash_grid_4",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.2175,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes1_2_v2",
+          "area": "heroes1",
+          "phash_distance": 18,
+          "hist_distance": 1.2496,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "end2_heroes_1_2",
+          "area": "endgame2",
+          "phash_distance": 18,
+          "hist_distance": 1.2913,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes2_5_altE",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 1.3214,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "design_corner",
+        "area": "endgame3",
+        "phash_distance": 2,
+        "hist_distance": 0.1132,
+        "sift_inliers": 119,
+        "sift_good": 123,
+        "consistent_samples": 2
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00110.000.jpg",
+          "time": 110.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\design_corner.webp",
+          "first_sample": 105.0,
+          "last_sample": 110.0,
+          "sample_count": 2
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p62-005",
+      "level_id": "make_sokoban",
+      "puzzle_start_time": 238.125,
+      "puzzle_end_time": 260.0,
+      "entry_transition_time": 237.875,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "make_sokoban",
+          "area": "endgame3",
+          "phash_distance": 2,
+          "hist_distance": 0.2463,
+          "sift_inliers": 121,
+          "sift_good": 128
+        },
+        {
+          "level_id": "skipping_pals",
+          "area": "skipping_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4107,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "crystal_bridges",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 0.9218,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "meta_orange_purple_2",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.284,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "end2_clone_divergence_2",
+          "area": "endgame3",
+          "phash_distance": 20,
+          "hist_distance": 1.3161,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "make_sokoban",
+        "area": "endgame3",
+        "phash_distance": 2,
+        "hist_distance": 0.2463,
+        "sift_inliers": 121,
+        "sift_good": 128,
+        "consistent_samples": 4
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00240.000.jpg",
+          "time": 240.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_sokoban.webp",
+          "first_sample": 240.0,
+          "last_sample": 255.0,
+          "sample_count": 4
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p62-006",
+      "level_id": "make_sokoban",
+      "puzzle_start_time": 296.125,
+      "puzzle_end_time": 315.0,
+      "entry_transition_time": 295.875,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "make_sokoban",
+          "area": "endgame3",
+          "phash_distance": 10,
+          "hist_distance": 0.4785,
+          "sift_inliers": 36,
+          "sift_good": 40
+        },
+        {
+          "level_id": "skipping_pals",
+          "area": "skipping_stones",
+          "phash_distance": 16,
+          "hist_distance": 1.4124,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "snipperclips_diagonal",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.2889,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "snipperclips_0_square",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.2531,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "heroes3_8_v4_alt",
+          "area": "heroes3",
+          "phash_distance": 20,
+          "hist_distance": 1.2582,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "make_sokoban",
+        "area": "endgame3",
+        "phash_distance": 10,
+        "hist_distance": 0.4785,
+        "sift_inliers": 36,
+        "sift_good": 40,
+        "consistent_samples": 3
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00300.000.jpg",
+          "time": 300.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_sokoban.webp",
+          "first_sample": 300.0,
+          "last_sample": 310.0,
+          "sample_count": 3
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p62-007",
+      "level_id": "make_shoreline",
+      "puzzle_start_time": 463.0,
+      "puzzle_end_time": 485.0,
+      "entry_transition_time": 462.75,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "make_shoreline",
+          "area": "endgame3",
+          "phash_distance": 4,
+          "hist_distance": 0.4222,
+          "sift_inliers": 99,
+          "sift_good": 115
+        },
+        {
+          "level_id": "end3_promesst_red",
+          "area": "endgame3",
+          "phash_distance": 20,
+          "hist_distance": 1.3932,
+          "sift_inliers": 5,
+          "sift_good": 8
+        },
+        {
+          "level_id": "vert_mirror_intro",
+          "area": "vertical_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3925,
+          "sift_inliers": 4,
+          "sift_good": 9
+        },
+        {
+          "level_id": "pull_skip_twins_v3",
+          "area": "heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3969,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "faster_than_stone",
+          "area": "beams_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4074,
+          "sift_inliers": 0,
+          "sift_good": 5
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "make_shoreline",
+        "area": "endgame3",
+        "phash_distance": 4,
+        "hist_distance": 0.4222,
+        "sift_inliers": 99,
+        "sift_good": 115,
+        "consistent_samples": 4
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00465.000.jpg",
+          "time": 465.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 465.0,
+          "last_sample": 480.0,
+          "sample_count": 4
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p62-008",
+      "level_id": "make_shoreline",
+      "puzzle_start_time": 498.875,
+      "puzzle_end_time": 505.0,
+      "entry_transition_time": 498.625,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "make_shoreline",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 0.8874,
+          "sift_inliers": 16,
+          "sift_good": 34
+        },
+        {
+          "level_id": "skipping_pals",
+          "area": "skipping_stones",
+          "phash_distance": 20,
+          "hist_distance": 0.863,
+          "sift_inliers": 14,
+          "sift_good": 25
+        },
+        {
+          "level_id": "end3_skipping_red",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 1.1998,
+          "sift_inliers": 7,
+          "sift_good": 22
+        },
+        {
+          "level_id": "new_cleric_fly",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.4019,
+          "sift_inliers": 5,
+          "sift_good": 8
+        },
+        {
+          "level_id": "mirror_stone_intro",
+          "area": "mirrorable_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3631,
+          "sift_inliers": 4,
+          "sift_good": 10
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "make_shoreline",
+        "area": "endgame3",
+        "phash_distance": 18,
+        "hist_distance": 0.8874,
+        "sift_inliers": 16,
+        "sift_good": 34,
+        "consistent_samples": 1
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00500.000.jpg",
+          "time": 500.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 500.0,
+          "last_sample": 500.0,
+          "sample_count": 1
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p62-009",
+      "level_id": "make_shoreline",
+      "puzzle_start_time": 524.5,
+      "puzzle_end_time": 530.0,
+      "entry_transition_time": 524.375,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "make_shoreline",
+          "area": "endgame3",
+          "phash_distance": 8,
+          "hist_distance": 0.985,
+          "sift_inliers": 72,
+          "sift_good": 90
+        },
+        {
+          "level_id": "skipping_pals",
+          "area": "skipping_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.0485,
+          "sift_inliers": 13,
+          "sift_good": 21
+        },
+        {
+          "level_id": "end3_skipping_red",
+          "area": "endgame3",
+          "phash_distance": 22,
+          "hist_distance": 1.146,
+          "sift_inliers": 4,
+          "sift_good": 12
+        },
+        {
+          "level_id": "smash_grid_kill",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 16,
+          "hist_distance": 1.3629,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "vert_mirror_intro",
+          "area": "vertical_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3961,
+          "sift_inliers": 0,
+          "sift_good": 7
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "make_shoreline",
+        "area": "endgame3",
+        "phash_distance": 8,
+        "hist_distance": 0.985,
+        "sift_inliers": 72,
+        "sift_good": 90,
+        "consistent_samples": 1
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00525.000.jpg",
+          "time": 525.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 525.0,
+          "last_sample": 525.0,
+          "sample_count": 1
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p62-010",
+      "level_id": "make_shoreline",
+      "puzzle_start_time": 545.0,
+      "puzzle_end_time": 555.0,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "make_shoreline",
+          "area": "endgame3",
+          "phash_distance": 8,
+          "hist_distance": 0.4088,
+          "sift_inliers": 34,
+          "sift_good": 55
+        },
+        {
+          "level_id": "skipping_pals",
+          "area": "skipping_stones",
+          "phash_distance": 20,
+          "hist_distance": 0.7163,
+          "sift_inliers": 17,
+          "sift_good": 29
+        },
+        {
+          "level_id": "aggro_maze",
+          "area": "goblin_rotation",
+          "phash_distance": 20,
+          "hist_distance": 1.3874,
+          "sift_inliers": 5,
+          "sift_good": 8
+        },
+        {
+          "level_id": "end3_promesst_red",
+          "area": "endgame3",
+          "phash_distance": 20,
+          "hist_distance": 1.3969,
+          "sift_inliers": 4,
+          "sift_good": 8
+        },
+        {
+          "level_id": "sidestone_zach_1",
+          "area": "mirrorable_stones",
+          "phash_distance": 18,
+          "hist_distance": 0.5582,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "make_shoreline",
+        "area": "endgame3",
+        "phash_distance": 8,
+        "hist_distance": 0.4088,
+        "sift_inliers": 34,
+        "sift_good": 55,
+        "consistent_samples": 1
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00550.000.jpg",
+          "time": 550.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 550.0,
+          "last_sample": 550.0,
+          "sample_count": 1
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p62-011",
+      "level_id": "make_shoreline",
+      "puzzle_start_time": 575.0,
+      "puzzle_end_time": 585.0,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "make_shoreline",
+          "area": "endgame3",
+          "phash_distance": 8,
+          "hist_distance": 1.2914,
+          "sift_inliers": 27,
+          "sift_good": 38
+        },
+        {
+          "level_id": "skipping_pals",
+          "area": "skipping_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.2943,
+          "sift_inliers": 9,
+          "sift_good": 21
+        },
+        {
+          "level_id": "purple_wizard_maze",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.4088,
+          "sift_inliers": 5,
+          "sift_good": 8
+        },
+        {
+          "level_id": "end3_skipping_red",
+          "area": "endgame3",
+          "phash_distance": 22,
+          "hist_distance": 1.2071,
+          "sift_inliers": 5,
+          "sift_good": 19
+        },
+        {
+          "level_id": "aggro_maze",
+          "area": "goblin_rotation",
+          "phash_distance": 20,
+          "hist_distance": 1.3946,
+          "sift_inliers": 4,
+          "sift_good": 6
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "make_shoreline",
+        "area": "endgame3",
+        "phash_distance": 8,
+        "hist_distance": 1.2914,
+        "sift_inliers": 27,
+        "sift_good": 38,
+        "consistent_samples": 1
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00580.000.jpg",
+          "time": 580.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 580.0,
+          "last_sample": 580.0,
+          "sample_count": 1
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p62-012",
+      "level_id": "make_shoreline",
+      "puzzle_start_time": 630.0,
+      "puzzle_end_time": 640.0,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "make_shoreline",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 1.2611,
+          "sift_inliers": 12,
+          "sift_good": 30
+        },
+        {
+          "level_id": "end3_skipping_red",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 1.2944,
+          "sift_inliers": 5,
+          "sift_good": 20
+        },
+        {
+          "level_id": "new_cleric_fly",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.4012,
+          "sift_inliers": 5,
+          "sift_good": 8
+        },
+        {
+          "level_id": "shunt2_alt",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.3569,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "tippy_intro",
+          "area": "heroes_in_3d",
+          "phash_distance": 16,
+          "hist_distance": 1.3518,
+          "sift_inliers": 0,
+          "sift_good": 5
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "make_shoreline",
+        "area": "endgame3",
+        "phash_distance": 18,
+        "hist_distance": 1.2611,
+        "sift_inliers": 12,
+        "sift_good": 30,
+        "consistent_samples": 1
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00635.000.jpg",
+          "time": 635.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 635.0,
+          "last_sample": 635.0,
+          "sample_count": 1
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p62-013",
+      "level_id": "make_shoreline",
+      "puzzle_start_time": 665.0,
+      "puzzle_end_time": 680.0,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "make_shoreline",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 0.883,
+          "sift_inliers": 12,
+          "sift_good": 32
+        },
+        {
+          "level_id": "skipping_pals",
+          "area": "skipping_stones",
+          "phash_distance": 20,
+          "hist_distance": 0.8822,
+          "sift_inliers": 11,
+          "sift_good": 20
+        },
+        {
+          "level_id": "button_and_beam_v3",
+          "area": "monsters_and_beams",
+          "phash_distance": 20,
+          "hist_distance": 1.083,
+          "sift_inliers": 6,
+          "sift_good": 10
+        },
+        {
+          "level_id": "end3_skipping_red",
+          "area": "endgame3",
+          "phash_distance": 20,
+          "hist_distance": 1.1892,
+          "sift_inliers": 5,
+          "sift_good": 19
+        },
+        {
+          "level_id": "top_green_purple_v3",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.288,
+          "sift_inliers": 4,
+          "sift_good": 11
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "make_shoreline",
+        "area": "endgame3",
+        "phash_distance": 18,
+        "hist_distance": 0.883,
+        "sift_inliers": 12,
+        "sift_good": 32,
+        "consistent_samples": 2
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00670.000.jpg",
+          "time": 670.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 670.0,
+          "last_sample": 675.0,
+          "sample_count": 2
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p62-014",
+      "level_id": "end3_skipping_red",
+      "puzzle_start_time": 715.0,
+      "puzzle_end_time": 725.0,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "end3_skipping_red",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 1.1874,
+          "sift_inliers": 13,
+          "sift_good": 20
+        },
+        {
+          "level_id": "make_shoreline",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 0.8934,
+          "sift_inliers": 12,
+          "sift_good": 30
+        },
+        {
+          "level_id": "top_green_purple_v3",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.2895,
+          "sift_inliers": 6,
+          "sift_good": 16
+        },
+        {
+          "level_id": "purple_wizard_maze",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.3038,
+          "sift_inliers": 5,
+          "sift_good": 7
+        },
+        {
+          "level_id": "mirror_stone_intro",
+          "area": "mirrorable_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3685,
+          "sift_inliers": 4,
+          "sift_good": 6
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "end3_skipping_red",
+        "area": "endgame3",
+        "phash_distance": 18,
+        "hist_distance": 1.1874,
+        "sift_inliers": 13,
+        "sift_good": 20,
+        "consistent_samples": 1
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00720.000.jpg",
+          "time": 720.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_skipping_red.webp",
+          "first_sample": 720.0,
+          "last_sample": 720.0,
+          "sample_count": 1
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p62-015",
+      "level_id": "make_shoreline",
+      "puzzle_start_time": 725.0,
+      "puzzle_end_time": 735.0,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "make_shoreline",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 0.8938,
+          "sift_inliers": 12,
+          "sift_good": 29
+        },
+        {
+          "level_id": "end3_skipping_red",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 1.1871,
+          "sift_inliers": 6,
+          "sift_good": 18
+        },
+        {
+          "level_id": "top_green_purple_v3",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.2891,
+          "sift_inliers": 6,
+          "sift_good": 13
+        },
+        {
+          "level_id": "drop_off",
+          "area": "advanced_bard_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.2037,
+          "sift_inliers": 4,
+          "sift_good": 13
+        },
+        {
+          "level_id": "worlds_collide_heroes_and_mirrors_v3",
+          "area": "worlds_collide",
+          "phash_distance": 20,
+          "hist_distance": 1.3501,
+          "sift_inliers": 4,
+          "sift_good": 6
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "make_shoreline",
+        "area": "endgame3",
+        "phash_distance": 18,
+        "hist_distance": 0.8938,
+        "sift_inliers": 12,
+        "sift_good": 29,
+        "consistent_samples": 1
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00730.000.jpg",
+          "time": 730.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 730.0,
+          "last_sample": 730.0,
+          "sample_count": 1
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p62-016",
+      "level_id": "make_shoreline",
+      "puzzle_start_time": 860.0,
+      "puzzle_end_time": 880.0,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "make_shoreline",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 1.3483,
+          "sift_inliers": 15,
+          "sift_good": 31
+        },
+        {
+          "level_id": "skipping_pals",
+          "area": "skipping_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3588,
+          "sift_inliers": 7,
+          "sift_good": 16
+        },
+        {
+          "level_id": "end3_skipping_red",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 1.3494,
+          "sift_inliers": 5,
+          "sift_good": 18
+        },
+        {
+          "level_id": "mirror_stone_intro",
+          "area": "mirrorable_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4004,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "tippy_intro",
+          "area": "heroes_in_3d",
+          "phash_distance": 16,
+          "hist_distance": 1.3106,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "make_shoreline",
+        "area": "endgame3",
+        "phash_distance": 18,
+        "hist_distance": 1.3483,
+        "sift_inliers": 15,
+        "sift_good": 31,
+        "consistent_samples": 2
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00865.000.jpg",
+          "time": 865.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 865.0,
+          "last_sample": 875.0,
+          "sample_count": 2
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p62-017",
+      "level_id": "make_shoreline",
+      "puzzle_start_time": 955.0,
+      "puzzle_end_time": 965.0,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "make_shoreline",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 0.893,
+          "sift_inliers": 12,
+          "sift_good": 30
+        },
+        {
+          "level_id": "end3_skipping_red",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 1.1968,
+          "sift_inliers": 11,
+          "sift_good": 20
+        },
+        {
+          "level_id": "skipping_pals",
+          "area": "skipping_stones",
+          "phash_distance": 20,
+          "hist_distance": 0.8652,
+          "sift_inliers": 8,
+          "sift_good": 14
+        },
+        {
+          "level_id": "river_dictionary_alt_up",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3095,
+          "sift_inliers": 5,
+          "sift_good": 11
+        },
+        {
+          "level_id": "red_cross",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3738,
+          "sift_inliers": 4,
+          "sift_good": 6
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "make_shoreline",
+        "area": "endgame3",
+        "phash_distance": 18,
+        "hist_distance": 0.893,
+        "sift_inliers": 12,
+        "sift_good": 30,
+        "consistent_samples": 1
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00960.000.jpg",
+          "time": 960.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 960.0,
+          "last_sample": 960.0,
+          "sample_count": 1
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p62-018",
+      "level_id": "end3_skipping_red",
+      "puzzle_start_time": 960.0,
+      "puzzle_end_time": 970.0,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "end3_skipping_red",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 1.1976,
+          "sift_inliers": 15,
+          "sift_good": 23
+        },
+        {
+          "level_id": "make_shoreline",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 0.87,
+          "sift_inliers": 11,
+          "sift_good": 38
+        },
+        {
+          "level_id": "skipping_pals",
+          "area": "skipping_stones",
+          "phash_distance": 20,
+          "hist_distance": 0.8515,
+          "sift_inliers": 8,
+          "sift_good": 13
+        },
+        {
+          "level_id": "new_cleric_fly",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.3941,
+          "sift_inliers": 4,
+          "sift_good": 8
+        },
+        {
+          "level_id": "tippy_intro",
+          "area": "heroes_in_3d",
+          "phash_distance": 16,
+          "hist_distance": 1.3827,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "end3_skipping_red",
+        "area": "endgame3",
+        "phash_distance": 18,
+        "hist_distance": 1.1976,
+        "sift_inliers": 15,
+        "sift_good": 23,
+        "consistent_samples": 1
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00965.000.jpg",
+          "time": 965.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_skipping_red.webp",
+          "first_sample": 965.0,
+          "last_sample": 965.0,
+          "sample_count": 1
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p62-019",
+      "level_id": "make_shoreline",
+      "puzzle_start_time": 1000.0,
+      "puzzle_end_time": 1010.0,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "make_shoreline",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 0.9919,
+          "sift_inliers": 13,
+          "sift_good": 31
+        },
+        {
+          "level_id": "skipping_pals",
+          "area": "skipping_stones",
+          "phash_distance": 20,
+          "hist_distance": 0.9365,
+          "sift_inliers": 11,
+          "sift_good": 29
+        },
+        {
+          "level_id": "mirror_stone_intro",
+          "area": "mirrorable_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3634,
+          "sift_inliers": 5,
+          "sift_good": 6
+        },
+        {
+          "level_id": "new_cleric_fly",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.4028,
+          "sift_inliers": 5,
+          "sift_good": 6
+        },
+        {
+          "level_id": "top_green_purple_v3",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.2883,
+          "sift_inliers": 5,
+          "sift_good": 19
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "make_shoreline",
+        "area": "endgame3",
+        "phash_distance": 18,
+        "hist_distance": 0.9919,
+        "sift_inliers": 13,
+        "sift_good": 31,
+        "consistent_samples": 1
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\01005.000.jpg",
+          "time": 1005.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 1005.0,
+          "last_sample": 1005.0,
+          "sample_count": 1
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p62-020",
+      "level_id": "make_thief_goblin_maze_v2",
+      "puzzle_start_time": 1268.625,
+      "puzzle_end_time": 1315.0,
+      "entry_transition_time": 1268.125,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "make_thief_goblin_maze_v2",
+          "area": "endgame3",
+          "phash_distance": 6,
+          "hist_distance": 0.177,
+          "sift_inliers": 104,
+          "sift_good": 106
+        },
+        {
+          "level_id": "button_and_beam_v3",
+          "area": "monsters_and_beams",
+          "phash_distance": 18,
+          "hist_distance": 0.8984,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "gem_transport_2",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 0.8163,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "mirror_19",
+          "area": "mirror",
+          "phash_distance": 20,
+          "hist_distance": 1.1931,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "breath_skip",
+          "area": "heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.2157,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "make_thief_goblin_maze_v2",
+        "area": "endgame3",
+        "phash_distance": 6,
+        "hist_distance": 0.177,
+        "sift_inliers": 104,
+        "sift_good": 106,
+        "consistent_samples": 9
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\01270.000.jpg",
+          "time": 1270.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_thief_goblin_maze_v2.webp",
+          "first_sample": 1270.0,
+          "last_sample": 1310.0,
+          "sample_count": 9
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p62-021",
+      "level_id": "make_oneway",
+      "puzzle_start_time": 1547.125,
+      "puzzle_end_time": 1555.0,
+      "entry_transition_time": 1546.5,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "make_oneway",
+          "area": "endgame3",
+          "phash_distance": 14,
+          "hist_distance": 0.2028,
+          "sift_inliers": 70,
+          "sift_good": 74
+        },
+        {
+          "level_id": "gem_beam_placement",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.2923,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "infinite_looping_skipper_mirrored_ikaruga_alt",
+          "area": "lily_highway_mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3875,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "jenga_easier",
+          "area": "heroes_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.3869,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "torus_mirrors",
+          "area": "underworld_mirrors_and_promesst",
+          "phash_distance": 20,
+          "hist_distance": 1.3901,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "make_oneway",
+        "area": "endgame3",
+        "phash_distance": 14,
+        "hist_distance": 0.2028,
+        "sift_inliers": 70,
+        "sift_good": 74,
+        "consistent_samples": 1
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\01550.000.jpg",
+          "time": 1550.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_oneway.webp",
+          "first_sample": 1550.0,
+          "last_sample": 1550.0,
+          "sample_count": 1
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_04.jpg",
+      "manual_corrections": []
+    }
+  ]
+}

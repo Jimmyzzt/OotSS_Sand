@@ -46,6 +46,45 @@ def theme_for(levels, first_part, col, row):
         "beams_and_stones": "光照之石",
         "worlds_collide": "黄金谜题",
         "endgame1": "对映之地·出口",
+        "clones": "英雄成双",
+        "metamirrors": "镜中之镜",
+        "promesst3": "光束发射器之库再开",
+        "double_beam_falling_dropdown": "光束杂项",
+        "intro_to_3d": "交汇之地·高处",
+        "heroes_in_3d": "英雄与第三维度",
+        "mirrors_in_3d": "坠落之镜",
+        "vertical_mirrors": "竖直之镜",
+        "vertical_reflection": "镜之路",
+        "skipping_in_3d": "飞跃与坠落",
+        "elevators": "升降机",
+        "double_beam_falling": "双倍光束坠落",
+        "strength": "力量",
+        "goblin_rotation": "转身的哥布林",
+        "vertical_endpoint": "竖直端点",
+        "beam_carrying": "光束之路",
+        "vertical_promesst": "旋转光束",
+        "sky_promesst_misc": "天空光束杂项",
+        "endgame2": "对映之地·高处",
+        "underworld_crossroads": "交汇之地·低处",
+        "underworld_heroes_and_mirrors": "魔镜挡道",
+        "underworld_heroes_and_promesst": "英雄杂项",
+        "advanced_bard_and_water": "吟游诗人与水",
+        "monsters_and_beams": "怪物穿行",
+        "spawners": "开启界门",
+        "underworld_mirrors_and_promesst": "魔镜与神器",
+        "flat_things": "扁平物件挪一挪",
+        "lily_highway_mirrors_and_stones": "魔镜与河流",
+        "gems": "短杖推宝石",
+        "zachtronics": "变形与粉碎",
+        "orange_beam_highway_mirrors_and_promesst": "光束演算",
+        "lily_highway_stones_and_promesst": "飞跃与光束",
+        "underworld_skipping_and_promesst": "宝石与光束",
+        "lily_rotation": "旋转光束与睡莲",
+        "orange_beam_highway_worlds_collide": "四方共合力",
+        "orange_beam_highway_stones_and_promesst": "双倍光束",
+        "underworld_lilies": "无尽飞跃",
+        "lily_highway_heroes_and_stones": "循环荷叶站点",
+        "endgame3": "出口·低处",
     }
     if area == "promesst1_and_2":
         return "光束发射器之库" if row == 0 else "推车与短杖" if row > 0 else "项环"
@@ -68,7 +107,14 @@ def theme_for(levels, first_part, col, row):
     return names.get(area, area)
 
 
-def enrich(data, marker_features=(), editorial=None, links=None):
+def enrich(
+    data,
+    marker_features=(),
+    editorial=None,
+    links=None,
+    map_id="overworld",
+    preserve_ordinals=False,
+):
     editorial, links = editorial or {}, links or {}
     metadata = {
         f["properties"].get("name"): f["properties"].get("entity_properties", {})
@@ -107,7 +153,10 @@ def enrich(data, marker_features=(), editorial=None, links=None):
     for visit, level in all_visits:
         part = visit["part"]
         ordinal = unique_by_part[part].setdefault(
-            level["level_id"], len(unique_by_part[part]) + 1
+            level["level_id"],
+            visit.get("ordinal", len(unique_by_part[part]) + 1)
+            if preserve_ordinals
+            else len(unique_by_part[part]) + 1,
         )
         target = links.get("parts", {}).get(str(part), {})
         display_part = target.get("part", part)
@@ -155,7 +204,8 @@ def enrich(data, marker_features=(), editorial=None, links=None):
         )
         overrides = editorial.get("regions", {})
         override = overrides.get(
-            f"overworld:{region['id']}", overrides.get(region["id"], {})
+            f"{map_id}:{region['id']}",
+            overrides.get(region["id"], {}) if map_id == "overworld" else {},
         )
         if isinstance(override.get("title"), str):
             region["title"] = override["title"]

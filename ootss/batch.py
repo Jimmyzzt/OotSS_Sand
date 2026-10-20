@@ -7,7 +7,11 @@ from .matching import match_run
 from .video import contact_sheet, scan
 
 
-def propose(part, manifest_path="results/series/manifest.json"):
+def propose(
+    part,
+    manifest_path="results/series/manifest.json",
+    catalog_path="cache/map/catalog.json",
+):
     manifest = read_json(manifest_path)
     row = next(r for r in manifest["parts"] if r["part_number"] == part)
     if row["download_status"] != "complete":
@@ -16,8 +20,8 @@ def propose(part, manifest_path="results/series/manifest.json"):
     if part == 4:
         return read_json("results/p4/reviewed.json")
     scan_data = scan(row["file"], run, interval=5, black_min=0.125)
-    matches = match_run(run)
-    catalog = read_json("cache/map/catalog.json")
+    matches = match_run(run, catalog_path)
+    catalog = read_json(catalog_path)
     levels = {r["level_id"]: r for r in catalog["levels"]}
     groups = []
     for sample in matches["samples"]:

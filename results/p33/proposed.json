@@ -1,0 +1,1293 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 33,
+  "duration": 1535.100313,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage2\\P33__【东&东南·补】镜中之镜+水中镜像[东3_东4+南2东3].mp4",
+  "title": "【东&东南·补】镜中之镜+水中镜像[东3/东4+南2东3]",
+  "stage": 2,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "Unreviewed machine proposals; require bounded visual comparison, reject false matches, inspect unknown spans.",
+  "events": [
+    {
+      "event_id": "p33-001",
+      "level_id": "metamirror_same_dir_v2",
+      "puzzle_start_time": 27.75,
+      "puzzle_end_time": 86.5,
+      "entry_transition_time": 27.25,
+      "exit_time": 86.875,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "metamirror_same_dir_v2",
+          "area": "metamirrors",
+          "phash_distance": 6,
+          "hist_distance": 0.2839,
+          "sift_inliers": 110,
+          "sift_good": 118
+        },
+        {
+          "level_id": "mirror_3",
+          "area": "mirror",
+          "phash_distance": 14,
+          "hist_distance": 1.3159,
+          "sift_inliers": 20,
+          "sift_good": 26
+        },
+        {
+          "level_id": "mirror_15",
+          "area": "mirror",
+          "phash_distance": 6,
+          "hist_distance": 0.9461,
+          "sift_inliers": 8,
+          "sift_good": 12
+        },
+        {
+          "level_id": "orange_floaty_reflect_v3",
+          "area": "beams_and_mirrors",
+          "phash_distance": 16,
+          "hist_distance": 1.3146,
+          "sift_inliers": 5,
+          "sift_good": 11
+        },
+        {
+          "level_id": "heroes2_6_v3",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 1.3423,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "metamirror_same_dir_v2",
+        "area": "metamirrors",
+        "phash_distance": 6,
+        "hist_distance": 0.2839,
+        "sift_inliers": 110,
+        "sift_good": 118,
+        "consistent_samples": 12
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p33\\samples\\00030.000.jpg",
+          "time": 30.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\metamirror_same_dir_v2.webp",
+          "first_sample": 30.0,
+          "last_sample": 85.0,
+          "sample_count": 12
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p33-002",
+      "level_id": "metamirror_same_dir_2_alt_2",
+      "puzzle_start_time": 86.875,
+      "puzzle_end_time": 120.125,
+      "entry_transition_time": 86.5,
+      "exit_time": 120.375,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "metamirror_same_dir_2_alt_2",
+          "area": "metamirrors",
+          "phash_distance": 2,
+          "hist_distance": 0.3294,
+          "sift_inliers": 57,
+          "sift_good": 63
+        },
+        {
+          "level_id": "ortho",
+          "area": "lily_highway_stones_and_promesst",
+          "phash_distance": 16,
+          "hist_distance": 1.1128,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "heroes2_14",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 0.6358,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "corner_trick_easier",
+          "area": "beam_carrying",
+          "phash_distance": 18,
+          "hist_distance": 1.4083,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "pushback",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.4085,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "metamirror_same_dir_2_alt_2",
+        "area": "metamirrors",
+        "phash_distance": 2,
+        "hist_distance": 0.3294,
+        "sift_inliers": 57,
+        "sift_good": 63,
+        "consistent_samples": 6
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p33\\samples\\00090.000.jpg",
+          "time": 90.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\metamirror_same_dir_2_alt_2.webp",
+          "first_sample": 90.0,
+          "last_sample": 115.0,
+          "sample_count": 6
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p33-003",
+      "level_id": "metamirror_same_dir_3_alt_2",
+      "puzzle_start_time": 120.375,
+      "puzzle_end_time": 161.0,
+      "entry_transition_time": 120.125,
+      "exit_time": 161.25,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "metamirror_same_dir_3_alt_2",
+          "area": "metamirrors",
+          "phash_distance": 2,
+          "hist_distance": 0.5784,
+          "sift_inliers": 79,
+          "sift_good": 81
+        },
+        {
+          "level_id": "swap_and_spin",
+          "area": "heroes_and_artifacts",
+          "phash_distance": 20,
+          "hist_distance": 1.4096,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "mirror_sink",
+          "area": "mirror",
+          "phash_distance": 16,
+          "hist_distance": 1.3406,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "3wcn_shm_dragon_lily",
+          "area": "orange_beam_highway_worlds_collide",
+          "phash_distance": 18,
+          "hist_distance": 1.3781,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "submarine",
+          "area": "beams_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4025,
+          "sift_inliers": 0,
+          "sift_good": 6
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "metamirror_same_dir_3_alt_2",
+        "area": "metamirrors",
+        "phash_distance": 2,
+        "hist_distance": 0.5784,
+        "sift_inliers": 79,
+        "sift_good": 81,
+        "consistent_samples": 8
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p33\\samples\\00125.000.jpg",
+          "time": 125.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\metamirror_same_dir_3_alt_2.webp",
+          "first_sample": 125.0,
+          "last_sample": 160.0,
+          "sample_count": 8
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p33-004",
+      "level_id": "metamirror_same_dir_5_alt",
+      "puzzle_start_time": 161.25,
+      "puzzle_end_time": 235.0,
+      "entry_transition_time": 161.0,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "metamirror_same_dir_5_alt",
+          "area": "metamirrors",
+          "phash_distance": 2,
+          "hist_distance": 0.849,
+          "sift_inliers": 73,
+          "sift_good": 84
+        },
+        {
+          "level_id": "worlds_collide_heroes_and_stones",
+          "area": "worlds_collide",
+          "phash_distance": 20,
+          "hist_distance": 1.233,
+          "sift_inliers": 6,
+          "sift_good": 10
+        },
+        {
+          "level_id": "two_step",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 0.6188,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "green_metamirror",
+          "area": "beams_and_mirrors",
+          "phash_distance": 16,
+          "hist_distance": 0.9865,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "spray_and_pray",
+          "area": "skipping_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.0649,
+          "sift_inliers": 0,
+          "sift_good": 5
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "metamirror_same_dir_5_alt",
+        "area": "metamirrors",
+        "phash_distance": 2,
+        "hist_distance": 0.849,
+        "sift_inliers": 73,
+        "sift_good": 84,
+        "consistent_samples": 14
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p33\\samples\\00165.000.jpg",
+          "time": 165.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\metamirror_same_dir_5_alt.webp",
+          "first_sample": 165.0,
+          "last_sample": 230.0,
+          "sample_count": 14
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p33-005",
+      "level_id": "metamirror_different_dir_alt",
+      "puzzle_start_time": 248.75,
+      "puzzle_end_time": 289.625,
+      "entry_transition_time": 248.25,
+      "exit_time": 289.875,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "metamirror_different_dir_alt",
+          "area": "metamirrors",
+          "phash_distance": 6,
+          "hist_distance": 0.6988,
+          "sift_inliers": 80,
+          "sift_good": 81
+        },
+        {
+          "level_id": "heroes1_10_inv_v4_b",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 0.8992,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "wall_sneak",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.2071,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "river_maze_clear_tenacious_race_v2",
+          "area": "lily_rotation",
+          "phash_distance": 20,
+          "hist_distance": 1.272,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "four_horsemen",
+          "area": "heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.2921,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "metamirror_different_dir_alt",
+        "area": "metamirrors",
+        "phash_distance": 6,
+        "hist_distance": 0.6988,
+        "sift_inliers": 80,
+        "sift_good": 81,
+        "consistent_samples": 8
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p33\\samples\\00250.000.jpg",
+          "time": 250.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\metamirror_different_dir_alt.webp",
+          "first_sample": 250.0,
+          "last_sample": 285.0,
+          "sample_count": 8
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p33-006",
+      "level_id": "metamirror_different_dir_3_alt",
+      "puzzle_start_time": 289.875,
+      "puzzle_end_time": 408.125,
+      "entry_transition_time": 289.625,
+      "exit_time": 408.375,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "metamirror_different_dir_3_alt",
+          "area": "metamirrors",
+          "phash_distance": 6,
+          "hist_distance": 0.174,
+          "sift_inliers": 82,
+          "sift_good": 87
+        },
+        {
+          "level_id": "heroes1_15",
+          "area": "heroes1",
+          "phash_distance": 18,
+          "hist_distance": 1.4127,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "killer_wizard",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.3954,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "green_metamirror",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.4001,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "faster_than_stone",
+          "area": "beams_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.028,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "metamirror_different_dir_3_alt",
+        "area": "metamirrors",
+        "phash_distance": 6,
+        "hist_distance": 0.174,
+        "sift_inliers": 82,
+        "sift_good": 87,
+        "consistent_samples": 24
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p33\\samples\\00300.000.jpg",
+          "time": 300.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\metamirror_different_dir_3_alt.webp",
+          "first_sample": 290.0,
+          "last_sample": 405.0,
+          "sample_count": 24
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p33-007",
+      "level_id": "metamirror_different_dir_2_alt",
+      "puzzle_start_time": 408.375,
+      "puzzle_end_time": 479.875,
+      "entry_transition_time": 408.125,
+      "exit_time": 480.375,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "metamirror_different_dir_2_alt",
+          "area": "metamirrors",
+          "phash_distance": 0,
+          "hist_distance": 0.1132,
+          "sift_inliers": 96,
+          "sift_good": 98
+        },
+        {
+          "level_id": "pull_together",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 12,
+          "hist_distance": 1.407,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "synchronized_swimmers",
+          "area": "heroes_and_water",
+          "phash_distance": 16,
+          "hist_distance": 1.3416,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "monster_spawn",
+          "area": "spawners",
+          "phash_distance": 16,
+          "hist_distance": 1.414,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "red_yellow_alter_with_intro_v2",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 0.8634,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "metamirror_different_dir_2_alt",
+        "area": "metamirrors",
+        "phash_distance": 0,
+        "hist_distance": 0.1132,
+        "sift_inliers": 96,
+        "sift_good": 98,
+        "consistent_samples": 13
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p33\\samples\\00410.000.jpg",
+          "time": 410.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\metamirror_different_dir_2_alt.webp",
+          "first_sample": 410.0,
+          "last_sample": 470.0,
+          "sample_count": 13
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p33-008",
+      "level_id": "metamirror_block_v2",
+      "puzzle_start_time": 480.375,
+      "puzzle_end_time": 560.0,
+      "entry_transition_time": 479.875,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "metamirror_block_v2",
+          "area": "metamirrors",
+          "phash_distance": 8,
+          "hist_distance": 0.163,
+          "sift_inliers": 65,
+          "sift_good": 73
+        },
+        {
+          "level_id": "mirror_10_d",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.4141,
+          "sift_inliers": 5,
+          "sift_good": 9
+        },
+        {
+          "level_id": "doorstop",
+          "area": "beams_and_stones",
+          "phash_distance": 16,
+          "hist_distance": 1.3916,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "double_the_fun",
+          "area": "elevators",
+          "phash_distance": 18,
+          "hist_distance": 1.3363,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "double_team",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.3407,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "metamirror_block_v2",
+        "area": "metamirrors",
+        "phash_distance": 8,
+        "hist_distance": 0.163,
+        "sift_inliers": 65,
+        "sift_good": 73,
+        "consistent_samples": 15
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p33\\samples\\00485.000.jpg",
+          "time": 485.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\metamirror_block_v2.webp",
+          "first_sample": 485.0,
+          "last_sample": 555.0,
+          "sample_count": 15
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p33-009",
+      "level_id": "metamirror_c_alt",
+      "puzzle_start_time": 567.25,
+      "puzzle_end_time": 705.0,
+      "entry_transition_time": 566.875,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "metamirror_c_alt",
+          "area": "metamirrors",
+          "phash_distance": 4,
+          "hist_distance": 0.0799,
+          "sift_inliers": 59,
+          "sift_good": 61
+        },
+        {
+          "level_id": "spin_heroes",
+          "area": "skipping_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.1654,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "druids_stone_0_v2",
+          "area": "heroes_and_stones",
+          "phash_distance": 16,
+          "hist_distance": 1.4138,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "coax_a_lot",
+          "area": "mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.0578,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "beam_shatter",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.39,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "metamirror_c_alt",
+        "area": "metamirrors",
+        "phash_distance": 4,
+        "hist_distance": 0.0799,
+        "sift_inliers": 59,
+        "sift_good": 61,
+        "consistent_samples": 27
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p33\\samples\\00570.000.jpg",
+          "time": 570.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\metamirror_c_alt.webp",
+          "first_sample": 570.0,
+          "last_sample": 700.0,
+          "sample_count": 27
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p33-010",
+      "level_id": "two_metamirrors",
+      "puzzle_start_time": 729.75,
+      "puzzle_end_time": 790.0,
+      "entry_transition_time": 729.375,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "two_metamirrors",
+          "area": "metamirrors",
+          "phash_distance": 2,
+          "hist_distance": 0.0901,
+          "sift_inliers": 133,
+          "sift_good": 137
+        },
+        {
+          "level_id": "bard_movable_island2",
+          "area": "advanced_bard_and_water",
+          "phash_distance": 20,
+          "hist_distance": 0.7558,
+          "sift_inliers": 6,
+          "sift_good": 7
+        },
+        {
+          "level_id": "worlds_collide_heroes_and_mirrors_v3",
+          "area": "worlds_collide",
+          "phash_distance": 18,
+          "hist_distance": 1.2614,
+          "sift_inliers": 5,
+          "sift_good": 8
+        },
+        {
+          "level_id": "mirror_18",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.2692,
+          "sift_inliers": 5,
+          "sift_good": 12
+        },
+        {
+          "level_id": "wizard_jailbreak_v2",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 0.901,
+          "sift_inliers": 4,
+          "sift_good": 9
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "two_metamirrors",
+        "area": "metamirrors",
+        "phash_distance": 2,
+        "hist_distance": 0.0901,
+        "sift_inliers": 133,
+        "sift_good": 137,
+        "consistent_samples": 12
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p33\\samples\\00750.000.jpg",
+          "time": 750.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\two_metamirrors.webp",
+          "first_sample": 730.0,
+          "last_sample": 785.0,
+          "sample_count": 12
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p33-011",
+      "level_id": "already_dropped_v2",
+      "puzzle_start_time": 863.125,
+      "puzzle_end_time": 900.0,
+      "entry_transition_time": 862.625,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "already_dropped_v2",
+          "area": "mirrors_and_stones",
+          "phash_distance": 4,
+          "hist_distance": 0.0838,
+          "sift_inliers": 90,
+          "sift_good": 91
+        },
+        {
+          "level_id": "sprint_skip0",
+          "area": "heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.4141,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "wolf_boat_carry",
+          "area": "vertical_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.2968,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "holes",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.0659,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "use_and_remove",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.1067,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "already_dropped_v2",
+        "area": "mirrors_and_stones",
+        "phash_distance": 4,
+        "hist_distance": 0.0838,
+        "sift_inliers": 90,
+        "sift_good": 91,
+        "consistent_samples": 7
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p33\\samples\\00865.000.jpg",
+          "time": 865.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\already_dropped_v2.webp",
+          "first_sample": 865.0,
+          "last_sample": 895.0,
+          "sample_count": 7
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p33-012",
+      "level_id": "two_step",
+      "puzzle_start_time": 915.0,
+      "puzzle_end_time": 978.375,
+      "entry_transition_time": 914.5,
+      "exit_time": 978.875,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "two_step",
+          "area": "mirrors_and_stones",
+          "phash_distance": 6,
+          "hist_distance": 0.1249,
+          "sift_inliers": 64,
+          "sift_good": 64
+        },
+        {
+          "level_id": "push_down_v2",
+          "area": "intro_to_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.4004,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "wider_ocean",
+          "area": "mirrorable_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.404,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "retro_hooks",
+          "area": "skipping_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.4101,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "layered_alt",
+          "area": "lily_highway_mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4141,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "two_step",
+        "area": "mirrors_and_stones",
+        "phash_distance": 6,
+        "hist_distance": 0.1249,
+        "sift_inliers": 64,
+        "sift_good": 64,
+        "consistent_samples": 11
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p33\\samples\\00955.000.jpg",
+          "time": 955.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\two_step.webp",
+          "first_sample": 920.0,
+          "last_sample": 970.0,
+          "sample_count": 11
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p33-013",
+      "level_id": "use_and_remove",
+      "puzzle_start_time": 978.875,
+      "puzzle_end_time": 1043.5,
+      "entry_transition_time": 978.375,
+      "exit_time": 1043.75,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "use_and_remove",
+          "area": "mirrors_and_stones",
+          "phash_distance": 0,
+          "hist_distance": 0.095,
+          "sift_inliers": 132,
+          "sift_good": 133
+        },
+        {
+          "level_id": "heroes2_10",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 1.4122,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "sprint_skip0",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4142,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "cancel_out",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 0.8093,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "there_and_back",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 0.8125,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "use_and_remove",
+        "area": "mirrors_and_stones",
+        "phash_distance": 0,
+        "hist_distance": 0.095,
+        "sift_inliers": 132,
+        "sift_good": 133,
+        "consistent_samples": 13
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p33\\samples\\00985.000.jpg",
+          "time": 985.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\use_and_remove.webp",
+          "first_sample": 980.0,
+          "last_sample": 1040.0,
+          "sample_count": 13
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p33-014",
+      "level_id": "infinite_crystal_hack_v5",
+      "puzzle_start_time": 1043.75,
+      "puzzle_end_time": 1295.0,
+      "entry_transition_time": 1043.5,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "infinite_crystal_hack_v5",
+          "area": "mirrors_and_stones",
+          "phash_distance": 4,
+          "hist_distance": 0.1549,
+          "sift_inliers": 135,
+          "sift_good": 140
+        },
+        {
+          "level_id": "tippy_intro",
+          "area": "heroes_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.3761,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "be_aggro_alt_2",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.4055,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "there_and_back",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 0.8855,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "heroes2_5.5v5",
+          "area": "heroes2",
+          "phash_distance": 20,
+          "hist_distance": 1.1978,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "infinite_crystal_hack_v5",
+        "area": "mirrors_and_stones",
+        "phash_distance": 4,
+        "hist_distance": 0.1549,
+        "sift_inliers": 135,
+        "sift_good": 140,
+        "consistent_samples": 50
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p33\\samples\\01080.000.jpg",
+          "time": 1080.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\infinite_crystal_hack_v5.webp",
+          "first_sample": 1045.0,
+          "last_sample": 1290.0,
+          "sample_count": 50
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p33-015",
+      "level_id": "square_dance",
+      "puzzle_start_time": 1307.25,
+      "puzzle_end_time": 1380.0,
+      "entry_transition_time": 1306.75,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "square_dance",
+          "area": "mirrors_and_stones",
+          "phash_distance": 4,
+          "hist_distance": 0.1176,
+          "sift_inliers": 142,
+          "sift_good": 150
+        },
+        {
+          "level_id": "endpoint_holder4",
+          "area": "underworld_skipping_and_promesst",
+          "phash_distance": 16,
+          "hist_distance": 1.4088,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "depositor_thief",
+          "area": "skipping_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.2009,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "green_goblins",
+          "area": "monsters_and_beams",
+          "phash_distance": 18,
+          "hist_distance": 1.2712,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "suspend_intro",
+          "area": "vertical_reflection",
+          "phash_distance": 18,
+          "hist_distance": 1.3635,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "square_dance",
+        "area": "mirrors_and_stones",
+        "phash_distance": 4,
+        "hist_distance": 0.1176,
+        "sift_inliers": 142,
+        "sift_good": 150,
+        "consistent_samples": 14
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p33\\samples\\01310.000.jpg",
+          "time": 1310.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\square_dance.webp",
+          "first_sample": 1310.0,
+          "last_sample": 1375.0,
+          "sample_count": 14
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p33-016",
+      "level_id": "moving_bridge",
+      "puzzle_start_time": 1389.875,
+      "puzzle_end_time": 1485.0,
+      "entry_transition_time": 1389.5,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "moving_bridge",
+          "area": "mirrors_and_stones",
+          "phash_distance": 10,
+          "hist_distance": 0.1852,
+          "sift_inliers": 91,
+          "sift_good": 95
+        },
+        {
+          "level_id": "heroes1_9",
+          "area": "heroes1",
+          "phash_distance": 18,
+          "hist_distance": 1.318,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "dragon_bridge",
+          "area": "heroes_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.3191,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "three_artifacts_v3",
+          "area": "orange_beam_highway_mirrors_and_promesst",
+          "phash_distance": 18,
+          "hist_distance": 1.4114,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "reset_mirror",
+          "area": "spawners",
+          "phash_distance": 20,
+          "hist_distance": 1.1575,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "moving_bridge",
+        "area": "mirrors_and_stones",
+        "phash_distance": 10,
+        "hist_distance": 0.1852,
+        "sift_inliers": 91,
+        "sift_good": 95,
+        "consistent_samples": 18
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p33\\samples\\01445.000.jpg",
+          "time": 1445.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\moving_bridge.webp",
+          "first_sample": 1395.0,
+          "last_sample": 1480.0,
+          "sample_count": 18
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": []
+    }
+  ]
+}

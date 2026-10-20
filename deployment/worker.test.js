@@ -21,3 +21,18 @@ test('proxy streams assets, drops cookies and authorization, preserves 404 and H
     assert.equal((await worker.fetch(new Request('https://sand.zzt.si/',{method:'POST'}),env)).status,405);
   }finally{globalThis.fetch=original}
 });
+
+test('three physical-map tile paths use the fixed tileset origin, other paths stay on Pages',async()=>{
+  const original=globalThis.fetch, targets=[];
+  globalThis.fetch=async url=>{targets.push(String(url));return new Response('tile')};
+  try{
+    for(const map of ['overworld','sky','underworld']){
+      await worker.fetch(new Request(`https://sand.zzt.si/tiles/${map}_64k/4/3/8.webp`),env);
+      assert.equal(targets.at(-1),`https://joric.github.io/ootss_tileset/tiles/${map}_64k/4/3/8.webp`);
+    }
+    for(const path of ['tiles/unknown_64k/4/3/8.webp','tiles/sky_64k/8/3/8.webp','https://evil.test/']){
+      await worker.fetch(new Request(`https://sand.zzt.si/${path}`),env);
+      assert.equal(new URL(targets.at(-1)).hostname,'jimmyzzt.github.io');
+    }
+  }finally{globalThis.fetch=original}
+});

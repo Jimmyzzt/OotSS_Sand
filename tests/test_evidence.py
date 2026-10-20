@@ -109,7 +109,8 @@ def test_invalid_identity_and_times_rejected():
         validate(r, cat)
     r = fixture_review()
     r["events"][0]["level_id"] = "sky_level"
-    with pytest.raises(ValueError, match="Overworld"):
+    with pytest.raises(ValueError, match="catalogued"):
+        # Unlisted IDs are invalid; Sky IDs in a full catalog are supported.
         validate(r, cat)
     r = fixture_review()
     r["events"][0]["review_status"] = "unknown"
@@ -227,3 +228,35 @@ def test_frame_cache_is_bound_to_video_and_time(tmp_path):
         assert im.getpixel((10, 10))[2] > 200
     frame(blue, 0.5, target)
     assert read_json(target.with_suffix(".jpg.source.json"))["time"] == 0.5
+
+
+def test_sift_reference_cache_preserves_geometric_matches(tmp_path):
+    import numpy as np
+    from PIL import Image
+
+    from ootss.common import write_json
+    from ootss.matching import Matcher
+
+    image = tmp_path / "reference.png"
+    Image.fromarray(
+        np.random.default_rng(9).integers(0, 256, (180, 320, 3), dtype=np.uint8)
+    ).save(image)
+    catalog = tmp_path / "catalog.json"
+    write_json(
+        catalog,
+        {
+            "commit": "fixture",
+            "levels": [{"level_id": "a", "reference": str(image), "area": "test"}],
+        },
+    )
+    first = Matcher(catalog)
+    expected = first.geometric(image, image)
+    assert expected[0] >= 10
+
+    class NoDetector:
+        def detectAndCompute(self, *args):
+            raise AssertionError("Reference features should be reused from disk")
+
+    second = Matcher(catalog)
+    second.sift = NoDetector()
+    assert second.geometric(image, image) == expected

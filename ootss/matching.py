@@ -1,4 +1,5 @@
 import hashlib
+import os
 import time
 from pathlib import Path
 
@@ -43,10 +44,12 @@ class Matcher:
         ]
         if not self.rows:
             raise ValueError(
-                "No local Overworld references; run import-map and inspect download errors"
+                "No local map references; run import-map and inspect download errors"
             )
         self.sift = cv2.SIFT_create(nfeatures=700)
         self.local_features = {}
+        self.references = {str(Path(r["reference"])) for r in self.rows}
+        self.sift_cache = self.catalog_path.parent / "sift_700_640_v1"
         key = hashlib.sha256(
             (
                 self.catalog["commit"]
@@ -70,14 +73,47 @@ class Matcher:
 
     def keypoints(self, path):
         path = str(path)
-        if path not in self.local_features:
-            with Image.open(path) as im:
-                im = im.convert("L")
-                im.thumbnail((640, 360))
-                self.local_features[path] = self.sift.detectAndCompute(
-                    np.asarray(im), None
+        if path in self.local_features:
+            return self.local_features[path]
+        cached = None
+        if path in self.references:
+            source = Path(path)
+            key = hashlib.sha256(
+                f"{source.resolve()}|{source.stat().st_size}|{source.stat().st_mtime_ns}".encode()
+            ).hexdigest()[:24]
+            cached = self.sift_cache / f"{key}.npz"
+            if cached.exists():
+                with np.load(cached) as data:
+                    points, desc = data["points"], data["desc"]
+                result = (
+                    [cv2.KeyPoint(float(x), float(y), 1) for x, y in points],
+                    desc if desc.size else None,
                 )
-        return self.local_features[path]
+                self.local_features[path] = result
+                return result
+        with Image.open(path) as im:
+            im = im.convert("L")
+            im.thumbnail((640, 360))
+            result = self.sift.detectAndCompute(np.asarray(im), None)
+        self.local_features[path] = result
+        if cached:
+            cached.parent.mkdir(parents=True, exist_ok=True)
+            temporary = cached.with_name(f"{cached.stem}.{os.getpid()}.npz")
+            points, desc = result
+            np.savez_compressed(
+                temporary,
+                points=np.asarray([p.pt for p in points], dtype=np.float32).reshape(
+                    -1, 2
+                ),
+                desc=desc if desc is not None else np.empty((0, 128), dtype=np.float32),
+            )
+            try:
+                temporary.replace(cached)
+            except PermissionError:
+                if not cached.exists():
+                    raise
+                temporary.unlink(missing_ok=True)
+        return result
 
     def geometric(self, query, reference):
         qk, qd = self.keypoints(query)
@@ -143,7 +179,10 @@ def match_run(run, catalog="cache/map/catalog.json"):
     key = {
         "scan": scan["cache_key"],
         "map_commit": matcher.catalog["commit"],
-        "version": 1,
+        "catalog_ids": hashlib.sha256(
+            "|".join(r["level_id"] for r in matcher.rows).encode()
+        ).hexdigest(),
+        "version": 2,
     }
     target = run / "matches.json"
     if target.exists() and read_json(target).get("cache_key") == key:

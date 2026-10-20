@@ -1,0 +1,361 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 63,
+  "duration": 1765.966313,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage3\\P63__【结局3 P4】鲁棒性[北4西3].mp4",
+  "title": "【结局3 P4】鲁棒性[北4西3]",
+  "stage": 3,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "已检查runs/p63全部12张全时间轴图册（约0:00–29:30）及2张候选对照图。前约0:00–1:50为ROBUSTNESS大厅讲解/展示；随后确认六次目录关卡访问。两段river_exploit_v2候选处于同一海岸谜题连续访问，合并；fix_exploit、wizard_jailbreak_v2及庭院迷宫等按可见布局与本地静态参考逐项确认。end2_clone_divergence_2的两个匹配片段间没有独立新入口，合并。29:00后回大厅切换到CLARITY等展示/讲解，未计作谜题进入；外部入口及通关结果均未核实。",
+  "events": [
+    {
+      "event_id": "p63-001",
+      "level_id": "river_exploit_v2",
+      "puzzle_start_time": 109.875,
+      "puzzle_end_time": 224.0,
+      "entry_transition_time": 109.5,
+      "exit_time": 224.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "river_exploit_v2",
+          "area": "endgame3",
+          "phash_distance": 10,
+          "hist_distance": 0.1772,
+          "sift_inliers": 27,
+          "sift_good": 30
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "river_exploit_v2",
+        "area": "endgame3",
+        "phash_distance": 10,
+        "hist_distance": 0.1772,
+        "sift_inliers": 27,
+        "sift_good": 30,
+        "consistent_samples": 1,
+        "status": "visually_confirmed",
+        "visual_reason": "参考与画面中，上方红框窄桥、黄色/蓝色机关与下方海中沙洲、三颗绿圆点及折线路径相互对应。两段间未见完整离开重入，作为同一访问。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p63\\samples\\00115.000.jpg",
+          "time": 115.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\river_exploit_v2.webp",
+          "first_sample": 115.0,
+          "last_sample": 115.0,
+          "sample_count": 1
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p63\\samples\\00155.000.jpg",
+          "time": 155.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\river_exploit_v2.webp",
+          "first_sample": 145.0,
+          "last_sample": 170.0,
+          "sample_count": 6
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "参考与画面中，上方红框窄桥、黄色/蓝色机关与下方海中沙洲、三颗绿圆点及折线路径相互对应。两段间未见完整离开重入，作为同一访问。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p63-003",
+      "level_id": "fix_exploit",
+      "puzzle_start_time": 224.0,
+      "puzzle_end_time": 346.5,
+      "entry_transition_time": 223.625,
+      "exit_time": 346.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "fix_exploit",
+          "area": "endgame3",
+          "phash_distance": 2,
+          "hist_distance": 0.0525,
+          "sift_inliers": 129,
+          "sift_good": 132
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "fix_exploit",
+        "area": "endgame3",
+        "phash_distance": 2,
+        "hist_distance": 0.0525,
+        "sift_inliers": 129,
+        "sift_good": 132,
+        "consistent_samples": 25,
+        "status": "visually_confirmed",
+        "visual_reason": "参考与视频一致呈现阶梯形浅沙岛、左上黑蓝圆形机关、下方两枚浅蓝球、右侧木平台及岛外绿色圆点，空间布局可逐项对照。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p63\\samples\\00225.000.jpg",
+          "time": 225.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\fix_exploit.webp",
+          "first_sample": 225.0,
+          "last_sample": 345.0,
+          "sample_count": 25
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "参考与视频一致呈现阶梯形浅沙岛、左上黑蓝圆形机关、下方两枚浅蓝球、右侧木平台及岛外绿色圆点，空间布局可逐项对照。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p63-004",
+      "level_id": "wizard_jailbreak_v2",
+      "puzzle_start_time": 346.75,
+      "puzzle_end_time": 816.75,
+      "entry_transition_time": 346.5,
+      "exit_time": 816.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "wizard_jailbreak_v2",
+          "area": "endgame3",
+          "phash_distance": 4,
+          "hist_distance": 0.1584,
+          "sift_inliers": 125,
+          "sift_good": 128
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "wizard_jailbreak_v2",
+        "area": "endgame3",
+        "phash_distance": 4,
+        "hist_distance": 0.1584,
+        "sift_inliers": 125,
+        "sift_good": 128,
+        "consistent_samples": 93,
+        "status": "visually_confirmed",
+        "visual_reason": "参考与视频均为海岸平台上的宽蓝色棋盘，左侧竖列浅色格、上部横向机关轨道、中央空格、右侧橙色出口和底部箱体位置一致；期间操作和镜头变化均处于该关卡。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p63\\samples\\00660.000.jpg",
+          "time": 660.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\wizard_jailbreak_v2.webp",
+          "first_sample": 350.0,
+          "last_sample": 815.0,
+          "sample_count": 93
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "参考与视频均为海岸平台上的宽蓝色棋盘，左侧竖列浅色格、上部横向机关轨道、中央空格、右侧橙色出口和底部箱体位置一致；期间操作和镜头变化均处于该关卡。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p63-005",
+      "level_id": "fix_exploit_promesst_overworld",
+      "puzzle_start_time": 816.875,
+      "puzzle_end_time": 1505.0,
+      "entry_transition_time": 816.75,
+      "exit_time": 1505.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "fix_exploit_promesst_overworld",
+          "area": "endgame3",
+          "phash_distance": 10,
+          "hist_distance": 0.2508,
+          "sift_inliers": 88,
+          "sift_good": 108
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "fix_exploit_promesst_overworld",
+        "area": "endgame3",
+        "phash_distance": 10,
+        "hist_distance": 0.2508,
+        "sift_inliers": 88,
+        "sift_good": 108,
+        "consistent_samples": 137,
+        "status": "visually_confirmed",
+        "visual_reason": "参考与视频均为红边界包围的庭院式迷宫：外围绿树墙、左侧窄走廊、中央浅砖交错路径、右侧粉色圆点和红色机关方块位置吻合。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p63\\samples\\01155.000.jpg",
+          "time": 1155.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\fix_exploit_promesst_overworld.webp",
+          "first_sample": 820.0,
+          "last_sample": 1500.0,
+          "sample_count": 137
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "参考与视频均为红边界包围的庭院式迷宫：外围绿树墙、左侧窄走廊、中央浅砖交错路径、右侧粉色圆点和红色机关方块位置吻合。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p63-006",
+      "level_id": "end2_clone_divergence",
+      "puzzle_start_time": 1514.125,
+      "puzzle_end_time": 1610.25,
+      "entry_transition_time": 1513.75,
+      "exit_time": 1610.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "end2_clone_divergence",
+          "area": "endgame3",
+          "phash_distance": 4,
+          "hist_distance": 0.1983,
+          "sift_inliers": 83,
+          "sift_good": 91
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "end2_clone_divergence",
+        "area": "endgame3",
+        "phash_distance": 4,
+        "hist_distance": 0.1983,
+        "sift_inliers": 83,
+        "sift_good": 91,
+        "consistent_samples": 19,
+        "status": "visually_confirmed",
+        "visual_reason": "视频和参考均是竖向红框内浅沙地的折线通路，左中部一排石像、右侧岛礁和角落粉色入口对应；入口时段独立。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p63\\samples\\01515.000.jpg",
+          "time": 1515.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end2_clone_divergence.webp",
+          "first_sample": 1515.0,
+          "last_sample": 1605.0,
+          "sample_count": 19
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "视频和参考均是竖向红框内浅沙地的折线通路，左中部一排石像、右侧岛礁和角落粉色入口对应；入口时段独立。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p63-007",
+      "level_id": "end2_clone_divergence_2",
+      "puzzle_start_time": 1616.625,
+      "puzzle_end_time": 1740.0,
+      "entry_transition_time": 1616.25,
+      "exit_time": 1740.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "end2_clone_divergence_2",
+          "area": "endgame3",
+          "phash_distance": 8,
+          "hist_distance": 0.1665,
+          "sift_inliers": 49,
+          "sift_good": 52
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "end2_clone_divergence_2",
+        "area": "endgame3",
+        "phash_distance": 8,
+        "hist_distance": 0.1665,
+        "sift_inliers": 49,
+        "sift_good": 52,
+        "consistent_samples": 1,
+        "status": "visually_confirmed",
+        "visual_reason": "视频与参考同为竖长红框中上下两段浅色路径及中间红色阶梯块，周围小岛和石像位置一致；两个候选窗口间持续同一场景、无再次入口。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p63\\samples\\01620.000.jpg",
+          "time": 1620.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end2_clone_divergence_2.webp",
+          "first_sample": 1620.0,
+          "last_sample": 1620.0,
+          "sample_count": 1
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p63\\samples\\01685.000.jpg",
+          "time": 1685.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end2_clone_divergence_2.webp",
+          "first_sample": 1685.0,
+          "last_sample": 1685.0,
+          "sample_count": 1
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "视频与参考同为竖长红框中上下两段浅色路径及中间红色阶梯块，周围小岛和石像位置一致；两个候选窗口间持续同一场景、无再次入口。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    }
+  ]
+}

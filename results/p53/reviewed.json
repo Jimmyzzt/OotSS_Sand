@@ -1,0 +1,1187 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 53,
+  "duration": 1838.869333,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage3\\P53__【下西】怪物穿行+开启界门[北1西1_北2西1+北2西2_北3西2].mp4",
+  "title": "【下西】怪物穿行+开启界门[北1西1/北2西1+北2西2/北3西2]",
+  "stage": 3,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "Reviewed all 12 timeline sheets and all four candidate galleries against local full-catalog references. Confirmed 12 visits, merging only contiguous fragments of the same room: thief_dragger_v2 (15:50–18:30), open_monster (18:38–21:25) and monster_promesst_v3 (21:45–22:20). A short button_and_beam_v3 re-entry at 21:30–21:40 is separately retained after the open_monster interval. Four clearly distinct unidentified boards are structured unknown events; additional footage includes map/title transitions and travel, with no inferred overworld entry or outcome.",
+  "events": [
+    {
+      "event_id": "p53-001",
+      "level_id": "no_murder_weapon_wizard",
+      "puzzle_start_time": 21.88,
+      "puzzle_end_time": 110.62,
+      "entry_transition_time": 21.38,
+      "exit_time": 111.12,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "candidate_levels": [
+        {
+          "level_id": "no_murder_weapon_wizard",
+          "area": "monsters_and_beams",
+          "phash_distance": 2,
+          "hist_distance": 0.0815,
+          "sift_inliers": 171,
+          "sift_good": 180
+        },
+        {
+          "level_id": "no_murder_weapon_0",
+          "area": "monsters_and_beams",
+          "phash_distance": 8,
+          "hist_distance": 0.296,
+          "sift_inliers": 85,
+          "sift_good": 93
+        },
+        {
+          "level_id": "promesst3_streamlined",
+          "area": "promesst3",
+          "phash_distance": 18,
+          "hist_distance": 1.4022,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "all_out_goblin_war",
+          "area": "vertical_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 0.9438,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "cleric_isles",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 22,
+          "hist_distance": 0.997,
+          "sift_inliers": 4,
+          "sift_good": 7
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "no_murder_weapon_wizard",
+        "area": "monsters_and_beams",
+        "phash_distance": 2,
+        "hist_distance": 0.0815,
+        "sift_inliers": 171,
+        "sift_good": 180,
+        "consistent_samples": 18,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\00030.000.jpg",
+          "time": 30.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\no_murder_weapon_wizard.webp",
+          "first_sample": 25.0,
+          "last_sample": 110.0,
+          "sample_count": 18,
+          "reason": "A square elevated gray-tile platform with two red corner blockers, a green beam across the near edge and two dark figures at center matches the reference. The Gothic teal arches and platform boundary stay fixed through the visit."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p53-002",
+      "level_id": "no_murder_weapon_0",
+      "puzzle_start_time": 110.88,
+      "puzzle_end_time": 181.38,
+      "entry_transition_time": 110.38,
+      "exit_time": 181.88,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "candidate_levels": [
+        {
+          "level_id": "no_murder_weapon_0",
+          "area": "monsters_and_beams",
+          "phash_distance": 10,
+          "hist_distance": 0.082,
+          "sift_inliers": 128,
+          "sift_good": 135
+        },
+        {
+          "level_id": "no_murder_weapon_wizard",
+          "area": "monsters_and_beams",
+          "phash_distance": 10,
+          "hist_distance": 0.268,
+          "sift_inliers": 82,
+          "sift_good": 100
+        },
+        {
+          "level_id": "connect_the_dots_v5",
+          "area": "heroes_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.0646,
+          "sift_inliers": 5,
+          "sift_good": 11
+        },
+        {
+          "level_id": "all_out_goblin_war",
+          "area": "vertical_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 0.9198,
+          "sift_inliers": 5,
+          "sift_good": 6
+        },
+        {
+          "level_id": "promesst3_streamlined",
+          "area": "promesst3",
+          "phash_distance": 18,
+          "hist_distance": 1.4049,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "no_murder_weapon_0",
+        "area": "monsters_and_beams",
+        "phash_distance": 10,
+        "hist_distance": 0.082,
+        "sift_inliers": 128,
+        "sift_good": 135,
+        "consistent_samples": 14,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\00115.000.jpg",
+          "time": 115.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\no_murder_weapon_0.webp",
+          "first_sample": 115.0,
+          "last_sample": 180.0,
+          "sample_count": 14,
+          "reason": "The same suspended gray-tile arena is shown in its changed layout state: purple-lit corner fixtures, a cyan central line and a round dark piece replace the red-blocker arrangement. The exact board identity matches this variant reference; the state shift appears as a consecutive phase without a separate room transition."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p53-u01",
+      "level_id": null,
+      "puzzle_start_time": 185,
+      "puzzle_end_time": 202,
+      "entry_transition_time": 184.5,
+      "exit_time": 202.5,
+      "overworld_approach_time": null,
+      "review_status": "unknown",
+      "status": "unknown",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [],
+      "puzzle_match": {
+        "status": "unknown"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "runs/p53/sheet_01.jpg",
+          "time": 185,
+          "reference": null,
+          "reason": "A tall blue-gray multilevel stone room with narrow bridges, paired tile platforms and small figures appears after the two weapon-wizard layouts and before dragonsweeper. This is an independent puzzle-like board, but no catalog reference was visually confirmed."
+        }
+      ],
+      "evidence_gallery": null,
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p53-003",
+      "level_id": "dragonsweeper",
+      "puzzle_start_time": 205.0,
+      "puzzle_end_time": 398.75,
+      "entry_transition_time": 204.5,
+      "exit_time": 399.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "candidate_levels": [
+        {
+          "level_id": "dragonsweeper",
+          "area": "monsters_and_beams",
+          "phash_distance": 8,
+          "hist_distance": 0.0955,
+          "sift_inliers": 105,
+          "sift_good": 113
+        },
+        {
+          "level_id": "unblock_block_alt",
+          "area": "mirrors_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 0.8391,
+          "sift_inliers": 5,
+          "sift_good": 6
+        },
+        {
+          "level_id": "elope",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.1075,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "river_plinko_v2_actual",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 0.8884,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "corner_loop",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.0235,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "dragonsweeper",
+        "area": "monsters_and_beams",
+        "phash_distance": 8,
+        "hist_distance": 0.0955,
+        "sift_inliers": 105,
+        "sift_good": 113,
+        "consistent_samples": 39,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\00320.000.jpg",
+          "time": 320.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\dragonsweeper.webp",
+          "first_sample": 205.0,
+          "last_sample": 395.0,
+          "sample_count": 39,
+          "reason": "A square fenced stone arena with a raised turquoise central block, a vertical green beam along the left side, red corner block and scattered blue/black pieces matches the reference. It remains the same board through the full interval."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p53-004",
+      "level_id": "green_goblins",
+      "puzzle_start_time": 432.5,
+      "puzzle_end_time": 615.0,
+      "entry_transition_time": 432.0,
+      "exit_time": 615.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "candidate_levels": [
+        {
+          "level_id": "green_goblins",
+          "area": "monsters_and_beams",
+          "phash_distance": 6,
+          "hist_distance": 0.1072,
+          "sift_inliers": 78,
+          "sift_good": 82
+        },
+        {
+          "level_id": "reel_it_in",
+          "area": "mirrorable_stones",
+          "phash_distance": 20,
+          "hist_distance": 0.8075,
+          "sift_inliers": 4,
+          "sift_good": 9
+        },
+        {
+          "level_id": "no_charm",
+          "area": "heroes_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.0299,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "doorstop",
+          "area": "beams_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.2406,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "priest_bottom_v2",
+          "area": "heroes_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.3567,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "green_goblins",
+        "area": "monsters_and_beams",
+        "phash_distance": 6,
+        "hist_distance": 0.1072,
+        "sift_inliers": 78,
+        "sift_good": 82,
+        "consistent_samples": 33,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\00450.000.jpg",
+          "time": 450.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\green_goblins.webp",
+          "first_sample": 435.0,
+          "last_sample": 595.0,
+          "sample_count": 33,
+          "reason": "The enclosed raised platform with multiple fenced compartments, two glowing red cubes at lower left, a horizontal green beam and small green gate at right matches the catalog image. It is distinct from dragonsweeper."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p53-005",
+      "level_id": "en_root_alt",
+      "puzzle_start_time": 631.88,
+      "puzzle_end_time": 775.0,
+      "entry_transition_time": 631.38,
+      "exit_time": 775.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "candidate_levels": [
+        {
+          "level_id": "en_root_alt",
+          "area": "monsters_and_beams",
+          "phash_distance": 4,
+          "hist_distance": 0.0558,
+          "sift_inliers": 149,
+          "sift_good": 158
+        },
+        {
+          "level_id": "untrap",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.3876,
+          "sift_inliers": 4,
+          "sift_good": 8
+        },
+        {
+          "level_id": "wolf_boat_carry",
+          "area": "vertical_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.389,
+          "sift_inliers": 4,
+          "sift_good": 8
+        },
+        {
+          "level_id": "pulling_near_orange_v2",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.3748,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "implausible_bridge",
+          "area": "vertical_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3871,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "en_root_alt",
+        "area": "monsters_and_beams",
+        "phash_distance": 4,
+        "hist_distance": 0.0558,
+        "sift_inliers": 149,
+        "sift_good": 158,
+        "consistent_samples": 24,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\00640.000.jpg",
+          "time": 640.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\en_root_alt.webp",
+          "first_sample": 635.0,
+          "last_sample": 750.0,
+          "sample_count": 24,
+          "reason": "The pink-lit floating garden board has a long pale path, two upright dark/crystal pillars, a small upper-right tile field, vegetation edging and two green circular pads at lower left, matching the reference throughout."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p53-u02",
+      "level_id": null,
+      "puzzle_start_time": 780,
+      "puzzle_end_time": 800,
+      "entry_transition_time": 779.5,
+      "exit_time": 800.5,
+      "overworld_approach_time": null,
+      "review_status": "unknown",
+      "status": "unknown",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [],
+      "puzzle_match": {
+        "status": "unknown"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "runs/p53/sheet_05.jpg",
+          "time": 780,
+          "reference": null,
+          "reason": "A blue stone city/courtyard view with a separate square mechanism and scattered tiles appears around 13:00–13:20, after the en_root_alt island board and before the confirmed button-and-beam room. Its identity is unresolved."
+        }
+      ],
+      "evidence_gallery": null,
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p53-006",
+      "level_id": "button_and_beam_v3",
+      "puzzle_start_time": 801.75,
+      "puzzle_end_time": 950.0,
+      "entry_transition_time": 801.25,
+      "exit_time": 950.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "candidate_levels": [
+        {
+          "level_id": "button_and_beam_v3",
+          "area": "monsters_and_beams",
+          "phash_distance": 4,
+          "hist_distance": 0.1457,
+          "sift_inliers": 113,
+          "sift_good": 120
+        },
+        {
+          "level_id": "corner_loop",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.0204,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "orange_doubledoubleback",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.2106,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "do_not_want",
+          "area": "underworld_mirrors_and_promesst",
+          "phash_distance": 18,
+          "hist_distance": 1.2754,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "airmail",
+          "area": "mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3457,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "button_and_beam_v3",
+        "area": "monsters_and_beams",
+        "phash_distance": 4,
+        "hist_distance": 0.1457,
+        "sift_inliers": 113,
+        "sift_good": 120,
+        "consistent_samples": 15,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\00805.000.jpg",
+          "time": 805.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\button_and_beam_v3.webp",
+          "first_sample": 805.0,
+          "last_sample": 875.0,
+          "sample_count": 15,
+          "reason": "The stone courtyard has a horizontal row of green, yellow, cyan and red blocks, a vertical red beam at right, a dark square device below center and a separate purple-lit tile to the far right. These fixed features match the reference; continuous footage shows the same courtyard until its transition."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p53-007",
+      "level_id": "thief_dragger_v2",
+      "puzzle_start_time": 950.0,
+      "puzzle_end_time": 1110.0,
+      "entry_transition_time": 949.5,
+      "exit_time": 1110.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "candidate_levels": [
+        {
+          "level_id": "thief_dragger_v2",
+          "area": "monsters_and_beams",
+          "phash_distance": 4,
+          "hist_distance": 0.3771,
+          "sift_inliers": 97,
+          "sift_good": 101
+        },
+        {
+          "level_id": "shunt2_alt",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.2294,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "vertical_unclone_3",
+          "area": "vertical_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.4141,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "heroes1_4",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 1.0337,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "3d_intro_skipping",
+          "area": "intro_to_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.1292,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "thief_dragger_v2",
+        "area": "monsters_and_beams",
+        "phash_distance": 4,
+        "hist_distance": 0.3771,
+        "sift_inliers": 97,
+        "sift_good": 101,
+        "consistent_samples": 12,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\00940.000.jpg",
+          "time": 940.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\thief_dragger_v2.webp",
+          "first_sample": 940.0,
+          "last_sample": 995.0,
+          "sample_count": 12,
+          "reason": "The dark stone room has a central engraved floor tile, two standing figures, a dark alcove along the upper edge and a statue/fixture at upper right. Pink barrier blocks move into the room during play, but the underlying layout stays the same across all four candidate fragments, so they are one visit."
+        },
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\01020.000.jpg",
+          "time": 1020.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\thief_dragger_v2.webp",
+          "first_sample": 1015.0,
+          "last_sample": 1050.0,
+          "sample_count": 6,
+          "reason": "The dark stone room has a central engraved floor tile, two standing figures, a dark alcove along the upper edge and a statue/fixture at upper right. Pink barrier blocks move into the room during play, but the underlying layout stays the same across all four candidate fragments, so they are one visit."
+        },
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\01070.000.jpg",
+          "time": 1070.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\thief_dragger_v2.webp",
+          "first_sample": 1070.0,
+          "last_sample": 1070.0,
+          "sample_count": 1,
+          "reason": "The dark stone room has a central engraved floor tile, two standing figures, a dark alcove along the upper edge and a statue/fixture at upper right. Pink barrier blocks move into the room during play, but the underlying layout stays the same across all four candidate fragments, so they are one visit."
+        },
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\01100.000.jpg",
+          "time": 1100.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\thief_dragger_v2.webp",
+          "first_sample": 1100.0,
+          "last_sample": 1100.0,
+          "sample_count": 1,
+          "reason": "The dark stone room has a central engraved floor tile, two standing figures, a dark alcove along the upper edge and a statue/fixture at upper right. Pink barrier blocks move into the room during play, but the underlying layout stays the same across all four candidate fragments, so they are one visit."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p53-011",
+      "level_id": "open_monster",
+      "puzzle_start_time": 1118.0,
+      "puzzle_end_time": 1285.0,
+      "entry_transition_time": 1117.5,
+      "exit_time": 1285.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "candidate_levels": [
+        {
+          "level_id": "open_monster",
+          "area": "monsters_and_beams",
+          "phash_distance": 8,
+          "hist_distance": 0.3773,
+          "sift_inliers": 55,
+          "sift_good": 56
+        },
+        {
+          "level_id": "promesst2_streamlined",
+          "area": "promesst1_and_2",
+          "phash_distance": 20,
+          "hist_distance": 1.2082,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "mission_impossible",
+          "area": "vertical_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3457,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "surfing_lesson_alt",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.3907,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "heroes1_17",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 1.3979,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "open_monster",
+        "area": "monsters_and_beams",
+        "phash_distance": 8,
+        "hist_distance": 0.3773,
+        "sift_inliers": 55,
+        "sift_good": 56,
+        "consistent_samples": 1,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\01120.000.jpg",
+          "time": 1120.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\open_monster.webp",
+          "first_sample": 1120.0,
+          "last_sample": 1120.0,
+          "sample_count": 1,
+          "reason": "The floating rectangular stone platform over a deep blue void has round blue stones along its edge, a pink block near the right side, a small ladder-like fixture and dark creatures across the middle. Both candidate fragments show the same continuously occupied board."
+        },
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\01215.000.jpg",
+          "time": 1215.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\open_monster.webp",
+          "first_sample": 1215.0,
+          "last_sample": 1220.0,
+          "sample_count": 2,
+          "reason": "The floating rectangular stone platform over a deep blue void has round blue stones along its edge, a pink block near the right side, a small ladder-like fixture and dark creatures across the middle. Both candidate fragments show the same continuously occupied board."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p53-017",
+      "level_id": "button_and_beam_v3",
+      "puzzle_start_time": 1290.0,
+      "puzzle_end_time": 1300.0,
+      "entry_transition_time": 1289.5,
+      "exit_time": 1300.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 2,
+      "candidate_levels": [
+        {
+          "level_id": "button_and_beam_v3",
+          "area": "monsters_and_beams",
+          "phash_distance": 4,
+          "hist_distance": 0.1457,
+          "sift_inliers": 113,
+          "sift_good": 120
+        },
+        {
+          "level_id": "corner_loop",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.0204,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "orange_doubledoubleback",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.2106,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "do_not_want",
+          "area": "underworld_mirrors_and_promesst",
+          "phash_distance": 18,
+          "hist_distance": 1.2754,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "airmail",
+          "area": "mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3457,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "button_and_beam_v3",
+        "area": "monsters_and_beams",
+        "phash_distance": 4,
+        "hist_distance": 0.1457,
+        "sift_inliers": 113,
+        "sift_good": 120,
+        "consistent_samples": 15,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\01295.000.jpg",
+          "time": 1295.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\button_and_beam_v3.webp",
+          "first_sample": 1290.0,
+          "last_sample": 1298.0,
+          "sample_count": 2,
+          "reason": "At 21:30–21:40 the blue stone courtyard returns with the same multicolored horizontal block line, red vertical beam and purple side tile as button_and_beam_v3. A different monster enclosure immediately precedes this brief return."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p53-013",
+      "level_id": "monster_promesst_v3",
+      "puzzle_start_time": 1305.0,
+      "puzzle_end_time": 1340.0,
+      "entry_transition_time": 1304.5,
+      "exit_time": 1340.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "candidate_levels": [
+        {
+          "level_id": "monster_promesst_v3",
+          "area": "monsters_and_beams",
+          "phash_distance": 10,
+          "hist_distance": 0.2647,
+          "sift_inliers": 48,
+          "sift_good": 50
+        },
+        {
+          "level_id": "best_beam_colors",
+          "area": "endgame3",
+          "phash_distance": 16,
+          "hist_distance": 1.3476,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "bard_range6",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3477,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "heroes1_8_v2",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 1.1939,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "laser_stop_surprise",
+          "area": "double_beam_falling",
+          "phash_distance": 20,
+          "hist_distance": 1.2528,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "monster_promesst_v3",
+        "area": "monsters_and_beams",
+        "phash_distance": 10,
+        "hist_distance": 0.2647,
+        "sift_inliers": 48,
+        "sift_good": 50,
+        "consistent_samples": 1,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\01305.000.jpg",
+          "time": 1305.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\monster_promesst_v3.webp",
+          "first_sample": 1305.0,
+          "last_sample": 1305.0,
+          "sample_count": 1,
+          "reason": "The large stone floor with rust-colored fence pens, paired blue round pieces at upper left, scattered dark creatures and a bright pink movable block matches the reference; both fragments are from one uninterrupted board visit."
+        },
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\01325.000.jpg",
+          "time": 1325.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\monster_promesst_v3.webp",
+          "first_sample": 1325.0,
+          "last_sample": 1330.0,
+          "sample_count": 2,
+          "reason": "The large stone floor with rust-colored fence pens, paired blue round pieces at upper left, scattered dark creatures and a bright pink movable block matches the reference; both fragments are from one uninterrupted board visit."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p53-u03",
+      "level_id": null,
+      "puzzle_start_time": 1345,
+      "puzzle_end_time": 1555,
+      "entry_transition_time": 1344.5,
+      "exit_time": 1555.5,
+      "overworld_approach_time": null,
+      "review_status": "unknown",
+      "status": "unknown",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [],
+      "puzzle_match": {
+        "status": "unknown"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "runs/p53/sheet_08.jpg",
+          "time": 1345,
+          "reference": null,
+          "reason": "A broad overhead stone grid with a dark-blue border, repeated blue circular markers, fenced rectangular bays and colored pieces remains on screen from about 22:25 to 25:55. It is clearly a large puzzle board, but none of the full-catalog reference images was visually conclusive; retained as one unknown continuous visit."
+        }
+      ],
+      "evidence_gallery": null,
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p53-015",
+      "level_id": "goblin_two_rovers_alt",
+      "puzzle_start_time": 1571.12,
+      "puzzle_end_time": 1692.38,
+      "entry_transition_time": 1570.62,
+      "exit_time": 1692.88,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "candidate_levels": [
+        {
+          "level_id": "goblin_two_rovers_alt",
+          "area": "monsters_and_beams",
+          "phash_distance": 8,
+          "hist_distance": 0.0891,
+          "sift_inliers": 144,
+          "sift_good": 162
+        },
+        {
+          "level_id": "pull_together",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.2906,
+          "sift_inliers": 5,
+          "sift_good": 7
+        },
+        {
+          "level_id": "magicians_assistant_v2",
+          "area": "heroes_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.3427,
+          "sift_inliers": 5,
+          "sift_good": 8
+        },
+        {
+          "level_id": "two_for_one",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.353,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "corner_loop",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.4038,
+          "sift_inliers": 4,
+          "sift_good": 8
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "goblin_two_rovers_alt",
+        "area": "monsters_and_beams",
+        "phash_distance": 8,
+        "hist_distance": 0.0891,
+        "sift_inliers": 144,
+        "sift_good": 162,
+        "consistent_samples": 23,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\01595.000.jpg",
+          "time": 1595.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\goblin_two_rovers_alt.webp",
+          "first_sample": 1575.0,
+          "last_sample": 1685.0,
+          "sample_count": 23,
+          "reason": "The square tan courtyard contains two narrow central lanes, upper movable blocks, surrounding green water and detached blue marker at left; arrangement and borders match the reference."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p53-u04",
+      "level_id": null,
+      "puzzle_start_time": 1695,
+      "puzzle_end_time": 1730,
+      "entry_transition_time": 1694.5,
+      "exit_time": 1730.5,
+      "overworld_approach_time": null,
+      "review_status": "unknown",
+      "status": "unknown",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [],
+      "puzzle_match": {
+        "status": "unknown"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "runs/p53/sheet_11.jpg",
+          "time": 1695,
+          "reference": null,
+          "reason": "After the tan goblin courtyard, the video shows a separate watery tile field with a green island/growth cluster and pink blocks, before cutting to the confirmed rotating-cavalry arena. No catalog identity was confirmed."
+        }
+      ],
+      "evidence_gallery": null,
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p53-016",
+      "level_id": "rotating_cavalry_spaced",
+      "puzzle_start_time": 1731.25,
+      "puzzle_end_time": 1799.62,
+      "entry_transition_time": 1730.75,
+      "exit_time": 1800.12,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "candidate_levels": [
+        {
+          "level_id": "rotating_cavalry_spaced",
+          "area": "monsters_and_beams",
+          "phash_distance": 2,
+          "hist_distance": 0.2491,
+          "sift_inliers": 59,
+          "sift_good": 68
+        },
+        {
+          "level_id": "sidetrack",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.366,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "pull_together",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.3685,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "crystals_not_stones",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.385,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "heroes3_8_v3_alt3",
+          "area": "heroes3",
+          "phash_distance": 18,
+          "hist_distance": 1.389,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "rotating_cavalry_spaced",
+        "area": "monsters_and_beams",
+        "phash_distance": 2,
+        "hist_distance": 0.2491,
+        "sift_inliers": 59,
+        "sift_good": 68,
+        "consistent_samples": 13,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\01735.000.jpg",
+          "time": 1735.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\rotating_cavalry_spaced.webp",
+          "first_sample": 1735.0,
+          "last_sample": 1795.0,
+          "sample_count": 13,
+          "reason": "A narrow central tan platform with a vertical gold beam, bright pink tile at its lower end, blue orb at upper right and a line of red/gray enemies on the left matches the reference."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    }
+  ]
+}

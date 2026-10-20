@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 37,
+  "duration": 1822.999625,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage2\\P37__【西·补】变形光束[西4缺2题].mp4",
+  "title": "【西·补】变形光束[西4缺2题]",
+  "stage": 2,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "已逐张检查 runs/p37 的12张全时间轴联系表（00–11）、唯一 candidates_00 及 recovery_00–01（73个有界高清抽查中展示了10个较强帧）。00:00–01:40为主世界外部地图/变形光束区域，不计谜题访问；约01:45–25:20出现多个重复小棋盘的拼接/卷屏关卡内容，身份和独立入口边界未能确认，保留为unknown而非强行分拆。25:21–30:00两种清晰静态布局分别对应 half_tutorial 与 monkey_in_the_midpoint；此后画面主要为已确认布局内的机关移动及镜头变化，没有发现新入口。",
+  "events": [
+    {
+      "event_id": "p37-001",
+      "level_id": "half_tutorial",
+      "puzzle_start_time": 1521.125,
+      "puzzle_end_time": 1751.625,
+      "entry_transition_time": 1520.625,
+      "exit_time": 1752.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "half_tutorial",
+          "area": "promesst3",
+          "phash_distance": 4,
+          "hist_distance": 0.1537,
+          "sift_inliers": 207,
+          "sift_good": 219
+        },
+        {
+          "level_id": "heroes1_13_v2",
+          "area": "heroes1",
+          "phash_distance": 18,
+          "hist_distance": 1.4114,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "orange_beam_deal",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.1038,
+          "sift_inliers": 2,
+          "sift_good": 8
+        },
+        {
+          "level_id": "buff_explorer",
+          "area": "strength",
+          "phash_distance": 16,
+          "hist_distance": 1.3453,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "monster_mover",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.3383,
+          "sift_inliers": 0,
+          "sift_good": 5
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "half_tutorial",
+        "area": "promesst3",
+        "phash_distance": 4,
+        "hist_distance": 0.1537,
+        "sift_inliers": 207,
+        "sift_good": 219,
+        "consistent_samples": 46,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p37\\samples\\01575.000.jpg",
+          "time": 1575.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\half_tutorial.webp",
+          "first_sample": 1525.0,
+          "last_sample": 1750.0,
+          "sample_count": 46,
+          "reason": "视频约25:21开始清晰展示一排高低不同的紫色竖柱，底部连续青绿横向通道及两侧山洞装饰，与 half_tutorial 参考中的竖柱排列和底部横梁静态布局吻合；至约29:12持续在同一棋盘操作，作为一次访问。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p37-002",
+      "level_id": "monkey_in_the_midpoint",
+      "puzzle_start_time": 1758.75,
+      "puzzle_end_time": 1800.75,
+      "entry_transition_time": 1758.25,
+      "exit_time": 1801.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "monkey_in_the_midpoint",
+          "area": "promesst3",
+          "phash_distance": 2,
+          "hist_distance": 0.2081,
+          "sift_inliers": 150,
+          "sift_good": 160
+        },
+        {
+          "level_id": "heroes1_2_v2",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 1.0849,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "the_spiral",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.0896,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "single_out",
+          "area": "heroes_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.2013,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "falloff_kill_goblins_v6",
+          "area": "heroes_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.2134,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "monkey_in_the_midpoint",
+        "area": "promesst3",
+        "phash_distance": 2,
+        "hist_distance": 0.2081,
+        "sift_inliers": 150,
+        "sift_good": 160,
+        "consistent_samples": 9,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p37\\samples\\01760.000.jpg",
+          "time": 1760.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\monkey_in_the_midpoint.webp",
+          "first_sample": 1760.0,
+          "last_sample": 1800.0,
+          "sample_count": 9,
+          "reason": "视频约29:19切入深蓝色洞穴中的双层粉色横梁，左右青色支柱、横梁两端蓝圆点及中央石块排列与 monkey_in_the_midpoint 参考相符。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p37-u01",
+      "level_id": null,
+      "puzzle_start_time": 105.0,
+      "puzzle_end_time": 1520.0,
+      "entry_transition_time": 105.0,
+      "exit_time": 1520.0,
+      "overworld_approach_time": null,
+      "review_status": "unknown",
+      "status": "unknown",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "suspend_heterogeneous",
+          "area": "vertical_reflection; weak recovery shortlist only"
+        },
+        {
+          "level_id": "place_promesst_rooms",
+          "area": "endgame2; weak recovery shortlist only"
+        },
+        {
+          "level_id": "laser_pointer",
+          "area": "endgame2; weak recovery shortlist only"
+        }
+      ],
+      "puzzle_match": {
+        "status": "unknown"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "runs/p37/sheet_00.jpg",
+          "time": 105.0,
+          "reference": null,
+          "reason": "全时间轴00:00–01:40显示主世界外部地图/变形光束区域，不纳入谜题访问。约01:45开始进入由多个重复小棋盘拼接并持续卷屏的关卡内容，跨至约25:20才转入明确的 half_tutorial 独立棋盘；恢复抽查只有弱候选，无法确认前段拼接棋盘的Level_Entry身份及其内部边界，因此仅把01:45–25:20这段疑似连续棋盘探索列为unknown，未把前面的主世界地图包括进来。"
+        }
+      ],
+      "evidence_gallery": null,
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    }
+  ]
+}

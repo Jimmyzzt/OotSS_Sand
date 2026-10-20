@@ -1,6 +1,6 @@
 # 给后续 Codex 的操作流程
 
-1. 确认用户视频、BVID、分 P。运行 `python -m ootss import-map`（默认复用已固定版本，不自动拉取）。
+1. 确认用户视频、BVID、分 P。处理完整系列时运行 `python -m ootss import-map --all-worlds`（主世界/天空/地下参考目录写入catalog_all.json）；处理一阶段旧快照可用 `python -m ootss import-map`（默认复用已固定版本，不自动拉取）。
 2. `python -m ootss scan --video "inputs/xxx.mp4" --out runs/p4`。默认 8fps 黑屏扫描、15s 图册采样，一次低分辨率解码。scan.json 保存来源签名和元数据。先查看所有 sheet，防止忽略没有黑屏的连续关卡。
 3. `python -m ootss match --run runs/p4` 生成机器候选，不写已确认事件。逐项看参考图，必要时用 `packet` 在短窗口密集抽帧。不要把主世界探索当独立谜题。
 4. 关卡确认需检查静态布局、角色或机关位置关系。低 pHash 距离不足以确认。SIFT 内点也只是候选证据，重复地砖会误匹配。
@@ -48,7 +48,7 @@ python -m ootss world-check --run runs/p4 --time 9 --level heroes3_10 --terrain 
 
 `python -m ootss series --discover-only` 更新作者的68个分P元数据；`python -m ootss series` 默认两路并发，yt-dlp下载最高480p与低码率音频，FFmpeg流复制合并。作者标题确定P1–24/P25–44/P45–68的阶段边界。`results/series/manifest.json`是可续传台账，记录实际路径、CID、完成状态及ffprobe时长；重跑保留同CID已有修复文件的路径，不要随意改名破坏抽帧来源。普通提取失败时，使用公开playurl授权返回的普通备用CDN，仍用yt-dlp下载；失败保留为failed，不伪造完成。
 
-已下载后 `python -m ootss.batch 25` 可以为指定分P做5秒采样、检索与候选对照图册，但只写proposed.json。看完全部时间轴图册后再写reviewed.json；不要将稀疏匹配的最后一帧当作关卡结束。大幅滚屏或内部房间切换会让pHash/局部特征失效，`python -m ootss.recovery 25`可在审核未覆盖区间请求640宽局部帧，不自动裁决。
+已下载后 `python -c "from ootss.batch import propose; propose(25, catalog_path='cache/map/catalog_all.json')"` 可以为指定分P做5秒采样、检索与候选对照图册，但只写proposed.json。看完全部时间轴图册后再写reviewed.json；不要将稀疏匹配的最后一帧当作关卡结束。大幅滚屏或内部房间切换会让pHash/局部特征失效，`python -c "from ootss.recovery import recover; recover(25, catalog_path='cache/map/catalog_all.json')"` 可在审核未覆盖区间请求640宽局部帧，不自动裁决。
 
 同一入口可能通往多个相连房间。需检查进出黑场、世界画面、箭头连续移动及返回起始参考布局的证据，再决定是否为一次Level_Entry访问；既不要把风格一致的所有房间强配成一张棋盘，也不要把每次镜头滚动当成一个新地表入口。不能确定则保留unknown。
 
@@ -57,3 +57,5 @@ python -m ootss world-check --run runs/p4 --time 9 --level heroes3_10 --terrain 
 若需要5秒增密和允许短黑场，使用 `scan --interval 5 --black-min 0.125`。P4 的01:59转场只有一个8fps采样，0.25秒默认过滤会漏掉；允许单帧后应看前后截图过滤误报。扫描留存 `black_scores.npz`，无需重新解码即可试验黑场合并规则。图像样本损坏/缺失会触发重算；同目录换成另一个视频版本则报错，防止局部图包混用。
 
 原 starting_guide.md 已由上述工作流及实际结果说明替代：不实现 ASR 服务、Web 审核平台、复杂 Agent Adapter、自动训练、GitHub Issue 工程管理。GitHub CLI 凭证失效时继续本地提交。
+
+综合发布使用 `python -m ootss atlas --all-worlds`，读取P1–68和catalog_all.json，输出results/worlds。右上地图按物理世界命名，阶段二/三回访主世界仍归Overworld；同一分P跨地图时保留全片统一的首次出现序号。未定位片段以时间链接单列，不能只因参考目录有坐标就纳入地图。P68原型和正式版示例需区分，示例上下文写入context字段。

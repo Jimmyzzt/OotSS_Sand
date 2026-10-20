@@ -174,3 +174,109 @@ def test_static_map_contains_real_terrain_image(tmp_path, monkeypatch):
     assert (
         'href="https://example.test/?p=1&amp;t=1"' in (tmp_path / "map.svg").read_text()
     )
+
+
+def test_combined_atlas_groups_later_returns_by_map_and_keeps_video_ordinals(
+    tmp_path, monkeypatch
+):
+    monkeypatch.chdir(tmp_path)
+
+    def fake_download(url, path):
+        path = Path(path)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(b"fixture")
+        return path
+
+    monkeypatch.setattr("ootss.atlas.download", fake_download)
+    levels = [
+        {
+            "level_id": name,
+            "area": "area",
+            "map_layer": world,
+            "entries": [{"coordinates": [80, 69, z]}],
+            "map_url": f"https://example.test/#{name}",
+        }
+        for name, world, z in [
+            ("first", "overworld", 0),
+            ("late", "overworld", 0),
+            ("air", "sky", 33),
+            ("below", "underworld", -24),
+            ("unseen", "sky", 33),
+        ]
+    ]
+    write_json("catalog.json", {"commit": "test", "levels": levels})
+    write_json(
+        "data/annotations.json",
+        {
+            "levels": {},
+            "regions": {
+                "overworld:0,0": {"title": "地面中心"},
+                "sky:0,0": {"title": "天空中心"},
+            },
+        },
+    )
+    parts = [
+        {
+            "part_number": n,
+            "stage": stage,
+            "title": f"stage {stage}",
+            "duration": 30,
+            "download_status": "complete",
+        }
+        for n, stage in [(1, 1), (25, 2), (45, 3)]
+    ]
+    write_json("results/series/manifest.json", {"bvid": "BVtest", "parts": parts})
+    for n, names in [(1, ["first"]), (25, ["air", "late"]), (45, ["below"])]:
+        events = [
+            {
+                "event_id": f"p{n}-{i}",
+                "level_id": name,
+                "review_status": "confirmed",
+                "evidence": ["fixture visual"],
+                "context": "开发回顾示例" if n == 45 else None,
+                "puzzle_start_time": 1 + i * 10,
+                "puzzle_end_time": 5 + i * 10,
+            }
+            for i, name in enumerate(names)
+        ]
+        if n == 25:
+            events.append(
+                {
+                    "event_id": "unknown",
+                    "level_id": None,
+                    "review_status": "unknown",
+                    "puzzle_start_time": 22,
+                    "puzzle_end_time": 25,
+                    "evidence": ["unknown"],
+                }
+            )
+        write_json(
+            f"results/p{n}/reviewed.json",
+            {
+                "video_bvid": "BVtest",
+                "part_number": n,
+                "duration": 30,
+                "events": events,
+            },
+        )
+    data = build_atlas(
+        "atlas",
+        parts=[1, 25, 45],
+        offline_zoom=0,
+        catalog_path="catalog.json",
+        all_worlds=True,
+    )
+    maps = {m["map_id"]: m for m in data["maps"]}
+    assert [l["level_id"] for l in maps["overworld"]["levels"]] == ["first", "late"]
+    assert maps["overworld"]["levels"][1]["visits"][0]["ordinal"] == 2
+    assert maps["sky"]["levels"][0]["visits"][0]["ordinal"] == 1
+    assert maps["underworld"]["levels"][0]["level_id"] == "below"
+    assert maps["overworld"]["regions"][0]["title"] == "地面中心"
+    assert maps["sky"]["regions"][0]["title"] == "天空中心"
+    assert len(data["unknown_events"]) == 1
+    assert maps["underworld"]["levels"][0]["visits"][0]["context"] == "开发回顾示例"
+    assert next(p for p in data["parts"] if p["part"] == 25)["visits"] == 2
+    assert next(p for p in data["parts"] if p["part"] == 25)["unmapped_count"] == 1
+    assert all(l["level_id"] != "unseen" for l in data["levels"])
+    assert "sky_64k" in maps["sky"]["tile_url"]
+    assert "map_layer" in (Path("atlas") / "visits.csv").read_text(encoding="utf-8-sig")

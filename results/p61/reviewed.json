@@ -1,0 +1,770 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 61,
+  "duration": 3183.807333,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage3\\P61__【结局3 P2】读懂关卡[北5西4].mp4",
+  "title": "【结局3 P2】读懂关卡[北5西4]",
+  "stage": 3,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "已检查runs/p61全部20张全时间轴图册（约0:00–53:04）、全部6张候选对照图及4张recovery候选对照图，并对未匹配时间轴复核。确认10次目录关卡访问，按黑场/大厅离开与重新进入保留重复访问；合并英雄、镜像、跳跃关卡内仅滚屏/房间片段且无新入口的候选段。36:03左右大厅后进入一张独立褐灰色棋盘并持续游玩至42:32，静态目录未能认出，列为结构化unknown；P61末段READING LEVEL陈列厅的白蓝棋盘与IMPLEMENTING IDEAS展示画面是大厅陈列/讨论而无独立Level_Entry，不记作另一次入关。未能核验任何外部入口，不推断结果。",
+  "events": [
+    {
+      "event_id": "p61-001",
+      "level_id": "allocate_heroes_end3",
+      "puzzle_start_time": 228.375,
+      "puzzle_end_time": 356.75,
+      "entry_transition_time": 227.75,
+      "exit_time": 356.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "allocate_heroes_end3",
+          "area": "endgame3",
+          "phash_distance": 6,
+          "hist_distance": 0.1669,
+          "sift_inliers": 160,
+          "sift_good": 165
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "allocate_heroes_end3",
+        "area": "endgame3",
+        "phash_distance": 6,
+        "hist_distance": 0.1669,
+        "sift_inliers": 160,
+        "sift_good": 165,
+        "consistent_samples": 34,
+        "status": "visually_confirmed",
+        "visual_reason": "固定参考与画面一致：上方狭长蓝砖走道、下方三段石质房间，紫色与黄色物件的位置和比例吻合。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\00240.000.jpg",
+          "time": 240.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\allocate_heroes_end3.webp",
+          "first_sample": 230.0,
+          "last_sample": 395.0,
+          "sample_count": 34
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "固定参考与画面一致：上方狭长蓝砖走道、下方三段石质房间，紫色与黄色物件的位置和比例吻合。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p61-002",
+      "level_id": "end3_heroes_1",
+      "puzzle_start_time": 397.25,
+      "puzzle_end_time": 410.0,
+      "entry_transition_time": 396.875,
+      "exit_time": 410.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "end3_heroes_1",
+          "area": "endgame3",
+          "phash_distance": 4,
+          "hist_distance": 0.1297,
+          "sift_inliers": 127,
+          "sift_good": 138
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "end3_heroes_1",
+        "area": "endgame3",
+        "phash_distance": 4,
+        "hist_distance": 0.1297,
+        "sift_inliers": 127,
+        "sift_good": 138,
+        "consistent_samples": 2,
+        "status": "visually_confirmed",
+        "visual_reason": "参考与视频均为浅色石砖回廊，中央纵向水道、右侧深色方池、左上黄色入口和左下粉色圆点的位置一致。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\00400.000.jpg",
+          "time": 400.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_heroes_1.webp",
+          "first_sample": 400.0,
+          "last_sample": 405.0,
+          "sample_count": 2
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "参考与视频均为浅色石砖回廊，中央纵向水道、右侧深色方池、左上黄色入口和左下粉色圆点的位置一致。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p61-003",
+      "level_id": "end3_heroes_1",
+      "puzzle_start_time": 429.625,
+      "puzzle_end_time": 841.625,
+      "entry_transition_time": 429.5,
+      "exit_time": 841.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "end3_heroes_1",
+          "area": "endgame3",
+          "phash_distance": 4,
+          "hist_distance": 0.1032,
+          "sift_inliers": 140,
+          "sift_good": 150
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "end3_heroes_1",
+        "area": "endgame3",
+        "phash_distance": 4,
+        "hist_distance": 0.1032,
+        "sift_inliers": 140,
+        "sift_good": 150,
+        "consistent_samples": 6,
+        "status": "visually_confirmed",
+        "visual_reason": "同一段未离开的关卡：可滚动视角虽改变拼图可见部分，石砖中央水道、右侧方形暗池及外围入口构件与静态参考一致；期间没有地图返回或完整新入口。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\00435.000.jpg",
+          "time": 435.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_heroes_1.webp",
+          "first_sample": 430.0,
+          "last_sample": 470.0,
+          "sample_count": 6
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\00490.000.jpg",
+          "time": 490.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_heroes_1.webp",
+          "first_sample": 490.0,
+          "last_sample": 495.0,
+          "sample_count": 2
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\00520.000.jpg",
+          "time": 520.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_heroes_1.webp",
+          "first_sample": 520.0,
+          "last_sample": 520.0,
+          "sample_count": 1
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\00555.000.jpg",
+          "time": 555.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_heroes_1.webp",
+          "first_sample": 545.0,
+          "last_sample": 580.0,
+          "sample_count": 4
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\00625.000.jpg",
+          "time": 625.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_heroes_1.webp",
+          "first_sample": 610.0,
+          "last_sample": 660.0,
+          "sample_count": 7
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\00715.000.jpg",
+          "time": 715.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_heroes_1.webp",
+          "first_sample": 715.0,
+          "last_sample": 715.0,
+          "sample_count": 1
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\00745.000.jpg",
+          "time": 745.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_heroes_1.webp",
+          "first_sample": 735.0,
+          "last_sample": 745.0,
+          "sample_count": 2
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\00780.000.jpg",
+          "time": 780.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_heroes_1.webp",
+          "first_sample": 770.0,
+          "last_sample": 780.0,
+          "sample_count": 3
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\00810.000.jpg",
+          "time": 810.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_heroes_1.webp",
+          "first_sample": 810.0,
+          "last_sample": 810.0,
+          "sample_count": 1
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "同一段未离开的关卡：可滚动视角虽改变拼图可见部分，石砖中央水道、右侧方形暗池及外围入口构件与静态参考一致；期间没有地图返回或完整新入口。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p61-012",
+      "level_id": "end3_mirror_1_v3",
+      "puzzle_start_time": 842.25,
+      "puzzle_end_time": 1157.375,
+      "entry_transition_time": 841.625,
+      "exit_time": 1157.375,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "end3_mirror_1_v3",
+          "area": "endgame3",
+          "phash_distance": 2,
+          "hist_distance": 0.1391,
+          "sift_inliers": 103,
+          "sift_good": 109
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "end3_mirror_1_v3",
+        "area": "endgame3",
+        "phash_distance": 2,
+        "hist_distance": 0.1391,
+        "sift_inliers": 103,
+        "sift_good": 109,
+        "consistent_samples": 26,
+        "status": "visually_confirmed",
+        "visual_reason": "参考与视频均呈被水域分隔的黄绿平台群：左侧折角长道、中央雕像/机关平台、右上独立小岛和下侧横向长道的相对位置吻合；切镜为同一盘面内部视角。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\00845.000.jpg",
+          "time": 845.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_mirror_1_v3.webp",
+          "first_sample": 845.0,
+          "last_sample": 995.0,
+          "sample_count": 26
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\01015.000.jpg",
+          "time": 1015.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_mirror_1_v3.webp",
+          "first_sample": 1015.0,
+          "last_sample": 1020.0,
+          "sample_count": 2
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\01075.000.jpg",
+          "time": 1075.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_mirror_1_v3.webp",
+          "first_sample": 1075.0,
+          "last_sample": 1090.0,
+          "sample_count": 2
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\01130.000.jpg",
+          "time": 1130.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_mirror_1_v3.webp",
+          "first_sample": 1115.0,
+          "last_sample": 1155.0,
+          "sample_count": 7
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "参考与视频均呈被水域分隔的黄绿平台群：左侧折角长道、中央雕像/机关平台、右上独立小岛和下侧横向长道的相对位置吻合；切镜为同一盘面内部视角。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p61-016",
+      "level_id": "end3_mirror_2_alt2",
+      "puzzle_start_time": 1157.625,
+      "puzzle_end_time": 1167.625,
+      "entry_transition_time": 1157.375,
+      "exit_time": 1167.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "end3_mirror_2_alt2",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 0.7002,
+          "sift_inliers": 13,
+          "sift_good": 20
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "end3_mirror_2_alt2",
+        "area": "endgame3",
+        "phash_distance": 18,
+        "hist_distance": 0.7002,
+        "sift_inliers": 13,
+        "sift_good": 20,
+        "consistent_samples": 1,
+        "status": "visually_confirmed",
+        "visual_reason": "参考与视频均为分块的黄绿色阶梯路径，顶部中央三块橙色方块及右下黑色机关的空间布局一致。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\01160.000.jpg",
+          "time": 1160.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_mirror_2_alt2.webp",
+          "first_sample": 1160.0,
+          "last_sample": 1160.0,
+          "sample_count": 1
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "参考与视频均为分块的黄绿色阶梯路径，顶部中央三块橙色方块及右下黑色机关的空间布局一致。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p61-017",
+      "level_id": "end3_mirror_2_alt2",
+      "puzzle_start_time": 1209.125,
+      "puzzle_end_time": 1575.375,
+      "entry_transition_time": 1208.875,
+      "exit_time": 1575.375,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "end3_mirror_2_alt2",
+          "area": "endgame3",
+          "phash_distance": 8,
+          "hist_distance": 0.1297,
+          "sift_inliers": 54,
+          "sift_good": 56
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "end3_mirror_2_alt2",
+        "area": "endgame3",
+        "phash_distance": 8,
+        "hist_distance": 0.1297,
+        "sift_inliers": 54,
+        "sift_good": 56,
+        "consistent_samples": 2,
+        "status": "visually_confirmed",
+        "visual_reason": "同一段连续访问：黄绿阶梯/折线平台与橙色方块、右下机关持续对应参考，期间只有盘面内移动与局部滚屏，没有新的黑场/地图离开再进入。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\01210.000.jpg",
+          "time": 1210.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_mirror_2_alt2.webp",
+          "first_sample": 1210.0,
+          "last_sample": 1225.0,
+          "sample_count": 2
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\01245.000.jpg",
+          "time": 1245.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_mirror_2_alt2.webp",
+          "first_sample": 1245.0,
+          "last_sample": 1255.0,
+          "sample_count": 3
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\01295.000.jpg",
+          "time": 1295.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_mirror_2_alt2.webp",
+          "first_sample": 1295.0,
+          "last_sample": 1300.0,
+          "sample_count": 2
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\01325.000.jpg",
+          "time": 1325.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_mirror_2_alt2.webp",
+          "first_sample": 1325.0,
+          "last_sample": 1350.0,
+          "sample_count": 3
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\01390.000.jpg",
+          "time": 1390.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_mirror_2_alt2.webp",
+          "first_sample": 1390.0,
+          "last_sample": 1390.0,
+          "sample_count": 1
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\01525.000.jpg",
+          "time": 1525.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_mirror_2_alt2.webp",
+          "first_sample": 1525.0,
+          "last_sample": 1525.0,
+          "sample_count": 1
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\01545.000.jpg",
+          "time": 1545.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_mirror_2_alt2.webp",
+          "first_sample": 1545.0,
+          "last_sample": 1550.0,
+          "sample_count": 2
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "同一段连续访问：黄绿阶梯/折线平台与橙色方块、右下机关持续对应参考，期间只有盘面内移动与局部滚屏，没有新的黑场/地图离开再进入。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p61-024",
+      "level_id": "end3_skipping_1",
+      "puzzle_start_time": 1628.25,
+      "puzzle_end_time": 1876.75,
+      "entry_transition_time": 1627.75,
+      "exit_time": 1876.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "end3_skipping_1",
+          "area": "endgame3",
+          "phash_distance": 14,
+          "hist_distance": 0.186,
+          "sift_inliers": 54,
+          "sift_good": 65
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "end3_skipping_1",
+        "area": "endgame3",
+        "phash_distance": 14,
+        "hist_distance": 0.186,
+        "sift_inliers": 54,
+        "sift_good": 65,
+        "consistent_samples": 6,
+        "status": "visually_confirmed",
+        "visual_reason": "视频与参考同为不规则浅色十字形石室：上方黄色圆球、左下粉色入口、中央交叉区和右侧回钩窄廊位置相符；其间为室内操作/视角变化。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\01630.000.jpg",
+          "time": 1630.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_skipping_1.webp",
+          "first_sample": 1630.0,
+          "last_sample": 1675.0,
+          "sample_count": 6
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\01750.000.jpg",
+          "time": 1750.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_skipping_1.webp",
+          "first_sample": 1750.0,
+          "last_sample": 1750.0,
+          "sample_count": 1
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\01830.000.jpg",
+          "time": 1830.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_skipping_1.webp",
+          "first_sample": 1770.0,
+          "last_sample": 1850.0,
+          "sample_count": 10
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\01875.000.jpg",
+          "time": 1875.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_skipping_1.webp",
+          "first_sample": 1870.0,
+          "last_sample": 1875.0,
+          "sample_count": 2
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "视频与参考同为不规则浅色十字形石室：上方黄色圆球、左下粉色入口、中央交叉区和右侧回钩窄廊位置相符；其间为室内操作/视角变化。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_04.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p61-028",
+      "level_id": "end3_skipping_red",
+      "puzzle_start_time": 1877,
+      "puzzle_end_time": 1897.375,
+      "entry_transition_time": 1876.75,
+      "exit_time": 1897.375,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "end3_skipping_red",
+          "area": "endgame3",
+          "phash_distance": 6,
+          "hist_distance": 0.4487,
+          "sift_inliers": 21,
+          "sift_good": 33
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "end3_skipping_red",
+        "area": "endgame3",
+        "phash_distance": 6,
+        "hist_distance": 0.4487,
+        "sift_inliers": 21,
+        "sift_good": 33,
+        "consistent_samples": 2,
+        "status": "visually_confirmed",
+        "visual_reason": "视频与参考均为红色方形边界内的岛状迷宫，中央黑红机关、左下绿色地块和绕行红色通路的形状及相对位置一致。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\01880.000.jpg",
+          "time": 1880.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_skipping_red.webp",
+          "first_sample": 1880.0,
+          "last_sample": 1885.0,
+          "sample_count": 2
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "视频与参考均为红色方形边界内的岛状迷宫，中央黑红机关、左下绿色地块和绕行红色通路的形状及相对位置一致。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_05.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p61-029",
+      "level_id": "end3_skipping_red",
+      "puzzle_start_time": 1922.375,
+      "puzzle_end_time": 2116.875,
+      "entry_transition_time": 1922.125,
+      "exit_time": 2116.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "end3_skipping_red",
+          "area": "endgame3",
+          "phash_distance": 6,
+          "hist_distance": 0.4272,
+          "sift_inliers": 23,
+          "sift_good": 33
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "end3_skipping_red",
+        "area": "endgame3",
+        "phash_distance": 6,
+        "hist_distance": 0.4272,
+        "sift_inliers": 23,
+        "sift_good": 33,
+        "consistent_samples": 2,
+        "status": "visually_confirmed",
+        "visual_reason": "与上一访问为同一红色迷宫 Level_Entry，但中间有完整黑场退出后重新进入，故保留为独立重复访问；迷宫中央机关及环绕通道与参考一致。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\01925.000.jpg",
+          "time": 1925.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_skipping_red.webp",
+          "first_sample": 1925.0,
+          "last_sample": 1930.0,
+          "sample_count": 2
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "与上一访问为同一红色迷宫 Level_Entry，但中间有完整黑场退出后重新进入，故保留为独立重复访问；迷宫中央机关及环绕通道与参考一致。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_05.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p61-031",
+      "level_id": null,
+      "puzzle_start_time": 2163.25,
+      "puzzle_end_time": 2552.0,
+      "entry_transition_time": 2162.625,
+      "exit_time": 2552.0,
+      "overworld_approach_time": null,
+      "review_status": "unknown",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [],
+      "puzzle_match": null,
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "unmatched_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\02165.000.jpg",
+          "time": 2165.0,
+          "reason": "在READING LEVEL大厅后出现独立的褐色/灰色棋盘：左侧土色块状区域、右侧蓝色幽灵/光束结构及多色方块，持续操作至再次黑场；不匹配当前本地目录静态参考，身份未知。"
+        }
+      ],
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p61-030",
+      "level_id": "end3_promesst_red",
+      "puzzle_start_time": 2552.375,
+      "puzzle_end_time": 2770.0,
+      "entry_transition_time": 2552,
+      "exit_time": 2770.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "end3_promesst_red",
+          "area": "endgame3",
+          "phash_distance": 4,
+          "hist_distance": 0.2357,
+          "sift_inliers": 116,
+          "sift_good": 119
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "end3_promesst_red",
+        "area": "endgame3",
+        "phash_distance": 4,
+        "hist_distance": 0.2357,
+        "sift_inliers": 116,
+        "sift_good": 119,
+        "consistent_samples": 1,
+        "status": "visually_confirmed",
+        "visual_reason": "静态参考与视频一致：红色方形路径平台、横贯棋盘的绿色光束、中央蓝色圆形物件及外围边框布局相同；此前未知棋盘后有独立过场/入口，故为另一事件。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p61\\samples\\02555.000.jpg",
+          "time": 2555.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end3_promesst_red.webp",
+          "first_sample": 2555.0,
+          "last_sample": 2555.0,
+          "sample_count": 1
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "静态参考与视频一致：红色方形路径平台、横贯棋盘的绿色光束、中央蓝色圆形物件及外围边框布局相同；此前未知棋盘后有独立过场/入口，故为另一事件。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_05.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    }
+  ]
+}

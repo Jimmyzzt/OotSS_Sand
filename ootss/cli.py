@@ -20,6 +20,11 @@ def main():
         "import-map", help="Download pinned map metadata and Overworld references"
     )
     p.add_argument("--cache", default="cache/map")
+    p.add_argument(
+        "--all-worlds",
+        action="store_true",
+        help="Include Sky and Underworld in catalog_all.json",
+    )
     p = sub.add_parser("probe")
     p.add_argument("--video", required=True)
     p = sub.add_parser(
@@ -41,8 +46,11 @@ def main():
     p.add_argument("--discover-only", action="store_true")
     p.add_argument("--workers", type=int, default=2)
     p.add_argument("--stage", type=int, choices=[1, 2, 3])
-    p = sub.add_parser("atlas", help="Build the local phase-one real-map atlas")
-    p.add_argument("--out", default="results/stage1")
+    p = sub.add_parser("atlas", help="Build a reviewed real-map atlas")
+    p.add_argument("--out", default=None)
+    p.add_argument(
+        "--all-worlds", action="store_true", help="Group all stages by physical map"
+    )
     p = sub.add_parser(
         "packet", help="Bounded frame and candidate contact sheets for agent judgment"
     )
@@ -92,10 +100,23 @@ def main():
             download_series(workers=args.workers, only_stage=args.stage)
         return
     if args.command == "atlas":
-        build_atlas(args.out)
+        build_atlas(
+            args.out or ("results/worlds" if args.all_worlds else "results/stage1"),
+            parts=range(1, 69) if args.all_worlds else range(1, 25),
+            catalog_path="cache/map/catalog_all.json"
+            if args.all_worlds
+            else "cache/map/catalog.json",
+            all_worlds=args.all_worlds,
+        )
         return
     if args.command == "import-map":
-        r = import_map(args.cache)
+        r = import_map(
+            args.cache,
+            layers=("overworld", "sky", "underworld")
+            if args.all_worlds
+            else ("overworld",),
+            catalog_name="catalog_all.json" if args.all_worlds else "catalog.json",
+        )
         print(r["audit"])
         print("Download errors:", r["download_errors"])
     elif args.command == "probe":

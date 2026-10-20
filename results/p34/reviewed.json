@@ -1,0 +1,1243 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 34,
+  "duration": 2131.999625,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage2\\P34__【上南】飞跃与坠落+竖直之镜与飞跃[南1_南2_南2西1_南3+南3东2].mp4",
+  "title": "【上南】飞跃与坠落+竖直之镜与飞跃[南1/南2/南2西1/南3+南3东2]",
+  "stage": 2,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "已逐张检查 runs/p34/sheet_00.jpg 至 sheet_13.jpg，覆盖全片00:00至约35:40，并对照全部3张候选视频/参考图册。15个候选均能以池形、岛屿轮廓及球/按钮/镜片初始位置匹配各自参考图；不同初始构型均保留为独立事件。未覆盖区间在全时轴中为地图/章节预览、说明或转场，没有发现漏掉的未匹配谜题区域。outcome不作推断，主世界入口未核实故保留unverified。",
+  "events": [
+    {
+      "event_id": "p34-001",
+      "level_id": "lily_falls_intro_v2",
+      "puzzle_start_time": 50.375,
+      "puzzle_end_time": 126.125,
+      "entry_transition_time": 49.875,
+      "exit_time": 127.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "lily_falls_intro_v2",
+          "area": "skipping_in_3d",
+          "phash_distance": 8,
+          "hist_distance": 0.7795,
+          "sift_inliers": 151,
+          "sift_good": 161
+        },
+        {
+          "level_id": "prelude_priest_water_goblins_only",
+          "area": "endgame2",
+          "phash_distance": 22,
+          "hist_distance": 1.0076,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "button_and_beam_v3",
+          "area": "monsters_and_beams",
+          "phash_distance": 18,
+          "hist_distance": 1.3096,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "pushing_orange",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.4035,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "heroes1_9",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 0.8394,
+          "sift_inliers": 0,
+          "sift_good": 7
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "lily_falls_intro_v2",
+        "area": "skipping_in_3d",
+        "phash_distance": 8,
+        "hist_distance": 0.7795,
+        "sift_inliers": 151,
+        "sift_good": 161,
+        "consistent_samples": 15,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p34\\samples\\00105.000.jpg",
+          "time": 105.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\lily_falls_intro_v2.webp",
+          "first_sample": 55.0,
+          "last_sample": 125.0,
+          "sample_count": 15,
+          "reason": "视频00:50进入紫色台阶池区；左下黄色机关、中央阶梯形高台及右侧三橙球排列与 lily_falls_intro_v2 参考图一致。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p34-002",
+      "level_id": "many_falls",
+      "puzzle_start_time": 147.875,
+      "puzzle_end_time": 215.0,
+      "entry_transition_time": 147.25,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "many_falls",
+          "area": "skipping_in_3d",
+          "phash_distance": 4,
+          "hist_distance": 0.1186,
+          "sift_inliers": 124,
+          "sift_good": 134
+        },
+        {
+          "level_id": "metamirror_different_dir_3_alt",
+          "area": "metamirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3033,
+          "sift_inliers": 5,
+          "sift_good": 6
+        },
+        {
+          "level_id": "high_horse",
+          "area": "heroes_in_3d",
+          "phash_distance": 22,
+          "hist_distance": 0.6655,
+          "sift_inliers": 5,
+          "sift_good": 6
+        },
+        {
+          "level_id": "two_half_togglers",
+          "area": "underworld_mirrors_and_promesst",
+          "phash_distance": 18,
+          "hist_distance": 1.3548,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "run_the_clock_alt",
+          "area": "mirrorable_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.1143,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "many_falls",
+        "area": "skipping_in_3d",
+        "phash_distance": 4,
+        "hist_distance": 0.1186,
+        "sift_inliers": 124,
+        "sift_good": 134,
+        "consistent_samples": 11,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p34\\samples\\00180.000.jpg",
+          "time": 180.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\many_falls.webp",
+          "first_sample": 150.0,
+          "last_sample": 210.0,
+          "sample_count": 11,
+          "reason": "视频02:28后转入多层水池平台；中央方池、两侧平台和沿北缘散布的橙球位置与 many_falls 参考相符。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p34-003",
+      "level_id": "pool_pal_v2",
+      "puzzle_start_time": 258.625,
+      "puzzle_end_time": 366.5,
+      "entry_transition_time": 258.125,
+      "exit_time": 367.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "pool_pal_v2",
+          "area": "skipping_in_3d",
+          "phash_distance": 6,
+          "hist_distance": 0.2625,
+          "sift_inliers": 111,
+          "sift_good": 118
+        },
+        {
+          "level_id": "duality_condensed",
+          "area": "lily_highway_stones_and_promesst",
+          "phash_distance": 22,
+          "hist_distance": 1.3723,
+          "sift_inliers": 4,
+          "sift_good": 11
+        },
+        {
+          "level_id": "get_through_alt",
+          "area": "underworld_mirrors_and_promesst",
+          "phash_distance": 20,
+          "hist_distance": 1.2635,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "heroes3_10",
+          "area": "heroes3",
+          "phash_distance": 20,
+          "hist_distance": 1.3244,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "orange_skip_place_v3",
+          "area": "beams_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.4019,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "pool_pal_v2",
+        "area": "skipping_in_3d",
+        "phash_distance": 6,
+        "hist_distance": 0.2625,
+        "sift_inliers": 111,
+        "sift_good": 118,
+        "consistent_samples": 22,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p34\\samples\\00275.000.jpg",
+          "time": 275.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\pool_pal_v2.webp",
+          "first_sample": 260.0,
+          "last_sample": 365.0,
+          "sample_count": 22,
+          "reason": "视频04:18出现中央矩形水池及前沿铁栅，左右两侧球体和前方圆形按钮的位置与 pool_pal_v2 参考匹配。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p34-004",
+      "level_id": "sunk_cost_2_v3",
+      "puzzle_start_time": 374.125,
+      "puzzle_end_time": 462.625,
+      "entry_transition_time": 373.625,
+      "exit_time": 463.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "sunk_cost_2_v3",
+          "area": "skipping_in_3d",
+          "phash_distance": 2,
+          "hist_distance": 0.1223,
+          "sift_inliers": 124,
+          "sift_good": 138
+        },
+        {
+          "level_id": "highway",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3394,
+          "sift_inliers": 5,
+          "sift_good": 10
+        },
+        {
+          "level_id": "lily_falls_intro_v2",
+          "area": "skipping_in_3d",
+          "phash_distance": 22,
+          "hist_distance": 1.2184,
+          "sift_inliers": 5,
+          "sift_good": 8
+        },
+        {
+          "level_id": "floating_gardens",
+          "area": "heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.2696,
+          "sift_inliers": 4,
+          "sift_good": 10
+        },
+        {
+          "level_id": "falloff_4",
+          "area": "heroes_in_3d",
+          "phash_distance": 16,
+          "hist_distance": 1.3925,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "sunk_cost_2_v3",
+        "area": "skipping_in_3d",
+        "phash_distance": 2,
+        "hist_distance": 0.1223,
+        "sift_inliers": 124,
+        "sift_good": 138,
+        "consistent_samples": 18,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p34\\samples\\00380.000.jpg",
+          "time": 380.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\sunk_cost_2_v3.webp",
+          "first_sample": 375.0,
+          "last_sample": 460.0,
+          "sample_count": 18,
+          "reason": "视频06:14的长方水池周围有四枚橙球、北侧中央机关和南侧黄色按钮，布局与 sunk_cost_2_v3 参考图对应。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p34-005",
+      "level_id": "tiger_lily_v2",
+      "puzzle_start_time": 492.375,
+      "puzzle_end_time": 510.0,
+      "entry_transition_time": 491.875,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "tiger_lily_v2",
+          "area": "skipping_in_3d",
+          "phash_distance": 2,
+          "hist_distance": 0.1009,
+          "sift_inliers": 187,
+          "sift_good": 191
+        },
+        {
+          "level_id": "metamirror_same_dir_3_alt_2",
+          "area": "metamirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3652,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "3d_intro_vanilla",
+          "area": "intro_to_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.3923,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "3wcn_stonehenge",
+          "area": "underworld_heroes_and_promesst",
+          "phash_distance": 18,
+          "hist_distance": 1.41,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "place_promesst_rooms",
+          "area": "endgame2",
+          "phash_distance": 18,
+          "hist_distance": 1.4132,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "tiger_lily_v2",
+        "area": "skipping_in_3d",
+        "phash_distance": 2,
+        "hist_distance": 0.1009,
+        "sift_inliers": 187,
+        "sift_good": 191,
+        "consistent_samples": 3,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p34\\samples\\00495.000.jpg",
+          "time": 495.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\tiger_lily_v2.webp",
+          "first_sample": 495.0,
+          "last_sample": 505.0,
+          "sample_count": 3,
+          "reason": "视频08:12进入草地小岛；上缘长花圃/栅栏、中央紫球岛及右侧两球小岛的位置符合 tiger_lily_v2 参考。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p34-006",
+      "level_id": "carry_lily",
+      "puzzle_start_time": 625.75,
+      "puzzle_end_time": 707.5,
+      "entry_transition_time": 625.25,
+      "exit_time": 708.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "carry_lily",
+          "area": "skipping_in_3d",
+          "phash_distance": 2,
+          "hist_distance": 0.2537,
+          "sift_inliers": 127,
+          "sift_good": 130
+        },
+        {
+          "level_id": "removal_v2",
+          "area": "skipping_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 0.7449,
+          "sift_inliers": 8,
+          "sift_good": 19
+        },
+        {
+          "level_id": "heroes2_11_v2",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 1.3361,
+          "sift_inliers": 5,
+          "sift_good": 6
+        },
+        {
+          "level_id": "thief_through",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 0.7133,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "little_faith_alt",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.3501,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "carry_lily",
+        "area": "skipping_in_3d",
+        "phash_distance": 2,
+        "hist_distance": 0.2537,
+        "sift_inliers": 127,
+        "sift_good": 130,
+        "consistent_samples": 16,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p34\\samples\\00630.000.jpg",
+          "time": 630.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\carry_lily.webp",
+          "first_sample": 630.0,
+          "last_sample": 705.0,
+          "sample_count": 16,
+          "reason": "视频10:25的草地大岛向右延伸狭窄连接道，右端双蓝圆按钮与 carry_lily 参考图静态布局一致。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p34-007",
+      "level_id": "removal_v2",
+      "puzzle_start_time": 717.5,
+      "puzzle_end_time": 786.375,
+      "entry_transition_time": 717.0,
+      "exit_time": 787.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "removal_v2",
+          "area": "skipping_in_3d",
+          "phash_distance": 4,
+          "hist_distance": 0.1168,
+          "sift_inliers": 133,
+          "sift_good": 142
+        },
+        {
+          "level_id": "fix_exploit",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 1.4065,
+          "sift_inliers": 8,
+          "sift_good": 22
+        },
+        {
+          "level_id": "security_checkpoints_v2",
+          "area": "beams_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.361,
+          "sift_inliers": 5,
+          "sift_good": 9
+        },
+        {
+          "level_id": "carry_lily",
+          "area": "skipping_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.0353,
+          "sift_inliers": 5,
+          "sift_good": 16
+        },
+        {
+          "level_id": "mirror_factory_v2",
+          "area": "mirror",
+          "phash_distance": 16,
+          "hist_distance": 1.2693,
+          "sift_inliers": 4,
+          "sift_good": 8
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "removal_v2",
+        "area": "skipping_in_3d",
+        "phash_distance": 4,
+        "hist_distance": 0.1168,
+        "sift_inliers": 133,
+        "sift_good": 142,
+        "consistent_samples": 14,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p34\\samples\\00740.000.jpg",
+          "time": 740.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\removal_v2.webp",
+          "first_sample": 720.0,
+          "last_sample": 785.0,
+          "sample_count": 14,
+          "reason": "视频11:57的浅石平台左侧呈纵向长臂、右下独立小方岛带蓝机关，中央粉球/绿物件与 removal_v2 参考吻合。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p34-008",
+      "level_id": "delay_time_v2",
+      "puzzle_start_time": 815.75,
+      "puzzle_end_time": 930.625,
+      "entry_transition_time": 815.125,
+      "exit_time": 931.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "delay_time_v2",
+          "area": "skipping_in_3d",
+          "phash_distance": 0,
+          "hist_distance": 0.123,
+          "sift_inliers": 151,
+          "sift_good": 162
+        },
+        {
+          "level_id": "wizard_and_druid_alt_5",
+          "area": "heroes3",
+          "phash_distance": 16,
+          "hist_distance": 1.4035,
+          "sift_inliers": 5,
+          "sift_good": 10
+        },
+        {
+          "level_id": "wolf_boat_carry",
+          "area": "vertical_mirrors",
+          "phash_distance": 16,
+          "hist_distance": 1.1865,
+          "sift_inliers": 4,
+          "sift_good": 12
+        },
+        {
+          "level_id": "bottom_adjust",
+          "area": "vertical_mirrors",
+          "phash_distance": 16,
+          "hist_distance": 1.3588,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "mirror_15",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 0.9862,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "delay_time_v2",
+        "area": "skipping_in_3d",
+        "phash_distance": 0,
+        "hist_distance": 0.123,
+        "sift_inliers": 151,
+        "sift_good": 162,
+        "consistent_samples": 23,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p34\\samples\\00820.000.jpg",
+          "time": 820.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\delay_time_v2.webp",
+          "first_sample": 820.0,
+          "last_sample": 930.0,
+          "sample_count": 23,
+          "reason": "视频13:35进入双层长方水池区；左上独立台、中央池内两个绿球及右侧黄灯位置与 delay_time_v2 参考匹配。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p34-009",
+      "level_id": "lily_pull_intro",
+      "puzzle_start_time": 972.125,
+      "puzzle_end_time": 1031.125,
+      "entry_transition_time": 971.625,
+      "exit_time": 1032.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "lily_pull_intro",
+          "area": "skipping_in_3d",
+          "phash_distance": 2,
+          "hist_distance": 0.0685,
+          "sift_inliers": 61,
+          "sift_good": 64
+        },
+        {
+          "level_id": "use_and_remove",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.4142,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "depositor_bard",
+          "area": "skipping_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.3538,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "synchronized_swimmers",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.4087,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "worlds_collide_mirrors_and_stones_v2",
+          "area": "worlds_collide",
+          "phash_distance": 18,
+          "hist_distance": 1.4113,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "lily_pull_intro",
+        "area": "skipping_in_3d",
+        "phash_distance": 2,
+        "hist_distance": 0.0685,
+        "sift_inliers": 61,
+        "sift_good": 64,
+        "consistent_samples": 12,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p34\\samples\\00975.000.jpg",
+          "time": 975.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\lily_pull_intro.webp",
+          "first_sample": 975.0,
+          "last_sample": 1030.0,
+          "sample_count": 12,
+          "reason": "视频16:12显示高窄石柱连接底部小岛，柱顶角色、底部镜子和黄色圆按钮的位置符合 lily_pull_intro 参考图。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p34-010",
+      "level_id": "falling_down",
+      "puzzle_start_time": 1049.75,
+      "puzzle_end_time": 1301.875,
+      "entry_transition_time": 1049.25,
+      "exit_time": 1303.125,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "falling_down",
+          "area": "skipping_in_3d",
+          "phash_distance": 6,
+          "hist_distance": 0.0348,
+          "sift_inliers": 108,
+          "sift_good": 117
+        },
+        {
+          "level_id": "oneway_dragon_toast",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3889,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "spin_doctors_v3",
+          "area": "skipping_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.4131,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "mirror_7",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.4135,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "retro",
+          "area": "skipping_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 0.1904,
+          "sift_inliers": 0,
+          "sift_good": 5
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "falling_down",
+        "area": "skipping_in_3d",
+        "phash_distance": 6,
+        "hist_distance": 0.0348,
+        "sift_inliers": 108,
+        "sift_good": 117,
+        "consistent_samples": 51,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p34\\samples\\01150.000.jpg",
+          "time": 1150.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\falling_down.webp",
+          "first_sample": 1050.0,
+          "last_sample": 1300.0,
+          "sample_count": 51,
+          "reason": "视频17:30进入U形水道包围的多岛区；左端镜子/提示牌、中央两个岛和右端角色/装置位置与 falling_down 参考布局一致。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p34-011",
+      "level_id": "lily_pull",
+      "puzzle_start_time": 1387.875,
+      "puzzle_end_time": 1462.5,
+      "entry_transition_time": 1387.5,
+      "exit_time": 1462.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "lily_pull",
+          "area": "skipping_in_3d",
+          "phash_distance": 10,
+          "hist_distance": 0.1036,
+          "sift_inliers": 49,
+          "sift_good": 58
+        },
+        {
+          "level_id": "orange_floaty_reflect_v3",
+          "area": "beams_and_mirrors",
+          "phash_distance": 16,
+          "hist_distance": 1.3707,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "pushback",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 16,
+          "hist_distance": 1.4079,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "through_maze_v2",
+          "area": "beaming_objects",
+          "phash_distance": 18,
+          "hist_distance": 1.4035,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "implausible_bridge",
+          "area": "vertical_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.4127,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "lily_pull",
+        "area": "skipping_in_3d",
+        "phash_distance": 10,
+        "hist_distance": 0.1036,
+        "sift_inliers": 49,
+        "sift_good": 58,
+        "consistent_samples": 14,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p34\\samples\\01390.000.jpg",
+          "time": 1390.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\lily_pull.webp",
+          "first_sample": 1390.0,
+          "last_sample": 1460.0,
+          "sample_count": 14,
+          "reason": "视频23:08显示左侧草地起点、上方横向木桥及右侧环形水道中的三枚绿块，与 lily_pull 参考静态布局吻合。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p34-012",
+      "level_id": "retro",
+      "puzzle_start_time": 1462.875,
+      "puzzle_end_time": 1617.75,
+      "entry_transition_time": 1462.5,
+      "exit_time": 1618.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "retro",
+          "area": "skipping_in_3d",
+          "phash_distance": 10,
+          "hist_distance": 0.0703,
+          "sift_inliers": 136,
+          "sift_good": 141
+        },
+        {
+          "level_id": "endpoint1_skipping",
+          "area": "beams_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 0.5853,
+          "sift_inliers": 5,
+          "sift_good": 16
+        },
+        {
+          "level_id": "mirror_10_b_v2",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.3893,
+          "sift_inliers": 4,
+          "sift_good": 13
+        },
+        {
+          "level_id": "floor_plan_v3",
+          "area": "endgame2",
+          "phash_distance": 20,
+          "hist_distance": 1.3859,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "end3_mirror_2_alt2",
+          "area": "endgame3",
+          "phash_distance": 16,
+          "hist_distance": 1.4068,
+          "sift_inliers": 0,
+          "sift_good": 9
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "retro",
+        "area": "skipping_in_3d",
+        "phash_distance": 10,
+        "hist_distance": 0.0703,
+        "sift_inliers": 136,
+        "sift_good": 141,
+        "consistent_samples": 31,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p34\\samples\\01490.000.jpg",
+          "time": 1490.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\retro.webp",
+          "first_sample": 1465.0,
+          "last_sample": 1615.0,
+          "sample_count": 31,
+          "reason": "视频24:42进入围栏矩形水域；左侧入口小岛、横向一排绿块、下缘断续木板及右侧双绿块的构型与 retro 参考一致。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p34-013",
+      "level_id": "retro_hooks",
+      "puzzle_start_time": 1625.375,
+      "puzzle_end_time": 1777.75,
+      "entry_transition_time": 1625.0,
+      "exit_time": 1778.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "retro_hooks",
+          "area": "skipping_in_3d",
+          "phash_distance": 2,
+          "hist_distance": 0.0628,
+          "sift_inliers": 61,
+          "sift_good": 65
+        },
+        {
+          "level_id": "floating_orange_purple",
+          "area": "beams_and_mirrors",
+          "phash_distance": 12,
+          "hist_distance": 1.3628,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "magic_rover",
+          "area": "beams_and_mirrors",
+          "phash_distance": 14,
+          "hist_distance": 0.8058,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "accidentally_unlock_v2",
+          "area": "beaming_objects",
+          "phash_distance": 16,
+          "hist_distance": 1.3798,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "end3_heroes_1",
+          "area": "endgame3",
+          "phash_distance": 16,
+          "hist_distance": 1.4137,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "retro_hooks",
+        "area": "skipping_in_3d",
+        "phash_distance": 2,
+        "hist_distance": 0.0628,
+        "sift_inliers": 61,
+        "sift_good": 65,
+        "consistent_samples": 30,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p34\\samples\\01640.000.jpg",
+          "time": 1640.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\retro_hooks.webp",
+          "first_sample": 1630.0,
+          "last_sample": 1775.0,
+          "sample_count": 30,
+          "reason": "视频27:12的矩形水域内仅有两个分散绿块，左侧狭长起点与上缘/右缘木围栏形状吻合 retro_hooks 参考。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p34-014",
+      "level_id": "on_the_rocks",
+      "puzzle_start_time": 1876.125,
+      "puzzle_end_time": 1980.375,
+      "entry_transition_time": 1875.625,
+      "exit_time": 1981.375,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "on_the_rocks",
+          "area": "skipping_in_3d",
+          "phash_distance": 0,
+          "hist_distance": 0.1823,
+          "sift_inliers": 151,
+          "sift_good": 159
+        },
+        {
+          "level_id": "end2_river_place",
+          "area": "endgame2",
+          "phash_distance": 22,
+          "hist_distance": 1.0353,
+          "sift_inliers": 6,
+          "sift_good": 14
+        },
+        {
+          "level_id": "three_birds_push",
+          "area": "endgame2",
+          "phash_distance": 22,
+          "hist_distance": 1.0552,
+          "sift_inliers": 6,
+          "sift_good": 12
+        },
+        {
+          "level_id": "pool_pal_v2",
+          "area": "skipping_in_3d",
+          "phash_distance": 22,
+          "hist_distance": 1.0127,
+          "sift_inliers": 5,
+          "sift_good": 9
+        },
+        {
+          "level_id": "priest_water_back_goblin",
+          "area": "skipping_in_3d",
+          "phash_distance": 22,
+          "hist_distance": 1.2353,
+          "sift_inliers": 4,
+          "sift_good": 8
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "on_the_rocks",
+        "area": "skipping_in_3d",
+        "phash_distance": 0,
+        "hist_distance": 0.1823,
+        "sift_inliers": 151,
+        "sift_good": 159,
+        "consistent_samples": 21,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p34\\samples\\01880.000.jpg",
+          "time": 1880.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\on_the_rocks.webp",
+          "first_sample": 1880.0,
+          "last_sample": 1980.0,
+          "sample_count": 21,
+          "reason": "视频31:16的粉色边框双水池、左上台阶和三枚黄色/粉色球的位置与 on_the_rocks 参考图吻合。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": []
+    },
+    {
+      "event_id": "p34-015",
+      "level_id": "button_shut_in",
+      "puzzle_start_time": 1988.625,
+      "puzzle_end_time": 2115.75,
+      "entry_transition_time": 1988.125,
+      "exit_time": 2116.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "button_shut_in",
+          "area": "skipping_in_3d",
+          "phash_distance": 4,
+          "hist_distance": 0.0895,
+          "sift_inliers": 162,
+          "sift_good": 169
+        },
+        {
+          "level_id": "priest_water_back_goblin",
+          "area": "skipping_in_3d",
+          "phash_distance": 22,
+          "hist_distance": 1.1497,
+          "sift_inliers": 6,
+          "sift_good": 12
+        },
+        {
+          "level_id": "on_the_rocks",
+          "area": "skipping_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 0.7082,
+          "sift_inliers": 5,
+          "sift_good": 7
+        },
+        {
+          "level_id": "cancel_out",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.19,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "end3_mirror_2_alt2",
+          "area": "endgame3",
+          "phash_distance": 20,
+          "hist_distance": 1.3209,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "button_shut_in",
+        "area": "skipping_in_3d",
+        "phash_distance": 4,
+        "hist_distance": 0.0895,
+        "sift_inliers": 162,
+        "sift_good": 169,
+        "consistent_samples": 26,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p34\\samples\\02015.000.jpg",
+          "time": 2015.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\button_shut_in.webp",
+          "first_sample": 1990.0,
+          "last_sample": 2115.0,
+          "sample_count": 26,
+          "reason": "视频33:08的粉色花园双水池布局在左上沿有黄色方块串及粉球、左下角装饰机关，与 button_shut_in 参考一致。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": []
+    }
+  ]
+}

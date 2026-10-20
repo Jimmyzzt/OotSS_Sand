@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 60,
+  "duration": 687.733313,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage3\\P60__【结局3 P1】进入出口：低处的方法.mp4",
+  "title": "【结局3 P1】进入出口：低处的方法",
+  "stage": 3,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "Unreviewed machine proposals; require bounded visual comparison, reject false matches, inspect unknown spans.",
+  "events": []
+}

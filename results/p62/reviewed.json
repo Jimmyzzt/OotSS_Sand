@@ -1,0 +1,396 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 62,
+  "duration": 2006.832938,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage3\\P62__【结局3 P3】落实构思[北5西3].mp4",
+  "title": "【结局3 P3】落实构思[北5西3]",
+  "stage": 3,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "已检查runs/p62全部13张全时间轴图册（约0:00–33:30）及全部5张候选对照图。确认5次本地Level_Entry访问；将重复匹配的同一设计角、推箱盘面及海岸棋盘在没有离开入口证据的情况下合并。0:00–1:20标题/大厅地图拼贴及关卡讲解不算进入谜题；12:00及16:00附近出现的红色结局3缩略图仅是海岸棋盘旁的推荐/陈列画面，不确认进入该红色关卡。31:30后回到IMPLEMENTING IDEAS大厅并继续讨论/展示，无新的独立Level_Entry。未核实外部入口与结果。",
+  "events": [
+    {
+      "event_id": "p62-003",
+      "level_id": "design_corner",
+      "puzzle_start_time": 81.125,
+      "puzzle_end_time": 115.0,
+      "entry_transition_time": 80.75,
+      "exit_time": 115.125,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "design_corner",
+          "area": "endgame3",
+          "phash_distance": 4,
+          "hist_distance": 0.1634,
+          "sift_inliers": 107,
+          "sift_good": 115
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "design_corner",
+        "area": "endgame3",
+        "phash_distance": 4,
+        "hist_distance": 0.1634,
+        "sift_inliers": 107,
+        "sift_good": 115,
+        "consistent_samples": 1,
+        "status": "visually_confirmed",
+        "visual_reason": "静态参考与视频同为左右错层房间和中间窄桥：上方两侧石像/轨道、中央粉色圆点、下方黄色与绿色方块的相对位置均吻合。两个候选时间在同一未退出关卡内，仅为镜头/说明间断。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00085.000.jpg",
+          "time": 85.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\design_corner.webp",
+          "first_sample": 85.0,
+          "last_sample": 85.0,
+          "sample_count": 1
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00110.000.jpg",
+          "time": 110.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\design_corner.webp",
+          "first_sample": 105.0,
+          "last_sample": 110.0,
+          "sample_count": 2
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "静态参考与视频同为左右错层房间和中间窄桥：上方两侧石像/轨道、中央粉色圆点、下方黄色与绿色方块的相对位置均吻合。两个候选时间在同一未退出关卡内，仅为镜头/说明间断。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p62-005",
+      "level_id": "make_sokoban",
+      "puzzle_start_time": 238.125,
+      "puzzle_end_time": 455.0,
+      "entry_transition_time": 237.75,
+      "exit_time": 455.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "make_sokoban",
+          "area": "endgame3",
+          "phash_distance": 2,
+          "hist_distance": 0.2463,
+          "sift_inliers": 121,
+          "sift_good": 128
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "make_sokoban",
+        "area": "endgame3",
+        "phash_distance": 2,
+        "hist_distance": 0.2463,
+        "sift_inliers": 121,
+        "sift_good": 128,
+        "consistent_samples": 4,
+        "status": "visually_confirmed",
+        "visual_reason": "参考与视频均为粉紫色场景中的矩形石砖棋盘，中央两列石像形成通道，两侧石块、底部角色和外围黄色标记位置一致；全程持续展示和操作同一布局，无地图离开或重新入口。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00240.000.jpg",
+          "time": 240.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_sokoban.webp",
+          "first_sample": 240.0,
+          "last_sample": 255.0,
+          "sample_count": 4
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00300.000.jpg",
+          "time": 300.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_sokoban.webp",
+          "first_sample": 300.0,
+          "last_sample": 310.0,
+          "sample_count": 3
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "参考与视频均为粉紫色场景中的矩形石砖棋盘，中央两列石像形成通道，两侧石块、底部角色和外围黄色标记位置一致；全程持续展示和操作同一布局，无地图离开或重新入口。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p62-007",
+      "level_id": "make_shoreline",
+      "puzzle_start_time": 463,
+      "puzzle_end_time": 1015,
+      "entry_transition_time": 462.75,
+      "exit_time": 1015.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "make_shoreline",
+          "area": "endgame3",
+          "phash_distance": 4,
+          "hist_distance": 0.4222,
+          "sift_inliers": 99,
+          "sift_good": 115
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "make_shoreline",
+        "area": "endgame3",
+        "phash_distance": 4,
+        "hist_distance": 0.4222,
+        "sift_inliers": 99,
+        "sift_good": 115,
+        "consistent_samples": 4,
+        "status": "visually_confirmed",
+        "visual_reason": "参考与视频均为海水中两层沙洲：上方弧形窄岛，下方长方形沙地，中央成排石像/障碍，左侧绿色圆点与右下蓝色出口构件相对位置一致；期间障碍变化是解谜状态，镜头未显示离开Level_Entry。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00465.000.jpg",
+          "time": 465.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 465.0,
+          "last_sample": 480.0,
+          "sample_count": 4
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00500.000.jpg",
+          "time": 500.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 500.0,
+          "last_sample": 500.0,
+          "sample_count": 1
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00525.000.jpg",
+          "time": 525.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 525.0,
+          "last_sample": 525.0,
+          "sample_count": 1
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00550.000.jpg",
+          "time": 550.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 550.0,
+          "last_sample": 550.0,
+          "sample_count": 1
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00580.000.jpg",
+          "time": 580.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 580.0,
+          "last_sample": 580.0,
+          "sample_count": 1
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00635.000.jpg",
+          "time": 635.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 635.0,
+          "last_sample": 635.0,
+          "sample_count": 1
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00670.000.jpg",
+          "time": 670.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 670.0,
+          "last_sample": 675.0,
+          "sample_count": 2
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00730.000.jpg",
+          "time": 730.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 730.0,
+          "last_sample": 730.0,
+          "sample_count": 1
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00865.000.jpg",
+          "time": 865.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 865.0,
+          "last_sample": 875.0,
+          "sample_count": 2
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\00960.000.jpg",
+          "time": 960.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 960.0,
+          "last_sample": 960.0,
+          "sample_count": 1
+        },
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\01005.000.jpg",
+          "time": 1005.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_shoreline.webp",
+          "first_sample": 1005.0,
+          "last_sample": 1005.0,
+          "sample_count": 1
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "参考与视频均为海水中两层沙洲：上方弧形窄岛，下方长方形沙地，中央成排石像/障碍，左侧绿色圆点与右下蓝色出口构件相对位置一致；期间障碍变化是解谜状态，镜头未显示离开Level_Entry。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p62-020",
+      "level_id": "make_thief_goblin_maze_v2",
+      "puzzle_start_time": 1268.625,
+      "puzzle_end_time": 1520,
+      "entry_transition_time": 1268.25,
+      "exit_time": 1520,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "make_thief_goblin_maze_v2",
+          "area": "endgame3",
+          "phash_distance": 6,
+          "hist_distance": 0.177,
+          "sift_inliers": 104,
+          "sift_good": 106
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "make_thief_goblin_maze_v2",
+        "area": "endgame3",
+        "phash_distance": 6,
+        "hist_distance": 0.177,
+        "sift_inliers": 104,
+        "sift_good": 106,
+        "consistent_samples": 9,
+        "status": "visually_confirmed",
+        "visual_reason": "视频与参考同见蓝绿森林背景中的左侧折线走廊、中央偏右方形区域、各侧出口色块及角色/石像分布；展示时镜头和边界缩放变化，但无新入口证据。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\01270.000.jpg",
+          "time": 1270.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_thief_goblin_maze_v2.webp",
+          "first_sample": 1270.0,
+          "last_sample": 1310.0,
+          "sample_count": 9
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "视频与参考同见蓝绿森林背景中的左侧折线走廊、中央偏右方形区域、各侧出口色块及角色/石像分布；展示时镜头和边界缩放变化，但无新入口证据。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p62-021",
+      "level_id": "make_oneway",
+      "puzzle_start_time": 1547.125,
+      "puzzle_end_time": 1880,
+      "entry_transition_time": 1546.75,
+      "exit_time": 1880,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "make_oneway",
+          "area": "endgame3",
+          "phash_distance": 14,
+          "hist_distance": 0.2028,
+          "sift_inliers": 70,
+          "sift_good": 74
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "make_oneway",
+        "area": "endgame3",
+        "phash_distance": 14,
+        "hist_distance": 0.2028,
+        "sift_inliers": 70,
+        "sift_good": 74,
+        "consistent_samples": 1,
+        "status": "visually_confirmed",
+        "visual_reason": "参考与视频为深蓝灰色石室：左侧有亮白机关，底部横向浅蓝砖带和粉色圆点，右侧金色物件、上下黑色石像的位置吻合；保留同一连续关卡时段。"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p62\\samples\\01550.000.jpg",
+          "time": 1550.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\make_oneway.webp",
+          "first_sample": 1550.0,
+          "last_sample": 1550.0,
+          "sample_count": 1
+        },
+        {
+          "type": "visual_comparison",
+          "reason": "参考与视频为深蓝灰色石室：左侧有亮白机关，底部横向浅蓝砖带和粉色圆点，右侧金色物件、上下黑色石像的位置吻合；保留同一连续关卡时段。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_04.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    }
+  ]
+}

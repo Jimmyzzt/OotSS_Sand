@@ -2,7 +2,7 @@ name: Publish atlas
 on:
   push:
     branches: [master]
-    paths: ["results/stage1/**", "scripts/package_site.py", ".github/workflows/pages.yml"]
+    paths: ["results/stage1/**", "results/worlds/**", "scripts/package_site.py", ".github/workflows/pages.yml"]
   workflow_dispatch:
 permissions:
   contents: read

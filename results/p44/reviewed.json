@@ -1,0 +1,986 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 44,
+  "duration": 3861.600313,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage2\\P44__【结局2 P2】对映之地：高处+两个结局2附赠难关[北6西5融合世界关_南5西5_北6西4_北5西5].mp4",
+  "title": "【结局2 P2】对映之地：高处+两个结局2附赠难关[北6西5融合世界关/南5西5/北6西4/北5西5]",
+  "stage": 2,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "Reviewed all 25 five-second timeline sheets (00:00–64:20) and all four candidate galleries. Same-layout candidate fragments are merged only when no black/map transition or intervening verified level entry appears (floor_plan_v3, chart_a_course, sidestone_zach_2_end2, stone_economy, all_together_now). The repeated end2_prism_hp match after the observed 10:29 black transition is retained as a separate visit. Opening map footage, travel, unexplained exploration and later unproposed rooms remain uncovered; especially 31:35–41:50 and 51:50–63:20 contain further gameplay/dialogue with possible unmatched puzzles. The ending 63:25–64:20 is a map recap. No physical overworld approach was checked; overworld matches and outcomes remain unknown. Recorded 11 confirmed puzzle-layout visits. Rechecked recovered local frames in the later intervals: extended all_together_now through its continuous visible gameplay to 39:19, and recorded two clear but unidentified independent boards at 51:58–53:05 and 53:55–55:05 as structured unknown events. Other intervening/end segments include travel, internal/exploratory footage and unmatched gameplay; no overworld coordinates or outcomes were inferred. Rechecked complete late timeline sheets 19–24: the icy courtyard visit is 51:40–53:30 and the pink-loop chamber is 53:55–61:50, ending at the cut to a different room. Both remain structured unknowns.",
+  "events": [
+    {
+      "event_id": "p44-001",
+      "level_id": "floor_plan_v3",
+      "puzzle_start_time": 19.625,
+      "puzzle_end_time": 152.375,
+      "entry_transition_time": 19.0,
+      "exit_time": 152.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "floor_plan_v3",
+          "area": "endgame2",
+          "phash_distance": 6,
+          "hist_distance": 0.0921,
+          "sift_inliers": 92,
+          "sift_good": 98
+        },
+        {
+          "level_id": "easy_situation_v2",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.1839,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "mirror_10_b_v2",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.4017,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "four_horsemen",
+          "area": "heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.1479,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "metamirror_different_dir_2_alt",
+          "area": "metamirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.1773,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "floor_plan_v3",
+        "area": "endgame2",
+        "phash_distance": 6,
+        "hist_distance": 0.0921,
+        "sift_inliers": 92,
+        "sift_good": 98,
+        "consistent_samples": 5,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p44\\samples\\00035.000.jpg",
+          "time": 35.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\floor_plan_v3.webp",
+          "reason": "The same floating fenced upper board with blue/purple blocks and pink endpoint, paired with the small stepped shore/lower structure and its blue square/pink marker, remains continuously visible; internal camera shifts do not change the layout."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p44-002",
+      "level_id": "chart_a_course",
+      "puzzle_start_time": 177.375,
+      "puzzle_end_time": 300.625,
+      "entry_transition_time": 176.875,
+      "exit_time": 300.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "chart_a_course",
+          "area": "endgame2",
+          "phash_distance": 4,
+          "hist_distance": 0.0682,
+          "sift_inliers": 53,
+          "sift_good": 56
+        },
+        {
+          "level_id": "cleric_isles",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.3652,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "druid_metamirror",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3896,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "make_oneway",
+          "area": "endgame3",
+          "phash_distance": 20,
+          "hist_distance": 1.4088,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "sky_druid_maze",
+          "area": "heroes_in_3d",
+          "phash_distance": 22,
+          "hist_distance": 1.0475,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "chart_a_course",
+        "area": "endgame2",
+        "phash_distance": 4,
+        "hist_distance": 0.0682,
+        "sift_inliers": 53,
+        "sift_good": 56,
+        "consistent_samples": 4,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p44\\samples\\00185.000.jpg",
+          "time": 185.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\chart_a_course.webp",
+          "reason": "The compact cross-shaped orange island with four corner green markers and the distant fenced platform with three blocks matches the reference; same layout continues across the interval."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p44-003",
+      "level_id": "sidestone_zach_2_end2",
+      "puzzle_start_time": 330.375,
+      "puzzle_end_time": 470.0,
+      "entry_transition_time": 330.125,
+      "exit_time": 470.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "sidestone_zach_2_end2",
+          "area": "endgame2",
+          "phash_distance": 4,
+          "hist_distance": 0.122,
+          "sift_inliers": 122,
+          "sift_good": 125
+        },
+        {
+          "level_id": "sidestone_zach_2",
+          "area": "mirrorable_stones",
+          "phash_distance": 14,
+          "hist_distance": 0.2413,
+          "sift_inliers": 18,
+          "sift_good": 29
+        },
+        {
+          "level_id": "end2_clone_divergence",
+          "area": "endgame3",
+          "phash_distance": 16,
+          "hist_distance": 1.408,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "sidestone_zach_3",
+          "area": "mirrorable_stones",
+          "phash_distance": 18,
+          "hist_distance": 0.4157,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "drop_sokoban",
+          "area": "elevators",
+          "phash_distance": 18,
+          "hist_distance": 1.1144,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "sidestone_zach_2_end2",
+        "area": "endgame2",
+        "phash_distance": 4,
+        "hist_distance": 0.122,
+        "sift_inliers": 122,
+        "sift_good": 125,
+        "consistent_samples": 1,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p44\\samples\\00335.000.jpg",
+          "time": 335.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\sidestone_zach_2_end2.webp",
+          "reason": "Broad shallow-water tile path leads toward a small white island holding a yellow orb and blue objects, with three devices at the far end; the same geometry persists across both fragments."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p44-004",
+      "level_id": "end2_prism_hp",
+      "puzzle_start_time": 558.625,
+      "puzzle_end_time": 595.0,
+      "entry_transition_time": 558.125,
+      "exit_time": 595.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "end2_prism_hp",
+          "area": "endgame2",
+          "phash_distance": 4,
+          "hist_distance": 0.2434,
+          "sift_inliers": 118,
+          "sift_good": 133
+        },
+        {
+          "level_id": "skip_stack_1",
+          "area": "skipping_in_3d",
+          "phash_distance": 16,
+          "hist_distance": 1.2428,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "stone_stopper3_v2",
+          "area": "heroes_and_stones",
+          "phash_distance": 16,
+          "hist_distance": 1.3354,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "heroes2_2b",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 0.9276,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "limited_offsets_surprise_v2",
+          "area": "underworld_heroes_and_promesst",
+          "phash_distance": 18,
+          "hist_distance": 1.3668,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "end2_prism_hp",
+        "area": "endgame2",
+        "phash_distance": 4,
+        "hist_distance": 0.2434,
+        "sift_inliers": 118,
+        "sift_good": 133,
+        "consistent_samples": 6,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p44\\samples\\00585.000.jpg",
+          "time": 585.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end2_prism_hp.webp",
+          "reason": "Dark submerged room with upright red beam columns at left/right, blue orbs around central stone blocks, and a green endpoint near the lower-left matches the static reference."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p44-005",
+      "level_id": "end2_prism_hp",
+      "puzzle_start_time": 730.0,
+      "puzzle_end_time": 740.0,
+      "entry_transition_time": null,
+      "exit_time": 740.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "end2_prism_hp",
+          "area": "endgame2",
+          "phash_distance": 18,
+          "hist_distance": 0.2894,
+          "sift_inliers": 27,
+          "sift_good": 32
+        },
+        {
+          "level_id": "protrusions",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3656,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "rubble_chain",
+          "area": "underworld_mirrors_and_promesst",
+          "phash_distance": 20,
+          "hist_distance": 1.3496,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "snipperclips_diagonal",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.3894,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "make_sokoban",
+          "area": "endgame3",
+          "phash_distance": 20,
+          "hist_distance": 1.3926,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "end2_prism_hp",
+        "area": "endgame2",
+        "phash_distance": 18,
+        "hist_distance": 0.2894,
+        "sift_inliers": 27,
+        "sift_good": 32,
+        "consistent_samples": 1,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p44\\samples\\00735.000.jpg",
+          "time": 735.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end2_prism_hp.webp",
+          "reason": "Dark submerged room with upright red beam columns at left/right, blue orbs around central stone blocks, and a green endpoint near the lower-left matches the static reference."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p44-006",
+      "level_id": "stone_economy",
+      "puzzle_start_time": 851.0,
+      "puzzle_end_time": 1048.25,
+      "entry_transition_time": 850.5,
+      "exit_time": 1048.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "stone_economy",
+          "area": "endgame2",
+          "phash_distance": 0,
+          "hist_distance": 0.1821,
+          "sift_inliers": 58,
+          "sift_good": 61
+        },
+        {
+          "level_id": "mirror_10_b_v2",
+          "area": "mirror",
+          "phash_distance": 20,
+          "hist_distance": 1.2758,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes3_7_v4",
+          "area": "heroes3",
+          "phash_distance": 20,
+          "hist_distance": 1.284,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "priest_water_back_goblin",
+          "area": "skipping_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.355,
+          "sift_inliers": 0,
+          "sift_good": 6
+        },
+        {
+          "level_id": "dragon_garden",
+          "area": "heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3985,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "stone_economy",
+        "area": "endgame2",
+        "phash_distance": 0,
+        "hist_distance": 0.1821,
+        "sift_inliers": 58,
+        "sift_good": 61,
+        "consistent_samples": 2,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p44\\samples\\00860.000.jpg",
+          "time": 860.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\stone_economy.webp",
+          "reason": "Two separated sandy platforms in clouds, fenced upper walkway with three dark round stones and magenta horizontal beams spanning the lower platforms match."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p44-007",
+      "level_id": "who_you_gonna_call",
+      "puzzle_start_time": 1114.875,
+      "puzzle_end_time": 1261.75,
+      "entry_transition_time": 1114.375,
+      "exit_time": 1262.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "who_you_gonna_call",
+          "area": "endgame2",
+          "phash_distance": 4,
+          "hist_distance": 0.1725,
+          "sift_inliers": 150,
+          "sift_good": 156
+        },
+        {
+          "level_id": "sky_druid_kill_tall_2_goblins",
+          "area": "heroes_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.0956,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "implausible_bridge_2",
+          "area": "vertical_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.1015,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "heroes1_17",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 1.2414,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "allocate_heroes_end3",
+          "area": "endgame3",
+          "phash_distance": 20,
+          "hist_distance": 1.2457,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "who_you_gonna_call",
+        "area": "endgame2",
+        "phash_distance": 4,
+        "hist_distance": 0.1725,
+        "sift_inliers": 150,
+        "sift_good": 156,
+        "consistent_samples": 30,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p44\\samples\\01125.000.jpg",
+          "time": 1125.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\who_you_gonna_call.webp",
+          "reason": "Narrow waterfall corridor with a row of heroes on the upper bridge, central water channel, two side ledges and paired orange stepping blocks align."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p44-008",
+      "level_id": "end2_monster_connect",
+      "puzzle_start_time": 1262.0,
+      "puzzle_end_time": 1415.0,
+      "entry_transition_time": 1261.75,
+      "exit_time": 1415.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "end2_monster_connect",
+          "area": "endgame2",
+          "phash_distance": 2,
+          "hist_distance": 0.0689,
+          "sift_inliers": 149,
+          "sift_good": 153
+        },
+        {
+          "level_id": "wizard_finesse_4",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.2825,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "mirror_19",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.3491,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "orange_snake",
+          "area": "double_beam_falling",
+          "phash_distance": 18,
+          "hist_distance": 1.3587,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "mirror_8_v5",
+          "area": "mirror",
+          "phash_distance": 20,
+          "hist_distance": 1.1542,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "end2_monster_connect",
+        "area": "endgame2",
+        "phash_distance": 2,
+        "hist_distance": 0.0689,
+        "sift_inliers": 149,
+        "sift_good": 153,
+        "consistent_samples": 29,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p44\\samples\\01265.000.jpg",
+          "time": 1265.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\end2_monster_connect.webp",
+          "reason": "Wide fenced rectangular platform above a sandy crossbar, colored cube cluster centered below and cyan/magenta endpoints at right/bottom match."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p44-009",
+      "level_id": "stack_prelude_pushstyle",
+      "puzzle_start_time": 1423.0,
+      "puzzle_end_time": 1633.875,
+      "entry_transition_time": 1422.5,
+      "exit_time": 1634.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "stack_prelude_pushstyle",
+          "area": "endgame2",
+          "phash_distance": 4,
+          "hist_distance": 0.2605,
+          "sift_inliers": 198,
+          "sift_good": 205
+        },
+        {
+          "level_id": "oneway_dragon_toast",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.3019,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "falling_button",
+          "area": "spawners",
+          "phash_distance": 18,
+          "hist_distance": 1.3691,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "fly_and_flip",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3628,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "already_dropped_v2",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.405,
+          "sift_inliers": 0,
+          "sift_good": 5
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "stack_prelude_pushstyle",
+        "area": "endgame2",
+        "phash_distance": 4,
+        "hist_distance": 0.2605,
+        "sift_inliers": 198,
+        "sift_good": 205,
+        "consistent_samples": 42,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p44\\samples\\01445.000.jpg",
+          "time": 1445.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\stack_prelude_pushstyle.webp",
+          "reason": "Raised fenced deck with brown boulder, wooden crate and blue orb; lower narrow tower face has red block and small colored details matching the reference."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p44-010",
+      "level_id": "laser_pointer",
+      "puzzle_start_time": 1634.25,
+      "puzzle_end_time": 1880.0,
+      "entry_transition_time": 1633.875,
+      "exit_time": 1880.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "laser_pointer",
+          "area": "endgame2",
+          "phash_distance": 2,
+          "hist_distance": 0.2591,
+          "sift_inliers": 188,
+          "sift_good": 194
+        },
+        {
+          "level_id": "fix_exploit",
+          "area": "endgame3",
+          "phash_distance": 14,
+          "hist_distance": 1.3777,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "friendly_nudges",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 0.9765,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "place_lily_pushstyle_v6",
+          "area": "endgame2",
+          "phash_distance": 18,
+          "hist_distance": 1.1948,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "mirror_13",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.2011,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "laser_pointer",
+        "area": "endgame2",
+        "phash_distance": 2,
+        "hist_distance": 0.2591,
+        "sift_inliers": 188,
+        "sift_good": 194,
+        "consistent_samples": 49,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p44\\samples\\01810.000.jpg",
+          "time": 1810.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\laser_pointer.webp",
+          "reason": "Long floating structure with fenced upper board and rows of crates at left, ruined stone middle tower, magenta beam entering from left, and narrow lower platform match."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p44-011",
+      "level_id": "all_together_now",
+      "puzzle_start_time": 2124.75,
+      "puzzle_end_time": 2359.0,
+      "entry_transition_time": 2124.25,
+      "exit_time": 2359.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "all_together_now",
+          "area": "endgame2",
+          "phash_distance": 4,
+          "hist_distance": 0.0255,
+          "sift_inliers": 32,
+          "sift_good": 35
+        },
+        {
+          "level_id": "mirror_1",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.3952,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "zachtronics_xor",
+          "area": "zachtronics",
+          "phash_distance": 18,
+          "hist_distance": 1.407,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "smartbomb_combo_v3",
+          "area": "underworld_mirrors_and_promesst",
+          "phash_distance": 18,
+          "hist_distance": 1.4093,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "gem_beam_placement",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.4115,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "all_together_now",
+        "area": "endgame2",
+        "phash_distance": 4,
+        "hist_distance": 0.0255,
+        "sift_inliers": 32,
+        "sift_good": 35,
+        "consistent_samples": 3,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p44\\samples\\02130.000.jpg",
+          "time": 2130.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\all_together_now.webp",
+          "reason": "The reference’s paired vertical boards are both visible: upper fenced board with four cardinal colored markers and central stack, and lower board with four satellite platforms around a cyan center; all five fragments occur in one continuous visit without an intervening transition. Local recovered 38:15 frame shows the distinctive two-board arrangement; 38:40–39:19 remains continuous gameplay before a transition."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "level_id": null,
+      "entry_transition_time": 3099.5,
+      "overworld_approach_time": null,
+      "review_status": "unknown",
+      "status": "unknown",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1.0,
+      "puzzle_match": {
+        "status": "unknown"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence_gallery": null,
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "event_id": "p44-012",
+      "puzzle_start_time": 3100.0,
+      "puzzle_end_time": 3209.5,
+      "exit_time": 3210.0,
+      "candidate_levels": [
+        {
+          "level_id": "end2_river_place",
+          "area": "endgame2 or endgame3; weak machine shortlist only"
+        },
+        {
+          "level_id": "skipping_pals",
+          "area": "endgame2 or endgame3; weak machine shortlist only"
+        },
+        {
+          "level_id": "wizard_and_druid_alt_5",
+          "area": "endgame2 or endgame3; weak machine shortlist only"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "runs\\p44\\recovery\\03120.000.jpg",
+          "time": 3100.0,
+          "reference": null,
+          "reason": "Full timeline sheets 19–20 show the icy courtyard first at 51:40 (3100s); the same overhead grid, pale ice floor and dark enclosing walls continue through 53:25. At 53:30 the board exits to a black completion transition, so this visit ends there; later footage is a different chamber."
+        }
+      ],
+      "review_note": "Do not treat weak candidate ranks as identity evidence."
+    },
+    {
+      "level_id": null,
+      "entry_transition_time": 3234.5,
+      "overworld_approach_time": null,
+      "review_status": "unknown",
+      "status": "unknown",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1.0,
+      "puzzle_match": {
+        "status": "unknown"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence_gallery": null,
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison",
+      "event_id": "p44-013",
+      "puzzle_start_time": 3235.0,
+      "puzzle_end_time": 3710.0,
+      "exit_time": 3711.0,
+      "candidate_levels": [
+        {
+          "level_id": "wizard_and_druid_alt_5",
+          "area": "endgame2 or endgame3; weak machine shortlist only"
+        },
+        {
+          "level_id": "meta_orange_purple",
+          "area": "endgame2 or endgame3; weak machine shortlist only"
+        },
+        {
+          "level_id": "matching_purple",
+          "area": "endgame2 or endgame3; weak machine shortlist only"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "runs\\p44\\recovery\\03245.000.jpg",
+          "time": 3235.0,
+          "reference": null,
+          "reason": "Full timeline sheets 20–23 show the square icy-stone chamber with a pink-block rectangular loop beginning at 53:55 (3235s). The same board remains continuously on screen through 61:50 (3710s), with pieces moved around the loop. At 61:55 it cuts back to the separate warm-colored room; that transition bounds this unknown visit."
+        }
+      ],
+      "review_note": "Do not treat weak candidate ranks as identity evidence."
+    }
+  ],
+  "time_basis": "Seconds from current part start; scan boundaries approximate +/-0.5s."
+}

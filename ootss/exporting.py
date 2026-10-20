@@ -26,7 +26,7 @@ def validate(review, catalog):
             raise ValueError("Duplicate event_id")
         ids.add(e["event_id"])
         if e["level_id"] is not None and e["level_id"] not in names:
-            raise ValueError(f"Not an Overworld level: {e['level_id']}")
+            raise ValueError(f"Not a catalogued map level: {e['level_id']}")
         a, b = e["puzzle_start_time"], e["puzzle_end_time"]
         if not 0 <= a < b <= duration:
             raise ValueError(f"Invalid time interval: {e['event_id']}")

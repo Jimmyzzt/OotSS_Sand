@@ -4,7 +4,7 @@ import shutil
 from pathlib import Path
 
 
-def package(source="results/stage1", destination="dist"):
+def package(source="results/worlds", destination="dist"):
     source, destination = Path(source), Path(destination)
     destination.mkdir(parents=True, exist_ok=True)
     for name in [

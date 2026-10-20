@@ -1,0 +1,1239 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 30,
+  "duration": 2468.1,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage2\\P30__【上北】防护与支撑+世界之巅+英雄之路[北3_北4_北4西1缺1题+北5西1].mp4",
+  "title": "【上北】防护与支撑+世界之巅+英雄之路[北3/北4/北4西1缺1题+北5西1]",
+  "stage": 2,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "已逐张检查 runs/p30/sheet_00.jpg 至 sheet_15.jpg（00:00至片尾）及全部4张候选视频/参考对照图。将 priest_3d_intro_dragon_v4、fire_stairs_v2/fire_stairs_part_2 与 frame_advance_v5 的连续镜头和相邻同一塔群内部视角合并，避免把转场/视角切换重复计为入口；其他确认事件的静态轮廓和机关位置均与对应参考一致。其余未覆盖时间轴内容在图册中为区域地图浏览、章节/过场标题、说明或离开场景的移动，没有看到遗漏的独立静态谜题布局。outcome 保持unknown，主世界路线未实测，Overworld保持unverified。",
+  "events": [
+    {
+      "event_id": "p30-001",
+      "level_id": "priest_descent_simpler",
+      "puzzle_start_time": 103.125,
+      "puzzle_end_time": 144.375,
+      "entry_transition_time": 102.625,
+      "exit_time": 145.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "priest_descent_simpler",
+          "area": "heroes_in_3d",
+          "phash_distance": 6,
+          "hist_distance": 0.216,
+          "sift_inliers": 106,
+          "sift_good": 115
+        },
+        {
+          "level_id": "wider_ocean",
+          "area": "mirrorable_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3815,
+          "sift_inliers": 6,
+          "sift_good": 8
+        },
+        {
+          "level_id": "priest_3d_intro_dragon_v4",
+          "area": "heroes_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.0529,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "orange_gem_instant",
+          "area": "gems",
+          "phash_distance": 20,
+          "hist_distance": 1.4073,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "pachinko_rescue_w",
+          "area": "vertical_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.3156,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "priest_descent_simpler",
+        "area": "heroes_in_3d",
+        "phash_distance": 6,
+        "hist_distance": 0.216,
+        "sift_inliers": 106,
+        "sift_good": 115,
+        "consistent_samples": 6,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p30\\samples\\00110.000.jpg",
+          "time": 110.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\priest_descent_simpler.webp",
+          "first_sample": 105.0,
+          "last_sample": 140.0,
+          "sample_count": 6,
+          "reason": "俯视由多座窄塔组成的高空关卡，中央近处青色圆机关、两侧高低不一的塔顶和上方哥布林位置与 priest_descent_simpler 参考图对应。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "逐张复核本P全部16张全片时间轴联系图，并检查候选视频与catalog_all参考并排图；连续相连塔群内部视角按一次入口处理。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p30-002",
+      "level_id": "priest_button_3d_revised",
+      "puzzle_start_time": 156.25,
+      "puzzle_end_time": 193.75,
+      "entry_transition_time": 155.75,
+      "exit_time": 194.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "priest_button_3d_revised",
+          "area": "heroes_in_3d",
+          "phash_distance": 4,
+          "hist_distance": 0.1124,
+          "sift_inliers": 118,
+          "sift_good": 131
+        },
+        {
+          "level_id": "iodine_clock_v2",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.316,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "reset_trio",
+          "area": "spawners",
+          "phash_distance": 16,
+          "hist_distance": 1.4117,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "fun_house",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3033,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "friendly_nudges",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.36,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "priest_button_3d_revised",
+        "area": "heroes_in_3d",
+        "phash_distance": 4,
+        "hist_distance": 0.1124,
+        "sift_inliers": 118,
+        "sift_good": 131,
+        "consistent_samples": 7,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p30\\samples\\00165.000.jpg",
+          "time": 165.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\priest_button_3d_revised.webp",
+          "first_sample": 160.0,
+          "last_sample": 190.0,
+          "sample_count": 7,
+          "reason": "暗红教堂室内的方形格地、中央高隔墙、右侧悬空绿色方块与青色圆机关及底边绿色机关，与 priest_button_3d_revised 参考布局一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "逐张复核本P全部16张全片时间轴联系图，并检查候选视频与catalog_all参考并排图；连续相连塔群内部视角按一次入口处理。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p30-003",
+      "level_id": "priest_3d_goblin_pass",
+      "puzzle_start_time": 202.875,
+      "puzzle_end_time": 302.0,
+      "entry_transition_time": 202.375,
+      "exit_time": 303.125,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "priest_3d_goblin_pass",
+          "area": "heroes_in_3d",
+          "phash_distance": 10,
+          "hist_distance": 0.221,
+          "sift_inliers": 86,
+          "sift_good": 97
+        },
+        {
+          "level_id": "priest_bottom_v2",
+          "area": "heroes_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.2568,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "quick_redirect_v5",
+          "area": "vertical_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3964,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "make_a_right_simpler",
+          "area": "mirrors_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.4014,
+          "sift_inliers": 0,
+          "sift_good": 6
+        },
+        {
+          "level_id": "stack_prelude_pushstyle",
+          "area": "endgame2",
+          "phash_distance": 20,
+          "hist_distance": 1.3009,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "priest_3d_goblin_pass",
+        "area": "heroes_in_3d",
+        "phash_distance": 10,
+        "hist_distance": 0.221,
+        "sift_inliers": 86,
+        "sift_good": 97,
+        "consistent_samples": 20,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p30\\samples\\00205.000.jpg",
+          "time": 205.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\priest_3d_goblin_pass.webp",
+          "first_sample": 205.0,
+          "last_sample": 300.0,
+          "sample_count": 20,
+          "reason": "有五扇高彩窗的长室内，左右两端及中央三块分开的石台、每块上的哥布林和右侧双青色圆盘，与 priest_3d_goblin_pass 参考一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "逐张复核本P全部16张全片时间轴联系图，并检查候选视频与catalog_all参考并排图；连续相连塔群内部视角按一次入口处理。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p30-004",
+      "level_id": "priest_warrior_descent",
+      "puzzle_start_time": 315.0,
+      "puzzle_end_time": 340.0,
+      "entry_transition_time": 314.5,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "priest_warrior_descent",
+          "area": "heroes_in_3d",
+          "phash_distance": 2,
+          "hist_distance": 0.0351,
+          "sift_inliers": 190,
+          "sift_good": 200
+        },
+        {
+          "level_id": "falling_blocker_v3",
+          "area": "mirrors_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.1557,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "end3_denoise_pool",
+          "area": "endgame3",
+          "phash_distance": 20,
+          "hist_distance": 1.3936,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "orange_snake",
+          "area": "double_beam_falling",
+          "phash_distance": 22,
+          "hist_distance": 1.2412,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "mirror_6_alt",
+          "area": "mirror",
+          "phash_distance": 22,
+          "hist_distance": 1.3215,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "priest_warrior_descent",
+        "area": "heroes_in_3d",
+        "phash_distance": 2,
+        "hist_distance": 0.0351,
+        "sift_inliers": 190,
+        "sift_good": 200,
+        "consistent_samples": 5,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p30\\samples\\00320.000.jpg",
+          "time": 320.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\priest_warrior_descent.webp",
+          "first_sample": 315.0,
+          "last_sample": 335.0,
+          "sample_count": 5,
+          "reason": "暖色高空城墙布局可见中央狭窄竖向通道、左右平台分布的红衣战士及右侧绿蓝方块机关，与 priest_warrior_descent 参考图吻合。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "逐张复核本P全部16张全片时间轴联系图，并检查候选视频与catalog_all参考并排图；连续相连塔群内部视角按一次入口处理。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p30-005",
+      "level_id": "priest_3d_intro_dragon_v4",
+      "puzzle_start_time": 522.125,
+      "puzzle_end_time": 690.0,
+      "entry_transition_time": 521.625,
+      "exit_time": 692.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "priest_3d_intro_dragon_v4",
+          "area": "heroes_in_3d",
+          "phash_distance": 6,
+          "hist_distance": 0.1833,
+          "sift_inliers": 121,
+          "sift_good": 135
+        },
+        {
+          "level_id": "priest_descent_simpler",
+          "area": "heroes_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.1539,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "bridgey3_abstract_art",
+          "area": "vertical_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.0797,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "bridgey",
+          "area": "vertical_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.2329,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes1_3",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 1.2788,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "priest_3d_intro_dragon_v4",
+        "area": "heroes_in_3d",
+        "phash_distance": 6,
+        "hist_distance": 0.1833,
+        "sift_inliers": 121,
+        "sift_good": 135,
+        "consistent_samples": 2,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p30\\samples\\00525.000.jpg",
+          "time": 525.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\priest_3d_intro_dragon_v4.webp",
+          "first_sample": 525.0,
+          "last_sample": 540.0,
+          "sample_count": 2,
+          "reason": "高空哥特塔群中，右侧带铁栏塔顶、橙色铺板和粉色圆机关、左侧独塔及横向火焰光束，与 priest_3d_intro_dragon_v4 参考布局一致；p30-006/007是在同一连续塔群中的视角及操作变化，合并至约11:30。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "逐张复核本P全部16张全片时间轴联系图，并检查候选视频与catalog_all参考并排图；连续相连塔群内部视角按一次入口处理。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [
+        "将 p30-005至007 同一塔群的连续重复匹配合并。"
+      ],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p30-008",
+      "level_id": "priest_bottom_v2",
+      "puzzle_start_time": 730.625,
+      "puzzle_end_time": 1071.125,
+      "entry_transition_time": 730.125,
+      "exit_time": 1072.375,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "priest_bottom_v2",
+          "area": "heroes_in_3d",
+          "phash_distance": 2,
+          "hist_distance": 0.0652,
+          "sift_inliers": 207,
+          "sift_good": 209
+        },
+        {
+          "level_id": "end3_pipeline_setup",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 1.3389,
+          "sift_inliers": 4,
+          "sift_good": 9
+        },
+        {
+          "level_id": "volcano_v3",
+          "area": "vertical_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.0357,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "allocate_heroes_end3",
+          "area": "endgame3",
+          "phash_distance": 20,
+          "hist_distance": 1.4114,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "heroes2_thief_goblin",
+          "area": "heroes2",
+          "phash_distance": 20,
+          "hist_distance": 1.4119,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "priest_bottom_v2",
+        "area": "heroes_in_3d",
+        "phash_distance": 2,
+        "hist_distance": 0.0652,
+        "sift_inliers": 207,
+        "sift_good": 209,
+        "consistent_samples": 68,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p30\\samples\\00735.000.jpg",
+          "time": 735.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\priest_bottom_v2.webp",
+          "first_sample": 735.0,
+          "last_sample": 1070.0,
+          "sample_count": 68,
+          "reason": "长条形城堡平台左侧迷宫凸台、中央草地区域与矮墙/哥布林、右侧竖列四个青色圆机关和高塔入口，与 priest_bottom_v2 参考轮廓一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "逐张复核本P全部16张全片时间轴联系图，并检查候选视频与catalog_all参考并排图；连续相连塔群内部视角按一次入口处理。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p30-009",
+      "level_id": "fire_stairs_v2",
+      "puzzle_start_time": 1082.5,
+      "puzzle_end_time": 1207.6,
+      "entry_transition_time": 1082.125,
+      "exit_time": 1209.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "fire_stairs_v2",
+          "area": "heroes_in_3d",
+          "phash_distance": 0,
+          "hist_distance": 0.0988,
+          "sift_inliers": 95,
+          "sift_good": 102
+        },
+        {
+          "level_id": "metamirror_different_dir_alt",
+          "area": "metamirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3878,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "quadrants_follow_up",
+          "area": "heroes_and_water",
+          "phash_distance": 22,
+          "hist_distance": 1.334,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "in_a_flash_alt",
+          "area": "lily_rotation",
+          "phash_distance": 22,
+          "hist_distance": 1.3684,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "sokobridge_v4",
+          "area": "elevators",
+          "phash_distance": 22,
+          "hist_distance": 1.3864,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "fire_stairs_v2",
+        "area": "heroes_in_3d",
+        "phash_distance": 0,
+        "hist_distance": 0.0988,
+        "sift_inliers": 95,
+        "sift_good": 102,
+        "consistent_samples": 25,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p30\\samples\\01085.000.jpg",
+          "time": 1085.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\fire_stairs_v2.webp",
+          "first_sample": 1085.0,
+          "last_sample": 1205.0,
+          "sample_count": 25,
+          "reason": "高耸钟塔顶端铁栏、侧边阶梯状小平台、粉色机关以及向下衔接的塔身，与 fire_stairs_v2 参考图的台阶塔形一致。约20:08转出该布局，随后地图/章节视图后进入另一个独立塔群静态布局。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "全片图册显示约20:08离开此塔顶布局，地图/章节转场后约20:28进入 fire_stairs_part_2 的独立塔群。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [
+        "保留 fire_stairs_v2 独立访问，不与相邻的 fire_stairs_part_2 合并。"
+      ],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p30-010",
+      "level_id": "fire_stairs_part_2",
+      "puzzle_start_time": 1228.375,
+      "puzzle_end_time": 1328.5,
+      "entry_transition_time": 1227.875,
+      "exit_time": 1330.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "fire_stairs_part_2",
+          "area": "heroes_in_3d",
+          "phash_distance": 2,
+          "hist_distance": 0.2759,
+          "sift_inliers": 103,
+          "sift_good": 105
+        },
+        {
+          "level_id": "stone_stopper_intro",
+          "area": "heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3608,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "magicians_assistant_v2",
+          "area": "heroes_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.3977,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "one_floor_down_v2",
+          "area": "vertical_reflection",
+          "phash_distance": 20,
+          "hist_distance": 1.4073,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "fire_and_flip",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.409,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "fire_stairs_part_2",
+        "area": "heroes_in_3d",
+        "phash_distance": 2,
+        "hist_distance": 0.2759,
+        "sift_inliers": 103,
+        "sift_good": 105,
+        "consistent_samples": 4,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p30\\samples\\01230.000.jpg",
+          "time": 1230.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\fire_stairs_part_2.webp",
+          "first_sample": 1230.0,
+          "last_sample": 1245.0,
+          "sample_count": 4,
+          "reason": "约20:28的地图/章节转场后，镜头进入相邻但独立的多塔群：左侧最高塔平台接弧形桥及右侧较低塔顶，平台上粉色机关和右端两枚青色圆盘的分布与 fire_stairs_part_2 参考静态布局一致。p30-011是同一布局延续，合并至22:08。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "时间轴显示前一 fire_stairs_v2 高塔场景约20:08结束，随后地图/章节视图约20:28后转入这张不同塔群构型；两种Level_Entry均保留。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [
+        "将p30-010与p30-011同一fire_stairs_part_2静态布局合并，保留与此前fire_stairs_v2的独立入口边界。"
+      ],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p30-012",
+      "level_id": "from_the_depths",
+      "puzzle_start_time": 1361.0,
+      "puzzle_end_time": 1447.375,
+      "entry_transition_time": 1360.5,
+      "exit_time": 1448.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "from_the_depths",
+          "area": "heroes_in_3d",
+          "phash_distance": 6,
+          "hist_distance": 0.0854,
+          "sift_inliers": 183,
+          "sift_good": 185
+        },
+        {
+          "level_id": "synchronized_swimmers",
+          "area": "heroes_and_water",
+          "phash_distance": 16,
+          "hist_distance": 1.4038,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "erosion_alt",
+          "area": "heroes_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.3319,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "metamirror_different_dir_2_alt",
+          "area": "metamirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.4125,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes2_thief_goblin",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 1.4131,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "from_the_depths",
+        "area": "heroes_in_3d",
+        "phash_distance": 6,
+        "hist_distance": 0.0854,
+        "sift_inliers": 183,
+        "sift_good": 185,
+        "consistent_samples": 17,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p30\\samples\\01365.000.jpg",
+          "time": 1365.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\from_the_depths.webp",
+          "first_sample": 1365.0,
+          "last_sample": 1445.0,
+          "sample_count": 17,
+          "reason": "俯视绿色地面石室内，中央纵向通路和多块棕色/粉色柱台、左下连续两个青色机关及四周哥布林位置，与 from_the_depths 参考布局相符。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "逐张复核本P全部16张全片时间轴联系图，并检查候选视频与catalog_all参考并排图；连续相连塔群内部视角按一次入口处理。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p30-013",
+      "level_id": "priest_two_warriors_v3",
+      "puzzle_start_time": 1470.125,
+      "puzzle_end_time": 1620.875,
+      "entry_transition_time": 1469.75,
+      "exit_time": 1622.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "priest_two_warriors_v3",
+          "area": "heroes_in_3d",
+          "phash_distance": 2,
+          "hist_distance": 0.14,
+          "sift_inliers": 165,
+          "sift_good": 178
+        },
+        {
+          "level_id": "heroes1_8_v2",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 1.3502,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "wolf_boat_carry",
+          "area": "vertical_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3965,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "heroes3_6_v3",
+          "area": "heroes3",
+          "phash_distance": 22,
+          "hist_distance": 0.7908,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "juggle",
+          "area": "vertical_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.0273,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "priest_two_warriors_v3",
+        "area": "heroes_in_3d",
+        "phash_distance": 2,
+        "hist_distance": 0.14,
+        "sift_inliers": 165,
+        "sift_good": 178,
+        "consistent_samples": 30,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p30\\samples\\01505.000.jpg",
+          "time": 1505.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\priest_two_warriors_v3.webp",
+          "first_sample": 1475.0,
+          "last_sample": 1620.0,
+          "sample_count": 30,
+          "reason": "室内中央大方形落差与窄桥结构、左右两处平台、左侧堆叠角色及右下双青色机关，静态轮廓与 priest_two_warriors_v3 参考对应。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "逐张复核本P全部16张全片时间轴联系图，并检查候选视频与catalog_all参考并排图；连续相连塔群内部视角按一次入口处理。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p30-014",
+      "level_id": "monster_stack",
+      "puzzle_start_time": 1644.375,
+      "puzzle_end_time": 1722.0,
+      "entry_transition_time": 1643.875,
+      "exit_time": 1723.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "monster_stack",
+          "area": "heroes_in_3d",
+          "phash_distance": 6,
+          "hist_distance": 0.099,
+          "sift_inliers": 123,
+          "sift_good": 132
+        },
+        {
+          "level_id": "orange_beam_deal",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 16,
+          "hist_distance": 1.3753,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "diag_slide",
+          "area": "mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.2803,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "pole_vault",
+          "area": "advanced_bard_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.4102,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "magnitudes_v3",
+          "area": "orange_beam_highway_mirrors_and_promesst",
+          "phash_distance": 20,
+          "hist_distance": 0.7682,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "monster_stack",
+        "area": "heroes_in_3d",
+        "phash_distance": 6,
+        "hist_distance": 0.099,
+        "sift_inliers": 123,
+        "sift_good": 132,
+        "consistent_samples": 16,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p30\\samples\\01650.000.jpg",
+          "time": 1650.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\monster_stack.webp",
+          "first_sample": 1645.0,
+          "last_sample": 1720.0,
+          "sample_count": 16,
+          "reason": "窄长深色教堂房间中央走廊将两侧分开，左侧双粉红装置与其上青色圆机关、中央哥布林及底端结构与 monster_stack 参考一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "逐张复核本P全部16张全片时间轴联系图，并检查候选视频与catalog_all参考并排图；连续相连塔群内部视角按一次入口处理。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p30-015",
+      "level_id": "catching_fire_v2",
+      "puzzle_start_time": 1737.75,
+      "puzzle_end_time": 1843.125,
+      "entry_transition_time": 1737.375,
+      "exit_time": 1844.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "catching_fire_v2",
+          "area": "heroes_in_3d",
+          "phash_distance": 2,
+          "hist_distance": 0.0998,
+          "sift_inliers": 105,
+          "sift_good": 115
+        },
+        {
+          "level_id": "run_the_clock_alt",
+          "area": "mirrorable_stones",
+          "phash_distance": 16,
+          "hist_distance": 1.397,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "the_spiral",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.2457,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "the_sky_is_falling_v2",
+          "area": "double_beam_falling",
+          "phash_distance": 20,
+          "hist_distance": 1.4016,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "lily_falls_intro_v2",
+          "area": "skipping_in_3d",
+          "phash_distance": 22,
+          "hist_distance": 1.0745,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "catching_fire_v2",
+        "area": "heroes_in_3d",
+        "phash_distance": 2,
+        "hist_distance": 0.0998,
+        "sift_inliers": 105,
+        "sift_good": 115,
+        "consistent_samples": 21,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p30\\samples\\01740.000.jpg",
+          "time": 1740.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\catching_fire_v2.webp",
+          "first_sample": 1740.0,
+          "last_sample": 1840.0,
+          "sample_count": 21,
+          "reason": "高塔顶端小平台上蓝色冰块/角色和红色敌人，左壁与塔身下方两枚黄色圆机关的位置，与 catching_fire_v2 参考图一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "逐张复核本P全部16张全片时间轴联系图，并检查候选视频与catalog_all参考并排图；连续相连塔群内部视角按一次入口处理。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p30-016",
+      "level_id": "frame_advance_v5",
+      "puzzle_start_time": 1852.0,
+      "puzzle_end_time": 2037.8,
+      "entry_transition_time": 1851.625,
+      "exit_time": 2039.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "frame_advance_v5",
+          "area": "heroes_in_3d",
+          "phash_distance": 4,
+          "hist_distance": 0.0882,
+          "sift_inliers": 106,
+          "sift_good": 114
+        },
+        {
+          "level_id": "trick_landing",
+          "area": "elevators",
+          "phash_distance": 22,
+          "hist_distance": 1.3578,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "push_down_chain",
+          "area": "underworld_crossroads",
+          "phash_distance": 22,
+          "hist_distance": 1.3618,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "button_playground",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 22,
+          "hist_distance": 1.367,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "defender",
+          "area": "underworld_skipping_and_promesst",
+          "phash_distance": 22,
+          "hist_distance": 1.3941,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "frame_advance_v5",
+        "area": "heroes_in_3d",
+        "phash_distance": 4,
+        "hist_distance": 0.0882,
+        "sift_inliers": 106,
+        "sift_good": 114,
+        "consistent_samples": 4,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p30\\samples\\01855.000.jpg",
+          "time": 1855.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\frame_advance_v5.webp",
+          "first_sample": 1855.0,
+          "last_sample": 1870.0,
+          "sample_count": 4,
+          "reason": "左右相邻哥特塔顶和中间狭缝、左塔黄色圆盘与粉色方块、上方敌人与队员的相对位置符合 frame_advance_v5；p30-017/018为同一塔群的持续操作和镜头切换，合并至约33:58。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "逐张复核本P全部16张全片时间轴联系图，并检查候选视频与catalog_all参考并排图；连续相连塔群内部视角按一次入口处理。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [
+        "将 p30-016至018 连续塔群中的镜头/操作区间合并为一次访问。"
+      ],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p30-019",
+      "level_id": "priest_traverse_e_fence",
+      "puzzle_start_time": 2056.5,
+      "puzzle_end_time": 2137.875,
+      "entry_transition_time": 2056.0,
+      "exit_time": 2139.125,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "priest_traverse_e_fence",
+          "area": "heroes_in_3d",
+          "phash_distance": 4,
+          "hist_distance": 0.1517,
+          "sift_inliers": 87,
+          "sift_good": 95
+        },
+        {
+          "level_id": "gem_beam_placement",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.2598,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "orange_gem_instant",
+          "area": "gems",
+          "phash_distance": 20,
+          "hist_distance": 1.3526,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "binary_maze",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.3923,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "thief_through",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 22,
+          "hist_distance": 0.9511,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "priest_traverse_e_fence",
+        "area": "heroes_in_3d",
+        "phash_distance": 4,
+        "hist_distance": 0.1517,
+        "sift_inliers": 87,
+        "sift_good": 95,
+        "consistent_samples": 16,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p30\\samples\\02060.000.jpg",
+          "time": 2060.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\priest_traverse_e_fence.webp",
+          "first_sample": 2060.0,
+          "last_sample": 2135.0,
+          "sample_count": 16,
+          "reason": "两座塔之间横跨的双层火焰光束、左端平台三枚黄色圆盘和两名敌人、右端单独平台与角色，均与 priest_traverse_e_fence 参考布局吻合。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "逐张复核本P全部16张全片时间轴联系图，并检查候选视频与catalog_all参考并排图；连续相连塔群内部视角按一次入口处理。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    }
+  ]
+}

@@ -14,7 +14,7 @@ export function upstreamUrl(requestUrl, origin) {
 export default {
   async fetch(request,env) {
     if(!['GET','HEAD'].includes(request.method))return new Response('Method not allowed',{status:405,headers:{Allow:'GET, HEAD'}});
-    const tile=/^\/tiles\/overworld_64k\/[0-7]\/\d+\/\d+\.webp$/.test(new URL(request.url).pathname);
+    const tile=/^\/tiles\/(?:overworld|sky|underworld)_64k\/[0-7]\/\d+\/\d+\.webp$/.test(new URL(request.url).pathname);
     let target;try{target=upstreamUrl(request.url,tile?'https://joric.github.io/ootss_tileset/':env.PAGES_ORIGIN)}catch{return new Response('Invalid request path or origin',{status:400})}
     const headers=new Headers();
     for(const key of ['Accept','If-None-Match','If-Modified-Since','Range'])if(request.headers.has(key))headers.set(key,request.headers.get(key));

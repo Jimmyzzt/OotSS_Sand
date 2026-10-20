@@ -1,0 +1,1839 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 48,
+  "duration": 3291.566313,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage3\\P48__【下东】魔镜挡道+镜中之镜：集锦[东1_北1东1_北2东1+北2东2_北3东2_北4东2_北3东1_北4东1].mp4",
+  "title": "【下东】魔镜挡道+镜中之镜：集锦[东1/北1东1/北2东1+北2东2/北3东2/北4东2/北3东1/北4东1]",
+  "stage": 3,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "Reviewed all 21 timeline sheets (00:00–54:55) and six candidate galleries. Confirmed 24 puzzle visits by static layout comparison. Merged only visibly continuous same-layout fragments for the_line_must_be_drawn_HERE, wrapping_mirror0 and wrapping_mirror_alt; all other repeated IDs remain separate across distinct boards, transitions or intervening confirmed entries. Long late play continues on large beam/tile boards; map recap and additional travel/exploration are not counted as puzzles. Overworld approach and outcomes remain unknown.",
+  "events": [
+    {
+      "event_id": "p48-001",
+      "level_id": "crystal_island",
+      "puzzle_start_time": 35.0,
+      "puzzle_end_time": 128.625,
+      "entry_transition_time": 34.5,
+      "exit_time": 129.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "crystal_island",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 4,
+          "hist_distance": 0.0667,
+          "sift_inliers": 108,
+          "sift_good": 111
+        },
+        {
+          "level_id": "rotating_cavalry_spaced",
+          "area": "monsters_and_beams",
+          "phash_distance": 20,
+          "hist_distance": 1.412,
+          "sift_inliers": 7,
+          "sift_good": 13
+        },
+        {
+          "level_id": "end3_reorder_skipping_fix",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 1.4098,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "heroes2_5_altE",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 1.3105,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "worlds_collide_heroes_and_mirrors_v3",
+          "area": "worlds_collide",
+          "phash_distance": 18,
+          "hist_distance": 1.3697,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "crystal_island",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 4,
+        "hist_distance": 0.0667,
+        "sift_inliers": 108,
+        "sift_good": 111,
+        "consistent_samples": 18,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\00055.000.jpg",
+          "time": 55.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\crystal_island.webp",
+          "first_sample": 40.0,
+          "last_sample": 125.0,
+          "sample_count": 18,
+          "reason": "Stepped pink stone island with paired purple columns, adjacent brown movable object, black upright device and two floating tiles match the reference layout."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p48-002",
+      "level_id": "bottleneck",
+      "puzzle_start_time": 215.125,
+      "puzzle_end_time": 346.25,
+      "entry_transition_time": 214.625,
+      "exit_time": 347.375,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "bottleneck",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 10,
+          "hist_distance": 0.071,
+          "sift_inliers": 146,
+          "sift_good": 153
+        },
+        {
+          "level_id": "busy_beaver",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 0.6276,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "reel_it_in",
+          "area": "mirrorable_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.319,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "skip_orange_maze_v3",
+          "area": "beams_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3237,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "green_goblins",
+          "area": "monsters_and_beams",
+          "phash_distance": 20,
+          "hist_distance": 1.3748,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "bottleneck",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 10,
+        "hist_distance": 0.071,
+        "sift_inliers": 146,
+        "sift_good": 153,
+        "consistent_samples": 26,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\00250.000.jpg",
+          "time": 250.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\bottleneck.webp",
+          "first_sample": 220.0,
+          "last_sample": 345.0,
+          "sample_count": 26,
+          "reason": "Two broad gold platforms separated by a narrow channel, plus detached cyan-marked and lower square platforms match the reference."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p48-003",
+      "level_id": "hanoi_3",
+      "puzzle_start_time": 354.875,
+      "puzzle_end_time": 477.625,
+      "entry_transition_time": 354.25,
+      "exit_time": 478.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "hanoi_3",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 6,
+          "hist_distance": 0.1175,
+          "sift_inliers": 140,
+          "sift_good": 150
+        },
+        {
+          "level_id": "vacuum",
+          "area": "vertical_reflection",
+          "phash_distance": 22,
+          "hist_distance": 1.3781,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "magic_square",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.404,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "pole_vault",
+          "area": "advanced_bard_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.3939,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "wizard_and_druid_alt",
+          "area": "heroes3",
+          "phash_distance": 20,
+          "hist_distance": 1.4056,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "hanoi_3",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 6,
+        "hist_distance": 0.1175,
+        "sift_inliers": 140,
+        "sift_good": 150,
+        "consistent_samples": 25,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\00445.000.jpg",
+          "time": 445.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\hanoi_3.webp",
+          "first_sample": 355.0,
+          "last_sample": 475.0,
+          "sample_count": 25,
+          "reason": "The tall central tower bisects a left row of figures and a right bridge ending in the gold platform; repeated lower-left posts match the reference."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p48-004",
+      "level_id": "busy_beaver",
+      "puzzle_start_time": 486.375,
+      "puzzle_end_time": 552.25,
+      "entry_transition_time": 485.875,
+      "exit_time": 553.375,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "busy_beaver",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 6,
+          "hist_distance": 0.0786,
+          "sift_inliers": 151,
+          "sift_good": 166
+        },
+        {
+          "level_id": "gated_twice_v2",
+          "area": "heroes_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.3803,
+          "sift_inliers": 4,
+          "sift_good": 8
+        },
+        {
+          "level_id": "end3_pipeline_setup",
+          "area": "endgame3",
+          "phash_distance": 18,
+          "hist_distance": 1.2464,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "mirror_clocks",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3437,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "in_the_way_alt_3",
+          "area": "mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4087,
+          "sift_inliers": 0,
+          "sift_good": 6
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "busy_beaver",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 6,
+        "hist_distance": 0.0786,
+        "sift_inliers": 151,
+        "sift_good": 166,
+        "consistent_samples": 13,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\00510.000.jpg",
+          "time": 510.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\busy_beaver.webp",
+          "first_sample": 490.0,
+          "last_sample": 550.0,
+          "sample_count": 13,
+          "reason": "Parallel descending gold walkways form the same stepped maze with the same endpoint markers as the reference."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p48-005",
+      "level_id": "moving_through_mirrors_v3",
+      "puzzle_start_time": 602.125,
+      "puzzle_end_time": 620.0,
+      "entry_transition_time": 601.5,
+      "exit_time": 621.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "moving_through_mirrors_v3",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 6,
+          "hist_distance": 0.1995,
+          "sift_inliers": 67,
+          "sift_good": 75
+        },
+        {
+          "level_id": "removal_v2",
+          "area": "skipping_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.405,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "3wcn_purple_mirror_skip",
+          "area": "orange_beam_highway_worlds_collide",
+          "phash_distance": 20,
+          "hist_distance": 1.2642,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "orange_water_button_vfour_alter",
+          "area": "orange_beam_highway_stones_and_promesst",
+          "phash_distance": 20,
+          "hist_distance": 1.2936,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "bridgey2",
+          "area": "vertical_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3694,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "moving_through_mirrors_v3",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 6,
+        "hist_distance": 0.1995,
+        "sift_inliers": 67,
+        "sift_good": 75,
+        "consistent_samples": 3,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\00605.000.jpg",
+          "time": 605.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\moving_through_mirrors_v3.webp",
+          "first_sample": 605.0,
+          "last_sample": 615.0,
+          "sample_count": 3,
+          "reason": "A diagonal staircase of alternating mirrors crosses the central vertical post above two long lower platforms; scene remains on this same board."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p48-006",
+      "level_id": "moving_through_mirrors_v3",
+      "puzzle_start_time": 930.0,
+      "puzzle_end_time": 940.0,
+      "entry_transition_time": null,
+      "exit_time": 941.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "moving_through_mirrors_v3",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 4,
+          "hist_distance": 0.226,
+          "sift_inliers": 60,
+          "sift_good": 66
+        },
+        {
+          "level_id": "bridgey2",
+          "area": "vertical_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3699,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "zachtronics_xor",
+          "area": "zachtronics",
+          "phash_distance": 20,
+          "hist_distance": 1.3777,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "removal_v2",
+          "area": "skipping_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.4042,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "spin_heroes",
+          "area": "skipping_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.4079,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "moving_through_mirrors_v3",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 4,
+        "hist_distance": 0.226,
+        "sift_inliers": 60,
+        "sift_good": 66,
+        "consistent_samples": 1,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\00935.000.jpg",
+          "time": 935.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\moving_through_mirrors_v3.webp",
+          "first_sample": 935.0,
+          "last_sample": 935.0,
+          "sample_count": 1,
+          "reason": "A diagonal staircase of alternating mirrors crosses the central vertical post above two long lower platforms; scene remains on this same board."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p48-007",
+      "level_id": "druid_vertical_mirror",
+      "puzzle_start_time": 1055.25,
+      "puzzle_end_time": 1147.625,
+      "entry_transition_time": 1054.75,
+      "exit_time": 1147.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "druid_vertical_mirror",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 6,
+          "hist_distance": 0.0978,
+          "sift_inliers": 63,
+          "sift_good": 66
+        },
+        {
+          "level_id": "3wcn_purple_mirror_skip",
+          "area": "orange_beam_highway_worlds_collide",
+          "phash_distance": 18,
+          "hist_distance": 1.2396,
+          "sift_inliers": 0,
+          "sift_good": 9
+        },
+        {
+          "level_id": "surfing_lesson_alt",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 0.8597,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "short_ride_option_b",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.0062,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "orange_water_button_vfour_alter",
+          "area": "orange_beam_highway_stones_and_promesst",
+          "phash_distance": 20,
+          "hist_distance": 1.272,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "druid_vertical_mirror",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 6,
+        "hist_distance": 0.0978,
+        "sift_inliers": 63,
+        "sift_good": 66,
+        "consistent_samples": 18,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\01065.000.jpg",
+          "time": 1065.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\druid_vertical_mirror.webp",
+          "first_sample": 1060.0,
+          "last_sample": 1145.0,
+          "sample_count": 18,
+          "reason": "Two separated dark stone islands with three gold discs on the right and stepped left ledge match the reference positions."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p48-008",
+      "level_id": "special_move",
+      "puzzle_start_time": 1147.875,
+      "puzzle_end_time": 1170.0,
+      "entry_transition_time": 1147.625,
+      "exit_time": 1171.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "special_move",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 6,
+          "hist_distance": 0.0694,
+          "sift_inliers": 37,
+          "sift_good": 40
+        },
+        {
+          "level_id": "in_a_flash_alt",
+          "area": "lily_rotation",
+          "phash_distance": 18,
+          "hist_distance": 1.1668,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "heroes1_7.5",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 1.2039,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "ortho",
+          "area": "lily_highway_stones_and_promesst",
+          "phash_distance": 20,
+          "hist_distance": 1.4027,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "sidestone_zach_1",
+          "area": "mirrorable_stones",
+          "phash_distance": 22,
+          "hist_distance": 0.8368,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "special_move",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 6,
+        "hist_distance": 0.0694,
+        "sift_inliers": 37,
+        "sift_good": 40,
+        "consistent_samples": 4,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\01155.000.jpg",
+          "time": 1155.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\special_move.webp",
+          "first_sample": 1150.0,
+          "last_sample": 1165.0,
+          "sample_count": 4,
+          "reason": "Two isolated dark platforms, one with the book/figure and one with three bright yellow endpoints, match the reference arrangement."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p48-009",
+      "level_id": "druid_metamirror",
+      "puzzle_start_time": 1269.75,
+      "puzzle_end_time": 1355.125,
+      "entry_transition_time": 1269.25,
+      "exit_time": 1355.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "druid_metamirror",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 6,
+          "hist_distance": 0.1424,
+          "sift_inliers": 60,
+          "sift_good": 69
+        },
+        {
+          "level_id": "wizard_with_a_capital_w_2_v2",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4076,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "bard_metamirror",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 0.8542,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "grid_hopping0",
+          "area": "underworld_heroes_and_promesst",
+          "phash_distance": 20,
+          "hist_distance": 1.2115,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "end2_mirror_3",
+          "area": "endgame2",
+          "phash_distance": 20,
+          "hist_distance": 1.3222,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "druid_metamirror",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 6,
+        "hist_distance": 0.1424,
+        "sift_inliers": 60,
+        "sift_good": 69,
+        "consistent_samples": 17,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\01275.000.jpg",
+          "time": 1275.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\druid_metamirror.webp",
+          "first_sample": 1270.0,
+          "last_sample": 1350.0,
+          "sample_count": 17,
+          "reason": "The broken green/stone path linking the white statue figures, with a detached blue-tile platform and gold endpoint below, matches the reference."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p48-010",
+      "level_id": "mirror_the_unmirrorable_mirror",
+      "puzzle_start_time": 1355.5,
+      "puzzle_end_time": 1430.0,
+      "entry_transition_time": 1355.125,
+      "exit_time": 1431.125,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "mirror_the_unmirrorable_mirror",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 6,
+          "hist_distance": 0.064,
+          "sift_inliers": 97,
+          "sift_good": 102
+        },
+        {
+          "level_id": "skip_purple_drop_alt",
+          "area": "underworld_skipping_and_promesst",
+          "phash_distance": 16,
+          "hist_distance": 1.4122,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "chasm_3",
+          "area": "vertical_mirrors",
+          "phash_distance": 16,
+          "hist_distance": 1.4142,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "crystal_bridges",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.3633,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "simple_trap",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.4125,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "mirror_the_unmirrorable_mirror",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 6,
+        "hist_distance": 0.064,
+        "sift_inliers": 97,
+        "sift_good": 102,
+        "consistent_samples": 14,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\01360.000.jpg",
+          "time": 1360.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\mirror_the_unmirrorable_mirror.webp",
+          "first_sample": 1360.0,
+          "last_sample": 1425.0,
+          "sample_count": 14,
+          "reason": "Small central shrine-like tower with two cyan lights, flanked by isolated grass/stone pads and figures, matches the reference."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p48-011",
+      "level_id": "bard_metamirror",
+      "puzzle_start_time": 1458.75,
+      "puzzle_end_time": 1536.125,
+      "entry_transition_time": 1458.375,
+      "exit_time": 1537.125,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "bard_metamirror",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 2,
+          "hist_distance": 0.1309,
+          "sift_inliers": 112,
+          "sift_good": 118
+        },
+        {
+          "level_id": "druid_metamirror",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 0.7594,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "mini_green_maze",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.3549,
+          "sift_inliers": 4,
+          "sift_good": 9
+        },
+        {
+          "level_id": "allocate_heroes_v2",
+          "area": "endgame2",
+          "phash_distance": 18,
+          "hist_distance": 1.3885,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "fix_exploit",
+          "area": "endgame3",
+          "phash_distance": 20,
+          "hist_distance": 1.3786,
+          "sift_inliers": 0,
+          "sift_good": 5
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "bard_metamirror",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 2,
+        "hist_distance": 0.1309,
+        "sift_inliers": 112,
+        "sift_good": 118,
+        "consistent_samples": 16,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\01460.000.jpg",
+          "time": 1460.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\bard_metamirror.webp",
+          "first_sample": 1460.0,
+          "last_sample": 1535.0,
+          "sample_count": 16,
+          "reason": "Irregular floating stone islands with a detached upper-right pink-lit platform and lower gold endpoint match the reference arrangement."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p48-012",
+      "level_id": "self_teleporting",
+      "puzzle_start_time": 1548.0,
+      "puzzle_end_time": 1650.0,
+      "entry_transition_time": 1547.5,
+      "exit_time": 1651.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "self_teleporting",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 2,
+          "hist_distance": 0.0801,
+          "sift_inliers": 73,
+          "sift_good": 83
+        },
+        {
+          "level_id": "flamethrower",
+          "area": "heroes_and_water",
+          "phash_distance": 16,
+          "hist_distance": 1.4134,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "push_against",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3018,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "smartbomb_combo_v3",
+          "area": "underworld_mirrors_and_promesst",
+          "phash_distance": 18,
+          "hist_distance": 1.3555,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "mirror_4",
+          "area": "mirror",
+          "phash_distance": 20,
+          "hist_distance": 1.308,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "self_teleporting",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 2,
+        "hist_distance": 0.0801,
+        "sift_inliers": 73,
+        "sift_good": 83,
+        "consistent_samples": 17,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\01550.000.jpg",
+          "time": 1550.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\self_teleporting.webp",
+          "first_sample": 1550.0,
+          "last_sample": 1645.0,
+          "sample_count": 17,
+          "reason": "Small grass-and-stone island with two figures, a white upright device, and four detached cyan pads around it match the reference."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p48-013",
+      "level_id": "self_teleporting",
+      "puzzle_start_time": 1660.0,
+      "puzzle_end_time": 1682.875,
+      "entry_transition_time": null,
+      "exit_time": 1683.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "self_teleporting",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 6,
+          "hist_distance": 1.3848,
+          "sift_inliers": 20,
+          "sift_good": 32
+        },
+        {
+          "level_id": "smartbomb_combo_v3",
+          "area": "underworld_mirrors_and_promesst",
+          "phash_distance": 18,
+          "hist_distance": 1.0743,
+          "sift_inliers": 0,
+          "sift_good": 6
+        },
+        {
+          "level_id": "mirror_4",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.3268,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "push_against",
+          "area": "heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.1744,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "cyan_torc_maze_vs",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3737,
+          "sift_inliers": 0,
+          "sift_good": 6
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "self_teleporting",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 6,
+        "hist_distance": 1.3848,
+        "sift_inliers": 20,
+        "sift_good": 32,
+        "consistent_samples": 3,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\01665.000.jpg",
+          "time": 1665.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\self_teleporting.webp",
+          "first_sample": 1665.0,
+          "last_sample": 1680.0,
+          "sample_count": 3,
+          "reason": "Small grass-and-stone island with two figures, a white upright device, and four detached cyan pads around it match the reference."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p48-014",
+      "level_id": "wrapping_mirror0",
+      "puzzle_start_time": 1728.625,
+      "puzzle_end_time": 1835.0,
+      "entry_transition_time": 1728.125,
+      "exit_time": 1836.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "wrapping_mirror0",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 8,
+          "hist_distance": 0.095,
+          "sift_inliers": 123,
+          "sift_good": 142
+        },
+        {
+          "level_id": "short_ride_option_b",
+          "area": "mirrors_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 0.7226,
+          "sift_inliers": 5,
+          "sift_good": 9
+        },
+        {
+          "level_id": "mirror_21",
+          "area": "mirror",
+          "phash_distance": 22,
+          "hist_distance": 1.2942,
+          "sift_inliers": 4,
+          "sift_good": 8
+        },
+        {
+          "level_id": "flamethrower",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 0.8548,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "orange_floaty_reflect_v3",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.2918,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "wrapping_mirror0",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 8,
+        "hist_distance": 0.095,
+        "sift_inliers": 123,
+        "sift_good": 142,
+        "consistent_samples": 5,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\01735.000.jpg",
+          "time": 1735.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\wrapping_mirror0.webp",
+          "first_sample": 1730.0,
+          "last_sample": 1750.0,
+          "sample_count": 5,
+          "reason": "Repeated colored blocks and mirrored statues are arranged around intersecting horizontal/vertical beam paths as in the reference; this is one continuous play sequence across fragments."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p48-017",
+      "level_id": "wrapping_mirror0_relatively_prime",
+      "puzzle_start_time": 1852.75,
+      "puzzle_end_time": 1870.0,
+      "entry_transition_time": 1852.5,
+      "exit_time": 1871.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "wrapping_mirror0_relatively_prime",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 8,
+          "hist_distance": 0.143,
+          "sift_inliers": 145,
+          "sift_good": 159
+        },
+        {
+          "level_id": "pull_skip_twins_v3",
+          "area": "heroes_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.3939,
+          "sift_inliers": 5,
+          "sift_good": 10
+        },
+        {
+          "level_id": "grid_hopping0",
+          "area": "underworld_heroes_and_promesst",
+          "phash_distance": 22,
+          "hist_distance": 1.1542,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "army_v5",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 22,
+          "hist_distance": 1.3881,
+          "sift_inliers": 4,
+          "sift_good": 8
+        },
+        {
+          "level_id": "skip_orange_wall_v3",
+          "area": "beams_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.3998,
+          "sift_inliers": 4,
+          "sift_good": 12
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "wrapping_mirror0_relatively_prime",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 8,
+        "hist_distance": 0.143,
+        "sift_inliers": 145,
+        "sift_good": 159,
+        "consistent_samples": 3,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\01855.000.jpg",
+          "time": 1855.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\wrapping_mirror0_relatively_prime.webp",
+          "first_sample": 1855.0,
+          "last_sample": 1865.0,
+          "sample_count": 3,
+          "reason": "The same large mirror chamber is shown with shifted block arrangement and separated green/purple pieces that distinguish this catalog variant."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p48-018",
+      "level_id": "the_line_must_be_drawn_HERE",
+      "puzzle_start_time": 1901.625,
+      "puzzle_end_time": 2315.0,
+      "entry_transition_time": 1901.5,
+      "exit_time": 2316.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "the_line_must_be_drawn_HERE",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 2,
+          "hist_distance": 0.1307,
+          "sift_inliers": 223,
+          "sift_good": 252
+        },
+        {
+          "level_id": "depositor_thief",
+          "area": "skipping_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.2626,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "square_dance",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.1696,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "bard_range3_with_intro",
+          "area": "heroes_and_water",
+          "phash_distance": 22,
+          "hist_distance": 0.9994,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "through_way",
+          "area": "beams_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.0366,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "the_line_must_be_drawn_HERE",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 2,
+        "hist_distance": 0.1307,
+        "sift_inliers": 223,
+        "sift_good": 252,
+        "consistent_samples": 46,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\01915.000.jpg",
+          "time": 1915.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\the_line_must_be_drawn_HERE.webp",
+          "first_sample": 1905.0,
+          "last_sample": 2130.0,
+          "sample_count": 46,
+          "reason": "The very wide multicolored tiled board has parallel bands of round and square tiles, two pink squares, mirror statues and beam crossings matching the reference; fragments are continuous within one visit."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p48-022",
+      "level_id": "lemonade",
+      "puzzle_start_time": 2425.375,
+      "puzzle_end_time": 2492.625,
+      "entry_transition_time": 2424.875,
+      "exit_time": 2493.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "lemonade",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 6,
+          "hist_distance": 0.1808,
+          "sift_inliers": 145,
+          "sift_good": 155
+        },
+        {
+          "level_id": "mirror_non_turner_v3",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3858,
+          "sift_inliers": 5,
+          "sift_good": 10
+        },
+        {
+          "level_id": "wrap_music",
+          "area": "lily_highway_heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.4094,
+          "sift_inliers": 4,
+          "sift_good": 8
+        },
+        {
+          "level_id": "heroes2_17",
+          "area": "heroes2",
+          "phash_distance": 16,
+          "hist_distance": 1.4003,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "sidetrack",
+          "area": "beams_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.306,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "lemonade",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 6,
+        "hist_distance": 0.1808,
+        "sift_inliers": 145,
+        "sift_good": 155,
+        "consistent_samples": 13,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\02430.000.jpg",
+          "time": 2430.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\lemonade.webp",
+          "first_sample": 2430.0,
+          "last_sample": 2490.0,
+          "sample_count": 13,
+          "reason": "Paired dark and pale platforms with figures, central colored stepping squares, raised right tower and gold lower-left endpoint match the reference."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_04.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p48-023",
+      "level_id": "lemonade_tng_stages_towers_no_float",
+      "puzzle_start_time": 2500.25,
+      "puzzle_end_time": 2590.375,
+      "entry_transition_time": 2499.75,
+      "exit_time": 2591.375,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "lemonade_tng_stages_towers_no_float",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 4,
+          "hist_distance": 0.0732,
+          "sift_inliers": 98,
+          "sift_good": 105
+        },
+        {
+          "level_id": "red_rooms_v5",
+          "area": "beams_and_mirrors",
+          "phash_distance": 16,
+          "hist_distance": 1.3492,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "safety_gloves",
+          "area": "beaming_objects",
+          "phash_distance": 16,
+          "hist_distance": 1.4013,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "hyper_jump_2c",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 0.9473,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "detonator",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.3355,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "lemonade_tng_stages_towers_no_float",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 4,
+        "hist_distance": 0.0732,
+        "sift_inliers": 98,
+        "sift_good": 105,
+        "consistent_samples": 18,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\02505.000.jpg",
+          "time": 2505.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\lemonade_tng_stages_towers_no_float.webp",
+          "first_sample": 2505.0,
+          "last_sample": 2590.0,
+          "sample_count": 18,
+          "reason": "The long narrow tower board has aligned colored square columns beside the pale tower walkway, matching the reference."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_04.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p48-024",
+      "level_id": "wrapping_mirror_alt",
+      "puzzle_start_time": 2646.0,
+      "puzzle_end_time": 2735.0,
+      "entry_transition_time": 2645.625,
+      "exit_time": 2736.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "wrapping_mirror_alt",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 10,
+          "hist_distance": 0.0718,
+          "sift_inliers": 72,
+          "sift_good": 77
+        },
+        {
+          "level_id": "rotator",
+          "area": "skipping_in_3d",
+          "phash_distance": 18,
+          "hist_distance": 1.3739,
+          "sift_inliers": 0,
+          "sift_good": 7
+        },
+        {
+          "level_id": "far_river",
+          "area": "mirrors_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.1052,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "priest_3d_intro_dragon_v4",
+          "area": "heroes_in_3d",
+          "phash_distance": 22,
+          "hist_distance": 1.2026,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "reel_it_in",
+          "area": "mirrorable_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.2803,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "wrapping_mirror_alt",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 10,
+        "hist_distance": 0.0718,
+        "sift_inliers": 72,
+        "sift_good": 77,
+        "consistent_samples": 8,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\02650.000.jpg",
+          "time": 2650.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\wrapping_mirror_alt.webp",
+          "first_sample": 2650.0,
+          "last_sample": 2700.0,
+          "sample_count": 8,
+          "reason": "The icy stone chamber has paired caged pink crystals, paired gold discs, brown boulders and mirrored beam devices in the same arrangement as the reference."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_04.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p48-026",
+      "level_id": "base_jump",
+      "puzzle_start_time": 2952.375,
+      "puzzle_end_time": 3032.875,
+      "entry_transition_time": 2951.875,
+      "exit_time": 3033.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "base_jump",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 6,
+          "hist_distance": 0.0678,
+          "sift_inliers": 103,
+          "sift_good": 107
+        },
+        {
+          "level_id": "close_circuit",
+          "area": "beams_and_stones",
+          "phash_distance": 16,
+          "hist_distance": 1.379,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "another_stone_stopper",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.3968,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "side_kick",
+          "area": "sideways_gates",
+          "phash_distance": 18,
+          "hist_distance": 1.4064,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "chain_reaction",
+          "area": "underworld_skipping_and_promesst",
+          "phash_distance": 18,
+          "hist_distance": 1.4138,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "base_jump",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 6,
+        "hist_distance": 0.0678,
+        "sift_inliers": 103,
+        "sift_good": 107,
+        "consistent_samples": 16,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\02975.000.jpg",
+          "time": 2975.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\base_jump.webp",
+          "first_sample": 2955.0,
+          "last_sample": 3030.0,
+          "sample_count": 16,
+          "reason": "Two separated narrow stone towers with ladder-like fencing and figures/objects on the taller platform match the reference."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_05.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p48-027",
+      "level_id": "hyper_jump_2c",
+      "puzzle_start_time": 3046.125,
+      "puzzle_end_time": 3169.625,
+      "entry_transition_time": 3045.625,
+      "exit_time": 3170.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "hyper_jump_2c",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 4,
+          "hist_distance": 0.175,
+          "sift_inliers": 85,
+          "sift_good": 86
+        },
+        {
+          "level_id": "juggle",
+          "area": "vertical_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3479,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "dragon_bridge",
+          "area": "heroes_in_3d",
+          "phash_distance": 16,
+          "hist_distance": 1.411,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "mirror_14",
+          "area": "mirror",
+          "phash_distance": 18,
+          "hist_distance": 1.2563,
+          "sift_inliers": 0,
+          "sift_good": 6
+        },
+        {
+          "level_id": "mini_green_maze",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.4061,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "hyper_jump_2c",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 4,
+        "hist_distance": 0.175,
+        "sift_inliers": 85,
+        "sift_good": 86,
+        "consistent_samples": 24,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\03050.000.jpg",
+          "time": 3050.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\hyper_jump_2c.webp",
+          "first_sample": 3050.0,
+          "last_sample": 3165.0,
+          "sample_count": 24,
+          "reason": "A long pale stepped island adjoining a tall outlined vertical structure and two figures matches the variant reference."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_05.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p48-028",
+      "level_id": "hyper_jump",
+      "puzzle_start_time": 3182.75,
+      "puzzle_end_time": 3257.5,
+      "entry_transition_time": 3182.25,
+      "exit_time": 3258.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "hyper_jump",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 0,
+          "hist_distance": 0.0845,
+          "sift_inliers": 87,
+          "sift_good": 96
+        },
+        {
+          "level_id": "one_fire_v2",
+          "area": "heroes2",
+          "phash_distance": 18,
+          "hist_distance": 1.3544,
+          "sift_inliers": 4,
+          "sift_good": 9
+        },
+        {
+          "level_id": "far_cl_no_walls_pit",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3914,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "gem_trap2",
+          "area": "gems",
+          "phash_distance": 16,
+          "hist_distance": 1.3701,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "detachment",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.4137,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "hyper_jump",
+        "area": "underworld_heroes_and_mirrors",
+        "phash_distance": 0,
+        "hist_distance": 0.0845,
+        "sift_inliers": 87,
+        "sift_good": 96,
+        "consistent_samples": 15,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p48\\samples\\03210.000.jpg",
+          "time": 3210.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\hyper_jump.webp",
+          "first_sample": 3185.0,
+          "last_sample": 3255.0,
+          "sample_count": 15,
+          "reason": "The elongated icy bridge with central raised pillar, green endpoint, and white beam mechanisms at both ends matches the reference."
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_05.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    }
+  ]
+}

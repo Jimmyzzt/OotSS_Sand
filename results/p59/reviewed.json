@@ -1,0 +1,1753 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 59,
+  "duration": 3137.099625,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage3\\P59__【下西】双倍光束+无尽飞跃+循环荷叶站点+四方共合力[南5东4_南4东4_南3东4+南5东3+南4东2_南5东1_南5+北6东4].mp4",
+  "title": "【下西】双倍光束+无尽飞跃+循环荷叶站点+四方共合力[南5东4/南4东4/南3东4+南5东3+南4东2/南5东1/南5+北6东4]",
+  "stage": 3,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "已检查runs/p59全部20张5秒全时间轴图册（约0–52:15）和4张候选对照图册。20组候选布局均按墙体/平台/固定机关结构与本地参考确认；重复的skipper关卡各有独立切换且参考布局不同，分开记录。未匹配的开头地图/过场、视频末段地图和片尾内容不补坐标；入口未核验，outcome均为unknown。",
+  "events": [
+    {
+      "event_id": "p59-001",
+      "level_id": "duality_condensed",
+      "puzzle_start_time": 22.125,
+      "puzzle_end_time": 79.75,
+      "entry_transition_time": 21.75,
+      "exit_time": 80.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "duality_condensed",
+          "area": "lily_highway_stones_and_promesst",
+          "phash_distance": 2,
+          "hist_distance": 0.0578,
+          "sift_inliers": 161,
+          "sift_good": 165
+        },
+        {
+          "level_id": "duality_2",
+          "area": "lily_highway_stones_and_promesst",
+          "phash_distance": 22,
+          "hist_distance": 0.3951,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "out_of_range_v4",
+          "area": "heroes_in_3d",
+          "phash_distance": 22,
+          "hist_distance": 1.3678,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "wrapping_mirror0",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.3717,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "worlds_collide_heroes_and_promesst_v4",
+          "area": "worlds_collide",
+          "phash_distance": 20,
+          "hist_distance": 1.3397,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "duality_condensed",
+        "area": "lily_highway_stones_and_promesst",
+        "phash_distance": 2,
+        "hist_distance": 0.0578,
+        "sift_inliers": 161,
+        "sift_good": 165,
+        "consistent_samples": 11,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p59\\samples\\00025.000.jpg",
+          "time": 25.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\duality_condensed.webp",
+          "first_sample": 25.0,
+          "last_sample": 75.0,
+          "sample_count": 11,
+          "reason": "参考与视频呈现同一组红色高台围绕青蓝色双水池的对称布局；下方中央红色平台、池中圆点/机关和上缘浅色通道位置吻合。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "检查了事件前后连续5秒全时间轴样本。确认所示固定布局与参考相符；黑场/返回转换用于入口、出口边界。未看到可核验的主世界入口，outcome保持unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p59-002",
+      "level_id": "duality_2",
+      "puzzle_start_time": 87.375,
+      "puzzle_end_time": 193.625,
+      "entry_transition_time": 86.875,
+      "exit_time": 194.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "duality_2",
+          "area": "lily_highway_stones_and_promesst",
+          "phash_distance": 0,
+          "hist_distance": 0.0713,
+          "sift_inliers": 186,
+          "sift_good": 196
+        },
+        {
+          "level_id": "stone_stopper5",
+          "area": "heroes_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.3598,
+          "sift_inliers": 4,
+          "sift_good": 6
+        },
+        {
+          "level_id": "torus_goblins",
+          "area": "underworld_heroes_and_promesst",
+          "phash_distance": 20,
+          "hist_distance": 1.3269,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "mosh_pit_small",
+          "area": "heroes2",
+          "phash_distance": 20,
+          "hist_distance": 1.3673,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "trick_kills",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3879,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "duality_2",
+        "area": "lily_highway_stones_and_promesst",
+        "phash_distance": 0,
+        "hist_distance": 0.0713,
+        "sift_inliers": 186,
+        "sift_good": 196,
+        "consistent_samples": 21,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p59\\samples\\00090.000.jpg",
+          "time": 90.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\duality_2.webp",
+          "first_sample": 90.0,
+          "last_sample": 190.0,
+          "sample_count": 21,
+          "reason": "两图都显示红色建筑分割出的左右青蓝池、中央纵向红色构造、池内粉色圆点及底部黄方块机关，整体镜像关系和边界一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "检查了事件前后连续5秒全时间轴样本。确认所示固定布局与参考相符；黑场/返回转换用于入口、出口边界。未看到可核验的主世界入口，outcome保持unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p59-003",
+      "level_id": "orange_water_button_vslow",
+      "puzzle_start_time": 227.875,
+      "puzzle_end_time": 325.0,
+      "entry_transition_time": 227.375,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "orange_water_button_vslow",
+          "area": "orange_beam_highway_stones_and_promesst",
+          "phash_distance": 4,
+          "hist_distance": 0.2366,
+          "sift_inliers": 49,
+          "sift_good": 57
+        },
+        {
+          "level_id": "orange_water_button_vdouble_v2",
+          "area": "orange_beam_highway_stones_and_promesst",
+          "phash_distance": 16,
+          "hist_distance": 0.8326,
+          "sift_inliers": 15,
+          "sift_good": 21
+        },
+        {
+          "level_id": "dragon_drag",
+          "area": "beams_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.2639,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "place_lily_pushstyle_v6",
+          "area": "endgame2",
+          "phash_distance": 18,
+          "hist_distance": 1.3542,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "heroes1_13_v2",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 1.2976,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "orange_water_button_vslow",
+        "area": "orange_beam_highway_stones_and_promesst",
+        "phash_distance": 4,
+        "hist_distance": 0.2366,
+        "sift_inliers": 49,
+        "sift_good": 57,
+        "consistent_samples": 18,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p59\\samples\\00230.000.jpg",
+          "time": 230.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\orange_water_button_vslow.webp",
+          "first_sample": 230.0,
+          "last_sample": 320.0,
+          "sample_count": 18,
+          "reason": "左侧窄石道上的黄方块、橙色光束交叉点和左下蓝球，与上方横向走廊及右侧水域中的固定橙色机关布局对应。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "检查了事件前后连续5秒全时间轴样本。确认所示固定布局与参考相符；黑场/返回转换用于入口、出口边界。未看到可核验的主世界入口，outcome保持unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p59-004",
+      "level_id": "orange_water_button_vdouble_v2",
+      "puzzle_start_time": 341.25,
+      "puzzle_end_time": 381.875,
+      "entry_transition_time": 340.875,
+      "exit_time": 383.125,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "orange_water_button_vdouble_v2",
+          "area": "orange_beam_highway_stones_and_promesst",
+          "phash_distance": 2,
+          "hist_distance": 0.1799,
+          "sift_inliers": 62,
+          "sift_good": 82
+        },
+        {
+          "level_id": "orange_water_button_vslow",
+          "area": "orange_beam_highway_stones_and_promesst",
+          "phash_distance": 14,
+          "hist_distance": 0.757,
+          "sift_inliers": 17,
+          "sift_good": 25
+        },
+        {
+          "level_id": "skybridge",
+          "area": "lily_highway_stones_and_promesst",
+          "phash_distance": 20,
+          "hist_distance": 1.411,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "blind_spot_v2",
+          "area": "mirrors_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.4139,
+          "sift_inliers": 4,
+          "sift_good": 8
+        },
+        {
+          "level_id": "out_of_range_v4",
+          "area": "heroes_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.2815,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "orange_water_button_vdouble_v2",
+        "area": "orange_beam_highway_stones_and_promesst",
+        "phash_distance": 2,
+        "hist_distance": 0.1799,
+        "sift_inliers": 62,
+        "sift_good": 82,
+        "consistent_samples": 8,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p59\\samples\\00350.000.jpg",
+          "time": 350.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\orange_water_button_vdouble_v2.webp",
+          "first_sample": 345.0,
+          "last_sample": 380.0,
+          "sample_count": 8,
+          "reason": "画面左端蓝色/绿色圆点、两条并行竖直橙光束、横向橙光束以及上沿窄石墙位置与参考图一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "检查了事件前后连续5秒全时间轴样本。确认所示固定布局与参考相符；黑场/返回转换用于入口、出口边界。未看到可核验的主世界入口，outcome保持unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p59-005",
+      "level_id": "orange_water_button_vfour_alter",
+      "puzzle_start_time": 389.5,
+      "puzzle_end_time": 483.75,
+      "entry_transition_time": 389.0,
+      "exit_time": 485.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "orange_water_button_vfour_alter",
+          "area": "orange_beam_highway_stones_and_promesst",
+          "phash_distance": 2,
+          "hist_distance": 0.0759,
+          "sift_inliers": 73,
+          "sift_good": 73
+        },
+        {
+          "level_id": "walk_into_fire",
+          "area": "heroes_and_stones",
+          "phash_distance": 16,
+          "hist_distance": 1.1144,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "3wcn_purple_mirror_skip",
+          "area": "orange_beam_highway_worlds_collide",
+          "phash_distance": 20,
+          "hist_distance": 0.9256,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "place_lily_pushstyle_v6",
+          "area": "endgame2",
+          "phash_distance": 20,
+          "hist_distance": 1.3679,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "end2_mirror_3",
+          "area": "endgame2",
+          "phash_distance": 20,
+          "hist_distance": 1.4035,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "orange_water_button_vfour_alter",
+        "area": "orange_beam_highway_stones_and_promesst",
+        "phash_distance": 2,
+        "hist_distance": 0.0759,
+        "sift_inliers": 73,
+        "sift_good": 73,
+        "consistent_samples": 19,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p59\\samples\\00420.000.jpg",
+          "time": 420.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\orange_water_button_vfour_alter.webp",
+          "first_sample": 390.0,
+          "last_sample": 480.0,
+          "sample_count": 19,
+          "reason": "长方形水池的石质外围、左侧密集机关/圆点及右下黄色端点与参考外轮廓和固定元素相符。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "检查了事件前后连续5秒全时间轴样本。确认所示固定布局与参考相符；黑场/返回转换用于入口、出口边界。未看到可核验的主世界入口，outcome保持unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p59-006",
+      "level_id": "orange_mirror_walk_button",
+      "puzzle_start_time": 514.875,
+      "puzzle_end_time": 658.75,
+      "entry_transition_time": 514.375,
+      "exit_time": 660.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "orange_mirror_walk_button",
+          "area": "orange_beam_highway_stones_and_promesst",
+          "phash_distance": 2,
+          "hist_distance": 0.0735,
+          "sift_inliers": 76,
+          "sift_good": 81
+        },
+        {
+          "level_id": "skip_purple_drop_alt",
+          "area": "underworld_skipping_and_promesst",
+          "phash_distance": 16,
+          "hist_distance": 1.3226,
+          "sift_inliers": 4,
+          "sift_good": 10
+        },
+        {
+          "level_id": "learning_double",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.4102,
+          "sift_inliers": 0,
+          "sift_good": 8
+        },
+        {
+          "level_id": "river_plinko_v2_actual",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.1968,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "prelude_priest_water_goblins_only",
+          "area": "endgame2",
+          "phash_distance": 20,
+          "hist_distance": 1.2756,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "orange_mirror_walk_button",
+        "area": "orange_beam_highway_stones_and_promesst",
+        "phash_distance": 2,
+        "hist_distance": 0.0735,
+        "sift_inliers": 76,
+        "sift_good": 81,
+        "consistent_samples": 29,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p59\\samples\\00520.000.jpg",
+          "time": 520.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\orange_mirror_walk_button.webp",
+          "first_sample": 515.0,
+          "last_sample": 655.0,
+          "sample_count": 29,
+          "reason": "左上小平台的黄绿方块、绿色球体与橙光束起点，以及下方独立小棋盘平台的棕色外框和绿块一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "检查了事件前后连续5秒全时间轴样本。确认所示固定布局与参考相符；黑场/返回转换用于入口、出口边界。未看到可核验的主世界入口，outcome保持unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p59-007",
+      "level_id": "3wcn_purple_mirror_skip",
+      "puzzle_start_time": 671.0,
+      "puzzle_end_time": 765.0,
+      "entry_transition_time": 670.5,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "3wcn_purple_mirror_skip",
+          "area": "orange_beam_highway_worlds_collide",
+          "phash_distance": 4,
+          "hist_distance": 0.1256,
+          "sift_inliers": 60,
+          "sift_good": 68
+        },
+        {
+          "level_id": "remote_work",
+          "area": "beams_and_mirrors",
+          "phash_distance": 16,
+          "hist_distance": 1.2749,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "new_new_new_slam",
+          "area": "mirrorable_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.2437,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "elevator_cyan",
+          "area": "elevators",
+          "phash_distance": 18,
+          "hist_distance": 1.3445,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "heroes3_13_v2",
+          "area": "heroes3",
+          "phash_distance": 20,
+          "hist_distance": 1.3369,
+          "sift_inliers": 0,
+          "sift_good": 12
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "3wcn_purple_mirror_skip",
+        "area": "orange_beam_highway_worlds_collide",
+        "phash_distance": 4,
+        "hist_distance": 0.1256,
+        "sift_inliers": 60,
+        "sift_good": 68,
+        "consistent_samples": 18,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p59\\samples\\00690.000.jpg",
+          "time": 690.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\3wcn_purple_mirror_skip.webp",
+          "first_sample": 675.0,
+          "last_sample": 760.0,
+          "sample_count": 18,
+          "reason": "左上红棕色岛、横跨画面的亮粉色光束、右下孤岛蓝球和灰色按钮在视频与参考中相对位置一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "检查了事件前后连续5秒全时间轴样本。确认所示固定布局与参考相符；黑场/返回转换用于入口、出口边界。未看到可核验的主世界入口，outcome保持unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p59-008",
+      "level_id": "layered_alt",
+      "puzzle_start_time": 799.625,
+      "puzzle_end_time": 945.0,
+      "entry_transition_time": 799.125,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "layered_alt",
+          "area": "lily_highway_mirrors_and_stones",
+          "phash_distance": 2,
+          "hist_distance": 0.4295,
+          "sift_inliers": 174,
+          "sift_good": 179
+        },
+        {
+          "level_id": "doorstop",
+          "area": "beams_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4029,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "a_wiz_out_of_water",
+          "area": "heroes_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.3702,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "gem_clg_v4",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.4059,
+          "sift_inliers": 0,
+          "sift_good": 5
+        },
+        {
+          "level_id": "green_revolution",
+          "area": "promesst1_and_2",
+          "phash_distance": 20,
+          "hist_distance": 1.4071,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "layered_alt",
+        "area": "lily_highway_mirrors_and_stones",
+        "phash_distance": 2,
+        "hist_distance": 0.4295,
+        "sift_inliers": 174,
+        "sift_good": 179,
+        "consistent_samples": 29,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p59\\samples\\00820.000.jpg",
+          "time": 820.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\layered_alt.webp",
+          "first_sample": 800.0,
+          "last_sample": 940.0,
+          "sample_count": 29,
+          "reason": "橙砖平台上左侧浅蓝竖装置、棕色横梁、两颗蓝球、绿色方块及右侧蓝色圆按钮都与参考位置相符。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "检查了事件前后连续5秒全时间轴样本。确认所示固定布局与参考相符；黑场/返回转换用于入口、出口边界。未看到可核验的主世界入口，outcome保持unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p59-009",
+      "level_id": "sick_270_small",
+      "puzzle_start_time": 957.0,
+      "puzzle_end_time": 1044.25,
+      "entry_transition_time": 956.625,
+      "exit_time": 1044.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "sick_270_small",
+          "area": "lily_highway_mirrors_and_stones",
+          "phash_distance": 8,
+          "hist_distance": 0.1661,
+          "sift_inliers": 97,
+          "sift_good": 108
+        },
+        {
+          "level_id": "hot_swap",
+          "area": "heroes_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.0905,
+          "sift_inliers": 5,
+          "sift_good": 7
+        },
+        {
+          "level_id": "multipush_for_me2",
+          "area": "sideways_gates",
+          "phash_distance": 22,
+          "hist_distance": 1.4077,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "two_through_alt_2",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 18,
+          "hist_distance": 1.3774,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "spray_and_pray",
+          "area": "skipping_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.4123,
+          "sift_inliers": 0,
+          "sift_good": 13
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "sick_270_small",
+        "area": "lily_highway_mirrors_and_stones",
+        "phash_distance": 8,
+        "hist_distance": 0.1661,
+        "sift_inliers": 97,
+        "sift_good": 108,
+        "consistent_samples": 16,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p59\\samples\\00990.000.jpg",
+          "time": 990.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\sick_270_small.webp",
+          "first_sample": 960.0,
+          "last_sample": 1035.0,
+          "sample_count": 16,
+          "reason": "橙色长走廊内三组重复木架/机关、上缘三枚蓝球和下缘三组圆形装置的间距及建筑轮廓对应。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "检查了事件前后连续5秒全时间轴样本。确认所示固定布局与参考相符；黑场/返回转换用于入口、出口边界。未看到可核验的主世界入口，outcome保持unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p59-010",
+      "level_id": "yars_revenge_setup_v3",
+      "puzzle_start_time": 1044.625,
+      "puzzle_end_time": 1125.0,
+      "entry_transition_time": 1044.25,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "yars_revenge_setup_v3",
+          "area": "lily_highway_mirrors_and_stones",
+          "phash_distance": 4,
+          "hist_distance": 0.0491,
+          "sift_inliers": 119,
+          "sift_good": 123
+        },
+        {
+          "level_id": "safety_gloves",
+          "area": "beaming_objects",
+          "phash_distance": 18,
+          "hist_distance": 1.3829,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "double_the_fun",
+          "area": "elevators",
+          "phash_distance": 20,
+          "hist_distance": 1.3663,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "torcoban_2",
+          "area": "promesst1_and_2",
+          "phash_distance": 20,
+          "hist_distance": 1.3975,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "submarine_far_away",
+          "area": "beams_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3991,
+          "sift_inliers": 0,
+          "sift_good": 4
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "yars_revenge_setup_v3",
+        "area": "lily_highway_mirrors_and_stones",
+        "phash_distance": 4,
+        "hist_distance": 0.0491,
+        "sift_inliers": 119,
+        "sift_good": 123,
+        "consistent_samples": 16,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p59\\samples\\01050.000.jpg",
+          "time": 1050.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\yars_revenge_setup_v3.webp",
+          "first_sample": 1045.0,
+          "last_sample": 1120.0,
+          "sample_count": 16,
+          "reason": "两座窄橙砖高台各含蓝色圆球，中央有树/塔形结构，下缘绿叶与人物排布和参考图一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "检查了事件前后连续5秒全时间轴样本。确认所示固定布局与参考相符；黑场/返回转换用于入口、出口边界。未看到可核验的主世界入口，outcome保持unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_01.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p59-011",
+      "level_id": "before_wings",
+      "puzzle_start_time": 1144.375,
+      "puzzle_end_time": 1330.0,
+      "entry_transition_time": 1143.875,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "before_wings",
+          "area": "lily_highway_mirrors_and_stones",
+          "phash_distance": 2,
+          "hist_distance": 0.0889,
+          "sift_inliers": 100,
+          "sift_good": 102
+        },
+        {
+          "level_id": "another_stone_stopper",
+          "area": "heroes_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 1.4094,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "bard_movable_island2",
+          "area": "advanced_bard_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.3516,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "hyper_jump_2c",
+          "area": "underworld_heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3727,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "prelude_priest_water_goblins_only",
+          "area": "endgame2",
+          "phash_distance": 20,
+          "hist_distance": 1.4046,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "before_wings",
+        "area": "lily_highway_mirrors_and_stones",
+        "phash_distance": 2,
+        "hist_distance": 0.0889,
+        "sift_inliers": 100,
+        "sift_good": 102,
+        "consistent_samples": 37,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p59\\samples\\01190.000.jpg",
+          "time": 1190.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\before_wings.webp",
+          "first_sample": 1145.0,
+          "last_sample": 1325.0,
+          "sample_count": 37,
+          "reason": "中央上方倒U形红色墙体、左右蓝色小岛上的白色部件，以及底部红灰方块带和绿色端点布局吻合。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "检查了事件前后连续5秒全时间轴样本。确认所示固定布局与参考相符；黑场/返回转换用于入口、出口边界。未看到可核验的主世界入口，outcome保持unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p59-012",
+      "level_id": "far_wings",
+      "puzzle_start_time": 1339.625,
+      "puzzle_end_time": 1635.0,
+      "entry_transition_time": 1339.125,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "far_wings",
+          "area": "lily_highway_mirrors_and_stones",
+          "phash_distance": 2,
+          "hist_distance": 0.1225,
+          "sift_inliers": 65,
+          "sift_good": 66
+        },
+        {
+          "level_id": "bridgey2",
+          "area": "vertical_mirrors",
+          "phash_distance": 18,
+          "hist_distance": 1.4122,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "aggro_maze",
+          "area": "goblin_rotation",
+          "phash_distance": 20,
+          "hist_distance": 1.4099,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "catching_fire_v2",
+          "area": "heroes_in_3d",
+          "phash_distance": 20,
+          "hist_distance": 1.4133,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "mirror_180",
+          "area": "lily_highway_mirrors_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 0.6066,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "far_wings",
+        "area": "lily_highway_mirrors_and_stones",
+        "phash_distance": 2,
+        "hist_distance": 0.1225,
+        "sift_inliers": 65,
+        "sift_good": 66,
+        "consistent_samples": 59,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p59\\samples\\01345.000.jpg",
+          "time": 1345.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\far_wings.webp",
+          "first_sample": 1340.0,
+          "last_sample": 1630.0,
+          "sample_count": 59,
+          "reason": "紫色背景中左下长条红色岛、上方两个分离机关岛和右侧蓝色竖岛/黄绿方块位置一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "检查了事件前后连续5秒全时间轴样本。确认所示固定布局与参考相符；黑场/返回转换用于入口、出口边界。未看到可核验的主世界入口，outcome保持unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p59-013",
+      "level_id": "after_wings",
+      "puzzle_start_time": 1682.875,
+      "puzzle_end_time": 1810.0,
+      "entry_transition_time": 1682.375,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "after_wings",
+          "area": "lily_highway_mirrors_and_stones",
+          "phash_distance": 2,
+          "hist_distance": 0.0828,
+          "sift_inliers": 41,
+          "sift_good": 43
+        },
+        {
+          "level_id": "wrapping_mirror_red_v4",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.4058,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "raft_corners_alt_3",
+          "area": "underworld_lilies",
+          "phash_distance": 20,
+          "hist_distance": 1.4134,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "come_closer",
+          "area": "heroes_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 1.3933,
+          "sift_inliers": 0,
+          "sift_good": 3
+        },
+        {
+          "level_id": "sky_double_intro1",
+          "area": "double_beam_falling",
+          "phash_distance": 22,
+          "hist_distance": 1.4126,
+          "sift_inliers": 0,
+          "sift_good": 0
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "after_wings",
+        "area": "lily_highway_mirrors_and_stones",
+        "phash_distance": 2,
+        "hist_distance": 0.0828,
+        "sift_inliers": 41,
+        "sift_good": 43,
+        "consistent_samples": 24,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p59\\samples\\01685.000.jpg",
+          "time": 1685.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\after_wings.webp",
+          "first_sample": 1685.0,
+          "last_sample": 1805.0,
+          "sample_count": 24,
+          "reason": "画面两端分离的窄蓝色竖平台，左端黄色方块、中央红橙小方块和绿色圆点序列、右端粉色机关排列与参考相同。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "检查了事件前后连续5秒全时间轴样本。确认所示固定布局与参考相符；黑场/返回转换用于入口、出口边界。未看到可核验的主世界入口，outcome保持unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p59-014",
+      "level_id": "infinite_looping_skipper0_alt",
+      "puzzle_start_time": 1875.625,
+      "puzzle_end_time": 1919.75,
+      "entry_transition_time": 1875.125,
+      "exit_time": 1920.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "infinite_looping_skipper0_alt",
+          "area": "lily_highway_mirrors_and_stones",
+          "phash_distance": 4,
+          "hist_distance": 0.0553,
+          "sift_inliers": 145,
+          "sift_good": 161
+        },
+        {
+          "level_id": "infinite_looping_skipper_alt",
+          "area": "lily_highway_mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 0.1702,
+          "sift_inliers": 66,
+          "sift_good": 74
+        },
+        {
+          "level_id": "through_sokoban",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 22,
+          "hist_distance": 1.3209,
+          "sift_inliers": 5,
+          "sift_good": 7
+        },
+        {
+          "level_id": "druid_multismash_v3",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 22,
+          "hist_distance": 1.4075,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "metamirror_same_dir_5_alt",
+          "area": "metamirrors",
+          "phash_distance": 20,
+          "hist_distance": 0.6576,
+          "sift_inliers": 0,
+          "sift_good": 5
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "infinite_looping_skipper0_alt",
+        "area": "lily_highway_mirrors_and_stones",
+        "phash_distance": 4,
+        "hist_distance": 0.0553,
+        "sift_inliers": 145,
+        "sift_good": 161,
+        "consistent_samples": 8,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p59\\samples\\01885.000.jpg",
+          "time": 1885.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\infinite_looping_skipper0_alt.webp",
+          "first_sample": 1880.0,
+          "last_sample": 1915.0,
+          "sample_count": 8,
+          "reason": "蓝色水域里左右两道粉色光束、中央竖直石带和上下金黄色块列的交叉关系符合参考。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "检查了事件前后连续5秒全时间轴样本。确认所示固定布局与参考相符；黑场/返回转换用于入口、出口边界。未看到可核验的主世界入口，outcome保持unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p59-015",
+      "level_id": "infinite_looping_skipper_alt",
+      "puzzle_start_time": 1920.0,
+      "puzzle_end_time": 1979.5,
+      "entry_transition_time": 1919.75,
+      "exit_time": 1979.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "infinite_looping_skipper_alt",
+          "area": "lily_highway_mirrors_and_stones",
+          "phash_distance": 4,
+          "hist_distance": 0.0824,
+          "sift_inliers": 112,
+          "sift_good": 114
+        },
+        {
+          "level_id": "infinite_looping_skipper0_alt",
+          "area": "lily_highway_mirrors_and_stones",
+          "phash_distance": 18,
+          "hist_distance": 0.2249,
+          "sift_inliers": 65,
+          "sift_good": 72
+        },
+        {
+          "level_id": "river_maze_clear_tenacious_race_v2",
+          "area": "lily_rotation",
+          "phash_distance": 20,
+          "hist_distance": 1.3923,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "walk_the_plank",
+          "area": "heroes_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3933,
+          "sift_inliers": 0,
+          "sift_good": 4
+        },
+        {
+          "level_id": "falling_button",
+          "area": "spawners",
+          "phash_distance": 20,
+          "hist_distance": 1.4109,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "infinite_looping_skipper_alt",
+        "area": "lily_highway_mirrors_and_stones",
+        "phash_distance": 4,
+        "hist_distance": 0.0824,
+        "sift_inliers": 112,
+        "sift_good": 114,
+        "consistent_samples": 11,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p59\\samples\\01935.000.jpg",
+          "time": 1935.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\infinite_looping_skipper_alt.webp",
+          "first_sample": 1925.0,
+          "last_sample": 1975.0,
+          "sample_count": 11,
+          "reason": "画面有被粉色竖直光束分开的两条浅色石带及边缘橙色方块；石带间距与固定水域结构吻合参考。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "检查了事件前后连续5秒全时间轴样本。确认所示固定布局与参考相符；黑场/返回转换用于入口、出口边界。未看到可核验的主世界入口，outcome保持unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_02.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p59-016",
+      "level_id": "infinite_looping_skipper_far",
+      "puzzle_start_time": 1979.875,
+      "puzzle_end_time": 2050.0,
+      "entry_transition_time": 1979.5,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "infinite_looping_skipper_far",
+          "area": "lily_highway_mirrors_and_stones",
+          "phash_distance": 4,
+          "hist_distance": 0.2917,
+          "sift_inliers": 79,
+          "sift_good": 83
+        },
+        {
+          "level_id": "three_artifacts_v3",
+          "area": "orange_beam_highway_mirrors_and_promesst",
+          "phash_distance": 18,
+          "hist_distance": 1.4136,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "wrapping_magic_mirror_2",
+          "area": "underworld_mirrors_and_promesst",
+          "phash_distance": 20,
+          "hist_distance": 1.3796,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "mini_green_maze",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.4048,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "infinite_looping_skipper_mirrored_ikaruga_alt",
+          "area": "lily_highway_mirrors_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 0.4284,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "infinite_looping_skipper_far",
+        "area": "lily_highway_mirrors_and_stones",
+        "phash_distance": 4,
+        "hist_distance": 0.2917,
+        "sift_inliers": 79,
+        "sift_good": 83,
+        "consistent_samples": 14,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p59\\samples\\01990.000.jpg",
+          "time": 1990.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\infinite_looping_skipper_far.webp",
+          "first_sample": 1980.0,
+          "last_sample": 2045.0,
+          "sample_count": 14,
+          "reason": "两处小型岛屿之间的深蓝水域、各岛上黄色方块与石块、右上黑色建筑及下缘圆点布局相符。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "检查了事件前后连续5秒全时间轴样本。确认所示固定布局与参考相符；黑场/返回转换用于入口、出口边界。未看到可核验的主世界入口，outcome保持unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p59-017",
+      "level_id": "infinite_looping_skipper_mirrored_ikaruga_alt",
+      "puzzle_start_time": 2058.25,
+      "puzzle_end_time": 2160.0,
+      "entry_transition_time": 2057.875,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "infinite_looping_skipper_mirrored_ikaruga_alt",
+          "area": "lily_highway_mirrors_and_stones",
+          "phash_distance": 2,
+          "hist_distance": 0.3576,
+          "sift_inliers": 143,
+          "sift_good": 145
+        },
+        {
+          "level_id": "infinite_looping_skipper_far",
+          "area": "lily_highway_mirrors_and_stones",
+          "phash_distance": 22,
+          "hist_distance": 0.3214,
+          "sift_inliers": 5,
+          "sift_good": 7
+        },
+        {
+          "level_id": "3wcn_purple_goblin",
+          "area": "underworld_mirrors_and_promesst",
+          "phash_distance": 18,
+          "hist_distance": 1.328,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "ocean_blue",
+          "area": "beams_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3862,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes2_5_no_crystal",
+          "area": "heroes2",
+          "phash_distance": 22,
+          "hist_distance": 1.1405,
+          "sift_inliers": 0,
+          "sift_good": 2
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "infinite_looping_skipper_mirrored_ikaruga_alt",
+        "area": "lily_highway_mirrors_and_stones",
+        "phash_distance": 2,
+        "hist_distance": 0.3576,
+        "sift_inliers": 143,
+        "sift_good": 145,
+        "consistent_samples": 20,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p59\\samples\\02060.000.jpg",
+          "time": 2060.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\infinite_looping_skipper_mirrored_ikaruga_alt.webp",
+          "first_sample": 2060.0,
+          "last_sample": 2155.0,
+          "sample_count": 20,
+          "reason": "中央方形石岛、中心黄色机关、左右两侧狭长通道和外围绿色装饰/机关的位置关系匹配参考。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "检查了事件前后连续5秒全时间轴样本。确认所示固定布局与参考相符；黑场/返回转换用于入口、出口边界。未看到可核验的主世界入口，outcome保持unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p59-018",
+      "level_id": "swapwiz_harder",
+      "puzzle_start_time": 2178.125,
+      "puzzle_end_time": 2602.375,
+      "entry_transition_time": 2177.625,
+      "exit_time": 2603.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "swapwiz_harder",
+          "area": "lily_highway_heroes_and_stones",
+          "phash_distance": 6,
+          "hist_distance": 0.5567,
+          "sift_inliers": 135,
+          "sift_good": 142
+        },
+        {
+          "level_id": "treadmill",
+          "area": "spawners",
+          "phash_distance": 20,
+          "hist_distance": 1.3528,
+          "sift_inliers": 5,
+          "sift_good": 7
+        },
+        {
+          "level_id": "two_bounce_v2",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3132,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "mirror_motion",
+          "area": "mirrors_and_stones",
+          "phash_distance": 20,
+          "hist_distance": 1.3375,
+          "sift_inliers": 4,
+          "sift_good": 17
+        },
+        {
+          "level_id": "bridgey2",
+          "area": "vertical_mirrors",
+          "phash_distance": 16,
+          "hist_distance": 1.3684,
+          "sift_inliers": 0,
+          "sift_good": 7
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "swapwiz_harder",
+        "area": "lily_highway_heroes_and_stones",
+        "phash_distance": 6,
+        "hist_distance": 0.5567,
+        "sift_inliers": 135,
+        "sift_good": 142,
+        "consistent_samples": 85,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p59\\samples\\02345.000.jpg",
+          "time": 2345.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\swapwiz_harder.webp",
+          "first_sample": 2180.0,
+          "last_sample": 2600.0,
+          "sample_count": 85,
+          "reason": "两块分离的平台一大一小：左侧青色方砖区带粉色边点，右侧浅灰平台呈折角并含固定黑色机关；两岛间距与轮廓相符。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "检查了事件前后连续5秒全时间轴样本。确认所示固定布局与参考相符；黑场/返回转换用于入口、出口边界。未看到可核验的主世界入口，outcome保持unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p59-019",
+      "level_id": "4wcn_all_fast",
+      "puzzle_start_time": 2678.125,
+      "puzzle_end_time": 2873.375,
+      "entry_transition_time": 2677.625,
+      "exit_time": 2873.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 0.5,
+      "candidate_levels": [
+        {
+          "level_id": "4wcn_all_fast",
+          "area": "orange_beam_highway_worlds_collide",
+          "phash_distance": 4,
+          "hist_distance": 0.0746,
+          "sift_inliers": 142,
+          "sift_good": 151
+        },
+        {
+          "level_id": "movable_buttons",
+          "area": "flat_things",
+          "phash_distance": 18,
+          "hist_distance": 1.2881,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "heroes1_2_v2",
+          "area": "heroes1",
+          "phash_distance": 20,
+          "hist_distance": 0.9411,
+          "sift_inliers": 0,
+          "sift_good": 1
+        },
+        {
+          "level_id": "rowboat",
+          "area": "advanced_bard_and_water",
+          "phash_distance": 20,
+          "hist_distance": 1.2182,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "pushing_near_orange",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 20,
+          "hist_distance": 1.2456,
+          "sift_inliers": 0,
+          "sift_good": 3
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "4wcn_all_fast",
+        "area": "orange_beam_highway_worlds_collide",
+        "phash_distance": 4,
+        "hist_distance": 0.0746,
+        "sift_inliers": 142,
+        "sift_good": 151,
+        "consistent_samples": 39,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p59\\samples\\02710.000.jpg",
+          "time": 2710.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\4wcn_all_fast.webp",
+          "first_sample": 2680.0,
+          "last_sample": 2870.0,
+          "sample_count": 39,
+          "reason": "中央倒梯形水域由浅绿石墙包边，左侧橙色窄路、右侧蓝色小机关岛及底部蓝色节点与参考一致。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "检查了事件前后连续5秒全时间轴样本。确认所示固定布局与参考相符；黑场/返回转换用于入口、出口边界。未看到可核验的主世界入口，outcome保持unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    },
+    {
+      "event_id": "p59-020",
+      "level_id": "4wc_dragon_cyan_s_v2",
+      "puzzle_start_time": 2873.75,
+      "puzzle_end_time": 3010.0,
+      "entry_transition_time": 2873.375,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "4wc_dragon_cyan_s_v2",
+          "area": "orange_beam_highway_worlds_collide",
+          "phash_distance": 2,
+          "hist_distance": 0.2513,
+          "sift_inliers": 157,
+          "sift_good": 161
+        },
+        {
+          "level_id": "purple_wall_around_easier_vp",
+          "area": "beams_and_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.2505,
+          "sift_inliers": 5,
+          "sift_good": 9
+        },
+        {
+          "level_id": "metamirror_c_alt",
+          "area": "metamirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.3902,
+          "sift_inliers": 5,
+          "sift_good": 9
+        },
+        {
+          "level_id": "sink_together",
+          "area": "mirrors_and_stones",
+          "phash_distance": 16,
+          "hist_distance": 1.2969,
+          "sift_inliers": 0,
+          "sift_good": 6
+        },
+        {
+          "level_id": "goblin_express",
+          "area": "heroes_and_water",
+          "phash_distance": 18,
+          "hist_distance": 1.1138,
+          "sift_inliers": 0,
+          "sift_good": 5
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "4wc_dragon_cyan_s_v2",
+        "area": "orange_beam_highway_worlds_collide",
+        "phash_distance": 2,
+        "hist_distance": 0.2513,
+        "sift_inliers": 157,
+        "sift_good": 161,
+        "consistent_samples": 27,
+        "status": "visually_confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p59\\samples\\02875.000.jpg",
+          "time": 2875.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\4wc_dragon_cyan_s_v2.webp",
+          "first_sample": 2875.0,
+          "last_sample": 3005.0,
+          "sample_count": 27,
+          "reason": "水面上的顶部黄色窄岛、左下橙色石区、右下白色弯折平台及末端青色圆按钮组成同样的分区布局。"
+        },
+        {
+          "type": "temporal_context",
+          "reason": "检查了事件前后连续5秒全时间轴样本。确认所示固定布局与参考相符；黑场/返回转换用于入口、出口边界。未看到可核验的主世界入口，outcome保持unknown。"
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_03.jpg",
+      "manual_corrections": [],
+      "reviewer": "Luna visual comparison"
+    }
+  ]
+}

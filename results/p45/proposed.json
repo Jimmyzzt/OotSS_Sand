@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "video_bvid": "BV13FH96bE4m",
+  "part_number": 45,
+  "duration": 1457.633688,
+  "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage3\\P45__【三阶段开始】进入三阶段的方法 交汇之地：低处.mp4",
+  "title": "【三阶段开始】进入三阶段的方法 交汇之地：低处",
+  "stage": 3,
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "review_note": "Unreviewed machine proposals; require bounded visual comparison, reject false matches, inspect unknown spans.",
+  "events": [
+    {
+      "event_id": "p45-001",
+      "level_id": "push_down_chain",
+      "puzzle_start_time": 1136.375,
+      "puzzle_end_time": 1215.0,
+      "entry_transition_time": 1135.75,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "candidate",
+      "status": "possible_visit",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 5,
+      "candidate_levels": [
+        {
+          "level_id": "push_down_chain",
+          "area": "underworld_crossroads",
+          "phash_distance": 2,
+          "hist_distance": 0.3816,
+          "sift_inliers": 115,
+          "sift_good": 126
+        },
+        {
+          "level_id": "mirror_4",
+          "area": "mirror",
+          "phash_distance": 22,
+          "hist_distance": 1.3943,
+          "sift_inliers": 4,
+          "sift_good": 7
+        },
+        {
+          "level_id": "bottom_bridge_v2",
+          "area": "vertical_mirrors",
+          "phash_distance": 20,
+          "hist_distance": 1.39,
+          "sift_inliers": 0,
+          "sift_good": 2
+        },
+        {
+          "level_id": "sombreros",
+          "area": "flat_things",
+          "phash_distance": 22,
+          "hist_distance": 1.1579,
+          "sift_inliers": 0,
+          "sift_good": 0
+        },
+        {
+          "level_id": "endpoint_weapon",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 22,
+          "hist_distance": 1.2475,
+          "sift_inliers": 0,
+          "sift_good": 1
+        }
+      ],
+      "puzzle_match": {
+        "level_id": "push_down_chain",
+        "area": "underworld_crossroads",
+        "phash_distance": 2,
+        "hist_distance": 0.3816,
+        "sift_inliers": 115,
+        "sift_good": 126,
+        "consistent_samples": 14
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "candidate_layout",
+          "image": "F:\\Video\\OotSS_Sand\\runs\\p45\\samples\\01140.000.jpg",
+          "time": 1140.0,
+          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\push_down_chain.webp",
+          "first_sample": 1140.0,
+          "last_sample": 1210.0,
+          "sample_count": 14
+        }
+      ],
+      "evidence_gallery": "evidence/candidates_00.jpg",
+      "manual_corrections": []
+    }
+  ]
+}

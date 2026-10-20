@@ -7,7 +7,7 @@ from .matching import Matcher
 from .video import contact_sheet, frame
 
 
-def recover(part, step=25):
+def recover(part, step=25, catalog_path="cache/map/catalog.json"):
     run = Path(f"runs/p{part}")
     source = read_json(run / "scan.json")
     review_path = Path(f"results/p{part}/reviewed.json")
@@ -25,7 +25,7 @@ def recover(part, step=25):
         if a - previous > 8:
             gaps.append((previous, a))
         previous = max(previous, b)
-    matcher = Matcher()
+    matcher = Matcher(catalog_path)
     by_name = {r["level_id"]: r for r in matcher.rows}
     records = []
     pairs = []
