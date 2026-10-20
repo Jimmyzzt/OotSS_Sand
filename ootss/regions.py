@@ -153,7 +153,10 @@ def enrich(data, marker_features=(), editorial=None, links=None):
         region.update(
             order=i, title=region["theme"] + str(theme_count[region["theme"]])
         )
-        override = editorial.get("regions", {}).get(region["id"], {})
+        overrides = editorial.get("regions", {})
+        override = overrides.get(
+            f"overworld:{region['id']}", overrides.get(region["id"], {})
+        )
         if isinstance(override.get("title"), str):
             region["title"] = override["title"]
         for l in grouped[(region["col"], region["row"])]:

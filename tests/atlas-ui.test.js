@@ -35,3 +35,13 @@ test('published mixed hero cell retains P2 and P4 identities without repeating e
   assert.equal(labels.get('victory_lap').text,'4·29');
   assert.equal(new Set([...labels.values()].map(v=>v.part)).size,2);
 });
+
+test('editorial import keeps legacy flags and validates named regions without prototype keys',()=>{
+  const ids=new Set(['mirror_1']),keys=new Set(['overworld:1,0']);
+  const old=AtlasUI.parseEditorial({version:1,levels:{mirror_1:{multi_save:true,notes:'旧标注'}}},ids,keys);
+  assert.equal(old.levels.mirror_1.multi_save,true);
+  const next=AtlasUI.parseEditorial({version:2,levels:{mirror_1:{big_star:false},bad:{notes:'skip'}},regions:{'overworld:1,0':{title:'  镜之群岛  '},unknown:{title:'skip'}}},ids,keys);
+  assert.deepEqual(Object.keys(next.levels),['mirror_1']);
+  assert.deepEqual({...next.regions},{'overworld:1,0':{title:'镜之群岛'}});
+  assert.throws(()=>AtlasUI.parseEditorial({version:2,levels:[]},ids,keys));
+});
