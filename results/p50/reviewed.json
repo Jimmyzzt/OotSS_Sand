@@ -90,7 +90,9 @@
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
       "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "Luna visual comparison",
+      "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
+      "audit_anchor": "repeat-magnitudes_v3"
     },
     {
       "event_id": "p50-u01",
@@ -237,7 +239,9 @@
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
       "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "Luna visual comparison",
+      "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
+      "audit_anchor": "repeat-magnitudes_v3"
     },
     {
       "event_id": "p50-u03",
@@ -352,7 +356,9 @@
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
       "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "Luna visual comparison",
+      "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
+      "audit_anchor": "repeat-magnitudes_v3"
     },
     {
       "event_id": "p50-u04",
@@ -467,7 +473,9 @@
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
       "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "Luna visual comparison",
+      "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
+      "audit_anchor": "repeat-magnitudes_v3"
     },
     {
       "event_id": "p50-u05",
@@ -582,7 +590,9 @@
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
       "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "Luna visual comparison",
+      "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
+      "audit_anchor": "repeat-magnitudes_v3"
     },
     {
       "event_id": "p50-006",
@@ -665,7 +675,9 @@
       ],
       "evidence_gallery": "evidence/candidates_01.jpg",
       "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "Luna visual comparison",
+      "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
+      "audit_anchor": "repeat-magnitudes_v3"
     },
     {
       "event_id": "p50-u06",
@@ -780,7 +792,9 @@
       ],
       "evidence_gallery": "evidence/candidates_01.jpg",
       "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "Luna visual comparison",
+      "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
+      "audit_anchor": "repeat-magnitudes_v3"
     },
     {
       "event_id": "p50-u07",
@@ -927,7 +941,9 @@
       ],
       "evidence_gallery": "evidence/candidates_01.jpg",
       "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "Luna visual comparison",
+      "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
+      "audit_anchor": "repeat-magnitudes_v3"
     },
     {
       "event_id": "p50-009",
@@ -1010,7 +1026,9 @@
       ],
       "evidence_gallery": "evidence/candidates_01.jpg",
       "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "Luna visual comparison",
+      "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
+      "audit_anchor": "repeat-magnitudes_v3"
     },
     {
       "event_id": "p50-010",
@@ -1093,7 +1111,9 @@
       ],
       "evidence_gallery": "evidence/candidates_01.jpg",
       "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "Luna visual comparison",
+      "audit_note": "十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。",
+      "audit_anchor": "repeat-magnitudes_v3"
     },
     {
       "event_id": "p50-u08",

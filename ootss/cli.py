@@ -102,7 +102,7 @@ def main():
     if args.command == "atlas":
         build_atlas(
             args.out or ("results/worlds" if args.all_worlds else "results/stage1"),
-            parts=range(1, 69) if args.all_worlds else range(1, 25),
+            parts=range(1, 68) if args.all_worlds else range(1, 25),
             catalog_path="cache/map/catalog_all.json"
             if args.all_worlds
             else "cache/map/catalog.json",

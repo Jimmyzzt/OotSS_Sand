@@ -1,0 +1,135 @@
+﻿type,id,part,start,end,level_id,previous_level_id,reason,url
+纠正/撤销,p2-006,2,136.875,152.875,heroes1_4.5,heroes1_1,"130–135秒地表显示从中央通道走到右上排最右入口；与正中通道及同排4枚入口对照，对应原地图(86,86)，在heroes1_5_v2(85,86)右侧。137–140秒初始角色为绿色吟游诗人、目标为绿色，与heroes1_4.5参考一致，而heroes1_1是红色角色/橙色目标。基于入口相对位置+角色配置共同改正，不能单靠相同桥面布局。",https://www.bilibili.com/video/BV13FH96bE4m/?p=2&t=136
+纠正/撤销,p43-003,43,834.125,845.0,,heroes1_2_v2,结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。,https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=834
+纠正/撤销,p43-005,43,850.0,855.0,,heroes1_2_v2,结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。,https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=850
+纠正/撤销,p43-009,43,1001.125,1010.0,,heroes1_5_v2,结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。,https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=1001
+纠正/撤销,p64-010,64,1765.0,1793.125,,mirror_1,结局三地下关卡内部复用镜面棋盘；原匹配引用主世界mirror_1，相似布局不能证明返回主世界。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。,https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=1765
+纠正/撤销,p64-012,64,2061.75,2080.0,,mirror_1,结局三地下关卡内部复用镜面棋盘；原匹配引用主世界mirror_1，相似布局不能证明返回主世界。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。,https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=2061
+重复ID待核,p5-004,5,103.75,130.0,mirror_4,,三个匹配窗之间有同一棋盘连续操作/画线讲解；可能应合并一次连续访问，边界待人工核对。,https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=103
+重复ID待核,p5-005,5,145.0,155.0,mirror_4,,三个匹配窗之间有同一棋盘连续操作/画线讲解；可能应合并一次连续访问，边界待人工核对。,https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=145
+重复ID待核,p5-006,5,185.0,220.0,mirror_4,,三个匹配窗之间有同一棋盘连续操作/画线讲解；可能应合并一次连续访问，边界待人工核对。,https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=185
+重复ID待核,p5-029,5,1884.5,1905.0,mirror_14,,31:44–32:02有界帧未见退场，疑似同一棋盘连续操作；入口次数待核。,https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=1884
+重复ID待核,p5-030,5,1920.0,1930.0,mirror_14,,31:44–32:02有界帧未见退场，疑似同一棋盘连续操作；入口次数待核。,https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=1920
+重复ID待核,p24-001,24,63.875,213.375,end1,,大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。,https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=63
+重复ID待核,p24-002,24,304.25,370.0,end1,,大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。,https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=304
+重复ID待核,p24-003,24,615.0,625.0,end1,,大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。,https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=615
+重复ID待核,p24-004,24,655.0,668.5,end1,,大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。,https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=655
+重复ID待核,p24-005,24,955.0,967.125,end1,,大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。,https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=955
+重复ID待核,p50-001,50,17.25,65.0,magnitudes_v3,,十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。,https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=17
+重复ID待核,p50-002,50,290,310,magnitudes_v3,,十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。,https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=290
+重复ID待核,p50-003,50,455,465,magnitudes_v3,,十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。,https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=455
+重复ID待核,p50-004,50,580,590,magnitudes_v3,,十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。,https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=580
+重复ID待核,p50-005,50,725,735,magnitudes_v3,,十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。,https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=725
+重复ID待核,p50-006,50,750,765,magnitudes_v3,,十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。,https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=750
+重复ID待核,p50-007,50,865,875,magnitudes_v3,,十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。,https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=865
+重复ID待核,p50-008,50,940,950,magnitudes_v3,,十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。,https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=940
+重复ID待核,p50-009,50,1055,1070,magnitudes_v3,,十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。,https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1055
+重复ID待核,p50-010,50,1105,1145,magnitudes_v3,,十个匹配窗多次返回同一总览/子棋盘，更像大型连接关卡内部切换；只确认布局相似，十次独立进入未证实。,https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1105
+重复ID待核,p31-035,31,3268.625,3285.0,mirror_carry_duo,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=31&t=3268
+重复ID待核,p31-036,31,3475.0,3555.0,mirror_carry_duo,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=31&t=3475
+重复ID待核,p36-001,36,55.0,65.0,vertical_promesst_v2,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=36&t=55
+重复ID待核,p36-002,36,480.0,490.0,vertical_promesst_v2,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=36&t=480
+重复ID待核,p43-002,43,576.75,833.875,end2_heroes_1_2,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=576
+重复ID待核,p43-006,43,855.0,860.25,end2_heroes_1_2,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=855
+重复ID待核,p43-004,43,845.0,850.0,end2_heroes_1_5,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=845
+重复ID待核,p43-007,43,860.375,875.0,end2_heroes_1_5,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=860
+重复ID待核,p43-008,43,995.0,1000.875,end2_heroes_1_5,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=995
+重复ID待核,p43-010,43,1010.0,1025.0,end2_heroes_1_5,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=1010
+重复ID待核,p44-004,44,558.625,595.0,end2_prism_hp,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=44&t=558
+重复ID待核,p44-005,44,730.0,740.0,end2_prism_hp,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=44&t=730
+重复ID待核,p46-004,46,210.375,270.0,torus_blocks_alt_v4,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=46&t=210
+重复ID待核,p46-005,46,280.0,305.25,torus_blocks_alt_v4,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=46&t=280
+重复ID待核,p46-007,46,463.5,490.0,jenga_assorted,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=46&t=463
+重复ID待核,p46-008,46,850.0,902.5,jenga_assorted,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=46&t=850
+重复ID待核,p48-005,48,602.125,620.0,moving_through_mirrors_v3,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=48&t=602
+重复ID待核,p48-006,48,930.0,940.0,moving_through_mirrors_v3,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=48&t=930
+重复ID待核,p48-012,48,1548.0,1650.0,self_teleporting,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=48&t=1548
+重复ID待核,p48-013,48,1660.0,1682.875,self_teleporting,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=48&t=1660
+重复ID待核,p49-009,49,964.25,1050.0,mega_clone_v2,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=49&t=964
+重复ID待核,p49-010,49,1170.0,1190.0,mega_clone_v2,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=49&t=1170
+重复ID待核,p49-011,49,1235.0,1245.0,mega_clone_v2,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=49&t=1235
+重复ID待核,p49-012,49,1270.0,1289.125,mega_clone_v2,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=49&t=1270
+重复ID待核,p51-009,51,795.0,953.62,water_bender_v3,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=795
+重复ID待核,p51-013,51,1215.0,1265.0,water_bender_v3,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=1215
+重复ID待核,p53-006,53,801.75,950.0,button_and_beam_v3,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=801
+重复ID待核,p53-017,53,1290.0,1300.0,button_and_beam_v3,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=1290
+重复ID待核,p54-001,54,50.0,60.0,wand_reintro,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=50
+重复ID待核,p54-002,54,270.0,280.0,wand_reintro,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=270
+重复ID待核,p57-002,57,212.25,250.0,boot_cycle_warrior,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=57&t=212
+重复ID待核,p57-003,57,355.0,413.625,boot_cycle_warrior,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=57&t=355
+重复ID待核,p57-019,57,2651.125,2657.125,ortho2,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=57&t=2651
+重复ID待核,p57-021,57,2760.375,2840.875,ortho2,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=57&t=2760
+重复ID待核,p57-022,57,2889.5,2892.125,frontier,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=57&t=2889
+重复ID待核,p57-025,57,2956.375,3021.5,frontier,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=57&t=2956
+重复ID待核,p61-002,61,397.25,410.0,end3_heroes_1,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=61&t=397
+重复ID待核,p61-003,61,429.625,841.625,end3_heroes_1,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=61&t=429
+重复ID待核,p61-016,61,1157.625,1167.625,end3_mirror_2_alt2,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=61&t=1157
+重复ID待核,p61-017,61,1209.125,1575.375,end3_mirror_2_alt2,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=61&t=1209
+重复ID待核,p61-028,61,1877,1897.375,end3_skipping_red,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=61&t=1877
+重复ID待核,p61-029,61,1922.375,2116.875,end3_skipping_red,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=61&t=1922
+重复ID待核,p64-009,64,1726.625,1764.75,end2_mirror1,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=1726
+重复ID待核,p64-011,64,1793.375,1800.0,end2_mirror1,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=1793
+重复ID待核,p65-002,65,532.125,544.875,end3_off_topic_mirror,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=532
+重复ID待核,p65-003,65,653.125,660.0,end3_off_topic_mirror,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=653
+重复ID待核,p65-005,65,1298.375,1327.75,end3_reorder_skipping_fix,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1298
+重复ID待核,p65-006,65,1505.75,1515.0,end3_reorder_skipping_fix,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1505
+重复ID待核,p65-007,65,1708.875,1721.125,end3_reorder_mirror,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1708
+重复ID待核,p65-008,65,1875.625,1885.0,end3_reorder_mirror,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1875
+重复ID待核,p66-001,66,166.0,280.0,environment_art_grid,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=66&t=166
+重复ID待核,p66-003,66,475.0,560.0,environment_art_grid,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=66&t=475
+未定位,p37-u01,37,105.0,1520.0,,,全时间轴00:00–01:40显示主世界外部地图/变形光束区域，不纳入谜题访问。约01:45开始进入由多个重复小棋盘拼接并持续卷屏的关卡内容，跨至约25:20才转入明确的 half_tutorial 独立棋盘；恢复抽查只有弱候选，无法确认前段拼接棋盘的Level_Entry身份及其内部边界，因此仅把01:45–25:20这段疑似连续棋盘探索列为unknown，未把前面的主世界地图包括进来。,https://www.bilibili.com/video/BV13FH96bE4m/?p=37&t=105
+未定位,p38-u01,38,175.1,2290.0,,,完整时间轴约2:55–38:10展示了大幅拼接的地下多室地图和多段彩色光束/房间变换，含若干不同房间静态布局；catalog_all与恢复抽查都未能可靠映射这些连续结构到单一Level_Entry，可能是连续探索的多个房间，也可能含不同关卡，边界和身份待人工细分，列unknown。,https://www.bilibili.com/video/BV13FH96bE4m/?p=38&t=175
+未定位,p38-u02,38,2330.1,2564.7,,,约38:50后出现黑暗洞穴中的多格浅色石室、绿光束及白色横梁，随后布局持续变化到视频末尾；与 gem_beam_placement 已确认的初始两格区域不同，但未找到可确认的对应目录条目，作为独立待核片段保留unknown。,https://www.bilibili.com/video/BV13FH96bE4m/?p=38&t=2330
+未定位,p43-003,43,834.125,845.0,,heroes1_2_v2,结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。,https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=834
+未定位,p43-005,43,850.0,855.0,,heroes1_2_v2,结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。,https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=850
+未定位,p43-009,43,1001.125,1010.0,,heroes1_5_v2,结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。,https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=1001
+未定位,p44-012,44,3100.0,3209.5,,,"Full timeline sheets 19–20 show the icy courtyard first at 51:40 (3100s); the same overhead grid, pale ice floor and dark enclosing walls continue through 53:25. At 53:30 the board exits to a black completion transition, so this visit ends there; later footage is a different chamber.",https://www.bilibili.com/video/BV13FH96bE4m/?p=44&t=3100
+未定位,p44-013,44,3235.0,3710.0,,,"Full timeline sheets 20–23 show the square icy-stone chamber with a pink-block rectangular loop beginning at 53:55 (3235s). The same board remains continuously on screen through 61:50 (3710s), with pieces moved around the loop. At 61:55 it cuts back to the separate warm-colored room; that transition bounds this unknown visit.",https://www.bilibili.com/video/BV13FH96bE4m/?p=44&t=3235
+未定位,p50-u01,50,70,220,,,"A separate forest-side courtyard board: pale square paving with clustered small buildings/props, green foliage enclosing the top and sides, and colored round pieces. The board persists from about 1:10 to 3:40; no local catalog image could be confirmed visually.",https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=70
+未定位,p50-u02,50,245,285,,,"A sandy waterfront square with scattered stone/crate props, blue and cyan tiles and a vertical timber boundary at the right. This is a distinct board from the forest courtyard and the subsequent water-beam layout.",https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=245
+未定位,p50-u03,50,315,420,,,"A series of connected water-and-beam views: small sandy islands and stone piers linked by a long gold beam over tiled water, with successive camera/board shifts. The imagery is puzzle gameplay, but no single catalog layout could be confirmed, so retained as an unknown segment pending finer entry-boundary review.",https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=315
+未定位,p50-u04,50,480,555,,,A broad rectangular flooded room with opposing pale platforms and a long gold beam spanning the water; its arrangement differs from the confirmed magnitudes board and remains unidentified.,https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=480
+未定位,p50-u05,50,600,715,,,"A pale stone courtyard with a long raised central strip, block props and beam interaction, followed by a separate green-edged courtyard view. At this resolution the identity and exact internal transition are unresolved; recorded as an unknown gameplay interval.",https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=600
+未定位,p50-u06,50,780,855,,,"A dark, narrow stone chamber with a vertical gold beam and small fixtures along the wall. The tiled room is distinct from the water arenas, but no full-catalog reference matched visually.",https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=780
+未定位,p50-u07,50,900,939.5,,,From 15:00 to 15:39 the timeline shows overhead island-map navigation and small isolated island/beam-crossing views without a stable identifiable puzzle layout. This unresolved traversal interval ends at the cut into the confirmed magnitudes_v3 board.,https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=900
+未定位,p50-u07b,50,950.5,1045,,,"After the confirmed magnitudes_v3 visit ends at 15:50, the timeline returns to overhead island-map navigation and several small water/island board views through 17:25. These are independent unresolved traversal/puzzle views; the montage does not provide a stable reference match.",https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=950
+未定位,p50-u08,50,1155,1290,,,"Water-island gameplay with small tan platforms, a long horizontal gold beam and blue markers, then a transition to a larger green/tan courtyard around 21:45. The first island section lacks a confirmed catalog identity.",https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1155
+未定位,p50-u09,50,1305,1380,,,"A green-and-tan courtyard board with a raised wooden structure along the upper edge, scattered stone blocks and blue markers. Distinct from the preceding horizontal-beam island; unknown ID.",https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1305
+未定位,p50-u10,50,1385,1520,,,"A narrow waterway board centered on a tall stone post and crosswise gold beam, with a small blue-tiled landing and detached markers. Its stable layout remains through the 25:20 transition to a waterfall bridge.",https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1385
+未定位,p50-u11,50,1525,1605,,,A bridge and waterfall board with a horizontal wooden crossing and central vertical beam above falling water. No catalog reference was visually conclusive.,https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1525
+未定位,p50-u12,50,1610,1710,,,"A shallow green courtyard enclosed by water, with an L-shaped sandy path and several large red/brown objects; distinct board, unknown identity.",https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1610
+未定位,p50-u13,50,1715,1785,,,"A small isolated water island with a short gold beam and sparse objects, visibly different from the preceding L-shaped courtyard.",https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1715
+未定位,p51-u01,51,14.5,24.5,,,"A brief purple-lit square room with a raised cyan-blue tiled enclosure, a white object at the left, and a separate pale platform below. It is an independent board immediately before the confirmed water/lily layout, but no local catalog entry was visually established.",https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=14
+未定位,p51-u02,51,35,265,,,"Continuous sunset-water gameplay across a long connected lily/raft course: multiple separated stone piers, green pieces and narrow paths remain on a broad tiled-water field, with the camera travelling between sections. The full timeline shows changing board views without enough evidence to assign individual catalog IDs or precise interior entry boundaries; retained as unknown traversal.",https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=35
+未定位,p51-u03,51,960,1015,,,"A distinct archipelago/water board sequence with several tiny stone-and-grass islands, blue-white blocks and detached landing tiles, intercut with a map view. The image is puzzle gameplay but not a confirmed reference match.",https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=960
+未定位,p51-u04,51,1490,1520,,,"Final shown board after the 24:45 transition: a blue-purple area with scattered pale tiles, central pink mechanism/beam and small detached platforms. It is an independent puzzle view, identity unconfirmed.",https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=1490
+未定位,p52-u01,52,165,210,,,"A separate blue-gray water chamber appears after the Gothic button room: pale stepping tiles and a large yellow square block sit on a small platform, with dark disconnected paths and a diagonal object. It persists briefly before the next confirmed four-platform room; no catalog reference was visually conclusive.",https://www.bilibili.com/video/BV13FH96bE4m/?p=52&t=165
+未定位,p52-u02,52,920,945,,,"A broad blue cavern board with a bright pink horizontal frame/beam, separated cyan tiles and a long central path is shown from about 15:20–15:45. It differs from the later tiny detached island matched to reroute_3; no local reference was confirmed.",https://www.bilibili.com/video/BV13FH96bE4m/?p=52&t=920
+未定位,p53-u01,53,185,202,,,"A tall blue-gray multilevel stone room with narrow bridges, paired tile platforms and small figures appears after the two weapon-wizard layouts and before dragonsweeper. This is an independent puzzle-like board, but no catalog reference was visually confirmed.",https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=185
+未定位,p53-u02,53,780,800,,,"A blue stone city/courtyard view with a separate square mechanism and scattered tiles appears around 13:00–13:20, after the en_root_alt island board and before the confirmed button-and-beam room. Its identity is unresolved.",https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=780
+未定位,p53-u03,53,1345,1555,,,"A broad overhead stone grid with a dark-blue border, repeated blue circular markers, fenced rectangular bays and colored pieces remains on screen from about 22:25 to 25:55. It is clearly a large puzzle board, but none of the full-catalog reference images was visually conclusive; retained as one unknown continuous visit.",https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=1345
+未定位,p53-u04,53,1695,1730,,,"After the tan goblin courtyard, the video shows a separate watery tile field with a green island/growth cluster and pink blocks, before cutting to the confirmed rotating-cavalry arena. No catalog identity was confirmed.",https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=1695
+未定位,p61-031,61,2163.25,2552.0,,,在READING LEVEL大厅后出现独立的褐色/灰色棋盘：左侧土色块状区域、右侧蓝色幽灵/光束结构及多色方块，持续操作至再次黑场；不匹配当前本地目录静态参考，身份未知。,https://www.bilibili.com/video/BV13FH96bE4m/?p=61&t=2163
+未定位,p64-010,64,1765.0,1793.125,,mirror_1,结局三地下关卡内部复用镜面棋盘；原匹配引用主世界mirror_1，相似布局不能证明返回主世界。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。,https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=1765
+未定位,p64-012,64,2061.75,2080.0,,mirror_1,结局三地下关卡内部复用镜面棋盘；原匹配引用主世界mirror_1，相似布局不能证明返回主世界。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。,https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=2061
+未定位,p65-009,65,155,420,,,多连续棋盘/拼接房间构图的游戏画面，未找到可静态对应的Level_Entry；无法判断是开发演示关还是目录未匹配关。,https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=155
+未定位,p65-010,65,435,530,,,冰蓝色浮岛/房间连续滚屏，多个布局变化但无可证实固定目录身份。,https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=435
+未定位,p65-011,65,555,652.0,,,多色岛屿地图及横向关卡总览/过场混杂，个别真实棋盘可见但无法可靠绑定单一Level_Entry。,https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=555
+未定位,p65-017,65,660.0,748.0,,,天空色背景上的连续冰岛棋盘段，固定布局身份未能确认；与后续已确认目录画面分开记录。,https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=660
+未定位,p65-012,65,790,1290,,,天空色背景上的连续冰岛棋盘群和角色演示，固定布局身份未能确认。,https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=790
+未定位,p65-013,65,1330,1500,,,再次连续演示冰岛/拼接棋盘；目录静态参考未能匹配。,https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1330
+未定位,p65-014,65,1520,1705,,,粉/黄/绿棋盘连续展示，含机关变化，未证实固定Level_Entry。,https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1520
+未定位,p65-015,65,1725,1870,,,多块红绿粉色岛屿棋盘的滚动展示，静态身份不明。,https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1725
+未定位,p65-016,65,1888,2070,,,夜景连接房间/棋盘的连续演示；当前可见结构与候选参考不足以确认固定入口身份。,https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1888
+未定位,p67-009,67,1140,1270,,,切离关卡展示后进入一处白蓝色实际游戏房间，有角色移动与交互；未找到可确认的本地Level_Entry静态参考，身份未知。,https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=1140
+未定位,p67-010,67,1285,1590,,,出现READING LEVEL区域及后续多个不同样式的可玩房间/棋盘和滚动演示；虽能确认是关卡内容，但无法为各局部可靠匹配固定目录ID，合并记录未知段。,https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=1285
+未定位,p67-011,67,1600,1830,,,室内多个主题房间、谜题元素和过场连续切换；无明确目录匹配或进入/退出地图证据，身份保持unknown。,https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=1600
+未定位,p67-012,67,1860,1924.5,,,回到室内房间后展示角色与出口附近布局；具体Level_Entry未确认。,https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=1860
+目录差集,arcadia_surprise_big,,,,arcadia_surprise_big,,"主世界 [[-24.0, 116.0, 0.0]]；未证明视频未出现",https://joric.github.io/ootss/#arcadia_surprise_big
+目录差集,best_beam_colors,,,,best_beam_colors,,"地下世界 [[2.0, 132.0, -24.0]]；未证明视频未出现",https://joric.github.io/ootss/#best_beam_colors
+目录差集,design_fts,,,,design_fts,,"地下世界 [[21.0, 131.0, -24.0]]；未证明视频未出现",https://joric.github.io/ootss/#design_fts
+目录差集,end3_pipeline_setup,,,,end3_pipeline_setup,,"地下世界 [[-15.0, 117.0, -24.0]]；未证明视频未出现",https://joric.github.io/ootss/#end3_pipeline_setup
+目录差集,promesst2.5_deeper,,,,promesst2.5_deeper,,"主世界 [[-3.0, 73.0, 0.0]]；未证明视频未出现",https://joric.github.io/ootss/#promesst2.5_deeper
+目录差集,save_for_later,,,,save_for_later,,"地下世界 [[42.0, 83.0, -19.0]]；未证明视频未出现",https://joric.github.io/ootss/#save_for_later
+目录差集,snipperclips_diagonal,,,,snipperclips_diagonal,,"主世界 [[11.0, 77.0, 0.0]]；未证明视频未出现",https://joric.github.io/ootss/#snipperclips_diagonal
+目录差集,snipperclips_square,,,,snipperclips_square,,"主世界 [[11.0, 79.0, 0.0]]；未证明视频未出现",https://joric.github.io/ootss/#snipperclips_square

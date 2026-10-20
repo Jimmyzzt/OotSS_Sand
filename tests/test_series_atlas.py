@@ -261,11 +261,12 @@ def test_combined_atlas_groups_later_returns_by_map_and_keeps_video_ordinals(
         )
     data = build_atlas(
         "atlas",
-        parts=[1, 25, 45],
+        parts=[1, 25, 45, 68],
         offline_zoom=0,
         catalog_path="catalog.json",
         all_worlds=True,
     )
+    assert all(p["part"] != 68 for p in data["parts"])
     maps = {m["map_id"]: m for m in data["maps"]}
     assert [l["level_id"] for l in maps["overworld"]["levels"]] == ["first", "late"]
     assert maps["overworld"]["levels"][1]["visits"][0]["ordinal"] == 2

@@ -8,7 +8,7 @@
 | 2 | heroes1_2_v2 | [01:02.75](https://www.bilibili.com/video/BV13FH96bE4m/?p=2&t=62)–01:36.00 | confirmed | [位置](https://joric.github.io/ootss/#heroes1_2_v2) |
 | 3 | heroes1_3 | [01:36.25](https://www.bilibili.com/video/BV13FH96bE4m/?p=2&t=96)–01:52.25 | confirmed | [位置](https://joric.github.io/ootss/#heroes1_3) |
 | 4 | heroes1_4 | [01:52.38](https://www.bilibili.com/video/BV13FH96bE4m/?p=2&t=112)–02:07.75 | confirmed | [位置](https://joric.github.io/ootss/#heroes1_4) |
-| 5 | heroes1_1 | [02:16.88](https://www.bilibili.com/video/BV13FH96bE4m/?p=2&t=136)–02:32.88 | confirmed | [位置](https://joric.github.io/ootss/#heroes1_1) |
+| 5 | heroes1_4.5 | [02:16.88](https://www.bilibili.com/video/BV13FH96bE4m/?p=2&t=136)–02:32.88 | confirmed | [位置](https://joric.github.io/ootss/#heroes1_4.5) |
 | 6 | heroes1_5_v2 | [02:33.12](https://www.bilibili.com/video/BV13FH96bE4m/?p=2&t=153)–03:20.25 | confirmed | [位置](https://joric.github.io/ootss/#heroes1_5_v2) |
 | 7 | heroes1_7_v2 | [03:20.62](https://www.bilibili.com/video/BV13FH96bE4m/?p=2&t=200)–04:51.00 | confirmed | [位置](https://joric.github.io/ootss/#heroes1_7_v2) |
 | 8 | heroes1_6 | [04:51.25](https://www.bilibili.com/video/BV13FH96bE4m/?p=2&t=291)–05:17.38 | confirmed | [位置](https://joric.github.io/ootss/#heroes1_6) |

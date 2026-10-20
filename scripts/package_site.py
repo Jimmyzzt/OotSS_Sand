@@ -16,6 +16,9 @@ def package(source="results/worlds", destination="dist"):
         "visits.csv",
     ]:
         shutil.copyfile(source / name, destination / name)
+    for name in ("audit.html", "audit.json", "audit.csv"):
+        if (source / name).exists():
+            shutil.copyfile(source / name, destination / name)
     shutil.copytree(source / "assets", destination / "assets", dirs_exist_ok=True)
     (destination / ".nojekyll").write_text("", encoding="utf-8")
     print(f"Public atlas packaged: {destination.resolve()}")

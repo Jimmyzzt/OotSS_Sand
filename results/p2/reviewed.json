@@ -375,12 +375,12 @@
     },
     {
       "event_id": "p2-006",
-      "level_id": "heroes1_1",
+      "level_id": "heroes1_4.5",
       "puzzle_start_time": 136.875,
       "puzzle_end_time": 152.875,
       "entry_transition_time": 136.375,
       "exit_time": 153.125,
-      "overworld_approach_time": null,
+      "overworld_approach_time": 135,
       "review_status": "confirmed",
       "status": "visited",
       "outcome": "unknown",
@@ -428,43 +428,78 @@
         }
       ],
       "puzzle_match": {
-        "level_id": "heroes1_1",
-        "area": "heroes1",
-        "phash_distance": 10,
-        "hist_distance": 0.2319,
-        "sift_inliers": 109,
-        "sift_good": 113,
-        "consistent_samples": 2,
-        "status": "visually_confirmed"
+        "level_id": "heroes1_4.5",
+        "status": "visually_confirmed",
+        "method": "entry_position_and_initial_roles"
       },
       "overworld_match": {
-        "status": "unverified"
+        "status": "visually_confirmed",
+        "time": 135,
+        "coordinates": [
+          86,
+          86,
+          0
+        ],
+        "method": "manual landmark and entry-row alignment"
       },
       "evidence": [
         {
-          "type": "candidate_layout",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p2\\samples\\00145.000.jpg",
-          "time": 145.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes1_1.webp",
-          "first_sample": 145.0,
-          "last_sample": 150.0,
-          "sample_count": 2,
-          "reason": "狭长桥面石砖、中央树丛和右侧出口构成的布局，与参考对应。"
+          "type": "identity_audit",
+          "image": "results/audit/evidence/p2_lookalikes.jpg",
+          "reason": "130–135秒地表显示从中央通道走到右上排最右入口；与正中通道及同排4枚入口对照，对应原地图(86,86)，在heroes1_5_v2(85,86)右侧。137–140秒初始角色为绿色吟游诗人、目标为绿色，与heroes1_4.5参考一致，而heroes1_1是红色角色/橙色目标。基于入口相对位置+角色配置共同改正，不能单靠相同桥面布局。"
         },
         {
-          "type": "temporal",
-          "entry_transition": 136.375,
-          "exit_time": 153.125,
-          "reason": "对照前后全片图册核对转场；访问区间位于本分范围内。"
+          "type": "entry_position",
+          "image": "results/audit/evidence/p2_preentry_06.jpg",
+          "time": 135,
+          "reason": "进入右上排最右格；用中央通道、上排相对序列与原地图比对。"
+        },
+        {
+          "type": "map_reference",
+          "image": "results/audit/evidence/p2_catalog_ground.jpg",
+          "reference": "cache/map/images/heroes1_4.5.webp",
+          "reason": "固定目录坐标(86,86)，绿色角色/目标，而非heroes1_1。"
         }
       ],
       "evidence_gallery": "evidence/candidates_01.jpg",
       "manual_corrections": [
-        "与同一时段p2-005重叠；对照实际画面后保留此处heroes1_1，移除相似布局误候选heroes1_4.5。"
+        "与同一时段p2-005重叠；对照实际画面后保留此处heroes1_1，移除相似布局误候选heroes1_4.5。",
+        "2026-10-20 入口位置+角色复核：heroes1_1 → heroes1_4.5"
       ],
-      "reviewer": "Luna visual comparison",
+      "reviewer": "Codex entry-position and role audit",
       "confidence": null,
-      "confidence_note": "未校准概率；身份依据布局与全片图册连续画面确认。"
+      "confidence_note": "未校准概率；身份依据布局与全片图册连续画面确认。",
+      "superseded_identification": {
+        "level_id": "heroes1_1",
+        "puzzle_match": {
+          "level_id": "heroes1_1",
+          "area": "heroes1",
+          "phash_distance": 10,
+          "hist_distance": 0.2319,
+          "sift_inliers": 109,
+          "sift_good": 113,
+          "consistent_samples": 2,
+          "status": "visually_confirmed"
+        },
+        "evidence": [
+          {
+            "type": "candidate_layout",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p2\\samples\\00145.000.jpg",
+            "time": 145.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes1_1.webp",
+            "first_sample": 145.0,
+            "last_sample": 150.0,
+            "sample_count": 2,
+            "reason": "狭长桥面石砖、中央树丛和右侧出口构成的布局，与参考对应。"
+          },
+          {
+            "type": "temporal",
+            "entry_transition": 136.375,
+            "exit_time": 153.125,
+            "reason": "对照前后全片图册核对转场；访问区间位于本分范围内。"
+          }
+        ]
+      }
     },
     {
       "event_id": "p2-007",

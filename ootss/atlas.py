@@ -24,7 +24,8 @@ def build_atlas(
     catalog_path="cache/map/catalog.json",
     all_worlds=False,
 ):
-    parts = list(parts)
+    # P68 is hidden content and is excluded from this map by the owner.
+    parts = [p for p in parts if p != 68]
     out = Path(out)
     assets = out / "assets"
     assets.mkdir(parents=True, exist_ok=True)
@@ -138,6 +139,8 @@ def build_atlas(
                     ),
                     "reviewer": event.get("reviewer"),
                     "context": event.get("context"),
+                    "audit_note": event.get("audit_note"),
+                    "audit_anchor": event.get("audit_anchor"),
                     "uncertainty": event.get("timing_uncertainty_seconds"),
                 }
             )
@@ -159,6 +162,7 @@ def build_atlas(
         "parts": part_rows,
         "levels": list(levels.values()),
         "unknown_events": unknown,
+        "excluded_parts": [68],
         "catalog_level_count": len(by_name),
         "not_observed": sorted(set(by_name) - set(levels)),
         "offline_zoom": offline_zoom,
@@ -302,7 +306,7 @@ if __name__ == "__main__":
         sys.argv[1] if len(sys.argv) > 1 else "results/stage1",
         [4]
         if len(sys.argv) > 2 and sys.argv[2] == "p4"
-        else range(1, 69)
+        else range(1, 68)
         if "worlds" in sys.argv
         else range(1, 25),
         catalog_path="cache/map/catalog_all.json"

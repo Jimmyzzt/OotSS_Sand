@@ -15,9 +15,9 @@ uv run python -m ootss --help
 
 **在线入口：[sand.zzt.si](https://sand.zzt.si/) · [GitHub Pages](https://jimmyzzt.github.io/OotSS_Sand/) · [公开仓库](https://github.com/Jimmyzzt/OotSS_Sand)**
 
-本地可打开 [三地图攻略索引](results/worlds/index.html)（右上选择主世界、天空世界、地下世界），或保留的 [一阶段快照](results/stage1/index.html)：真实 Joric 地形，可拖动、缩放、搜索关卡、按分 P 筛选；点击标记查看参考布局，再点击时间跳转对应攻略。双击本地 HTML 即可，低倍率地图离线可用，高倍率瓦片需要联网。
+本地可打开 [三地图攻略索引](results/worlds/index.html)（筛选栏选择主世界、天空世界、地下世界），或保留的 [一阶段快照](results/stage1/index.html)：真实 Joric 地形，可拖动、缩放、搜索关卡、按分 P 筛选；点击标记查看参考布局，再点击时间跳转对应攻略。双击本地 HTML 即可，低倍率地图离线可用，高倍率瓦片需要联网。
 
-一阶段按作者标题界定为 **P1–P24**，24个分 P 全部看图审核，共收录 **395个不同的 Overworld Level_Entry、403段访问**，仅按视频出现收录，没有将全部466个Overworld入口填入。一阶段验收、统计及限制见 [REPORT.md](results/stage1/REPORT.md)，明细可用 [CSV](results/stage1/visits.csv)。P1为前言/操作说明，没有独立关卡访问。大型关卡内部的相邻房间归入对应入口访问，不额外杜撰地表坐标。
+一阶段按作者标题界定为 **P1–P24**，24个分 P 全部看图审核，共收录 **396个不同的 Overworld Level_Entry、403段访问**，仅按视频出现收录，没有将全部466个Overworld入口填入。一阶段验收、统计及限制见 [REPORT.md](results/stage1/REPORT.md)，明细可用 [CSV](results/stage1/visits.csv)。P1为前言/操作说明，没有独立关卡访问。大型关卡内部的相邻房间归入对应入口访问，不额外杜撰地表坐标。
 
 完整系列 **68/68个分 P 已下载**，最高480p、保留音频，共约43小时57分钟、6.21GiB。文件在 `inputs/series/stage1`、`stage2`、`stage3`，以 `P编号__原标题` 命名；[下载清单](results/series/inventory.md) / [CSV](results/series/inventory.csv) / [可续传台账](results/series/manifest.json)。P4复用原视频；P17修复版文件名带 `__recovered`，台账保留实际路径，避免抽帧缓存失去来源。
 
@@ -30,7 +30,7 @@ Windows 快捷入口（自动把临时目录放进项目，首次自动同步依
 .\ootss.ps1 series --discover-only
 # 首次批量下载或断点续传（默认两路并发）：
 .\ootss.ps1 series
-# 导入三地图参考目录，重建P1–68综合地图：
+# 导入三地图参考目录，重建P1–67综合地图（P68隐藏内容已排除）：
 .\ootss.ps1 import-map --all-worlds
 .\ootss.ps1 atlas --all-worlds
 # 仅重建原P1–24快照：
@@ -50,7 +50,7 @@ Windows 快捷入口（自动把临时目录放进项目，首次自动同步依
 
 机器检索只提供候选；没有视觉证据就写 unknown。进入前主世界的核验单独记录，不因候选坐标存在而声称验证成功。该工具不依赖字幕或付费模型；需要时由 Codex 读取局部图册补充判断。
 
-本地验证：`uv run pytest -q --basetemp runs/tests`、`uv run ruff check ootss tests scripts`。18项Python测试、8项Worker/前端Node测试通过；实现取舍、真实计时及质量限制见 [实施记录](docs/implementation_notes.md)。
+本地验证：`uv run pytest -q --basetemp runs/tests`、`uv run ruff check ootss tests scripts`。19项Python测试、8项Worker/前端Node测试通过；实现取舍、真实计时及质量限制见 [实施记录](docs/implementation_notes.md)。
 
 
 区域视图沿用原地图19×13网格，三地图分别维护区域；原一阶段快照涉及85个区域。选定分P后，右栏显示该P的关卡序号和开始时间；同一关重复访问沿用首次编号。点击区域放大，地图左下显示区域名。P5的镜之群岛1–6与参考图一致。演示模式隐藏顶栏，用左右箭头沿区域路线前进，Esc退出，适合录制阶段索引。
@@ -59,4 +59,6 @@ Windows 快捷入口（自动把临时目录放进项目，首次自动同步依
 
 插入索引分P后，运行 `uv run python scripts/update_video_links.py`，按CID匹配新分P，再重建 `atlas --all-worlds`；源分P与关卡编号保持不变。发布、手动标注与录屏操作见 [部署说明](docs/publishing.md)。
 
-综合地图仅使用画面对照确认的访问（包含P68开发回顾中的正式版示例），后续阶段回访主世界仍归主世界。未能定位的棋盘保留时间链接，不绘制猜测坐标；各地图、分P统计和限制见 [综合录入报告](results/worlds/REPORT.md)。
+综合地图仅使用画面对照确认的访问（P68隐藏内容按用户要求排除），后续阶段回访主世界仍归主世界。未能定位的棋盘保留时间链接，不绘制猜测坐标；各地图、分P统计和限制见 [综合录入报告](results/worlds/REPORT.md)。
+
+人工校对入口：[在线差异清单](https://sand.zzt.si/audit.html) / [审计记录](results/audit/REPORT.md)。P02同构桥面已结合初始角色和入场位置改正；结局篇跨世界错配撤销旧坐标。未定位、目录差集和重复ID分别列出，均不能据此自动认定新关卡或独立进入次数。

@@ -1,0 +1,243 @@
+{
+  "scope": "Independent visual audit of all repeated level_id records in P2 reviewed.json, plus phase 1 z=0 Level_Entry IDs absent from reviewed records across P1-P24.",
+  "source_reviewed": "results/p2/reviewed.json",
+  "evidence_reviewed": [
+    "runs/p2/sheet_00.jpg",
+    "runs/p2/sheet_01.jpg",
+    "runs/p2/sheet_02.jpg",
+    "runs/p2/sheet_03.jpg",
+    "runs/p2/sheet_04.jpg",
+    "runs/p2/sheet_05.jpg",
+    "runs/p2/sheet_06.jpg",
+    "runs/p2/sheet_07.jpg",
+    "runs/p2/sheet_08.jpg",
+    "runs/p2/samples/00130.000.jpg",
+    "runs/p2/samples/00135.000.jpg",
+    "runs/p2/samples/00140.000.jpg",
+    "runs/p2/samples/00145.000.jpg",
+    "runs/p2/samples/00150.000.jpg",
+    "runs/p2/samples/00155.000.jpg",
+    "results/p2/evidence/candidates_01.jpg",
+    "cache/map/images/heroes1_1.webp",
+    "cache/map/images/heroes1_4.5.webp",
+    "cache/map/images/heroes1_5_v2.webp",
+    "cache/map/images/heroes1_7.5.webp",
+    "results/audit/evidence/p2_lookalikes.jpg",
+    "results/audit/evidence/p2_preentry_01.jpg",
+    "results/audit/evidence/p2_preentry_02.jpg",
+    "results/audit/evidence/p2_preentry_03.jpg",
+    "results/audit/evidence/p2_preentry_04.jpg",
+    "results/audit/evidence/p2_preentry_05.jpg",
+    "results/audit/evidence/p2_preentry_06.jpg",
+    "results/audit/evidence/p2_preentry_07.jpg",
+    "results/audit/evidence/p2_preentry_08.jpg"
+  ],
+  "duplicate_id_records": [
+    {
+      "event_id": "p2-001",
+      "time_seconds": [
+        29.625,
+        62.5
+      ],
+      "original_match": "heroes1_1",
+      "revoke": false,
+      "possible_true_id": "heroes1_1",
+      "possible_entry_coordinate": [
+        80,
+        82
+      ],
+      "evidence": [
+        "runs/p2/samples/00040.000.jpg",
+        "results/p2/evidence/candidates_00.jpg",
+        "cache/map/images/heroes1_1.webp"
+      ],
+      "reason": "该段参考图与素材吻合，固定参考图角色为红色；这是两条 heroes1_1 重复记录中的早段有效匹配。"
+    },
+    {
+      "event_id": "p2-006",
+      "time_seconds": [
+        136.875,
+        152.875
+      ],
+      "original_match": "heroes1_1",
+      "revoke": true,
+      "possible_true_id": null,
+      "possible_entry_coordinate": null,
+      "nearby_catalog_marker_candidate": {
+        "level_id": "heroes1_4.5",
+        "coordinate": [
+          86,
+          86
+        ],
+        "note": "仅作为空间附近候选，不能据此确认。"
+      },
+      "evidence": [
+        "runs/p2/samples/00130.000.jpg",
+        "runs/p2/samples/00135.000.jpg",
+        "runs/p2/samples/00140.000.jpg",
+        "runs/p2/samples/00145.000.jpg",
+        "runs/p2/samples/00150.000.jpg",
+        "runs/p2/samples/00155.000.jpg",
+        "results/p2/evidence/candidates_01.jpg",
+        "cache/map/images/heroes1_1.webp",
+        "cache/map/images/heroes1_4.5.webp",
+        "cache/map/images/heroes1_5_v2.webp",
+        "cache/map/images/heroes1_7.5.webp",
+        "results/audit/evidence/p2_lookalikes.jpg"
+      ],
+      "reason": "撤销明确。候选 puzzle 图册仅显示与 heroes1_1、heroes1_4.5、heroes1_7.5 共用的桥面/石块布局；可见角色和障碍状态不同，角色关系支持不是 heroes1_1。新增的 130–137s 有界图册显示入场前并未剪掉地表：130–135s可见上排右侧/东侧接近路线，136s黑场，137s出现谜题入口盾牌。但画面没有足够清楚且可与固定地图坐标无歧义对齐的入口标识，故真实ID与坐标仍为null；heroes1_4.5 (86,86)只保留为邻近候选。"
+    }
+  ],
+  "p2_repeated_id_groups": [
+    {
+      "level_id": "heroes1_1",
+      "event_ids": [
+        "p2-001",
+        "p2-006"
+      ],
+      "finding": "一条有效，一条明确错误匹配（撤销）。"
+    }
+  ],
+  "phase1_absent_mainworld_ids": {
+    "definition": "cache/map/upstream/data/markers.json 中 Level_Entry 且几何坐标 z=0；与 results/p1..p24/reviewed.json 中任意非空 level_id 对照。",
+    "marker_count": 466,
+    "observed_unique_id_count": 395,
+    "absent_count": 71,
+    "missing_ids": [
+      "already_dropped_v2",
+      "arcadia_surprise_big",
+      "arcadia_surprise_big2",
+      "arcadiav2_big",
+      "baby_steps_line",
+      "bard_range3_with_intro",
+      "bard_stack_intro",
+      "button_clone_journey",
+      "clone_adjust",
+      "clone_adjust_mirror",
+      "clone_adjust_two_rocks",
+      "clone_maze",
+      "close_circuit",
+      "crystal_rover_intro",
+      "double_door",
+      "double_sideways",
+      "double_trouble",
+      "dragon_drag",
+      "druid_multismash_v3",
+      "endpoint1_skipping",
+      "first_flight",
+      "floating_orange_purple",
+      "free_ride",
+      "gem_beam_placement",
+      "gem_clg_v4",
+      "goblin_express",
+      "green_crystal_rover",
+      "green_metamirror",
+      "half_tutorial",
+      "heroes1_4.5",
+      "infinite_crystal_hack_v5",
+      "meta_orange_purple",
+      "meta_orange_purple_2",
+      "metamirror_block_v2",
+      "metamirror_c_alt",
+      "metamirror_different_dir_2_alt",
+      "metamirror_different_dir_3_alt",
+      "metamirror_different_dir_alt",
+      "metamirror_same_dir_2_alt_2",
+      "metamirror_same_dir_3_alt_2",
+      "metamirror_same_dir_5_alt",
+      "metamirror_same_dir_v2",
+      "mirror_rover_orange_2",
+      "monkey_in_the_midpoint",
+      "moving_bridge",
+      "narrow_passage",
+      "ocean_blue",
+      "orange_cross",
+      "orange_floaty_reflect_v3",
+      "orange_predicament",
+      "orange_skip_place_v3",
+      "promesst2.5_deeper",
+      "promesst3_streamlined",
+      "pugo",
+      "pull_line",
+      "purple_corner_gem",
+      "red_yellow_alter_with_intro_v2",
+      "rsmash",
+      "security_checkpoints_v2",
+      "skip_orange_maze_v3",
+      "skip_orange_wall_v3",
+      "snipperclips_0_square",
+      "snipperclips_diagonal",
+      "snipperclips_square",
+      "square_dance",
+      "surfing_lesson_alt",
+      "swap_seats",
+      "the_spiral",
+      "two_metamirrors",
+      "two_step",
+      "use_and_remove"
+    ],
+    "interpretation": "这些是审核记录未出现的主世界入口 ID 清单，不代表已证明视频未访问或被遗漏；未逐一定位其视频时间。本次任务边界仅对P2重复ID做逐条视觉裁决。"
+  },
+  "other_p2_findings": {
+    "repeated_ids_found": 1,
+    "same_layout_variant_caution": [
+      "heroes1_1",
+      "heroes1_4.5",
+      "heroes1_7.5"
+    ],
+    "reason": "固定参考图的棋盘布局完全相同，角色/状态有差异；本段若没有进关前地图位置，不足以定ID。"
+  },
+  "bounded_preentry_check": {
+    "time_range_seconds": [
+      130,
+      137
+    ],
+    "sampling": "8 local FFmpeg frames at 1 fps, each scaled to 640 px wide; no upload or external API.",
+    "evidence": [
+      "results/audit/evidence/p2_preentry_01.jpg",
+      "results/audit/evidence/p2_preentry_02.jpg",
+      "results/audit/evidence/p2_preentry_03.jpg",
+      "results/audit/evidence/p2_preentry_04.jpg",
+      "results/audit/evidence/p2_preentry_05.jpg",
+      "results/audit/evidence/p2_preentry_06.jpg",
+      "results/audit/evidence/p2_preentry_07.jpg",
+      "results/audit/evidence/p2_preentry_08.jpg"
+    ],
+    "observations": [
+      {
+        "time_seconds": 130,
+        "observation": "Overworld plaza visible; player near central-north path."
+      },
+      {
+        "time_seconds": 131,
+        "observation": "Overworld; player moves toward the upper-right side of the plaza."
+      },
+      {
+        "time_seconds": 132,
+        "observation": "Overworld plaza remains visible."
+      },
+      {
+        "time_seconds": 133,
+        "observation": "Player continues toward the upper-right area."
+      },
+      {
+        "time_seconds": 134,
+        "observation": "Player is near the upper-right side; ground context visible."
+      },
+      {
+        "time_seconds": 135,
+        "observation": "Player reaches the upper-right edge/entry area; ground context remains visible."
+      },
+      {
+        "time_seconds": 136,
+        "observation": "Black transition."
+      },
+      {
+        "time_seconds": 137,
+        "observation": "Puzzle-entry shield overlay on bridge puzzle; world no longer visible."
+      }
+    ],
+    "conclusion": "The edit does not skip the overworld: it is visible at 130–135s immediately before the 136s black transition and 137s puzzle-entry shield. The frames support an approach to the plaza upper-right/eastern side, but do not provide enough unambiguous marker detail to assign a map ID or coordinate.",
+    "gallery": "results/audit/evidence/p2_lookalikes.jpg"
+  }
+}

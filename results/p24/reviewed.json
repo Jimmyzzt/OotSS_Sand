@@ -94,7 +94,9 @@
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
       "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "Luna visual comparison",
+      "audit_note": "大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。",
+      "audit_anchor": "repeat-end1"
     },
     {
       "event_id": "p24-002",
@@ -181,7 +183,9 @@
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
       "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "Luna visual comparison",
+      "audit_note": "大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。",
+      "audit_anchor": "repeat-end1"
     },
     {
       "event_id": "p24-003",
@@ -268,7 +272,9 @@
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
       "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "Luna visual comparison",
+      "audit_note": "大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。",
+      "audit_anchor": "repeat-end1"
     },
     {
       "event_id": "p24-004",
@@ -355,7 +361,9 @@
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
       "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "Luna visual comparison",
+      "audit_note": "大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。",
+      "audit_anchor": "repeat-end1"
     },
     {
       "event_id": "p24-005",
@@ -442,7 +450,9 @@
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
       "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "Luna visual comparison",
+      "audit_note": "大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。",
+      "audit_anchor": "repeat-end1"
     }
   ]
 }

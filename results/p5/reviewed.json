@@ -371,7 +371,9 @@
       "manual_corrections": [],
       "reviewer": "Luna visual comparison",
       "confidence": null,
-      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。"
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "audit_note": "三个匹配窗之间有同一棋盘连续操作/画线讲解；可能应合并一次连续访问，边界待人工核对。",
+      "audit_anchor": "repeat-mirror_4"
     },
     {
       "event_id": "p5-005",
@@ -462,7 +464,9 @@
       "manual_corrections": [],
       "reviewer": "Luna visual comparison",
       "confidence": null,
-      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。"
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "audit_note": "三个匹配窗之间有同一棋盘连续操作/画线讲解；可能应合并一次连续访问，边界待人工核对。",
+      "audit_anchor": "repeat-mirror_4"
     },
     {
       "event_id": "p5-006",
@@ -553,7 +557,9 @@
       "manual_corrections": [],
       "reviewer": "Luna visual comparison",
       "confidence": null,
-      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。"
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "audit_note": "三个匹配窗之间有同一棋盘连续操作/画线讲解；可能应合并一次连续访问，边界待人工核对。",
+      "audit_anchor": "repeat-mirror_4"
     },
     {
       "event_id": "p5-007",
@@ -2646,7 +2652,9 @@
       "manual_corrections": [],
       "reviewer": "Luna visual comparison",
       "confidence": null,
-      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。"
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "audit_note": "31:44–32:02有界帧未见退场，疑似同一棋盘连续操作；入口次数待核。",
+      "audit_anchor": "repeat-mirror_14"
     },
     {
       "event_id": "p5-030",
@@ -2737,7 +2745,9 @@
       "manual_corrections": [],
       "reviewer": "Luna visual comparison",
       "confidence": null,
-      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。"
+      "confidence_note": "未校准概率；依据静态岛屿/机关布局配对及全片连续画面确认。",
+      "audit_note": "31:44–32:02有界帧未见退场，疑似同一棋盘连续操作；入口次数待核。",
+      "audit_anchor": "repeat-mirror_14"
     }
   ]
 }

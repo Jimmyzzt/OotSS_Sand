@@ -1,0 +1,501 @@
+{
+  "schema_version": 1,
+  "audit_scope": "P43/P44 all confirmed events and unresolved tail; bounded anomaly screen on P61/P64/P65/P67; P68 excluded by user request",
+  "generated_from": [
+    "results/p43/reviewed.json",
+    "results/p44/reviewed.json",
+    "runs/p43/sheet_00.jpg through sheet_24.jpg",
+    "runs/p44/sheet_00.jpg through sheet_24.jpg",
+    "results/p43/evidence/candidates_*.jpg",
+    "results/p44/evidence/candidates_*.jpg",
+    "results/p64/evidence/candidates_*.jpg"
+  ],
+  "interpretation": "catalog map_layer identifies the candidate ID physical-map affiliation (overworld/sky/underworld); area identifies its catalog group (e.g. heroes1/endgame2). These are separate metadata axes. Neither field proves that the video showed a formal Level_Entry or that adjacent boards are independent entries.",
+  "findings": {
+    "p43_confirmed_count": 24,
+    "p44_confirmed_count": 11,
+    "p43_catalog_map_layer_counts": {
+      "overworld": 3,
+      "sky": 21
+    },
+    "p43_catalog_area_counts": {
+      "heroes1": 3,
+      "endgame2": 21
+    },
+    "p44_catalog_map_layer_counts": {
+      "sky": 11
+    },
+    "p44_catalog_area_counts": {
+      "endgame2": 11
+    },
+    "physical_entry_verified": false,
+    "note": "P43 has 3 catalog map_layer=overworld, area=heroes1 (p43-003, -005, -009) and 21 map_layer=sky, area=endgame2. P44 all 11 confirmed are map_layer=sky, area=endgame2. map_layer indicates the cataloged physical map affiliation of the candidate ID; area is only its directory grouping. Neither proves the actual entry tile used in the video. Cached bounded frames show P43 470–475s in a map-like hub then 480s in a board, and P44 10–15s in map/title material then 20s in a board; the exact Level_Entry marker/approach is not established."
+  },
+  "reviewed_confirmed_events": [
+    {
+      "event_id": "p43-001",
+      "old_level_id": "allocate_heroes_v2",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p43-002",
+      "old_level_id": "end2_heroes_1_2",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p43-003",
+      "old_level_id": "heroes1_2_v2",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "heroes1",
+      "candidate_map_layer": "overworld"
+    },
+    {
+      "event_id": "p43-004",
+      "old_level_id": "end2_heroes_1_5",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p43-005",
+      "old_level_id": "heroes1_2_v2",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "heroes1",
+      "candidate_map_layer": "overworld"
+    },
+    {
+      "event_id": "p43-006",
+      "old_level_id": "end2_heroes_1_2",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p43-007",
+      "old_level_id": "end2_heroes_1_5",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p43-008",
+      "old_level_id": "end2_heroes_1_5",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p43-009",
+      "old_level_id": "heroes1_5_v2",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "heroes1",
+      "candidate_map_layer": "overworld"
+    },
+    {
+      "event_id": "p43-010",
+      "old_level_id": "end2_heroes_1_5",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p43-011",
+      "old_level_id": "prelude_priest_water_goblins_only",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p43-012",
+      "old_level_id": "see_no_evil",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p43-013",
+      "old_level_id": "end2_mirror_3",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p43-014",
+      "old_level_id": "mirror_prelude_v2_fix",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p43-015",
+      "old_level_id": "peak_toggle",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p43-016",
+      "old_level_id": "place_lily_pushstyle_v6",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p43-017",
+      "old_level_id": "three_birds_push",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p43-018",
+      "old_level_id": "stones_prelude",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p43-019",
+      "old_level_id": "end2_river_place",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p43-020",
+      "old_level_id": "place_slot_4x4_pushstyle",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p43-021",
+      "old_level_id": "color_picker",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p43-022",
+      "old_level_id": "place_promesst_rooms",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p43-023",
+      "old_level_id": "promesst_prelude_pushstyle",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p43-024",
+      "old_level_id": "elevator_mechanic",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p44-001",
+      "old_level_id": "floor_plan_v3",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p44-002",
+      "old_level_id": "chart_a_course",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p44-003",
+      "old_level_id": "sidestone_zach_2_end2",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p44-004",
+      "old_level_id": "end2_prism_hp",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p44-005",
+      "old_level_id": "end2_prism_hp",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p44-006",
+      "old_level_id": "stone_economy",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p44-007",
+      "old_level_id": "who_you_gonna_call",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p44-008",
+      "old_level_id": "end2_monster_connect",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p44-009",
+      "old_level_id": "stack_prelude_pushstyle",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p44-010",
+      "old_level_id": "laser_pointer",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    },
+    {
+      "event_id": "p44-011",
+      "old_level_id": "all_together_now",
+      "status": "catalog_map_layer_and_area_checked; bounded scene context reviewed; exact Level_Entry marker/approach unverified",
+      "candidate_area": "endgame2",
+      "candidate_map_layer": "sky"
+    }
+  ],
+  "manual_review_items": [
+    {
+      "event_id": "p43-003",
+      "part": 43,
+      "time_seconds": [
+        834.125,
+        845.0
+      ],
+      "old_level_id": "heroes1_2_v2",
+      "review_status": "confirmed",
+      "decision": "revoke_or_hold_for_manual_review",
+      "reason": "13:54前后视频处在结局2天空大关内：13:20–13:45为同一棋盘俯视，13:50–14:30转为房间/分区视角，随后仍回到同一类内部棋盘；未出现可独立进入 Overworld 的地图帧。旧候选 map_layer=overworld、area=heroes1，与上下文冲突；更像嵌入天空大关的内部板块，但是否存在可独立识别的end2子关未被画面证实，撤销主世界入口判断。",
+      "possible_real_level_id": "null（局内棋盘对应ID未充分核验）",
+      "possible_physical_world_or_stage": "Sky / endgame2 内部场景",
+      "confidence": "高度怀疑是Sky大关内部视角；具体子关存疑",
+      "external_evidence": [
+        "视频标题及分P命名：结局2 P1",
+        "对应时间的完整抽样图册连续性与本地参考候选图册；详见证据图片"
+      ],
+      "evidence_images": [
+        "endgame_p43_sheet_05.jpg",
+        "endgame_p43_candidates_00.jpg"
+      ],
+      "old_catalog_area": "heroes1",
+      "old_catalog_map_layer": "overworld"
+    },
+    {
+      "event_id": "p43-005",
+      "part": 43,
+      "time_seconds": [
+        850.0,
+        855.0
+      ],
+      "old_level_id": "heroes1_2_v2",
+      "review_status": "confirmed",
+      "decision": "revoke_or_hold_for_manual_review",
+      "reason": "14:10处于同一结局2天空大关的房间/棋盘镜头序列，前后无返回主世界或独立入口转场。旧ID map_layer=overworld、area=heroes1；但与end2候选画面匹配并列，不能只靠布局认定具体内部子关。撤销主世界入口判断，内部ID存疑。",
+      "possible_real_level_id": "null（或 end2_heroes_1_2，需人工进一步核对）",
+      "possible_physical_world_or_stage": "Sky / endgame2 内部场景",
+      "confidence": "高度怀疑为Sky大关内场景；身份存疑",
+      "external_evidence": [
+        "视频标题及分P命名：结局2 P1",
+        "对应时间的完整抽样图册连续性与本地参考候选图册；详见证据图片"
+      ],
+      "evidence_images": [
+        "endgame_p43_sheet_05.jpg",
+        "endgame_p43_candidates_01.jpg"
+      ],
+      "old_catalog_area": "heroes1",
+      "old_catalog_map_layer": "overworld"
+    },
+    {
+      "event_id": "p43-009",
+      "part": 43,
+      "time_seconds": [
+        1001.125,
+        1010.0
+      ],
+      "old_level_id": "heroes1_5_v2",
+      "review_status": "confirmed",
+      "decision": "revoke_or_hold_for_manual_review",
+      "reason": "16:40前仍为结局2天空棋盘；16:45转到同一建筑/关卡风格的内部板，17:10又回到枢纽画面。短片段前后没有显示独立 Overworld 入口动作，旧ID map_layer=overworld、area=heroes1 与上下文冲突。更像局内切换，但短转场不能排除另一个可独立进入子关，保持存疑。",
+      "possible_real_level_id": "null（end2_heroes_1_5 是候选，不能据现有帧确认）",
+      "possible_physical_world_or_stage": "Sky / endgame2 内部场景",
+      "confidence": "倾向Sky大关内部切换；有界帧不足以排除独立子关",
+      "external_evidence": [
+        "视频标题及分P命名：结局2 P1",
+        "对应时间的完整抽样图册连续性与本地参考候选图册；详见证据图片"
+      ],
+      "evidence_images": [
+        "endgame_p43_sheet_06.jpg",
+        "endgame_p43_candidates_01.jpg"
+      ],
+      "old_catalog_area": "heroes1",
+      "old_catalog_map_layer": "overworld"
+    },
+    {
+      "event_id": "p44-012",
+      "part": 44,
+      "time_seconds": [
+        3100.0,
+        3209.5
+      ],
+      "old_level_id": null,
+      "review_status": "unknown",
+      "decision": "revoke_or_hold_for_manual_review",
+      "reason": "当前reviewed明确为unknown；图册显示大段无标注/连续棋盘操作，短窗口候选仅写endgame2或endgame3弱 shortlist。不要将候选名或切镜当作正式地图入口。",
+      "possible_real_level_id": "null",
+      "possible_physical_world_or_stage": "null / world and stage unresolved; shortlist mixes endgame2/endgame3",
+      "confidence": "已保留unknown",
+      "external_evidence": [
+        "视频标题及分P命名：结局2 P2",
+        "对应时间的完整抽样图册连续性与本地参考候选图册；详见证据图片"
+      ],
+      "evidence_images": [
+        "endgame_p44_sheet_19.jpg",
+        "endgame_p44_sheet_20.jpg"
+      ],
+      "old_catalog_area": null,
+      "old_catalog_map_layer": null
+    },
+    {
+      "event_id": "p44-013",
+      "part": 44,
+      "time_seconds": [
+        3235.0,
+        3710.0
+      ],
+      "old_level_id": null,
+      "review_status": "unknown",
+      "decision": "revoke_or_hold_for_manual_review",
+      "reason": "当前reviewed明确为unknown；后段图册存在多块棋盘/移动镜头，候选仅为endgame2或endgame3弱 shortlist。不能把一个局内板块当作Sky入口。",
+      "possible_real_level_id": "null",
+      "possible_physical_world_or_stage": "null / world and stage unresolved; shortlist mixes endgame2/endgame3",
+      "confidence": "已保留unknown",
+      "external_evidence": [
+        "视频标题及分P命名：结局2 P2",
+        "对应时间的完整抽样图册连续性与本地参考候选图册；详见证据图片"
+      ],
+      "evidence_images": [
+        "endgame_p44_sheet_19.jpg",
+        "endgame_p44_sheet_20.jpg",
+        "endgame_p44_candidates_03.jpg"
+      ],
+      "old_catalog_area": null,
+      "old_catalog_map_layer": null
+    },
+    {
+      "event_id": "p64-010",
+      "part": 64,
+      "time_seconds": [
+        1765.0,
+        1793.125
+      ],
+      "old_level_id": "mirror_1",
+      "review_status": "confirmed",
+      "decision": "revoke_or_hold_for_manual_review",
+      "reason": "旧ID mirror_1 属于早期 mirror 参考层，但该短片段夹在 end3_redundant_beams 与 p64-009 end2_mirror1 的结局3章节连续段中；参考候选层与所在大关冲突，旧ID可能是局内复用板块。没有主世界/天空入口前帧可验证。 目录查询确认旧ID `mirror_1` 的 map_layer=overworld、area=mirror；附近 end2_* 候选实际 map_layer=underworld、area=endgame3。视频板块的地图样外形与该旧参考很近，但处于结局3语境，属于跨物理层复用疑点；不能仅凭候选布局断言正式入口。",
+      "possible_real_level_id": "end3内部ID或null（不得据旧 mirror_1 直接确认入口）",
+      "possible_physical_world_or_stage": "endgame3 内部场景（物理世界入口未证明）",
+      "confidence": "疑似",
+      "external_evidence": [
+        "视频标题及分P命名：结局3/结局内容分P；用于章节语境，不证明地图入口",
+        "对应时间的完整抽样图册连续性与本地参考候选图册；详见证据图片"
+      ],
+      "evidence_images": [
+        "endgame_p64_candidates_01.jpg"
+      ],
+      "old_catalog_area": "mirror",
+      "old_catalog_map_layer": "overworld"
+    },
+    {
+      "event_id": "p64-012",
+      "part": 64,
+      "time_seconds": [
+        2061.75,
+        2080.0
+      ],
+      "old_level_id": "mirror_1",
+      "review_status": "confirmed",
+      "decision": "revoke_or_hold_for_manual_review",
+      "reason": "旧ID mirror_1 再次出现于同一分P后段结局3连续上下文，且先后紧邻 end2_mirror1/end2_mirror_4_islands_v2（均被机器归endgame3）。高度怀疑早期ID布局复用导致跨层误匹配。 目录查询确认旧ID `mirror_1` 的 map_layer=overworld、area=mirror；附近 end2_* 候选实际 map_layer=underworld、area=endgame3。视频板块的地图样外形与该旧参考很近，但处于结局3语境，属于跨物理层复用疑点；不能仅凭候选布局断言正式入口。",
+      "possible_real_level_id": "end3内部ID或null",
+      "possible_physical_world_or_stage": "endgame3 内部场景（物理世界入口未证明）",
+      "confidence": "疑似",
+      "external_evidence": [
+        "视频标题及分P命名：结局3/结局内容分P；用于章节语境，不证明地图入口",
+        "对应时间的完整抽样图册连续性与本地参考候选图册；详见证据图片"
+      ],
+      "evidence_images": [
+        "endgame_p64_candidates_02.jpg"
+      ],
+      "old_catalog_area": "mirror",
+      "old_catalog_map_layer": "overworld"
+    }
+  ],
+  "screened_later_parts": {
+    "P61": "10 confirmed IDs map to catalog map_layer=underworld, area=endgame3; no early-layer alias surfaced.",
+    "P64": "p64-010 and p64-012 are mirror_1 (catalog map_layer=overworld, area=mirror) inside an endgame3/underworld sequence. Nearby p64-009/-011/-013 IDs are catalog map_layer=underworld, area=endgame3. Treat as possible layout reuse; formal entry remains unverified.",
+    "P65": "8 confirmed IDs map to catalog map_layer=underworld, area=endgame3; no obvious early physical-map alias surfaced.",
+    "P67": "5 confirmed IDs map to catalog map_layer=underworld, area=endgame3; unknown gaps remain unlocated."
+  },
+  "bounded_entry_frames": [
+    {
+      "part": 43,
+      "time_seconds": 470,
+      "image": "evidence/endgame_p43_before_entry_470.jpg",
+      "observation": "map-like hub view immediately before transition"
+    },
+    {
+      "part": 43,
+      "time_seconds": 475,
+      "image": "evidence/endgame_p43_before_entry_475.jpg",
+      "observation": "same hub with player marker near transition"
+    },
+    {
+      "part": 43,
+      "time_seconds": 480,
+      "image": "evidence/endgame_p43_after_entry_480.jpg",
+      "observation": "interior board view after transition"
+    },
+    {
+      "part": 44,
+      "time_seconds": 10,
+      "image": "evidence/endgame_p44_map_010.jpg",
+      "observation": "map and title context"
+    },
+    {
+      "part": 44,
+      "time_seconds": 15,
+      "image": "evidence/endgame_p44_before_entry_015.jpg",
+      "observation": "map context before board transition"
+    },
+    {
+      "part": 44,
+      "time_seconds": 20,
+      "image": "evidence/endgame_p44_after_entry_020.jpg",
+      "observation": "interior board view after transition"
+    }
+  ]
+}

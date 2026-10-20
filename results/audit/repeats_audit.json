@@ -1,0 +1,464 @@
+{
+  "schema_version": 1,
+  "audit": "repeat-visit-review",
+  "scope": {
+    "runs": [
+      "runs/p50",
+      "runs/p5",
+      "runs/p24"
+    ],
+    "inputs": [
+      "results/p50/reviewed.json",
+      "results/p5/reviewed.json",
+      "results/p24/reviewed.json"
+    ],
+    "method": "Audited the existing complete P50 13-sheet timeline, its reviewed candidate evidence, and bounded 5-second samples at event boundaries. P5/P24 were checked with bounded pre/start/mid/end/post samples. No full-series rescan or external API was used."
+  },
+  "evidence_index": [
+    {
+      "path": "results/audit/evidence/repeat_p50_magnitudes_boundaries.jpg",
+      "description": "Five bounded frames around each of the ten magnitudes_v3 event windows; juxtaposes match and adjacent context."
+    },
+    {
+      "path": "runs/p50/sheet_00.jpg",
+      "description": "P50 timeline contact sheet, 0–150 seconds."
+    },
+    {
+      "path": "runs/p50/sheet_01.jpg",
+      "description": "P50 timeline contact sheet, approximately 150–300 seconds."
+    },
+    {
+      "path": "runs/p50/sheet_02.jpg",
+      "description": "P50 timeline contact sheet, approximately 300–450 seconds."
+    },
+    {
+      "path": "runs/p50/sheet_03.jpg",
+      "description": "P50 timeline contact sheet, approximately 450–600 seconds."
+    },
+    {
+      "path": "runs/p50/sheet_04.jpg",
+      "description": "P50 timeline contact sheet, approximately 600–750 seconds."
+    },
+    {
+      "path": "runs/p50/sheet_05.jpg",
+      "description": "P50 timeline contact sheet, approximately 750–900 seconds."
+    },
+    {
+      "path": "runs/p50/sheet_06.jpg",
+      "description": "P50 timeline contact sheet, approximately 900–1050 seconds."
+    },
+    {
+      "path": "runs/p50/sheet_07.jpg",
+      "description": "P50 timeline contact sheet, approximately 1050–1200 seconds."
+    },
+    {
+      "path": "runs/p50/sheet_08.jpg",
+      "description": "P50 timeline contact sheet, approximately 1200–1350 seconds."
+    },
+    {
+      "path": "runs/p50/sheet_09.jpg",
+      "description": "P50 timeline contact sheet, approximately 1350–1500 seconds."
+    },
+    {
+      "path": "runs/p50/sheet_10.jpg",
+      "description": "P50 timeline contact sheet, approximately 1500–1650 seconds."
+    },
+    {
+      "path": "runs/p50/sheet_11.jpg",
+      "description": "P50 timeline contact sheet, approximately 1650–1800 seconds."
+    },
+    {
+      "path": "runs/p50/sheet_12.jpg",
+      "description": "P50 timeline contact sheet, approximately 1800–1940 seconds."
+    },
+    {
+      "path": "results/audit/evidence/repeat_p5_mirror.jpg",
+      "description": "P5 bounded frames for mirror_4 and mirror_14 candidate windows."
+    },
+    {
+      "path": "results/audit/evidence/repeat_p24_end1.jpg",
+      "description": "P24 bounded frames for all end1 candidate windows."
+    },
+    {
+      "path": "results/audit/evidence/repeat_p5_mirror14_bounded.jpg",
+      "description": "Ten 1280px frames at 2-second intervals from 1904–1922s, showing the transition context across p5-029/p5-030."
+    }
+  ],
+  "p50_summary": {
+    "recorded_magnitudes_event_count": 10,
+    "finding": "The ten windows show the same magnitudes_v3 board, but their distribution within the complete P50 timeline and the very early whole-map overview make one larger connected stage/entry with internal returns or camera pans more plausible than ten genuine Level_Entry visits. Other courtyard, water and island layouts appear as parts of the same broader play space. The evidence cannot distinguish internal return to this board from discrete entries, and no overworld/entry transition is visible at each candidate boundary. Keep the layout identity as a plausible subarea match; mark the visit count unverified and do not count ten entries or force a merge into a particular visit count."
+  },
+  "events": [
+    {
+      "event_id": "p50-001",
+      "part": 50,
+      "level_id": "magnitudes_v3",
+      "time_seconds": [
+        17.25,
+        65.0
+      ],
+      "result": "manual_check",
+      "entry_count": "unverified",
+      "recommendation": "Retain as one observed magnitudes-layout interval, but do not count as confirmed independent entry. It is the longest initial board view; the following courtyard/water scenes could be connected progression. No overworld approach is recorded.",
+      "evidence": [
+        "results/audit/evidence/repeat_p50_magnitudes_boundaries.jpg",
+        "runs/p50/sheet_00.jpg",
+        "results/p50/reviewed.json"
+      ]
+    },
+    {
+      "event_id": "p50-002",
+      "part": 50,
+      "level_id": "magnitudes_v3",
+      "time_seconds": [
+        290,
+        310
+      ],
+      "result": "manual_check",
+      "entry_count": "unverified",
+      "recommendation": "Keep the layout match as a candidate. Neighboring frames include a courtyard before and water/beam board after. These prove a scene switch, not a return through a Level_Entry; do not count a separate visit yet.",
+      "evidence": [
+        "results/audit/evidence/repeat_p50_magnitudes_boundaries.jpg",
+        "runs/p50/sheet_01.jpg"
+      ]
+    },
+    {
+      "event_id": "p50-003",
+      "part": 50,
+      "level_id": "magnitudes_v3",
+      "time_seconds": [
+        455,
+        465
+      ],
+      "result": "manual_check",
+      "entry_count": "unverified",
+      "recommendation": "Brief exact-layout appearance within water/island progression. Retain as candidate observation; likely camera/room revisit is at least as plausible as a new entry. No merge or entry confirmation from layout alone.",
+      "evidence": [
+        "results/audit/evidence/repeat_p50_magnitudes_boundaries.jpg",
+        "runs/p50/sheet_03.jpg"
+      ]
+    },
+    {
+      "event_id": "p50-004",
+      "part": 50,
+      "level_id": "magnitudes_v3",
+      "time_seconds": [
+        580,
+        590
+      ],
+      "result": "manual_check",
+      "entry_count": "unverified",
+      "recommendation": "Brief exact-layout appearance between distinct water/beam views. Keep candidate identity, defer whether it is a separate visit.",
+      "evidence": [
+        "results/audit/evidence/repeat_p50_magnitudes_boundaries.jpg",
+        "runs/p50/sheet_03.jpg"
+      ]
+    },
+    {
+      "event_id": "p50-005",
+      "part": 50,
+      "level_id": "magnitudes_v3",
+      "time_seconds": [
+        725,
+        735
+      ],
+      "result": "manual_check",
+      "entry_count": "unverified",
+      "recommendation": "Layout match is visible around the middle of this short window, but neighboring 715/740-second frames show a separate courtyard. This suggests a rapid view/room switch; it does not establish a fresh overworld entry.",
+      "evidence": [
+        "results/audit/evidence/repeat_p50_magnitudes_boundaries.jpg",
+        "runs/p50/sheet_04.jpg"
+      ]
+    },
+    {
+      "event_id": "p50-006",
+      "part": 50,
+      "level_id": "magnitudes_v3",
+      "time_seconds": [
+        750,
+        765
+      ],
+      "result": "manual_check",
+      "entry_count": "unverified",
+      "recommendation": "Another clear board appearance shortly after p50-005, with a courtyard view between them. Treat as repeated layout observation, not verified independent entry.",
+      "evidence": [
+        "results/audit/evidence/repeat_p50_magnitudes_boundaries.jpg",
+        "runs/p50/sheet_05.jpg"
+      ]
+    },
+    {
+      "event_id": "p50-007",
+      "part": 50,
+      "level_id": "magnitudes_v3",
+      "time_seconds": [
+        865,
+        875
+      ],
+      "result": "manual_check",
+      "entry_count": "unverified",
+      "recommendation": "The candidate interval sits amid dark water/beam views and other island scenes. It may be a return to the same internal board. Preserve as candidate, defer visit count.",
+      "evidence": [
+        "results/audit/evidence/repeat_p50_magnitudes_boundaries.jpg",
+        "runs/p50/sheet_05.jpg"
+      ]
+    },
+    {
+      "event_id": "p50-008",
+      "part": 50,
+      "level_id": "magnitudes_v3",
+      "time_seconds": [
+        940,
+        950
+      ],
+      "result": "manual_check",
+      "entry_count": "unverified",
+      "recommendation": "Candidate board appearance is adjacent to island/map-like scenes. The entry boundary is not visible in the bounded evidence; keep candidate only.",
+      "evidence": [
+        "results/audit/evidence/repeat_p50_magnitudes_boundaries.jpg",
+        "runs/p50/sheet_06.jpg"
+      ]
+    },
+    {
+      "event_id": "p50-009",
+      "part": 50,
+      "level_id": "magnitudes_v3",
+      "time_seconds": [
+        1055,
+        1070
+      ],
+      "result": "manual_check",
+      "entry_count": "unverified",
+      "recommendation": "Repeated fixed-layout appearance between separate island/courtyard scenes. No evidence of a Level_Entry transition at 1054.5 seconds; retain candidate and defer entry count.",
+      "evidence": [
+        "results/audit/evidence/repeat_p50_magnitudes_boundaries.jpg",
+        "runs/p50/sheet_07.jpg"
+      ]
+    },
+    {
+      "event_id": "p50-010",
+      "part": 50,
+      "level_id": "magnitudes_v3",
+      "time_seconds": [
+        1105,
+        1145
+      ],
+      "result": "manual_check",
+      "entry_count": "unverified",
+      "recommendation": "Same board appears again after only a short interval and is followed by a different water/island view. Could be internal traversal among connected rooms. Keep the visual match but do not assert a tenth entry.",
+      "evidence": [
+        "results/audit/evidence/repeat_p50_magnitudes_boundaries.jpg",
+        "runs/p50/sheet_07.jpg"
+      ]
+    },
+    {
+      "event_id": "p50-unknowns",
+      "part": 50,
+      "level_id": null,
+      "time_seconds": [
+        [
+          70,
+          220
+        ],
+        [
+          245,
+          285
+        ],
+        [
+          315,
+          420
+        ],
+        [
+          480,
+          555
+        ],
+        [
+          600,
+          715
+        ],
+        [
+          780,
+          855
+        ],
+        [
+          900,
+          939.5
+        ],
+        [
+          950.5,
+          1045
+        ],
+        [
+          1155,
+          1290
+        ],
+        [
+          1305,
+          1380
+        ],
+        [
+          1385,
+          1520
+        ],
+        [
+          1525,
+          1605
+        ],
+        [
+          1610,
+          1710
+        ],
+        [
+          1715,
+          1785
+        ]
+      ],
+      "result": "manual_check",
+      "recommendation": "The 14 unknown records are time slices, not 14 separate entries. Together with the overview at the start and repeated board returns, the full timeline is more consistent with a larger connected stage/entry whose subareas are traversed and revisited. Keep level_id unknown; do not count each slice as an entry. Manually group only if explicit continuity/transition evidence supports it.",
+      "evidence": [
+        "runs/p50/sheet_00.jpg",
+        "runs/p50/sheet_01.jpg",
+        "runs/p50/sheet_02.jpg",
+        "runs/p50/sheet_03.jpg",
+        "runs/p50/sheet_04.jpg",
+        "runs/p50/sheet_05.jpg",
+        "runs/p50/sheet_06.jpg",
+        "runs/p50/sheet_07.jpg",
+        "runs/p50/sheet_08.jpg",
+        "runs/p50/sheet_09.jpg",
+        "runs/p50/sheet_10.jpg",
+        "runs/p50/sheet_11.jpg"
+      ]
+    },
+    {
+      "event_id": "p5-004,p5-005,p5-006",
+      "part": 5,
+      "level_id": "mirror_4",
+      "time_seconds": [
+        [
+          103.75,
+          130
+        ],
+        [
+          145,
+          155
+        ],
+        [
+          185,
+          220
+        ]
+      ],
+      "result": "merge_probable",
+      "entry_count": "likely_one_continuous_sequence",
+      "recommendation": "Frames show the same island layout continuously, with the character/markers moving and no intervening world view or visible entry transition in these bounded windows. Merge these three detections into one conservative interval spanning 103.75–220 seconds, with boundaries uncertain; retain sub-intervals as internal sightings if the review schema requires them. Do not call these three independent entrances.",
+      "evidence": [
+        "results/audit/evidence/repeat_p5_mirror.jpg",
+        "runs/p5/sheet_00.jpg"
+      ]
+    },
+    {
+      "event_id": "p5-029",
+      "part": 5,
+      "level_id": "mirror_14",
+      "time_seconds": [
+        1884.5,
+        1905
+      ],
+      "result": "merge_probable",
+      "entry_count": "likely_one_continuous_sequence_or_retry_within_same_entry",
+      "recommendation": "Merge p5-029 and p5-030 into one likely continuous mirror_14 sequence spanning 1884.5–1930 seconds. The ten 2-second frames from 1904–1922 show the same connected island outline, left detached island, two mirrors, orange mechanism, and continuous character movement; there is no visible level exit or re-entry. Keep a single visit (or one visit with a retry) pending the actual entry boundary.",
+      "evidence": [
+        "results/audit/evidence/repeat_p5_mirror.jpg",
+        "runs/p5/sheet_12.jpg",
+        "results/audit/evidence/repeat_p5_mirror14_bounded.jpg"
+      ]
+    },
+    {
+      "event_id": "p5-030",
+      "part": 5,
+      "level_id": "mirror_14",
+      "time_seconds": [
+        1920,
+        1930
+      ],
+      "result": "merge_with_p5-029",
+      "entry_count": "not_a_proven_separate_entry",
+      "recommendation": "Do not treat this as a distinct visit or revoke the mirror_14 identity. The p5-029/p5-030 layouts are consistent after accounting for camera and mirror/character state changes; the bounded 1904–1922 frames show uninterrupted play on the same island. Merge into the p5-029 sequence and leave the entry count pending boundary evidence.",
+      "evidence": [
+        "results/audit/evidence/repeat_p5_mirror14_bounded.jpg",
+        "results/audit/evidence/repeat_p5_mirror.jpg",
+        "runs/p5/sheet_12.jpg"
+      ]
+    },
+    {
+      "event_id": "p24-001",
+      "part": 24,
+      "level_id": "end1",
+      "time_seconds": [
+        63.875,
+        213.375
+      ],
+      "result": "retain",
+      "entry_count": "one_long_observed_sequence",
+      "recommendation": "This is a long continuous end1 sequence with changes in camera/room and gameplay state. Treat the interval as one visit; internal room changes are not new entrances.",
+      "evidence": [
+        "results/audit/evidence/repeat_p24_end1.jpg",
+        "runs/p24/sheet_00.jpg",
+        "runs/p24/sheet_01.jpg"
+      ]
+    },
+    {
+      "event_id": "p24-002",
+      "part": 24,
+      "level_id": "end1",
+      "time_seconds": [
+        304.25,
+        370
+      ],
+      "result": "retain_provisional",
+      "entry_count": "likely_separate_return",
+      "recommendation": "The reference layout recurs after a long intervening span, and the approach is not shown in bounded frames. Keep as a separate candidate return, but mark independent entrance unverified until the missing transition/overworld context is checked.",
+      "evidence": [
+        "results/audit/evidence/repeat_p24_end1.jpg",
+        "runs/p24/sheet_02.jpg"
+      ]
+    },
+    {
+      "event_id": "p24-003,p24-004",
+      "part": 24,
+      "level_id": "end1",
+      "time_seconds": [
+        [
+          615,
+          625
+        ],
+        [
+          655,
+          668.5
+        ]
+      ],
+      "result": "merge_probable",
+      "entry_count": "likely_one_continuous_visit_or_retry",
+      "recommendation": "Both windows show the same fixed board and evolving move/beam state; the 30-second gap has no demonstrated exit/overworld return in the bounded evidence. Merge into a single 615–668.5-second visit or explicitly mark the second as an internal retry. Do not count as two entries without transition evidence.",
+      "evidence": [
+        "results/audit/evidence/repeat_p24_end1.jpg",
+        "runs/p24/sheet_04.jpg"
+      ]
+    },
+    {
+      "event_id": "p24-005",
+      "part": 24,
+      "level_id": "end1",
+      "time_seconds": [
+        955,
+        967.125
+      ],
+      "result": "retain_provisional",
+      "entry_count": "possible_separate_return",
+      "recommendation": "The same board appears much later with a changed object state. It is likely a later return or a closely related internal stage, but no entry transition is visible in the bounded context. Preserve as a candidate separate visit and manually check continuity before confirming count.",
+      "evidence": [
+        "results/audit/evidence/repeat_p24_end1.jpg",
+        "runs/p24/sheet_06.jpg"
+      ]
+    }
+  ]
+}

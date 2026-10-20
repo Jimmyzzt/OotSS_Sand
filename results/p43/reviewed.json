@@ -171,14 +171,14 @@
     },
     {
       "event_id": "p43-003",
-      "level_id": "heroes1_2_v2",
+      "level_id": null,
       "puzzle_start_time": 834.125,
       "puzzle_end_time": 845.0,
       "entry_transition_time": 833.875,
       "exit_time": 845.0,
       "overworld_approach_time": null,
-      "review_status": "confirmed",
-      "status": "visited",
+      "review_status": "conflict",
+      "status": "identity_conflict",
       "outcome": "unknown",
       "timing_uncertainty_seconds": 5,
       "candidate_levels": [
@@ -224,14 +224,8 @@
         }
       ],
       "puzzle_match": {
-        "level_id": "heroes1_2_v2",
-        "area": "heroes1",
-        "phash_distance": 18,
-        "hist_distance": 0.6277,
-        "sift_inliers": 57,
-        "sift_good": 71,
-        "consistent_samples": 3,
-        "status": "visually_confirmed"
+        "status": "rejected_original_identity",
+        "previous_level_id": "heroes1_2_v2"
       },
       "overworld_match": {
         "status": "unverified"
@@ -243,11 +237,31 @@
           "time": 835.0,
           "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes1_2_v2.webp",
           "reason": "The separate chamber shows two raised stone platforms divided by a central bridge, purple blocks clustered on the right and green endpoint at lower left, matching this reference."
+        },
+        {
+          "type": "identity_audit",
+          "reason": "结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
+          "image": "results/audit/evidence/endgame_p43_sheet_05.jpg"
         }
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
       "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "Codex physical-map identity audit",
+      "superseded_identification": {
+        "level_id": "heroes1_2_v2",
+        "puzzle_match": {
+          "level_id": "heroes1_2_v2",
+          "area": "heroes1",
+          "phash_distance": 18,
+          "hist_distance": 0.6277,
+          "sift_inliers": 57,
+          "sift_good": 71,
+          "consistent_samples": 3,
+          "status": "visually_confirmed"
+        },
+        "map_layer": "overworld"
+      },
+      "map_layer": "sky"
     },
     {
       "event_id": "p43-004",
@@ -331,14 +345,14 @@
     },
     {
       "event_id": "p43-005",
-      "level_id": "heroes1_2_v2",
+      "level_id": null,
       "puzzle_start_time": 850.0,
       "puzzle_end_time": 855.0,
       "entry_transition_time": 850.0,
       "exit_time": 855.0,
       "overworld_approach_time": null,
-      "review_status": "confirmed",
-      "status": "visited",
+      "review_status": "conflict",
+      "status": "identity_conflict",
       "outcome": "unknown",
       "timing_uncertainty_seconds": 5,
       "candidate_levels": [
@@ -384,14 +398,8 @@
         }
       ],
       "puzzle_match": {
-        "level_id": "heroes1_2_v2",
-        "area": "heroes1",
-        "phash_distance": 12,
-        "hist_distance": 0.7176,
-        "sift_inliers": 23,
-        "sift_good": 30,
-        "consistent_samples": 1,
-        "status": "visually_confirmed"
+        "status": "rejected_original_identity",
+        "previous_level_id": "heroes1_2_v2"
       },
       "overworld_match": {
         "status": "unverified"
@@ -403,11 +411,31 @@
           "time": 855.0,
           "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes1_2_v2.webp",
           "reason": "The separate chamber shows two raised stone platforms divided by a central bridge, purple blocks clustered on the right and green endpoint at lower left, matching this reference."
+        },
+        {
+          "type": "identity_audit",
+          "reason": "结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
+          "image": "results/audit/evidence/endgame_p43_sheet_05.jpg"
         }
       ],
       "evidence_gallery": "evidence/candidates_01.jpg",
       "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "Codex physical-map identity audit",
+      "superseded_identification": {
+        "level_id": "heroes1_2_v2",
+        "puzzle_match": {
+          "level_id": "heroes1_2_v2",
+          "area": "heroes1",
+          "phash_distance": 12,
+          "hist_distance": 0.7176,
+          "sift_inliers": 23,
+          "sift_good": 30,
+          "consistent_samples": 1,
+          "status": "visually_confirmed"
+        },
+        "map_layer": "overworld"
+      },
+      "map_layer": "sky"
     },
     {
       "event_id": "p43-006",
@@ -651,14 +679,14 @@
     },
     {
       "event_id": "p43-009",
-      "level_id": "heroes1_5_v2",
+      "level_id": null,
       "puzzle_start_time": 1001.125,
       "puzzle_end_time": 1010.0,
       "entry_transition_time": 1000.875,
       "exit_time": 1010.0,
       "overworld_approach_time": null,
-      "review_status": "confirmed",
-      "status": "visited",
+      "review_status": "conflict",
+      "status": "identity_conflict",
       "outcome": "unknown",
       "timing_uncertainty_seconds": 5,
       "candidate_levels": [
@@ -704,14 +732,8 @@
         }
       ],
       "puzzle_match": {
-        "level_id": "heroes1_5_v2",
-        "area": "heroes1",
-        "phash_distance": 18,
-        "hist_distance": 0.7153,
-        "sift_inliers": 43,
-        "sift_good": 49,
-        "consistent_samples": 2,
-        "status": "visually_confirmed"
+        "status": "rejected_original_identity",
+        "previous_level_id": "heroes1_5_v2"
       },
       "overworld_match": {
         "status": "unverified"
@@ -723,11 +745,31 @@
           "time": 1010.0,
           "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes1_5_v2.webp",
           "reason": "The view returns to the two-platform hall with purple block clusters and central bridge; the tiled room layout matches the heroes1_5_v2 reference."
+        },
+        {
+          "type": "identity_audit",
+          "reason": "结局二上层棋盘内部切换；没有返回主世界入口的画面。原匹配引用了主世界英雄关的相似布局，物理地图冲突。撤销原入口坐标；相邻结局子关仅为候选，具体内部归属需人工核对。",
+          "image": "results/audit/evidence/endgame_p43_sheet_06.jpg"
         }
       ],
       "evidence_gallery": "evidence/candidates_01.jpg",
       "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
+      "reviewer": "Codex physical-map identity audit",
+      "superseded_identification": {
+        "level_id": "heroes1_5_v2",
+        "puzzle_match": {
+          "level_id": "heroes1_5_v2",
+          "area": "heroes1",
+          "phash_distance": 18,
+          "hist_distance": 0.7153,
+          "sift_inliers": 43,
+          "sift_good": 49,
+          "consistent_samples": 2,
+          "status": "visually_confirmed"
+        },
+        "map_layer": "overworld"
+      },
+      "map_layer": "sky"
     },
     {
       "event_id": "p43-010",

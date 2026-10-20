@@ -58,4 +58,6 @@ python -m ootss world-check --run runs/p4 --time 9 --level heroes3_10 --terrain 
 
 原 starting_guide.md 已由上述工作流及实际结果说明替代：不实现 ASR 服务、Web 审核平台、复杂 Agent Adapter、自动训练、GitHub Issue 工程管理。GitHub CLI 凭证失效时继续本地提交。
 
-综合发布使用 `python -m ootss atlas --all-worlds`，读取P1–68和catalog_all.json，输出results/worlds。右上地图按物理世界命名，阶段二/三回访主世界仍归Overworld；同一分P跨地图时保留全片统一的首次出现序号。未定位片段以时间链接单列，不能只因参考目录有坐标就纳入地图。P68原型和正式版示例需区分，示例上下文写入context字段。
+综合发布使用 `python -m ootss atlas --all-worlds`，读取P1–67和catalog_all.json，输出results/worlds。地图按物理世界命名，阶段二/三回访主世界仍归Overworld；同一分P跨地图时保留全片统一的首次出现序号。未定位片段以时间链接单列，不能只因参考目录有坐标就纳入地图。P68隐藏内容已按用户要求完全排除，不参与地图与差异统计。
+
+复核同构关时先对比初始角色/机关，再看入场前10–20秒地表位置与固定入口坐标。结局篇内部棋盘复用不等于回到早期世界。若只有相似布局但世界/角色冲突，撤销旧ID、保留候选与时间，交人工核对。运行 `python scripts/audit_differences.py` 生成在线audit.html、CSV和JSON；目录差集不直接证明视频没出现，重复ID也不直接证明多次进入。
