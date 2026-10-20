@@ -10,6 +10,42 @@
   "review_note": "已按用户docs/校对.md修订身份和连续区间。未切关的匹配窗合并为一次访问；明确未进关的大世界片段移入excluded_segments，不再列为未知关卡。原片段完整记录保存在superseded_events。具体依据见各事件human_review证据。",
   "events": [
     {
+      "event_id": "p67-creator-003",
+      "level_id": "end3_pipeline_setup",
+      "map_layer": "underworld",
+      "puzzle_start_time": 35,
+      "puzzle_end_time": 95,
+      "entry_transition_time": 35,
+      "exit_time": 95,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "reviewer": "Creator locations and bounded visual continuity review",
+      "puzzle_match": {
+        "level_id": "end3_pipeline_setup",
+        "status": "human_confirmed",
+        "method": "creator_location_and_bounded_visual_review"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "creator_location",
+          "source": "docs/缺失录像位置.md",
+          "item": 3,
+          "reported_start": 35,
+          "reason": "作者提供00:35；单平台、黄角色和右侧分叉管线匹配，01:35进入已录入design教学环节。流程连续，未据此推断独立出入次数或通关。"
+        },
+        {
+          "type": "visual_comparison",
+          "image": "results/audit/evidence/creator_p67_end3_pipeline_setup.jpg"
+        }
+      ]
+    },
+    {
       "event_id": "p67-001",
       "level_id": "end3_pipeline_design",
       "puzzle_start_time": 95.0,
@@ -696,11 +732,21 @@
         18,
         19
       ]
+    },
+    {
+      "source": "docs/缺失录像位置.md",
+      "source_sha256": "1b8909996f65afa054949f08bf2f179cf0f880e2c0dd34854fef7491513f79bc",
+      "item_count": 6
     }
   ],
   "human_review": {
     "source": "docs/校对.md",
     "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
     "item_count": 19
+  },
+  "creator_review": {
+    "source": "docs/缺失录像位置.md",
+    "source_sha256": "1b8909996f65afa054949f08bf2f179cf0f880e2c0dd34854fef7491513f79bc",
+    "item_count": 6
   }
 }

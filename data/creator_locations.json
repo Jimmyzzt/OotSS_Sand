@@ -1,0 +1,143 @@
+{
+  "source": "docs/缺失录像位置.md",
+  "source_sha256": "1b8909996f65afa054949f08bf2f179cf0f880e2c0dd34854fef7491513f79bc",
+  "item_count": 6,
+  "entries": [
+    {
+      "item": 1,
+      "level_id": "arcadia_surprise_big",
+      "part": 29,
+      "start": 769,
+      "end": 855,
+      "reported_start": 769,
+      "event_id": "p29-creator-001",
+      "evidence": [
+        "creator_p29.jpg",
+        "creator_p29_bounds.jpg"
+      ],
+      "reason": "作者提供12:49；局部复核确认12:43已退出旧关、12:49重新进入，蓝色英雄/浅蓝障碍初态与参考匹配。撤销之前误并入arcadiav2_big的区间。"
+    },
+    {
+      "item": 2,
+      "level_id": "design_fts",
+      "part": 62,
+      "start": 1019,
+      "end": 1262,
+      "reported_start": 1019,
+      "event_id": "p62-creator-002",
+      "evidence": [
+        "creator_p62_design_fts.jpg",
+        "creator_p62_context.jpg",
+        "creator_p62_bounds.jpg"
+      ],
+      "reason": "作者提供16:59；五石传送平台与参考一致。上层设计/下层演示属于连续同关，21:02出现退出标志。"
+    },
+    {
+      "item": 3,
+      "level_id": "end3_pipeline_setup",
+      "part": 67,
+      "start": 35,
+      "end": 95,
+      "reported_start": 35,
+      "event_id": "p67-creator-003",
+      "evidence": [
+        "creator_p67_end3_pipeline_setup.jpg"
+      ],
+      "reason": "作者提供00:35；单平台、黄角色和右侧分叉管线匹配，01:35进入已录入design教学环节。流程连续，未据此推断独立出入次数或通关。"
+    },
+    {
+      "item": 4,
+      "level_id": "save_for_later",
+      "part": 54,
+      "start": 1233,
+      "end": 1277,
+      "reported_start": 1233,
+      "event_id": "p54-creator-004",
+      "evidence": [
+        "creator_p54_save_for_later.jpg"
+      ],
+      "reason": "作者提供20:33；长通道、绿色障碍群和上下镜面一致，21:17退出。"
+    },
+    {
+      "item": 5,
+      "level_id": "snipperclips_diagonal",
+      "part": 39,
+      "start": 227,
+      "end": 293,
+      "reported_start": 56,
+      "event_id": "p39-creator-005",
+      "evidence": [
+        "creator_p39_identity_world.jpg",
+        "creator_p39_entries.jpg",
+        "creator_p39_exit_checks.jpg"
+      ],
+      "reason": "作者提供00:56实际为上方snipperclips_0_square，保留该已录入ID；本关在03:47从下方(11,77)进入，初始顶行粉色按钮右侧有黄色按钮，与diagonal参考吻合，04:53退出。",
+      "world_check": {
+        "status": "verified",
+        "method": "manual_world_landmarks_and_initial_board",
+        "coordinates": [
+          11,
+          77,
+          0
+        ],
+        "reason": "原地图同一纵向入口组的位置与角色进入前后连续画面一致；见creator_p39_identity_world.jpg和creator_p39_entries.jpg。"
+      }
+    },
+    {
+      "item": 6,
+      "level_id": "snipperclips_square",
+      "part": 39,
+      "start": 149,
+      "end": 215,
+      "reported_start": 149,
+      "event_id": "p39-creator-006",
+      "evidence": [
+        "creator_p39_identity_world.jpg",
+        "creator_p39_entries.jpg",
+        "creator_p39_exit_checks.jpg"
+      ],
+      "reason": "作者提供02:29；主世界中间(11,79)入口、右下黄色按钮阵列均与square参考匹配，03:35退出。03:47另入下方diagonal，并非本关重试。",
+      "world_check": {
+        "status": "verified",
+        "method": "manual_world_landmarks_and_initial_board",
+        "coordinates": [
+          11,
+          79,
+          0
+        ],
+        "reason": "原地图同一纵向入口组的位置与角色进入前后连续画面一致；见creator_p39_identity_world.jpg和creator_p39_entries.jpg。"
+      }
+    }
+  ],
+  "adjustments": [
+    {
+      "part": 29,
+      "event_id": "p29-007",
+      "expected_level_id": "arcadiav2_big",
+      "replace_evidence": true,
+      "fields": {
+        "puzzle_end_time": 762,
+        "exit_time": 762
+      },
+      "proof": {
+        "image": "results/audit/evidence/creator_p29_bounds.jpg",
+        "reason": "12:41退出动画、12:43主世界；此前延长到14:15且声称无转场的判断已撤销，后续12:49为另一入口。10:40初始棋盘仍匹配arcadiav2_big。"
+      }
+    },
+    {
+      "part": 39,
+      "event_id": "p39-001",
+      "expected_level_id": "snipperclips_0_square",
+      "fields": {
+        "puzzle_start_time": 56,
+        "puzzle_end_time": 138,
+        "exit_time": 138,
+        "timing_uncertainty_seconds": 1
+      },
+      "proof": {
+        "image": "results/audit/evidence/creator_p39_identity_world.jpg",
+        "reason": "00:56进入上方(9,84)入口，初态四列粉色按钮对应0_square；原00:57–01:05只是稀疏命中，同次访问延续至02:18退出。保留原ID，不错改成diagonal。"
+      }
+    }
+  ]
+}

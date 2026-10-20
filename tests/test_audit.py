@@ -25,6 +25,10 @@ def test_audit_keeps_unknowns_out_of_observed_and_excludes_hidden_part(
     ]
     write_json("catalog.json", {"commit": "fixture", "levels": levels})
     write_json("data/audit_decisions.json", {"decisions": []})
+    write_json(
+        "data/creator_locations.json",
+        {"source": "fixture", "source_sha256": "fixture", "entries": []},
+    )
     write_json("data/video_links.json", {"parts": {"2": {"part": 3}}})
     write_json("results/series/manifest.json", {"bvid": "BVfixture"})
     for part in range(1, 69):

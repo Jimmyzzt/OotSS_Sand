@@ -346,9 +346,9 @@
       "duration": 1746,
       "download_status": "complete",
       "reviewed": true,
-      "visits": 14,
+      "visits": 15,
       "unmapped_count": 0,
-      "level_count": 14,
+      "level_count": 15,
       "display_part": 29
     },
     {
@@ -466,9 +466,9 @@
       "duration": 2388,
       "download_status": "complete",
       "reviewed": true,
-      "visits": 15,
+      "visits": 17,
       "unmapped_count": 0,
-      "level_count": 15,
+      "level_count": 17,
       "display_part": 39
     },
     {
@@ -646,9 +646,9 @@
       "duration": 1815,
       "download_status": "complete",
       "reviewed": true,
-      "visits": 8,
+      "visits": 9,
       "unmapped_count": 0,
-      "level_count": 7,
+      "level_count": 8,
       "display_part": 54
     },
     {
@@ -742,9 +742,9 @@
       "duration": 2007,
       "download_status": "complete",
       "reviewed": true,
-      "visits": 5,
+      "visits": 6,
       "unmapped_count": 0,
-      "level_count": 5,
+      "level_count": 6,
       "display_part": 62
     },
     {
@@ -802,9 +802,9 @@
       "duration": 1925,
       "download_status": "complete",
       "reviewed": true,
-      "visits": 5,
+      "visits": 6,
       "unmapped_count": 0,
-      "level_count": 5,
+      "level_count": 6,
       "display_part": 67
     }
   ],
@@ -23984,9 +23984,9 @@
           "part": 29,
           "event_id": "p29-007",
           "start": 633.875,
-          "end": 855.0,
+          "end": 762,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=29&t=633",
-          "reviewer": "Luna visual comparison",
+          "reviewer": "Creator locations and bounded visual continuity review",
           "context": null,
           "audit_note": null,
           "audit_anchor": null,
@@ -24012,6 +24012,56 @@
       },
       "region_titles": [
         "英雄成双2"
+      ]
+    },
+    {
+      "level_id": "arcadia_surprise_big",
+      "area": "clones",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 14681608,
+          "coordinates": [
+            -24.0,
+            116.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#arcadia_surprise_big",
+      "visits": [
+        {
+          "part": 29,
+          "event_id": "p29-creator-001",
+          "start": 769,
+          "end": 855,
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=29&t=769",
+          "reviewer": "Creator locations and bounded visual continuity review",
+          "context": null,
+          "audit_note": null,
+          "audit_anchor": null,
+          "uncertainty": 1,
+          "ordinal": 8,
+          "source_part": 29,
+          "display_part": 29
+        }
+      ],
+      "preview": "assets/previews/arcadia_surprise_big.webp",
+      "region_ids": [
+        "-5,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄成双3"
       ]
     },
     {
@@ -24041,7 +24091,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 5,
-          "ordinal": 8,
+          "ordinal": 9,
           "source_part": 29,
           "display_part": 29
         }
@@ -24091,7 +24141,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 5,
-          "ordinal": 9,
+          "ordinal": 10,
           "source_part": 29,
           "display_part": 29
         }
@@ -24141,7 +24191,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 0.5,
-          "ordinal": 10,
+          "ordinal": 11,
           "source_part": 29,
           "display_part": 29
         }
@@ -24191,7 +24241,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 0.5,
-          "ordinal": 11,
+          "ordinal": 12,
           "source_part": 29,
           "display_part": 29
         }
@@ -24241,7 +24291,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 5,
-          "ordinal": 12,
+          "ordinal": 13,
           "source_part": 29,
           "display_part": 29
         }
@@ -24291,7 +24341,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 5,
-          "ordinal": 13,
+          "ordinal": 14,
           "source_part": 29,
           "display_part": 29
         }
@@ -24341,7 +24391,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 5,
-          "ordinal": 14,
+          "ordinal": 15,
           "source_part": 29,
           "display_part": 29
         }
@@ -30563,20 +30613,120 @@
         {
           "part": 39,
           "event_id": "p39-001",
-          "start": 57.75,
-          "end": 65.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=39&t=57",
-          "reviewer": null,
+          "start": 56,
+          "end": 138,
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=39&t=56",
+          "reviewer": "Creator locations and bounded visual continuity review",
           "context": null,
           "audit_note": null,
           "audit_anchor": null,
-          "uncertainty": 5,
+          "uncertainty": 1,
           "ordinal": 1,
           "source_part": 39,
           "display_part": 39
         }
       ],
       "preview": "assets/previews/snipperclips_0_square.webp",
+      "region_ids": [
+        "-4,1"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄与光6"
+      ]
+    },
+    {
+      "level_id": "snipperclips_square",
+      "area": "beams_and_basic_heroes",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 14681320,
+          "coordinates": [
+            11.0,
+            79.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#snipperclips_square",
+      "visits": [
+        {
+          "part": 39,
+          "event_id": "p39-creator-006",
+          "start": 149,
+          "end": 215,
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=39&t=149",
+          "reviewer": "Creator locations and bounded visual continuity review",
+          "context": null,
+          "audit_note": null,
+          "audit_anchor": null,
+          "uncertainty": 1,
+          "ordinal": 2,
+          "source_part": 39,
+          "display_part": 39
+        }
+      ],
+      "preview": "assets/previews/snipperclips_square.webp",
+      "region_ids": [
+        "-4,1"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "英雄与光6"
+      ]
+    },
+    {
+      "level_id": "snipperclips_diagonal",
+      "area": "beams_and_basic_heroes",
+      "map_layer": "overworld",
+      "entries": [
+        {
+          "marker_id": 115354524,
+          "coordinates": [
+            11.0,
+            77.0,
+            0.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#snipperclips_diagonal",
+      "visits": [
+        {
+          "part": 39,
+          "event_id": "p39-creator-005",
+          "start": 227,
+          "end": 293,
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=39&t=227",
+          "reviewer": "Creator locations and bounded visual continuity review",
+          "context": null,
+          "audit_note": null,
+          "audit_anchor": null,
+          "uncertainty": 1,
+          "ordinal": 3,
+          "source_part": 39,
+          "display_part": 39
+        }
+      ],
+      "preview": "assets/previews/snipperclips_diagonal.webp",
       "region_ids": [
         "-4,1"
       ],
@@ -30621,7 +30771,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 0.5,
-          "ordinal": 2,
+          "ordinal": 4,
           "source_part": 39,
           "display_part": 39
         }
@@ -30671,7 +30821,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 5,
-          "ordinal": 3,
+          "ordinal": 5,
           "source_part": 39,
           "display_part": 39
         }
@@ -30721,7 +30871,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 0.5,
-          "ordinal": 4,
+          "ordinal": 6,
           "source_part": 39,
           "display_part": 39
         }
@@ -30771,7 +30921,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 5,
-          "ordinal": 5,
+          "ordinal": 7,
           "source_part": 39,
           "display_part": 39
         }
@@ -30821,7 +30971,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 5,
-          "ordinal": 6,
+          "ordinal": 8,
           "source_part": 39,
           "display_part": 39
         }
@@ -30871,7 +31021,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 0.5,
-          "ordinal": 7,
+          "ordinal": 9,
           "source_part": 39,
           "display_part": 39
         }
@@ -30921,7 +31071,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 5,
-          "ordinal": 8,
+          "ordinal": 10,
           "source_part": 39,
           "display_part": 39
         }
@@ -30971,7 +31121,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 0.5,
-          "ordinal": 9,
+          "ordinal": 11,
           "source_part": 39,
           "display_part": 39
         }
@@ -31021,7 +31171,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 0.5,
-          "ordinal": 10,
+          "ordinal": 12,
           "source_part": 39,
           "display_part": 39
         }
@@ -31071,7 +31221,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 0.5,
-          "ordinal": 11,
+          "ordinal": 13,
           "source_part": 39,
           "display_part": 39
         }
@@ -31121,7 +31271,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 0.5,
-          "ordinal": 12,
+          "ordinal": 14,
           "source_part": 39,
           "display_part": 39
         }
@@ -31171,7 +31321,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 0.5,
-          "ordinal": 13,
+          "ordinal": 15,
           "source_part": 39,
           "display_part": 39
         }
@@ -31221,7 +31371,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 0.5,
-          "ordinal": 14,
+          "ordinal": 16,
           "source_part": 39,
           "display_part": 39
         }
@@ -31271,7 +31421,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 0.5,
-          "ordinal": 15,
+          "ordinal": 17,
           "source_part": 39,
           "display_part": 39
         }
@@ -40610,6 +40760,56 @@
       ]
     },
     {
+      "level_id": "save_for_later",
+      "area": "underworld_mirrors_and_promesst",
+      "map_layer": "underworld",
+      "entries": [
+        {
+          "marker_id": 95454728,
+          "coordinates": [
+            42.0,
+            83.0,
+            -19.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#save_for_later",
+      "visits": [
+        {
+          "part": 54,
+          "event_id": "p54-creator-004",
+          "start": 1233,
+          "end": 1277,
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=1233",
+          "reviewer": "Creator locations and bounded visual continuity review",
+          "context": null,
+          "audit_note": null,
+          "audit_anchor": null,
+          "uncertainty": 1,
+          "ordinal": 5,
+          "source_part": 54,
+          "display_part": 54
+        }
+      ],
+      "preview": "assets/previews/save_for_later.webp",
+      "region_ids": [
+        "-2,1"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "魔镜与神器7"
+      ]
+    },
+    {
       "level_id": "rubble_chain",
       "area": "underworld_mirrors_and_promesst",
       "map_layer": "underworld",
@@ -40636,7 +40836,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 0.5,
-          "ordinal": 5,
+          "ordinal": 6,
           "source_part": 54,
           "display_part": 54
         }
@@ -40686,7 +40886,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 0.5,
-          "ordinal": 6,
+          "ordinal": 7,
           "source_part": 54,
           "display_part": 54
         }
@@ -40736,7 +40936,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 5,
-          "ordinal": 7,
+          "ordinal": 8,
           "source_part": 54,
           "display_part": 54
         }
@@ -45550,6 +45750,56 @@
       ]
     },
     {
+      "level_id": "design_fts",
+      "area": "endgame3",
+      "map_layer": "underworld",
+      "entries": [
+        {
+          "marker_id": 135312362,
+          "coordinates": [
+            21.0,
+            131.0,
+            -24.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#design_fts",
+      "visits": [
+        {
+          "part": 62,
+          "event_id": "p62-creator-002",
+          "start": 1019,
+          "end": 1262,
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=62&t=1019",
+          "reviewer": "Creator locations and bounded visual continuity review",
+          "context": null,
+          "audit_note": null,
+          "audit_anchor": null,
+          "uncertainty": 1,
+          "ordinal": 4,
+          "source_part": 62,
+          "display_part": 62
+        }
+      ],
+      "preview": "assets/previews/design_fts.webp",
+      "region_ids": [
+        "-3,5"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "出口·低处2"
+      ]
+    },
+    {
       "level_id": "make_thief_goblin_maze_v2",
       "area": "endgame3",
       "map_layer": "underworld",
@@ -45576,7 +45826,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 5,
-          "ordinal": 4,
+          "ordinal": 5,
           "source_part": 62,
           "display_part": 62
         }
@@ -45626,7 +45876,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 5,
-          "ordinal": 5,
+          "ordinal": 6,
           "source_part": 62,
           "display_part": 62
         }
@@ -46665,6 +46915,56 @@
       ]
     },
     {
+      "level_id": "end3_pipeline_setup",
+      "area": "endgame3",
+      "map_layer": "underworld",
+      "entries": [
+        {
+          "marker_id": 115577826,
+          "coordinates": [
+            -15.0,
+            117.0,
+            -24.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#end3_pipeline_setup",
+      "visits": [
+        {
+          "part": 67,
+          "event_id": "p67-creator-003",
+          "start": 35,
+          "end": 95,
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=35",
+          "reviewer": "Creator locations and bounded visual continuity review",
+          "context": null,
+          "audit_note": null,
+          "audit_anchor": null,
+          "uncertainty": 1,
+          "ordinal": 1,
+          "source_part": 67,
+          "display_part": 67
+        }
+      ],
+      "preview": "assets/previews/end3_pipeline_setup.webp",
+      "region_ids": [
+        "-5,4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "出口·低处7"
+      ]
+    },
+    {
       "level_id": "end3_pipeline_design",
       "area": "endgame3",
       "map_layer": "underworld",
@@ -46691,7 +46991,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 5,
-          "ordinal": 1,
+          "ordinal": 2,
           "source_part": 67,
           "display_part": 67
         }
@@ -46741,7 +47041,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 5,
-          "ordinal": 2,
+          "ordinal": 3,
           "source_part": 67,
           "display_part": 67
         }
@@ -46791,7 +47091,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 5,
-          "ordinal": 3,
+          "ordinal": 4,
           "source_part": 67,
           "display_part": 67
         }
@@ -46841,7 +47141,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 5,
-          "ordinal": 4,
+          "ordinal": 5,
           "source_part": 67,
           "display_part": 67
         }
@@ -46891,7 +47191,7 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 5,
-          "ordinal": 5,
+          "ordinal": 6,
           "source_part": 67,
           "display_part": 67
         }
@@ -46939,14 +47239,7 @@
     68
   ],
   "catalog_level_count": 920,
-  "not_observed": [
-    "arcadia_surprise_big",
-    "design_fts",
-    "end3_pipeline_setup",
-    "save_for_later",
-    "snipperclips_diagonal",
-    "snipperclips_square"
-  ],
+  "not_observed": [],
   "offline_zoom": 3,
   "tile_url": "https://joric.github.io/ootss_tileset/tiles/overworld_64k/{z}/{y}/{x}.webp",
   "maps": [
@@ -67181,9 +67474,9 @@
               "part": 29,
               "event_id": "p29-007",
               "start": 633.875,
-              "end": 855.0,
+              "end": 762,
               "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=29&t=633",
-              "reviewer": "Luna visual comparison",
+              "reviewer": "Creator locations and bounded visual continuity review",
               "context": null,
               "audit_note": null,
               "audit_anchor": null,
@@ -67209,6 +67502,56 @@
           },
           "region_titles": [
             "英雄成双2"
+          ]
+        },
+        {
+          "level_id": "arcadia_surprise_big",
+          "area": "clones",
+          "map_layer": "overworld",
+          "entries": [
+            {
+              "marker_id": 14681608,
+              "coordinates": [
+                -24.0,
+                116.0,
+                0.0
+              ]
+            }
+          ],
+          "map_url": "https://joric.github.io/ootss/#arcadia_surprise_big",
+          "visits": [
+            {
+              "part": 29,
+              "event_id": "p29-creator-001",
+              "start": 769,
+              "end": 855,
+              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=29&t=769",
+              "reviewer": "Creator locations and bounded visual continuity review",
+              "context": null,
+              "audit_note": null,
+              "audit_anchor": null,
+              "uncertainty": 1,
+              "ordinal": 8,
+              "source_part": 29,
+              "display_part": 29
+            }
+          ],
+          "preview": "assets/previews/arcadia_surprise_big.webp",
+          "region_ids": [
+            "-5,4"
+          ],
+          "manual": {},
+          "tags": {
+            "big_star": false,
+            "multi_save": false,
+            "notes": ""
+          },
+          "tag_source": {
+            "big_star": "Joric Level_Entry Hero mesh",
+            "multi_save": "manual only"
+          },
+          "region_titles": [
+            "英雄成双3"
           ]
         },
         {
@@ -67238,7 +67581,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 5,
-              "ordinal": 8,
+              "ordinal": 9,
               "source_part": 29,
               "display_part": 29
             }
@@ -67288,7 +67631,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 5,
-              "ordinal": 9,
+              "ordinal": 10,
               "source_part": 29,
               "display_part": 29
             }
@@ -67338,7 +67681,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 0.5,
-              "ordinal": 10,
+              "ordinal": 11,
               "source_part": 29,
               "display_part": 29
             }
@@ -67388,7 +67731,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 0.5,
-              "ordinal": 11,
+              "ordinal": 12,
               "source_part": 29,
               "display_part": 29
             }
@@ -67438,7 +67781,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 5,
-              "ordinal": 12,
+              "ordinal": 13,
               "source_part": 29,
               "display_part": 29
             }
@@ -67488,7 +67831,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 5,
-              "ordinal": 13,
+              "ordinal": 14,
               "source_part": 29,
               "display_part": 29
             }
@@ -67538,7 +67881,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 5,
-              "ordinal": 14,
+              "ordinal": 15,
               "source_part": 29,
               "display_part": 29
             }
@@ -68630,20 +68973,120 @@
             {
               "part": 39,
               "event_id": "p39-001",
-              "start": 57.75,
-              "end": 65.0,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=39&t=57",
-              "reviewer": null,
+              "start": 56,
+              "end": 138,
+              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=39&t=56",
+              "reviewer": "Creator locations and bounded visual continuity review",
               "context": null,
               "audit_note": null,
               "audit_anchor": null,
-              "uncertainty": 5,
+              "uncertainty": 1,
               "ordinal": 1,
               "source_part": 39,
               "display_part": 39
             }
           ],
           "preview": "assets/previews/snipperclips_0_square.webp",
+          "region_ids": [
+            "-4,1"
+          ],
+          "manual": {},
+          "tags": {
+            "big_star": false,
+            "multi_save": false,
+            "notes": ""
+          },
+          "tag_source": {
+            "big_star": "Joric Level_Entry Hero mesh",
+            "multi_save": "manual only"
+          },
+          "region_titles": [
+            "英雄与光6"
+          ]
+        },
+        {
+          "level_id": "snipperclips_square",
+          "area": "beams_and_basic_heroes",
+          "map_layer": "overworld",
+          "entries": [
+            {
+              "marker_id": 14681320,
+              "coordinates": [
+                11.0,
+                79.0,
+                0.0
+              ]
+            }
+          ],
+          "map_url": "https://joric.github.io/ootss/#snipperclips_square",
+          "visits": [
+            {
+              "part": 39,
+              "event_id": "p39-creator-006",
+              "start": 149,
+              "end": 215,
+              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=39&t=149",
+              "reviewer": "Creator locations and bounded visual continuity review",
+              "context": null,
+              "audit_note": null,
+              "audit_anchor": null,
+              "uncertainty": 1,
+              "ordinal": 2,
+              "source_part": 39,
+              "display_part": 39
+            }
+          ],
+          "preview": "assets/previews/snipperclips_square.webp",
+          "region_ids": [
+            "-4,1"
+          ],
+          "manual": {},
+          "tags": {
+            "big_star": false,
+            "multi_save": false,
+            "notes": ""
+          },
+          "tag_source": {
+            "big_star": "Joric Level_Entry Hero mesh",
+            "multi_save": "manual only"
+          },
+          "region_titles": [
+            "英雄与光6"
+          ]
+        },
+        {
+          "level_id": "snipperclips_diagonal",
+          "area": "beams_and_basic_heroes",
+          "map_layer": "overworld",
+          "entries": [
+            {
+              "marker_id": 115354524,
+              "coordinates": [
+                11.0,
+                77.0,
+                0.0
+              ]
+            }
+          ],
+          "map_url": "https://joric.github.io/ootss/#snipperclips_diagonal",
+          "visits": [
+            {
+              "part": 39,
+              "event_id": "p39-creator-005",
+              "start": 227,
+              "end": 293,
+              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=39&t=227",
+              "reviewer": "Creator locations and bounded visual continuity review",
+              "context": null,
+              "audit_note": null,
+              "audit_anchor": null,
+              "uncertainty": 1,
+              "ordinal": 3,
+              "source_part": 39,
+              "display_part": 39
+            }
+          ],
+          "preview": "assets/previews/snipperclips_diagonal.webp",
           "region_ids": [
             "-4,1"
           ],
@@ -68688,7 +69131,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 0.5,
-              "ordinal": 2,
+              "ordinal": 4,
               "source_part": 39,
               "display_part": 39
             }
@@ -68738,7 +69181,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 5,
-              "ordinal": 3,
+              "ordinal": 5,
               "source_part": 39,
               "display_part": 39
             }
@@ -68788,7 +69231,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 0.5,
-              "ordinal": 4,
+              "ordinal": 6,
               "source_part": 39,
               "display_part": 39
             }
@@ -68838,7 +69281,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 5,
-              "ordinal": 5,
+              "ordinal": 7,
               "source_part": 39,
               "display_part": 39
             }
@@ -68888,7 +69331,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 5,
-              "ordinal": 6,
+              "ordinal": 8,
               "source_part": 39,
               "display_part": 39
             }
@@ -68938,7 +69381,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 0.5,
-              "ordinal": 7,
+              "ordinal": 9,
               "source_part": 39,
               "display_part": 39
             }
@@ -68988,7 +69431,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 5,
-              "ordinal": 8,
+              "ordinal": 10,
               "source_part": 39,
               "display_part": 39
             }
@@ -69038,7 +69481,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 0.5,
-              "ordinal": 9,
+              "ordinal": 11,
               "source_part": 39,
               "display_part": 39
             }
@@ -69088,7 +69531,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 0.5,
-              "ordinal": 10,
+              "ordinal": 12,
               "source_part": 39,
               "display_part": 39
             }
@@ -69138,7 +69581,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 0.5,
-              "ordinal": 11,
+              "ordinal": 13,
               "source_part": 39,
               "display_part": 39
             }
@@ -69188,7 +69631,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 0.5,
-              "ordinal": 12,
+              "ordinal": 14,
               "source_part": 39,
               "display_part": 39
             }
@@ -69238,7 +69681,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 0.5,
-              "ordinal": 13,
+              "ordinal": 15,
               "source_part": 39,
               "display_part": 39
             }
@@ -69288,7 +69731,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 0.5,
-              "ordinal": 14,
+              "ordinal": 16,
               "source_part": 39,
               "display_part": 39
             }
@@ -69338,7 +69781,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 0.5,
-              "ordinal": 15,
+              "ordinal": 17,
               "source_part": 39,
               "display_part": 39
             }
@@ -71007,9 +71450,9 @@
           "duration": 1746,
           "download_status": "complete",
           "reviewed": true,
-          "visits": 14,
+          "visits": 15,
           "unmapped_count": 0,
-          "level_count": 14,
+          "level_count": 15,
           "display_part": 29,
           "route": [
             {
@@ -71023,9 +71466,19 @@
               "first_ordinal": 6
             },
             {
+              "region_id": "-5,4",
+              "start": 769,
+              "first_ordinal": 8
+            },
+            {
+              "region_id": "4,4",
+              "start": 862.125,
+              "first_ordinal": 9
+            },
+            {
               "region_id": "3,5",
               "start": 1155.875,
-              "first_ordinal": 10
+              "first_ordinal": 11
             }
           ]
         },
@@ -71103,35 +71556,35 @@
           "duration": 2388,
           "download_status": "complete",
           "reviewed": true,
-          "visits": 15,
+          "visits": 17,
           "unmapped_count": 0,
-          "level_count": 15,
+          "level_count": 17,
           "display_part": 39,
           "route": [
             {
               "region_id": "-4,1",
-              "start": 57.75,
+              "start": 56,
               "first_ordinal": 1
             },
             {
               "region_id": "-5,1",
               "start": 859.5,
-              "first_ordinal": 4
+              "first_ordinal": 6
             },
             {
               "region_id": "-1,-4",
               "start": 1025.375,
-              "first_ordinal": 6
+              "first_ordinal": 8
             },
             {
               "region_id": "-2,-4",
               "start": 1246.0,
-              "first_ordinal": 7
+              "first_ordinal": 9
             },
             {
               "region_id": "-3,-4",
               "start": 1516.375,
-              "first_ordinal": 9
+              "first_ordinal": 11
             }
           ]
         },
@@ -73694,6 +74147,31 @@
           "title": "英雄成双2"
         },
         {
+          "id": "-5,4",
+          "col": -5,
+          "row": 4,
+          "direction": "北4西5",
+          "theme": "英雄成双",
+          "bounds": [
+            -24.5,
+            114.5,
+            -5.5,
+            127.5
+          ],
+          "parts": [
+            29
+          ],
+          "first": [
+            29,
+            769
+          ],
+          "level_ids": [
+            "arcadia_surprise_big"
+          ],
+          "order": 88,
+          "title": "英雄成双3"
+        },
+        {
           "id": "3,5",
           "col": 3,
           "row": 5,
@@ -73719,7 +74197,7 @@
             "surfing_lesson_alt",
             "bard_range3_with_intro"
           ],
-          "order": 88,
+          "order": 89,
           "title": "英雄与水6"
         },
         {
@@ -73747,7 +74225,7 @@
             "metamirror_same_dir_3_alt_2",
             "metamirror_same_dir_5_alt"
           ],
-          "order": 89,
+          "order": 90,
           "title": "镜中之镜1"
         },
         {
@@ -73777,7 +74255,7 @@
             "metamirror_c_alt",
             "two_metamirrors"
           ],
-          "order": 90,
+          "order": 91,
           "title": "镜中之镜2"
         },
         {
@@ -73807,7 +74285,7 @@
             "square_dance",
             "moving_bridge"
           ],
-          "order": 91,
+          "order": 92,
           "title": "魔镜与飞石11"
         },
         {
@@ -73837,7 +74315,7 @@
             "promesst3_streamlined",
             "gem_beam_placement"
           ],
-          "order": 92,
+          "order": 93,
           "title": "光束发射器之库再开1"
         },
         {
@@ -73857,14 +74335,16 @@
           ],
           "first": [
             39,
-            57.75
+            56
           ],
           "level_ids": [
             "snipperclips_0_square",
+            "snipperclips_square",
+            "snipperclips_diagonal",
             "druid_multismash_v3",
             "red_yellow_alter_with_intro_v2"
           ],
-          "order": 93,
+          "order": 94,
           "title": "英雄与光6"
         },
         {
@@ -73890,7 +74370,7 @@
             "security_checkpoints_v2",
             "ocean_blue"
           ],
-          "order": 94,
+          "order": 95,
           "title": "光照之石9"
         },
         {
@@ -73921,7 +74401,7 @@
             "swap_seats",
             "dragon_drag"
           ],
-          "order": 95,
+          "order": 96,
           "title": "光照之石10"
         },
         {
@@ -73948,7 +74428,7 @@
             "green_crystal_rover",
             "mirror_rover_orange_2"
           ],
-          "order": 96,
+          "order": 97,
           "title": "反射光束6"
         },
         {
@@ -73975,7 +74455,7 @@
             "double_trouble",
             "orange_cross"
           ],
-          "order": 97,
+          "order": 98,
           "title": "光束杂项1"
         },
         {
@@ -74002,7 +74482,7 @@
             "double_sideways",
             "floating_orange_purple"
           ],
-          "order": 98,
+          "order": 99,
           "title": "反射光束7"
         },
         {
@@ -74031,7 +74511,7 @@
             "meta_orange_purple",
             "meta_orange_purple_2"
           ],
-          "order": 99,
+          "order": 100,
           "title": "反射光束8"
         }
       ],
@@ -92676,6 +93156,56 @@
           ]
         },
         {
+          "level_id": "save_for_later",
+          "area": "underworld_mirrors_and_promesst",
+          "map_layer": "underworld",
+          "entries": [
+            {
+              "marker_id": 95454728,
+              "coordinates": [
+                42.0,
+                83.0,
+                -19.0
+              ]
+            }
+          ],
+          "map_url": "https://joric.github.io/ootss/#save_for_later",
+          "visits": [
+            {
+              "part": 54,
+              "event_id": "p54-creator-004",
+              "start": 1233,
+              "end": 1277,
+              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=1233",
+              "reviewer": "Creator locations and bounded visual continuity review",
+              "context": null,
+              "audit_note": null,
+              "audit_anchor": null,
+              "uncertainty": 1,
+              "ordinal": 5,
+              "source_part": 54,
+              "display_part": 54
+            }
+          ],
+          "preview": "assets/previews/save_for_later.webp",
+          "region_ids": [
+            "-2,1"
+          ],
+          "manual": {},
+          "tags": {
+            "big_star": false,
+            "multi_save": false,
+            "notes": ""
+          },
+          "tag_source": {
+            "big_star": "Joric Level_Entry Hero mesh",
+            "multi_save": "manual only"
+          },
+          "region_titles": [
+            "魔镜与神器7"
+          ]
+        },
+        {
           "level_id": "rubble_chain",
           "area": "underworld_mirrors_and_promesst",
           "map_layer": "underworld",
@@ -92702,7 +93232,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 0.5,
-              "ordinal": 5,
+              "ordinal": 6,
               "source_part": 54,
               "display_part": 54
             }
@@ -92752,7 +93282,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 0.5,
-              "ordinal": 6,
+              "ordinal": 7,
               "source_part": 54,
               "display_part": 54
             }
@@ -92802,7 +93332,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 5,
-              "ordinal": 7,
+              "ordinal": 8,
               "source_part": 54,
               "display_part": 54
             }
@@ -97616,6 +98146,56 @@
           ]
         },
         {
+          "level_id": "design_fts",
+          "area": "endgame3",
+          "map_layer": "underworld",
+          "entries": [
+            {
+              "marker_id": 135312362,
+              "coordinates": [
+                21.0,
+                131.0,
+                -24.0
+              ]
+            }
+          ],
+          "map_url": "https://joric.github.io/ootss/#design_fts",
+          "visits": [
+            {
+              "part": 62,
+              "event_id": "p62-creator-002",
+              "start": 1019,
+              "end": 1262,
+              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=62&t=1019",
+              "reviewer": "Creator locations and bounded visual continuity review",
+              "context": null,
+              "audit_note": null,
+              "audit_anchor": null,
+              "uncertainty": 1,
+              "ordinal": 4,
+              "source_part": 62,
+              "display_part": 62
+            }
+          ],
+          "preview": "assets/previews/design_fts.webp",
+          "region_ids": [
+            "-3,5"
+          ],
+          "manual": {},
+          "tags": {
+            "big_star": false,
+            "multi_save": false,
+            "notes": ""
+          },
+          "tag_source": {
+            "big_star": "Joric Level_Entry Hero mesh",
+            "multi_save": "manual only"
+          },
+          "region_titles": [
+            "出口·低处2"
+          ]
+        },
+        {
           "level_id": "make_thief_goblin_maze_v2",
           "area": "endgame3",
           "map_layer": "underworld",
@@ -97642,7 +98222,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 5,
-              "ordinal": 4,
+              "ordinal": 5,
               "source_part": 62,
               "display_part": 62
             }
@@ -97692,7 +98272,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 5,
-              "ordinal": 5,
+              "ordinal": 6,
               "source_part": 62,
               "display_part": 62
             }
@@ -98731,6 +99311,56 @@
           ]
         },
         {
+          "level_id": "end3_pipeline_setup",
+          "area": "endgame3",
+          "map_layer": "underworld",
+          "entries": [
+            {
+              "marker_id": 115577826,
+              "coordinates": [
+                -15.0,
+                117.0,
+                -24.0
+              ]
+            }
+          ],
+          "map_url": "https://joric.github.io/ootss/#end3_pipeline_setup",
+          "visits": [
+            {
+              "part": 67,
+              "event_id": "p67-creator-003",
+              "start": 35,
+              "end": 95,
+              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=35",
+              "reviewer": "Creator locations and bounded visual continuity review",
+              "context": null,
+              "audit_note": null,
+              "audit_anchor": null,
+              "uncertainty": 1,
+              "ordinal": 1,
+              "source_part": 67,
+              "display_part": 67
+            }
+          ],
+          "preview": "assets/previews/end3_pipeline_setup.webp",
+          "region_ids": [
+            "-5,4"
+          ],
+          "manual": {},
+          "tags": {
+            "big_star": false,
+            "multi_save": false,
+            "notes": ""
+          },
+          "tag_source": {
+            "big_star": "Joric Level_Entry Hero mesh",
+            "multi_save": "manual only"
+          },
+          "region_titles": [
+            "出口·低处7"
+          ]
+        },
+        {
           "level_id": "end3_pipeline_design",
           "area": "endgame3",
           "map_layer": "underworld",
@@ -98757,7 +99387,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 5,
-              "ordinal": 1,
+              "ordinal": 2,
               "source_part": 67,
               "display_part": 67
             }
@@ -98807,7 +99437,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 5,
-              "ordinal": 2,
+              "ordinal": 3,
               "source_part": 67,
               "display_part": 67
             }
@@ -98857,7 +99487,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 5,
-              "ordinal": 3,
+              "ordinal": 4,
               "source_part": 67,
               "display_part": 67
             }
@@ -98907,7 +99537,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 5,
-              "ordinal": 4,
+              "ordinal": 5,
               "source_part": 67,
               "display_part": 67
             }
@@ -98957,7 +99587,7 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 5,
-              "ordinal": 5,
+              "ordinal": 6,
               "source_part": 67,
               "display_part": 67
             }
@@ -99330,9 +99960,9 @@
           "duration": 1815,
           "download_status": "complete",
           "reviewed": true,
-          "visits": 8,
+          "visits": 9,
           "unmapped_count": 0,
-          "level_count": 7,
+          "level_count": 8,
           "display_part": 54,
           "route": [
             {
@@ -99593,9 +100223,9 @@
           "duration": 2007,
           "download_status": "complete",
           "reviewed": true,
-          "visits": 5,
+          "visits": 6,
           "unmapped_count": 0,
-          "level_count": 5,
+          "level_count": 6,
           "display_part": 62,
           "route": [
             {
@@ -99688,14 +100318,14 @@
           "duration": 1925,
           "download_status": "complete",
           "reviewed": true,
-          "visits": 5,
+          "visits": 6,
           "unmapped_count": 0,
-          "level_count": 5,
+          "level_count": 6,
           "display_part": 67,
           "route": [
             {
               "region_id": "-5,4",
-              "start": 95.0,
+              "start": 35,
               "first_ordinal": 1
             }
           ]
@@ -100835,6 +101465,7 @@
             "nowhere_to_smash_combo",
             "get_through_alt",
             "get_through_depths",
+            "save_for_later",
             "rubble_chain",
             "do_not_want",
             "smartbomb_combo_v3"
@@ -101700,6 +102331,7 @@
             "design_corner",
             "make_sokoban",
             "make_shoreline",
+            "design_fts",
             "make_thief_goblin_maze_v2",
             "make_oneway"
           ],
@@ -101839,9 +102471,10 @@
           ],
           "first": [
             67,
-            95.0
+            35
           ],
           "level_ids": [
+            "end3_pipeline_setup",
             "end3_pipeline_design",
             "end3_pipeline_cleanup",
             "end3_pipeline_cut",

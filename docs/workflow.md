@@ -63,3 +63,5 @@ python -m ootss world-check --run runs/p4 --time 9 --level heroes3_10 --terrain 
 复核同构关时先对比初始角色/机关，再看入场前10–20秒地表位置与固定入口坐标。结局篇内部棋盘复用不等于回到早期世界。若只有相似布局但世界/角色冲突，撤销旧ID、保留候选与时间，交人工核对。运行 `python scripts/audit_differences.py` 生成在线audit.html、CSV和JSON；目录差集不直接证明视频没出现，重复ID也不直接证明多次进入。
 
 用户对连续片段的明确校对优先于相似布局检索结果。`docs/校对.md` 的19条已转为 `data/human_corrections.json`，由 `python scripts/apply_human_corrections.py` 应用；同一份校对重复运行不重复合并。旧事件保存在superseded_events，大世界片段存入excluded_segments（kind=world），不再列为未定位关卡。不要再次用稀疏参考命中把用户确认的长关拆开。
+
+作者后续补充的6个位置记录在`docs/缺失录像位置.md`和`data/creator_locations.json`，用`python scripts/apply_creator_locations.py`应用；脚本同样校验文本散列、拒绝区间重叠并保留旧事件。P39作者提供的00:56实际属于已有0_square，diagonal按录像位置修正为03:47。不要用旧的稀疏候选覆盖这三关的完整连续区间，也不要为了清空差集在同一时间添入两个ID。新资料若与已应用计划不同，先核对并更新计划，不能只重复执行旧脚本。

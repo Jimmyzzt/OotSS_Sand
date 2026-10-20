@@ -12,15 +12,15 @@
     {
       "event_id": "p39-001",
       "level_id": "snipperclips_0_square",
-      "puzzle_start_time": 57.75,
-      "puzzle_end_time": 65.0,
+      "puzzle_start_time": 56,
+      "puzzle_end_time": 138,
       "entry_transition_time": 57.25,
-      "exit_time": null,
+      "exit_time": 138,
       "overworld_approach_time": null,
       "review_status": "confirmed",
       "status": "visited",
       "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
+      "timing_uncertainty_seconds": 1,
       "candidate_levels": [
         {
           "level_id": "snipperclips_0_square",
@@ -86,10 +86,119 @@
           "last_sample": 60.0,
           "sample_count": 1,
           "reason": "视频约1:00的灰色方格平台，左侧密集紫色圆形和粉色发光方块阵列，右侧单独紫色圆与空白格区，与 snipperclips_0_square 参考布局相符。"
+        },
+        {
+          "type": "visual_comparison",
+          "source": "docs/缺失录像位置.md",
+          "image": "results/audit/evidence/creator_p39_identity_world.jpg",
+          "reason": "00:56进入上方(9,84)入口，初态四列粉色按钮对应0_square；原00:57–01:05只是稀疏命中，同次访问延续至02:18退出。保留原ID，不错改成diagonal。"
         }
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
-      "manual_corrections": []
+      "manual_corrections": [],
+      "reviewer": "Creator locations and bounded visual continuity review"
+    },
+    {
+      "event_id": "p39-creator-006",
+      "level_id": "snipperclips_square",
+      "map_layer": "overworld",
+      "puzzle_start_time": 149,
+      "puzzle_end_time": 215,
+      "entry_transition_time": 149,
+      "exit_time": 215,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "reviewer": "Creator locations and bounded visual continuity review",
+      "puzzle_match": {
+        "level_id": "snipperclips_square",
+        "status": "human_confirmed",
+        "method": "creator_location_and_bounded_visual_review"
+      },
+      "overworld_match": {
+        "status": "verified",
+        "method": "manual_world_landmarks_and_initial_board",
+        "coordinates": [
+          11,
+          79,
+          0
+        ],
+        "reason": "原地图同一纵向入口组的位置与角色进入前后连续画面一致；见creator_p39_identity_world.jpg和creator_p39_entries.jpg。"
+      },
+      "evidence": [
+        {
+          "type": "creator_location",
+          "source": "docs/缺失录像位置.md",
+          "item": 6,
+          "reported_start": 149,
+          "reason": "作者提供02:29；主世界中间(11,79)入口、右下黄色按钮阵列均与square参考匹配，03:35退出。03:47另入下方diagonal，并非本关重试。"
+        },
+        {
+          "type": "visual_comparison",
+          "image": "results/audit/evidence/creator_p39_identity_world.jpg"
+        },
+        {
+          "type": "visual_comparison",
+          "image": "results/audit/evidence/creator_p39_entries.jpg"
+        },
+        {
+          "type": "visual_comparison",
+          "image": "results/audit/evidence/creator_p39_exit_checks.jpg"
+        }
+      ]
+    },
+    {
+      "event_id": "p39-creator-005",
+      "level_id": "snipperclips_diagonal",
+      "map_layer": "overworld",
+      "puzzle_start_time": 227,
+      "puzzle_end_time": 293,
+      "entry_transition_time": 227,
+      "exit_time": 293,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "reviewer": "Creator locations and bounded visual continuity review",
+      "puzzle_match": {
+        "level_id": "snipperclips_diagonal",
+        "status": "human_confirmed",
+        "method": "creator_location_and_bounded_visual_review"
+      },
+      "overworld_match": {
+        "status": "verified",
+        "method": "manual_world_landmarks_and_initial_board",
+        "coordinates": [
+          11,
+          77,
+          0
+        ],
+        "reason": "原地图同一纵向入口组的位置与角色进入前后连续画面一致；见creator_p39_identity_world.jpg和creator_p39_entries.jpg。"
+      },
+      "evidence": [
+        {
+          "type": "creator_location",
+          "source": "docs/缺失录像位置.md",
+          "item": 5,
+          "reported_start": 56,
+          "reason": "作者提供00:56实际为上方snipperclips_0_square，保留该已录入ID；本关在03:47从下方(11,77)进入，初始顶行粉色按钮右侧有黄色按钮，与diagonal参考吻合，04:53退出。"
+        },
+        {
+          "type": "visual_comparison",
+          "image": "results/audit/evidence/creator_p39_identity_world.jpg"
+        },
+        {
+          "type": "visual_comparison",
+          "image": "results/audit/evidence/creator_p39_entries.jpg"
+        },
+        {
+          "type": "visual_comparison",
+          "image": "results/audit/evidence/creator_p39_exit_checks.jpg"
+        }
+      ]
     },
     {
       "event_id": "p39-002",
@@ -1240,6 +1349,105 @@
       ],
       "evidence_gallery": "evidence/candidates_03.jpg",
       "manual_corrections": []
+    }
+  ],
+  "superseded_events": [
+    {
+      "event": {
+        "event_id": "p39-001",
+        "level_id": "snipperclips_0_square",
+        "puzzle_start_time": 57.75,
+        "puzzle_end_time": 65.0,
+        "entry_transition_time": 57.25,
+        "exit_time": null,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [
+          {
+            "level_id": "snipperclips_0_square",
+            "area": "beams_and_basic_heroes",
+            "phash_distance": 6,
+            "hist_distance": 0.2689,
+            "sift_inliers": 19,
+            "sift_good": 24
+          },
+          {
+            "level_id": "snipperclips_square",
+            "area": "beams_and_basic_heroes",
+            "phash_distance": 14,
+            "hist_distance": 1.0191,
+            "sift_inliers": 0,
+            "sift_good": 2
+          },
+          {
+            "level_id": "snipperclips_diagonal",
+            "area": "beams_and_basic_heroes",
+            "phash_distance": 16,
+            "hist_distance": 1.0144,
+            "sift_inliers": 0,
+            "sift_good": 3
+          },
+          {
+            "level_id": "clone_adjust_mirror",
+            "area": "clones",
+            "phash_distance": 18,
+            "hist_distance": 1.4038,
+            "sift_inliers": 0,
+            "sift_good": 1
+          },
+          {
+            "level_id": "rotating_cavalry_spaced",
+            "area": "monsters_and_beams",
+            "phash_distance": 20,
+            "hist_distance": 1.1004,
+            "sift_inliers": 0,
+            "sift_good": 1
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "snipperclips_0_square",
+          "area": "beams_and_basic_heroes",
+          "phash_distance": 6,
+          "hist_distance": 0.2689,
+          "sift_inliers": 19,
+          "sift_good": 24,
+          "consistent_samples": 1,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "candidate_layout",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p39\\samples\\00060.000.jpg",
+            "time": 60.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\snipperclips_0_square.webp",
+            "first_sample": 60.0,
+            "last_sample": 60.0,
+            "sample_count": 1,
+            "reason": "视频约1:00的灰色方格平台，左侧密集紫色圆形和粉色发光方块阵列，右侧单独紫色圆与空白格区，与 snipperclips_0_square 参考布局相符。"
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_00.jpg",
+        "manual_corrections": []
+      },
+      "replaced_by_review": "1b8909996f65afa054949f08bf2f179cf0f880e2c0dd34854fef7491513f79bc"
+    }
+  ],
+  "creator_review": {
+    "source": "docs/缺失录像位置.md",
+    "source_sha256": "1b8909996f65afa054949f08bf2f179cf0f880e2c0dd34854fef7491513f79bc",
+    "item_count": 6
+  },
+  "revision_history": [
+    {
+      "source": "docs/缺失录像位置.md",
+      "source_sha256": "1b8909996f65afa054949f08bf2f179cf0f880e2c0dd34854fef7491513f79bc",
+      "item_count": 6
     }
   ]
 }

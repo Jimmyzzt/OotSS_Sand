@@ -3,10 +3,10 @@
   "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
   "counts": {
     "catalog_entries": 920,
-    "mapped_entries": 914,
-    "time_records": 941,
+    "mapped_entries": 920,
+    "time_records": 947,
     "unlocated_segments": 2,
-    "absent_catalog_entries": 6,
+    "absent_catalog_entries": 0,
     "repeated_identity_groups": 21,
     "world_segments_excluded": 13
   },
@@ -767,224 +767,7 @@
       "previous_level_id": null
     }
   ],
-  "absent_catalog_entries": [
-    {
-      "level_id": "arcadia_surprise_big",
-      "map_layer": "overworld",
-      "area": "clones",
-      "coordinates": [
-        [
-          -24.0,
-          116.0,
-          0.0
-        ]
-      ],
-      "map_url": "https://joric.github.io/ootss/#arcadia_surprise_big",
-      "preview": "assets/previews/arcadia_surprise_big.webp",
-      "nearby_known_videos": [
-        {
-          "part": 15,
-          "event_id": "p15-016",
-          "start": 2446.75,
-          "end": 2661.25,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=15&t=2446",
-          "review_status": "confirmed",
-          "level_id": "help_drop",
-          "note": ""
-        },
-        {
-          "part": 16,
-          "event_id": "p16-016",
-          "start": 1639.0,
-          "end": 1701.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=16&t=1639",
-          "review_status": "confirmed",
-          "level_id": "pushing_orange",
-          "note": ""
-        }
-      ]
-    },
-    {
-      "level_id": "design_fts",
-      "map_layer": "underworld",
-      "area": "endgame3",
-      "coordinates": [
-        [
-          21.0,
-          131.0,
-          -24.0
-        ]
-      ],
-      "map_url": "https://joric.github.io/ootss/#design_fts",
-      "preview": "assets/previews/design_fts.webp",
-      "nearby_known_videos": [
-        {
-          "part": 62,
-          "event_id": "p62-007",
-          "start": 463,
-          "end": 1015,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=62&t=463",
-          "review_status": "confirmed",
-          "level_id": "make_shoreline",
-          "note": ""
-        },
-        {
-          "part": 62,
-          "event_id": "p62-020",
-          "start": 1268.625,
-          "end": 1520,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=62&t=1268",
-          "review_status": "confirmed",
-          "level_id": "make_thief_goblin_maze_v2",
-          "note": ""
-        }
-      ]
-    },
-    {
-      "level_id": "end3_pipeline_setup",
-      "map_layer": "underworld",
-      "area": "endgame3",
-      "coordinates": [
-        [
-          -15.0,
-          117.0,
-          -24.0
-        ]
-      ],
-      "map_url": "https://joric.github.io/ootss/#end3_pipeline_setup",
-      "preview": "assets/previews/end3_pipeline_setup.webp",
-      "nearby_known_videos": [
-        {
-          "part": 67,
-          "event_id": "p67-001",
-          "start": 95.0,
-          "end": 189.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=95",
-          "review_status": "confirmed",
-          "level_id": "end3_pipeline_design",
-          "note": ""
-        },
-        {
-          "part": 67,
-          "event_id": "p67-003",
-          "start": 190.0,
-          "end": 680.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=190",
-          "review_status": "confirmed",
-          "level_id": "end3_pipeline_cleanup",
-          "note": ""
-        }
-      ]
-    },
-    {
-      "level_id": "save_for_later",
-      "map_layer": "underworld",
-      "area": "underworld_mirrors_and_promesst",
-      "coordinates": [
-        [
-          42.0,
-          83.0,
-          -19.0
-        ]
-      ],
-      "map_url": "https://joric.github.io/ootss/#save_for_later",
-      "preview": "assets/previews/save_for_later.webp",
-      "nearby_known_videos": [
-        {
-          "part": 54,
-          "event_id": "p54-004",
-          "start": 966.25,
-          "end": 1058.875,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=966",
-          "review_status": "confirmed",
-          "level_id": "get_through_alt",
-          "note": ""
-        },
-        {
-          "part": 54,
-          "event_id": "p54-005",
-          "start": 1075.875,
-          "end": 1204.25,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=1075",
-          "review_status": "confirmed",
-          "level_id": "get_through_depths",
-          "note": ""
-        }
-      ]
-    },
-    {
-      "level_id": "snipperclips_diagonal",
-      "map_layer": "overworld",
-      "area": "beams_and_basic_heroes",
-      "coordinates": [
-        [
-          11.0,
-          77.0,
-          0.0
-        ]
-      ],
-      "map_url": "https://joric.github.io/ootss/#snipperclips_diagonal",
-      "preview": "assets/previews/snipperclips_diagonal.webp",
-      "nearby_known_videos": [
-        {
-          "part": 37,
-          "event_id": "p37-002",
-          "start": 1758.75,
-          "end": 1800.75,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=37&t=1758",
-          "review_status": "confirmed",
-          "level_id": "monkey_in_the_midpoint",
-          "note": ""
-        },
-        {
-          "part": 38,
-          "event_id": "p38-003",
-          "start": 2290.875,
-          "end": 2564,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=38&t=2290",
-          "review_status": "confirmed",
-          "level_id": "gem_beam_placement",
-          "note": ""
-        }
-      ]
-    },
-    {
-      "level_id": "snipperclips_square",
-      "map_layer": "overworld",
-      "area": "beams_and_basic_heroes",
-      "coordinates": [
-        [
-          11.0,
-          79.0,
-          0.0
-        ]
-      ],
-      "map_url": "https://joric.github.io/ootss/#snipperclips_square",
-      "preview": "assets/previews/snipperclips_square.webp",
-      "nearby_known_videos": [
-        {
-          "part": 39,
-          "event_id": "p39-001",
-          "start": 57.75,
-          "end": 65.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=39&t=57",
-          "review_status": "confirmed",
-          "level_id": "snipperclips_0_square",
-          "note": ""
-        },
-        {
-          "part": 37,
-          "event_id": "p37-002",
-          "start": 1758.75,
-          "end": 1800.75,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=37&t=1758",
-          "review_status": "confirmed",
-          "level_id": "monkey_in_the_midpoint",
-          "note": ""
-        }
-      ]
-    }
-  ],
+  "absent_catalog_entries": [],
   "human_review": {
     "source": "docs/校对.md",
     "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
@@ -1427,5 +1210,122 @@
       "part": 67,
       "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=1860"
     }
-  ]
+  ],
+  "creator_locations": {
+    "source": "docs/缺失录像位置.md",
+    "source_sha256": "1b8909996f65afa054949f08bf2f179cf0f880e2c0dd34854fef7491513f79bc",
+    "entries": [
+      {
+        "item": 1,
+        "level_id": "arcadia_surprise_big",
+        "part": 29,
+        "start": 769,
+        "end": 855,
+        "reported_start": 769,
+        "event_id": "p29-creator-001",
+        "evidence": [
+          "creator_p29.jpg",
+          "creator_p29_bounds.jpg"
+        ],
+        "reason": "作者提供12:49；局部复核确认12:43已退出旧关、12:49重新进入，蓝色英雄/浅蓝障碍初态与参考匹配。撤销之前误并入arcadiav2_big的区间。",
+        "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=29&t=769"
+      },
+      {
+        "item": 2,
+        "level_id": "design_fts",
+        "part": 62,
+        "start": 1019,
+        "end": 1262,
+        "reported_start": 1019,
+        "event_id": "p62-creator-002",
+        "evidence": [
+          "creator_p62_design_fts.jpg",
+          "creator_p62_context.jpg",
+          "creator_p62_bounds.jpg"
+        ],
+        "reason": "作者提供16:59；五石传送平台与参考一致。上层设计/下层演示属于连续同关，21:02出现退出标志。",
+        "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=62&t=1019"
+      },
+      {
+        "item": 3,
+        "level_id": "end3_pipeline_setup",
+        "part": 67,
+        "start": 35,
+        "end": 95,
+        "reported_start": 35,
+        "event_id": "p67-creator-003",
+        "evidence": [
+          "creator_p67_end3_pipeline_setup.jpg"
+        ],
+        "reason": "作者提供00:35；单平台、黄角色和右侧分叉管线匹配，01:35进入已录入design教学环节。流程连续，未据此推断独立出入次数或通关。",
+        "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=35"
+      },
+      {
+        "item": 4,
+        "level_id": "save_for_later",
+        "part": 54,
+        "start": 1233,
+        "end": 1277,
+        "reported_start": 1233,
+        "event_id": "p54-creator-004",
+        "evidence": [
+          "creator_p54_save_for_later.jpg"
+        ],
+        "reason": "作者提供20:33；长通道、绿色障碍群和上下镜面一致，21:17退出。",
+        "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=1233"
+      },
+      {
+        "item": 5,
+        "level_id": "snipperclips_diagonal",
+        "part": 39,
+        "start": 227,
+        "end": 293,
+        "reported_start": 56,
+        "event_id": "p39-creator-005",
+        "evidence": [
+          "creator_p39_identity_world.jpg",
+          "creator_p39_entries.jpg",
+          "creator_p39_exit_checks.jpg"
+        ],
+        "reason": "作者提供00:56实际为上方snipperclips_0_square，保留该已录入ID；本关在03:47从下方(11,77)进入，初始顶行粉色按钮右侧有黄色按钮，与diagonal参考吻合，04:53退出。",
+        "world_check": {
+          "status": "verified",
+          "method": "manual_world_landmarks_and_initial_board",
+          "coordinates": [
+            11,
+            77,
+            0
+          ],
+          "reason": "原地图同一纵向入口组的位置与角色进入前后连续画面一致；见creator_p39_identity_world.jpg和creator_p39_entries.jpg。"
+        },
+        "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=39&t=227"
+      },
+      {
+        "item": 6,
+        "level_id": "snipperclips_square",
+        "part": 39,
+        "start": 149,
+        "end": 215,
+        "reported_start": 149,
+        "event_id": "p39-creator-006",
+        "evidence": [
+          "creator_p39_identity_world.jpg",
+          "creator_p39_entries.jpg",
+          "creator_p39_exit_checks.jpg"
+        ],
+        "reason": "作者提供02:29；主世界中间(11,79)入口、右下黄色按钮阵列均与square参考匹配，03:35退出。03:47另入下方diagonal，并非本关重试。",
+        "world_check": {
+          "status": "verified",
+          "method": "manual_world_landmarks_and_initial_board",
+          "coordinates": [
+            11,
+            79,
+            0
+          ],
+          "reason": "原地图同一纵向入口组的位置与角色进入前后连续画面一致；见creator_p39_identity_world.jpg和creator_p39_entries.jpg。"
+        },
+        "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=39&t=149"
+      }
+    ]
+  }
 }

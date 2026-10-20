@@ -283,6 +283,50 @@
       "reviewer": "Luna visual comparison"
     },
     {
+      "event_id": "p62-creator-002",
+      "level_id": "design_fts",
+      "map_layer": "underworld",
+      "puzzle_start_time": 1019,
+      "puzzle_end_time": 1262,
+      "entry_transition_time": 1019,
+      "exit_time": 1262,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "reviewer": "Creator locations and bounded visual continuity review",
+      "puzzle_match": {
+        "level_id": "design_fts",
+        "status": "human_confirmed",
+        "method": "creator_location_and_bounded_visual_review"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "creator_location",
+          "source": "docs/缺失录像位置.md",
+          "item": 2,
+          "reported_start": 1019,
+          "reason": "作者提供16:59；五石传送平台与参考一致。上层设计/下层演示属于连续同关，21:02出现退出标志。"
+        },
+        {
+          "type": "visual_comparison",
+          "image": "results/audit/evidence/creator_p62_design_fts.jpg"
+        },
+        {
+          "type": "visual_comparison",
+          "image": "results/audit/evidence/creator_p62_context.jpg"
+        },
+        {
+          "type": "visual_comparison",
+          "image": "results/audit/evidence/creator_p62_bounds.jpg"
+        }
+      ]
+    },
+    {
       "event_id": "p62-020",
       "level_id": "make_thief_goblin_maze_v2",
       "puzzle_start_time": 1268.625,
@@ -391,6 +435,18 @@
       "evidence_gallery": "evidence/candidates_04.jpg",
       "manual_corrections": [],
       "reviewer": "Luna visual comparison"
+    }
+  ],
+  "creator_review": {
+    "source": "docs/缺失录像位置.md",
+    "source_sha256": "1b8909996f65afa054949f08bf2f179cf0f880e2c0dd34854fef7491513f79bc",
+    "item_count": 6
+  },
+  "revision_history": [
+    {
+      "source": "docs/缺失录像位置.md",
+      "source_sha256": "1b8909996f65afa054949f08bf2f179cf0f880e2c0dd34854fef7491513f79bc",
+      "item_count": 6
     }
   ]
 }

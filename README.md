@@ -50,7 +50,7 @@ Windows 快捷入口（自动把临时目录放进项目，首次自动同步依
 
 机器检索只提供候选；没有视觉证据就写 unknown。进入前主世界的核验单独记录，不因候选坐标存在而声称验证成功。该工具不依赖字幕或付费模型；需要时由 Codex 读取局部图册补充判断。
 
-本地验证：`uv run pytest -q --basetemp runs/tests`、`uv run ruff check ootss tests scripts`。22项Python测试、8项Worker/前端Node测试通过；实现取舍、真实计时及质量限制见 [实施记录](docs/implementation_notes.md)。
+本地验证：`uv run pytest -q --basetemp runs/tests`、`uv run ruff check ootss tests scripts`。23项Python测试、8项Worker/前端Node测试通过；实现取舍、真实计时及质量限制见 [实施记录](docs/implementation_notes.md)。
 
 
 区域视图沿用原地图19×13网格，三地图分别维护区域；原一阶段快照涉及85个区域。选定分P后，右栏显示该P的关卡序号和开始时间；同一关重复访问沿用首次编号。点击区域放大，地图左下显示区域名。P5的镜之群岛1–6与参考图一致。演示模式隐藏顶栏，用左右箭头沿区域路线前进，Esc退出，适合录制阶段索引。
@@ -60,5 +60,7 @@ Windows 快捷入口（自动把临时目录放进项目，首次自动同步依
 插入索引分P后，运行 `uv run python scripts/update_video_links.py`，按CID匹配新分P，再重建 `atlas --all-worlds`；源分P与关卡编号保持不变。发布、手动标注与录屏操作见 [部署说明](docs/publishing.md)。
 
 综合地图仅使用画面对照确认的访问（P68隐藏内容按用户要求排除），后续阶段回访主世界仍归主世界。未能定位的棋盘保留时间链接，不绘制猜测坐标；各地图、分P统计和限制见 [综合录入报告](results/worlds/REPORT.md)。
+
+用户连续性校对与作者补充位置应用后，三地图已覆盖目录全部920个入口，共947条时间记录；P44仍有两段未定位。P39的00:56对应已有0_square，缺失diagonal经入口位置和初态复核定位在03:47；完整说明见[补充位置记录](docs/缺失录像位置.md)。
 
 人工校对入口：[在线差异清单](https://sand.zzt.si/audit.html) / [审计记录](results/audit/REPORT.md)。P02同构桥面已结合初始角色和入场位置改正；结局篇跨世界错配撤销旧坐标。未定位、目录差集和重复ID分别列出，均不能据此自动认定新关卡或独立进入次数。

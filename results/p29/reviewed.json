@@ -535,9 +535,9 @@
       "event_id": "p29-007",
       "level_id": "arcadiav2_big",
       "puzzle_start_time": 633.875,
-      "puzzle_end_time": 855.0,
+      "puzzle_end_time": 762,
       "entry_transition_time": 633.375,
-      "exit_time": 857.0,
+      "exit_time": 762,
       "overworld_approach_time": null,
       "review_status": "confirmed",
       "status": "visited",
@@ -600,21 +600,55 @@
       },
       "evidence": [
         {
-          "type": "candidate_layout",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p29\\samples\\00640.000.jpg",
-          "time": 640.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\arcadiav2_big.webp",
-          "first_sample": 635.0,
-          "last_sample": 725.0,
-          "sample_count": 19,
-          "reason": "从10:34至14:15持续是同一固定四象限棋盘：中央纵横石墙、四区金色框和绿/黄方块障碍位置不变。其间候选依次交替命中 arcadiav2_big 与 arcadia_surprise_big，逐帧可见仅角色/变色动画和障碍移动造成外观相似度变化；全时间轴内没有黑场、地图或重进门的入口转场，因此合并为一次 arcadiav2_big 访问。14:15出现黑色章节标记后，14:22开始的 arcadia_surprise_big2 是有不同障碍初始位置的独立新布局，另列为 p29-013。"
+          "type": "visual_comparison",
+          "source": "docs/缺失录像位置.md",
+          "image": "results/audit/evidence/creator_p29_bounds.jpg",
+          "reason": "12:41退出动画、12:43主世界；此前延长到14:15且声称无转场的判断已撤销，后续12:49为另一入口。10:40初始棋盘仍匹配arcadiav2_big。"
         }
       ],
       "evidence_gallery": "evidence/candidates_01.jpg",
-      "manual_corrections": [
-        "合并 p29-008至012：同一固定四象限棋盘且无黑场/地图/重新进入转场，变色角色及动态障碍造成候选ID交替。"
-      ],
-      "reviewer": "Luna visual comparison"
+      "manual_corrections": [],
+      "reviewer": "Creator locations and bounded visual continuity review"
+    },
+    {
+      "event_id": "p29-creator-001",
+      "level_id": "arcadia_surprise_big",
+      "map_layer": "overworld",
+      "puzzle_start_time": 769,
+      "puzzle_end_time": 855,
+      "entry_transition_time": 769,
+      "exit_time": 855,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "reviewer": "Creator locations and bounded visual continuity review",
+      "puzzle_match": {
+        "level_id": "arcadia_surprise_big",
+        "status": "human_confirmed",
+        "method": "creator_location_and_bounded_visual_review"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "creator_location",
+          "source": "docs/缺失录像位置.md",
+          "item": 1,
+          "reported_start": 769,
+          "reason": "作者提供12:49；局部复核确认12:43已退出旧关、12:49重新进入，蓝色英雄/浅蓝障碍初态与参考匹配。撤销之前误并入arcadiav2_big的区间。"
+        },
+        {
+          "type": "visual_comparison",
+          "image": "results/audit/evidence/creator_p29.jpg"
+        },
+        {
+          "type": "visual_comparison",
+          "image": "results/audit/evidence/creator_p29_bounds.jpg"
+        }
+      ]
     },
     {
       "event_id": "p29-013",
@@ -1224,6 +1258,108 @@
       "evidence_gallery": "evidence/candidates_03.jpg",
       "manual_corrections": [],
       "reviewer": "Luna visual comparison"
+    }
+  ],
+  "superseded_events": [
+    {
+      "event": {
+        "event_id": "p29-007",
+        "level_id": "arcadiav2_big",
+        "puzzle_start_time": 633.875,
+        "puzzle_end_time": 855.0,
+        "entry_transition_time": 633.375,
+        "exit_time": 857.0,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [
+          {
+            "level_id": "arcadiav2_big",
+            "area": "clones",
+            "phash_distance": 2,
+            "hist_distance": 0.7815,
+            "sift_inliers": 228,
+            "sift_good": 242
+          },
+          {
+            "level_id": "arcadia_surprise_big",
+            "area": "clones",
+            "phash_distance": 8,
+            "hist_distance": 0.8146,
+            "sift_inliers": 139,
+            "sift_good": 164
+          },
+          {
+            "level_id": "arcadia_surprise_big2",
+            "area": "clones",
+            "phash_distance": 12,
+            "hist_distance": 0.7931,
+            "sift_inliers": 7,
+            "sift_good": 23
+          },
+          {
+            "level_id": "push_down_a_lot_small",
+            "area": "heroes_in_3d",
+            "phash_distance": 18,
+            "hist_distance": 1.412,
+            "sift_inliers": 5,
+            "sift_good": 10
+          },
+          {
+            "level_id": "meta_orange_purple_2",
+            "area": "beams_and_mirrors",
+            "phash_distance": 20,
+            "hist_distance": 1.2343,
+            "sift_inliers": 4,
+            "sift_good": 6
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "arcadiav2_big",
+          "area": "clones",
+          "phash_distance": 2,
+          "hist_distance": 0.7815,
+          "sift_inliers": 228,
+          "sift_good": 242,
+          "consistent_samples": 19,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "candidate_layout",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p29\\samples\\00640.000.jpg",
+            "time": 640.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\arcadiav2_big.webp",
+            "first_sample": 635.0,
+            "last_sample": 725.0,
+            "sample_count": 19,
+            "reason": "从10:34至14:15持续是同一固定四象限棋盘：中央纵横石墙、四区金色框和绿/黄方块障碍位置不变。其间候选依次交替命中 arcadiav2_big 与 arcadia_surprise_big，逐帧可见仅角色/变色动画和障碍移动造成外观相似度变化；全时间轴内没有黑场、地图或重进门的入口转场，因此合并为一次 arcadiav2_big 访问。14:15出现黑色章节标记后，14:22开始的 arcadia_surprise_big2 是有不同障碍初始位置的独立新布局，另列为 p29-013。"
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_01.jpg",
+        "manual_corrections": [
+          "合并 p29-008至012：同一固定四象限棋盘且无黑场/地图/重新进入转场，变色角色及动态障碍造成候选ID交替。"
+        ],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_review": "1b8909996f65afa054949f08bf2f179cf0f880e2c0dd34854fef7491513f79bc"
+    }
+  ],
+  "creator_review": {
+    "source": "docs/缺失录像位置.md",
+    "source_sha256": "1b8909996f65afa054949f08bf2f179cf0f880e2c0dd34854fef7491513f79bc",
+    "item_count": 6
+  },
+  "revision_history": [
+    {
+      "source": "docs/缺失录像位置.md",
+      "source_sha256": "1b8909996f65afa054949f08bf2f179cf0f880e2c0dd34854fef7491513f79bc",
+      "item_count": 6
     }
   ]
 }

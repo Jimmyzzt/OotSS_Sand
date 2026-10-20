@@ -445,6 +445,42 @@
       "reviewer": "Luna visual comparison"
     },
     {
+      "event_id": "p54-creator-004",
+      "level_id": "save_for_later",
+      "map_layer": "underworld",
+      "puzzle_start_time": 1233,
+      "puzzle_end_time": 1277,
+      "entry_transition_time": 1233,
+      "exit_time": 1277,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "reviewer": "Creator locations and bounded visual continuity review",
+      "puzzle_match": {
+        "level_id": "save_for_later",
+        "status": "human_confirmed",
+        "method": "creator_location_and_bounded_visual_review"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence": [
+        {
+          "type": "creator_location",
+          "source": "docs/缺失录像位置.md",
+          "item": 4,
+          "reported_start": 1233,
+          "reason": "作者提供20:33；长通道、绿色障碍群和上下镜面一致，21:17退出。"
+        },
+        {
+          "type": "visual_comparison",
+          "image": "results/audit/evidence/creator_p54_save_for_later.jpg"
+        }
+      ]
+    },
+    {
       "event_id": "p54-006",
       "level_id": "rubble_chain",
       "puzzle_start_time": 1301.25,
@@ -710,6 +746,18 @@
       "evidence_gallery": "evidence/candidates_01.jpg",
       "manual_corrections": [],
       "reviewer": "Luna visual comparison"
+    }
+  ],
+  "creator_review": {
+    "source": "docs/缺失录像位置.md",
+    "source_sha256": "1b8909996f65afa054949f08bf2f179cf0f880e2c0dd34854fef7491513f79bc",
+    "item_count": 6
+  },
+  "revision_history": [
+    {
+      "source": "docs/缺失录像位置.md",
+      "source_sha256": "1b8909996f65afa054949f08bf2f179cf0f880e2c0dd34854fef7491513f79bc",
+      "item_count": 6
     }
   ]
 }

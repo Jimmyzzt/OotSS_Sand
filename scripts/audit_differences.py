@@ -26,6 +26,7 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
     catalog = read_json(catalog)
     by_id = {r["level_id"]: r for r in catalog["levels"]}
     decisions = read_json("data/audit_decisions.json")
+    creator_plan = read_json("data/creator_locations.json")
     bvid = read_json("results/series/manifest.json")["bvid"]
     remapping = read_json("data/video_links.json").get("parts", {})
 
@@ -126,6 +127,9 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
         )
 
     fixes = [{**d, "url": url(d["part"], d["start"])} for d in decisions["decisions"]]
+    creator_entries = [
+        {**e, "url": url(e["part"], e["start"])} for e in creator_plan["entries"]
+    ]
     result = {
         "scope": "P1–67；P68隐藏题目已排除。入口身份、连续片段与独立进入次数分别核对。",
         "map_commit": catalog["commit"],
@@ -145,6 +149,11 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
         "human_review": human_metadata,
         "human_confirmed_visits": human_visits,
         "excluded_world_segments": world_segments,
+        "creator_locations": {
+            "source": creator_plan["source"],
+            "source_sha256": creator_plan["source_sha256"],
+            "entries": creator_entries,
+        },
     }
     write_json(source / "differences.json", result)
     write_json(out / "audit.json", result)
@@ -277,17 +286,49 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
         if human_metadata
         else ""
     )
+    creator_section = (
+        '<section id="creator"><h2>作者补充位置 · 6 个缺失入口已补齐</h2>'
+        "<p>P39 的00:56实为已录入的snipperclips_0_square；根据进关前位置和初始棋盘，"
+        "diagonal修正为03:47，square保留02:29。P29已拆开误合并的同构变体。"
+        "其余时间沿用作者提供的入口时间，可能包含入口动画；内部切换不另计新入口。</p>"
+        + table(
+            ["视频区间", "入口ID", "依据"],
+            [
+                [
+                    times(e),
+                    esc(e["level_id"]),
+                    esc(e["reason"])
+                    + "<br>"
+                    + " · ".join(
+                        link("assets/audit/" + name, "对照图") for name in e["evidence"]
+                    ),
+                ]
+                for e in creator_entries
+            ],
+        )
+        + "</section>"
+    )
+    absent_section = (
+        "<p>目录中的入口均已有视频时间记录。剩余未定位片段和重复ID仍需分别校对，目录差集为零不代表所有记录均已复核无误。</p>"
+        if not absent
+        else "<p>下面的就近视频仅按同一地图的空间距离排列，方便找进关前的位置；不是该关出现的证据，也没有据此自动填入地图。</p>"
+        + table(
+            ["原地图入口 / 坐标", "参考布局", "就近已知入口的视频（仅导航线索）"],
+            absent_rows,
+        )
+    )
     intro = (
         f"目录 {len(by_id)} 个入口；当前已映射 {len(observed)} 个，差集 {len(absent)} 个；"
         f"{len(missing_identity)} 段尚未定位，{len(repeated)} 组重复ID待核。P68已排除。"
     )
-    body = f"""<header><a href="index.html">← 返回地图</a><h1>入口差异与人工校对清单</h1><p>{intro}</p><p>“未定位”不等于“原地图不存在”；“目录未出现”不等于“视频一定没拍到”。重复ID也不直接等于重复关卡。这里只纠正有位置、角色、物理世界或用户确认依据的错配，其他保留待核。</p><nav><a href="#human">用户校对</a> · <a href="#fixes">历史纠正</a> · <a href="#repeats">重复ID</a> · <a href="#unlocated">未定位片段</a> · <a href="#absent">目录差集</a> · <a href="audit.csv">下载CSV</a> · <a href="audit.json">JSON</a></nav></header>
+    body = f"""<header><a href="index.html">← 返回地图</a><h1>入口差异与人工校对清单</h1><p>{intro}</p><p>“未定位”不等于“原地图不存在”；“目录未出现”不等于“视频一定没拍到”。重复ID也不直接等于重复关卡。这里只纠正有位置、角色、物理世界或用户确认依据的错配，其他保留待核。</p><nav><a href="#creator">作者补充位置</a> · <a href="#human">用户校对</a> · <a href="#fixes">历史纠正</a> · <a href="#repeats">重复ID</a> · <a href="#unlocated">未定位片段</a> · <a href="#absent">目录差集</a> · <a href="audit.csv">下载CSV</a> · <a href="audit.json">JSON</a></nav></header>
+{creator_section}
 {owner_section}
 <section id="fixes"><h2>本轮纠正与撤销</h2>{table(["视频 / 原编号", "旧匹配", "处理", "证据与待核点"], fix_rows)}</section>
 <section id="repeats"><h2>其余重复ID待核</h2><p>用户已确认未切关的片段不再列为重复记录。其余组仍保留，优先检查带具体疑点的组；重复可能为正常重试或回访，不应仅由布局变化判定进出关卡。</p>{table(["入口ID", "全部时间窗", "疑点与核对方法"], repeat_rows)}</section>
 <section id="unlocated"><h2>剩余未定位片段</h2><p>已归入原关卡和明确在大世界的片段已移出此表。剩余片段仍需定位，不能据此宣布原图没有这些关。</p>{table(["视频", "旧ID（如有）", "原因"], unknown_rows)}</section>
-<section id="absent"><h2>原图有、当前尚无可靠记录的入口</h2><p>下面的就近视频仅按同一地图的空间距离排列，方便找进关前的位置；不是该关出现的证据，也没有据此自动填入地图。</p>{table(["原地图入口 / 坐标", "参考布局", "就近已知入口的视频（仅导航线索）"], absent_rows)}</section>
-<footer>固定原地图提交：{esc(catalog["commit"])}。本轮有界复核：P02、P05、P24、P43/P44、P50、P64；P61/P65/P67补做跨世界筛查。完整系列仅做目录差集与重复规则检查，未声称逐帧重审全部视频。数据与截图为公开攻略/原图的核对证据。</footer>"""
+<section id="absent"><h2>原图有、当前尚无可靠记录的入口</h2>{absent_section}</section>
+<footer>固定原地图提交：{esc(catalog["commit"])}。作者补充后有界复核：P29、P39、P54、P62、P67；此前P02、P05、P24、P43/P44、P50、P64及跨世界筛查证据继续保留。未声称逐帧重审全部视频。数据与截图为公开攻略/原图的核对证据。</footer>"""
     css = """*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f5efdf;color:#303c38;font:14px/1.6 system-ui,"Microsoft YaHei",sans-serif}header,section,footer{max-width:1280px;margin:auto;padding:18px 24px}header{padding-top:26px}h1{font-size:25px}h2{font-size:19px;margin-top:10px}p{max-width:1000px;color:#657067}a{color:#366956}nav a{display:inline-block;margin:3px 0}section{scroll-margin-top:12px}small{display:block;color:#69756b;font-size:11px}table{border-collapse:collapse;width:100%;background:#fbf7ec}th,td{text-align:left;vertical-align:top;padding:10px 12px;border:1px solid #d6cfbd;overflow-wrap:anywhere}th{background:#e5ecdf;white-space:nowrap}td:first-child{min-width:180px}td:nth-child(2){min-width:170px}img{max-width:100%;border-radius:4px}.table-scroll{overflow-x:auto}footer{font-size:12px;color:#69756b}span[id]{scroll-margin-top:20px}@media(max-width:760px){header,section,footer{padding:12px}h1{font-size:21px}table{font-size:12px}th,td{padding:7px}}"""
     page = (
         '<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>入口差异与人工校对清单</title><style>'
@@ -299,6 +340,19 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
     (out / "audit.html").write_text(page, encoding="utf-8")
 
     csv_rows = []
+    for e in creator_entries:
+        csv_rows.append(
+            {
+                "type": "作者补充位置（已录入）",
+                "id": e["event_id"],
+                "part": e["part"],
+                "start": e["start"],
+                "end": e["end"],
+                "level_id": e["level_id"],
+                "reason": e["reason"],
+                "url": e["url"],
+            }
+        )
     for e in human_visits:
         csv_rows.append(
             {
@@ -398,14 +452,18 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
         "",
         "在线清单：https://sand.zzt.si/audit.html",
         "",
-        "## 已纠正/撤销",
-        "",
     ]
     if human_metadata:
         md[6:6] = [
             f"已应用用户[{human_metadata['source']}](../../{human_metadata['source']})的{human_metadata['item_count']}条校对；{len(human_visits)}条连续访问已合并/确认，{len(world_segments)}段大世界记录不再视作未知关卡。",
             "",
         ]
+    md += ["## 作者补充的六个入口", ""]
+    for e in creator_entries:
+        md.append(
+            f"- [P{e['part']:02} {clock(e['start'])}]({e['url']})：`{e['level_id']}`。{e['reason']}"
+        )
+    md += ["", "## 历史纠正", ""]
     for d in fixes:
         md.append(
             f"- [{d['event_id']} {clock(d['start'])}]({d['url']})：`{d['previous_level_id']}` → `{d['level_id'] or '未定位'}`。{d['reason']}"
