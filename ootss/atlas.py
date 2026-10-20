@@ -139,7 +139,7 @@ def build_atlas(out="results/stage1", parts=range(1, 25), offline_zoom=3):
         else {},
     )
     write_json(out / "index.json", data)
-    for filename in ("atlas.css", "atlas.js"):
+    for filename in ("atlas.css", "atlas.js", "atlas-ui.js"):
         shutil.copyfile(Path(__file__).parent / "templates" / filename, out / filename)
     with (out / "visits.csv").open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(

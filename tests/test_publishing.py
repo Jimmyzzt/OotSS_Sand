@@ -18,6 +18,7 @@ def test_public_package_excludes_unrelated_source_files(tmp_path):
         "index.json",
         "atlas.css",
         "atlas.js",
+        "atlas-ui.js",
         "visits.csv",
         "raw.mp4",
         ".env",
@@ -30,3 +31,4 @@ def test_public_package_excludes_unrelated_source_files(tmp_path):
     assert not (out / "raw.mp4").exists()
     assert not (out / ".env").exists()
     assert (out / "assets/map.webp").exists()
+    assert (out / "atlas-ui.js").read_text() == "fixture"

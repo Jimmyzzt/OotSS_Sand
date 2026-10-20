@@ -1,44 +1,11 @@
 <!doctype html>
 <html lang="zh-CN" data-theme="light">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="塞德莎沉星之序攻略：区域顺序、关卡编号与视频时间索引。">
-<title>沉星之序 · 攻略区域与关卡索引</title>
-<link rel="stylesheet" href="assets/leaflet.css"><link rel="stylesheet" href="atlas.css">
-</head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="塞德莎沉星之序攻略：区域顺序、关卡编号与视频时间索引。"><title>沉星之序 · 塞德莎攻略索引</title><link rel="stylesheet" href="assets/leaflet.css"><link rel="stylesheet" href="atlas.css"></head>
 <body>
-<header class="topbar">
-<div class="brand"><span class="brand-star">✦</span><div><h1>沉星之序 <span>攻略索引</span></h1><p>塞德莎 · 一阶段 Overworld</p></div></div>
-<div class="stats" id="counts"></div>
-<div class="toolbar"><button id="theme" aria-label="切换深浅主题">☾ 深色</button><button id="settings-open">设置</button><button id="present">演示模式</button></div>
-</header>
-<div class="controlbar">
-<div class="segments" role="group" aria-label="地图视图"><button id="view-regions" aria-pressed="true">区域划分</button><button id="view-levels" aria-pressed="false">关卡地图</button></div>
-<select id="part" aria-label="选择分 P"><option value="">全部分 P</option></select>
-<select id="region" aria-label="选择区域"><option value="">全部涉及区域</option></select>
-<input id="search" aria-label="搜索关卡或区域" placeholder="搜索关卡 / 区域">
-<button id="fit">适应当前范围</button><button id="world">完整地图</button>
-</div>
-<main>
-<section class="map-shell"><div id="map" aria-label="可缩放拖动的真实地图"></div>
-<div class="map-caption" id="map-caption"><span>一阶段区域总览</span><strong>按攻略先后浏览</strong></div>
-<div class="map-key"><span class="gold">★ 大星星</span><span class="cyan">▣ 多存档</span><span>编号按所选分 P 首次出现顺序</span></div>
-<div class="route-controls"><button id="previous" aria-label="上一个区域">←</button><span id="route-position">区域路线</span><button id="next" aria-label="下一个区域">→</button><button id="exit-present" hidden>退出演示</button></div>
-</section>
-<aside>
-<div class="side-heading"><div class="eyebrow">WALKTHROUGH INDEX</div><h2 id="list-title">关卡顺序</h2><p id="status"></p></div>
-<div id="route-list" aria-label="区域顺序"></div>
-<div id="list" aria-label="谜题开始时间列表"></div>
-<footer><p>点击关卡定位；点击时间播放对应攻略。手动标注保存在本机，可在设置中导出。</p><a href="https://joric.github.io/ootss/" target="_blank" rel="noopener">原地图 Joric</a> · <a href="visits.csv">CSV</a> · <a href="index.json">数据</a><details><summary>处理范围与来源</summary><div id="coverage"></div><p>仅收录视频中已确认的入口访问；内部房间不另造地表坐标。浅层底图本地保存，深层瓦片联网加载。地图 Unlicense / <a href="assets/LEAFLET-LICENSE.txt">Leaflet BSD</a>。</p></details></footer>
-</aside>
-</main>
-<dialog id="settings"><form method="dialog"><div class="dialog-title"><h2>阅读与标注设置</h2><button aria-label="关闭设置">×</button></div></form>
-<label>页面主题<select id="theme-select"><option value="light">米白浅色</option><option value="dark">柔和深色</option></select></label>
-<label>标点大小 <output id="point-value"></output><input id="point-size" aria-label="标点大小" type="range" min="0.6" max="2" step="0.1"></label>
-<label>标签大小 <output id="label-value"></output><input id="label-size" aria-label="标签大小" type="range" min="10" max="28" step="1"></label>
-<p class="hint">地图上的编号、区域名称随标签大小调整。放大地图后显示关卡编号；选择分 P 后，以该分 P 的关卡顺序编号。</p>
-<div class="settings-actions"><button id="export-annotations">导出手动标注</button><label class="file-button">导入手动标注<input id="import-annotations" type="file" accept="application/json,.json"></label></div>
-<p id="annotation-status" class="hint" role="status"></p><p class="hint">多存档关只由人工勾选。大星星初值来自原地图，可手动调整。导出文件可交回维护者更新站点。</p>
-</dialog>
-<script src="assets/leaflet.js"></script><script>const DATA=__ATLAS_DATA__;</script><script src="atlas.js"></script>
-</body></html>
+<header class="topbar"><div class="brand"><h1>沉星之序</h1><span>塞德莎攻略索引</span></div><div class="toolbar"><button id="theme" aria-label="切换深浅主题">☾ 深色</button><button id="settings-open" aria-expanded="false" aria-controls="settings">设置 ▾</button><button id="present">演示模式</button></div></header>
+<div class="controlbar"><label class="toggle"><input id="grid-toggle" type="checkbox" checked>网格</label><select id="part" aria-label="选择分 P"></select><select id="region" aria-label="选择区域"></select><input id="search" aria-label="搜索关卡或区域" placeholder="搜索关卡 / 区域"><button id="fit">适应范围</button><button id="world">完整地图</button></div>
+<main><section class="map-shell"><div id="map" aria-label="可缩放拖动的真实地图"></div><div class="map-key" aria-label="图例"><span><i class="legend-dot"></i>普通关</span><span><i class="legend-dot big"></i>★ 大星星</span><span><i class="legend-dot multi"></i>多存档</span></div><div class="route-controls"><button id="previous" aria-label="上一个区域">←</button><span id="route-position">区域路线</span><button id="next" aria-label="下一个区域">→</button><button id="exit-present" hidden>退出演示</button></div><button id="sidebar-expand" hidden aria-label="展开右侧栏">☰ 关卡</button></section>
+<div id="sidebar-resize" role="separator" aria-label="调整右侧栏宽度" aria-orientation="vertical" tabindex="0" aria-valuemin="240" aria-valuemax="640" aria-valuenow="360"></div>
+<aside id="sidebar"><div class="side-heading"><div class="side-title"><h2 id="list-title">关卡顺序</h2><button id="sidebar-collapse" aria-label="收起右侧栏">›</button></div><div class="side-tools"><span id="status"></span><div class="segments" aria-label="侧栏视图"><button id="list-view" aria-pressed="false">列表</button><button id="compact-view" aria-pressed="true">紧凑</button></div></div></div><div id="sidebar-scroll"><details id="route-details"><summary>区域顺序</summary><div id="route-list" aria-label="区域顺序"></div></details><div id="list" aria-label="谜题开始时间列表"></div><footer>点击序号定位；点击时间播放攻略。<br>★ 大星星 · 方形为多存档关。重复访问沿用序号。</footer></div></aside></main>
+<section id="settings" class="settings-menu" aria-label="阅读与标注设置" hidden><div class="settings-title"><strong>阅读与标注</strong><button id="settings-close" aria-label="关闭设置">×</button></div><label>页面主题<select id="theme-select"><option value="light">米白浅色</option><option value="dark">柔和深色</option></select></label><label>标点大小 <output id="point-value"></output><input id="point-size" aria-label="标点大小" type="range" min="0.6" max="2.6" step="0.1"></label><label>标签大小 <output id="label-value"></output><input id="label-size" aria-label="标签大小" type="range" min="10" max="28" step="1"></label><div class="label-switches"><label><input id="region-labels" type="checkbox" checked>区域标签</label><label><input id="level-labels" type="checkbox" checked>关卡标签</label></div><p class="hint">标点随地图缩放；1.6× 为默认大小。混合分 P 区域以颜色区分，相邻同分 P 仅在首关保留前缀。</p><div class="settings-actions"><button id="export-annotations">导出手动标注</button><label class="file-button">导入手动标注<input id="import-annotations" type="file" accept="application/json,.json"></label></div><p id="annotation-status" class="hint" role="status"></p><p class="hint">多存档关由人工勾选。标注保存在本机，请导出留存。</p><details><summary>数据与来源</summary><p id="counts" class="hint"></p><a href="https://joric.github.io/ootss/" target="_blank" rel="noopener">原地图 Joric</a> · <a href="visits.csv">CSV</a> · <a href="index.json">数据</a><div id="coverage" class="hint"></div><p class="hint">仅收录视频已确认的入口。浅层底图本地保存，深层瓦片联网加载。地图 Unlicense / <a href="assets/LEAFLET-LICENSE.txt">Leaflet BSD</a>。</p></details></section>
+<script src="assets/leaflet.js"></script><script>const DATA=__ATLAS_DATA__;</script><script src="atlas-ui.js"></script><script src="atlas.js"></script></body></html>

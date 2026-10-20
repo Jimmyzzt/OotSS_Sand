@@ -20,4 +20,4 @@ jobs:
         with:
           node-version: '24'
       - run: node --check ootss/templates/atlas.js
-      - run: node --test deployment/worker.test.js
+      - run: node --test deployment/worker.test.js tests/atlas-ui.test.js
