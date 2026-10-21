@@ -46,3 +46,30 @@ test('editorial import keeps legacy flags and validates named regions without pr
   assert.deepEqual({...next.regions},{'overworld:1,0':{title:'镜之群岛'}});
   assert.throws(()=>AtlasUI.parseEditorial({version:2,levels:[]},ids,keys));
 });
+
+test('region labels try the requested corner then the specified collision fallback order',()=>{
+  const bounds={left:0,top:0,right:300,bottom:300},size={width:30,height:20};
+  const blocked=[];
+  for(const position of AtlasUI.positions){
+    assert.equal(AtlasUI.chooseRegionPosition(bounds,size,blocked),position);
+    blocked.push(AtlasUI.labelRect(bounds,size,position));
+  }
+  assert.equal(AtlasUI.chooseRegionPosition(bounds,size,blocked,'top-right'),'bottom-left');
+  assert.equal(AtlasUI.chooseRegionPosition(bounds,size,[],'middle-center'),'middle-center');
+});
+
+test('level label direction and per-level shifts keep the existing default ordinal anchor',()=>{
+  assert.deepEqual(AtlasUI.levelLabelStyle('top-right',5,4),{x:5,y:-4,tx:0,ty:-100});
+  assert.deepEqual(AtlasUI.levelLabelStyle('bottom-center',12,9,7,-3),{x:7,y:6,tx:-50,ty:0});
+  assert.deepEqual(AtlasUI.levelLabelStyle('middle-left',12,9),{x:-12,y:0,tx:-100,ty:-50});
+});
+
+test('v3 import preserves map editing and clamps untrusted text/style fields',()=>{
+  const source={version:3,levels:{a:{big_star:true,labelPosition:'bottom-left',labelShiftX:900}},regions:{r:{title:' 区域 ',labelPosition:'top-right',texts:[{text:'<b>注释</b>',x:10,y:20,size:100,strokeWidth:99,color:'red;display:none',strokeColor:'#112233'},{text:'outside',x:999,y:0}]}},style:{regionLabel:22,levelLabel:16,regionPosition:'top-left',point:1.8,offsetX:900,theme:'injected'}};
+  const parsed=AtlasUI.parseEditorial(source,new Set(['a']),new Set(['r']));
+  assert.equal(parsed.levels.a.labelShiftX,200);
+  assert.equal(parsed.regions.r.texts.length,1);
+  assert.equal(parsed.regions.r.texts[0].text,'<b>注释</b>');
+  assert.deepEqual(AtlasUI.textStyle(parsed.regions.r.texts[0]),{size:72,color:'#fff6a8',strokeWidth:8,strokeColor:'#112233'});
+  assert.deepEqual(parsed.style,{point:1.8,regionLabel:22,levelLabel:16,offsetX:80,regionPosition:'top-left'});
+});
