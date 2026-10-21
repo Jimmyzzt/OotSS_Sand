@@ -14,6 +14,7 @@ def package(source="results/worlds", destination="dist"):
         "atlas.js",
         "atlas-ui.js",
         "atlas-editor.js",
+        "favicon.svg",
         "visits.csv",
     ]:
         shutil.copyfile(source / name, destination / name)

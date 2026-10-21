@@ -73,3 +73,44 @@ test('v3 import preserves map editing and clamps untrusted text/style fields',()
   assert.deepEqual(AtlasUI.textStyle(parsed.regions.r.texts[0]),{size:72,color:'#fff6a8',strokeWidth:8,strokeColor:'#112233'});
   assert.deepEqual(parsed.style,{point:1.8,regionLabel:22,levelLabel:16,offsetX:80,regionPosition:'top-left'});
 });
+
+test('position adaptation runs only for a filtered view and can be switched off',()=>{
+  const prefs={regionLabels:true,adaptPositions:true};
+  assert.equal(AtlasUI.adaptiveEnabled(prefs,{part:0,region:null}),false);
+  assert.equal(AtlasUI.adaptiveEnabled(prefs,{part:19,region:null}),true);
+  assert.equal(AtlasUI.adaptiveEnabled(prefs,{part:0,region:'r'}),true);
+  assert.equal(AtlasUI.adaptiveEnabled({...prefs,adaptPositions:false},{part:19}),false);
+});
+
+test('bounded edit history coalesces typing, supports redo, and discards a diverged redo branch',()=>{
+  const h=AtlasUI.editHistory(2),initial={title:'a'};
+  h.record(initial,'typing',100);initial.title='b';h.record(initial,'typing',200);
+  assert.deepEqual(h.undo({title:'c'}),{title:'a'});
+  assert.deepEqual(h.redo({title:'a'}),{title:'c'});
+  h.undo({title:'c'});h.record({title:'a'},'new',300);
+  assert.equal(h.canRedo,false);
+  h.record({title:'d'},null,400);h.record({title:'e'},null,500);
+  assert.deepEqual(h.undo({title:'f'}),{title:'e'});
+  assert.deepEqual(h.undo({title:'e'}),{title:'d'});
+  assert.equal(h.undo({title:'d'}),null);
+});
+
+test('resetting map styles restores labels while preserving annotation meaning and text locations',()=>{
+  const levels={a:{big_star:true,notes:'保留',labelHidden:true,labelShiftX:40,labelPosition:'top-left'}};
+  const regions={r:{title:'区域名',labelPosition:'top-right',style:{point:2.4},texts:[{id:'a',text:'说明',x:10,y:20,size:40,color:'#ffffff',strokeWidth:4,strokeColor:'#000000'}]}};
+  const reset=AtlasUI.resetMapStyles(levels,regions);
+  assert.deepEqual(reset.levels.a,{big_star:true,notes:'保留'});
+  assert.equal(reset.regions.r.title,'区域名');
+  assert.equal(reset.regions.r.style,undefined);
+  assert.deepEqual(reset.regions.r.texts[0],{id:'a',text:'说明',x:10,y:20,...AtlasUI.textStyle({size:18})});
+  assert.equal(levels.a.labelHidden,true);
+});
+
+test('hidden labels and isolated region styles survive editorial import without global switches leaking in',()=>{
+  const p=AtlasUI.parseEditorial({version:3,levels:{a:{labelHidden:true}},regions:{r:{style:{point:2.4,regionLabel:24,adaptPositions:false}}}},new Set(['a']),new Set(['r']));
+  assert.equal(p.levels.a.labelHidden,true);
+  assert.deepEqual(p.regions.r.style,{point:2.4,regionLabel:24});
+  const regionStyle={...AtlasUI.defaults,...p.regions.r.style};
+  assert.equal(regionStyle.regionLabel,24);
+  assert.equal(regionStyle.offsetY,4);
+});

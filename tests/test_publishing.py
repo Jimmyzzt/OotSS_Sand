@@ -20,6 +20,7 @@ def test_public_package_excludes_unrelated_source_files(tmp_path):
         "atlas.js",
         "atlas-ui.js",
         "atlas-editor.js",
+        "favicon.svg",
         "visits.csv",
         "raw.mp4",
         ".env",
@@ -34,3 +35,4 @@ def test_public_package_excludes_unrelated_source_files(tmp_path):
     assert (out / "assets/map.webp").exists()
     assert (out / "atlas-ui.js").read_text() == "fixture"
     assert (out / "atlas-editor.js").read_text() == "fixture"
+    assert (out / "favicon.svg").read_text() == "fixture"

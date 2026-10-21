@@ -8,6 +8,7 @@ globalThis.AtlasUI = {
       const r = {};
       for (const k of ['big_star','multi_save']) if (typeof v[k] === 'boolean') r[k] = v[k];
       if (typeof v.notes === 'string') r.notes = v.notes.slice(0,200);
+      if (typeof v.labelHidden === 'boolean') r.labelHidden = v.labelHidden;
       if (AtlasUI.positions.includes(v.labelPosition)) r.labelPosition = v.labelPosition;
       for (const k of ['labelShiftX','labelShiftY']) if (Number.isFinite(v[k])) r[k] = Math.max(-200,Math.min(200,v[k]));
       levels[id] = r;
@@ -18,6 +19,7 @@ globalThis.AtlasUI = {
         const r = {};
         if (typeof v.title === 'string' && v.title.trim()) r.title = v.title.trim().slice(0,80);
         if (AtlasUI.positions.includes(v.labelPosition)) r.labelPosition = v.labelPosition;
+        if (v.style && typeof v.style === 'object') r.style = AtlasUI.mapStyle(v.style);
         if (Array.isArray(v.texts)) r.texts = v.texts.slice(0,100).flatMap((t,i)=>{
           if (!t || typeof t.text !== 'string' || !t.text.trim() || !Number.isFinite(t.x) || !Number.isFinite(t.y) || t.x < -25 || t.x > 171 || t.y < -25 || t.y > 171) return [];
           return [{id:`text-${i}`,text:t.text.slice(0,300),x:t.x,y:t.y,...AtlasUI.textStyle(t)}];
@@ -38,8 +40,35 @@ globalThis.AtlasUI = {
     const r={};
     for (const [k,min,max] of [['point',.6,2.6],['regionLabel',10,42],['levelLabel',10,42],['offsetX',0,80],['offsetY',0,80]]) if(Number.isFinite(v[k])) r[k]=Math.max(min,Math.min(max,v[k]));
     for(const k of ['regionPosition','levelPosition']) if(AtlasUI.positions.includes(v[k])) r[k]=v[k];
-    for(const k of ['regionLabels','levelLabels']) if(typeof v[k]==='boolean')r[k]=v[k];
+    for(const k of ['regionLabels','levelLabels','adaptPositions','customTexts']) if(typeof v[k]==='boolean')r[k]=v[k];
     return r;
+  },
+  defaults:{point:1.6,regionLabel:18,levelLabel:18,regionPosition:'bottom-left',levelPosition:'top-right',offsetX:5,offsetY:4},
+  mapStyle(v={}) {
+    const s=AtlasUI.readerStyle(v);
+    return Object.fromEntries(Object.keys(AtlasUI.defaults).filter(k=>k in s).map(k=>[k,s[k]]));
+  },
+  adaptiveEnabled(prefs,state) {return Boolean(prefs.regionLabels&&prefs.adaptPositions&&(state.part||state.region));},
+  resetMapStyles(levels,regions) {
+    const clone=structuredClone({levels,regions});
+    for(const r of Object.values(clone.levels)) for(const k of ['labelHidden','labelPosition','labelShiftX','labelShiftY'])delete r[k];
+    for(const r of Object.values(clone.regions)) {
+      delete r.style;delete r.labelPosition;
+      if(Array.isArray(r.texts))r.texts=r.texts.map(t=>({...t,...AtlasUI.textStyle({size:AtlasUI.defaults.regionLabel})}));
+    }
+    return clone;
+  },
+  editHistory(limit=60) {
+    const past=[],future=[];let group=null,last=0;
+    return {
+      record(state,key,now=Date.now()) {
+        if(!key||key!==group||now-last>700){past.push(structuredClone(state));if(past.length>limit)past.shift();}
+        future.length=0;group=key;last=now;
+      },
+      undo(state) {if(!past.length)return null;future.push(structuredClone(state));group=null;return past.pop();},
+      redo(state) {if(!future.length)return null;past.push(structuredClone(state));group=null;return future.pop();},
+      get canUndo(){return past.length>0},get canRedo(){return future.length>0}
+    };
   },
   labelRect(bounds,size,position,padding=5) {
     const [vertical,horizontal]=position.split('-');

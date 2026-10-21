@@ -233,7 +233,13 @@ def build_atlas(
     else:
         enrich(data, marker_features, editorial, links)
     write_json(out / "index.json", data)
-    for filename in ("atlas.css", "atlas.js", "atlas-ui.js", "atlas-editor.js"):
+    for filename in (
+        "atlas.css",
+        "atlas.js",
+        "atlas-ui.js",
+        "atlas-editor.js",
+        "favicon.svg",
+    ):
         shutil.copyfile(Path(__file__).parent / "templates" / filename, out / filename)
     with (out / "visits.csv").open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(
@@ -285,7 +291,13 @@ def build_atlas(
         encoding="utf-8"
     )
     # A new HTML response must not reuse a cached script or stylesheet from an older build.
-    for filename in ("atlas.css", "atlas.js", "atlas-ui.js", "atlas-editor.js"):
+    for filename in (
+        "atlas.css",
+        "atlas.js",
+        "atlas-ui.js",
+        "atlas-editor.js",
+        "favicon.svg",
+    ):
         version = hashlib.sha256((out / filename).read_bytes()).hexdigest()[:12]
         template = template.replace(f'"{filename}"', f'"{filename}?v={version}"')
     payload = json.dumps(data, ensure_ascii=False).replace("<", "\\u003c")
