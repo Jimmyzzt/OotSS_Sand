@@ -1,5 +1,11 @@
 /* Prefixes stay outside the ordinal box so the ordinal anchor never moves. */
 globalThis.AtlasUI = {
+  includesRegion(level,state,forMap=false) {
+    return !state.region || (forMap && Boolean(state.part)) || level.region_ids.includes(state.region);
+  },
+  inViewport(xy,bounds,focused=false) {
+    return focused || !bounds || (xy[0]>=bounds.west && xy[0]<=bounds.east && xy[1]>=bounds.south && xy[1]<=bounds.north);
+  },
   parseEditorial(data, levelIds, regionKeys) {
     if (!data || ![1,2,3].includes(data.version) || !data.levels || typeof data.levels !== 'object' || Array.isArray(data.levels)) throw Error('不是有效的标注文件');
     const levels = Object.create(null), regions = Object.create(null);

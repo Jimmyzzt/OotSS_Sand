@@ -1,5 +1,5 @@
 {
-  "scope": "P1–67；P68隐藏题目已排除。入口身份、连续片段与独立进入次数分别核对。",
+  "scope": "源P1–67；源P68（当前P69）隐藏题目已排除。播放链接按CID对齐当前合集；事件编号沿用源编号。",
   "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
   "counts": {
     "catalog_entries": 920,
@@ -28,7 +28,7 @@
       "candidates": [
         "heroes1_4.5"
       ],
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=2&t=136"
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=3&t=136"
     },
     {
       "event_id": "p43-003",
@@ -48,7 +48,7 @@
         "end2_heroes_1_2"
       ],
       "merged_into": "p43-002",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=834"
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=44&t=834"
     },
     {
       "event_id": "p43-005",
@@ -68,7 +68,7 @@
         "end2_heroes_1_2"
       ],
       "merged_into": "p43-002",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=850"
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=44&t=850"
     },
     {
       "event_id": "p43-009",
@@ -88,7 +88,7 @@
         "end2_heroes_1_5"
       ],
       "merged_into": "p43-007",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=1001"
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=44&t=1001"
     },
     {
       "event_id": "p64-010",
@@ -109,7 +109,7 @@
         "end2_mirror1"
       ],
       "merged_into": "p64-009",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=1765"
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1765"
     },
     {
       "event_id": "p64-012",
@@ -130,7 +130,7 @@
         "end2_mirror1"
       ],
       "merged_into": "p64-009",
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=2061"
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=2061"
     }
   ],
   "repeated_identities": [
@@ -143,7 +143,7 @@
           "event_id": "p5-004",
           "start": 103.75,
           "end": 130.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=103",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=6&t=103",
           "review_status": "confirmed",
           "level_id": "mirror_4",
           "note": "三个匹配窗之间有同一棋盘连续操作/画线讲解；可能应合并一次连续访问，边界待人工核对。"
@@ -153,7 +153,7 @@
           "event_id": "p5-005",
           "start": 145.0,
           "end": 155.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=145",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=6&t=145",
           "review_status": "confirmed",
           "level_id": "mirror_4",
           "note": "三个匹配窗之间有同一棋盘连续操作/画线讲解；可能应合并一次连续访问，边界待人工核对。"
@@ -163,7 +163,7 @@
           "event_id": "p5-006",
           "start": 185.0,
           "end": 220.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=185",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=6&t=185",
           "review_status": "confirmed",
           "level_id": "mirror_4",
           "note": "三个匹配窗之间有同一棋盘连续操作/画线讲解；可能应合并一次连续访问，边界待人工核对。"
@@ -179,7 +179,7 @@
           "event_id": "p5-029",
           "start": 1884.5,
           "end": 1905.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=1884",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=6&t=1884",
           "review_status": "confirmed",
           "level_id": "mirror_14",
           "note": "31:44–32:02有界帧未见退场，疑似同一棋盘连续操作；入口次数待核。"
@@ -189,7 +189,7 @@
           "event_id": "p5-030",
           "start": 1920.0,
           "end": 1930.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=5&t=1920",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=6&t=1920",
           "review_status": "confirmed",
           "level_id": "mirror_14",
           "note": "31:44–32:02有界帧未见退场，疑似同一棋盘连续操作；入口次数待核。"
@@ -205,7 +205,7 @@
           "event_id": "p24-001",
           "start": 63.875,
           "end": 213.375,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=63",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=25&t=63",
           "review_status": "confirmed",
           "level_id": "end1",
           "note": "大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。"
@@ -215,7 +215,7 @@
           "event_id": "p24-002",
           "start": 304.25,
           "end": 370.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=304",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=25&t=304",
           "review_status": "confirmed",
           "level_id": "end1",
           "note": "大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。"
@@ -225,7 +225,7 @@
           "event_id": "p24-003",
           "start": 615.0,
           "end": 625.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=615",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=25&t=615",
           "review_status": "confirmed",
           "level_id": "end1",
           "note": "大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。"
@@ -235,7 +235,7 @@
           "event_id": "p24-004",
           "start": 655.0,
           "end": 668.5,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=655",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=25&t=655",
           "review_status": "confirmed",
           "level_id": "end1",
           "note": "大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。"
@@ -245,7 +245,7 @@
           "event_id": "p24-005",
           "start": 955.0,
           "end": 967.125,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=955",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=25&t=955",
           "review_status": "confirmed",
           "level_id": "end1",
           "note": "大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。"
@@ -261,7 +261,7 @@
           "event_id": "p31-035",
           "start": 3268.625,
           "end": 3285.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=31&t=3268",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=32&t=3268",
           "review_status": "confirmed",
           "level_id": "mirror_carry_duo",
           "note": ""
@@ -271,7 +271,7 @@
           "event_id": "p31-036",
           "start": 3475.0,
           "end": 3555.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=31&t=3475",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=32&t=3475",
           "review_status": "confirmed",
           "level_id": "mirror_carry_duo",
           "note": ""
@@ -287,7 +287,7 @@
           "event_id": "p36-001",
           "start": 55.0,
           "end": 65.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=36&t=55",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=37&t=55",
           "review_status": "confirmed",
           "level_id": "vertical_promesst_v2",
           "note": ""
@@ -297,7 +297,7 @@
           "event_id": "p36-002",
           "start": 480.0,
           "end": 490.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=36&t=480",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=37&t=480",
           "review_status": "confirmed",
           "level_id": "vertical_promesst_v2",
           "note": ""
@@ -313,7 +313,7 @@
           "event_id": "p44-004",
           "start": 558.625,
           "end": 595.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=44&t=558",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=45&t=558",
           "review_status": "confirmed",
           "level_id": "end2_prism_hp",
           "note": ""
@@ -323,7 +323,7 @@
           "event_id": "p44-005",
           "start": 730.0,
           "end": 740.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=44&t=730",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=45&t=730",
           "review_status": "confirmed",
           "level_id": "end2_prism_hp",
           "note": ""
@@ -339,7 +339,7 @@
           "event_id": "p46-004",
           "start": 210.375,
           "end": 270.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=46&t=210",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=47&t=210",
           "review_status": "confirmed",
           "level_id": "torus_blocks_alt_v4",
           "note": ""
@@ -349,7 +349,7 @@
           "event_id": "p46-005",
           "start": 280.0,
           "end": 305.25,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=46&t=280",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=47&t=280",
           "review_status": "confirmed",
           "level_id": "torus_blocks_alt_v4",
           "note": ""
@@ -365,7 +365,7 @@
           "event_id": "p46-007",
           "start": 463.5,
           "end": 490.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=46&t=463",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=47&t=463",
           "review_status": "confirmed",
           "level_id": "jenga_assorted",
           "note": ""
@@ -375,7 +375,7 @@
           "event_id": "p46-008",
           "start": 850.0,
           "end": 902.5,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=46&t=850",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=47&t=850",
           "review_status": "confirmed",
           "level_id": "jenga_assorted",
           "note": ""
@@ -391,7 +391,7 @@
           "event_id": "p48-005",
           "start": 602.125,
           "end": 620.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=48&t=602",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=49&t=602",
           "review_status": "confirmed",
           "level_id": "moving_through_mirrors_v3",
           "note": ""
@@ -401,7 +401,7 @@
           "event_id": "p48-006",
           "start": 930.0,
           "end": 940.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=48&t=930",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=49&t=930",
           "review_status": "confirmed",
           "level_id": "moving_through_mirrors_v3",
           "note": ""
@@ -417,7 +417,7 @@
           "event_id": "p48-012",
           "start": 1548.0,
           "end": 1650.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=48&t=1548",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=49&t=1548",
           "review_status": "confirmed",
           "level_id": "self_teleporting",
           "note": ""
@@ -427,7 +427,7 @@
           "event_id": "p48-013",
           "start": 1660.0,
           "end": 1682.875,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=48&t=1660",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=49&t=1660",
           "review_status": "confirmed",
           "level_id": "self_teleporting",
           "note": ""
@@ -443,7 +443,7 @@
           "event_id": "p49-009",
           "start": 964.25,
           "end": 1050.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=49&t=964",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=964",
           "review_status": "confirmed",
           "level_id": "mega_clone_v2",
           "note": ""
@@ -453,7 +453,7 @@
           "event_id": "p49-010",
           "start": 1170.0,
           "end": 1190.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=49&t=1170",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1170",
           "review_status": "confirmed",
           "level_id": "mega_clone_v2",
           "note": ""
@@ -463,7 +463,7 @@
           "event_id": "p49-011",
           "start": 1235.0,
           "end": 1245.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=49&t=1235",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1235",
           "review_status": "confirmed",
           "level_id": "mega_clone_v2",
           "note": ""
@@ -473,7 +473,7 @@
           "event_id": "p49-012",
           "start": 1270.0,
           "end": 1289.125,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=49&t=1270",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=1270",
           "review_status": "confirmed",
           "level_id": "mega_clone_v2",
           "note": ""
@@ -489,7 +489,7 @@
           "event_id": "p51-009",
           "start": 795.0,
           "end": 953.62,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=795",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=52&t=795",
           "review_status": "confirmed",
           "level_id": "water_bender_v3",
           "note": ""
@@ -499,7 +499,7 @@
           "event_id": "p51-013",
           "start": 1215.0,
           "end": 1265.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=1215",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=52&t=1215",
           "review_status": "confirmed",
           "level_id": "water_bender_v3",
           "note": ""
@@ -515,7 +515,7 @@
           "event_id": "p53-006",
           "start": 801.75,
           "end": 950.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=801",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=801",
           "review_status": "confirmed",
           "level_id": "button_and_beam_v3",
           "note": ""
@@ -525,7 +525,7 @@
           "event_id": "p53-017",
           "start": 1290.0,
           "end": 1300.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=1290",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=1290",
           "review_status": "confirmed",
           "level_id": "button_and_beam_v3",
           "note": ""
@@ -541,7 +541,7 @@
           "event_id": "p54-001",
           "start": 50.0,
           "end": 60.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=50",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=55&t=50",
           "review_status": "confirmed",
           "level_id": "wand_reintro",
           "note": ""
@@ -551,7 +551,7 @@
           "event_id": "p54-002",
           "start": 270.0,
           "end": 280.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=270",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=55&t=270",
           "review_status": "confirmed",
           "level_id": "wand_reintro",
           "note": ""
@@ -567,7 +567,7 @@
           "event_id": "p57-002",
           "start": 212.25,
           "end": 250.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=57&t=212",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=212",
           "review_status": "confirmed",
           "level_id": "boot_cycle_warrior",
           "note": ""
@@ -577,7 +577,7 @@
           "event_id": "p57-003",
           "start": 355.0,
           "end": 413.625,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=57&t=355",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=355",
           "review_status": "confirmed",
           "level_id": "boot_cycle_warrior",
           "note": ""
@@ -593,7 +593,7 @@
           "event_id": "p57-019",
           "start": 2651.125,
           "end": 2657.125,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=57&t=2651",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2651",
           "review_status": "confirmed",
           "level_id": "ortho2",
           "note": ""
@@ -603,7 +603,7 @@
           "event_id": "p57-021",
           "start": 2760.375,
           "end": 2840.875,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=57&t=2760",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2760",
           "review_status": "confirmed",
           "level_id": "ortho2",
           "note": ""
@@ -619,7 +619,7 @@
           "event_id": "p57-022",
           "start": 2889.5,
           "end": 2892.125,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=57&t=2889",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2889",
           "review_status": "confirmed",
           "level_id": "frontier",
           "note": ""
@@ -629,7 +629,7 @@
           "event_id": "p57-025",
           "start": 2956.375,
           "end": 3021.5,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=57&t=2956",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2956",
           "review_status": "confirmed",
           "level_id": "frontier",
           "note": ""
@@ -645,7 +645,7 @@
           "event_id": "p61-002",
           "start": 397.25,
           "end": 410.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=61&t=397",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=62&t=397",
           "review_status": "confirmed",
           "level_id": "end3_heroes_1",
           "note": ""
@@ -655,7 +655,7 @@
           "event_id": "p61-003",
           "start": 429.625,
           "end": 841.625,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=61&t=429",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=62&t=429",
           "review_status": "confirmed",
           "level_id": "end3_heroes_1",
           "note": ""
@@ -671,7 +671,7 @@
           "event_id": "p61-016",
           "start": 1157.625,
           "end": 1167.625,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=61&t=1157",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=62&t=1157",
           "review_status": "confirmed",
           "level_id": "end3_mirror_2_alt2",
           "note": ""
@@ -681,7 +681,7 @@
           "event_id": "p61-017",
           "start": 1209.125,
           "end": 1575.375,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=61&t=1209",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=62&t=1209",
           "review_status": "confirmed",
           "level_id": "end3_mirror_2_alt2",
           "note": ""
@@ -697,7 +697,7 @@
           "event_id": "p61-028",
           "start": 1877,
           "end": 1897.375,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=61&t=1877",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=62&t=1877",
           "review_status": "confirmed",
           "level_id": "end3_skipping_red",
           "note": ""
@@ -707,7 +707,7 @@
           "event_id": "p61-029",
           "start": 1922.375,
           "end": 2116.875,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=61&t=1922",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=62&t=1922",
           "review_status": "confirmed",
           "level_id": "end3_skipping_red",
           "note": ""
@@ -723,7 +723,7 @@
           "event_id": "p66-001",
           "start": 166.0,
           "end": 280.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=66&t=166",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=166",
           "review_status": "confirmed",
           "level_id": "environment_art_grid",
           "note": ""
@@ -733,7 +733,7 @@
           "event_id": "p66-003",
           "start": 475.0,
           "end": 560.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=66&t=475",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=475",
           "review_status": "confirmed",
           "level_id": "environment_art_grid",
           "note": ""
@@ -747,7 +747,7 @@
       "event_id": "p44-012",
       "start": 3100.0,
       "end": 3209.5,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=44&t=3100",
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=45&t=3100",
       "review_status": "unknown",
       "level_id": null,
       "note": "",
@@ -759,7 +759,7 @@
       "event_id": "p44-013",
       "start": 3235.0,
       "end": 3710.0,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=44&t=3235",
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=45&t=3235",
       "review_status": "unknown",
       "level_id": null,
       "note": "",
@@ -779,7 +779,7 @@
       "event_id": "p37-u01",
       "start": 105.0,
       "end": 1520.0,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=37&t=105",
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=38&t=105",
       "review_status": "confirmed",
       "level_id": "promesst2.5_deeper",
       "note": ""
@@ -789,7 +789,7 @@
       "event_id": "p38-001",
       "start": 14.25,
       "end": 2290,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=38&t=14",
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=39&t=14",
       "review_status": "confirmed",
       "level_id": "promesst3_streamlined",
       "note": ""
@@ -799,7 +799,7 @@
       "event_id": "p38-003",
       "start": 2290.875,
       "end": 2564,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=38&t=2290",
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=39&t=2290",
       "review_status": "confirmed",
       "level_id": "gem_beam_placement",
       "note": ""
@@ -809,7 +809,7 @@
       "event_id": "p43-002",
       "start": 576.75,
       "end": 860.25,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=576",
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=44&t=576",
       "review_status": "confirmed",
       "level_id": "end2_heroes_1_2",
       "note": ""
@@ -819,7 +819,7 @@
       "event_id": "p43-007",
       "start": 861,
       "end": 1025,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=43&t=861",
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=44&t=861",
       "review_status": "confirmed",
       "level_id": "end2_heroes_1_5",
       "note": ""
@@ -829,7 +829,7 @@
       "event_id": "p50-001",
       "start": 0,
       "end": 1785,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=50&t=0",
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=0",
       "review_status": "confirmed",
       "level_id": "magnitudes_v3",
       "note": ""
@@ -839,7 +839,7 @@
       "event_id": "p51-001",
       "start": 25,
       "end": 250,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=25",
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=52&t=25",
       "review_status": "confirmed",
       "level_id": "zach_lilies_v3",
       "note": ""
@@ -849,7 +849,7 @@
       "event_id": "p53-013",
       "start": 1305.0,
       "end": 1555,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=1305",
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=1305",
       "review_status": "confirmed",
       "level_id": "monster_promesst_v3",
       "note": ""
@@ -859,7 +859,7 @@
       "event_id": "p61-031",
       "start": 2163.25,
       "end": 2552.0,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=61&t=2163",
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=62&t=2163",
       "review_status": "confirmed",
       "level_id": "best_beam_colors",
       "note": ""
@@ -869,7 +869,7 @@
       "event_id": "p64-009",
       "start": 1726.625,
       "end": 2080,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=64&t=1726",
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1726",
       "review_status": "confirmed",
       "level_id": "end2_mirror1",
       "note": ""
@@ -879,7 +879,7 @@
       "event_id": "p65-001",
       "start": 118.0,
       "end": 529,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=118",
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=66&t=118",
       "review_status": "confirmed",
       "level_id": "end3_off_topic_alt",
       "note": ""
@@ -889,7 +889,7 @@
       "event_id": "p65-002",
       "start": 532.125,
       "end": 748,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=532",
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=66&t=532",
       "review_status": "confirmed",
       "level_id": "end3_off_topic_mirror",
       "note": ""
@@ -899,7 +899,7 @@
       "event_id": "p65-004",
       "start": 748.25,
       "end": 1290,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=748",
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=66&t=748",
       "review_status": "confirmed",
       "level_id": "end3_off_topic_heroes",
       "note": ""
@@ -909,7 +909,7 @@
       "event_id": "p65-005",
       "start": 1298.375,
       "end": 1708,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1298",
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=66&t=1298",
       "review_status": "confirmed",
       "level_id": "end3_reorder_skipping_fix",
       "note": ""
@@ -919,7 +919,7 @@
       "event_id": "p65-007",
       "start": 1709,
       "end": 2083,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=65&t=1709",
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=66&t=1709",
       "review_status": "confirmed",
       "level_id": "end3_reorder_mirror",
       "note": ""
@@ -946,7 +946,7 @@
         }
       ],
       "part": 51,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=14"
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=52&t=14"
     },
     {
       "segment_id": "p51-world-after-first",
@@ -966,7 +966,7 @@
         }
       ],
       "part": 51,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=250"
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=52&t=250"
     },
     {
       "segment_id": "world-p51-u03",
@@ -988,7 +988,7 @@
         }
       ],
       "part": 51,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=960"
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=52&t=960"
     },
     {
       "segment_id": "world-p51-u04",
@@ -1010,7 +1010,7 @@
         }
       ],
       "part": 51,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=51&t=1490"
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=52&t=1490"
     },
     {
       "segment_id": "world-p52-u01",
@@ -1032,7 +1032,7 @@
         }
       ],
       "part": 52,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=52&t=165"
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=165"
     },
     {
       "segment_id": "world-p52-u02",
@@ -1054,7 +1054,7 @@
         }
       ],
       "part": 52,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=52&t=920"
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=920"
     },
     {
       "segment_id": "world-p53-u01",
@@ -1076,7 +1076,7 @@
         }
       ],
       "part": 53,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=185"
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=185"
     },
     {
       "segment_id": "world-p53-u02",
@@ -1098,7 +1098,7 @@
         }
       ],
       "part": 53,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=780"
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=780"
     },
     {
       "segment_id": "world-p53-u04",
@@ -1120,7 +1120,7 @@
         }
       ],
       "part": 53,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=53&t=1695"
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=1695"
     },
     {
       "segment_id": "world-p67-009",
@@ -1142,7 +1142,7 @@
         }
       ],
       "part": 67,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=1140"
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=68&t=1140"
     },
     {
       "segment_id": "world-p67-010",
@@ -1164,7 +1164,7 @@
         }
       ],
       "part": 67,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=1285"
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=68&t=1285"
     },
     {
       "segment_id": "world-p67-011",
@@ -1186,7 +1186,7 @@
         }
       ],
       "part": 67,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=1600"
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=68&t=1600"
     },
     {
       "segment_id": "world-p67-012",
@@ -1208,7 +1208,7 @@
         }
       ],
       "part": 67,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=1860"
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=68&t=1860"
     }
   ],
   "creator_locations": {
@@ -1228,7 +1228,7 @@
           "creator_p29_bounds.jpg"
         ],
         "reason": "作者提供12:49；局部复核确认12:43已退出旧关、12:49重新进入，蓝色英雄/浅蓝障碍初态与参考匹配。撤销之前误并入arcadiav2_big的区间。",
-        "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=29&t=769"
+        "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=30&t=769"
       },
       {
         "item": 2,
@@ -1244,7 +1244,7 @@
           "creator_p62_bounds.jpg"
         ],
         "reason": "作者提供16:59；五石传送平台与参考一致。上层设计/下层演示属于连续同关，21:02出现退出标志。",
-        "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=62&t=1019"
+        "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=63&t=1019"
       },
       {
         "item": 3,
@@ -1258,7 +1258,7 @@
           "creator_p67_end3_pipeline_setup.jpg"
         ],
         "reason": "作者提供00:35；单平台、黄角色和右侧分叉管线匹配，01:35进入已录入design教学环节。流程连续，未据此推断独立出入次数或通关。",
-        "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=67&t=35"
+        "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=68&t=35"
       },
       {
         "item": 4,
@@ -1272,7 +1272,7 @@
           "creator_p54_save_for_later.jpg"
         ],
         "reason": "作者提供20:33；长通道、绿色障碍群和上下镜面一致，21:17退出。",
-        "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=1233"
+        "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=55&t=1233"
       },
       {
         "item": 5,
@@ -1298,7 +1298,7 @@
           ],
           "reason": "原地图同一纵向入口组的位置与角色进入前后连续画面一致；见creator_p39_identity_world.jpg和creator_p39_entries.jpg。"
         },
-        "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=39&t=227"
+        "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=40&t=227"
       },
       {
         "item": 6,
@@ -1324,7 +1324,7 @@
           ],
           "reason": "原地图同一纵向入口组的位置与角色进入前后连续画面一致；见creator_p39_identity_world.jpg和creator_p39_entries.jpg。"
         },
-        "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=39&t=149"
+        "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=40&t=149"
       }
     ]
   }

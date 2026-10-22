@@ -4,6 +4,20 @@ import {readFileSync} from 'node:fs';
 import '../ootss/templates/atlas-ui.js';
 const {markerLabels,markerRadius}=globalThis.AtlasUI;
 const level=(id,ordinal,x,part=2,region='mixed')=>({level_id:id,shown:[{part,ordinal}],region_ids:[region],entries:[{coordinates:[x,0]}]});
+test('a part keeps neighboring-region markers while its sidebar follows the selected region',()=>{
+  const other=level('a',1,0,9,'neighbor'),state={part:9,region:'selected'};
+  assert.equal(AtlasUI.includesRegion(other,state,true),true);
+  assert.equal(AtlasUI.includesRegion(other,state),false);
+  assert.equal(AtlasUI.includesRegion(other,{...state,part:0},true),false);
+  assert.equal(AtlasUI.includesRegion(other,{...state,region:null}),true);
+});
+test('viewport culling retains boundary markers and a focused offscreen entry',()=>{
+  const bounds={west:0,east:10,south:0,north:10};
+  assert.equal(AtlasUI.inViewport([0,10],bounds),true);
+  assert.equal(AtlasUI.inViewport([11,5],bounds),false);
+  assert.equal(AtlasUI.inViewport([11,5],bounds,true),true);
+  assert.equal(AtlasUI.inViewport([100,100],null),true);
+});
 test('all-parts labels always show a separate prefix, including adjacent and single-part regions',()=>{
   const levels=[level('a',1,0),level('b',2,1),level('c',3,2),level('e',29,1,4),level('f',5,0,2,'single')];
   const labels=markerLabels(levels,0);

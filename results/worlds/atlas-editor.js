@@ -1,6 +1,6 @@
 "use strict";
 const tune={active:false,region:null,level:null,text:null,selected:null,wholePart:false};
-const positionNames={'bottom-left':'左下','top-left':'左上','top-right':'右上','bottom-right':'右下','top-center':'中上','bottom-center':'中下','middle-left':'左中','middle-right':'右中','middle-center':'中中'};
+const positionNames={'bottom-left':'左下','top-left':'左上','top-right':'右上','bottom-right':'右下','top-center':'中上','bottom-center':'中下','middle-left':'左中','middle-right':'右中','middle-center':'中心'};
 const positionOptions=(value,inherit=false)=>(inherit?'<option value="">跟随区域 / 全局</option>':'')+AtlasUI.positions.map(p=>`<option value="${p}" ${p===value?'selected':''}>${positionNames[p]}</option>`).join('');
 const historyCache=AtlasUI.editHistory(60);
 let textLayers,placementFrame,dragLabel=null,inlineEditor=null,regionClickTimer,addMenu=null,lastTextStyle=null;
@@ -22,7 +22,7 @@ function readerControls(prefix,regional=false){
     `<label>区域标签默认位置<select data-pref="regionPosition" ${scope} aria-label="${prefix}区域标签默认位置">${positionOptions('')}</select></label>
     <label>关卡标签默认位置<select data-pref="levelPosition" ${scope} aria-label="${prefix}关卡标签默认位置">${positionOptions('')}</select></label>
     <div class="field-pair"><label>水平偏移 px<input data-pref="offsetX" ${scope} aria-label="${prefix}关卡标签水平偏移" type="number" min="0" max="80" step="1"></label><label>垂直偏移 px<input data-pref="offsetY" ${scope} aria-label="${prefix}关卡标签垂直偏移" type="number" min="0" max="80" step="1"></label></div>`+
-    (regional?'':`<div class="label-switches"><label><input data-pref="regionLabels" type="checkbox">区域标签</label><label><input data-pref="adaptPositions" type="checkbox">位置适应</label><label><input data-pref="levelLabels" type="checkbox">关卡标签</label></div><label class="custom-text-toggle"><input data-pref="customTexts" type="checkbox">自定义文本</label><div class="settings-actions"><button data-reset-global>恢复默认</button><button data-reset-all>重置所有更改</button></div>`);
+    (regional?'':`<div class="label-switches"><label><input data-pref="regionLabels" type="checkbox">区域标签</label><label><input data-pref="adaptPositions" type="checkbox">位置适应</label><label><input data-pref="levelLabels" type="checkbox">关卡标签</label><label class="custom-text-toggle"><input data-pref="customTexts" type="checkbox">自定义文本</label></div><div class="settings-actions"><button data-reset-global>恢复默认</button><button data-reset-all>重置所有更改</button></div>`);
 }
 function syncStyleControls(){
   for(const el of document.querySelectorAll('[data-pref]')){
@@ -41,12 +41,14 @@ function requestLabelPlacement(){
     if(!AtlasUI.adaptiveEnabled(prefs,state)||inlineEditor||dragLabel)return;
     const shell=$('map').getBoundingClientRect();
     const obstacles=[...$('map').querySelectorAll('.dot-pin,.pin-number,.pin-prefix,.free-text,.leaflet-control-zoom'),...document.querySelectorAll('.route-controls,.map-key')].map(el=>el.getBoundingClientRect()).filter(r=>r.right>shell.left&&r.left<shell.right&&r.bottom>shell.top&&r.top<shell.bottom);
+    const placements=[];
     for(const el of $('map').querySelectorAll('.region-label')){
       const content=el.querySelector('.region-label-content'),bounds=el.getBoundingClientRect();
       if(!content||bounds.right<shell.left||bounds.left>shell.right||bounds.bottom<shell.top||bounds.top>shell.bottom)continue;
       const rect=content.getBoundingClientRect(),r=regions.get(content.dataset.regionEditor);
-      content.dataset.position=AtlasUI.chooseRegionPosition(bounds,{width:rect.width,height:rect.height},obstacles,regionPlacement(r));
+      placements.push([content,AtlasUI.chooseRegionPosition(bounds,{width:rect.width,height:rect.height},obstacles,regionPlacement(r))]);
     }
+    for(const [content,position]of placements)if(content.dataset.position!==position)content.dataset.position=position;
   });
 }
 function labelPositionStyle(l,d,xy){
@@ -67,6 +69,7 @@ function leaveTune(redraw=true){
   document.body.classList.remove('tuning');map.doubleClickZoom.enable();if(redraw)render();
 }
 function selectElement(type,id,region=tune.region,scroll=true){
+  if(!tune.active)return;
   finishInline(true);closeAddMenu();
   tune.selected={type,id,region};tune.level=type==='level'?id:null;tune.text=type==='text'?id:null;
   if(tune.active)tune.region=region;
@@ -74,11 +77,11 @@ function selectElement(type,id,region=tune.region,scroll=true){
   if(prefs.sidebarHidden){prefs.sidebarHidden=false;sidebarLayout()}
   if(scroll)$('sidebar-scroll').scrollTop=0;
 }
-function inspectLevel(id){const l=byId.get(id);if(!l)return;selectElement('level',id,l.region_ids.includes(tune.region)?tune.region:entryRegion(l))}
+function inspectLevel(id){const l=byId.get(id);if(!tune.active||!l)return;selectElement('level',id,l.region_ids.includes(tune.region)?tune.region:entryRegion(l))}
 function selectedText(){const s=tune.selected;return s?.type==='text'?(regionRecord(s.region).texts||[]).find(t=>t.id===s.id):null}
 function renderInspector(){
   const panel=$('element-inspector'),s=tune.selected;
-  if(!s){panel.hidden=true;return}
+  if(!tune.active||!s){panel.hidden=true;return}
   const r=regions.get(s.region),l=s.type==='level'?byId.get(s.id):null,t=selectedText();
   if((s.type==='text'&&!t)||(s.type==='level'&&!l)||!r){tune.selected=null;panel.hidden=true;return}
   const header=label=>`<div class="inspector-title"><strong>当前编辑元素 · ${label}</strong><button id="inspect-close" aria-label="取消元素选择">×</button></div>`;
@@ -176,7 +179,7 @@ function closeAddMenu(){if(addMenu){addMenu.remove();addMenu=null}}
 function showAddMenu(r,x,y,clientX,clientY){
   closeAddMenu();const host=document.querySelector('.map-shell'),rect=host.getBoundingClientRect();
   addMenu=document.createElement('div');addMenu.className='add-text-menu';addMenu.style.left=`${clamp(clientX-rect.left,4,Math.max(4,rect.width-150),4)}px`;addMenu.style.top=`${clamp(clientY-rect.top,4,Math.max(4,rect.height-42),4)}px`;
-  addMenu.innerHTML='<button type="button">✎ 添加文本</button>';host.append(addMenu);
+  addMenu.innerHTML='<button type="button"><span class="text-tool-icon" aria-hidden="true">T<small>t</small></span> 添加文本</button>';host.append(addMenu);
   addMenu.querySelector('button').onclick=()=>{
     const style=lastTextStyle||AtlasUI.textStyle({size:regionStyle(r.id).regionLabel}),t={id:crypto.randomUUID(),text:'文本',x,y,...style};
     remember(`text:${t.id}`);patchRegion(r.id,{texts:[...(regionRecord(r.id).texts||[]),t]});prefs.customTexts=true;applyPrefs();selectElement('text',t.id,r.id);drawAnnotations();syncStyleControls();startInline('text',t.id,r.id);
