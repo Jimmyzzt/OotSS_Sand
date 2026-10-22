@@ -74521,7 +74521,7 @@
       "bvid": "BV13FH96bE4m",
       "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
       "map_id": "sky",
-      "map_name": "天空世界",
+      "map_name": "上方",
       "levels": [
         {
           "level_id": "3d_intro_vanilla",
@@ -88303,7 +88303,7 @@
       "bvid": "BV13FH96bE4m",
       "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
       "map_id": "underworld",
-      "map_name": "地下世界",
+      "map_name": "下方",
       "levels": [
         {
           "level_id": "push_down_chain",

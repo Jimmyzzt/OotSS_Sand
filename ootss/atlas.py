@@ -14,7 +14,7 @@ from .exporting import validate, video_url
 from .maps import ASSETS, download, layer
 from .regions import enrich
 
-WORLD_NAMES = {"overworld": "主世界", "sky": "天空世界", "underworld": "地下世界"}
+WORLD_NAMES = {"overworld": "主世界", "sky": "上方", "underworld": "下方"}
 
 
 def build_atlas(

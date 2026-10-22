@@ -3,7 +3,7 @@ const tune={active:false,region:null,level:null,text:null,selected:null,wholePar
 const positionNames={'bottom-left':'左下','top-left':'左上','top-right':'右上','bottom-right':'右下','top-center':'中上','bottom-center':'中下','middle-left':'左中','middle-right':'右中','middle-center':'中心'};
 const positionOptions=(value,inherit=false)=>(inherit?'<option value="">跟随区域 / 全局</option>':'')+AtlasUI.positions.map(p=>`<option value="${p}" ${p===value?'selected':''}>${positionNames[p]}</option>`).join('');
 const historyCache=AtlasUI.editHistory(60);
-let textLayers,placementFrame,dragLabel=null,inlineEditor=null,regionClickTimer,addMenu=null,lastTextStyle=null;
+let textLayers,placementFrame,dragLabel=null,inlineEditor=null,addMenu=null,lastTextStyle=null;
 const snapshotEdits=()=>({levels:annotations,regions:regionNames,style:AtlasUI.readerStyle(prefs)});
 function remember(key){historyCache.record(snapshotEdits(),key);syncHistoryButtons()}
 function syncHistoryButtons(){for(const [id,enabled]of [['tune-undo',historyCache.canUndo],['tune-redo',historyCache.canRedo]])if($(id))$(id).disabled=!enabled}
@@ -22,7 +22,7 @@ function readerControls(prefix,regional=false){
     `<label>区域标签默认位置<select data-pref="regionPosition" ${scope} aria-label="${prefix}区域标签默认位置">${positionOptions('')}</select></label>
     <label>关卡标签默认位置<select data-pref="levelPosition" ${scope} aria-label="${prefix}关卡标签默认位置">${positionOptions('')}</select></label>
     <div class="field-pair"><label>水平偏移 px<input data-pref="offsetX" ${scope} aria-label="${prefix}关卡标签水平偏移" type="number" min="0" max="80" step="1"></label><label>垂直偏移 px<input data-pref="offsetY" ${scope} aria-label="${prefix}关卡标签垂直偏移" type="number" min="0" max="80" step="1"></label></div>`+
-    (regional?'':`<div class="label-switches"><label><input data-pref="regionLabels" type="checkbox">区域标签</label><label><input data-pref="adaptPositions" type="checkbox">位置适应</label><label><input data-pref="levelLabels" type="checkbox">关卡标签</label><label class="custom-text-toggle"><input data-pref="customTexts" type="checkbox">自定义文本</label></div><div class="settings-actions"><button data-reset-global>恢复默认</button><button data-reset-all>重置所有更改</button></div>`);
+    (regional?'':`<div class="label-switches"><label><input data-pref="adaptPositions" type="checkbox">位置适应</label><label><input data-pref="levelLabels" type="checkbox">关卡标签</label><label class="custom-text-toggle"><input data-pref="customTexts" type="checkbox">自定义文本</label></div><div class="settings-actions"><button data-reset-global>恢复默认</button><button data-reset-all>重置所有更改</button></div>`);
 }
 function syncStyleControls(){
   for(const el of document.querySelectorAll('[data-pref]')){
@@ -59,13 +59,13 @@ function canTune(){return Boolean(state.region||state.part)}
 function activeTuneRegion(){return regions.get(tune.region)}
 function enterTune(id=state.region||availableRegions()[0]?.id){
   if(!regions.has(id)||!availableRegions().some(r=>r.id===id))return;
-  finishInline(true);closeAddMenu();clearTimeout(regionClickTimer);settings(false);map.closePopup();
+  finishInline(true);closeAddMenu();settings(false);map.closePopup();
   const whole=!state.region&&Boolean(state.part);if(!whole&&state.region!==id)selectRegion(id);
   Object.assign(tune,{active:true,region:id,wholePart:whole,selected:null,level:null,text:null});
   prefs.sidebarHidden=false;sidebarLayout();document.body.classList.add('tuning');map.doubleClickZoom.disable();render();
 }
 function leaveTune(redraw=true){
-  finishInline(true);closeAddMenu();clearTimeout(regionClickTimer);tune.active=false;tune.selected=null;tune.level=null;tune.text=null;
+  finishInline(true);closeAddMenu();tune.active=false;tune.selected=null;tune.level=null;tune.text=null;
   document.body.classList.remove('tuning');map.doubleClickZoom.enable();if(redraw)render();
 }
 function selectElement(type,id,region=tune.region,scroll=true){
@@ -179,7 +179,7 @@ function closeAddMenu(){if(addMenu){addMenu.remove();addMenu=null}}
 function showAddMenu(r,x,y,clientX,clientY){
   closeAddMenu();const host=document.querySelector('.map-shell'),rect=host.getBoundingClientRect();
   addMenu=document.createElement('div');addMenu.className='add-text-menu';addMenu.style.left=`${clamp(clientX-rect.left,4,Math.max(4,rect.width-150),4)}px`;addMenu.style.top=`${clamp(clientY-rect.top,4,Math.max(4,rect.height-42),4)}px`;
-  addMenu.innerHTML='<button type="button"><span class="text-tool-icon" aria-hidden="true">T<small>t</small></span> 添加文本</button>';host.append(addMenu);
+  addMenu.innerHTML='<button type="button"><svg class="text-tool-icon" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false"><path d="M307.2 409.6h153.6v307.2h102.4V409.6h153.6v-102.4H307.2zM76.8 460.8h102.4v102.4H76.8zM844.8 460.8h102.4v102.4h-102.4z" fill="currentColor"/><path d="M102.4 102.4v307.2h51.2V153.6h716.8v256h51.2V102.4zM870.4 870.4H153.6V614.4H102.4v307.2h819.2V614.4h-51.2z" fill="currentColor" opacity=".7"/></svg> 添加文本</button>';host.append(addMenu);
   addMenu.querySelector('button').onclick=()=>{
     const style=lastTextStyle||AtlasUI.textStyle({size:regionStyle(r.id).regionLabel}),t={id:crypto.randomUUID(),text:'文本',x,y,...style};
     remember(`text:${t.id}`);patchRegion(r.id,{texts:[...(regionRecord(r.id).texts||[]),t]});prefs.customTexts=true;applyPrefs();selectElement('text',t.id,r.id);drawAnnotations();syncStyleControls();startInline('text',t.id,r.id);
@@ -188,9 +188,8 @@ function showAddMenu(r,x,y,clientX,clientY){
 function resetGlobal(){remember();Object.assign(prefs,AtlasUI.defaults);applyPrefs();redrawMap();renderTunePanel()}
 function resetAllStyles(){ $('style-reset-dialog').showModal() }
 function applyResetAllStyles(){
-  finishInline(true);remember();const reset=AtlasUI.resetMapStyles(annotations,regionNames);annotations=reset.levels;regionNames=reset.regions;Object.assign(prefs,AtlasUI.defaults,{regionLabels:true,levelLabels:true,customTexts:true,adaptPositions:true});lastTextStyle=null;saveEditorial();applyPrefs();redrawMap();renderTunePanel();
+  finishInline(true);remember();const reset=AtlasUI.resetMapStyles(annotations,regionNames);annotations=reset.levels;regionNames=reset.regions;Object.assign(prefs,AtlasUI.defaults,{regionLabels:false,levelLabels:true,customTexts:true,adaptPositions:true});lastTextStyle=null;saveEditorial();applyPrefs();redrawMap();renderTunePanel();
 }
-function clickRegionLater(id){clearTimeout(regionClickTimer);regionClickTimer=setTimeout(()=>{if(tune.active)leaveTune(false);selectRegion(id)},350)}
 function regionAt(point){return data.regions.find(r=>inRegion(r,point.lng,point.lat))}
 function initEditor(){
   map.createPane('editorText');map.getPane('editorText').style.zIndex=640;map.getPane('editorText').style.pointerEvents='none';textLayers=L.layerGroup().addTo(map);
@@ -214,17 +213,17 @@ function initEditor(){
     e.stopPropagation();
     if(e.target.isContentEditable)return;
     if(tune.active&&label.dataset.regionEditor===tune.region){if(e.detail===1)startInline('region',tune.region);return}
-    clickRegionLater(label.dataset.regionEditor);
+    if(tune.active)leaveTune();
   },true);
   container.addEventListener('dblclick',e=>{
-    clearTimeout(regionClickTimer);
     const label=e.target.closest('[data-region-editor]'),text=e.target.closest('[data-text-id]');
     if(e.target.isContentEditable)return;
     if(label){e.preventDefault();e.stopPropagation();finishInline(true);leaveTune(false);selectRegion(label.dataset.regionEditor);enterTune(label.dataset.regionEditor);return}
     if(text&&tune.active){e.preventDefault();e.stopPropagation();startInline('text',text.dataset.textId,text.dataset.textRegion);return}
-    if(!tune.active||e.target.closest('.number-pin,.leaflet-control,.leaflet-popup'))return;
+    if(e.target.closest('.number-pin,.free-text,.leaflet-control,.leaflet-popup,.add-text-menu'))return;
     const point=map.mouseEventToLatLng(e),r=regionAt(point);if(!r)return;
     e.preventDefault();e.stopPropagation();finishInline(true);
+    if(!tune.active){selectRegion(r.id);return}
     if(r.id!==tune.region){leaveTune(false);selectRegion(r.id);enterTune(r.id);return}
     showAddMenu(r,point.lng,point.lat,e.clientX,e.clientY);
   },true);
@@ -240,7 +239,7 @@ function initEditor(){
     if(e.originalEvent?.target.closest('.inline-editor,.number-pin,.free-text'))return;
     const r=regionAt(e.latlng);if(!r)return;
     if(tune.active&&r.id===tune.region){finishInline(true);tune.selected=null;tune.level=null;tune.text=null;renderInspector();return}
-    if(tune.active||availableRegions().some(v=>v.id===r.id))clickRegionLater(r.id);
+    if(tune.active)leaveTune();
   });
   container.addEventListener('pointerdown',e=>{
     const label=e.target.closest('[data-drag-level]');if(!tune.active||!label||e.button!==0||e.target.isContentEditable)return;

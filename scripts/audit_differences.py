@@ -12,7 +12,7 @@ from PIL import Image
 from ootss.common import read_json, write_json
 from ootss.exporting import validate, video_url
 
-WORLD = {"overworld": "主世界", "sky": "天空世界", "underworld": "地下世界"}
+WORLD = {"overworld": "主世界", "sky": "上方", "underworld": "下方"}
 
 
 def clock(t):
