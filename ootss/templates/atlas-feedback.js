@@ -12,7 +12,7 @@ function initFeedback(){
    if(!window.turnstile){if(!loader)loader=new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';script.async=true;script.onload=resolve;script.onerror=()=>{script.remove();loader=null;reject(Error('验证组件未加载，请检查网络后重试'))};document.head.append(script)});await loader}
    if(!dialog.open||current!==epoch)return;
    if(widget!==null)window.turnstile.remove(widget);
-   token='';widget=window.turnstile.render($('feedback-verification'),{sitekey:config.sitekey,action:'feedback',theme:prefs.theme,callback:value=>{token=value;send.disabled=busy;notice('')},'expired-callback':()=>{token='';send.disabled=true;notice('验证已过期，请重新验证')},'error-callback':()=>{token='';send.disabled=true;notice('验证未通过，请点击重新加载验证')}});
+   token='';widget=window.turnstile.render($('feedback-verification'),{sitekey:config.sitekey,action:'feedback',theme:prefs.theme,size:$('feedback-verification').clientWidth<300?'compact':'normal',callback:value=>{token=value;send.disabled=busy;notice('')},'expired-callback':()=>{token='';send.disabled=true;notice('验证已过期，请重新验证')},'error-callback':()=>{token='';send.disabled=true;notice('验证未通过，请点击重新加载验证')}});
    notice('请完成验证后提交。');
   }catch(e){notice(e.message)}
  }
