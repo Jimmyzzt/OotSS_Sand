@@ -11,7 +11,7 @@ from PIL import Image
 
 from .common import read_json, write_json
 from .exporting import validate, video_url
-from .maps import ASSETS, download, layer
+from .maps import download, layer, tile_asset_base
 from .regions import enrich
 
 WORLD_NAMES = {"overworld": "主世界", "sky": "上方", "underworld": "下方"}
@@ -29,6 +29,16 @@ def build_atlas(
     out = Path(out)
     assets = out / "assets"
     assets.mkdir(parents=True, exist_ok=True)
+    asset_manifest = Path("data/map_assets.json")
+    revision = (
+        read_json(asset_manifest).get("tileset_revision")
+        if asset_manifest.exists()
+        else None
+    )
+    tile_base = tile_asset_base(revision)
+    tile_cache = Path("cache/map")
+    if revision:
+        tile_cache = tile_cache / "versions" / revision
     for filename in ("leaflet.js", "leaflet.css"):
         cached = download(
             f"https://unpkg.com/leaflet@1.9.4/dist/{filename}",
@@ -47,15 +57,17 @@ def build_atlas(
         for y in range(2**z)
         for x in range(2**z)
     ]
+    # Create shared parents before concurrent downloads (Windows directory ACL races).
+    for world, z, y, _x in tiles:
+        (tile_cache / f"tiles/{world}_64k/{z}/{y}").mkdir(parents=True, exist_ok=True)
 
     def fetch(coords):
         world, z, y, x = coords
         relative = f"tiles/{world}_64k/{z}/{y}/{x}.webp"
-        cached = download(f"{ASSETS}/{relative}", Path("cache/map") / relative)
+        cached = download(f"{tile_base}/{relative}", tile_cache / relative)
         target = assets / relative
         target.parent.mkdir(parents=True, exist_ok=True)
-        if not target.exists():
-            shutil.copyfile(cached, target)
+        shutil.copyfile(cached, target)
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
         list(pool.map(fetch, tiles))
@@ -166,7 +178,8 @@ def build_atlas(
         "catalog_level_count": len(by_name),
         "not_observed": sorted(set(by_name) - set(levels)),
         "offline_zoom": offline_zoom,
-        "tile_url": f"{ASSETS}/tiles/overworld_64k/{{z}}/{{y}}/{{x}}.webp",
+        "tile_url": f"{tile_base}/tiles/overworld_64k/{{z}}/{{y}}/{{x}}.webp",
+        "tileset_revision": revision,
     }
     marker_file = Path("cache/map/upstream/data/markers.json")
     marker_features = read_json(marker_file)["features"] if marker_file.exists() else []
@@ -215,7 +228,8 @@ def build_atlas(
                 "levels": members,
                 "parts": [{**p} for p in part_rows if p["part"] in used_parts],
                 "offline_zoom": offline_zoom,
-                "tile_url": f"{ASSETS}/tiles/{map_id}_64k/{{z}}/{{y}}/{{x}}.webp",
+                "tile_url": f"{tile_base}/tiles/{map_id}_64k/{{z}}/{{y}}/{{x}}.webp",
+                "tileset_revision": revision,
             }
             enrich(
                 map_data,

@@ -38,3 +38,13 @@ aside.compact .entry{display:grid;grid-template-columns:auto minmax(0,1fr)}aside
 .reader-controls .label-switches{flex-wrap:nowrap;gap:7px;justify-content:space-between}.reader-controls .label-switches label{font-size:11px;white-space:nowrap;gap:3px}.reader-controls .label-switches input{margin:0}.custom-text-toggle[hidden]{display:none!important}.text-tool-icon{display:inline-block;width:1.15em;height:1.15em;vertical-align:-.18em;flex:none}
 
 .controlbar #search{width:110px;flex:1 1 110px;min-width:70px}.controlbar>.toggle{gap:4px;padding-right:1px;font-size:12px}.add-text-menu button{display:inline-flex;align-items:center;gap:4px}
+
+@media(max-width:760px){
+.controlbar{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) minmax(86px,.65fr)}
+.controlbar>.toggle{width:max-content;grid-row:1}.controlbar>.toggle:first-child{grid-column:1}.controlbar>.toggle:nth-child(2){grid-column:2}
+.controlbar #part{grid-column:1/-1;grid-row:2;width:100%}
+.controlbar #region{grid-column:1;grid-row:3;width:100%;min-width:0}
+.controlbar #search{grid-column:2;grid-row:3;width:100%;min-width:0}
+.controlbar #map-select{grid-column:3;grid-row:3;width:100%;min-width:86px;padding-inline:7px}
+.controlbar #fit{grid-column:1;grid-row:4;justify-self:start}.controlbar #world{grid-column:2;grid-row:4;justify-self:start}
+}

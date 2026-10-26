@@ -36,3 +36,17 @@ test('three physical-map tile paths use the fixed tileset origin, other paths st
     }
   }finally{globalThis.fetch=original}
 });
+
+test('versioned tiles use the immutable upstream commit and reject other origins or invalid revisions',async()=>{
+  const original=globalThis.fetch,targets=[],sha='a'.repeat(40);
+  globalThis.fetch=async url=>{targets.push(String(url));return new Response('pinned tile')};
+  try{
+    const response=await worker.fetch(new Request(`https://sand.zzt.si/tiles/sky_64k/4/1/0.webp?v=${sha}`),env);
+    assert.equal(response.status,200);
+    assert.equal(targets[0],`https://raw.githubusercontent.com/joric/ootss_tileset/${sha}/tiles/sky_64k/4/1/0.webp?v=${sha}`);
+    assert.equal((await worker.fetch(new Request('https://sand.zzt.si/tiles/sky_64k/4/1/0.webp?v=main'),env)).status,400);
+    assert.equal(targets.length,1);
+    assert.throws(()=>upstreamUrl('https://sand.zzt.si/a','https://raw.githubusercontent.com/other/repo/'+sha+'/'));
+    assert.throws(()=>upstreamUrl('https://sand.zzt.si/a','https://raw.githubusercontent.com/joric/ootss_tileset/main/'));
+  }finally{globalThis.fetch=original}
+});

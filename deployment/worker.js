@@ -1,7 +1,8 @@
 // Fixed-origin streaming proxy for the public GitHub Pages atlas.
 export function upstreamUrl(requestUrl, origin) {
   const base=new URL(origin),input=new URL(requestUrl);
-  if(base.protocol!=='https:'||!base.hostname.endsWith('.github.io'))throw Error('Invalid configured Pages origin');
+  const pinnedTiles=base.hostname==='raw.githubusercontent.com'&&/^\/joric\/ootss_tileset\/[a-f0-9]{40}\/$/.test(base.pathname);
+  if(base.protocol!=='https:'||!base.hostname.endsWith('.github.io')&&!pinnedTiles)throw Error('Invalid configured origin');
   const path=decodeURIComponent(input.pathname);
   if(path.split('/').some(p=>p==='..'||p==='.')||path.includes('\\'))throw Error('Invalid path');
   const target=new URL(base.href);
@@ -14,8 +15,10 @@ export function upstreamUrl(requestUrl, origin) {
 export default {
   async fetch(request,env) {
     if(!['GET','HEAD'].includes(request.method))return new Response('Method not allowed',{status:405,headers:{Allow:'GET, HEAD'}});
-    const tile=/^\/tiles\/(?:overworld|sky|underworld)_64k\/[0-7]\/\d+\/\d+\.webp$/.test(new URL(request.url).pathname);
-    let target;try{target=upstreamUrl(request.url,tile?'https://joric.github.io/ootss_tileset/':env.PAGES_ORIGIN)}catch{return new Response('Invalid request path or origin',{status:400})}
+    const input=new URL(request.url),tile=/^\/tiles\/(?:overworld|sky|underworld)_64k\/[0-7]\/\d+\/\d+\.webp$/.test(input.pathname),revision=input.searchParams.get('v');
+    if(tile&&revision&&!/^[a-f0-9]{40}$/.test(revision))return new Response('Invalid tileset revision',{status:400});
+    const tileOrigin=revision?`https://raw.githubusercontent.com/joric/ootss_tileset/${revision}/`:'https://joric.github.io/ootss_tileset/';
+    let target;try{target=upstreamUrl(request.url,tile?tileOrigin:env.PAGES_ORIGIN)}catch{return new Response('Invalid request path or origin',{status:400})}
     const headers=new Headers();
     for(const key of ['Accept','If-None-Match','If-Modified-Since','Range'])if(request.headers.has(key))headers.set(key,request.headers.get(key));
     let upstream;

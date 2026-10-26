@@ -47241,7 +47241,8 @@
   "catalog_level_count": 920,
   "not_observed": [],
   "offline_zoom": 3,
-  "tile_url": "https://joric.github.io/ootss_tileset/tiles/overworld_64k/{z}/{y}/{x}.webp",
+  "tile_url": "https://raw.githubusercontent.com/joric/ootss_tileset/fe721ce403ab8891a37ae05cf6c24282092d05e8/tiles/overworld_64k/{z}/{y}/{x}.webp",
+  "tileset_revision": "fe721ce403ab8891a37ae05cf6c24282092d05e8",
   "maps": [
     {
       "bvid": "BV13FH96bE4m",
@@ -71629,7 +71630,8 @@
         }
       ],
       "offline_zoom": 3,
-      "tile_url": "https://joric.github.io/ootss_tileset/tiles/overworld_64k/{z}/{y}/{x}.webp",
+      "tile_url": "https://raw.githubusercontent.com/joric/ootss_tileset/fe721ce403ab8891a37ae05cf6c24282092d05e8/tiles/overworld_64k/{z}/{y}/{x}.webp",
+      "tileset_revision": "fe721ce403ab8891a37ae05cf6c24282092d05e8",
       "grid": {
         "width": 19,
         "height": 13,
@@ -86728,7 +86730,8 @@
         }
       ],
       "offline_zoom": 3,
-      "tile_url": "https://joric.github.io/ootss_tileset/tiles/sky_64k/{z}/{y}/{x}.webp",
+      "tile_url": "https://raw.githubusercontent.com/joric/ootss_tileset/fe721ce403ab8891a37ae05cf6c24282092d05e8/tiles/sky_64k/{z}/{y}/{x}.webp",
+      "tileset_revision": "fe721ce403ab8891a37ae05cf6c24282092d05e8",
       "grid": {
         "width": 19,
         "height": 13,
@@ -100332,7 +100335,8 @@
         }
       ],
       "offline_zoom": 3,
-      "tile_url": "https://joric.github.io/ootss_tileset/tiles/underworld_64k/{z}/{y}/{x}.webp",
+      "tile_url": "https://raw.githubusercontent.com/joric/ootss_tileset/fe721ce403ab8891a37ae05cf6c24282092d05e8/tiles/underworld_64k/{z}/{y}/{x}.webp",
+      "tileset_revision": "fe721ce403ab8891a37ae05cf6c24282092d05e8",
       "grid": {
         "width": 19,
         "height": 13,

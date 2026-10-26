@@ -1,5 +1,6 @@
 import concurrent.futures
 import math
+import re
 import subprocess
 import urllib.request
 from pathlib import Path
@@ -11,6 +12,14 @@ from .common import read_json, write_json
 
 REPO = "https://github.com/joric/ootss.git"
 ASSETS = "https://joric.github.io/ootss_tileset"
+
+
+def tile_asset_base(revision=None):
+    if revision is None:
+        return ASSETS
+    if not isinstance(revision, str) or not re.fullmatch(r"[a-f0-9]{40}", revision):
+        raise ValueError("Tileset revision must be a complete Git commit SHA")
+    return f"https://raw.githubusercontent.com/joric/ootss_tileset/{revision}"
 
 
 def layer(z):
