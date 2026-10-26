@@ -4,7 +4,7 @@
 
 ## 玩家入口
 
-- 点击关卡，在预览图下方右侧点击「反馈问题」，自动附带当前地图、关卡、真实入口坐标、视频分 P／时间和地图版本；同一关有多个视频时间时可选择对应记录。
+- 点击关卡，在视频跳转链接同一行右侧点击「问题反馈」，自动附带当前地图、关卡、真实入口坐标、视频分 P／时间和地图版本；同一关有多个视频时间时可选择对应记录。
 - 设置 →「问题反馈」可报告缺失关卡或其他全局问题；请在描述中补充区域、分 P 和时间点。
 - 类型包括不匹配、重复、缺失、其他。描述必填，证据网页链接选填；当前版本不上传截图文件。
 - 完成人机验证后提交，成功时显示收件编号。网络失败会保留填写内容；相同提交重试不会生成两条反馈。
@@ -40,3 +40,7 @@ Access team domain 和应用 AUD 在 `wrangler.jsonc`；两者是公开验证配
 测试采用内存 SQLite、生成的测试 RSA 密钥和模拟 Siteverify 响应，覆盖公开提交、重复重试、限流、来源校验、Access 签名／白名单、管理分页／搜索／CSV／并发修改；生产接口不提供测试凭证或认证旁路。
 
 官方参考：[Access JWT 验证](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/authorization-cookie/validating-json/)、[Turnstile 服务端验证](https://developers.cloudflare.com/turnstile/get-started/server-side-validation/)。
+
+## 上线验收（2026-10-26）
+
+31 项 Node 测试、27 项 Python 测试及 Ruff 检查通过，GitHub Pages 自动发布成功。线上 Turnstile 自动验证和真实 D1 收件已验证，坐标及新分 P 号正确；管理页与管理 API 未登录跳转 Access，workers.dev 直接拒绝管理访问。站主已通过真实邮箱验证码登录并确认看到了管理面板。手机 375px 视口验证反馈入口与视频链接同行，设置按钮使用淡红底色及深红悬停／键盘焦点样式。
