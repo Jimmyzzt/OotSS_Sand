@@ -4,6 +4,32 @@ import {readFileSync} from 'node:fs';
 import '../ootss/templates/atlas-ui.js';
 const {markerLabels,markerRadius}=globalThis.AtlasUI;
 const level=(id,ordinal,x,part=2,region='mixed')=>({level_id:id,shown:[{part,ordinal}],region_ids:[region],entries:[{coordinates:[x,0]}]});
+test('only identical coordinates of distinct levels are spread, retaining the star at its true position',()=>{
+  const points=[{key:'normal',levelId:'a',x:54,y:110,size:24},{key:'star',levelId:'b',x:54,y:110,size:36,priority:1},{key:'near',levelId:'c',x:54.0001,y:110,size:24}];
+  const original=structuredClone(points),offsets=AtlasUI.coincidentOffsets(points);
+  assert.deepEqual([...offsets.keys()],['normal']);
+  assert.ok(offsets.get('normal').x>0&&offsets.get('normal').y>0);
+  assert.ok(Math.hypot(offsets.get('normal').x,offsets.get('normal').y)>(24+36)/2);
+  assert.deepEqual([...AtlasUI.coincidentOffsets([...points].reverse())], [...offsets]);
+  assert.deepEqual(points,original);
+  assert.equal(AtlasUI.coincidentOffsets([points[0],{...points[0],key:'same-level'}]).size,0);
+});
+test('the reported sky pair receives exactly one leader, and filtering to one level removes it',()=>{
+  const data=JSON.parse(readFileSync(new URL('../results/worlds/index.json',import.meta.url),'utf8'));
+  for(const map of data.maps){
+    const points=map.levels.flatMap(l=>l.entries.map((e,i)=>({key:JSON.stringify([l.level_id,i]),levelId:l.level_id,x:e.coordinates[0],y:e.coordinates[1],size:l.tags.big_star?36:24,priority:l.tags.big_star?1:0})));
+    const offsets=AtlasUI.coincidentOffsets(points);
+    assert.deepEqual([...offsets.keys()],map.map_id==='sky'?['["sky_druid_kill",0]']:[]);
+    assert.equal(AtlasUI.coincidentOffsets(points.filter(p=>p.levelId==='sky_druid_kill')).size,0);
+  }
+});
+test('leaders stop outside the real pin and do not exist for an unmoved marker',()=>{
+  assert.equal(AtlasUI.leaderPath(null,24),'');
+  const path=AtlasUI.leaderPath({x:38,y:38,anchorSize:36},24);
+  assert.ok(!path.includes('NaN'));
+  const points=path.match(/-?\d+(?:\.\d+)?/g).map(Number),end={x:points[2],y:points[3]};
+  assert.ok(Math.abs(Math.hypot(end.x-(12-38),end.y-(12-38))-22)<.001);
+});
 test('a part keeps neighboring-region markers while its sidebar follows the selected region',()=>{
   const other=level('a',1,0,9,'neighbor'),state={part:9,region:'selected'};
   assert.equal(AtlasUI.includesRegion(other,state,true),true);

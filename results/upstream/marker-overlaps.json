@@ -1,0 +1,47 @@
+{
+  "scope": "Exact XY within each physical map only; nearby entries are not moved.",
+  "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+  "groups": [
+    {
+      "map_id": "sky",
+      "coordinates": [
+        54.0,
+        110.0
+      ],
+      "entries": [
+        {
+          "level_id": "sky_druid_kill",
+          "marker_id": 106957227,
+          "coordinates": [
+            54.0,
+            110.0,
+            34.0
+          ],
+          "visits": [
+            {
+              "part": 26,
+              "display_part": 27,
+              "ordinal": 13
+            }
+          ]
+        },
+        {
+          "level_id": "druid_3d_beam",
+          "marker_id": 92279063,
+          "coordinates": [
+            54.0,
+            110.0,
+            36.0
+          ],
+          "visits": [
+            {
+              "part": 26,
+              "display_part": 27,
+              "ordinal": 17
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

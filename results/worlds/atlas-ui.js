@@ -6,6 +6,28 @@ globalThis.AtlasUI = {
   inViewport(xy,bounds,focused=false) {
     return focused || !bounds || (xy[0]>=bounds.west && xy[0]<=bounds.east && xy[1]>=bounds.south && xy[1]<=bounds.north);
   },
+  coincidentOffsets(points,sizeOf=p=>p.size) {
+    const groups=new Map(),offsets=new Map();
+    for(const point of points){const key=JSON.stringify([point.x,point.y]);if(!groups.has(key))groups.set(key,[]);groups.get(key).push(point)}
+    for(const group of groups.values()){
+      if(new Set(group.map(p=>p.levelId)).size<2)continue;
+      const sorted=[...group].sort((a,b)=>(b.priority||0)-(a.priority||0)||a.key.localeCompare(b.key));
+      const anchorSize=sizeOf(sorted[0]);
+      for(let i=1;i<sorted.length;i++){
+        const point=sorted[i],size=sizeOf(point),ring=1+Math.floor((i-1)/8),angle=Math.PI/4+(i-1)%8*Math.PI/4;
+        const distance=((anchorSize+size)/2+24)*ring;
+        offsets.set(point.key,{x:Math.round(Math.cos(angle)*distance),y:Math.round(Math.sin(angle)*distance),anchorSize});
+      }
+    }
+    return offsets;
+  },
+  leaderPath(offset,size) {
+    if(!offset)return '';
+    const length=Math.hypot(offset.x,offset.y);if(length<1)return '';
+    const ux=-offset.x/length,uy=-offset.y/length,c=size/2;
+    const sx=c+ux*(size/2+3),sy=c+uy*(size/2+3),ex=c-offset.x-ux*(offset.anchorSize/2+4),ey=c-offset.y-uy*(offset.anchorSize/2+4);
+    return `M${sx},${sy} L${ex},${ey} M${ex-ux*6-uy*3},${ey-uy*6+ux*3} L${ex},${ey} L${ex-ux*6+uy*3},${ey-uy*6-ux*3}`;
+  },
   parseEditorial(data, levelIds, regionKeys) {
     if (!data || ![1,2,3].includes(data.version) || !data.levels || typeof data.levels !== 'object' || Array.isArray(data.levels)) throw Error('不是有效的标注文件');
     const levels = Object.create(null), regions = Object.create(null);

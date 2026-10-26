@@ -51,8 +51,8 @@ function requestLabelPlacement(){
     for(const [content,position]of placements)if(content.dataset.position!==position)content.dataset.position=position;
   });
 }
-function labelPositionStyle(l,d,xy){
-  const a={...l.manual,...annotations[l.level_id]},base=regionStyle(entryRegion(l,xy)),s=AtlasUI.levelLabelStyle(a.labelPosition||base.levelPosition,base.offsetX,base.offsetY,a.labelShiftX||0,a.labelShiftY||0);
+function labelPositionStyle(l,d,xy,calloutPosition){
+  const a={...l.manual,...annotations[l.level_id]},base=regionStyle(entryRegion(l,xy)),s=AtlasUI.levelLabelStyle(a.labelPosition||calloutPosition||base.levelPosition,base.offsetX,base.offsetY,a.labelShiftX||0,a.labelShiftY||0);
   return `font-size:${base.levelLabel}px;left:${d/2+s.x}px;top:${d/2+s.y}px;bottom:auto;transform:translate(${s.tx}%,${s.ty}%);`;
 }
 function canTune(){return Boolean(state.region||state.part)}

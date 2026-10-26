@@ -48,3 +48,5 @@ aside.compact .entry{display:grid;grid-template-columns:auto minmax(0,1fr)}aside
 .controlbar #map-select{grid-column:3;grid-row:3;width:100%;min-width:86px;padding-inline:7px}
 .controlbar #fit{grid-column:1;grid-row:4;justify-self:start}.controlbar #world{grid-column:2;grid-row:4;justify-self:start}
 }
+
+.pin-leader{position:absolute;left:0;top:0;overflow:visible;pointer-events:none}.pin-leader path{fill:none;stroke-linecap:round;stroke-linejoin:round}.pin-leader-halo{stroke:#fff;stroke-width:5}.pin-leader-line{stroke:var(--pin-color,#536e54);stroke-width:2.5}.overlap-note{font-size:11px;color:var(--muted);margin:7px 0}
