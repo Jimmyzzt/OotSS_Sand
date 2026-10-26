@@ -41,6 +41,7 @@ def test_public_package_excludes_unrelated_source_files(tmp_path):
         "atlas.js",
         "atlas-ui.js",
         "atlas-editor.js",
+        "atlas-feedback.js",
         "favicon.svg",
         "visits.csv",
         "raw.mp4",

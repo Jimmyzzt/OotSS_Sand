@@ -7,6 +7,8 @@ __pycache__/
 .ruff_cache/
 *.egg-info/
 .env
+.dev.vars
+.env.*.local
 node_modules/
 .wrangler/
 dist/

@@ -4,11 +4,14 @@
   "type": "module",
   "scripts": {
     "test:ui": "node --test tests/atlas-ui.test.js",
-    "test:worker": "node --test deployment/worker.test.js",
+    "test:worker": "node --test deployment/*.test.js",
     "worker:check": "wrangler deploy --dry-run",
     "worker:deploy": "wrangler deploy"
   },
   "devDependencies": {
     "wrangler": "^4.151.2"
+  },
+  "dependencies": {
+    "jose": "6.2.13"
   }
 }

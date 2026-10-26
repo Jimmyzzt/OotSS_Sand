@@ -1,4 +1,5 @@
 // Fixed-origin streaming proxy for the public GitHub Pages atlas.
+import {feedbackRoutes} from './feedback.js';
 export function upstreamUrl(requestUrl, origin) {
   const base=new URL(origin),input=new URL(requestUrl);
   const pinnedTiles=base.hostname==='raw.githubusercontent.com'&&/^\/joric\/ootss_tileset\/[a-f0-9]{40}\/$/.test(base.pathname);
@@ -13,7 +14,8 @@ export function upstreamUrl(requestUrl, origin) {
 }
 
 export default {
-  async fetch(request,env) {
+  async fetch(request,env,ctx) {
+    const feedback=await feedbackRoutes(request,env,ctx);if(feedback)return feedback;
     if(!['GET','HEAD'].includes(request.method))return new Response('Method not allowed',{status:405,headers:{Allow:'GET, HEAD'}});
     const input=new URL(request.url),tile=/^\/tiles\/(?:overworld|sky|underworld)_64k\/[0-7]\/\d+\/\d+\.webp$/.test(input.pathname),revision=input.searchParams.get('v');
     if(tile&&revision&&!/^[a-f0-9]{40}$/.test(revision))return new Response('Invalid tileset revision',{status:400});

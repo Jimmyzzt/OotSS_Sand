@@ -252,6 +252,7 @@ def build_atlas(
         "atlas.js",
         "atlas-ui.js",
         "atlas-editor.js",
+        "atlas-feedback.js",
         "favicon.svg",
     ):
         shutil.copyfile(Path(__file__).parent / "templates" / filename, out / filename)
@@ -310,6 +311,7 @@ def build_atlas(
         "atlas.js",
         "atlas-ui.js",
         "atlas-editor.js",
+        "atlas-feedback.js",
         "favicon.svg",
     ):
         version = hashlib.sha256((out / filename).read_bytes()).hexdigest()[:12]
