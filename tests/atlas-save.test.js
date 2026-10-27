@@ -1,6 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {mkdirSync,writeFileSync} from 'node:fs';
+import {mkdirSync,writeFileSync,readFileSync} from 'node:fs';
+import {createContext,runInContext} from 'node:vm';
 import '../ootss/templates/atlas-save.js';
 import '../ootss/templates/atlas-ui.js';
 
@@ -90,6 +91,46 @@ test('reset all clears manual completion without erasing other tags, and opacity
  assert.equal(reset.levels.a.completed,undefined);assert.equal(reset.levels.b.completed,undefined);assert.equal(reset.levels.a.notes,'keep');assert.equal(reset.levels.a.multi_save,true);
  assert.equal(AtlasUI.completed(reset.levels,null,'a'),false);
  assert.equal(AtlasUI.readerStyle({completedOpacity:0}).completedOpacity,.1);assert.equal(AtlasUI.readerStyle({completedOpacity:2}).completedOpacity,1);assert.equal(AtlasUI.mapStyle({completedOpacity:.5}).completedOpacity,undefined);
+});
+
+// Exercise the real dialog controller with replaceable on-disk file handles.
+function saveDialogHarness({fallback=false}={}){
+ const nodes=new Map();
+ function element(){return {value:'',disabled:false,hidden:false,open:false,textContent:'',children:[],events:{},replaceChildren(){this.children=[];this.value=''},append(item){this.children.push(item);if(this.children.length===1)this.value=String(item.value)},addEventListener(type,handler){this.events[type]=handler},showModal(){this.open=true},close(){this.open=false;this.events.close?.()},click(){this.clicked=true}}}
+ const $=id=>{if(!nodes.has(id))nodes.set(id,element());return nodes.get(id)};
+ let bytes=statusFixture(33,[['a',1]]),permission='granted',pickerCalls=0,requests=0,fileReads=0,missing=false;
+ const file=()=>({name:'Status.sokoban_status',size:bytes.length,arrayBuffer:async()=>bytes});
+ const slots=['one','two'].map(name=>({kind:'directory',name,async *entries(){yield['Status.sokoban_status',{kind:'file',getFile(){throw Error('must resolve latest path')}}]},async getFileHandle(filename,options){assert.equal(filename,'Status.sokoban_status');assert.deepEqual({...options},{create:false});if(missing)throw new DOMException('missing','NotFoundError');return {async getFile(){fileReads++;return file()}}}}));
+ const root={name:'Game',async *entries(){for(const slot of slots)yield[slot.name,slot]},async getDirectoryHandle(name,options){assert.deepEqual({...options},{create:false});return slots.find(slot=>slot.name===name)},async queryPermission(options){assert.equal(options.mode,'read');return permission},async requestPermission(options){assert.equal(options.mode,'read');requests++;permission='granted';return permission}};
+ const context=createContext({$,TextDecoder,DOMException,Uint8Array,DataView,AtlasUI,worlds:[{levels:[{level_id:'a'},{level_id:'b'}]}],saveProgress:null,settings(){},document:{createElement:element},window:fallback?{}:{async showDirectoryPicker(options){assert.equal(options.mode,'read');pickerCalls++;return root}},remember(){},saveEditorial(){},map:{closePopup(){}},applyPrefs(){},render(){}});
+ runInContext(readFileSync(new URL('../ootss/templates/atlas-save.js',import.meta.url),'utf8')+';initGameSaves();',context);
+ return {$,context,file,setBytes(value){bytes=value},setPermission(value){permission=value},setMissing(){missing=true},get pickerCalls(){return pickerCalls},get requests(){return requests},get fileReads(){return fileReads}};
+}
+
+test('reopening retains the campaign and rereads replaced disk contents without choosing the directory again',async()=>{
+ const h=saveDialogHarness();h.$('save-read').onclick();await h.$('game-save-folder').onclick();h.$('game-save-selection').value='1';
+ await h.$('game-save-apply').onclick();assert.deepEqual([...h.context.saveProgress.solved],['a']);
+ h.$('game-save-close').onclick();h.setBytes(statusFixture(33,[['a',1],['b',1]]));h.$('save-read').onclick();
+ assert.equal(h.$('game-save-selection').value,'1');assert.equal(h.$('game-save-apply').disabled,false);assert.match(h.$('game-save-status').textContent,/已保留/);
+ await h.$('game-save-apply').onclick();assert.deepEqual([...h.context.saveProgress.solved],['a','b']);assert.match(h.context.saveProgress.source,/two/);assert.equal(h.pickerCalls,1);assert.equal(h.fileReads,2);
+ h.$('save-unbind').onclick();assert.equal(h.context.saveProgress,null);assert.equal(h.$('game-save-apply').disabled,true);
+});
+
+test('renewal only asks for read permission; denial, deleted or corrupt saves preserve existing progress',async()=>{
+ const h=saveDialogHarness();h.$('save-read').onclick();await h.$('game-save-folder').onclick();await h.$('game-save-apply').onclick();
+ h.setPermission('prompt');await h.$('game-save-apply').onclick();assert.equal(h.requests,1);
+ const before=h.context.saveProgress;
+ h.setPermission('denied');await h.$('game-save-apply').onclick();assert.equal(h.context.saveProgress,before);assert.match(h.$('game-save-status').textContent,/只读权限/);assert.equal(h.requests,1);
+ h.setPermission('granted');h.setBytes(Buffer.from([33,0,0,0]));await h.$('game-save-apply').onclick();assert.equal(h.context.saveProgress,before);assert.match(h.$('game-save-status').textContent,/原来的标记保持不变/);
+ h.setMissing();await h.$('game-save-apply').onclick();assert.equal(h.context.saveProgress,before);assert.match(h.$('game-save-status').textContent,/移动或删除/);
+ runInContext('forgetGameSaveSelection()',h.context);assert.equal(h.$('game-save-apply').disabled,true);
+});
+
+test('one-shot directory fallback requires reselection instead of presenting stale File contents as new progress',async()=>{
+ const h=saveDialogHarness({fallback:true});h.$('save-read').onclick();await h.$('game-save-folder').onclick();assert.equal(h.$('game-save-directory-input').clicked,true);
+ h.$('game-save-directory-input').onchange({target:{files:[h.file()],value:'selected'}});await h.$('game-save-apply').onclick();
+ assert.deepEqual([...h.context.saveProgress.solved],['a']);assert.equal(h.$('game-save-apply').disabled,true);assert.match(h.$('game-save-status').textContent,/重新选择目录/);
+ h.$('game-save-close').onclick();h.$('save-read').onclick();assert.equal(h.$('game-save-apply').disabled,true);
 });
 
 // Opt-in local fixture generation for browser QA. Never publishes or reads a player's save.

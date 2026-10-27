@@ -37,18 +37,36 @@ globalThis.AtlasSave = {
   statusFiles(files){return [...files].filter(file=>/^Status\.sokoban_status$/i.test(file.name)).sort((a,b)=>(a.webkitRelativePath||a.name).localeCompare(b.webkitRelativePath||b.name));},
   async findStatuses(directory){
     const found=[];let entries=0;
-    async function scan(handle,path,depth){
+    async function scan(handle,path,parts,depth){
       if(depth>5)return;
       for await(const [name,item]of handle.entries()){
-        if(++entries>20000)throw Error('目录内容过多，请直接选择游戏档案目录或 Status.sokoban_status');
-        if(item.kind==='directory')await scan(item,path+'/'+name,depth+1);
-        else if(/^Status\.sokoban_status$/i.test(name))found.push({handle:item,path:path+'/'+name});
+        if(++entries>20000)throw Error('目录内容过多，请直接选择游戏档案目录，再读取其中的 Status.sokoban_status');
+        if(item.kind==='directory')await scan(item,path+'/'+name,[...parts,name],depth+1);
+        else if(/^Status\.sokoban_status$/i.test(name))found.push({handle:item,directory,parts:[...parts,name],path:path+'/'+name});
       }
     }
-    await scan(directory,directory.name,0);return found.sort((a,b)=>a.path.localeCompare(b.path));
+    await scan(directory,directory.name,[],0);return found.sort((a,b)=>a.path.localeCompare(b.path));
+  },
+  async readCandidate(candidate){
+    if(candidate.file)return candidate.file;
+    const access=candidate.directory||candidate.handle;
+    if(access.queryPermission){
+      let permission=await access.queryPermission({mode:'read'});
+      if(permission==='prompt')permission=await access.requestPermission({mode:'read'});
+      if(permission!=='granted')throw new DOMException('请允许只读访问，或重新选择存档目录','NotAllowedError');
+    }
+    // Resolve the path again: games may replace a save file instead of updating it in place.
+    let handle=candidate.handle;
+    if(candidate.directory){
+      let directory=candidate.directory;
+      for(const name of candidate.parts.slice(0,-1))directory=await directory.getDirectoryHandle(name,{create:false});
+      handle=await directory.getFileHandle(candidate.parts.at(-1),{create:false});
+    }
+    return handle.getFile();
   }
 };
 
+let forgetGameSaveSelection=()=>{};
 function syncGameSaveButtons(){
   $('save-unbind').hidden=!saveProgress;
   $('save-read').title=saveProgress?`已读取：${saveProgress.source}；点击可重新读取`:'在本机读取通关状态，不上传存档';
@@ -67,10 +85,11 @@ function initGameSaves(){
     message(list.length?'已找到存档。请选择一个游戏档案，再点击「读取并标记」。':'未找到 Status.sokoban_status，请选择包含该文件的游戏存档目录。');
   }
   function open(){
-    settings(false);clearCandidates();message(saveProgress?`当前记录：${saveProgress.source}。再次读取会以存档通关结果重新覆盖显示。`:'请选择游戏存档目录。');dialog.showModal();
+    settings(false);message(candidates.length?'已保留所选游戏档案，可直接点击「读取并标记」同步最新进度。':saveProgress?`当前记录：${saveProgress.source}。请选择存档目录，再读取最新进度。`:'请选择游戏存档目录。');dialog.showModal();
   }
   $('save-read').onclick=open;
-  $('game-save-close').onclick=()=>{if(!busy)dialog.close()};dialog.addEventListener('cancel',event=>{if(busy)event.preventDefault()});dialog.addEventListener('close',()=>{generation++;clearCandidates()});
+  $('game-save-close').onclick=()=>{if(!busy)dialog.close()};dialog.addEventListener('cancel',event=>{if(busy)event.preventDefault()});dialog.addEventListener('close',()=>{generation++;if(candidates.some(candidate=>!candidate.handle))clearCandidates()});
+  forgetGameSaveSelection=()=>{generation++;clearCandidates()};
   $('game-save-copy').onclick=async()=>{try{await navigator.clipboard.writeText($('game-save-path').textContent);message('已复制默认存档路径，可粘贴到系统文件选择窗口。')}catch{message('请选中上方路径后复制。')}};
   $('game-save-directory-input').onchange=event=>{showCandidates(AtlasSave.statusFiles(event.target.files).map(file=>({file,path:file.webkitRelativePath||file.name})));event.target.value=''};
   $('game-save-folder').onclick=async()=>{
@@ -87,14 +106,15 @@ function initGameSaves(){
     if(busy)return;const candidate=candidates[Number(selection.value)];if(!candidate)return;const current=++generation;
     busyState(true);message('正在读取通关记录…');
     try{
-      const file=candidate.file||await candidate.handle.getFile();if(file.size>AtlasSave.maxBytes)throw Error('存档过大，请检查选择的文件');
+      const file=await AtlasSave.readCandidate(candidate);if(file.size>AtlasSave.maxBytes)throw Error('存档过大，请检查选择的文件');
       const parsed=AtlasSave.parse(await file.arrayBuffer());if(current!==generation||!dialog.open)return;
       const solved=parsed.solved.filter(id=>allIds.has(id));
       remember();saveProgress=AtlasUI.newSaveProgress(solved,candidate.path,new Date().toISOString());saveEditorial();map.closePopup();applyPrefs();render();
-      message(`读取成功：已标记地图中 ${solved.length} 个已完成关卡。另有 ${parsed.solved.length-solved.length} 个通关 ID 不在本地图，已忽略。`);
-    }catch(error){message('读取失败：'+(error.message||'无法解析存档')+'。原来的标记保持不变。')}
+      message(`读取成功：已标记地图中 ${solved.length} 个已完成关卡。另有 ${parsed.solved.length-solved.length} 个通关 ID 不在本地图，已忽略。${candidate.file?'此浏览器需重新选择目录才能同步下一次进度。':'下次打开可直接读取最新进度。'}`);
+      if(candidate.file)clearCandidates();
+    }catch(error){const reason=error.name==='NotAllowedError'?'只读权限未获允许，请重新授权或选择存档目录':error.name==='NotFoundError'?'原存档已移动或删除，请重新选择存档目录':error.message||'无法解析存档';message('读取失败：'+reason+'。原来的标记保持不变。')}
     finally{busyState(false)}
   };
-  $('save-unbind').onclick=()=>{if(busy)return;remember();saveProgress=null;saveEditorial();map.closePopup();applyPrefs();render()};
+  $('save-unbind').onclick=()=>{if(busy)return;remember();saveProgress=null;forgetGameSaveSelection();saveEditorial();map.closePopup();applyPrefs();render()};
   syncGameSaveButtons();
 }

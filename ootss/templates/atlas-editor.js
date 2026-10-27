@@ -148,7 +148,7 @@ function inRegion(r,x,y){const[a,b,c,d]=r.bounds;return x>=a&&x<=c&&y>=b&&y<=d}
 function resetGlobal(){remember();Object.assign(prefs,AtlasUI.defaults);applyPrefs();redrawMap();renderTunePanel()}
 function resetAllStyles(){ $('style-reset-dialog').showModal() }
 function applyResetAllStyles(){
-  finishInline(true);remember();const reset=AtlasUI.resetMapStyles(annotations,regionNames,{clearCompletion:true});annotations=reset.levels;regionNames=reset.regions;saveProgress=null;Object.assign(prefs,AtlasUI.defaults,{regionLabels:false,levelLabels:true,adaptPositions:true});saveEditorial();applyPrefs();redrawMap();renderTunePanel();
+  finishInline(true);remember();const reset=AtlasUI.resetMapStyles(annotations,regionNames,{clearCompletion:true});annotations=reset.levels;regionNames=reset.regions;saveProgress=null;forgetGameSaveSelection();Object.assign(prefs,AtlasUI.defaults,{regionLabels:false,levelLabels:true,adaptPositions:true});saveEditorial();applyPrefs();redrawMap();renderTunePanel();
 }
 function regionAt(point){return data.regions.find(r=>inRegion(r,point.lng,point.lat))}
 function initEditor(){
