@@ -1,5 +1,25 @@
 /* Prefixes stay outside the ordinal box so the ordinal anchor never moves. */
+const atlasCompletionSets=new WeakMap();
 globalThis.AtlasUI = {
+  completed(levels,save,id){
+    if(!save)return levels[id]?.completed===true;
+    let solved=atlasCompletionSets.get(save.solved);if(!solved){solved=new Set(save.solved);atlasCompletionSets.set(save.solved,solved)}
+    return solved.has(id)?save.overrides[id]!==false:levels[id]?.completed===true;
+  },
+  newSaveProgress(solved,source,readAt){return {version:1,source:source.slice(0,300),readAt,solved:[...new Set(solved)],overrides:{}};},
+  parseSaveProgress(value,levelIds){
+    if(value===null)return null;
+    if(!value||value.version!==1||!Array.isArray(value.solved)||value.solved.length>50000||typeof value.source!=='string'||typeof value.readAt!=='string'||!Number.isFinite(Date.parse(value.readAt)))throw Error('不是有效的存档完成记录');
+    const solved=[...new Set(value.solved.filter(id=>typeof id==='string'&&levelIds.has(id)))],overrides=Object.create(null);
+    for(const id of solved)if(value.overrides?.[id]===false)overrides[id]=false;
+    return {version:1,source:value.source.slice(0,300),readAt:new Date(value.readAt).toISOString(),solved,overrides};
+  },
+  manualCompletion(levels,save,id,completed){
+    const next={...levels,[id]:{...levels[id],completed}};
+    if(!save)return {levels:next,saveProgress:null};
+    const overrides={...save.overrides};if(save.solved.includes(id)&&!completed)overrides[id]=false;else delete overrides[id];
+    return {levels:next,saveProgress:{...save,overrides}};
+  },
   includesRegion(level,state,forMap=false) {
     return !state.region || (forMap && Boolean(state.part)) || level.region_ids.includes(state.region);
   },
@@ -57,7 +77,7 @@ globalThis.AtlasUI = {
       }
     }
     const style = data.style && typeof data.style === 'object' ? AtlasUI.readerStyle(data.style) : {};
-    return {levels,regions,style};
+    return {levels,regions,style,...(Object.hasOwn(data,'saveProgress')?{saveProgress:AtlasUI.parseSaveProgress(data.saveProgress,levelIds)}:{})};
   },
   positions:['bottom-left','top-left','top-right','bottom-right','top-center','bottom-center','middle-left','middle-right','middle-center'],
   textStyle(v={}) {
@@ -67,20 +87,21 @@ globalThis.AtlasUI = {
   },
   readerStyle(v={}) {
     const r={};
-    for (const [k,min,max] of [['point',.6,2.6],['regionLabel',10,42],['levelLabel',10,42],['offsetX',0,80],['offsetY',0,80]]) if(Number.isFinite(v[k])) r[k]=Math.max(min,Math.min(max,v[k]));
+    for (const [k,min,max] of [['point',.6,2.6],['regionLabel',10,42],['levelLabel',10,42],['offsetX',0,80],['offsetY',0,80],['completedOpacity',.1,1]]) if(Number.isFinite(v[k])) r[k]=Math.max(min,Math.min(max,v[k]));
     for(const k of ['regionPosition','levelPosition']) if(AtlasUI.positions.includes(v[k])) r[k]=v[k];
     for(const k of ['regionLabels','levelLabels','adaptPositions','showCompleted']) if(typeof v[k]==='boolean')r[k]=v[k];
     return r;
   },
-  defaults:{point:1.6,regionLabel:18,levelLabel:18,regionPosition:'bottom-left',levelPosition:'top-right',offsetX:5,offsetY:4},
+  defaults:{point:1.6,regionLabel:18,levelLabel:18,regionPosition:'bottom-left',levelPosition:'top-right',offsetX:5,offsetY:4,completedOpacity:.35},
   mapStyle(v={}) {
     const s=AtlasUI.readerStyle(v);
-    return Object.fromEntries(Object.keys(AtlasUI.defaults).filter(k=>k in s).map(k=>[k,s[k]]));
+    return Object.fromEntries(Object.keys(AtlasUI.defaults).filter(k=>k!=='completedOpacity'&&k in s).map(k=>[k,s[k]]));
   },
   adaptiveEnabled(prefs,state) {return Boolean(prefs.regionLabels&&prefs.adaptPositions&&(state.part||state.region));},
-  resetMapStyles(levels,regions) {
+  resetMapStyles(levels,regions,{clearCompletion=false}={}) {
     const clone=structuredClone({levels,regions});
     for(const r of Object.values(clone.levels)) for(const k of ['labelHidden','labelPosition','labelShiftX','labelShiftY'])delete r[k];
+    if(clearCompletion)for(const r of Object.values(clone.levels))delete r.completed;
     for(const r of Object.values(clone.regions)) {
       delete r.style;delete r.labelPosition;
     }

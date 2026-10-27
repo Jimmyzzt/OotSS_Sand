@@ -15,6 +15,7 @@ def package(source="results/worlds", destination="dist"):
         "atlas-ui.js",
         "atlas-editor.js",
         "atlas-feedback.js",
+        "atlas-save.js",
         "favicon.svg",
         "visits.csv",
     ]:

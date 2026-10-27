@@ -20,8 +20,9 @@ jobs:
         with:
           node-version: '24'
       - run: npm ci
+      - run: node --check ootss/templates/atlas-save.js
       - run: node --check ootss/templates/atlas-feedback.js
       - run: node --check ootss/templates/atlas.js
       - run: node --check ootss/templates/atlas-editor.js
       - run: node --check ootss/templates/atlas-ui.js
-      - run: node --test deployment/*.test.js tests/atlas-ui.test.js
+      - run: node --test deployment/*.test.js tests/*.test.js

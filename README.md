@@ -8,7 +8,7 @@
 
 - 地图可拖动、缩放，支持搜索、地图／分 P／区域筛选；双击区域空白处进入单区域视图。
 - 点关卡预览，再点时间播放攻略。end1 提供四阶段导航。
-- 在「关卡标记」中勾选「已完成关卡」，标点与编号变淡。顶栏「已完成」默认开启，关闭可隐藏完成关卡。进度只在本机保存，可在设置中导出、导入备份。
+- 在「关卡标记」中勾选「已完成关卡」，标点与编号变淡。顶栏「已完成」默认开启，关闭可隐藏完成关卡。进度只在本机保存，可在设置中导出、导入备份。绿色「读取游戏存档」可读取通关记录；浅红色「解绑存档」恢复手动结果。
 - 右侧时间轴默认收起，将鼠标移到右侧中间显示展开按钮；展开后同一位置可收起。触屏直接显示按钮。
 - 顶栏切换深浅色；设置可调标点、区域标题和编号大小。区域标题默认关闭。自定义文字已下线。
 - 关卡弹窗和设置都有「问题反馈」；管理面板在设置 → 数据与来源第一行，仅授权邮箱能登录。
@@ -28,7 +28,7 @@ python -m http.server 8765 --directory results
 打开 `http://127.0.0.1:8765/worlds/`。首次构建需联网下载固定版本的参考目录和地形素材。
 
 ```powershell
-node --test deployment/*.test.js tests/atlas-ui.test.js
+node --test deployment/*.test.js tests/*.test.js
 uv run pytest -q --basetemp runs/tests
 uv run ruff check ootss tests scripts
 uv run ruff format --check ootss tests scripts
@@ -40,6 +40,6 @@ uv run ruff format --check ootss tests scripts
 - [问题反馈与管理面板](docs/feedback.md)
 - [视频录入工作流](docs/workflow.md)：少量本地工具配合人工／Agent 审核，不自动裁定关卡身份。
 - [入口差异与校对](results/audit/REPORT.md)、[三地图录入报告](results/worlds/REPORT.md)
-- [存档导入后续方案](docs/save-import-plan.md)：本次只调研，尚未上线。
+- [读取游戏存档](docs/save-reading.md)：本机读取通关快照，手动／存档完成记录分开保存。
 
 `results/p*/reviewed.json` 是审核记录，`data/` 是人工修正和资源版本，`results/worlds/` 是发布产物。早期技术探索说明集中在 `docs/archive/`。原视频、缓存和临时目录不进入 Git；历史阶段快照与校对证据保留供追溯。

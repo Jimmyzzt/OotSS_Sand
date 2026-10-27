@@ -50,6 +50,10 @@ def build_atlas(
         Path("cache/leaflet/LICENSE"),
     )
     shutil.copyfile(license_file, assets / "LEAFLET-LICENSE.txt")
+    shutil.copyfile(
+        Path(__file__).resolve().parent.parent / "third_party/xpaw/LICENSE",
+        assets / "XPaw-LICENSE.txt",
+    )
     tiles = [
         (world, z, y, x)
         for world in (WORLD_NAMES if all_worlds else ["overworld"])
@@ -258,6 +262,7 @@ def build_atlas(
         "atlas-ui.js",
         "atlas-editor.js",
         "atlas-feedback.js",
+        "atlas-save.js",
         "favicon.svg",
     ):
         shutil.copyfile(Path(__file__).parent / "templates" / filename, out / filename)
@@ -321,6 +326,7 @@ def build_atlas(
         "atlas-ui.js",
         "atlas-editor.js",
         "atlas-feedback.js",
+        "atlas-save.js",
         "favicon.svg",
     ):
         version = hashlib.sha256((out / filename).read_bytes()).hexdigest()[:12]

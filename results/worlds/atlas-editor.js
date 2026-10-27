@@ -4,12 +4,12 @@ const positionNames={'bottom-left':'左下','top-left':'左上','top-right':'右
 const positionOptions=(value,inherit=false)=>(inherit?'<option value="">跟随区域 / 全局</option>':'')+AtlasUI.positions.map(p=>`<option value="${p}" ${p===value?'selected':''}>${positionNames[p]}</option>`).join('');
 const historyCache=AtlasUI.editHistory(60);
 let placementFrame,dragLabel=null,inlineEditor=null;
-const snapshotEdits=()=>({levels:annotations,regions:regionNames,style:AtlasUI.readerStyle(prefs)});
+const snapshotEdits=()=>({levels:annotations,regions:regionNames,saveProgress,style:AtlasUI.readerStyle(prefs)});
 function remember(key){historyCache.record(snapshotEdits(),key);syncHistoryButtons()}
 function syncHistoryButtons(){for(const [id,enabled]of [['tune-undo',historyCache.canUndo],['tune-redo',historyCache.canRedo]])if($(id))$(id).disabled=!enabled}
 function restoreHistory(direction){
   finishInline(false);const next=historyCache[direction](snapshotEdits());if(!next)return;
-  annotations=next.levels;regionNames=next.regions;Object.assign(prefs,next.style);saveEditorial();applyPrefs();options();map.closePopup();render();
+  annotations=next.levels;regionNames=next.regions;saveProgress=next.saveProgress||null;Object.assign(prefs,next.style);saveEditorial();applyPrefs();options();map.closePopup();render();
 }
 function regionRecord(id=tune.region){return regionNames[regionKey(id)]||{}}
 function regionStyle(id){return {...AtlasUI.mapStyle(prefs),...regionRecord(id).style}}
@@ -18,18 +18,21 @@ function patchRegion(id,patch){regionNames[regionKey(id)]={...regionRecord(id),.
 function redrawMap(){drawRegions();drawMarkers();requestLabelPlacement()}
 function readerControls(prefix,regional=false){
   const scope=regional?'data-regional="1"':'',range=(key,title,min,max,step)=>`<label>${title}<output data-value="${key}" ${scope}></output><input data-pref="${key}" ${scope} aria-label="${prefix}${title}" type="range" min="${min}" max="${max}" step="${step}"></label>`;
-  return range('point','标点大小',.6,2.6,.1)+range('regionLabel','区域标签字号',10,42,1)+range('levelLabel','关卡标签字号',10,42,1)+
-    `<label>区域标签默认位置<select data-pref="regionPosition" ${scope} aria-label="${prefix}区域标签默认位置">${positionOptions('')}</select></label>
-    <label>关卡标签默认位置<select data-pref="levelPosition" ${scope} aria-label="${prefix}关卡标签默认位置">${positionOptions('')}</select></label>
+  return range('point','标点大小',.6,2.6,.1)+
+    (regional?'':range('completedOpacity','已完成关卡不透明度',.1,1,.05))+
+    `<div class="field-pair">${range('regionLabel','区域标签字号',10,42,1)}${range('levelLabel','关卡标签字号',10,42,1)}</div>`+
+    `<div class="field-pair"><label>区域标签默认位置<select data-pref="regionPosition" ${scope} aria-label="${prefix}区域标签默认位置">${positionOptions('')}</select></label>
+    <label>关卡标签默认位置<select data-pref="levelPosition" ${scope} aria-label="${prefix}关卡标签默认位置">${positionOptions('')}</select></label></div>
     <div class="field-pair"><label>水平偏移 px<input data-pref="offsetX" ${scope} aria-label="${prefix}关卡标签水平偏移" type="number" min="0" max="80" step="1"></label><label>垂直偏移 px<input data-pref="offsetY" ${scope} aria-label="${prefix}关卡标签垂直偏移" type="number" min="0" max="80" step="1"></label></div>`+
-    (regional?'':`<div class="label-switches"><label><input data-pref="adaptPositions" type="checkbox">位置适应</label><label><input data-pref="levelLabels" type="checkbox">关卡标签</label></div><div class="settings-actions"><button data-reset-global>恢复默认</button><button data-reset-all>重置所有更改</button></div>`);
+    (regional?'':`<div class="label-switches"><label><input id="region-titles-toggle" data-pref="regionLabels" type="checkbox">区域标题</label><label><input data-pref="adaptPositions" type="checkbox">位置适应</label><label><input data-pref="levelLabels" type="checkbox">关卡标签</label></div><div class="settings-actions"><button data-reset-global>恢复默认</button><button data-reset-all>重置所有更改</button></div>`);
+
 }
 function syncStyleControls(){
   for(const el of document.querySelectorAll('[data-pref]')){
     const source=el.dataset.regional?regionStyle(tune.region):prefs,key=el.dataset.pref;
     if(el.type==='checkbox')el.checked=source[key];else el.value=source[key];
   }
-  for(const el of document.querySelectorAll('[data-value]')){const key=el.dataset.value,v=(el.dataset.regional?regionStyle(tune.region):prefs)[key];el.textContent=key==='point'?`${v.toFixed(1)}×`:`${v}px`}
+  for(const el of document.querySelectorAll('[data-value]')){const key=el.dataset.value,v=(el.dataset.regional?regionStyle(tune.region):prefs)[key];el.textContent=key==='point'?`${v.toFixed(1)}×`:key==='completedOpacity'?`${Math.round(v*100)}%`:`${v}px`}
 
 }
 function regionPlacement(r){return regionRecord(r.id).labelPosition||regionStyle(r.id).regionPosition}
@@ -145,7 +148,7 @@ function inRegion(r,x,y){const[a,b,c,d]=r.bounds;return x>=a&&x<=c&&y>=b&&y<=d}
 function resetGlobal(){remember();Object.assign(prefs,AtlasUI.defaults);applyPrefs();redrawMap();renderTunePanel()}
 function resetAllStyles(){ $('style-reset-dialog').showModal() }
 function applyResetAllStyles(){
-  finishInline(true);remember();const reset=AtlasUI.resetMapStyles(annotations,regionNames);annotations=reset.levels;regionNames=reset.regions;Object.assign(prefs,AtlasUI.defaults,{regionLabels:false,levelLabels:true,adaptPositions:true});saveEditorial();applyPrefs();redrawMap();renderTunePanel();
+  finishInline(true);remember();const reset=AtlasUI.resetMapStyles(annotations,regionNames,{clearCompletion:true});annotations=reset.levels;regionNames=reset.regions;saveProgress=null;Object.assign(prefs,AtlasUI.defaults,{regionLabels:false,levelLabels:true,adaptPositions:true});saveEditorial();applyPrefs();redrawMap();renderTunePanel();
 }
 function regionAt(point){return data.regions.find(r=>inRegion(r,point.lng,point.lat))}
 function initEditor(){
@@ -182,7 +185,7 @@ function initEditor(){
 
   },true);
   document.addEventListener('keydown',e=>{
-    if($('style-reset-dialog').open||$('region-dialog').open||$('feedback-dialog').open)return;
+    if($('style-reset-dialog').open||$('region-dialog').open||$('feedback-dialog').open||$('game-save-dialog').open)return;
     const textInput=e.target.isContentEditable||e.target.tagName==='TEXTAREA'||e.target.tagName==='INPUT'&&['text','search','url','email','password'].includes(e.target.type);
     if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='z'&&!textInput){e.preventDefault();e.stopImmediatePropagation();restoreHistory(e.shiftKey?'redo':'undo');return}
     if(e.key==='Delete'&&tune.active&&!textInput&&!['INPUT','SELECT'].includes(e.target.tagName)) {e.preventDefault();deleteSelected();return}

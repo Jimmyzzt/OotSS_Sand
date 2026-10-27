@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test:ui": "node --test tests/atlas-ui.test.js",
+    "test:ui": "node --test tests/*.test.js",
     "test:worker": "node --test deployment/*.test.js",
     "worker:check": "wrangler deploy --dry-run",
     "worker:deploy": "wrangler deploy"
