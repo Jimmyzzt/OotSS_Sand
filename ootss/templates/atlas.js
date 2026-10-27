@@ -57,7 +57,12 @@ function selectRegion(id,index=null){if(!regions.has(id))return;if(tune.active)l
 function focusLevel(id){const l=byId.get(id);if(!l)return;state.focused=id;inspectLevel(id);const[x,y]=l.entries[0].coordinates;map.setView([y,x],Math.max(map.getZoom(),3.5),{animate:false});markerLookup.get(id)?.openPopup();caption();reveal()}
 map.on('zoomend',()=>{drawRegions();drawMarkers();requestLabelPlacement()});
 map.on('moveend',()=>drawMarkers(false));
-map.on('popupopen',({popup})=>{const update=()=>{if(popup.isOpen())popup.update()};for(const el of popup.getElement().querySelectorAll('details'))el.ontoggle=update;for(const image of popup.getElement().querySelectorAll('img'))image.onload=update});
+map.on('popupopen',({popup})=>{
+  // Retain the live DOM so Leaflet.update() preserves open details and form state.
+  const host=popup.getElement().querySelector('.leaflet-popup-content');let body=host.querySelector(':scope > .popup-body');
+  if(!body){body=document.createElement('div');body.className='popup-body';body.append(...host.childNodes);popup.setContent(body)}
+  const update=()=>{if(popup.isOpen())popup.update()};for(const el of body.querySelectorAll('details'))el.ontoggle=update;for(const image of body.querySelectorAll('img'))image.onload=update;
+});
 $('part').onchange=e=>{if(tune.active)leaveTune();state.part=Number(e.target.value);state.region=null;state.routeIndex=-1;state.focused=null;options();render();fit();updateUrl()};$('region').onchange=e=>{if(tune.active)leaveTune();state.region=e.target.value||null;state.routeIndex=route().findIndex(r=>r.region_id===state.region);state.focused=null;render();fit()};$('search').oninput=e=>{state.search=e.target.value;render()};
 $('grid-toggle').onchange=e=>{prefs.grid=e.target.checked;applyPrefs();drawRegions()};$('fit').onclick=fit;$('world').onclick=()=>{if(tune.active)leaveTune();state.part=0;state.region=null;state.routeIndex=-1;state.focused=null;state.search='';$('search').value='';map.closePopup();options();render();updateUrl();map.fitBounds([[-18.5,-24.5],[170.5,165.5]],{animate:false});reveal()};
 $('list').onclick=e=>{const b=e.target.closest('[data-focus]');if(b)focusLevel(b.dataset.focus)};$('route-list').onclick=e=>{const b=e.target.closest('[data-region]');if(b)selectRegion(b.dataset.region,Number(b.dataset.step))};
