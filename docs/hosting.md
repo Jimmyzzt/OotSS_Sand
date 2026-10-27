@@ -1,0 +1,48 @@
+# 静态托管与额度（2026-10-28）
+
+正式站：https://sand.zzt.si/ 。备用站：https://jimmyzzt.github.io/OotSS_Sand/ 。
+
+## 当前架构
+
+- 正式站首页、脚本、样式、预览图、校对页面和全部精度的三地图地形：Workers Static Assets 直接提供，不经过用户 Worker 脚本，不请求 GitHub 源站。
+- `/api/feedback*`：Worker → Turnstile / D1。仅打开反馈时加载验证组件和配置，不在普通浏览时查询数据库。
+- `/feedback-admin` 及子路径：Cloudflare Access → Worker 验证 JWT / 邮箱白名单 → D1。管理页未放入公共静态资源。
+- GitHub Pages：独立的静态备用站，保留本地低倍率瓦片，高倍率直接访问固定版本的原地图资源。
+
+`assets.run_worker_first` 只为反馈和管理路径启用，并明确用负规则让公共资源及瓦片路径直接进入静态资源服务。因此，脚本额度耗尽时，这些静态地图资源仍可访问；反馈、管理接口仍受脚本额度约束。本次额度尚未重置时，已实际验证反馈配置接口仍返回 1027，而首页与地图资源可以正常加载。未知非导航路径可能进入 Worker 返回 404，但不会再代理到 GitHub。
+
+`/backup` 是由静态服务执行的 302，保留 URL 查询参数，跳到 GitHub Pages。设置 → 数据与来源也有备用站链接，保留地图、分 P、关卡的地址参数。两个网站 origin 的本机存储互相独立，名称、手动标记及完成快照通过导出／导入迁移。
+
+无法在已经停止执行的 Worker 中捕获 1027 并执行重定向。当前采用静态资源独立于脚本额度的方式解决地图可用性，不关闭 Access、不改成管理接口 fail-open，也不启用付费计划。
+
+## 瓦片与版本
+
+原地图固定于 `data/map_assets.json` 中的 Git commit。原始三地图有 54,687 张 0–7 级瓦片，直接全量上传会超过免费计划每版本 20,000 个文件的限制。
+
+`scripts/package_worker.py` 将最高精度的四张相邻 512px WebP 原字节嵌入一张 1024px SVG，供 Leaflet 的第 6 级原生瓦片使用，继续放大时仍显示原第 7 级的全部像素。没有重采样或再次有损压缩，不移动地图坐标。第 4、5 级用单张原图封装；缺失的海面瓦片为空 SVG，避免重复 404。0–3 级仍使用仓库中的低倍率资源。
+
+完整部署共 17,368 个公共文件，约 697.6 MiB，最大单文件约 2.69 MiB，低于免费计划 20,000 文件／单文件 25 MiB 限制。高精度路径含固定版本号，设置一年 immutable 缓存；HTML 和脚本仍按 ETag 重新验证。最高精度一次请求可替代原来的四次瓦片请求。
+
+原始下载、封装瓦片、部署目录分别位于 cache 和 dist，不提交 Git。构建只从固定仓库版本的归档读取允许的瓦片路径，不解压任意归档路径。部署打包只包含已公开的地图产物，不含视频、本机存档、凭证或反馈数据。
+
+## 发布
+
+```powershell
+.\ootss.ps1 atlas --all-worlds
+npm run worker:check
+npm run worker:deploy
+```
+
+以上两个 npm 脚本会准备完整静态资源。首次构建下载固定版本原地图归档并封装，后续使用本机缓存。Wrangler 一次发布脚本和静态资源，保留现有 Secrets、D1 绑定与 Access 验证。更换图像版本后会重新打包并校验数量／单文件大小，超限则停止。
+
+master 推送仍自动发布 GitHub Pages；**正式域名的静态文件也需要运行 worker:deploy 更新**。GitHub Actions 当前没有配置 Cloudflare 部署凭证，不会假称推送后已自动更新正式域名。
+
+## 本次流量判断
+
+迁移前：每个页面、图片、瓦片请求都调用一次 Worker，再 fetch 一次 GitHub。即使命中源站缓存，Worker 脚本调用仍占每天额度；缓存命中率不能用于推算访客数。
+
+只读 GraphQL 查询的 24 小时区间为北京时间 2026-10-27 03:12 至 2026-10-28 03:12：148,400 次调用，148,311 次子请求，几乎一比一，与旧代理架构一致。其中 4,422 次为 clientDisconnected，不能据此判定攻击。24 小时图跨 UTC 零点，不能与单个额度日直接对比。
+
+现有授权可以查询汇总指标，但 Workers Observability 路径日志查询返回 403。因此本次未取得来源／路径明细，不能确认是否存在爬虫、热链或恶意刷量。截图本身不足以得出攻击结论。迁移后应在 Web Analytics 查看访客／页面浏览量，Worker Metrics 主要反映动态反馈调用；两类请求不可混算。
+
+官方依据：[静态资源计费](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/)、[路由配置](https://developers.cloudflare.com/workers/static-assets/binding/)、[免费额度与重置时间](https://developers.cloudflare.com/workers/platform/limits/)、[静态重定向](https://developers.cloudflare.com/workers/static-assets/redirects/)。Worker 免费额度为账户每天 100,000 次脚本调用，北京时间 08:00（UTC 00:00）重置；静态资源请求免费且不限量。

@@ -12,7 +12,6 @@
     }
   ],
   "vars": {
-    "PAGES_ORIGIN": "https://jimmyzzt.github.io/OotSS_Sand/",
     "TURNSTILE_SITEKEY": "0x4AAAAAAFmwznbyVLaEKRbT",
     "ACCESS_TEAM_DOMAIN": "solitary-breeze-3e17.cloudflareaccess.com",
     "ACCESS_AUD": "7a86725e4d81ee4626217129c3abd81c2ae60a5dbe24e00f47a4419c7cf91f09"
@@ -32,5 +31,27 @@
       "database_id": "423dcc8d-3d3e-4907-be4c-427fb2009215",
       "migrations_dir": "deployment/migrations"
     }
-  ]
+  ],
+  "assets": {
+    "directory": "dist/worker",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash",
+    "run_worker_first": [
+      "/api/*",
+      "/feedback-admin",
+      "/feedback-admin/*",
+      "!/",
+      "!/index*",
+      "!/atlas*",
+      "!/assets/*",
+      "!/tiles/*",
+      "!/favicon.svg",
+      "!/audit*",
+      "!/visits.csv",
+      "!/backup",
+      "!/robots.txt",
+      "!/map-tiles/*"
+    ]
+  }
 }

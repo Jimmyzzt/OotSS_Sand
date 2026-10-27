@@ -47,7 +47,7 @@ python scripts/package_site.py
 
 校对后同步重建对应分 P 导出与三地图。results/stage1 保留为历史快照，正式网页发布 results/worlds。图像版本由 data/map_assets.json 固定；关卡目录身份版本独立保留。见 [底图更新记录](map-update-2026-10-26.md)。
 
-master 的发布产物变化会触发 GitHub Pages。打包只含首页、网页脚本／样式、数据、CSV、审校网页与公开 assets，不含视频、缓存、本机配置或管理面板源码。源站 https://jimmyzzt.github.io/OotSS_Sand/ ，Worker 域名 https://sand.zzt.si/ 。普通网页修改只需 Pages 发布。
+master 的发布产物变化会触发 GitHub Pages。打包只含首页、网页脚本／样式、数据、CSV、审校网页与公开 assets，不含视频、缓存、本机配置或管理面板源码。备用站 https://jimmyzzt.github.io/OotSS_Sand/ ，正式站 https://sand.zzt.si/ 使用 Workers Static Assets。普通网页修改在 Pages 自动发布后，还需运行 npm run worker:deploy 更新正式域名的静态资源。详见 [静态托管与额度](hosting.md)。
 
 Worker 修改后运行 npm run test:worker、npm run worker:check、npm run worker:deploy。不要写入凭证。反馈使用专用 D1，管理页与 API 均受 Access JWT 保护，见 [反馈说明](feedback.md)。
 

@@ -5,8 +5,9 @@
   "scripts": {
     "test:ui": "node --test tests/*.test.js",
     "test:worker": "node --test deployment/*.test.js",
-    "worker:check": "wrangler deploy --dry-run",
-    "worker:deploy": "wrangler deploy"
+    "worker:check": "python -m scripts.package_worker --complete && wrangler deploy --dry-run",
+    "worker:deploy": "python -m scripts.package_worker --complete && wrangler deploy",
+    "worker:package": "python -m scripts.package_worker --complete"
   },
   "devDependencies": {
     "wrangler": "^4.151.2"

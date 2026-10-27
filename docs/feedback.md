@@ -18,6 +18,8 @@ Cloudflare Access 应用覆盖 `sand.zzt.si/feedback-admin` 及其子路径。Al
 
 面板支持按状态、类型、地图及关卡／描述搜索，50 条分页；可以定位到地图关卡、跳转攻略、填写管理员备注及将状态改为待核对／已确认／已修复／重复／无效。修改包含版本检查，避免两人覆盖同一条记录。导出当前筛选结果最多 1000 条 CSV，并转义电子表格公式。第一版保留所有反馈，不提供删除。
 
+静态地图和全部精度瓦片现由 Workers Static Assets 直接提供，仅反馈／管理调用脚本。额度耗尽不影响静态地图，反馈仍可能暂时不可用。部署方式见 [托管说明](hosting.md)。
+
 ## 部署与维护
 
 已创建专用 D1 `ootss-sand-feedback`，绑定 `FEEDBACK_DB`；迁移在 `deployment/migrations/`。Turnstile 组件仅允许 `sand.zzt.si` 和 `jimmyzzt.github.io`，后端强制验证 action=feedback 及请求网站域名。密钥只保存在 Worker Secrets，不写进页面或仓库。

@@ -1,52 +1,30 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import worker,{upstreamUrl} from './worker.js';
-const env={PAGES_ORIGIN:'https://jimmyzzt.github.io/OotSS_Sand/'};
-test('fixed Pages prefix and queries survive; arbitrary hosts cannot be selected',()=>{
-  assert.equal(upstreamUrl('https://sand.zzt.si/assets/a.webp?p=5',env.PAGES_ORIGIN).href,'https://jimmyzzt.github.io/OotSS_Sand/assets/a.webp?p=5');
-  assert.equal(upstreamUrl('https://sand.zzt.si//evil.test/x',env.PAGES_ORIGIN).hostname,'jimmyzzt.github.io');
-  assert.throws(()=>upstreamUrl('https://sand.zzt.si/%2e%2e%2fother',env.PAGES_ORIGIN));
-});
-test('proxy streams assets, drops cookies and authorization, preserves 404 and HEAD',async()=>{
-  const original=globalThis.fetch;
-  globalThis.fetch=async(url,options)=>{
-    assert.equal(options.headers.has('cookie'),false);assert.equal(options.headers.has('authorization'),false);
-    return new Response(options.method==='HEAD'?null:'image bytes',{status:404,headers:{'Content-Type':'image/webp'}});
-  };
-  try{
-    const response=await worker.fetch(new Request('https://sand.zzt.si/a.webp',{headers:{cookie:'private',authorization:'Bearer private'}}),env);
-    assert.equal(response.status,404);assert.equal(await response.text(),'image bytes');
-    assert.equal(response.headers.get('Content-Type'),'image/webp');
-    assert.equal((await worker.fetch(new Request('https://sand.zzt.si/a',{method:'HEAD'}),env)).body,null);
-    assert.equal((await worker.fetch(new Request('https://sand.zzt.si/',{method:'POST'}),env)).status,405);
-  }finally{globalThis.fetch=original}
+import {readFileSync} from 'node:fs';
+import worker from './worker.js';
+
+test('public requests use the asset binding without any GitHub subrequest, preserving status and HEAD',async()=>{
+ const previous=globalThis.fetch;globalThis.fetch=()=>{throw Error('public requests must not proxy upstream')};
+ const calls=[],env={ASSETS:{async fetch(request){calls.push(request);return new Response(request.method==='HEAD'?null:'static bytes',{status:404,headers:{'Content-Type':'image/webp'}})}}};
+ try{
+  const response=await worker.fetch(new Request('https://sand.zzt.si/assets/a.webp'),env);
+  assert.equal(response.status,404);assert.equal(await response.text(),'static bytes');assert.equal(response.headers.get('Content-Type'),'image/webp');
+  assert.equal((await worker.fetch(new Request('https://sand.zzt.si/assets/a.webp',{method:'HEAD'}),env)).body,null);
+  assert.equal((await worker.fetch(new Request('https://sand.zzt.si/',{method:'POST'}),env)).status,405);assert.equal(calls.length,2);
+ }finally{globalThis.fetch=previous}
 });
 
-test('three physical-map tile paths use the fixed tileset origin, other paths stay on Pages',async()=>{
-  const original=globalThis.fetch, targets=[];
-  globalThis.fetch=async url=>{targets.push(String(url));return new Response('tile')};
-  try{
-    for(const map of ['overworld','sky','underworld']){
-      await worker.fetch(new Request(`https://sand.zzt.si/tiles/${map}_64k/4/3/8.webp`),env);
-      assert.equal(targets.at(-1),`https://joric.github.io/ootss_tileset/tiles/${map}_64k/4/3/8.webp`);
-    }
-    for(const path of ['tiles/unknown_64k/4/3/8.webp','tiles/sky_64k/8/3/8.webp','https://evil.test/']){
-      await worker.fetch(new Request(`https://sand.zzt.si/${path}`),env);
-      assert.equal(new URL(targets.at(-1)).hostname,'jimmyzzt.github.io');
-    }
-  }finally{globalThis.fetch=original}
+test('feedback and admin stay dynamic and never fall through to public assets',async()=>{
+ const env={ASSETS:{fetch(){throw Error('private and API routes must not use public assets')}}};
+ const config=await worker.fetch(new Request('https://sand.zzt.si/api/feedback/config'),env);assert.equal(config.status,200);assert.equal((await config.json()).enabled,false);
+ assert.equal((await worker.fetch(new Request('https://sand.zzt.si/feedback-admin'),env)).status,403);
+ assert.equal((await worker.fetch(new Request('https://sand.zzt.si/feedback-admin/api/reports'),env)).status,403);
 });
 
-test('versioned tiles use the immutable upstream commit and reject other origins or invalid revisions',async()=>{
-  const original=globalThis.fetch,targets=[],sha='a'.repeat(40);
-  globalThis.fetch=async url=>{targets.push(String(url));return new Response('pinned tile')};
-  try{
-    const response=await worker.fetch(new Request(`https://sand.zzt.si/tiles/sky_64k/4/1/0.webp?v=${sha}`),env);
-    assert.equal(response.status,200);
-    assert.equal(targets[0],`https://raw.githubusercontent.com/joric/ootss_tileset/${sha}/tiles/sky_64k/4/1/0.webp?v=${sha}`);
-    assert.equal((await worker.fetch(new Request('https://sand.zzt.si/tiles/sky_64k/4/1/0.webp?v=main'),env)).status,400);
-    assert.equal(targets.length,1);
-    assert.throws(()=>upstreamUrl('https://sand.zzt.si/a','https://raw.githubusercontent.com/other/repo/'+sha+'/'));
-    assert.throws(()=>upstreamUrl('https://sand.zzt.si/a','https://raw.githubusercontent.com/joric/ootss_tileset/main/'));
-  }finally{globalThis.fetch=original}
+test('routing explicitly bypasses script execution for public maps, tiles and the backup redirect',()=>{
+ const config=JSON.parse(readFileSync('wrangler.jsonc','utf8')),rules=config.assets.run_worker_first;
+ const matches=(pattern,path)=>new RegExp('^'+pattern.replace(/[.+?^${}()|[\]\\]/g,'\\$&').replaceAll('*','.*')+'$').test(path);
+ for(const path of ['/','/index.html','/atlas.js','/assets/levels/a.webp','/tiles/sky_64k/7/2/3.webp','/audit.html','/backup','/map-tiles/revision/sky/6/1/2.svg'])assert.ok(rules.some(r=>r.startsWith('!')&&matches(r.slice(1),path)),path);
+ for(const path of ['/api/feedback','/feedback-admin','/feedback-admin/api/reports']){assert.ok(rules.some(r=>!r.startsWith('!')&&matches(r,path)));assert.equal(rules.some(r=>r.startsWith('!')&&matches(r.slice(1),path)),false)}
+ assert.equal(config.assets.html_handling,'auto-trailing-slash');assert.equal(config.assets.binding,'ASSETS');assert.equal(config.vars.PAGES_ORIGIN,undefined);
 });
