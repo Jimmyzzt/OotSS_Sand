@@ -59,6 +59,11 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
                 "review_status": e["review_status"],
                 "level_id": e["level_id"],
                 "note": e.get("audit_note", ""),
+                **(
+                    {"chapter_group": e["chapter_group"]}
+                    if e.get("chapter_group")
+                    else {}
+                ),
             }
             if e["review_status"] == "confirmed":
                 observed.add(e["level_id"])
@@ -85,7 +90,8 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
     repeated = [
         {"level_id": name, "map_layer": by_id[name]["map_layer"], "events": events}
         for name, events in groups.items()
-        if len(events) > 1
+        if len({(e["part"], e.get("chapter_group") or e["event_id"]) for e in events})
+        > 1
     ]
     repeated.sort(
         key=lambda r: (

@@ -151,6 +151,11 @@ def build_atlas(
                     ),
                     "reviewer": event.get("reviewer"),
                     "context": event.get("context"),
+                    **{
+                        key: event[key]
+                        for key in ("chapter", "chapter_label")
+                        if key in event
+                    },
                     "audit_note": event.get("audit_note"),
                     "audit_anchor": event.get("audit_anchor"),
                     "uncertainty": event.get("timing_uncertainty_seconds"),
@@ -263,6 +268,8 @@ def build_atlas(
                 "part",
                 "display_part",
                 "ordinal",
+                "chapter",
+                "chapter_label",
                 "event_id",
                 "level_id",
                 "map_layer",
@@ -294,6 +301,8 @@ def build_atlas(
                             )
                         },
                         "level_id": level["level_id"],
+                        "chapter": visit.get("chapter"),
+                        "chapter_label": visit.get("chapter_label"),
                         "map_layer": level["map_layer"],
                         "area": level["area"],
                         "coordinates": json.dumps(

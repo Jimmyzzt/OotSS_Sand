@@ -44,11 +44,6 @@
 重复ID待核,p5-006,5,185.0,220.0,mirror_4,,三个匹配窗之间有同一棋盘连续操作/画线讲解；可能应合并一次连续访问，边界待人工核对。,https://www.bilibili.com/video/BV13FH96bE4m/?p=6&t=185
 重复ID待核,p5-029,5,1884.5,1905.0,mirror_14,,31:44–32:02有界帧未见退场，疑似同一棋盘连续操作；入口次数待核。,https://www.bilibili.com/video/BV13FH96bE4m/?p=6&t=1884
 重复ID待核,p5-030,5,1920.0,1930.0,mirror_14,,31:44–32:02有界帧未见退场，疑似同一棋盘连续操作；入口次数待核。,https://www.bilibili.com/video/BV13FH96bE4m/?p=6&t=1920
-重复ID待核,p24-001,24,63.875,213.375,end1,,大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。,https://www.bilibili.com/video/BV13FH96bE4m/?p=25&t=63
-重复ID待核,p24-002,24,304.25,370.0,end1,,大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。,https://www.bilibili.com/video/BV13FH96bE4m/?p=25&t=304
-重复ID待核,p24-003,24,615.0,625.0,end1,,大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。,https://www.bilibili.com/video/BV13FH96bE4m/?p=25&t=615
-重复ID待核,p24-004,24,655.0,668.5,end1,,大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。,https://www.bilibili.com/video/BV13FH96bE4m/?p=25&t=655
-重复ID待核,p24-005,24,955.0,967.125,end1,,大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。,https://www.bilibili.com/video/BV13FH96bE4m/?p=25&t=955
 重复ID待核,p31-035,31,3268.625,3285.0,mirror_carry_duo,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=32&t=3268
 重复ID待核,p31-036,31,3475.0,3555.0,mirror_carry_duo,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=32&t=3475
 重复ID待核,p36-001,36,55.0,65.0,vertical_promesst_v2,,规则筛查，需比较入口位置/初始角色/连续性,https://www.bilibili.com/video/BV13FH96bE4m/?p=37&t=55

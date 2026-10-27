@@ -4,10 +4,10 @@
   "counts": {
     "catalog_entries": 920,
     "mapped_entries": 920,
-    "time_records": 947,
+    "time_records": 946,
     "unlocated_segments": 2,
     "absent_catalog_entries": 0,
-    "repeated_identity_groups": 21,
+    "repeated_identity_groups": 20,
     "world_segments_excluded": 13
   },
   "decisions": [
@@ -193,62 +193,6 @@
           "review_status": "confirmed",
           "level_id": "mirror_14",
           "note": "31:44–32:02有界帧未见退场，疑似同一棋盘连续操作；入口次数待核。"
-        }
-      ]
-    },
-    {
-      "level_id": "end1",
-      "map_layer": "overworld",
-      "events": [
-        {
-          "part": 24,
-          "event_id": "p24-001",
-          "start": 63.875,
-          "end": 213.375,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=25&t=63",
-          "review_status": "confirmed",
-          "level_id": "end1",
-          "note": "大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。"
-        },
-        {
-          "part": 24,
-          "event_id": "p24-002",
-          "start": 304.25,
-          "end": 370.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=25&t=304",
-          "review_status": "confirmed",
-          "level_id": "end1",
-          "note": "大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。"
-        },
-        {
-          "part": 24,
-          "event_id": "p24-003",
-          "start": 615.0,
-          "end": 625.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=25&t=615",
-          "review_status": "confirmed",
-          "level_id": "end1",
-          "note": "大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。"
-        },
-        {
-          "part": 24,
-          "event_id": "p24-004",
-          "start": 655.0,
-          "end": 668.5,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=25&t=655",
-          "review_status": "confirmed",
-          "level_id": "end1",
-          "note": "大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。"
-        },
-        {
-          "part": 24,
-          "event_id": "p24-005",
-          "start": 955.0,
-          "end": 967.125,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=25&t=955",
-          "review_status": "confirmed",
-          "level_id": "end1",
-          "note": "大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。"
         }
       ]
     },

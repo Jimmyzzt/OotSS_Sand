@@ -3,6 +3,7 @@ globalThis.AtlasUI = {
   includesRegion(level,state,forMap=false) {
     return !state.region || (forMap && Boolean(state.part)) || level.region_ids.includes(state.region);
   },
+  includesCompletion(completed,showCompleted=true) {return showCompleted || !completed;},
   inViewport(xy,bounds,focused=false) {
     return focused || !bounds || (xy[0]>=bounds.west && xy[0]<=bounds.east && xy[1]>=bounds.south && xy[1]<=bounds.north);
   },
@@ -34,7 +35,7 @@ globalThis.AtlasUI = {
     for (const [id,v] of Object.entries(data.levels)) {
       if (!levelIds.has(id) || !v || typeof v !== 'object' || Array.isArray(v)) continue;
       const r = {};
-      for (const k of ['big_star','multi_save']) if (typeof v[k] === 'boolean') r[k] = v[k];
+      for (const k of ['big_star','multi_save','completed']) if (typeof v[k] === 'boolean') r[k] = v[k];
       if (typeof v.notes === 'string') r.notes = v.notes.slice(0,200);
       if (typeof v.labelHidden === 'boolean') r.labelHidden = v.labelHidden;
       if (AtlasUI.positions.includes(v.labelPosition)) r.labelPosition = v.labelPosition;
@@ -68,7 +69,7 @@ globalThis.AtlasUI = {
     const r={};
     for (const [k,min,max] of [['point',.6,2.6],['regionLabel',10,42],['levelLabel',10,42],['offsetX',0,80],['offsetY',0,80]]) if(Number.isFinite(v[k])) r[k]=Math.max(min,Math.min(max,v[k]));
     for(const k of ['regionPosition','levelPosition']) if(AtlasUI.positions.includes(v[k])) r[k]=v[k];
-    for(const k of ['regionLabels','levelLabels','adaptPositions','customTexts']) if(typeof v[k]==='boolean')r[k]=v[k];
+    for(const k of ['regionLabels','levelLabels','adaptPositions','showCompleted']) if(typeof v[k]==='boolean')r[k]=v[k];
     return r;
   },
   defaults:{point:1.6,regionLabel:18,levelLabel:18,regionPosition:'bottom-left',levelPosition:'top-right',offsetX:5,offsetY:4},
@@ -82,7 +83,6 @@ globalThis.AtlasUI = {
     for(const r of Object.values(clone.levels)) for(const k of ['labelHidden','labelPosition','labelShiftX','labelShiftY'])delete r[k];
     for(const r of Object.values(clone.regions)) {
       delete r.style;delete r.labelPosition;
-      if(Array.isArray(r.texts))r.texts=r.texts.map(t=>({...t,...AtlasUI.textStyle({size:AtlasUI.defaults.regionLabel})}));
     }
     return clone;
   },

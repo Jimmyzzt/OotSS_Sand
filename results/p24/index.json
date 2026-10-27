@@ -7,8 +7,194 @@
   "title": "【结局1】对映之地+出口[北6西5+北5西5]",
   "stage": 1,
   "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
-  "review_note": "Luna visual comparison confirmed the distinctive end1 board layout in all five candidate frames, checking all 13 contact sheets. Several later views are ending-stage presentation or exterior-world footage; only clear board intervals are recorded. Overworld entry is unverified and outcome remains unknown.",
+  "review_note": "2026-10-27 用户确认 end1 四阶段导航：01:03、05:59、10:54、15:46。同一关卡分章节，不是独立入口；保留旧五段识别证据，未推断新的结束时间。",
   "events": [
+    {
+      "event_id": "p24-end1-stage1",
+      "level_id": "end1",
+      "chapter_group": "end1",
+      "chapter": 1,
+      "chapter_label": "一阶段",
+      "puzzle_start_time": 63,
+      "puzzle_end_time": 359,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "reviewer": "user confirmation 2026-10-27",
+      "source_event_ids": [
+        "p24-001",
+        "p24-002",
+        "p24-003",
+        "p24-004",
+        "p24-005"
+      ],
+      "evidence": [
+        {
+          "source": "user confirmation 2026-10-27",
+          "reason": "用户确认 end1 为同一关卡的四个阶段，起点依次为 01:03、05:59、10:54、15:46；章节导航不表示四次进入关卡。"
+        }
+      ],
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 24,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 111200165,
+          "coordinates": [
+            -15.0,
+            147.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "endgame1",
+      "map_url": "https://joric.github.io/ootss/#end1",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=63"
+    },
+    {
+      "event_id": "p24-end1-stage2",
+      "level_id": "end1",
+      "chapter_group": "end1",
+      "chapter": 2,
+      "chapter_label": "二阶段",
+      "puzzle_start_time": 359,
+      "puzzle_end_time": 654,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "reviewer": "user confirmation 2026-10-27",
+      "source_event_ids": [
+        "p24-001",
+        "p24-002",
+        "p24-003",
+        "p24-004",
+        "p24-005"
+      ],
+      "evidence": [
+        {
+          "source": "user confirmation 2026-10-27",
+          "reason": "用户确认 end1 为同一关卡的四个阶段，起点依次为 01:03、05:59、10:54、15:46；章节导航不表示四次进入关卡。"
+        }
+      ],
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 24,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 111200165,
+          "coordinates": [
+            -15.0,
+            147.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "endgame1",
+      "map_url": "https://joric.github.io/ootss/#end1",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=359"
+    },
+    {
+      "event_id": "p24-end1-stage3",
+      "level_id": "end1",
+      "chapter_group": "end1",
+      "chapter": 3,
+      "chapter_label": "三阶段",
+      "puzzle_start_time": 654,
+      "puzzle_end_time": 946,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "reviewer": "user confirmation 2026-10-27",
+      "source_event_ids": [
+        "p24-001",
+        "p24-002",
+        "p24-003",
+        "p24-004",
+        "p24-005"
+      ],
+      "evidence": [
+        {
+          "source": "user confirmation 2026-10-27",
+          "reason": "用户确认 end1 为同一关卡的四个阶段，起点依次为 01:03、05:59、10:54、15:46；章节导航不表示四次进入关卡。"
+        }
+      ],
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 24,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 111200165,
+          "coordinates": [
+            -15.0,
+            147.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "endgame1",
+      "map_url": "https://joric.github.io/ootss/#end1",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=654"
+    },
+    {
+      "event_id": "p24-end1-stage4",
+      "level_id": "end1",
+      "chapter_group": "end1",
+      "chapter": 4,
+      "chapter_label": "四阶段",
+      "puzzle_start_time": 946,
+      "puzzle_end_time": 967.125,
+      "entry_transition_time": null,
+      "exit_time": null,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
+      "reviewer": "user confirmation 2026-10-27",
+      "source_event_ids": [
+        "p24-001",
+        "p24-002",
+        "p24-003",
+        "p24-004",
+        "p24-005"
+      ],
+      "evidence": [
+        {
+          "source": "user confirmation 2026-10-27",
+          "reason": "用户确认 end1 为同一关卡的四个阶段，起点依次为 01:03、05:59、10:54、15:46；章节导航不表示四次进入关卡。"
+        }
+      ],
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 24,
+      "map_layer": "overworld",
+      "map_entries": [
+        {
+          "marker_id": 111200165,
+          "coordinates": [
+            -15.0,
+            147.0,
+            0.0
+          ]
+        }
+      ],
+      "area": "endgame1",
+      "map_url": "https://joric.github.io/ootss/#end1",
+      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=946"
+    }
+  ],
+  "superseded_events": [
     {
       "event_id": "p24-001",
       "level_id": "end1",
@@ -95,22 +281,9 @@
       "evidence_gallery": "evidence/candidates_00.jpg",
       "manual_corrections": [],
       "reviewer": "Luna visual comparison",
-      "video_bvid": "BV13FH96bE4m",
-      "part_number": 24,
-      "map_layer": "overworld",
-      "map_entries": [
-        {
-          "marker_id": 111200165,
-          "coordinates": [
-            -15.0,
-            147.0,
-            0.0
-          ]
-        }
-      ],
-      "area": "endgame1",
-      "map_url": "https://joric.github.io/ootss/#end1",
-      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=63"
+      "audit_note": "大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。",
+      "audit_anchor": "repeat-end1",
+      "superseded_reason": "2026-10-27 用户确认四阶段起点，零散识别窗口被章节导航替代。"
     },
     {
       "event_id": "p24-002",
@@ -198,22 +371,9 @@
       "evidence_gallery": "evidence/candidates_00.jpg",
       "manual_corrections": [],
       "reviewer": "Luna visual comparison",
-      "video_bvid": "BV13FH96bE4m",
-      "part_number": 24,
-      "map_layer": "overworld",
-      "map_entries": [
-        {
-          "marker_id": 111200165,
-          "coordinates": [
-            -15.0,
-            147.0,
-            0.0
-          ]
-        }
-      ],
-      "area": "endgame1",
-      "map_url": "https://joric.github.io/ootss/#end1",
-      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=304"
+      "audit_note": "大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。",
+      "audit_anchor": "repeat-end1",
+      "superseded_reason": "2026-10-27 用户确认四阶段起点，零散识别窗口被章节导航替代。"
     },
     {
       "event_id": "p24-003",
@@ -301,22 +461,9 @@
       "evidence_gallery": "evidence/candidates_00.jpg",
       "manual_corrections": [],
       "reviewer": "Luna visual comparison",
-      "video_bvid": "BV13FH96bE4m",
-      "part_number": 24,
-      "map_layer": "overworld",
-      "map_entries": [
-        {
-          "marker_id": 111200165,
-          "coordinates": [
-            -15.0,
-            147.0,
-            0.0
-          ]
-        }
-      ],
-      "area": "endgame1",
-      "map_url": "https://joric.github.io/ootss/#end1",
-      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=615"
+      "audit_note": "大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。",
+      "audit_anchor": "repeat-end1",
+      "superseded_reason": "2026-10-27 用户确认四阶段起点，零散识别窗口被章节导航替代。"
     },
     {
       "event_id": "p24-004",
@@ -404,22 +551,9 @@
       "evidence_gallery": "evidence/candidates_00.jpg",
       "manual_corrections": [],
       "reviewer": "Luna visual comparison",
-      "video_bvid": "BV13FH96bE4m",
-      "part_number": 24,
-      "map_layer": "overworld",
-      "map_entries": [
-        {
-          "marker_id": 111200165,
-          "coordinates": [
-            -15.0,
-            147.0,
-            0.0
-          ]
-        }
-      ],
-      "area": "endgame1",
-      "map_url": "https://joric.github.io/ootss/#end1",
-      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=655"
+      "audit_note": "大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。",
+      "audit_anchor": "repeat-end1",
+      "superseded_reason": "2026-10-27 用户确认四阶段起点，零散识别窗口被章节导航替代。"
     },
     {
       "event_id": "p24-005",
@@ -507,22 +641,9 @@
       "evidence_gallery": "evidence/candidates_00.jpg",
       "manual_corrections": [],
       "reviewer": "Luna visual comparison",
-      "video_bvid": "BV13FH96bE4m",
-      "part_number": 24,
-      "map_layer": "overworld",
-      "map_entries": [
-        {
-          "marker_id": 111200165,
-          "coordinates": [
-            -15.0,
-            147.0,
-            0.0
-          ]
-        }
-      ],
-      "area": "endgame1",
-      "map_url": "https://joric.github.io/ootss/#end1",
-      "video_url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=24&t=955"
+      "audit_note": "大型相连内部房间；#003/#004可能同一棋盘/重试，其他回访也缺逐次入口证据，不能由匹配次数认定入口次数。",
+      "audit_anchor": "repeat-end1",
+      "superseded_reason": "2026-10-27 用户确认四阶段起点，零散识别窗口被章节导航替代。"
     }
   ]
 }

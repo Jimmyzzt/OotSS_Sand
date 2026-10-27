@@ -47,3 +47,40 @@ def test_unique_part_ordinals_revisits_remap_and_manual_tags():
     assert two["tags"]["multi_save"]
     assert data["parts"][0]["level_count"] == 2
     assert [r["region_id"] for r in data["parts"][0]["route"]] == ["1,0", "2,0", "1,0"]
+
+
+def test_owner_confirmed_end1_chapters_keep_one_ordinal_and_the_old_evidence():
+    import json
+    from pathlib import Path
+
+    review = json.loads(Path("results/p24/reviewed.json").read_text(encoding="utf-8"))
+    events = [e for e in review["events"] if e["level_id"] == "end1"]
+    assert [e["puzzle_start_time"] for e in events] == [63, 359, 654, 946]
+    assert [e["chapter"] for e in events] == [1, 2, 3, 4]
+    assert len(review["superseded_events"]) >= 5
+    assert all(e["entry_transition_time"] is None for e in events)
+    data = {
+        "bvid": "BVsource",
+        "parts": [{"part": 24}],
+        "levels": [
+            {
+                "level_id": "end1",
+                "area": "endgame1",
+                "entries": [{"coordinates": [-15, 147, 0]}],
+                "visits": [
+                    {
+                        "part": 24,
+                        "start": e["puzzle_start_time"],
+                        "end": e["puzzle_end_time"],
+                        "chapter": e["chapter"],
+                    }
+                    for e in events
+                ],
+            }
+        ],
+    }
+    enrich(data, links={"parts": {"24": {"part": 25}}})
+    visits = data["levels"][0]["visits"]
+    assert [v["ordinal"] for v in visits] == [1] * 4
+    assert [v["chapter"] for v in visits] == [1, 2, 3, 4]
+    assert [v["url"].split("t=")[-1] for v in visits] == ["63", "359", "654", "946"]

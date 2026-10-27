@@ -136,13 +136,13 @@ test('bounded edit history coalesces typing, supports redo, and discards a diver
 });
 
 test('resetting map styles restores labels while preserving annotation meaning and text locations',()=>{
-  const levels={a:{big_star:true,notes:'保留',labelHidden:true,labelShiftX:40,labelPosition:'top-left'}};
+  const levels={a:{big_star:true,completed:true,notes:'保留',labelHidden:true,labelShiftX:40,labelPosition:'top-left'}};
   const regions={r:{title:'区域名',labelPosition:'top-right',style:{point:2.4},texts:[{id:'a',text:'说明',x:10,y:20,size:40,color:'#ffffff',strokeWidth:4,strokeColor:'#000000'}]}};
   const reset=AtlasUI.resetMapStyles(levels,regions);
-  assert.deepEqual(reset.levels.a,{big_star:true,notes:'保留'});
+  assert.deepEqual(reset.levels.a,{big_star:true,completed:true,notes:'保留'});
   assert.equal(reset.regions.r.title,'区域名');
   assert.equal(reset.regions.r.style,undefined);
-  assert.deepEqual(reset.regions.r.texts[0],{id:'a',text:'说明',x:10,y:20,...AtlasUI.textStyle({size:18})});
+  assert.deepEqual(reset.regions.r.texts,regions.r.texts); // Retired text data remains exportable without being rendered.
   assert.equal(levels.a.labelHidden,true);
 });
 
@@ -153,4 +153,16 @@ test('hidden labels and isolated region styles survive editorial import without 
   const regionStyle={...AtlasUI.defaults,...p.regions.r.style};
   assert.equal(regionStyle.regionLabel,24);
   assert.equal(regionStyle.offsetY,4);
+});
+
+
+test('completion imports preserve true and false without treating unknown or partial state as solved',()=>{
+ const source={version:3,levels:{a:{completed:true,multi_save:true},b:{completed:false},c:{completed:'true'},d:{notes:'unrecorded'}}};
+ const parsed=AtlasUI.parseEditorial(source,new Set(['a','b','c','d']),new Set());
+ assert.equal(parsed.levels.a.completed,true);assert.equal(parsed.levels.a.multi_save,true);
+ assert.equal(parsed.levels.b.completed,false);assert.equal(parsed.levels.c.completed,undefined);assert.equal(parsed.levels.d.completed,undefined);
+ assert.equal(AtlasUI.includesCompletion(true),true);assert.equal(AtlasUI.includesCompletion(true,false),false);
+ assert.equal(AtlasUI.includesCompletion(false,false),true);assert.equal(AtlasUI.includesCompletion(undefined,false),true);
+ assert.equal(AtlasUI.readerStyle({showCompleted:false,customTexts:true}).showCompleted,false);
+ assert.equal(AtlasUI.readerStyle({customTexts:true}).customTexts,undefined);
 });

@@ -70,3 +70,23 @@ def test_audit_keeps_unknowns_out_of_observed_and_excludes_hidden_part(
         e["part"] == 68 for r in data["repeated_identities"] for e in r["events"]
     )
     assert Path("results/worlds/audit.html").exists()
+    # Chapters of one owner-confirmed visit are not suspicious repeated identities.
+    review = {
+        "duration": 30,
+        "events": [
+            {
+                "event_id": f"chapter-{i}",
+                "level_id": "seen",
+                "review_status": "confirmed",
+                "puzzle_start_time": i * 5,
+                "puzzle_end_time": i * 5 + 3,
+                "evidence": [{"reason": "owner confirmed chapter"}],
+                "chapter_group": "seen",
+            }
+            for i in range(4)
+        ],
+    }
+    write_json("results/p1/reviewed.json", review)
+    data = generate(catalog="catalog.json")
+    assert data["counts"]["time_records"] == 4
+    assert data["counts"]["repeated_identity_groups"] == 0
