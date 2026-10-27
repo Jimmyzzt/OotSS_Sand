@@ -59,21 +59,19 @@ function initGameSaves(){
   const allIds=new Set(worlds.flatMap(m=>m.levels.map(l=>l.level_id)));
   function message(text){status.textContent=text}
   function clearCandidates(){candidates=[];selection.replaceChildren();$('game-save-choice').hidden=true;$('game-save-apply').disabled=true}
-  function busyState(value){busy=value;for(const id of ['game-save-folder','game-save-file','game-save-apply','game-save-selection'])$(id).disabled=value||id==='game-save-apply'&&!candidates.length}
+  function busyState(value){busy=value;for(const id of ['game-save-folder','game-save-apply','game-save-selection'])$(id).disabled=value||id==='game-save-apply'&&!candidates.length}
   function showCandidates(list){
     clearCandidates();candidates=list;
     for(let i=0;i<list.length;i++){const option=document.createElement('option');option.value=i;option.textContent=list[i].path;selection.append(option)}
     $('game-save-choice').hidden=!list.length;$('game-save-apply').disabled=!list.length;
-    message(list.length?'已找到存档。请选择一个游戏档案，再点击「读取并标记」。':'未找到 Status.sokoban_status，请选择游戏存档目录或该文件。');
+    message(list.length?'已找到存档。请选择一个游戏档案，再点击「读取并标记」。':'未找到 Status.sokoban_status，请选择包含该文件的游戏存档目录。');
   }
   function open(){
-    settings(false);clearCandidates();message(saveProgress?`当前记录：${saveProgress.source}。再次读取会以存档通关结果重新覆盖显示。`:'请选择游戏存档目录，或直接选择 Status.sokoban_status。');dialog.showModal();
+    settings(false);clearCandidates();message(saveProgress?`当前记录：${saveProgress.source}。再次读取会以存档通关结果重新覆盖显示。`:'请选择游戏存档目录。');dialog.showModal();
   }
   $('save-read').onclick=open;
   $('game-save-close').onclick=()=>{if(!busy)dialog.close()};dialog.addEventListener('cancel',event=>{if(busy)event.preventDefault()});dialog.addEventListener('close',()=>{generation++;clearCandidates()});
   $('game-save-copy').onclick=async()=>{try{await navigator.clipboard.writeText($('game-save-path').textContent);message('已复制默认存档路径，可粘贴到系统文件选择窗口。')}catch{message('请选中上方路径后复制。')}};
-  $('game-save-file').onclick=()=>$('game-save-file-input').click();
-  $('game-save-file-input').onchange=event=>{showCandidates(AtlasSave.statusFiles(event.target.files).map(file=>({file,path:file.name})));event.target.value=''};
   $('game-save-directory-input').onchange=event=>{showCandidates(AtlasSave.statusFiles(event.target.files).map(file=>({file,path:file.webkitRelativePath||file.name})));event.target.value=''};
   $('game-save-folder').onclick=async()=>{
     if(!window.showDirectoryPicker){$('game-save-directory-input').click();return}
@@ -82,7 +80,7 @@ function initGameSaves(){
       const directory=await window.showDirectoryPicker({id:'ootss-game-save',mode:'read'});if(current!==generation||!dialog.open)return;
       busyState(true);message('正在查找 Status.sokoban_status…');const found=await AtlasSave.findStatuses(directory);
       if(current===generation&&dialog.open)showCandidates(found);
-    }catch(error){if(error.name!=='AbortError')message('无法读取此目录，请重选目录或直接选择存档文件。')}
+    }catch(error){if(error.name!=='AbortError')message('无法读取此目录，请重新选择游戏存档目录。')}
     finally{busyState(false)}
   };
   $('game-save-apply').onclick=async()=>{
