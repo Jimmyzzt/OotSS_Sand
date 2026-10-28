@@ -9,6 +9,30 @@ def test_original_grid_and_mirror_cells():
     assert direction(-2, 3) == "北3西2"
 
 
+def test_untrusted_intro_grid_preserves_points_and_video_order_without_regions():
+    data = {
+        "bvid": "BVsource",
+        "grid_available": False,
+        "parts": [{"part": 68}],
+        "levels": [
+            {
+                "level_id": "prototype",
+                "area": "intro",
+                "entries": [{"coordinates": [74, 44, 2]}],
+                "visits": [{"part": 68, "start": 10, "end": 20}],
+            }
+        ],
+    }
+    enrich(data, map_id="intro", links={"parts": {"68": {"part": 69}}})
+    assert data["grid"] is None and data["regions"] == []
+    assert data["parts"][0]["route"] == []
+    level = data["levels"][0]
+    assert level["region_ids"] == [] and level["region_titles"] == []
+    assert level["entries"][0]["coordinates"] == [74, 44, 2]
+    assert level["visits"][0]["ordinal"] == 1
+    assert level["visits"][0]["url"].endswith("p=69&t=10")
+
+
 def test_unique_part_ordinals_revisits_remap_and_manual_tags():
     def level(name, x, times):
         return {

@@ -33,6 +33,7 @@ def theme_for(levels, first_part, col, row):
     areas = Counter(l["area"] for l in levels if l["area"] != "worlds_collide")
     area = areas.most_common(1)[0][0] if areas else "worlds_collide"
     names = {
+        "intro": "序章",
         "heroes1": "搬运英雄",
         "heroes2": "英雄2·怪物",
         "heroes3": "英雄3·吟游诗人与德鲁伊",
@@ -219,4 +220,12 @@ def enrich(
             route=routes[part],
         )
     data.update(grid=GRID, regions=regions, annotation_version=1)
+    if data.get("grid_available") is False:
+        # Owner reported the upstream intro grid as incorrect. Do not publish
+        # invented regions until the original map supplies a corrected grid.
+        data.update(grid=None, regions=[])
+        for level in levels.values():
+            level.update(region_ids=[], region_titles=[])
+        for row in parts.values():
+            row["route"] = []
     return data

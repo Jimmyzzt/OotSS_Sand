@@ -3,7 +3,7 @@ import {adminHtml} from './feedback-admin.js';
 
 const TYPES=new Set(['mismatch','duplicate','missing','other']);
 const STATUSES=new Set(['pending','confirmed','fixed','duplicate','invalid']);
-const MAPS=new Set(['overworld','sky','underworld']);
+const MAPS=new Set(['overworld','sky','underworld','intro']);
 const ORIGINS=new Set(['https://sand.zzt.si','https://jimmyzzt.github.io']);
 const UUID=/^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/i;
 const BASE_HEADERS={'Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'same-origin'};

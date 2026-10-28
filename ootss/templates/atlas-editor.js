@@ -30,6 +30,7 @@ function readerControls(prefix,regional=false){
 function syncStyleControls(){
   for(const el of document.querySelectorAll('[data-pref]')){
     const source=el.dataset.regional?regionStyle(tune.region):prefs,key=el.dataset.pref;
+    el.disabled=data.grid_available===false&&['regionLabels','adaptPositions','regionLabel','regionPosition'].includes(key);
     if(el.type==='checkbox')el.checked=source[key];else el.value=source[key];
   }
   for(const el of document.querySelectorAll('[data-value]')){const key=el.dataset.value,v=(el.dataset.regional?regionStyle(tune.region):prefs)[key];el.textContent=key==='point'?`${v.toFixed(1)}×`:key==='completedOpacity'?`${Math.round(v*100)}%`:`${v}px`}
@@ -57,7 +58,7 @@ function labelPositionStyle(l,d,xy,calloutPosition){
   const a={...l.manual,...annotations[l.level_id]},base=regionStyle(entryRegion(l,xy)),s=AtlasUI.levelLabelStyle(a.labelPosition||calloutPosition||base.levelPosition,base.offsetX,base.offsetY,a.labelShiftX||0,a.labelShiftY||0);
   return `font-size:${base.levelLabel}px;left:${d/2+s.x}px;top:${d/2+s.y}px;bottom:auto;transform:translate(${s.tx}%,${s.ty}%);`;
 }
-function canTune(){return Boolean(state.region||state.part)}
+function canTune(){return data.grid_available!==false&&Boolean(state.region||state.part)}
 function activeTuneRegion(){return regions.get(tune.region)}
 function enterTune(id=state.region||availableRegions()[0]?.id){
   if(!regions.has(id)||!availableRegions().some(r=>r.id===id))return;

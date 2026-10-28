@@ -1,14 +1,14 @@
 {
-  "scope": "源P1–67；源P68（当前P69）隐藏题目已排除。播放链接按CID对齐当前合集；事件编号沿用源编号。",
+  "scope": "源P1–68；源P68（当前P69）只收录经专项校对的序章入口。播放链接按CID对齐当前合集；事件编号沿用源编号。",
   "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
   "counts": {
-    "catalog_entries": 920,
-    "mapped_entries": 920,
-    "time_records": 946,
-    "unlocated_segments": 2,
+    "catalog_entries": 946,
+    "mapped_entries": 946,
+    "time_records": 972,
+    "unlocated_segments": 0,
     "absent_catalog_entries": 0,
     "repeated_identity_groups": 20,
-    "world_segments_excluded": 13
+    "world_segments_excluded": 38
   },
   "decisions": [
     {
@@ -685,32 +685,7 @@
       ]
     }
   ],
-  "unlocated_segments": [
-    {
-      "part": 44,
-      "event_id": "p44-012",
-      "start": 3100.0,
-      "end": 3209.5,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=45&t=3100",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "Full timeline sheets 19–20 show the icy courtyard first at 51:40 (3100s); the same overhead grid, pale ice floor and dark enclosing walls continue through 53:25. At 53:30 the board exits to a black completion transition, so this visit ends there; later footage is a different chamber.",
-      "previous_level_id": null
-    },
-    {
-      "part": 44,
-      "event_id": "p44-013",
-      "start": 3235.0,
-      "end": 3710.0,
-      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=45&t=3235",
-      "review_status": "unknown",
-      "level_id": null,
-      "note": "",
-      "reason": "Full timeline sheets 20–23 show the square icy-stone chamber with a pink-block rectangular loop beginning at 53:55 (3235s). The same board remains continuously on screen through 61:50 (3710s), with pieces moved around the loop. At 61:55 it cuts back to the separate warm-colored room; that transition bounds this unknown visit.",
-      "previous_level_id": null
-    }
-  ],
+  "unlocated_segments": [],
   "absent_catalog_entries": [],
   "human_review": {
     "source": "docs/校对.md",
@@ -1153,6 +1128,231 @@
       ],
       "part": 67,
       "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=68&t=1860"
+    },
+    {
+      "segment_id": "p68-gap-1",
+      "start": 0,
+      "end": 66.875,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=0"
+    },
+    {
+      "segment_id": "p68-gap-2",
+      "start": 118.25,
+      "end": 156.625,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=118"
+    },
+    {
+      "segment_id": "p68-gap-3",
+      "start": 269.5,
+      "end": 309.875,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=269"
+    },
+    {
+      "segment_id": "p68-gap-4",
+      "start": 340.5,
+      "end": 346.875,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=340"
+    },
+    {
+      "segment_id": "p68-gap-5",
+      "start": 378.25,
+      "end": 386.75,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=378"
+    },
+    {
+      "segment_id": "p68-gap-6",
+      "start": 520.5,
+      "end": 538.75,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=520"
+    },
+    {
+      "segment_id": "p68-gap-7",
+      "start": 636.5,
+      "end": 648.625,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=636"
+    },
+    {
+      "segment_id": "p68-gap-8",
+      "start": 745.0,
+      "end": 760.25,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=745"
+    },
+    {
+      "segment_id": "p68-gap-9",
+      "start": 908.25,
+      "end": 920.875,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=908"
+    },
+    {
+      "segment_id": "p68-gap-10",
+      "start": 996.375,
+      "end": 1006.625,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=996"
+    },
+    {
+      "segment_id": "p68-gap-11",
+      "start": 1139.125,
+      "end": 1149.375,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=1139"
+    },
+    {
+      "segment_id": "p68-gap-12",
+      "start": 1231.375,
+      "end": 1238.75,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=1231"
+    },
+    {
+      "segment_id": "p68-gap-13",
+      "start": 1370.5,
+      "end": 1380.375,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=1370"
+    },
+    {
+      "segment_id": "p68-gap-14",
+      "start": 1419.75,
+      "end": 1425.75,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=1419"
+    },
+    {
+      "segment_id": "p68-gap-15",
+      "start": 1495.75,
+      "end": 1505.875,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=1495"
+    },
+    {
+      "segment_id": "p68-gap-16",
+      "start": 1619.875,
+      "end": 1628.75,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=1619"
+    },
+    {
+      "segment_id": "p68-gap-17",
+      "start": 1806.5,
+      "end": 1826.625,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=1806"
+    },
+    {
+      "segment_id": "p68-gap-18",
+      "start": 1944.25,
+      "end": 1950.375,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=1944"
+    },
+    {
+      "segment_id": "p68-gap-19",
+      "start": 2111.875,
+      "end": 2125.875,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=2111"
+    },
+    {
+      "segment_id": "p68-gap-20",
+      "start": 2409.5,
+      "end": 2417.375,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=2409"
+    },
+    {
+      "segment_id": "p68-gap-21",
+      "start": 2588.625,
+      "end": 2595.875,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=2588"
+    },
+    {
+      "segment_id": "p68-gap-22",
+      "start": 2713.5,
+      "end": 2721.5,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=2713"
+    },
+    {
+      "segment_id": "p68-gap-23",
+      "start": 2788.625,
+      "end": 2796.5,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=2788"
+    },
+    {
+      "segment_id": "p68-gap-24",
+      "start": 2947.0,
+      "end": 2952.25,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=2947"
+    },
+    {
+      "segment_id": "p68-gap-25",
+      "start": 3033.75,
+      "end": 3864.567,
+      "kind": "world",
+      "reason": "World tour, development diagrams and hidden recording; no additional independent intro entry.",
+      "part": 68,
+      "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=69&t=3033"
     }
   ],
   "creator_locations": {

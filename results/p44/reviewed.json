@@ -890,6 +890,117 @@
       "reviewer": "Luna visual comparison"
     },
     {
+      "level_id": "jenga_dispenser",
+      "entry_transition_time": 3099.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "confirmed",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1.0,
+      "puzzle_match": {
+        "status": "confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence_gallery": null,
+      "manual_corrections": [],
+      "reviewer": "Codex comparison of existing bounded evidence with new upstream intro reference",
+      "event_id": "p44-012",
+      "puzzle_start_time": 3100.0,
+      "puzzle_end_time": 3209.5,
+      "exit_time": 3210.0,
+      "candidate_levels": [
+        {
+          "level_id": "end2_river_place",
+          "area": "endgame2 or endgame3; weak machine shortlist only"
+        },
+        {
+          "level_id": "skipping_pals",
+          "area": "endgame2 or endgame3; weak machine shortlist only"
+        },
+        {
+          "level_id": "wizard_and_druid_alt_5",
+          "area": "endgame2 or endgame3; weak machine shortlist only"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "runs\\p44\\recovery\\03120.000.jpg",
+          "time": 3100.0,
+          "reference": null,
+          "reason": "Full timeline sheets 19–20 show the icy courtyard first at 51:40 (3100s); the same overhead grid, pale ice floor and dark enclosing walls continue through 53:25. At 53:30 the board exits to a black completion transition, so this visit ends there; later footage is a different chamber."
+        },
+        {
+          "type": "upstream_intro_reference_comparison",
+          "image": "results/upstream/intro-evidence/p44-012.jpg",
+          "reference": "https://raw.githubusercontent.com/joric/ootss_tileset/818260c8b5fe704362722a9369350807ba635e68/images/levels/jenga_dispenser.webp",
+          "marker_source": "https://github.com/joric/ootss/blob/cc4d7efeebb8da921167ff22da03285aaae5e23c/data/markers_intro.json",
+          "reason": "Same enclosing icy architecture, board outline, coloured blocks and initial character roles as the new reference. Existing visit bounds preserved."
+        }
+      ],
+      "review_note": "Existing continuity bounds retained; no rescan or inferred new entrance. Intro coordinate comes from new authoritative marker; video approach remains unverified.",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c"
+    },
+    {
+      "level_id": "wizards_true_nature",
+      "entry_transition_time": 3234.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "confirmed",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1.0,
+      "puzzle_match": {
+        "status": "confirmed"
+      },
+      "overworld_match": {
+        "status": "unverified"
+      },
+      "evidence_gallery": null,
+      "manual_corrections": [],
+      "reviewer": "Codex comparison of existing bounded evidence with new upstream intro reference",
+      "event_id": "p44-013",
+      "puzzle_start_time": 3235.0,
+      "puzzle_end_time": 3710.0,
+      "exit_time": 3711.0,
+      "candidate_levels": [
+        {
+          "level_id": "wizard_and_druid_alt_5",
+          "area": "endgame2 or endgame3; weak machine shortlist only"
+        },
+        {
+          "level_id": "meta_orange_purple",
+          "area": "endgame2 or endgame3; weak machine shortlist only"
+        },
+        {
+          "level_id": "matching_purple",
+          "area": "endgame2 or endgame3; weak machine shortlist only"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "visual_layout_comparison",
+          "image": "runs\\p44\\recovery\\03245.000.jpg",
+          "time": 3235.0,
+          "reference": null,
+          "reason": "Full timeline sheets 20–23 show the square icy-stone chamber with a pink-block rectangular loop beginning at 53:55 (3235s). The same board remains continuously on screen through 61:50 (3710s), with pieces moved around the loop. At 61:55 it cuts back to the separate warm-colored room; that transition bounds this unknown visit."
+        },
+        {
+          "type": "upstream_intro_reference_comparison",
+          "image": "results/upstream/intro-evidence/p44-013.jpg",
+          "reference": "https://raw.githubusercontent.com/joric/ootss_tileset/818260c8b5fe704362722a9369350807ba635e68/images/levels/wizards_true_nature.webp",
+          "marker_source": "https://github.com/joric/ootss/blob/cc4d7efeebb8da921167ff22da03285aaae5e23c/data/markers_intro.json",
+          "reason": "Same enclosing icy architecture, board outline, coloured blocks and initial character roles as the new reference. Existing visit bounds preserved."
+        }
+      ],
+      "review_note": "Existing continuity bounds retained; no rescan or inferred new entrance. Intro coordinate comes from new authoritative marker; video approach remains unverified.",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c"
+    }
+  ],
+  "time_basis": "Seconds from current part start; scan boundaries approximate +/-0.5s.",
+  "superseded_events": [
+    {
       "level_id": null,
       "entry_transition_time": 3099.5,
       "overworld_approach_time": null,
@@ -931,9 +1042,17 @@
           "time": 3100.0,
           "reference": null,
           "reason": "Full timeline sheets 19–20 show the icy courtyard first at 51:40 (3100s); the same overhead grid, pale ice floor and dark enclosing walls continue through 53:25. At 53:30 the board exits to a black completion transition, so this visit ends there; later footage is a different chamber."
+        },
+        {
+          "type": "upstream_intro_reference_comparison",
+          "image": "results/upstream/intro-evidence/p44-012.jpg",
+          "reference": "https://raw.githubusercontent.com/joric/ootss_tileset/818260c8b5fe704362722a9369350807ba635e68/images/levels/jenga_dispenser.webp",
+          "marker_source": "https://github.com/joric/ootss/blob/cc4d7efeebb8da921167ff22da03285aaae5e23c/data/markers_intro.json",
+          "reason": "Same enclosing icy architecture, board outline, coloured blocks and initial character roles as the new reference. Existing visit bounds preserved."
         }
       ],
-      "review_note": "Do not treat weak candidate ranks as identity evidence."
+      "review_note": "Do not treat weak candidate ranks as identity evidence.",
+      "superseded_reason": "Identified against newly published intro preview and authoritative entry marker on 2026-10-28."
     },
     {
       "level_id": null,
@@ -977,10 +1096,17 @@
           "time": 3235.0,
           "reference": null,
           "reason": "Full timeline sheets 20–23 show the square icy-stone chamber with a pink-block rectangular loop beginning at 53:55 (3235s). The same board remains continuously on screen through 61:50 (3710s), with pieces moved around the loop. At 61:55 it cuts back to the separate warm-colored room; that transition bounds this unknown visit."
+        },
+        {
+          "type": "upstream_intro_reference_comparison",
+          "image": "results/upstream/intro-evidence/p44-013.jpg",
+          "reference": "https://raw.githubusercontent.com/joric/ootss_tileset/818260c8b5fe704362722a9369350807ba635e68/images/levels/wizards_true_nature.webp",
+          "marker_source": "https://github.com/joric/ootss/blob/cc4d7efeebb8da921167ff22da03285aaae5e23c/data/markers_intro.json",
+          "reason": "Same enclosing icy architecture, board outline, coloured blocks and initial character roles as the new reference. Existing visit bounds preserved."
         }
       ],
-      "review_note": "Do not treat weak candidate ranks as identity evidence."
+      "review_note": "Do not treat weak candidate ranks as identity evidence.",
+      "superseded_reason": "Identified against newly published intro preview and authoritative entry marker on 2026-10-28."
     }
-  ],
-  "time_basis": "Seconds from current part start; scan boundaries approximate +/-0.5s."
+  ]
 }

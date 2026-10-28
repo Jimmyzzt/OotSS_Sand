@@ -11,8 +11,9 @@ from PIL import Image
 
 from ootss.common import read_json, write_json
 from ootss.exporting import validate, video_url
+from ootss.maps import with_intro
 
-WORLD = {"overworld": "主世界", "sky": "上方", "underworld": "下方"}
+WORLD = {"overworld": "主世界", "sky": "上方", "underworld": "下方", "intro": "序章"}
 
 
 def clock(t):
@@ -23,7 +24,7 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
     out = Path(out)
     source = Path("results/audit")
     out.mkdir(parents=True, exist_ok=True)
-    catalog = read_json(catalog)
+    catalog = with_intro(read_json(catalog))
     by_id = {r["level_id"]: r for r in catalog["levels"]}
     decisions = read_json("data/audit_decisions.json")
     creator_plan = read_json("data/creator_locations.json")
@@ -41,15 +42,25 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
     world_segments, human_visits = [], []
     human_metadata = decisions.get("human_review")
     confirmed_count = 0
-    for part in range(1, 68):
+    for part in range(1, 69):
         review = read_json(f"results/p{part}/reviewed.json")
         validate(review, catalog)
-        for segment in review.get("excluded_segments", []):
+        for index, segment in enumerate(review.get("excluded_segments", [])):
             if segment.get("kind") == "world":
                 world_segments.append(
-                    {**segment, "part": part, "url": url(part, segment["start"])}
+                    {
+                        "segment_id": f"p{part}-gap-{index + 1}",
+                        **segment,
+                        "part": part,
+                        "url": url(part, segment["start"]),
+                    }
                 )
         for e in sorted(review["events"], key=lambda x: x["puzzle_start_time"]):
+            if (
+                part == 68
+                and by_id.get(e.get("level_id"), {}).get("map_layer") != "intro"
+            ):
+                continue
             row = {
                 "part": part,
                 "event_id": e["event_id"],
@@ -140,7 +151,7 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
         {**e, "url": url(e["part"], e["start"])} for e in creator_plan["entries"]
     ]
     result = {
-        "scope": f"源P1–67；源P68（当前{part_name(68)}）隐藏题目已排除。播放链接按CID对齐当前合集；事件编号沿用源编号。",
+        "scope": f"源P1–68；源P68（当前{part_name(68)}）只收录经专项校对的序章入口。播放链接按CID对齐当前合集；事件编号沿用源编号。",
         "map_commit": catalog["commit"],
         "counts": {
             "catalog_entries": len(by_id),
@@ -282,7 +293,11 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
         for e in human_visits
     ]
     world_rows = [
-        [times(e), "大世界；不计关卡", esc(e["evidence"][0]["reason"])]
+        [
+            times(e),
+            "大世界；不计关卡",
+            esc(e.get("reason") or e.get("evidence", [{}])[0].get("reason", "")),
+        ]
         for e in world_segments
     ]
     owner_section = (
@@ -330,7 +345,7 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
     )
     intro = (
         f"目录 {len(by_id)} 个入口；当前已映射 {len(observed)} 个，差集 {len(absent)} 个；"
-        f"{len(missing_identity)} 段尚未定位，{len(repeated)} 组重复ID待核。源P68（当前{part_name(68)}）已排除。"
+        f"{len(missing_identity)} 段尚未定位，{len(repeated)} 组重复ID待核。源P68（当前{part_name(68)}）仅收录序章独立入口。"
     )
     body = f"""<header><a href="index.html">← 返回地图</a><h1>入口差异与人工校对清单</h1><p>{intro}</p><p>“未定位”不等于“原地图不存在”；“目录未出现”不等于“视频一定没拍到”。重复ID也不直接等于重复关卡。这里只纠正有位置、角色、物理世界或用户确认依据的错配，其他保留待核。</p><nav><a href="#creator">作者补充位置</a> · <a href="#human">用户校对</a> · <a href="#fixes">历史纠正</a> · <a href="#repeats">重复ID</a> · <a href="#unlocated">未定位片段</a> · <a href="#absent">目录差集</a> · <a href="audit.csv">下载CSV</a> · <a href="audit.json">JSON</a></nav></header>
 {creator_section}
@@ -385,7 +400,8 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
                 "part": e["part"],
                 "start": e["start"],
                 "end": e["end"],
-                "reason": e["evidence"][0]["reason"],
+                "reason": e.get("reason")
+                or e.get("evidence", [{}])[0].get("reason", ""),
                 "url": e["url"],
             }
         )
@@ -483,7 +499,7 @@ def generate(out="results/worlds", catalog="cache/map/catalog_all.json"):
         "",
         "重复ID、未定位片段及原图差集的完整逐项列表见 differences.csv / differences.json，网页附参考图和就近视频导航。",
         "",
-        f"未定位不等于原图不存在；目录差集不等于视频没出现。源P68（当前{part_name(68)}）隐藏内容不参加统计。",
+        f"未定位不等于原图不存在；目录差集不等于视频没出现。源P68（当前{part_name(68)}）仅统计序章独立入口，世界游览与隐藏录音不计入。",
     ]
     (source / "REPORT.md").write_text("\n".join(md) + "\n", encoding="utf-8")
     print(json.dumps(result["counts"], ensure_ascii=False))

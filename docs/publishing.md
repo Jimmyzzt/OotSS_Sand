@@ -2,7 +2,7 @@
 
 ## 当前玩家界面
 
-默认米白浅色，顶栏可切换深色。筛选栏提供网格、已完成、分 P、区域、搜索和地图选项；区域标题开关在设置中。地图名称为主世界／上方／下方；区域标题默认关闭，已完成默认显示。窄屏优先保留地图选项文字，区域与搜索自适应收缩。
+默认米白浅色，顶栏可切换深色。筛选栏提供网格、已完成、分 P、区域、搜索和地图选项；区域标题开关在设置中。地图名称为主世界／上方／下方／序章；区域标题默认关闭，已完成默认显示。窄屏优先保留地图选项文字，区域与搜索自适应收缩。
 
 右侧时间轴首次默认收起；鼠标移到右侧中间显示展开图标，点击展开，再在相同位置收起。支持键盘聚焦，触屏直接显示。展开／收起及侧栏宽度记在本机，可拖拽边界调整宽度。展开不会改变区域筛选。
 
@@ -45,7 +45,7 @@ uv run python scripts/audit_differences.py
 python scripts/package_site.py
 ```
 
-校对后同步重建对应分 P 导出与三地图。results/stage1 保留为历史快照，正式网页发布 results/worlds。图像版本由 data/map_assets.json 固定；关卡目录身份版本独立保留。见 [底图更新记录](map-update-2026-10-26.md)。
+校对后同步重建对应分 P 导出与综合地图。results/stage1 保留为历史快照，正式网页发布 results/worlds。图像版本由 data/map_assets.json 固定；关卡目录身份版本独立保留。见 [底图更新记录](map-update-2026-10-26.md)。
 
 master 的发布产物变化会触发 GitHub Pages。打包只含首页、网页脚本／样式、数据、CSV、审校网页与公开 assets，不含视频、缓存、本机配置或管理面板源码。备用站 https://jimmyzzt.github.io/OotSS_Sand/ ，正式站 https://sand.zzt.si/ 使用 Workers Static Assets。普通网页修改在 Pages 自动发布后，还需运行 npm run worker:deploy 更新正式域名的静态资源。详见 [静态托管与额度](hosting.md)。
 
@@ -54,3 +54,5 @@ Worker 修改后运行 npm run test:worker、npm run worker:check、npm run work
 发布前运行 pytest、Ruff、Node 测试及脚本语法检查，并验收桌面／手机、完成状态保存与筛选、时间轴、弹窗和反馈入口。更多历史文档见 [归档](archive/README.md)。
 
 顶栏新增绿色「读取游戏存档」和绑定后显示的浅红色「解绑存档」，只读取通关状态并保存本机快照。版本、冲突优先级、备份和解绑说明见 [读取存档](save-reading.md)。
+
+普通打开首页恢复 `ootss.last-map.v1` 保存的地图；URL 中有效 map、level、p 参数优先。序章有独立投影，切换时同时更新瓦片边界。补充入口来源和视频对应见 [序章专项校对](../results/upstream/INTRO.md)。

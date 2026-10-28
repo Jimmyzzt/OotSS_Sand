@@ -1,6 +1,6 @@
 # 给后续 Codex 的操作流程
 
-1. 确认用户视频、BVID、分 P。处理完整系列时运行 `python -m ootss import-map --all-worlds`（主世界/天空/地下参考目录写入catalog_all.json）；处理一阶段旧快照可用 `python -m ootss import-map`（默认复用已固定版本，不自动拉取）。
+1. 确认用户视频、BVID、分 P。处理完整系列时运行 `python -m ootss import-map --all-worlds`（主世界/上方/下方/序章参考目录写入catalog_all.json）；处理一阶段旧快照可用 `python -m ootss import-map`（默认复用已固定版本，不自动拉取）。
 2. `python -m ootss scan --video "inputs/xxx.mp4" --out runs/p4`。默认 8fps 黑屏扫描、15s 图册采样，一次低分辨率解码。scan.json 保存来源签名和元数据。先查看所有 sheet，防止忽略没有黑屏的连续关卡。
 3. `python -m ootss match --run runs/p4` 生成机器候选，不写已确认事件。逐项看参考图，必要时用 `packet` 在短窗口密集抽帧。不要把主世界探索当独立谜题。
 4. 关卡确认需检查静态布局、角色或机关位置关系。低 pHash 距离不足以确认。SIFT 内点也只是候选证据，重复地砖会误匹配。
@@ -58,10 +58,12 @@ python -m ootss world-check --run runs/p4 --time 9 --level heroes3_10 --terrain 
 
 原 starting_guide.md 已由上述工作流及实际结果说明替代：不实现 ASR 服务、Web 审核平台、复杂 Agent Adapter、自动训练、GitHub Issue 工程管理。GitHub CLI 凭证失效时继续本地提交。
 
-综合发布使用 `python -m ootss atlas --all-worlds`，读取P1–67和catalog_all.json，输出results/worlds。地图按物理世界命名，阶段二/三回访主世界仍归Overworld；同一分P跨地图时保留全片统一的首次出现序号。未定位片段以时间链接单列，不能只因参考目录有坐标就纳入地图。P68隐藏内容已按用户要求完全排除，不参与地图与差异统计。
+综合发布使用 `python -m ootss atlas --all-worlds`，读取P1–68和catalog_all.json，输出results/worlds。地图按物理世界命名，阶段二/三回访主世界仍归Overworld；同一分P跨地图时保留全片统一的首次出现序号。未定位片段以时间链接单列，不能只因参考目录有坐标就纳入地图。2026-10-28 用户明确要求将源P68（现P69）的序章示例重新收录；仅允许新 markers_intro.json 中的独立入口，禁止把开发版／现行版演示复用到旧三地图。世界游览、画廊和隐藏录音仍排除。
 
 复核同构关时先对比初始角色/机关，再看入场前10–20秒地表位置与固定入口坐标。结局篇内部棋盘复用不等于回到早期世界。若只有相似布局但世界/角色冲突，撤销旧ID、保留候选与时间，交人工核对。运行 `python scripts/audit_differences.py` 生成在线audit.html、CSV和JSON；目录差集不直接证明视频没出现，重复ID也不直接证明多次进入。
 
 用户对连续片段的明确校对优先于相似布局检索结果。`docs/校对.md` 的19条已转为 `data/human_corrections.json`，由 `python scripts/apply_human_corrections.py` 应用；同一份校对重复运行不重复合并。旧事件保存在superseded_events，大世界片段存入excluded_segments（kind=world），不再列为未定位关卡。不要再次用稀疏参考命中把用户确认的长关拆开。
 
 作者后续补充的6个位置记录在`docs/缺失录像位置.md`和`data/creator_locations.json`，用`python scripts/apply_creator_locations.py`应用；脚本同样校验文本散列、拒绝区间重叠并保留旧事件。P39作者提供的00:56实际属于已有0_square，diagonal按录像位置修正为03:47。不要用旧的稀疏候选覆盖这三关的完整连续区间，也不要为了清空差集在同一时间添入两个ID。新资料若与已应用计划不同，先核对并更新计划，不能只重复执行旧脚本。
+
+序章使用 `data/intro_map.json` 固定补充源与独立投影，保留旧主目录版本。`data/intro_visits.json` 是本次有界画面对照计划，`python -m scripts.apply_intro_review` 幂等应用并保存旧审核。复用旧缓存5秒图册与10段正式版审核，新增14段开发示例；仅对退场等疑点补1秒局部帧。现P68的序章走动不覆盖 docs/校对.md 确认的大世界排除。详见 [序章专项校对](../results/upstream/INTRO.md)。

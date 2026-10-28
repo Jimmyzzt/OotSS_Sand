@@ -5,6 +5,16 @@ import {createContext,runInContext} from 'node:vm';
 import '../ootss/templates/atlas-save.js';
 import '../ootss/templates/atlas-ui.js';
 
+test('intro aliases read the original save ID but retain independent manual overrides',()=>{
+ const save=AtlasUI.newSaveProgress(['heroes1_7_v2'],'slot','2026-10-28T00:00:00Z');
+ assert.equal(AtlasUI.completed({},save,'intro-heroes1_7_v2','heroes1_7_v2'),true);
+ const manual=AtlasUI.manualCompletion({},save,'intro-heroes1_7_v2',false,'heroes1_7_v2');
+ const parsed=AtlasUI.parseSaveProgress(manual.saveProgress,new Set(['heroes1_7_v2','intro-heroes1_7_v2']));
+ assert.equal(AtlasUI.completed(manual.levels,parsed,'intro-heroes1_7_v2','heroes1_7_v2'),false);
+ assert.equal(AtlasUI.completed(manual.levels,parsed,'heroes1_7_v2'),true);
+ assert.equal(AtlasUI.completed(manual.levels,null,'intro-heroes1_7_v2','heroes1_7_v2'),false);
+});
+
 // Binary fixtures derived from the documented version gates, with nonzero legacy
 // padding so accidental reads from removed fields do not look like empty tables.
 function statusFixture(version,levels=[['solved',1],['partial',2],['entered',4],['both',3]]){

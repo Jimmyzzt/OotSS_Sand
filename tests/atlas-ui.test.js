@@ -4,6 +4,19 @@ import {readFileSync} from 'node:fs';
 import '../ootss/templates/atlas-ui.js';
 const {markerLabels,markerRadius}=globalThis.AtlasUI;
 const level=(id,ordinal,x,part=2,region='mixed')=>({level_id:id,shown:[{part,ordinal}],region_ids:[region],entries:[{coordinates:[x,0]}]});
+
+test('last map restores only ordinary visits; explicit map, level and part links win',()=>{
+ const worlds=[{map_id:'overworld',levels:[{level_id:'main'}],parts:[{part:2}]},{map_id:'intro',levels:[{level_id:'demo'}],parts:[{part:68}]}];
+ for(const [search,last,expected] of [['','intro','intro'],['','gone','overworld'],['map=overworld','intro','overworld'],['level=main','intro','overworld'],['p=68','overworld','intro'],['map=invalid&p=68','overworld','intro']])assert.equal(AtlasUI.initialMap(worlds,new URLSearchParams(search),last).map_id,expected);
+});
+
+test('intro projection uses its own image origin and returns to the old world origin',()=>{
+ for(const bounds of [[-50,-63,140,126],[-24.5,-18.5,165.5,170.5]]){
+  const g=AtlasUI.mapGeometry({bounds}),[a,b,c,d]=g.transform;
+  assert.ok(Math.abs(a*bounds[0]+b)<1e-9);assert.ok(Math.abs(c*bounds[3]+d)<1e-9);
+  assert.ok(Math.abs(a*bounds[2]+b-512)<1e-9);assert.deepEqual(g.bounds,[[bounds[1],bounds[0]],[bounds[3],bounds[2]]]);
+ }
+});
 test('only identical coordinates of distinct levels are spread, retaining the star at its true position',()=>{
   const points=[{key:'normal',levelId:'a',x:54,y:110,size:24},{key:'star',levelId:'b',x:54,y:110,size:36,priority:1},{key:'near',levelId:'c',x:54.0001,y:110,size:24}];
   const original=structuredClone(points),offsets=AtlasUI.coincidentOffsets(points);

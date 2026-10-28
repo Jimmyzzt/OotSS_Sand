@@ -92,3 +92,29 @@ def test_worker_package_routes_and_data_stay_public_and_rebuild_safely(
     with pytest.raises(ValueError, match="dedicated directory"):
         hosting.package_worker("keep")
     assert Path("keep").exists()
+
+
+def test_intro_packing_does_not_emit_empty_tiles_or_exceed_free_file_budget(
+    tmp_path, monkeypatch
+):
+    import json
+
+    monkeypatch.chdir(tmp_path)
+    monkeypatch.setattr(hosting, "WORLDS", ("intro",))
+    revision = "b" * 40
+    archive = Path("cache/map/archives") / f"{revision}.tar.gz"
+    archive.parent.mkdir(parents=True)
+    with tarfile.open(archive, "w:gz") as out:
+        for name in ["4/2/3", "5/4/6", "7/16/24", "7/17/25"]:
+            content = b"original"
+            entry = tarfile.TarInfo(f"repo/tiles/intro_64k/{name}.webp")
+            entry.size = len(content)
+            out.addfile(entry, io.BytesIO(content))
+    tiles = hosting.prepare_tiles(revision)
+    assert sorted(p.relative_to(tiles).as_posix() for p in tiles.rglob("*.svg")) == [
+        "intro/4/2/3.svg",
+        "intro/5/4/6.svg",
+        "intro/6/8/12.svg",
+    ]
+    coverage = json.loads((tiles.parent / "complete.json").read_text())["tileCoverage"]
+    assert coverage == {"intro": {"4": ["2/3"], "5": ["4/6"], "6": ["8/12"]}}

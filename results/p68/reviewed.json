@@ -7,20 +7,59 @@
   "title": "开发中关卡一览 究极隐藏录音彩蛋",
   "stage": 3,
   "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
-  "review_note": "已逐张检查全部25张5秒时间轴图册、3张候选对照图册。本P为开发中关卡回顾，收录10段能与固定目录逐项对照的正式版示例，并明确标注示例上下文；未把原型棋盘强配到正式版入口。53:20后为交汇之地外部、地下世界游览与隐藏录音，无新增独立入口。身份对照不等于外部入口核验或通关确认。",
+  "review_note": "序章新标记专项校对：复用已缓存全时间轴及正式版10段审核，补充开发版14段。24个入口仅归入序章，同构正式版不再投射回旧三地图。P67既有人工排除的大世界片段保持排除。",
   "events": [
     {
-      "event_id": "p68-001",
-      "level_id": "heroes1_7_v2",
-      "puzzle_start_time": 156.625,
-      "puzzle_end_time": 272.125,
-      "entry_transition_time": 156.125,
-      "exit_time": 272.375,
+      "event_id": "p68-intro-01",
+      "level_id": "heroes1_7",
+      "puzzle_start_time": 66.875,
+      "puzzle_end_time": 118.25,
+      "entry_transition_time": 66.875,
+      "exit_time": 118.25,
       "overworld_approach_time": null,
       "review_status": "confirmed",
       "status": "visited",
       "outcome": "unknown",
-      "timing_uncertainty_seconds": 0.5,
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c",
+      "timing_uncertainty_seconds": 1,
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
+      },
+      "puzzle_match": {
+        "status": "visually_confirmed",
+        "level_id": "heroes1_7"
+      },
+      "evidence": [
+        {
+          "type": "intro_layout_and_continuity",
+          "time": 75.0,
+          "image": "results/upstream/intro-evidence/p68-intro-01.jpg",
+          "source_level_id": "heroes1_7",
+          "reason": "四个方柱和右上角凹口、德鲁伊与水晶及目标相对位置一致；开发版只有简模，不能按贴图匹配。"
+        },
+        {
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
+        }
+      ]
+    },
+    {
+      "event_id": "p68-001",
+      "level_id": "intro-heroes1_7_v2",
+      "puzzle_start_time": 156.625,
+      "puzzle_end_time": 269.5,
+      "entry_transition_time": 156.625,
+      "exit_time": 269.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
       "candidate_levels": [
         {
           "level_id": "heroes1_7_v2",
@@ -64,52 +103,85 @@
         }
       ],
       "puzzle_match": {
-        "level_id": "heroes1_7_v2",
-        "area": "heroes1",
-        "phash_distance": 2,
-        "hist_distance": 0.1048,
-        "sift_inliers": 208,
-        "sift_good": 210,
-        "consistent_samples": 22,
-        "status": "visually_confirmed"
+        "status": "visually_confirmed",
+        "level_id": "intro-heroes1_7_v2"
       },
       "overworld_match": {
-        "status": "unverified"
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
       },
       "evidence": [
         {
-          "type": "candidate_layout",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p68\\samples\\00265.000.jpg",
-          "time": 265.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes1_7_v2.webp",
-          "first_sample": 160.0,
-          "last_sample": 265.0,
-          "sample_count": 22,
-          "reason": "粉色十字大厅、红色中央下沿、分列两侧的搬运角色与方块位置关系对应；此前简单平面原型不计入。"
+          "type": "intro_layout_and_continuity",
+          "time": 165.0,
+          "image": "results/upstream/intro-evidence/p68-001.jpg",
+          "source_level_id": "heroes1_7_v2",
+          "reason": "复用原审核的正式版完整访问；仅路由到序章的同名示例入口，末尾设置菜单已截除。"
         },
         {
-          "type": "temporal_context",
-          "reason": "全25张时间轴图册已查。此段正式版示例前后为开发原型、外部地图或讲解，不将风格相似的原型自动记入正式版坐标。"
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
         }
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
       "manual_corrections": [],
-      "reviewer": "Codex visual comparison",
-      "context": "开发回顾：正式版示例",
-      "map_layer": "overworld"
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c"
     },
     {
-      "event_id": "p68-002",
-      "level_id": "tiger_lily_v2",
-      "puzzle_start_time": 346.875,
-      "puzzle_end_time": 378.25,
-      "entry_transition_time": 346.375,
-      "exit_time": 378.5,
+      "event_id": "p68-intro-03",
+      "level_id": "lily_wearing_intro",
+      "puzzle_start_time": 309.875,
+      "puzzle_end_time": 340.5,
+      "entry_transition_time": 309.875,
+      "exit_time": 340.5,
       "overworld_approach_time": null,
       "review_status": "confirmed",
       "status": "visited",
       "outcome": "unknown",
-      "timing_uncertainty_seconds": 0.5,
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c",
+      "timing_uncertainty_seconds": 1,
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
+      },
+      "puzzle_match": {
+        "status": "visually_confirmed",
+        "level_id": "lily_wearing_intro"
+      },
+      "evidence": [
+        {
+          "type": "intro_layout_and_continuity",
+          "time": 320.0,
+          "image": "results/upstream/intro-evidence/p68-intro-03.jpg",
+          "source_level_id": "lily_wearing_intro",
+          "reason": "三个分离草地平台、荷叶和红色搬运角色、圆球对应；后接扩展版。"
+        },
+        {
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
+        }
+      ]
+    },
+    {
+      "event_id": "p68-002",
+      "level_id": "intro-tiger_lily_v2",
+      "puzzle_start_time": 346.875,
+      "puzzle_end_time": 378.25,
+      "entry_transition_time": 346.875,
+      "exit_time": 378.25,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
       "candidate_levels": [
         {
           "level_id": "tiger_lily_v2",
@@ -153,52 +225,124 @@
         }
       ],
       "puzzle_match": {
-        "level_id": "tiger_lily_v2",
-        "area": "skipping_in_3d",
-        "phash_distance": 6,
-        "hist_distance": 0.1228,
-        "sift_inliers": 180,
-        "sift_good": 184,
-        "consistent_samples": 6,
-        "status": "visually_confirmed"
+        "status": "visually_confirmed",
+        "level_id": "intro-tiger_lily_v2"
       },
       "overworld_match": {
-        "status": "unverified"
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
       },
       "evidence": [
         {
-          "type": "candidate_layout",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p68\\samples\\00365.000.jpg",
-          "time": 365.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\tiger_lily_v2.webp",
-          "first_sample": 350.0,
-          "last_sample": 375.0,
-          "sample_count": 6,
-          "reason": "绿色阶梯水岛、右侧独立上层平台与圆石落点关系对应；此前三个平面小岛为原型。"
+          "type": "intro_layout_and_continuity",
+          "time": 355.0,
+          "image": "results/upstream/intro-evidence/p68-002.jpg",
+          "source_level_id": "tiger_lily_v2",
+          "reason": "复用原审核的扩展版访问，独立对应序章入口。"
         },
         {
-          "type": "temporal_context",
-          "reason": "全25张时间轴图册已查。此段正式版示例前后为开发原型、外部地图或讲解，不将风格相似的原型自动记入正式版坐标。"
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
         }
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
       "manual_corrections": [],
-      "reviewer": "Codex visual comparison",
-      "context": "开发回顾：正式版示例",
-      "map_layer": "sky"
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c"
     },
     {
-      "event_id": "p68-003",
-      "level_id": "quad_torch",
-      "puzzle_start_time": 648.625,
-      "puzzle_end_time": 745.0,
-      "entry_transition_time": 648.125,
-      "exit_time": 745.125,
+      "event_id": "p68-intro-05",
+      "level_id": "torcher",
+      "puzzle_start_time": 386.75,
+      "puzzle_end_time": 520.5,
+      "entry_transition_time": 386.75,
+      "exit_time": 520.5,
       "overworld_approach_time": null,
       "review_status": "confirmed",
       "status": "visited",
       "outcome": "unknown",
-      "timing_uncertainty_seconds": 0.5,
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c",
+      "timing_uncertainty_seconds": 1,
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
+      },
+      "puzzle_match": {
+        "status": "visually_confirmed",
+        "level_id": "torcher"
+      },
+      "evidence": [
+        {
+          "type": "intro_layout_and_continuity",
+          "time": 395.0,
+          "image": "results/upstream/intro-evidence/p68-intro-05.jpg",
+          "source_level_id": "torcher",
+          "reason": "单一围栏、龙与吟游诗人、镜子和围栏外的怪物布置相同，贴图属于早期简模。"
+        },
+        {
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
+        }
+      ]
+    },
+    {
+      "event_id": "p68-intro-06",
+      "level_id": "quad_torch_v1",
+      "puzzle_start_time": 538.75,
+      "puzzle_end_time": 636.5,
+      "entry_transition_time": 538.75,
+      "exit_time": 636.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c",
+      "timing_uncertainty_seconds": 1,
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
+      },
+      "puzzle_match": {
+        "status": "visually_confirmed",
+        "level_id": "quad_torch_v1"
+      },
+      "evidence": [
+        {
+          "type": "intro_layout_and_continuity",
+          "time": 550.0,
+          "image": "results/upstream/intro-evidence/p68-intro-06.jpg",
+          "source_level_id": "quad_torch_v1",
+          "reason": "扩大围栏后四个外侧位置、镜子与吟游诗人对应；不与更早torcher或正式quad_torch混同。"
+        },
+        {
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
+        }
+      ]
+    },
+    {
+      "event_id": "p68-003",
+      "level_id": "intro-quad_torch",
+      "puzzle_start_time": 648.625,
+      "puzzle_end_time": 745.0,
+      "entry_transition_time": 648.625,
+      "exit_time": 745.0,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
       "candidate_levels": [
         {
           "level_id": "quad_torch",
@@ -242,52 +386,163 @@
         }
       ],
       "puzzle_match": {
-        "level_id": "quad_torch",
-        "area": "heroes_and_mirrors",
-        "phash_distance": 6,
-        "hist_distance": 0.1342,
-        "sift_inliers": 100,
-        "sift_good": 106,
-        "consistent_samples": 19,
-        "status": "visually_confirmed"
+        "status": "visually_confirmed",
+        "level_id": "intro-quad_torch"
       },
       "overworld_match": {
-        "status": "unverified"
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
       },
       "evidence": [
         {
-          "type": "candidate_layout",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p68\\samples\\00660.000.jpg",
+          "type": "intro_layout_and_continuity",
           "time": 660.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\quad_torch.webp",
-          "first_sample": 650.0,
-          "last_sample": 740.0,
-          "sample_count": 19,
-          "reason": "四角火炬与中央高柱、下方出口及立体平台轮廓对应；6:30起的平面原型另行排除。"
+          "image": "results/upstream/intro-evidence/p68-003.jpg",
+          "source_level_id": "quad_torch",
+          "reason": "复用原审核的正式版示例，序章入口独立编号。"
         },
         {
-          "type": "temporal_context",
-          "reason": "全25张时间轴图册已查。此段正式版示例前后为开发原型、外部地图或讲解，不将风格相似的原型自动记入正式版坐标。"
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
         }
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
       "manual_corrections": [],
-      "reviewer": "Codex visual comparison",
-      "context": "开发回顾：正式版示例",
-      "map_layer": "overworld"
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c"
     },
     {
-      "event_id": "p68-005",
-      "level_id": "worlds_collide_heroes_and_promesst_v4",
-      "puzzle_start_time": 1149.375,
-      "puzzle_end_time": 1231.375,
-      "entry_transition_time": 1148.875,
-      "exit_time": 1231.5,
+      "event_id": "p68-intro-08",
+      "level_id": "worlds_collide_heroes_and_promesst",
+      "puzzle_start_time": 760.25,
+      "puzzle_end_time": 908.25,
+      "entry_transition_time": 760.25,
+      "exit_time": 908.25,
       "overworld_approach_time": null,
       "review_status": "confirmed",
       "status": "visited",
       "outcome": "unknown",
-      "timing_uncertainty_seconds": 0.5,
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c",
+      "timing_uncertainty_seconds": 1,
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
+      },
+      "puzzle_match": {
+        "status": "visually_confirmed",
+        "level_id": "worlds_collide_heroes_and_promesst"
+      },
+      "evidence": [
+        {
+          "type": "intro_layout_and_continuity",
+          "time": 770.0,
+          "image": "results/upstream/intro-evidence/p68-intro-08.jpg",
+          "source_level_id": "worlds_collide_heroes_and_promesst",
+          "reason": "左右双色大房间；右室散布多块石头，中下方双通道与目标布置对应。"
+        },
+        {
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
+        }
+      ]
+    },
+    {
+      "event_id": "p68-intro-09",
+      "level_id": "worlds_collide_heroes_and_promesst_v2",
+      "puzzle_start_time": 920.875,
+      "puzzle_end_time": 996.375,
+      "entry_transition_time": 920.875,
+      "exit_time": 996.375,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c",
+      "timing_uncertainty_seconds": 1,
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
+      },
+      "puzzle_match": {
+        "status": "visually_confirmed",
+        "level_id": "worlds_collide_heroes_and_promesst_v2"
+      },
+      "evidence": [
+        {
+          "type": "intro_layout_and_continuity",
+          "time": 930.0,
+          "image": "results/upstream/intro-evidence/p68-intro-09.jpg",
+          "source_level_id": "worlds_collide_heroes_and_promesst_v2",
+          "reason": "右室连续五个球、中间水晶与双镜，下方双通道；区别于v1散石及v3曲墙。"
+        },
+        {
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
+        }
+      ]
+    },
+    {
+      "event_id": "p68-intro-10",
+      "level_id": "worlds_collide_heroes_and_promesst_v3",
+      "puzzle_start_time": 1006.625,
+      "puzzle_end_time": 1139.125,
+      "entry_transition_time": 1006.625,
+      "exit_time": 1139.125,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c",
+      "timing_uncertainty_seconds": 1,
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
+      },
+      "puzzle_match": {
+        "status": "visually_confirmed",
+        "level_id": "worlds_collide_heroes_and_promesst_v3"
+      },
+      "evidence": [
+        {
+          "type": "intro_layout_and_continuity",
+          "time": 1015.0,
+          "image": "results/upstream/intro-evidence/p68-intro-10.jpg",
+          "source_level_id": "worlds_collide_heroes_and_promesst_v3",
+          "reason": "右室曲折矮墙、两边角色与底部双通道对应，不能套v2或正式v4。"
+        },
+        {
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
+        }
+      ]
+    },
+    {
+      "event_id": "p68-005",
+      "level_id": "intro-worlds_collide_heroes_and_promesst_v4",
+      "puzzle_start_time": 1149.375,
+      "puzzle_end_time": 1231.375,
+      "entry_transition_time": 1149.375,
+      "exit_time": 1231.375,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
       "candidate_levels": [
         {
           "level_id": "worlds_collide_heroes_and_promesst_v4",
@@ -331,52 +586,85 @@
         }
       ],
       "puzzle_match": {
-        "level_id": "worlds_collide_heroes_and_promesst_v4",
-        "area": "worlds_collide",
-        "phash_distance": 2,
-        "hist_distance": 0.1383,
-        "sift_inliers": 161,
-        "sift_good": 172,
-        "consistent_samples": 17,
-        "status": "visually_confirmed"
+        "status": "visually_confirmed",
+        "level_id": "intro-worlds_collide_heroes_and_promesst_v4"
       },
       "overworld_match": {
-        "status": "unverified"
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
       },
       "evidence": [
         {
-          "type": "candidate_layout",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p68\\samples\\01205.000.jpg",
-          "time": 1205.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\worlds_collide_heroes_and_promesst_v4.webp",
-          "first_sample": 1150.0,
-          "last_sample": 1230.0,
-          "sample_count": 17,
-          "reason": "多层金色台阶、两侧板块和角色机关位置逐项对应；17分钟附近平面二联原型误匹配reel_it_in已删除。"
+          "type": "intro_layout_and_continuity",
+          "time": 1160.0,
+          "image": "results/upstream/intro-evidence/p68-005.jpg",
+          "source_level_id": "worlds_collide_heroes_and_promesst_v4",
+          "reason": "复用原审核正式版示例，对应序章的v4入口。"
         },
         {
-          "type": "temporal_context",
-          "reason": "全25张时间轴图册已查。此段正式版示例前后为开发原型、外部地图或讲解，不将风格相似的原型自动记入正式版坐标。"
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
         }
       ],
       "evidence_gallery": "evidence/candidates_00.jpg",
       "manual_corrections": [],
-      "reviewer": "Codex visual comparison",
-      "context": "开发回顾：正式版示例",
-      "map_layer": "overworld"
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c"
     },
     {
-      "event_id": "p68-006",
-      "level_id": "across_the_fence_vtrader_m_p",
-      "puzzle_start_time": 1380.375,
-      "puzzle_end_time": 1419.75,
-      "entry_transition_time": 1379.875,
-      "exit_time": 1419.875,
+      "event_id": "p68-intro-12",
+      "level_id": "across_the_fence_old",
+      "puzzle_start_time": 1238.75,
+      "puzzle_end_time": 1370.5,
+      "entry_transition_time": 1238.75,
+      "exit_time": 1370.5,
       "overworld_approach_time": null,
       "review_status": "confirmed",
       "status": "visited",
       "outcome": "unknown",
-      "timing_uncertainty_seconds": 0.5,
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c",
+      "timing_uncertainty_seconds": 1,
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
+      },
+      "puzzle_match": {
+        "status": "visually_confirmed",
+        "level_id": "across_the_fence_old"
+      },
+      "evidence": [
+        {
+          "type": "intro_layout_and_continuity",
+          "time": 1250.0,
+          "image": "results/upstream/intro-evidence/p68-intro-12.jpg",
+          "source_level_id": "across_the_fence_old",
+          "reason": "横向围栏与中部曲折围栏、左右镜子及右侧德鲁伊对应；晚于此处的外部走动已排除。"
+        },
+        {
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
+        }
+      ]
+    },
+    {
+      "event_id": "p68-006",
+      "level_id": "intro-across_the_fence_vtrader_m_p",
+      "puzzle_start_time": 1380.375,
+      "puzzle_end_time": 1419.75,
+      "entry_transition_time": 1380.375,
+      "exit_time": 1419.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
       "candidate_levels": [
         {
           "level_id": "across_the_fence_vtrader_m_p",
@@ -420,52 +708,124 @@
         }
       ],
       "puzzle_match": {
-        "level_id": "across_the_fence_vtrader_m_p",
-        "area": "beams_and_mirrors",
-        "phash_distance": 2,
-        "hist_distance": 0.6763,
-        "sift_inliers": 130,
-        "sift_good": 134,
-        "consistent_samples": 7,
-        "status": "visually_confirmed"
+        "status": "visually_confirmed",
+        "level_id": "intro-across_the_fence_vtrader_m_p"
       },
       "overworld_match": {
-        "status": "unverified"
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
       },
       "evidence": [
         {
-          "type": "candidate_layout",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p68\\samples\\01415.000.jpg",
-          "time": 1415.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\across_the_fence_vtrader_m_p.webp",
-          "first_sample": 1385.0,
-          "last_sample": 1415.0,
-          "sample_count": 7,
-          "reason": "金色栅栏两侧角色、台阶与桥接平台对应。"
+          "type": "intro_layout_and_continuity",
+          "time": 1390.0,
+          "image": "results/upstream/intro-evidence/p68-006.jpg",
+          "source_level_id": "across_the_fence_vtrader_m_p",
+          "reason": "复用原审核的压缩正式版示例，不能与左侧开发版合并。"
         },
         {
-          "type": "temporal_context",
-          "reason": "全25张时间轴图册已查。此段正式版示例前后为开发原型、外部地图或讲解，不将风格相似的原型自动记入正式版坐标。"
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
         }
       ],
       "evidence_gallery": "evidence/candidates_01.jpg",
       "manual_corrections": [],
-      "reviewer": "Codex visual comparison",
-      "context": "开发回顾：正式版示例",
-      "map_layer": "overworld"
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c"
     },
     {
-      "event_id": "p68-007",
-      "level_id": "sender_simplified_v2",
-      "puzzle_start_time": 1628.75,
-      "puzzle_end_time": 1811.75,
-      "entry_transition_time": 1628.375,
-      "exit_time": 1812.0,
+      "event_id": "p68-intro-14",
+      "level_id": "sender",
+      "puzzle_start_time": 1425.75,
+      "puzzle_end_time": 1495.75,
+      "entry_transition_time": 1425.75,
+      "exit_time": 1495.75,
       "overworld_approach_time": null,
       "review_status": "confirmed",
       "status": "visited",
       "outcome": "unknown",
-      "timing_uncertainty_seconds": 0.5,
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c",
+      "timing_uncertainty_seconds": 1,
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
+      },
+      "puzzle_match": {
+        "status": "visually_confirmed",
+        "level_id": "sender"
+      },
+      "evidence": [
+        {
+          "type": "intro_layout_and_continuity",
+          "time": 1435.0,
+          "image": "results/upstream/intro-evidence/p68-intro-14.jpg",
+          "source_level_id": "sender",
+          "reason": "上下两层、右上镜子与目标、下方镜子和角色、中央落差对应。"
+        },
+        {
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
+        }
+      ]
+    },
+    {
+      "event_id": "p68-intro-15",
+      "level_id": "sender_simplified",
+      "puzzle_start_time": 1505.875,
+      "puzzle_end_time": 1619.875,
+      "entry_transition_time": 1505.875,
+      "exit_time": 1619.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c",
+      "timing_uncertainty_seconds": 1,
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
+      },
+      "puzzle_match": {
+        "status": "visually_confirmed",
+        "level_id": "sender_simplified"
+      },
+      "evidence": [
+        {
+          "type": "intro_layout_and_continuity",
+          "time": 1515.0,
+          "image": "results/upstream/intro-evidence/p68-intro-15.jpg",
+          "source_level_id": "sender_simplified",
+          "reason": "中央纵向凹槽和两侧目标、上方发射器及下方蓝色装置对应；独立于sender及v2。"
+        },
+        {
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
+        }
+      ]
+    },
+    {
+      "event_id": "p68-007",
+      "level_id": "intro-sender_simplified_v2",
+      "puzzle_start_time": 1628.75,
+      "puzzle_end_time": 1806.5,
+      "entry_transition_time": 1628.75,
+      "exit_time": 1806.5,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
       "candidate_levels": [
         {
           "level_id": "sender_simplified_v2",
@@ -509,52 +869,85 @@
         }
       ],
       "puzzle_match": {
-        "level_id": "sender_simplified_v2",
-        "area": "vertical_endpoint",
-        "phash_distance": 4,
-        "hist_distance": 0.1042,
-        "sift_inliers": 143,
-        "sift_good": 163,
-        "consistent_samples": 35,
-        "status": "visually_confirmed"
+        "status": "visually_confirmed",
+        "level_id": "intro-sender_simplified_v2"
       },
       "overworld_match": {
-        "status": "unverified"
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
       },
       "evidence": [
         {
-          "type": "candidate_layout",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p68\\samples\\01665.000.jpg",
-          "time": 1665.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\sender_simplified_v2.webp",
-          "first_sample": 1635.0,
-          "last_sample": 1805.0,
-          "sample_count": 35,
-          "reason": "中央送达结构与两侧多层高台、窄桥和角色位置关系对应；此前简化粉色原型排除。"
+          "type": "intro_layout_and_continuity",
+          "time": 1640.0,
+          "image": "results/upstream/intro-evidence/p68-007.jpg",
+          "source_level_id": "sender_simplified_v2",
+          "reason": "复用原审核的正式版示例；截除末尾设置菜单。"
         },
         {
-          "type": "temporal_context",
-          "reason": "全25张时间轴图册已查。此段正式版示例前后为开发原型、外部地图或讲解，不将风格相似的原型自动记入正式版坐标。"
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
         }
       ],
       "evidence_gallery": "evidence/candidates_01.jpg",
       "manual_corrections": [],
-      "reviewer": "Codex visual comparison",
-      "context": "开发回顾：正式版示例",
-      "map_layer": "sky"
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c"
     },
     {
-      "event_id": "p68-008",
-      "level_id": "push_down_a_lot_small",
-      "puzzle_start_time": 1950.375,
-      "puzzle_end_time": 2111.875,
-      "entry_transition_time": 1950.0,
-      "exit_time": 2112.125,
+      "event_id": "p68-intro-17",
+      "level_id": "push_down_a_lot",
+      "puzzle_start_time": 1826.625,
+      "puzzle_end_time": 1944.25,
+      "entry_transition_time": 1826.625,
+      "exit_time": 1944.25,
       "overworld_approach_time": null,
       "review_status": "confirmed",
       "status": "visited",
       "outcome": "unknown",
-      "timing_uncertainty_seconds": 0.5,
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c",
+      "timing_uncertainty_seconds": 1,
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
+      },
+      "puzzle_match": {
+        "status": "visually_confirmed",
+        "level_id": "push_down_a_lot"
+      },
+      "evidence": [
+        {
+          "type": "intro_layout_and_continuity",
+          "time": 1835.0,
+          "image": "results/upstream/intro-evidence/p68-intro-17.jpg",
+          "source_level_id": "push_down_a_lot",
+          "reason": "大面积蓝色方形简模、阶梯式墙线与散布怪物、右侧目标对应。"
+        },
+        {
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
+        }
+      ]
+    },
+    {
+      "event_id": "p68-008",
+      "level_id": "intro-push_down_a_lot_small",
+      "puzzle_start_time": 1950.375,
+      "puzzle_end_time": 2111.875,
+      "entry_transition_time": 1950.375,
+      "exit_time": 2111.875,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
       "candidate_levels": [
         {
           "level_id": "push_down_a_lot_small",
@@ -598,52 +991,85 @@
         }
       ],
       "puzzle_match": {
-        "level_id": "push_down_a_lot_small",
-        "area": "heroes_in_3d",
-        "phash_distance": 8,
-        "hist_distance": 0.1605,
-        "sift_inliers": 164,
-        "sift_good": 172,
-        "consistent_samples": 32,
-        "status": "visually_confirmed"
+        "status": "visually_confirmed",
+        "level_id": "intro-push_down_a_lot_small"
       },
       "overworld_match": {
-        "status": "unverified"
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
       },
       "evidence": [
         {
-          "type": "candidate_layout",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p68\\samples\\02035.000.jpg",
-          "time": 2035.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\push_down_a_lot_small.webp",
-          "first_sample": 1955.0,
-          "last_sample": 2110.0,
-          "sample_count": 32,
-          "reason": "多层石台的阶梯、左右角色和连续下推布局对应；30:30后的平面蓝色棋盘为原型。"
+          "type": "intro_layout_and_continuity",
+          "time": 1960.0,
+          "image": "results/upstream/intro-evidence/p68-008.jpg",
+          "source_level_id": "push_down_a_lot_small",
+          "reason": "复用原审核缩小正式版示例。"
         },
         {
-          "type": "temporal_context",
-          "reason": "全25张时间轴图册已查。此段正式版示例前后为开发原型、外部地图或讲解，不将风格相似的原型自动记入正式版坐标。"
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
         }
       ],
       "evidence_gallery": "evidence/candidates_01.jpg",
       "manual_corrections": [],
-      "reviewer": "Codex visual comparison",
-      "context": "开发回顾：正式版示例",
-      "map_layer": "sky"
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c"
     },
     {
-      "event_id": "p68-009",
-      "level_id": "catching_up_v2",
-      "puzzle_start_time": 2417.375,
-      "puzzle_end_time": 2588.625,
-      "entry_transition_time": 2416.875,
-      "exit_time": 2588.875,
+      "event_id": "p68-intro-19",
+      "level_id": "catching_up_v0",
+      "puzzle_start_time": 2125.875,
+      "puzzle_end_time": 2409.5,
+      "entry_transition_time": 2125.875,
+      "exit_time": 2409.5,
       "overworld_approach_time": null,
       "review_status": "confirmed",
       "status": "visited",
       "outcome": "unknown",
-      "timing_uncertainty_seconds": 0.5,
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c",
+      "timing_uncertainty_seconds": 1,
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
+      },
+      "puzzle_match": {
+        "status": "visually_confirmed",
+        "level_id": "catching_up_v0"
+      },
+      "evidence": [
+        {
+          "type": "intro_layout_and_continuity",
+          "time": 2135.0,
+          "image": "results/upstream/intro-evidence/p68-intro-19.jpg",
+          "source_level_id": "catching_up_v0",
+          "reason": "长方形简模、左侧两块石头与镜子、右侧角色与装置及下沿出口对应；同次演示内清空或重置不另切关。"
+        },
+        {
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
+        }
+      ]
+    },
+    {
+      "event_id": "p68-009",
+      "level_id": "intro-catching_up_v2",
+      "puzzle_start_time": 2417.375,
+      "puzzle_end_time": 2588.625,
+      "entry_transition_time": 2417.375,
+      "exit_time": 2588.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
       "candidate_levels": [
         {
           "level_id": "catching_up_v2",
@@ -687,52 +1113,85 @@
         }
       ],
       "puzzle_match": {
-        "level_id": "catching_up_v2",
-        "area": "vertical_mirrors",
-        "phash_distance": 4,
-        "hist_distance": 0.2793,
-        "sift_inliers": 77,
-        "sift_good": 90,
-        "consistent_samples": 34,
-        "status": "visually_confirmed"
+        "status": "visually_confirmed",
+        "level_id": "intro-catching_up_v2"
       },
       "overworld_match": {
-        "status": "unverified"
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
       },
       "evidence": [
         {
-          "type": "candidate_layout",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p68\\samples\\02420.000.jpg",
-          "time": 2420.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\catching_up_v2.webp",
-          "first_sample": 2420.0,
-          "last_sample": 2585.0,
-          "sample_count": 34,
-          "reason": "金色岛上两座高塔、木箱和紫色水晶落点对应。"
+          "type": "intro_layout_and_continuity",
+          "time": 2425.0,
+          "image": "results/upstream/intro-evidence/p68-009.jpg",
+          "source_level_id": "catching_up_v2",
+          "reason": "复用原审核的正式版示例。"
         },
         {
-          "type": "temporal_context",
-          "reason": "全25张时间轴图册已查。此段正式版示例前后为开发原型、外部地图或讲解，不将风格相似的原型自动记入正式版坐标。"
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
         }
       ],
       "evidence_gallery": "evidence/candidates_01.jpg",
       "manual_corrections": [],
-      "reviewer": "Codex visual comparison",
-      "context": "开发回顾：正式版示例",
-      "map_layer": "sky"
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c"
     },
     {
-      "event_id": "p68-010",
-      "level_id": "triple_gate",
-      "puzzle_start_time": 2721.5,
-      "puzzle_end_time": 2788.625,
-      "entry_transition_time": 2721.125,
-      "exit_time": 2788.875,
+      "event_id": "p68-intro-21",
+      "level_id": "strategic_stack",
+      "puzzle_start_time": 2595.875,
+      "puzzle_end_time": 2713.5,
+      "entry_transition_time": 2595.875,
+      "exit_time": 2713.5,
       "overworld_approach_time": null,
       "review_status": "confirmed",
       "status": "visited",
       "outcome": "unknown",
-      "timing_uncertainty_seconds": 0.5,
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c",
+      "timing_uncertainty_seconds": 1,
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
+      },
+      "puzzle_match": {
+        "status": "visually_confirmed",
+        "level_id": "strategic_stack"
+      },
+      "evidence": [
+        {
+          "type": "intro_layout_and_continuity",
+          "time": 2605.0,
+          "image": "results/upstream/intro-evidence/p68-intro-21.jpg",
+          "source_level_id": "strategic_stack",
+          "reason": "三个高台与上层三个镜子、底侧目标、落差关系一致。"
+        },
+        {
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
+        }
+      ]
+    },
+    {
+      "event_id": "p68-010",
+      "level_id": "intro-triple_gate",
+      "puzzle_start_time": 2721.5,
+      "puzzle_end_time": 2788.625,
+      "entry_transition_time": 2721.5,
+      "exit_time": 2788.625,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
       "candidate_levels": [
         {
           "level_id": "triple_gate",
@@ -776,52 +1235,85 @@
         }
       ],
       "puzzle_match": {
-        "level_id": "triple_gate",
-        "area": "mirrors_in_3d",
-        "phash_distance": 2,
-        "hist_distance": 0.0698,
-        "sift_inliers": 149,
-        "sift_good": 159,
-        "consistent_samples": 13,
-        "status": "visually_confirmed"
+        "status": "visually_confirmed",
+        "level_id": "intro-triple_gate"
       },
       "overworld_match": {
-        "status": "unverified"
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
       },
       "evidence": [
         {
-          "type": "candidate_layout",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p68\\samples\\02765.000.jpg",
-          "time": 2765.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\triple_gate.webp",
-          "first_sample": 2725.0,
-          "last_sample": 2785.0,
-          "sample_count": 13,
-          "reason": "下方三道红门及其上方台阶、镜面与孤立出口关系对应；此前橙色原型排除。"
+          "type": "intro_layout_and_continuity",
+          "time": 2730.0,
+          "image": "results/upstream/intro-evidence/p68-010.jpg",
+          "source_level_id": "triple_gate",
+          "reason": "复用原审核的重构正式版示例。"
         },
         {
-          "type": "temporal_context",
-          "reason": "全25张时间轴图册已查。此段正式版示例前后为开发原型、外部地图或讲解，不将风格相似的原型自动记入正式版坐标。"
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
         }
       ],
       "evidence_gallery": "evidence/candidates_01.jpg",
       "manual_corrections": [],
-      "reviewer": "Codex visual comparison",
-      "context": "开发回顾：正式版示例",
-      "map_layer": "sky"
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c"
     },
     {
-      "event_id": "p68-011",
-      "level_id": "height_chooser_v0",
-      "puzzle_start_time": 2952.25,
-      "puzzle_end_time": 3033.75,
-      "entry_transition_time": 2951.875,
-      "exit_time": 3033.875,
+      "event_id": "p68-intro-23",
+      "level_id": "height_chooser",
+      "puzzle_start_time": 2796.5,
+      "puzzle_end_time": 2947.0,
+      "entry_transition_time": 2796.5,
+      "exit_time": 2947.0,
       "overworld_approach_time": null,
       "review_status": "confirmed",
       "status": "visited",
       "outcome": "unknown",
-      "timing_uncertainty_seconds": 0.5,
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c",
+      "timing_uncertainty_seconds": 1,
+      "overworld_match": {
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
+      },
+      "puzzle_match": {
+        "status": "visually_confirmed",
+        "level_id": "height_chooser"
+      },
+      "evidence": [
+        {
+          "type": "intro_layout_and_continuity",
+          "time": 2805.0,
+          "image": "results/upstream/intro-evidence/p68-intro-23.jpg",
+          "source_level_id": "height_chooser",
+          "reason": "左侧多层蓝门、右侧圆球、中间大水面与荷叶及镜子吟游诗人对应。"
+        },
+        {
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
+        }
+      ]
+    },
+    {
+      "event_id": "p68-011",
+      "level_id": "intro-height_chooser_v0",
+      "puzzle_start_time": 2952.25,
+      "puzzle_end_time": 3033.75,
+      "entry_transition_time": 2952.25,
+      "exit_time": 3033.75,
+      "overworld_approach_time": null,
+      "review_status": "confirmed",
+      "status": "visited",
+      "outcome": "unknown",
+      "timing_uncertainty_seconds": 1,
       "candidate_levels": [
         {
           "level_id": "height_chooser_v0",
@@ -865,52 +1357,1111 @@
         }
       ],
       "puzzle_match": {
-        "level_id": "height_chooser_v0",
-        "area": "vertical_reflection",
-        "phash_distance": 6,
-        "hist_distance": 0.1229,
-        "sift_inliers": 125,
-        "sift_good": 135,
-        "consistent_samples": 16,
-        "status": "visually_confirmed"
+        "status": "visually_confirmed",
+        "level_id": "intro-height_chooser_v0"
       },
       "overworld_match": {
-        "status": "unverified"
+        "status": "no_overworld_context",
+        "reason": "Video demonstrates the matching entry in the intro development gallery, not its original physical-world entrance."
       },
       "evidence": [
         {
-          "type": "candidate_layout",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p68\\samples\\02980.000.jpg",
-          "time": 2980.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\height_chooser_v0.webp",
-          "first_sample": 2955.0,
-          "last_sample": 3030.0,
-          "sample_count": 16,
-          "reason": "左侧橙色阶台、竖向粉色光束与右侧长条独立高台对应；此前橙色平台原型排除。"
+          "type": "intro_layout_and_continuity",
+          "time": 2960.0,
+          "image": "results/upstream/intro-evidence/p68-011.jpg",
+          "source_level_id": "height_chooser_v0",
+          "reason": "复用原审核的正式版示例，与开发版独立入口。"
         },
         {
-          "type": "temporal_context",
-          "reason": "全25张时间轴图册已查。此段正式版示例前后为开发原型、外部地图或讲解，不将风格相似的原型自动记入正式版坐标。"
+          "type": "cached_timeline_review",
+          "scan": "runs/p68/scan.json",
+          "reason": "All cached 5-second contact sheets inspected; bounded 1-second exit checks exclude return-to-gallery and menus. Early textures can differ; identity uses geometry, roles, mechanism placement and gallery order. No old-world coordinates reused."
         }
       ],
       "evidence_gallery": "evidence/candidates_02.jpg",
       "manual_corrections": [],
-      "reviewer": "Codex visual comparison",
-      "context": "开发回顾：正式版示例",
-      "map_layer": "sky"
+      "reviewer": "Codex bounded visual intro comparison",
+      "context": "开发回顾：序章独立示例",
+      "map_layer": "intro",
+      "intro_map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c"
     }
   ],
   "excluded_segments": [
     {
-      "start": 1035,
-      "end": 1045,
-      "candidate": "reel_it_in",
-      "reason": "画面为开发原型的双平面棋盘，与参考圆岛结构不同；机器弱匹配12内点已拒绝。"
+      "start": 0,
+      "end": 66.875,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
     },
     {
-      "start": 3040,
+      "start": 118.25,
+      "end": 156.625,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 269.5,
+      "end": 309.875,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 340.5,
+      "end": 346.875,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 378.25,
+      "end": 386.75,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 520.5,
+      "end": 538.75,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 636.5,
+      "end": 648.625,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 745.0,
+      "end": 760.25,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 908.25,
+      "end": 920.875,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 996.375,
+      "end": 1006.625,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 1139.125,
+      "end": 1149.375,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 1231.375,
+      "end": 1238.75,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 1370.5,
+      "end": 1380.375,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 1419.75,
+      "end": 1425.75,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 1495.75,
+      "end": 1505.875,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 1619.875,
+      "end": 1628.75,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 1806.5,
+      "end": 1826.625,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 1944.25,
+      "end": 1950.375,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 2111.875,
+      "end": 2125.875,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 2409.5,
+      "end": 2417.375,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 2588.625,
+      "end": 2595.875,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 2713.5,
+      "end": 2721.5,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 2788.625,
+      "end": 2796.5,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 2947.0,
+      "end": 2952.25,
+      "kind": "world",
+      "reason": "Gallery navigation / transition / menu; not another Level_Entry"
+    },
+    {
+      "start": 3033.75,
       "end": 3864.567,
-      "reason": "外部地图、开发回顾图片、隐藏录音；非独立Level_Entry访问。"
+      "kind": "world",
+      "reason": "World tour, development diagrams and hidden recording; no additional independent intro entry."
     }
-  ]
+  ],
+  "superseded_reviews": [
+    {
+      "reason": "New independent upstream intro markers and explicit owner authorization",
+      "schema_version": 1,
+      "video_bvid": "BV13FH96bE4m",
+      "part_number": 68,
+      "duration": 3864.567,
+      "video": "F:\\Video\\OotSS_Sand\\inputs\\series\\stage3\\P68__开发中关卡一览 究极隐藏录音彩蛋.mp4",
+      "title": "开发中关卡一览 究极隐藏录音彩蛋",
+      "stage": 3,
+      "map_commit": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
+      "review_note": "已逐张检查全部25张5秒时间轴图册、3张候选对照图册。本P为开发中关卡回顾，收录10段能与固定目录逐项对照的正式版示例，并明确标注示例上下文；未把原型棋盘强配到正式版入口。53:20后为交汇之地外部、地下世界游览与隐藏录音，无新增独立入口。身份对照不等于外部入口核验或通关确认。",
+      "events": [
+        {
+          "event_id": "p68-001",
+          "level_id": "heroes1_7_v2",
+          "puzzle_start_time": 156.625,
+          "puzzle_end_time": 272.125,
+          "entry_transition_time": 156.125,
+          "exit_time": 272.375,
+          "overworld_approach_time": null,
+          "review_status": "confirmed",
+          "status": "visited",
+          "outcome": "unknown",
+          "timing_uncertainty_seconds": 0.5,
+          "candidate_levels": [
+            {
+              "level_id": "heroes1_7_v2",
+              "area": "heroes1",
+              "phash_distance": 2,
+              "hist_distance": 0.1048,
+              "sift_inliers": 208,
+              "sift_good": 210
+            },
+            {
+              "level_id": "trick_shot",
+              "area": "heroes_and_stones",
+              "phash_distance": 20,
+              "hist_distance": 1.3756,
+              "sift_inliers": 5,
+              "sift_good": 6
+            },
+            {
+              "level_id": "friendly_nudges",
+              "area": "beams_and_basic_heroes",
+              "phash_distance": 18,
+              "hist_distance": 1.3327,
+              "sift_inliers": 4,
+              "sift_good": 6
+            },
+            {
+              "level_id": "double_break",
+              "area": "heroes_and_mirrors",
+              "phash_distance": 20,
+              "hist_distance": 1.3459,
+              "sift_inliers": 4,
+              "sift_good": 8
+            },
+            {
+              "level_id": "lily_falls_intro_v2",
+              "area": "skipping_in_3d",
+              "phash_distance": 18,
+              "hist_distance": 0.7888,
+              "sift_inliers": 0,
+              "sift_good": 3
+            }
+          ],
+          "puzzle_match": {
+            "level_id": "heroes1_7_v2",
+            "area": "heroes1",
+            "phash_distance": 2,
+            "hist_distance": 0.1048,
+            "sift_inliers": 208,
+            "sift_good": 210,
+            "consistent_samples": 22,
+            "status": "visually_confirmed"
+          },
+          "overworld_match": {
+            "status": "unverified"
+          },
+          "evidence": [
+            {
+              "type": "candidate_layout",
+              "image": "F:\\Video\\OotSS_Sand\\runs\\p68\\samples\\00265.000.jpg",
+              "time": 265.0,
+              "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\heroes1_7_v2.webp",
+              "first_sample": 160.0,
+              "last_sample": 265.0,
+              "sample_count": 22,
+              "reason": "粉色十字大厅、红色中央下沿、分列两侧的搬运角色与方块位置关系对应；此前简单平面原型不计入。"
+            },
+            {
+              "type": "temporal_context",
+              "reason": "全25张时间轴图册已查。此段正式版示例前后为开发原型、外部地图或讲解，不将风格相似的原型自动记入正式版坐标。"
+            }
+          ],
+          "evidence_gallery": "evidence/candidates_00.jpg",
+          "manual_corrections": [],
+          "reviewer": "Codex visual comparison",
+          "context": "开发回顾：正式版示例",
+          "map_layer": "overworld"
+        },
+        {
+          "event_id": "p68-002",
+          "level_id": "tiger_lily_v2",
+          "puzzle_start_time": 346.875,
+          "puzzle_end_time": 378.25,
+          "entry_transition_time": 346.375,
+          "exit_time": 378.5,
+          "overworld_approach_time": null,
+          "review_status": "confirmed",
+          "status": "visited",
+          "outcome": "unknown",
+          "timing_uncertainty_seconds": 0.5,
+          "candidate_levels": [
+            {
+              "level_id": "tiger_lily_v2",
+              "area": "skipping_in_3d",
+              "phash_distance": 6,
+              "hist_distance": 0.1228,
+              "sift_inliers": 180,
+              "sift_good": 184
+            },
+            {
+              "level_id": "on_command",
+              "area": "heroes_and_water",
+              "phash_distance": 20,
+              "hist_distance": 0.9063,
+              "sift_inliers": 7,
+              "sift_good": 8
+            },
+            {
+              "level_id": "metamirror_same_dir_3_alt_2",
+              "area": "metamirrors",
+              "phash_distance": 16,
+              "hist_distance": 1.3632,
+              "sift_inliers": 0,
+              "sift_good": 1
+            },
+            {
+              "level_id": "height_chooser_v0",
+              "area": "vertical_reflection",
+              "phash_distance": 18,
+              "hist_distance": 1.4131,
+              "sift_inliers": 0,
+              "sift_good": 1
+            },
+            {
+              "level_id": "floor_plan_v3",
+              "area": "endgame2",
+              "phash_distance": 20,
+              "hist_distance": 1.3877,
+              "sift_inliers": 0,
+              "sift_good": 2
+            }
+          ],
+          "puzzle_match": {
+            "level_id": "tiger_lily_v2",
+            "area": "skipping_in_3d",
+            "phash_distance": 6,
+            "hist_distance": 0.1228,
+            "sift_inliers": 180,
+            "sift_good": 184,
+            "consistent_samples": 6,
+            "status": "visually_confirmed"
+          },
+          "overworld_match": {
+            "status": "unverified"
+          },
+          "evidence": [
+            {
+              "type": "candidate_layout",
+              "image": "F:\\Video\\OotSS_Sand\\runs\\p68\\samples\\00365.000.jpg",
+              "time": 365.0,
+              "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\tiger_lily_v2.webp",
+              "first_sample": 350.0,
+              "last_sample": 375.0,
+              "sample_count": 6,
+              "reason": "绿色阶梯水岛、右侧独立上层平台与圆石落点关系对应；此前三个平面小岛为原型。"
+            },
+            {
+              "type": "temporal_context",
+              "reason": "全25张时间轴图册已查。此段正式版示例前后为开发原型、外部地图或讲解，不将风格相似的原型自动记入正式版坐标。"
+            }
+          ],
+          "evidence_gallery": "evidence/candidates_00.jpg",
+          "manual_corrections": [],
+          "reviewer": "Codex visual comparison",
+          "context": "开发回顾：正式版示例",
+          "map_layer": "sky"
+        },
+        {
+          "event_id": "p68-003",
+          "level_id": "quad_torch",
+          "puzzle_start_time": 648.625,
+          "puzzle_end_time": 745.0,
+          "entry_transition_time": 648.125,
+          "exit_time": 745.125,
+          "overworld_approach_time": null,
+          "review_status": "confirmed",
+          "status": "visited",
+          "outcome": "unknown",
+          "timing_uncertainty_seconds": 0.5,
+          "candidate_levels": [
+            {
+              "level_id": "quad_torch",
+              "area": "heroes_and_mirrors",
+              "phash_distance": 6,
+              "hist_distance": 0.1342,
+              "sift_inliers": 100,
+              "sift_good": 106
+            },
+            {
+              "level_id": "tippy_intro",
+              "area": "heroes_in_3d",
+              "phash_distance": 20,
+              "hist_distance": 1.1688,
+              "sift_inliers": 0,
+              "sift_good": 1
+            },
+            {
+              "level_id": "stay_lit",
+              "area": "strength",
+              "phash_distance": 20,
+              "hist_distance": 1.2751,
+              "sift_inliers": 0,
+              "sift_good": 0
+            },
+            {
+              "level_id": "heroes2_thief_goblin",
+              "area": "heroes2",
+              "phash_distance": 20,
+              "hist_distance": 1.3022,
+              "sift_inliers": 0,
+              "sift_good": 2
+            },
+            {
+              "level_id": "mirror_14",
+              "area": "mirror",
+              "phash_distance": 20,
+              "hist_distance": 1.3756,
+              "sift_inliers": 0,
+              "sift_good": 1
+            }
+          ],
+          "puzzle_match": {
+            "level_id": "quad_torch",
+            "area": "heroes_and_mirrors",
+            "phash_distance": 6,
+            "hist_distance": 0.1342,
+            "sift_inliers": 100,
+            "sift_good": 106,
+            "consistent_samples": 19,
+            "status": "visually_confirmed"
+          },
+          "overworld_match": {
+            "status": "unverified"
+          },
+          "evidence": [
+            {
+              "type": "candidate_layout",
+              "image": "F:\\Video\\OotSS_Sand\\runs\\p68\\samples\\00660.000.jpg",
+              "time": 660.0,
+              "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\quad_torch.webp",
+              "first_sample": 650.0,
+              "last_sample": 740.0,
+              "sample_count": 19,
+              "reason": "四角火炬与中央高柱、下方出口及立体平台轮廓对应；6:30起的平面原型另行排除。"
+            },
+            {
+              "type": "temporal_context",
+              "reason": "全25张时间轴图册已查。此段正式版示例前后为开发原型、外部地图或讲解，不将风格相似的原型自动记入正式版坐标。"
+            }
+          ],
+          "evidence_gallery": "evidence/candidates_00.jpg",
+          "manual_corrections": [],
+          "reviewer": "Codex visual comparison",
+          "context": "开发回顾：正式版示例",
+          "map_layer": "overworld"
+        },
+        {
+          "event_id": "p68-005",
+          "level_id": "worlds_collide_heroes_and_promesst_v4",
+          "puzzle_start_time": 1149.375,
+          "puzzle_end_time": 1231.375,
+          "entry_transition_time": 1148.875,
+          "exit_time": 1231.5,
+          "overworld_approach_time": null,
+          "review_status": "confirmed",
+          "status": "visited",
+          "outcome": "unknown",
+          "timing_uncertainty_seconds": 0.5,
+          "candidate_levels": [
+            {
+              "level_id": "worlds_collide_heroes_and_promesst_v4",
+              "area": "worlds_collide",
+              "phash_distance": 2,
+              "hist_distance": 0.1383,
+              "sift_inliers": 161,
+              "sift_good": 172
+            },
+            {
+              "level_id": "wider_ocean",
+              "area": "mirrorable_stones",
+              "phash_distance": 18,
+              "hist_distance": 1.3521,
+              "sift_inliers": 5,
+              "sift_good": 8
+            },
+            {
+              "level_id": "end3_mirror_2_alt2",
+              "area": "endgame3",
+              "phash_distance": 20,
+              "hist_distance": 1.3259,
+              "sift_inliers": 5,
+              "sift_good": 10
+            },
+            {
+              "level_id": "retro_hooks",
+              "area": "skipping_in_3d",
+              "phash_distance": 18,
+              "hist_distance": 1.3831,
+              "sift_inliers": 4,
+              "sift_good": 8
+            },
+            {
+              "level_id": "floating_orange_purple",
+              "area": "beams_and_mirrors",
+              "phash_distance": 20,
+              "hist_distance": 1.341,
+              "sift_inliers": 4,
+              "sift_good": 8
+            }
+          ],
+          "puzzle_match": {
+            "level_id": "worlds_collide_heroes_and_promesst_v4",
+            "area": "worlds_collide",
+            "phash_distance": 2,
+            "hist_distance": 0.1383,
+            "sift_inliers": 161,
+            "sift_good": 172,
+            "consistent_samples": 17,
+            "status": "visually_confirmed"
+          },
+          "overworld_match": {
+            "status": "unverified"
+          },
+          "evidence": [
+            {
+              "type": "candidate_layout",
+              "image": "F:\\Video\\OotSS_Sand\\runs\\p68\\samples\\01205.000.jpg",
+              "time": 1205.0,
+              "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\worlds_collide_heroes_and_promesst_v4.webp",
+              "first_sample": 1150.0,
+              "last_sample": 1230.0,
+              "sample_count": 17,
+              "reason": "多层金色台阶、两侧板块和角色机关位置逐项对应；17分钟附近平面二联原型误匹配reel_it_in已删除。"
+            },
+            {
+              "type": "temporal_context",
+              "reason": "全25张时间轴图册已查。此段正式版示例前后为开发原型、外部地图或讲解，不将风格相似的原型自动记入正式版坐标。"
+            }
+          ],
+          "evidence_gallery": "evidence/candidates_00.jpg",
+          "manual_corrections": [],
+          "reviewer": "Codex visual comparison",
+          "context": "开发回顾：正式版示例",
+          "map_layer": "overworld"
+        },
+        {
+          "event_id": "p68-006",
+          "level_id": "across_the_fence_vtrader_m_p",
+          "puzzle_start_time": 1380.375,
+          "puzzle_end_time": 1419.75,
+          "entry_transition_time": 1379.875,
+          "exit_time": 1419.875,
+          "overworld_approach_time": null,
+          "review_status": "confirmed",
+          "status": "visited",
+          "outcome": "unknown",
+          "timing_uncertainty_seconds": 0.5,
+          "candidate_levels": [
+            {
+              "level_id": "across_the_fence_vtrader_m_p",
+              "area": "beams_and_mirrors",
+              "phash_distance": 2,
+              "hist_distance": 0.6763,
+              "sift_inliers": 130,
+              "sift_good": 134
+            },
+            {
+              "level_id": "heroes1_17",
+              "area": "heroes1",
+              "phash_distance": 14,
+              "hist_distance": 1.2928,
+              "sift_inliers": 0,
+              "sift_good": 2
+            },
+            {
+              "level_id": "vertical_unclone_3",
+              "area": "vertical_mirrors",
+              "phash_distance": 18,
+              "hist_distance": 1.167,
+              "sift_inliers": 0,
+              "sift_good": 0
+            },
+            {
+              "level_id": "heroes3_15_v4",
+              "area": "heroes3",
+              "phash_distance": 18,
+              "hist_distance": 1.2363,
+              "sift_inliers": 0,
+              "sift_good": 2
+            },
+            {
+              "level_id": "pull_skip_twins_v3",
+              "area": "heroes_and_stones",
+              "phash_distance": 18,
+              "hist_distance": 1.3796,
+              "sift_inliers": 0,
+              "sift_good": 0
+            }
+          ],
+          "puzzle_match": {
+            "level_id": "across_the_fence_vtrader_m_p",
+            "area": "beams_and_mirrors",
+            "phash_distance": 2,
+            "hist_distance": 0.6763,
+            "sift_inliers": 130,
+            "sift_good": 134,
+            "consistent_samples": 7,
+            "status": "visually_confirmed"
+          },
+          "overworld_match": {
+            "status": "unverified"
+          },
+          "evidence": [
+            {
+              "type": "candidate_layout",
+              "image": "F:\\Video\\OotSS_Sand\\runs\\p68\\samples\\01415.000.jpg",
+              "time": 1415.0,
+              "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\across_the_fence_vtrader_m_p.webp",
+              "first_sample": 1385.0,
+              "last_sample": 1415.0,
+              "sample_count": 7,
+              "reason": "金色栅栏两侧角色、台阶与桥接平台对应。"
+            },
+            {
+              "type": "temporal_context",
+              "reason": "全25张时间轴图册已查。此段正式版示例前后为开发原型、外部地图或讲解，不将风格相似的原型自动记入正式版坐标。"
+            }
+          ],
+          "evidence_gallery": "evidence/candidates_01.jpg",
+          "manual_corrections": [],
+          "reviewer": "Codex visual comparison",
+          "context": "开发回顾：正式版示例",
+          "map_layer": "overworld"
+        },
+        {
+          "event_id": "p68-007",
+          "level_id": "sender_simplified_v2",
+          "puzzle_start_time": 1628.75,
+          "puzzle_end_time": 1811.75,
+          "entry_transition_time": 1628.375,
+          "exit_time": 1812.0,
+          "overworld_approach_time": null,
+          "review_status": "confirmed",
+          "status": "visited",
+          "outcome": "unknown",
+          "timing_uncertainty_seconds": 0.5,
+          "candidate_levels": [
+            {
+              "level_id": "sender_simplified_v2",
+              "area": "vertical_endpoint",
+              "phash_distance": 4,
+              "hist_distance": 0.1042,
+              "sift_inliers": 143,
+              "sift_good": 163
+            },
+            {
+              "level_id": "falloff_kill_goblins_v6",
+              "area": "heroes_in_3d",
+              "phash_distance": 18,
+              "hist_distance": 1.3345,
+              "sift_inliers": 5,
+              "sift_good": 13
+            },
+            {
+              "level_id": "launch_and_collect",
+              "area": "mirrorable_stones",
+              "phash_distance": 20,
+              "hist_distance": 1.3085,
+              "sift_inliers": 5,
+              "sift_good": 11
+            },
+            {
+              "level_id": "monkey_in_the_midpoint",
+              "area": "promesst3",
+              "phash_distance": 20,
+              "hist_distance": 1.3875,
+              "sift_inliers": 4,
+              "sift_good": 7
+            },
+            {
+              "level_id": "magic_square",
+              "area": "beams_and_basic_heroes",
+              "phash_distance": 18,
+              "hist_distance": 1.2324,
+              "sift_inliers": 0,
+              "sift_good": 7
+            }
+          ],
+          "puzzle_match": {
+            "level_id": "sender_simplified_v2",
+            "area": "vertical_endpoint",
+            "phash_distance": 4,
+            "hist_distance": 0.1042,
+            "sift_inliers": 143,
+            "sift_good": 163,
+            "consistent_samples": 35,
+            "status": "visually_confirmed"
+          },
+          "overworld_match": {
+            "status": "unverified"
+          },
+          "evidence": [
+            {
+              "type": "candidate_layout",
+              "image": "F:\\Video\\OotSS_Sand\\runs\\p68\\samples\\01665.000.jpg",
+              "time": 1665.0,
+              "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\sender_simplified_v2.webp",
+              "first_sample": 1635.0,
+              "last_sample": 1805.0,
+              "sample_count": 35,
+              "reason": "中央送达结构与两侧多层高台、窄桥和角色位置关系对应；此前简化粉色原型排除。"
+            },
+            {
+              "type": "temporal_context",
+              "reason": "全25张时间轴图册已查。此段正式版示例前后为开发原型、外部地图或讲解，不将风格相似的原型自动记入正式版坐标。"
+            }
+          ],
+          "evidence_gallery": "evidence/candidates_01.jpg",
+          "manual_corrections": [],
+          "reviewer": "Codex visual comparison",
+          "context": "开发回顾：正式版示例",
+          "map_layer": "sky"
+        },
+        {
+          "event_id": "p68-008",
+          "level_id": "push_down_a_lot_small",
+          "puzzle_start_time": 1950.375,
+          "puzzle_end_time": 2111.875,
+          "entry_transition_time": 1950.0,
+          "exit_time": 2112.125,
+          "overworld_approach_time": null,
+          "review_status": "confirmed",
+          "status": "visited",
+          "outcome": "unknown",
+          "timing_uncertainty_seconds": 0.5,
+          "candidate_levels": [
+            {
+              "level_id": "push_down_a_lot_small",
+              "area": "heroes_in_3d",
+              "phash_distance": 8,
+              "hist_distance": 0.1605,
+              "sift_inliers": 164,
+              "sift_good": 172
+            },
+            {
+              "level_id": "fun_house",
+              "area": "beams_and_mirrors",
+              "phash_distance": 20,
+              "hist_distance": 1.3916,
+              "sift_inliers": 5,
+              "sift_good": 6
+            },
+            {
+              "level_id": "meta_orange_purple_2",
+              "area": "beams_and_mirrors",
+              "phash_distance": 20,
+              "hist_distance": 1.3954,
+              "sift_inliers": 5,
+              "sift_good": 8
+            },
+            {
+              "level_id": "tricky_swappers_v3",
+              "area": "heroes_and_mirrors",
+              "phash_distance": 20,
+              "hist_distance": 1.4127,
+              "sift_inliers": 4,
+              "sift_good": 6
+            },
+            {
+              "level_id": "pillars",
+              "area": "mirrors_in_3d",
+              "phash_distance": 18,
+              "hist_distance": 1.4124,
+              "sift_inliers": 0,
+              "sift_good": 5
+            }
+          ],
+          "puzzle_match": {
+            "level_id": "push_down_a_lot_small",
+            "area": "heroes_in_3d",
+            "phash_distance": 8,
+            "hist_distance": 0.1605,
+            "sift_inliers": 164,
+            "sift_good": 172,
+            "consistent_samples": 32,
+            "status": "visually_confirmed"
+          },
+          "overworld_match": {
+            "status": "unverified"
+          },
+          "evidence": [
+            {
+              "type": "candidate_layout",
+              "image": "F:\\Video\\OotSS_Sand\\runs\\p68\\samples\\02035.000.jpg",
+              "time": 2035.0,
+              "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\push_down_a_lot_small.webp",
+              "first_sample": 1955.0,
+              "last_sample": 2110.0,
+              "sample_count": 32,
+              "reason": "多层石台的阶梯、左右角色和连续下推布局对应；30:30后的平面蓝色棋盘为原型。"
+            },
+            {
+              "type": "temporal_context",
+              "reason": "全25张时间轴图册已查。此段正式版示例前后为开发原型、外部地图或讲解，不将风格相似的原型自动记入正式版坐标。"
+            }
+          ],
+          "evidence_gallery": "evidence/candidates_01.jpg",
+          "manual_corrections": [],
+          "reviewer": "Codex visual comparison",
+          "context": "开发回顾：正式版示例",
+          "map_layer": "sky"
+        },
+        {
+          "event_id": "p68-009",
+          "level_id": "catching_up_v2",
+          "puzzle_start_time": 2417.375,
+          "puzzle_end_time": 2588.625,
+          "entry_transition_time": 2416.875,
+          "exit_time": 2588.875,
+          "overworld_approach_time": null,
+          "review_status": "confirmed",
+          "status": "visited",
+          "outcome": "unknown",
+          "timing_uncertainty_seconds": 0.5,
+          "candidate_levels": [
+            {
+              "level_id": "catching_up_v2",
+              "area": "vertical_mirrors",
+              "phash_distance": 4,
+              "hist_distance": 0.2793,
+              "sift_inliers": 77,
+              "sift_good": 90
+            },
+            {
+              "level_id": "implausible_bridge",
+              "area": "vertical_mirrors",
+              "phash_distance": 18,
+              "hist_distance": 1.3704,
+              "sift_inliers": 4,
+              "sift_good": 7
+            },
+            {
+              "level_id": "multipurpose",
+              "area": "mirrorable_stones",
+              "phash_distance": 18,
+              "hist_distance": 1.4,
+              "sift_inliers": 0,
+              "sift_good": 5
+            },
+            {
+              "level_id": "coax_a_lot",
+              "area": "mirrors_and_stones",
+              "phash_distance": 20,
+              "hist_distance": 1.2679,
+              "sift_inliers": 0,
+              "sift_good": 2
+            },
+            {
+              "level_id": "heroes2_18",
+              "area": "heroes2",
+              "phash_distance": 20,
+              "hist_distance": 1.3602,
+              "sift_inliers": 0,
+              "sift_good": 5
+            }
+          ],
+          "puzzle_match": {
+            "level_id": "catching_up_v2",
+            "area": "vertical_mirrors",
+            "phash_distance": 4,
+            "hist_distance": 0.2793,
+            "sift_inliers": 77,
+            "sift_good": 90,
+            "consistent_samples": 34,
+            "status": "visually_confirmed"
+          },
+          "overworld_match": {
+            "status": "unverified"
+          },
+          "evidence": [
+            {
+              "type": "candidate_layout",
+              "image": "F:\\Video\\OotSS_Sand\\runs\\p68\\samples\\02420.000.jpg",
+              "time": 2420.0,
+              "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\catching_up_v2.webp",
+              "first_sample": 2420.0,
+              "last_sample": 2585.0,
+              "sample_count": 34,
+              "reason": "金色岛上两座高塔、木箱和紫色水晶落点对应。"
+            },
+            {
+              "type": "temporal_context",
+              "reason": "全25张时间轴图册已查。此段正式版示例前后为开发原型、外部地图或讲解，不将风格相似的原型自动记入正式版坐标。"
+            }
+          ],
+          "evidence_gallery": "evidence/candidates_01.jpg",
+          "manual_corrections": [],
+          "reviewer": "Codex visual comparison",
+          "context": "开发回顾：正式版示例",
+          "map_layer": "sky"
+        },
+        {
+          "event_id": "p68-010",
+          "level_id": "triple_gate",
+          "puzzle_start_time": 2721.5,
+          "puzzle_end_time": 2788.625,
+          "entry_transition_time": 2721.125,
+          "exit_time": 2788.875,
+          "overworld_approach_time": null,
+          "review_status": "confirmed",
+          "status": "visited",
+          "outcome": "unknown",
+          "timing_uncertainty_seconds": 0.5,
+          "candidate_levels": [
+            {
+              "level_id": "triple_gate",
+              "area": "mirrors_in_3d",
+              "phash_distance": 2,
+              "hist_distance": 0.0698,
+              "sift_inliers": 149,
+              "sift_good": 159
+            },
+            {
+              "level_id": "movable_buttons",
+              "area": "flat_things",
+              "phash_distance": 18,
+              "hist_distance": 1.3986,
+              "sift_inliers": 0,
+              "sift_good": 4
+            },
+            {
+              "level_id": "accidentally_unlock_v2",
+              "area": "beaming_objects",
+              "phash_distance": 20,
+              "hist_distance": 1.3405,
+              "sift_inliers": 0,
+              "sift_good": 8
+            },
+            {
+              "level_id": "heroes1_5_v2",
+              "area": "heroes1",
+              "phash_distance": 20,
+              "hist_distance": 1.3822,
+              "sift_inliers": 0,
+              "sift_good": 2
+            },
+            {
+              "level_id": "heroes1_2_v2",
+              "area": "heroes1",
+              "phash_distance": 20,
+              "hist_distance": 1.3868,
+              "sift_inliers": 0,
+              "sift_good": 1
+            }
+          ],
+          "puzzle_match": {
+            "level_id": "triple_gate",
+            "area": "mirrors_in_3d",
+            "phash_distance": 2,
+            "hist_distance": 0.0698,
+            "sift_inliers": 149,
+            "sift_good": 159,
+            "consistent_samples": 13,
+            "status": "visually_confirmed"
+          },
+          "overworld_match": {
+            "status": "unverified"
+          },
+          "evidence": [
+            {
+              "type": "candidate_layout",
+              "image": "F:\\Video\\OotSS_Sand\\runs\\p68\\samples\\02765.000.jpg",
+              "time": 2765.0,
+              "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\triple_gate.webp",
+              "first_sample": 2725.0,
+              "last_sample": 2785.0,
+              "sample_count": 13,
+              "reason": "下方三道红门及其上方台阶、镜面与孤立出口关系对应；此前橙色原型排除。"
+            },
+            {
+              "type": "temporal_context",
+              "reason": "全25张时间轴图册已查。此段正式版示例前后为开发原型、外部地图或讲解，不将风格相似的原型自动记入正式版坐标。"
+            }
+          ],
+          "evidence_gallery": "evidence/candidates_01.jpg",
+          "manual_corrections": [],
+          "reviewer": "Codex visual comparison",
+          "context": "开发回顾：正式版示例",
+          "map_layer": "sky"
+        },
+        {
+          "event_id": "p68-011",
+          "level_id": "height_chooser_v0",
+          "puzzle_start_time": 2952.25,
+          "puzzle_end_time": 3033.75,
+          "entry_transition_time": 2951.875,
+          "exit_time": 3033.875,
+          "overworld_approach_time": null,
+          "review_status": "confirmed",
+          "status": "visited",
+          "outcome": "unknown",
+          "timing_uncertainty_seconds": 0.5,
+          "candidate_levels": [
+            {
+              "level_id": "height_chooser_v0",
+              "area": "vertical_reflection",
+              "phash_distance": 6,
+              "hist_distance": 0.1229,
+              "sift_inliers": 125,
+              "sift_good": 135
+            },
+            {
+              "level_id": "stopper_topper_v2",
+              "area": "heroes_in_3d",
+              "phash_distance": 20,
+              "hist_distance": 1.4077,
+              "sift_inliers": 5,
+              "sift_good": 6
+            },
+            {
+              "level_id": "button_clone_journey",
+              "area": "clones",
+              "phash_distance": 16,
+              "hist_distance": 1.3498,
+              "sift_inliers": 0,
+              "sift_good": 1
+            },
+            {
+              "level_id": "heroes2_10a",
+              "area": "heroes2",
+              "phash_distance": 16,
+              "hist_distance": 1.4026,
+              "sift_inliers": 0,
+              "sift_good": 1
+            },
+            {
+              "level_id": "mirror_hallway_v2",
+              "area": "heroes_and_mirrors",
+              "phash_distance": 18,
+              "hist_distance": 1.3268,
+              "sift_inliers": 0,
+              "sift_good": 2
+            }
+          ],
+          "puzzle_match": {
+            "level_id": "height_chooser_v0",
+            "area": "vertical_reflection",
+            "phash_distance": 6,
+            "hist_distance": 0.1229,
+            "sift_inliers": 125,
+            "sift_good": 135,
+            "consistent_samples": 16,
+            "status": "visually_confirmed"
+          },
+          "overworld_match": {
+            "status": "unverified"
+          },
+          "evidence": [
+            {
+              "type": "candidate_layout",
+              "image": "F:\\Video\\OotSS_Sand\\runs\\p68\\samples\\02980.000.jpg",
+              "time": 2980.0,
+              "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\height_chooser_v0.webp",
+              "first_sample": 2955.0,
+              "last_sample": 3030.0,
+              "sample_count": 16,
+              "reason": "左侧橙色阶台、竖向粉色光束与右侧长条独立高台对应；此前橙色平台原型排除。"
+            },
+            {
+              "type": "temporal_context",
+              "reason": "全25张时间轴图册已查。此段正式版示例前后为开发原型、外部地图或讲解，不将风格相似的原型自动记入正式版坐标。"
+            }
+          ],
+          "evidence_gallery": "evidence/candidates_02.jpg",
+          "manual_corrections": [],
+          "reviewer": "Codex visual comparison",
+          "context": "开发回顾：正式版示例",
+          "map_layer": "sky"
+        }
+      ],
+      "excluded_segments": [
+        {
+          "start": 1035,
+          "end": 1045,
+          "candidate": "reel_it_in",
+          "reason": "画面为开发原型的双平面棋盘，与参考圆岛结构不同；机器弱匹配12内点已拒绝。"
+        },
+        {
+          "start": 3040,
+          "end": 3864.567,
+          "reason": "外部地图、开发回顾图片、隐藏录音；非独立Level_Entry访问。"
+        }
+      ],
+      "superseded_reviews": []
+    }
+  ],
+  "intro_review": {
+    "source": "data/intro_visits.json",
+    "source_sha256": "96012fe3b3a8b2c025d5cff11fe8ac981798ad6bbd57c050e3207046b3c3a396",
+    "map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c",
+    "authorization": "2026-10-28 用户明确要求重新收录原P68/现P69的序章示例；禁止把同构演示归入旧三地图。"
+  }
 }

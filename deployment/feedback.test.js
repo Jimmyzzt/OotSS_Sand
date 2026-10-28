@@ -17,6 +17,7 @@ const body=()=>({request_key:crypto.randomUUID(),type:'mismatch',description:'æµ
 function database(){
  const sql=new DatabaseSync(':memory:');
  sql.exec(readFileSync(new URL('./migrations/0001_feedback.sql',import.meta.url),'utf8'));
+ sql.exec(readFileSync(new URL('./migrations/0002_intro_map.sql',import.meta.url),'utf8'));
  return {sql,prepare(text){return {bind(...values){const s=sql.prepare(text);return {
   async first(){return s.get(...values)||null},
   async all(){return {results:s.all(...values)}},
@@ -25,6 +26,20 @@ function database(){
 }
 async function mockFetch(fn,run){const previous=globalThis.fetch;globalThis.fetch=fn;try{return await run()}finally{globalThis.fetch=previous}}
 const verified=()=>Response.json({success:true,hostname:'sand.zzt.si',action:'feedback'});
+
+test('intro migration preserves complete reports and permits the fourth map',()=>{
+ const sql=new DatabaseSync(':memory:');sql.exec(readFileSync(new URL('./migrations/0001_feedback.sql',import.meta.url),'utf8'));
+ sql.exec("INSERT INTO feedback(id,request_key,payload_hash,created_at,updated_at,type,map_id,description,context_json,status,admin_note,updated_by) VALUES('old','request','hash','date','date','other','sky','player report','{}','confirmed','reviewed','owner')");
+ const previous=sql.prepare('SELECT * FROM feedback').get();
+ sql.exec(readFileSync(new URL('./migrations/0002_intro_map.sql',import.meta.url),'utf8'));
+ assert.deepEqual(sql.prepare('SELECT * FROM feedback').get(),previous);
+ sql.prepare('UPDATE feedback SET map_id=? WHERE id=?').run('intro','old');
+ assert.equal(sql.prepare('SELECT map_id FROM feedback').get().map_id,'intro');
+ assert.throws(()=>sql.prepare('UPDATE feedback SET map_id=?').run('invalid'));
+ assert.equal(sql.prepare("SELECT count(*) AS n FROM sqlite_master WHERE type='index' AND name LIKE 'feedback_%'").get().n,4);
+ assert.equal(validateFeedback({...body(),context:{map_id:'intro',level_id:'intro-heroes1_7_v2'}}).context.map_id,'intro');
+ sql.close();
+});
 
 test('Access verifies signature, issuer, audience, expiry and the exact email allowlist',async()=>{
  for(const email of ['mocking.jimmy@gmail.com','2601848284@qq.com'])assert.deepEqual(await verifyAdmin(request('/feedback-admin',undefined,{'Cf-Access-Jwt-Assertion':await token(email)}),authEnv,localKeys),{email});

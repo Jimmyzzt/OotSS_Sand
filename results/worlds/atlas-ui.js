@@ -1,23 +1,30 @@
 /* Prefixes stay outside the ordinal box so the ordinal anchor never moves. */
 const atlasCompletionSets=new WeakMap();
 globalThis.AtlasUI = {
-  completed(levels,save,id){
+  initialMap(worlds,query,lastMap){
+    return worlds.find(m=>m.map_id===query.get('map'))||worlds.find(m=>m.levels.some(l=>l.level_id===query.get('level')))||worlds.find(m=>m.parts.some(p=>String(p.part)===query.get('p')))||worlds.find(m=>m.map_id===lastMap)||worlds[0];
+  },
+  mapGeometry(data){
+    const [left,bottom,right,top]=data.bounds||[-24.5,-18.5,165.5,170.5],factor=512/190;
+    return {bounds:[[bottom,left],[top,right]],center:[(bottom+top)/2,(left+right)/2],transform:[factor,-left*factor,-factor,top*factor]};
+  },
+  completed(levels,save,id,saveId=id){
     if(!save)return levels[id]?.completed===true;
     let solved=atlasCompletionSets.get(save.solved);if(!solved){solved=new Set(save.solved);atlasCompletionSets.set(save.solved,solved)}
-    return solved.has(id)?save.overrides[id]!==false:levels[id]?.completed===true;
+    return solved.has(saveId)?save.overrides[id]!==false:levels[id]?.completed===true;
   },
   newSaveProgress(solved,source,readAt){return {version:1,source:source.slice(0,300),readAt,solved:[...new Set(solved)],overrides:{}};},
   parseSaveProgress(value,levelIds){
     if(value===null)return null;
     if(!value||value.version!==1||!Array.isArray(value.solved)||value.solved.length>50000||typeof value.source!=='string'||typeof value.readAt!=='string'||!Number.isFinite(Date.parse(value.readAt)))throw Error('不是有效的存档完成记录');
     const solved=[...new Set(value.solved.filter(id=>typeof id==='string'&&levelIds.has(id)))],overrides=Object.create(null);
-    for(const id of solved)if(value.overrides?.[id]===false)overrides[id]=false;
+    for(const [id,flag] of Object.entries(value.overrides||{}))if(levelIds.has(id)&&flag===false)overrides[id]=false;
     return {version:1,source:value.source.slice(0,300),readAt:new Date(value.readAt).toISOString(),solved,overrides};
   },
-  manualCompletion(levels,save,id,completed){
+  manualCompletion(levels,save,id,completed,saveId=id){
     const next={...levels,[id]:{...levels[id],completed}};
     if(!save)return {levels:next,saveProgress:null};
-    const overrides={...save.overrides};if(save.solved.includes(id)&&!completed)overrides[id]=false;else delete overrides[id];
+    const overrides={...save.overrides};if(save.solved.includes(saveId)&&!completed)overrides[id]=false;else delete overrides[id];
     return {levels:next,saveProgress:{...save,overrides}};
   },
   includesRegion(level,state,forMap=false) {

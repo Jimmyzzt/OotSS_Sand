@@ -14,6 +14,40 @@ REPO = "https://github.com/joric/ootss.git"
 ASSETS = "https://joric.github.io/ootss_tileset"
 
 
+def with_intro(catalog, root="cache/map", fetch=True):
+    """Merge the separately pinned intro source without rebasing old reviews."""
+    source = Path("data/intro_map.json")
+    if not source.exists():
+        return catalog
+    supplement = read_json(source)
+    levels = [r for r in catalog["levels"] if r.get("map_layer") != "intro"]
+    names = {r["level_id"] for r in levels}
+    for original in supplement["levels"]:
+        row = {**original}
+        if row["level_id"] in names:
+            raise ValueError("Intro entry must have its own upstream namespace")
+        reference = Path(root) / "images" / (row["source_level_id"] + ".webp")
+        if fetch:
+            download(
+                f"{tile_asset_base(supplement['tileset_revision'])}/images/levels/{quote(row['source_level_id'])}.webp",
+                reference,
+            )
+        row["reference"] = str(reference.resolve())
+        levels.append(row)
+    return {
+        **catalog,
+        "levels": levels,
+        "supplements": [
+            {
+                "map_id": "intro",
+                "commit": supplement["map_commit"],
+                "source": supplement["source"],
+                "entry_count": len(supplement["levels"]),
+            }
+        ],
+    }
+
+
 def tile_asset_base(revision=None):
     if revision is None:
         return ASSETS
@@ -48,6 +82,10 @@ def import_map(
 ):
     root = Path(root)
     upstream = root / "upstream"
+    manifest = Path("data/map_assets.json")
+    pinned = read_json(manifest).get("catalog_revision") if manifest.exists() else None
+    if pinned and not re.fullmatch(r"[a-f0-9]{40}", pinned):
+        raise ValueError("Invalid pinned base catalog revision")
     if not upstream.exists():
         root.mkdir(parents=True, exist_ok=True)
         subprocess.run(
@@ -63,6 +101,14 @@ def import_map(
             ],
             check=True,
         )
+        if pinned:
+            subprocess.run(
+                ["git", "-C", str(upstream), "fetch", "origin", pinned, "--depth=1"],
+                check=True,
+            )
+            subprocess.run(
+                ["git", "-C", str(upstream), "checkout", "--detach", pinned], check=True
+            )
         subprocess.run(
             [
                 "git",
@@ -78,6 +124,10 @@ def import_map(
     sha = subprocess.check_output(
         ["git", "-C", str(upstream), "rev-parse", "HEAD"], text=True
     ).strip()
+    if pinned and sha != pinned:
+        raise ValueError(
+            "Base catalog checkout differs from the reviewed snapshot; preserve it and resolve explicitly"
+        )
     markers = read_json(upstream / "data/markers.json")["features"]
     index = read_json(upstream / "js/lib/imageSearch/index.json")
     image_names = {Path(x["name"]).stem for x in index}
@@ -132,6 +182,8 @@ def import_map(
             ),
         },
     }
+    if "intro" in layers:
+        result = with_intro(result, root)
     write_json(root / catalog_name, result)
     return result
 

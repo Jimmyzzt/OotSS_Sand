@@ -11,7 +11,7 @@ from pathlib import Path
 
 from scripts.package_site import package
 
-WORLDS = ("overworld", "sky", "underworld")
+WORLDS = ("overworld", "sky", "underworld", "intro")
 
 
 def tile_svg(images, size):
@@ -32,7 +32,7 @@ def tile_svg(images, size):
 def prepare_tiles(revision):
     if not re.fullmatch(r"[a-f0-9]{40}", revision):
         raise ValueError("Invalid pinned tileset revision")
-    cache = Path("cache/map/packed") / revision / "v1"
+    cache = Path("cache/map/packed") / revision / "v2"
     if (cache / "complete.json").exists():
         return cache / "tiles"
     archive = Path("cache/map/archives") / f"{revision}.tar.gz"
@@ -54,7 +54,7 @@ def prepare_tiles(revision):
         with tarfile.open(archive, "r|gz") as stream:
             for member in stream:
                 match = re.fullmatch(
-                    r"[^/]+/tiles/(overworld|sky|underworld)_64k/([457])/(\d+)/(\d+)\.webp",
+                    r"[^/]+/tiles/(overworld|sky|underworld|intro)_64k/([0-7])/(\d+)/(\d+)\.webp",
                     member.name,
                 )
                 if not member.isfile() or not match:
@@ -62,7 +62,16 @@ def prepare_tiles(revision):
                 world, z, y, x = match.groups()
                 if int(y) >= 2 ** int(z) or int(x) >= 2 ** int(z):
                     raise ValueError("Invalid source tile coordinate")
-                target = sources / world / z / y / f"{x}.webp"
+                if int(z) <= 3:
+                    target = (
+                        Path("cache/map/versions")
+                        / revision
+                        / f"tiles/{world}_64k/{z}/{y}/{x}.webp"
+                    )
+                elif z not in {"4", "5", "7"}:
+                    continue
+                else:
+                    target = sources / world / z / y / f"{x}.webp"
                 target.parent.mkdir(parents=True, exist_ok=True)
                 with stream.extractfile(member) as content, target.open("wb") as out:
                     shutil.copyfileobj(content, out)
@@ -71,8 +80,13 @@ def prepare_tiles(revision):
         marker.write_text(json.dumps({"revision": revision, "files": count}))
         print(f"Cached {count} pinned source tiles", flush=True)
     files = 0
+    coverage = {}
     for world in WORLDS:
+        if world == "intro":
+            coverage[world] = {}
         for z in (4, 5, 6):
+            if world == "intro":
+                coverage[world][str(z)] = []
             for y in range(2**z):
                 folder = cache / "tiles" / world / str(z) / str(y)
                 folder.mkdir(parents=True, exist_ok=True)
@@ -92,13 +106,19 @@ def prepare_tiles(revision):
                             )
                             if source.exists():
                                 images.append((dx * 512, dy * 512, source.read_bytes()))
+                    # Intro covers only part of its image square. Empty requests
+                    # share one static blank, preserving the Free file budget.
+                    if world == "intro":
+                        if not images:
+                            continue
+                        coverage[world][str(z)].append(f"{y}/{x}")
                     (folder / f"{x}.svg").write_text(
                         tile_svg(images, 1024 if z == 6 else 512), encoding="utf-8"
                     )
                     files += 1
             print(f"Packed {world} zoom {z}", flush=True)
     (cache / "complete.json").write_text(
-        json.dumps({"revision": revision, "files": files})
+        json.dumps({"revision": revision, "files": files, "tileCoverage": coverage})
     )
     return cache / "tiles"
 
@@ -143,7 +163,15 @@ def package_worker(destination="dist/worker", complete=False):
         shutil.copytree(packed, destination / "map-tiles" / revision)
         html = (destination / "index.html").read_text(encoding="utf-8")
         hosting = json.dumps(
-            {"packedTileBase": f"map-tiles/{revision}", "maxNativeZoom": 6}
+            {
+                "packedTileBase": f"map-tiles/{revision}",
+                "maxNativeZoom": 6,
+                "tileCoverage": json.loads(
+                    (packed.parent / "complete.json").read_text()
+                ).get("tileCoverage", {})
+                if (packed.parent / "complete.json").exists()
+                else {},
+            }
         )
         html = html.replace(
             "<script>const DATA=",
@@ -154,7 +182,9 @@ def package_worker(destination="dist/worker", complete=False):
     files = [p for p in destination.rglob("*") if p.is_file()]
     if len(files) > 20000 or any(p.stat().st_size > 25 * 1024 * 1024 for p in files):
         raise ValueError("Static assets exceed the Workers Free per-version limits")
-    print(f"Worker public assets: {len(files)} files")
+    print(
+        f"Worker public assets: {len(files)} files; {20000 - len(files)} Free file slots remain; largest {max(p.stat().st_size for p in files) / 1024 / 1024:.2f} MiB / 25 MiB; total {sum(p.stat().st_size for p in files) / 1024 / 1024:.1f} MiB"
+    )
 
 
 if __name__ == "__main__":

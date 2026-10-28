@@ -1,9 +1,10 @@
 {
   "version": 1,
+  "catalog_revision": "4ff82651f7af3859a16ebce6197fe363ac40d9a1",
   "tileset_repository": "https://github.com/joric/ootss_tileset",
-  "tileset_revision": "fe721ce403ab8891a37ae05cf6c24282092d05e8",
-  "previous_tileset_revision": "4e7b655375fbc104d69d742ad42d69fd5dd7fd5c",
-  "checked_map_revision": "0b70f2fcc0a3d15be7d252f42b103cade2b4dbfc",
-  "checked_on": "2026-10-26",
-  "note": "Sky highest-point and first-tile warmup fixes. Other map trees and preview-image tree unchanged. 920 Level_Entry IDs, coordinates and properties unchanged; retain reviewed catalogue provenance."
+  "tileset_revision": "818260c8b5fe704362722a9369350807ba635e68",
+  "previous_tileset_revision": "fe721ce403ab8891a37ae05cf6c24282092d05e8",
+  "checked_map_revision": "cc4d7efeebb8da921167ff22da03285aaae5e23c",
+  "checked_on": "2026-10-28",
+  "note": "Adds independent intro tiles and 26 marker entries; existing three maps and their Level_Entry identities unchanged."
 }

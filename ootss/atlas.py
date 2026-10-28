@@ -11,10 +11,16 @@ from PIL import Image
 
 from .common import read_json, write_json
 from .exporting import validate, video_url
-from .maps import download, layer, tile_asset_base
+from .maps import download, layer, tile_asset_base, with_intro
 from .regions import enrich
 
-WORLD_NAMES = {"overworld": "主世界", "sky": "上方", "underworld": "下方"}
+WORLD_NAMES = {
+    "overworld": "主世界",
+    "sky": "上方",
+    "underworld": "下方",
+    "intro": "序章",
+}
+WORLD_BOUNDS = [-24.5, -18.5, 165.5, 170.5]
 
 
 def build_atlas(
@@ -24,11 +30,21 @@ def build_atlas(
     catalog_path="cache/map/catalog.json",
     all_worlds=False,
 ):
-    # P68 is hidden content and is excluded from this map by the owner.
-    parts = [p for p in parts if p != 68]
+    catalog = read_json(catalog_path)
+    if all_worlds:
+        catalog = with_intro(catalog)
+    intro_file = Path("data/intro_map.json")
+    intro = read_json(intro_file) if all_worlds and intro_file.exists() else {}
+    # Owner now permits source P68 solely for the independently mapped intro.
+    has_intro = any(l.get("map_layer") == "intro" for l in catalog["levels"])
+    parts = [p for p in parts if p != 68 or (all_worlds and has_intro)]
     out = Path(out)
     assets = out / "assets"
     assets.mkdir(parents=True, exist_ok=True)
+    (assets / "empty-tile.svg").write_text(
+        '<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"><path fill="black" d="M0 0h512v512H0z"/></svg>',
+        encoding="utf-8",
+    )
     asset_manifest = Path("data/map_assets.json")
     revision = (
         read_json(asset_manifest).get("tileset_revision")
@@ -56,7 +72,11 @@ def build_atlas(
     )
     tiles = [
         (world, z, y, x)
-        for world in (WORLD_NAMES if all_worlds else ["overworld"])
+        for world in (
+            [w for w in WORLD_NAMES if w != "intro" or has_intro]
+            if all_worlds
+            else ["overworld"]
+        )
         for z in range(offline_zoom + 1)
         for y in range(2**z)
         for x in range(2**z)
@@ -68,14 +88,19 @@ def build_atlas(
     def fetch(coords):
         world, z, y, x = coords
         relative = f"tiles/{world}_64k/{z}/{y}/{x}.webp"
-        cached = download(f"{tile_base}/{relative}", tile_cache / relative)
+        cached = tile_cache / relative
+        coverage = intro.get("tile_coverage", {}).get(str(z))
+        if world == "intro" and coverage is not None and f"{y}/{x}" not in coverage:
+            if not cached.exists():
+                Image.new("RGB", (512, 512), "black").save(cached)
+        else:
+            cached = download(f"{tile_base}/{relative}", cached)
         target = assets / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(cached, target)
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
         list(pool.map(fetch, tiles))
-    catalog = read_json(catalog_path)
     by_name = {r["level_id"]: r for r in catalog["levels"]}
     manifest = read_json("results/series/manifest.json")
     part_rows = []
@@ -131,10 +156,13 @@ def build_atlas(
                 )
                 continue
             level = by_name[name]
+            if part == 68 and level.get("map_layer") != "intro":
+                continue
             item = levels.setdefault(
                 name,
                 {
                     "level_id": name,
+                    "save_level_id": level.get("save_level_id", name),
                     "area": level["area"],
                     "map_layer": level.get(
                         "map_layer", layer(level["entries"][0]["coordinates"][2])
@@ -183,7 +211,9 @@ def build_atlas(
         "parts": part_rows,
         "levels": list(levels.values()),
         "unknown_events": unknown,
-        "excluded_parts": [68],
+        "excluded_parts": [] if all_worlds and has_intro else [68],
+        "intro_source_part": 68 if all_worlds and has_intro else None,
+        "map_supplements": catalog.get("supplements", []),
         "catalog_level_count": len(by_name),
         "not_observed": sorted(set(by_name) - set(levels)),
         "offline_zoom": offline_zoom,
@@ -192,6 +222,16 @@ def build_atlas(
     }
     marker_file = Path("cache/map/upstream/data/markers.json")
     marker_features = read_json(marker_file)["features"] if marker_file.exists() else []
+    marker_features += [
+        {
+            "properties": {
+                "type": "Level_Entry",
+                "name": l["level_id"],
+                "entity_properties": {"mesh": l.get("mesh", "")},
+            }
+        }
+        for l in intro.get("levels", [])
+    ]
     editorial = (
         read_json("data/annotations.json")
         if Path("data/annotations.json").exists()
@@ -227,13 +267,24 @@ def build_atlas(
             )
         maps = []
         for map_id, map_name in WORLD_NAMES.items():
+            if map_id == "intro" and not has_intro:
+                continue
             members = [l for l in levels.values() if l["map_layer"] == map_id]
             used_parts = {v["part"] for l in members for v in l["visits"]}
             map_data = {
                 "bvid": data["bvid"],
-                "map_commit": data["map_commit"],
+                "map_commit": intro["map_commit"]
+                if map_id == "intro"
+                else data["map_commit"],
                 "map_id": map_id,
                 "map_name": map_name,
+                "grid_available": map_id != "intro",
+                "bounds": intro["bounds"] if map_id == "intro" else WORLD_BOUNDS,
+                **(
+                    {"tile_coverage": intro.get("tile_coverage", {})}
+                    if map_id == "intro"
+                    else {}
+                ),
                 "levels": members,
                 "parts": [{**p} for p in part_rows if p["part"] in used_parts],
                 "offline_zoom": offline_zoom,
@@ -349,7 +400,7 @@ if __name__ == "__main__":
         sys.argv[1] if len(sys.argv) > 1 else "results/stage1",
         [4]
         if len(sys.argv) > 2 and sys.argv[2] == "p4"
-        else range(1, 68)
+        else range(1, 69)
         if "worlds" in sys.argv
         else range(1, 25),
         catalog_path="cache/map/catalog_all.json"
