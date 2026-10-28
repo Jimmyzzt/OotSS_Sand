@@ -5,14 +5,19 @@ import {createContext,runInContext} from 'node:vm';
 import '../ootss/templates/atlas-save.js';
 import '../ootss/templates/atlas-ui.js';
 
-test('intro aliases read the original save ID but retain independent manual overrides',()=>{
+test('intro completion stays manual and independent from same-name game save records',()=>{
  const save=AtlasUI.newSaveProgress(['heroes1_7_v2'],'slot','2026-10-28T00:00:00Z');
- assert.equal(AtlasUI.completed({},save,'intro-heroes1_7_v2','heroes1_7_v2'),true);
- const manual=AtlasUI.manualCompletion({},save,'intro-heroes1_7_v2',false,'heroes1_7_v2');
+ assert.equal(AtlasUI.completed({},save,'intro-heroes1_7_v2',null),false);
+ assert.equal(AtlasUI.completed({},save,'heroes1_7_v2'),true);
+ const manual=AtlasUI.manualCompletion({},save,'intro-heroes1_7_v2',true,null);
  const parsed=AtlasUI.parseSaveProgress(manual.saveProgress,new Set(['heroes1_7_v2','intro-heroes1_7_v2']));
- assert.equal(AtlasUI.completed(manual.levels,parsed,'intro-heroes1_7_v2','heroes1_7_v2'),false);
+ assert.equal(AtlasUI.completed(manual.levels,parsed,'intro-heroes1_7_v2',null),true);
  assert.equal(AtlasUI.completed(manual.levels,parsed,'heroes1_7_v2'),true);
- assert.equal(AtlasUI.completed(manual.levels,null,'intro-heroes1_7_v2','heroes1_7_v2'),false);
+ assert.equal(AtlasUI.completed(manual.levels,null,'intro-heroes1_7_v2',null),true);
+ assert.equal(AtlasUI.completed(manual.levels,AtlasUI.newSaveProgress(['heroes1_7_v2'],'new','2026-10-28T01:00:00Z'),'intro-heroes1_7_v2',null),true);
+ const cleared=AtlasUI.manualCompletion(manual.levels,save,'intro-heroes1_7_v2',false,null);
+ assert.equal(AtlasUI.completed(cleared.levels,cleared.saveProgress,'intro-heroes1_7_v2',null),false);
+ assert.equal(AtlasUI.completed(cleared.levels,cleared.saveProgress,'heroes1_7_v2'),true);
 });
 
 // Binary fixtures derived from the documented version gates, with nonzero legacy

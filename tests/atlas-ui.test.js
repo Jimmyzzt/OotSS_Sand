@@ -5,6 +5,17 @@ import '../ootss/templates/atlas-ui.js';
 const {markerLabels,markerRadius}=globalThis.AtlasUI;
 const level=(id,ordinal,x,part=2,region='mixed')=>({level_id:id,shown:[{part,ordinal}],region_ids:[region],entries:[{coordinates:[x,0]}]});
 
+test('empty map tiles are selected consistently at every zoom and grid ends at the actual map rows',()=>{
+ for(let z=0;z<=7;z++){
+  assert.equal(AtlasUI.tileAvailable({z,x:-1,y:0}),false);
+  assert.equal(AtlasUI.tileAvailable({z,x:0,y:2**z}),false);
+  assert.equal(AtlasUI.tileAvailable({z,x:0,y:0},new Set()),false);
+  assert.equal(AtlasUI.tileAvailable({z,x:0,y:0},new Set(['0/0'])),true);
+ }
+ assert.deepEqual(AtlasUI.gridBounds({}),[-24.5,-2.5,165.5,153.5]);
+ assert.deepEqual(AtlasUI.gridBounds({grid:{bounds:[1,2,3,4]}}),[1,2,3,4]);
+});
+
 test('last map restores only ordinary visits; explicit map, level and part links win',()=>{
  const worlds=[{map_id:'overworld',levels:[{level_id:'main'}],parts:[{part:2}]},{map_id:'intro',levels:[{level_id:'demo'}],parts:[{part:68}]}];
  for(const [search,last,expected] of [['','intro','intro'],['','gone','overworld'],['map=overworld','intro','overworld'],['level=main','intro','overworld'],['p=68','overworld','intro'],['map=invalid&p=68','overworld','intro']])assert.equal(AtlasUI.initialMap(worlds,new URLSearchParams(search),last).map_id,expected);

@@ -1,5 +1,7 @@
 # 读取游戏存档
 
+序章入口目前只使用独立手动完成标记。上游的 `intro-` 是地图界面命名空间，尚未核实其独立存档 ID，不能用同名原关卡的通关记录代替。读取、重新读取和解绑存档均不改变序章手动标记，其他地图继续按既有规则读取。
+
 顶栏绿色「读取游戏存档」打开路径提示和选择窗口。默认目录是 `%USERPROFILE%\Saved Games\Order of the Sinking Star`；可点击「复制路径」后粘贴到系统目录选择器。选择存档目录后，挑选一个游戏档案的 `Status.sokoban_status`，点击「读取并标记」。只提供目录选择；多个档案不会合并。
 
 目录选择明确使用 `showDirectoryPicker({mode: "read"})`，不请求 readwrite。不支持此 API 的浏览器使用只读目录文件选择器。重新读取时按原相对路径获取现有文件（create:false），再调用 getFile／arrayBuffer；没有写入、创建、删除或改名操作。

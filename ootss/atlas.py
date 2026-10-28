@@ -42,7 +42,7 @@ def build_atlas(
     assets = out / "assets"
     assets.mkdir(parents=True, exist_ok=True)
     (assets / "empty-tile.svg").write_text(
-        '<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"><path fill="black" d="M0 0h512v512H0z"/></svg>',
+        '<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"/>',
         encoding="utf-8",
     )
     asset_manifest = Path("data/map_assets.json")
@@ -91,8 +91,7 @@ def build_atlas(
         cached = tile_cache / relative
         coverage = intro.get("tile_coverage", {}).get(str(z))
         if world == "intro" and coverage is not None and f"{y}/{x}" not in coverage:
-            if not cached.exists():
-                Image.new("RGB", (512, 512), "black").save(cached)
+            Image.new("RGBA", (512, 512), (0, 0, 0, 0)).save(cached)
         else:
             cached = download(f"{tile_base}/{relative}", cached)
         target = assets / relative

@@ -30,7 +30,7 @@ def test_intro_review_covers_new_entries_without_reusing_old_world_visits(monkey
     found = {e["level_id"] for e in p44["events"] if e["level_id"] in intro}
     assert found == {"jenga_dispenser", "wizards_true_nature"}
     assert {e["level_id"] for e in p68["events"]} | found == set(intro)
-    assert intro["intro-heroes1_7_v2"]["save_level_id"] == "heroes1_7_v2"
+    assert all(l["save_level_id"] is None for l in intro.values())
     assert not any(
         e["level_id"] in {"heroes1_7_v2", "triple_gate"} for e in p68["events"]
     )

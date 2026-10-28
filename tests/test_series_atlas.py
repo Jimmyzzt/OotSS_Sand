@@ -136,6 +136,9 @@ def test_atlas_uses_only_observed_confirmed_phase_visits(tmp_path, monkeypatch):
         },
     )
     data = build_atlas("atlas", parts=[1], offline_zoom=0)
+    import xml.etree.ElementTree as ET
+
+    assert len(ET.fromstring(Path("atlas/assets/empty-tile.svg").read_text())) == 0
     assert [r["level_id"] for r in data["levels"]] == ["seen"]
     assert len(data["levels"][0]["visits"]) == 2
     assert data["levels"][0]["visits"][1]["url"].endswith("p=1&t=10")

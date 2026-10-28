@@ -6,6 +6,7 @@ from collections import Counter, defaultdict
 from .exporting import video_url
 
 GRID = {
+    "bounds": [-24.5, -2.5, 165.5, 153.5],
     "width": 19,
     "height": 13,
     "center": [80, 69],

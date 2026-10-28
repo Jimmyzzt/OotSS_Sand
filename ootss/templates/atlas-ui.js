@@ -8,6 +8,10 @@ globalThis.AtlasUI = {
     const [left,bottom,right,top]=data.bounds||[-24.5,-18.5,165.5,170.5],factor=512/190;
     return {bounds:[[bottom,left],[top,right]],center:[(bottom+top)/2,(left+right)/2],transform:[factor,-left*factor,-factor,top*factor]};
   },
+  gridBounds(data){return data.grid?.bounds||[-24.5,-2.5,165.5,153.5];},
+  tileAvailable(coords,coverage){
+    return coords.x>=0&&coords.y>=0&&coords.x<2**coords.z&&coords.y<2**coords.z&&(!coverage||coverage.has(`${coords.y}/${coords.x}`));
+  },
   completed(levels,save,id,saveId=id){
     if(!save)return levels[id]?.completed===true;
     let solved=atlasCompletionSets.get(save.solved);if(!solved){solved=new Set(save.solved);atlasCompletionSets.set(save.solved,solved)}

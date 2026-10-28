@@ -36615,7 +36615,7 @@
     },
     {
       "level_id": "jenga_dispenser",
-      "save_level_id": "jenga_dispenser",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -36662,7 +36662,7 @@
     },
     {
       "level_id": "wizards_true_nature",
-      "save_level_id": "wizards_true_nature",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -48235,7 +48235,7 @@
     },
     {
       "level_id": "heroes1_7",
-      "save_level_id": "heroes1_7",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -48282,7 +48282,7 @@
     },
     {
       "level_id": "intro-heroes1_7_v2",
-      "save_level_id": "heroes1_7_v2",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -48329,7 +48329,7 @@
     },
     {
       "level_id": "lily_wearing_intro",
-      "save_level_id": "lily_wearing_intro",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -48376,7 +48376,7 @@
     },
     {
       "level_id": "intro-tiger_lily_v2",
-      "save_level_id": "tiger_lily_v2",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -48423,7 +48423,7 @@
     },
     {
       "level_id": "torcher",
-      "save_level_id": "torcher",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -48470,7 +48470,7 @@
     },
     {
       "level_id": "quad_torch_v1",
-      "save_level_id": "quad_torch_v1",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -48517,7 +48517,7 @@
     },
     {
       "level_id": "intro-quad_torch",
-      "save_level_id": "quad_torch",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -48564,7 +48564,7 @@
     },
     {
       "level_id": "worlds_collide_heroes_and_promesst",
-      "save_level_id": "worlds_collide_heroes_and_promesst",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -48611,7 +48611,7 @@
     },
     {
       "level_id": "worlds_collide_heroes_and_promesst_v2",
-      "save_level_id": "worlds_collide_heroes_and_promesst_v2",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -48658,7 +48658,7 @@
     },
     {
       "level_id": "worlds_collide_heroes_and_promesst_v3",
-      "save_level_id": "worlds_collide_heroes_and_promesst_v3",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -48705,7 +48705,7 @@
     },
     {
       "level_id": "intro-worlds_collide_heroes_and_promesst_v4",
-      "save_level_id": "worlds_collide_heroes_and_promesst_v4",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -48752,7 +48752,7 @@
     },
     {
       "level_id": "across_the_fence_old",
-      "save_level_id": "across_the_fence_old",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -48799,7 +48799,7 @@
     },
     {
       "level_id": "intro-across_the_fence_vtrader_m_p",
-      "save_level_id": "across_the_fence_vtrader_m_p",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -48846,7 +48846,7 @@
     },
     {
       "level_id": "sender",
-      "save_level_id": "sender",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -48893,7 +48893,7 @@
     },
     {
       "level_id": "sender_simplified",
-      "save_level_id": "sender_simplified",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -48940,7 +48940,7 @@
     },
     {
       "level_id": "intro-sender_simplified_v2",
-      "save_level_id": "sender_simplified_v2",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -48987,7 +48987,7 @@
     },
     {
       "level_id": "push_down_a_lot",
-      "save_level_id": "push_down_a_lot",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -49034,7 +49034,7 @@
     },
     {
       "level_id": "intro-push_down_a_lot_small",
-      "save_level_id": "push_down_a_lot_small",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -49081,7 +49081,7 @@
     },
     {
       "level_id": "catching_up_v0",
-      "save_level_id": "catching_up_v0",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -49128,7 +49128,7 @@
     },
     {
       "level_id": "intro-catching_up_v2",
-      "save_level_id": "catching_up_v2",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -49175,7 +49175,7 @@
     },
     {
       "level_id": "strategic_stack",
-      "save_level_id": "strategic_stack",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -49222,7 +49222,7 @@
     },
     {
       "level_id": "intro-triple_gate",
-      "save_level_id": "triple_gate",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -49269,7 +49269,7 @@
     },
     {
       "level_id": "height_chooser",
-      "save_level_id": "height_chooser",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -49316,7 +49316,7 @@
     },
     {
       "level_id": "intro-height_chooser_v0",
-      "save_level_id": "height_chooser_v0",
+      "save_level_id": null,
       "area": "intro",
       "map_layer": "intro",
       "entries": [
@@ -74234,6 +74234,12 @@
       "tile_url": "https://raw.githubusercontent.com/joric/ootss_tileset/818260c8b5fe704362722a9369350807ba635e68/tiles/overworld_64k/{z}/{y}/{x}.webp",
       "tileset_revision": "818260c8b5fe704362722a9369350807ba635e68",
       "grid": {
+        "bounds": [
+          -24.5,
+          -2.5,
+          165.5,
+          153.5
+        ],
         "width": 19,
         "height": 13,
         "center": [
@@ -89574,6 +89580,12 @@
       "tile_url": "https://raw.githubusercontent.com/joric/ootss_tileset/818260c8b5fe704362722a9369350807ba635e68/tiles/sky_64k/{z}/{y}/{x}.webp",
       "tileset_revision": "818260c8b5fe704362722a9369350807ba635e68",
       "grid": {
+        "bounds": [
+          -24.5,
+          -2.5,
+          165.5,
+          153.5
+        ],
         "width": 19,
         "height": 13,
         "center": [
@@ -103407,6 +103419,12 @@
       "tile_url": "https://raw.githubusercontent.com/joric/ootss_tileset/818260c8b5fe704362722a9369350807ba635e68/tiles/underworld_64k/{z}/{y}/{x}.webp",
       "tileset_revision": "818260c8b5fe704362722a9369350807ba635e68",
       "grid": {
+        "bounds": [
+          -24.5,
+          -2.5,
+          165.5,
+          153.5
+        ],
         "width": 19,
         "height": 13,
         "center": [
@@ -111614,7 +111632,7 @@
       "levels": [
         {
           "level_id": "jenga_dispenser",
-          "save_level_id": "jenga_dispenser",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -111661,7 +111679,7 @@
         },
         {
           "level_id": "wizards_true_nature",
-          "save_level_id": "wizards_true_nature",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -111708,7 +111726,7 @@
         },
         {
           "level_id": "heroes1_7",
-          "save_level_id": "heroes1_7",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -111755,7 +111773,7 @@
         },
         {
           "level_id": "intro-heroes1_7_v2",
-          "save_level_id": "heroes1_7_v2",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -111802,7 +111820,7 @@
         },
         {
           "level_id": "lily_wearing_intro",
-          "save_level_id": "lily_wearing_intro",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -111849,7 +111867,7 @@
         },
         {
           "level_id": "intro-tiger_lily_v2",
-          "save_level_id": "tiger_lily_v2",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -111896,7 +111914,7 @@
         },
         {
           "level_id": "torcher",
-          "save_level_id": "torcher",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -111943,7 +111961,7 @@
         },
         {
           "level_id": "quad_torch_v1",
-          "save_level_id": "quad_torch_v1",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -111990,7 +112008,7 @@
         },
         {
           "level_id": "intro-quad_torch",
-          "save_level_id": "quad_torch",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -112037,7 +112055,7 @@
         },
         {
           "level_id": "worlds_collide_heroes_and_promesst",
-          "save_level_id": "worlds_collide_heroes_and_promesst",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -112084,7 +112102,7 @@
         },
         {
           "level_id": "worlds_collide_heroes_and_promesst_v2",
-          "save_level_id": "worlds_collide_heroes_and_promesst_v2",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -112131,7 +112149,7 @@
         },
         {
           "level_id": "worlds_collide_heroes_and_promesst_v3",
-          "save_level_id": "worlds_collide_heroes_and_promesst_v3",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -112178,7 +112196,7 @@
         },
         {
           "level_id": "intro-worlds_collide_heroes_and_promesst_v4",
-          "save_level_id": "worlds_collide_heroes_and_promesst_v4",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -112225,7 +112243,7 @@
         },
         {
           "level_id": "across_the_fence_old",
-          "save_level_id": "across_the_fence_old",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -112272,7 +112290,7 @@
         },
         {
           "level_id": "intro-across_the_fence_vtrader_m_p",
-          "save_level_id": "across_the_fence_vtrader_m_p",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -112319,7 +112337,7 @@
         },
         {
           "level_id": "sender",
-          "save_level_id": "sender",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -112366,7 +112384,7 @@
         },
         {
           "level_id": "sender_simplified",
-          "save_level_id": "sender_simplified",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -112413,7 +112431,7 @@
         },
         {
           "level_id": "intro-sender_simplified_v2",
-          "save_level_id": "sender_simplified_v2",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -112460,7 +112478,7 @@
         },
         {
           "level_id": "push_down_a_lot",
-          "save_level_id": "push_down_a_lot",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -112507,7 +112525,7 @@
         },
         {
           "level_id": "intro-push_down_a_lot_small",
-          "save_level_id": "push_down_a_lot_small",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -112554,7 +112572,7 @@
         },
         {
           "level_id": "catching_up_v0",
-          "save_level_id": "catching_up_v0",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -112601,7 +112619,7 @@
         },
         {
           "level_id": "intro-catching_up_v2",
-          "save_level_id": "catching_up_v2",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -112648,7 +112666,7 @@
         },
         {
           "level_id": "strategic_stack",
-          "save_level_id": "strategic_stack",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -112695,7 +112713,7 @@
         },
         {
           "level_id": "intro-triple_gate",
-          "save_level_id": "triple_gate",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -112742,7 +112760,7 @@
         },
         {
           "level_id": "height_chooser",
-          "save_level_id": "height_chooser",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
@@ -112789,7 +112807,7 @@
         },
         {
           "level_id": "intro-height_chooser_v0",
-          "save_level_id": "height_chooser_v0",
+          "save_level_id": null,
           "area": "intro",
           "map_layer": "intro",
           "entries": [
