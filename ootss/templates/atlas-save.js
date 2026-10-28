@@ -74,7 +74,7 @@ function syncGameSaveButtons(){
 
 function initGameSaves(){
   const dialog=$('game-save-dialog'),status=$('game-save-status'),selection=$('game-save-selection');let candidates=[],busy=false,generation=0;
-  const allIds=new Set(worlds.flatMap(m=>m.levels.map(l=>l.level_id)));
+  const allIds=new Set(worlds.flatMap(m=>m.levels).filter(l=>l.save_level_id!==null).map(l=>l.save_level_id||l.level_id));
   function message(text){status.textContent=text}
   function clearCandidates(){candidates=[];selection.replaceChildren();$('game-save-choice').hidden=true;$('game-save-apply').disabled=true}
   function busyState(value){busy=value;for(const id of ['game-save-folder','game-save-apply','game-save-selection'])$(id).disabled=value||id==='game-save-apply'&&!candidates.length}
@@ -110,7 +110,7 @@ function initGameSaves(){
       const parsed=AtlasSave.parse(await file.arrayBuffer());if(current!==generation||!dialog.open)return;
       const solved=parsed.solved.filter(id=>allIds.has(id));
       remember();saveProgress=AtlasUI.newSaveProgress(solved,candidate.path,new Date().toISOString());saveEditorial();map.closePopup();applyPrefs();render();
-      message(`读取成功：已标记地图中 ${solved.length} 个已完成关卡。另有 ${parsed.solved.length-solved.length} 个通关 ID 不在本地图，已忽略。${candidate.file?'此浏览器需重新选择目录才能同步下一次进度。':'下次打开可直接读取最新进度。'}`);
+      message(`读取成功：已标记地图中 ${solved.length} 个已完成关卡。另有 ${parsed.solved.length-solved.length} 个通关 ID 没有可核实的自动进度对应，已忽略。${candidate.file?'此浏览器需重新选择目录才能同步下一次进度。':'下次打开可直接读取最新进度。'}`);
       if(candidate.file)clearCandidates();
     }catch(error){const reason=error.name==='NotAllowedError'?'只读权限未获允许，请重新授权或选择存档目录':error.name==='NotFoundError'?'原存档已移动或删除，请重新选择存档目录':error.message||'无法解析存档';message('读取失败：'+reason+'。原来的标记保持不变。')}
     finally{busyState(false)}
