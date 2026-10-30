@@ -13,7 +13,7 @@ Do not build a general automatic recognition platform, server, or review app.
 - Intro completion is manual and independent until distinct game-save IDs are verified. Never inherit regular-world completion from a reused name. Empty/out-of-range map tiles must be transparent, and grid extents must use the valid grid rows rather than full image projection bounds.
 - Preserve machine candidates separately from reviewed events. Reruns must never overwrite reviewed notes.
 - Keep raw videos, reference downloads, and frame caches out of Git. Results with provenance belong in results/.
-- Run pytest and ruff for meaningful code changes. Commit runnable milestones locally. Never change unrelated repositories or remotes.
+- Match validation to the change: small fixes use focused tests or direct checks plus relevant Ruff checks; reserve broad suites and defensive handling for substantial changes or demonstrated risks. Avoid unrelated tests and speculative safeguards. Commit runnable milestones locally. Never change unrelated repositories or remotes.
 
 - Entry identity must agree with initial character roles and physical-world approach, not only reused terrain. Finale internal boards can copy early-world layouts. Never count sparse reference windows as separate entrances without entry/exit evidence; keep an audit note when continuity is uncertain. Rebuild the manual difference list with scripts/audit_differences.py after identity edits.
 

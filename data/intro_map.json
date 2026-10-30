@@ -6598,6 +6598,39 @@
       "99/94"
     ]
   },
-  "grid_status": "Disabled by owner on 2026-10-28: upstream intro grid incorrect; await upstream correction.",
-  "completion_note": "Intro entries use independent manual completion. No verified separate save IDs are available; never inherit completion from same-name regular-world levels."
+  "grid_status": "Synced corrected upstream intro grid on 2026-10-30; marker identities and video reviews unchanged.",
+  "completion_note": "Intro entries use independent manual completion. No verified separate save IDs are available; never inherit completion from same-name regular-world levels.",
+  "grid": {
+    "bounds": [
+      -0.5,
+      -21.5,
+      90.5,
+      83.5
+    ],
+    "width": 13,
+    "height": 7,
+    "center": [
+      45,
+      31
+    ],
+    "source": "https://github.com/joric/ootss/blob/4075fcb516b414f1a6bc5bac391ef9afa4b5d0e5/index.html",
+    "source_config": {
+      "size": [
+        91,
+        105
+      ],
+      "corner": [
+        0,
+        -21
+      ],
+      "grid": [
+        13,
+        7
+      ],
+      "offset": [
+        -0.5,
+        -0.5
+      ]
+    }
+  }
 }

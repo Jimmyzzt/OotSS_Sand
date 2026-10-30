@@ -14,9 +14,13 @@ GRID = {
 }
 
 
-def cell_for(coordinates):
+def cell_for(coordinates, grid=GRID):
     x, y = coordinates[:2]
-    return math.floor((x - 70.5) / 19), math.floor((y - 62.5) / 13)
+    width, height = grid["width"], grid["height"]
+    cx, cy = grid["center"]
+    return math.floor((x - cx + width / 2) / width), math.floor(
+        (y - cy + height / 2) / height
+    )
 
 
 def cell_id(col, row):
@@ -118,6 +122,7 @@ def enrich(
     preserve_ordinals=False,
 ):
     editorial, links = editorial or {}, links or {}
+    grid = data.get("grid") or GRID
     metadata = {
         f["properties"].get("name"): f["properties"].get("entity_properties", {})
         for f in marker_features
@@ -131,7 +136,9 @@ def enrich(
     )
     grouped = defaultdict(list)
     for level in levels.values():
-        entry_cells = sorted({cell_for(e["coordinates"]) for e in level["entries"]})
+        entry_cells = sorted(
+            {cell_for(e["coordinates"], grid) for e in level["entries"]}
+        )
         level["region_ids"] = [cell_id(*c) for c in entry_cells]
         for c in entry_cells:
             grouped[c].append(level)
@@ -183,7 +190,9 @@ def enrich(
     for (col, row), members in grouped.items():
         visits = [v for l in members for v in l["visits"]]
         first = min((v["part"], v["start"]) for v in visits)
-        left, bottom = 70.5 + col * 19, 62.5 + row * 13
+        width, height = grid["width"], grid["height"]
+        left = grid["center"][0] - width / 2 + col * width
+        bottom = grid["center"][1] - height / 2 + row * height
         regions.append(
             {
                 "id": cell_id(col, row),
@@ -191,7 +200,7 @@ def enrich(
                 "row": row,
                 "direction": direction(col, row),
                 "theme": theme_for(members, first[0], col, row),
-                "bounds": [left, bottom, left + 19, bottom + 13],
+                "bounds": [left, bottom, left + width, bottom + height],
                 "parts": sorted({v["part"] for v in visits}),
                 "first": list(first),
                 "level_ids": [l["level_id"] for l in members],
@@ -220,7 +229,7 @@ def enrich(
             level_count=len(unique_by_part[part]),
             route=routes[part],
         )
-    data.update(grid=GRID, regions=regions, annotation_version=1)
+    data.update(grid=grid, regions=regions, annotation_version=1)
     if data.get("grid_available") is False:
         # Owner reported the upstream intro grid as incorrect. Do not publish
         # invented regions until the original map supplies a corrected grid.

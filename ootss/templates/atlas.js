@@ -31,8 +31,9 @@ function caption(){const rs=route(),i=state.routeIndex>=0?state.routeIndex:rs.fi
 function drawRegions(){grid.clearLayers();focusGrid.clearLayers();labels.clearLayers();if(data.grid_available===false)return;
 if(prefs.grid&&!state.part){
 const [left,bottom,right,top]=AtlasUI.gridBounds(data);
-for(let c=Math.ceil((left-70.5)/19);70.5+c*19<=right;c++){const x=70.5+c*19;L.polyline([[bottom,x],[top,x]],{pane:'regions',color:'#f34753',weight:2,opacity:.85,interactive:false}).addTo(grid)}
-for(let r=Math.ceil((bottom-62.5)/13);62.5+r*13<=top;r++){const y=62.5+r*13;L.polyline([[y,left],[y,right]],{pane:'regions',color:'#f34753',weight:2,opacity:.85,interactive:false}).addTo(grid)}}
+const {width:gw,height:gh,center:[cx,cy]}=data.grid,x0=cx-gw/2,y0=cy-gh/2;
+for(let c=Math.ceil((left-x0)/gw);x0+c*gw<=right;c++){const x=x0+c*gw;L.polyline([[bottom,x],[top,x]],{pane:'regions',color:'#f34753',weight:2,opacity:.85,interactive:false}).addTo(grid)}
+for(let r=Math.ceil((bottom-y0)/gh);y0+r*gh<=top;r++){const y=y0+r*gh;L.polyline([[y,left],[y,right]],{pane:'regions',color:'#f34753',weight:2,opacity:.85,interactive:false}).addTo(grid)}}
 for(const r of availableRegions()){const[a,b,c,d]=r.bounds;
 if(prefs.grid){L.rectangle([[b,a],[d,c]],{pane:'regions',color:'#ff394c',weight:state.part?5:2,opacity:1,fill:false}).addTo(grid);if(r.id===state.region||tune.active&&r.id===tune.region)L.rectangle([[b,a],[d,c]],{pane:'regionFocus',color:'#fff0a1',weight:6,opacity:1,fill:false,interactive:false}).addTo(focusGrid)}
 if(prefs.regionLabels){const size=map.project([d,c]).subtract(map.project([b,a])),w=Math.abs(size.x),h=Math.abs(size.y);

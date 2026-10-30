@@ -9,6 +9,32 @@ def test_original_grid_and_mirror_cells():
     assert direction(-2, 3) == "北3西2"
 
 
+def test_corrected_intro_grid_groups_entries_and_preserves_part_order():
+    from ootss.common import read_json
+
+    grid = read_json("data/intro_map.json")["grid"]
+    points = [[55, 44, 2], [66, 46, 2], [71, 24, 1], [10, 48, 8]]
+    assert [cell_for(p, grid) for p in points] == [(1, 2), (2, 2), (2, -1), (-3, 2)]
+    data = {
+        "bvid": "BVsource",
+        "grid": grid,
+        "parts": [{"part": 68}],
+        "levels": [
+            {
+                "level_id": str(i),
+                "area": "intro",
+                "entries": [{"coordinates": p}],
+                "visits": [{"part": 68, "start": i * 10, "end": i * 10 + 5}],
+            }
+            for i, p in enumerate(points)
+        ],
+    }
+    enrich(data, map_id="intro", links={"parts": {"68": {"part": 69}}})
+    assert data["regions"][0]["bounds"] == [51.5, 41.5, 64.5, 48.5]
+    assert [l["visits"][0]["ordinal"] for l in data["levels"]] == [1, 2, 3, 4]
+    assert grid["bounds"] == [-0.5, -21.5, 90.5, 83.5]
+
+
 def test_untrusted_intro_grid_preserves_points_and_video_order_without_regions():
     data = {
         "bvid": "BVsource",

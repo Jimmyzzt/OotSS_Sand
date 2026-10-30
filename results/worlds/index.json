@@ -36647,7 +36647,9 @@
         }
       ],
       "preview": "assets/previews/jenga_dispenser.webp",
-      "region_ids": [],
+      "region_ids": [
+        "2,-1"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -36658,7 +36660,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章1"
+      ]
     },
     {
       "level_id": "wizards_true_nature",
@@ -36694,7 +36698,9 @@
         }
       ],
       "preview": "assets/previews/wizards_true_nature.webp",
-      "region_ids": [],
+      "region_ids": [
+        "2,-1"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -36705,7 +36711,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章1"
+      ]
     },
     {
       "level_id": "push_down_chain",
@@ -48267,7 +48275,9 @@
         }
       ],
       "preview": "assets/previews/heroes1_7.webp",
-      "region_ids": [],
+      "region_ids": [
+        "1,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -48278,7 +48288,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章2"
+      ]
     },
     {
       "level_id": "intro-heroes1_7_v2",
@@ -48314,7 +48326,9 @@
         }
       ],
       "preview": "assets/previews/intro-heroes1_7_v2.webp",
-      "region_ids": [],
+      "region_ids": [
+        "1,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -48325,7 +48339,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章2"
+      ]
     },
     {
       "level_id": "lily_wearing_intro",
@@ -48361,7 +48377,9 @@
         }
       ],
       "preview": "assets/previews/lily_wearing_intro.webp",
-      "region_ids": [],
+      "region_ids": [
+        "2,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -48372,7 +48390,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章3"
+      ]
     },
     {
       "level_id": "intro-tiger_lily_v2",
@@ -48408,7 +48428,9 @@
         }
       ],
       "preview": "assets/previews/intro-tiger_lily_v2.webp",
-      "region_ids": [],
+      "region_ids": [
+        "2,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -48419,7 +48441,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章3"
+      ]
     },
     {
       "level_id": "torcher",
@@ -48455,7 +48479,9 @@
         }
       ],
       "preview": "assets/previews/torcher.webp",
-      "region_ids": [],
+      "region_ids": [
+        "2,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -48466,7 +48492,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章3"
+      ]
     },
     {
       "level_id": "quad_torch_v1",
@@ -48502,7 +48530,9 @@
         }
       ],
       "preview": "assets/previews/quad_torch_v1.webp",
-      "region_ids": [],
+      "region_ids": [
+        "2,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -48513,7 +48543,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章3"
+      ]
     },
     {
       "level_id": "intro-quad_torch",
@@ -48549,7 +48581,9 @@
         }
       ],
       "preview": "assets/previews/intro-quad_torch.webp",
-      "region_ids": [],
+      "region_ids": [
+        "2,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -48560,7 +48594,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章3"
+      ]
     },
     {
       "level_id": "worlds_collide_heroes_and_promesst",
@@ -48596,7 +48632,9 @@
         }
       ],
       "preview": "assets/previews/worlds_collide_heroes_and_promesst.webp",
-      "region_ids": [],
+      "region_ids": [
+        "3,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -48607,7 +48645,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章4"
+      ]
     },
     {
       "level_id": "worlds_collide_heroes_and_promesst_v2",
@@ -48643,7 +48683,9 @@
         }
       ],
       "preview": "assets/previews/worlds_collide_heroes_and_promesst_v2.webp",
-      "region_ids": [],
+      "region_ids": [
+        "3,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -48654,7 +48696,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章4"
+      ]
     },
     {
       "level_id": "worlds_collide_heroes_and_promesst_v3",
@@ -48690,7 +48734,9 @@
         }
       ],
       "preview": "assets/previews/worlds_collide_heroes_and_promesst_v3.webp",
-      "region_ids": [],
+      "region_ids": [
+        "3,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -48701,7 +48747,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章4"
+      ]
     },
     {
       "level_id": "intro-worlds_collide_heroes_and_promesst_v4",
@@ -48737,7 +48785,9 @@
         }
       ],
       "preview": "assets/previews/intro-worlds_collide_heroes_and_promesst_v4.webp",
-      "region_ids": [],
+      "region_ids": [
+        "3,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -48748,7 +48798,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章4"
+      ]
     },
     {
       "level_id": "across_the_fence_old",
@@ -48784,7 +48836,9 @@
         }
       ],
       "preview": "assets/previews/across_the_fence_old.webp",
-      "region_ids": [],
+      "region_ids": [
+        "3,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -48795,7 +48849,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章4"
+      ]
     },
     {
       "level_id": "intro-across_the_fence_vtrader_m_p",
@@ -48831,7 +48887,9 @@
         }
       ],
       "preview": "assets/previews/intro-across_the_fence_vtrader_m_p.webp",
-      "region_ids": [],
+      "region_ids": [
+        "3,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -48842,7 +48900,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章4"
+      ]
     },
     {
       "level_id": "sender",
@@ -48878,7 +48938,9 @@
         }
       ],
       "preview": "assets/previews/sender.webp",
-      "region_ids": [],
+      "region_ids": [
+        "3,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -48889,7 +48951,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章4"
+      ]
     },
     {
       "level_id": "sender_simplified",
@@ -48925,7 +48989,9 @@
         }
       ],
       "preview": "assets/previews/sender_simplified.webp",
-      "region_ids": [],
+      "region_ids": [
+        "3,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -48936,7 +49002,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章4"
+      ]
     },
     {
       "level_id": "intro-sender_simplified_v2",
@@ -48972,7 +49040,9 @@
         }
       ],
       "preview": "assets/previews/intro-sender_simplified_v2.webp",
-      "region_ids": [],
+      "region_ids": [
+        "3,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -48983,7 +49053,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章4"
+      ]
     },
     {
       "level_id": "push_down_a_lot",
@@ -49019,7 +49091,9 @@
         }
       ],
       "preview": "assets/previews/push_down_a_lot.webp",
-      "region_ids": [],
+      "region_ids": [
+        "-3,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -49030,7 +49104,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章5"
+      ]
     },
     {
       "level_id": "intro-push_down_a_lot_small",
@@ -49066,7 +49142,9 @@
         }
       ],
       "preview": "assets/previews/intro-push_down_a_lot_small.webp",
-      "region_ids": [],
+      "region_ids": [
+        "-3,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -49077,7 +49155,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章5"
+      ]
     },
     {
       "level_id": "catching_up_v0",
@@ -49113,7 +49193,9 @@
         }
       ],
       "preview": "assets/previews/catching_up_v0.webp",
-      "region_ids": [],
+      "region_ids": [
+        "-3,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -49124,7 +49206,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章5"
+      ]
     },
     {
       "level_id": "intro-catching_up_v2",
@@ -49160,7 +49244,9 @@
         }
       ],
       "preview": "assets/previews/intro-catching_up_v2.webp",
-      "region_ids": [],
+      "region_ids": [
+        "-3,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -49171,7 +49257,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章5"
+      ]
     },
     {
       "level_id": "strategic_stack",
@@ -49207,7 +49295,9 @@
         }
       ],
       "preview": "assets/previews/strategic_stack.webp",
-      "region_ids": [],
+      "region_ids": [
+        "-3,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -49218,7 +49308,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章5"
+      ]
     },
     {
       "level_id": "intro-triple_gate",
@@ -49254,7 +49346,9 @@
         }
       ],
       "preview": "assets/previews/intro-triple_gate.webp",
-      "region_ids": [],
+      "region_ids": [
+        "-3,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -49265,7 +49359,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章5"
+      ]
     },
     {
       "level_id": "height_chooser",
@@ -49301,7 +49397,9 @@
         }
       ],
       "preview": "assets/previews/height_chooser.webp",
-      "region_ids": [],
+      "region_ids": [
+        "-3,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -49312,7 +49410,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章5"
+      ]
     },
     {
       "level_id": "intro-height_chooser_v0",
@@ -49348,7 +49448,9 @@
         }
       ],
       "preview": "assets/previews/intro-height_chooser_v0.webp",
-      "region_ids": [],
+      "region_ids": [
+        "-3,2"
+      ],
       "manual": {},
       "tags": {
         "big_star": false,
@@ -49359,7 +49461,9 @@
         "big_star": "Joric Level_Entry Hero mesh",
         "multi_save": "manual only"
       },
-      "region_titles": []
+      "region_titles": [
+        "序章5"
+      ]
     }
   ],
   "unknown_events": [],
@@ -105583,7 +105687,7 @@
       "map_commit": "cc4d7efeebb8da921167ff22da03285aaae5e23c",
       "map_id": "intro",
       "map_name": "序章",
-      "grid_available": false,
+      "grid_available": true,
       "bounds": [
         -50,
         -63,
@@ -111629,6 +111733,39 @@
           "99/94"
         ]
       },
+      "grid": {
+        "bounds": [
+          -0.5,
+          -21.5,
+          90.5,
+          83.5
+        ],
+        "width": 13,
+        "height": 7,
+        "center": [
+          45,
+          31
+        ],
+        "source": "https://github.com/joric/ootss/blob/4075fcb516b414f1a6bc5bac391ef9afa4b5d0e5/index.html",
+        "source_config": {
+          "size": [
+            91,
+            105
+          ],
+          "corner": [
+            0,
+            -21
+          ],
+          "grid": [
+            13,
+            7
+          ],
+          "offset": [
+            -0.5,
+            -0.5
+          ]
+        }
+      },
       "levels": [
         {
           "level_id": "jenga_dispenser",
@@ -111664,7 +111801,9 @@
             }
           ],
           "preview": "assets/previews/jenga_dispenser.webp",
-          "region_ids": [],
+          "region_ids": [
+            "2,-1"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -111675,7 +111814,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章1"
+          ]
         },
         {
           "level_id": "wizards_true_nature",
@@ -111711,7 +111852,9 @@
             }
           ],
           "preview": "assets/previews/wizards_true_nature.webp",
-          "region_ids": [],
+          "region_ids": [
+            "2,-1"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -111722,7 +111865,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章1"
+          ]
         },
         {
           "level_id": "heroes1_7",
@@ -111758,7 +111903,9 @@
             }
           ],
           "preview": "assets/previews/heroes1_7.webp",
-          "region_ids": [],
+          "region_ids": [
+            "1,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -111769,7 +111916,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章2"
+          ]
         },
         {
           "level_id": "intro-heroes1_7_v2",
@@ -111805,7 +111954,9 @@
             }
           ],
           "preview": "assets/previews/intro-heroes1_7_v2.webp",
-          "region_ids": [],
+          "region_ids": [
+            "1,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -111816,7 +111967,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章2"
+          ]
         },
         {
           "level_id": "lily_wearing_intro",
@@ -111852,7 +112005,9 @@
             }
           ],
           "preview": "assets/previews/lily_wearing_intro.webp",
-          "region_ids": [],
+          "region_ids": [
+            "2,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -111863,7 +112018,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章3"
+          ]
         },
         {
           "level_id": "intro-tiger_lily_v2",
@@ -111899,7 +112056,9 @@
             }
           ],
           "preview": "assets/previews/intro-tiger_lily_v2.webp",
-          "region_ids": [],
+          "region_ids": [
+            "2,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -111910,7 +112069,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章3"
+          ]
         },
         {
           "level_id": "torcher",
@@ -111946,7 +112107,9 @@
             }
           ],
           "preview": "assets/previews/torcher.webp",
-          "region_ids": [],
+          "region_ids": [
+            "2,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -111957,7 +112120,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章3"
+          ]
         },
         {
           "level_id": "quad_torch_v1",
@@ -111993,7 +112158,9 @@
             }
           ],
           "preview": "assets/previews/quad_torch_v1.webp",
-          "region_ids": [],
+          "region_ids": [
+            "2,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -112004,7 +112171,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章3"
+          ]
         },
         {
           "level_id": "intro-quad_torch",
@@ -112040,7 +112209,9 @@
             }
           ],
           "preview": "assets/previews/intro-quad_torch.webp",
-          "region_ids": [],
+          "region_ids": [
+            "2,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -112051,7 +112222,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章3"
+          ]
         },
         {
           "level_id": "worlds_collide_heroes_and_promesst",
@@ -112087,7 +112260,9 @@
             }
           ],
           "preview": "assets/previews/worlds_collide_heroes_and_promesst.webp",
-          "region_ids": [],
+          "region_ids": [
+            "3,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -112098,7 +112273,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章4"
+          ]
         },
         {
           "level_id": "worlds_collide_heroes_and_promesst_v2",
@@ -112134,7 +112311,9 @@
             }
           ],
           "preview": "assets/previews/worlds_collide_heroes_and_promesst_v2.webp",
-          "region_ids": [],
+          "region_ids": [
+            "3,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -112145,7 +112324,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章4"
+          ]
         },
         {
           "level_id": "worlds_collide_heroes_and_promesst_v3",
@@ -112181,7 +112362,9 @@
             }
           ],
           "preview": "assets/previews/worlds_collide_heroes_and_promesst_v3.webp",
-          "region_ids": [],
+          "region_ids": [
+            "3,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -112192,7 +112375,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章4"
+          ]
         },
         {
           "level_id": "intro-worlds_collide_heroes_and_promesst_v4",
@@ -112228,7 +112413,9 @@
             }
           ],
           "preview": "assets/previews/intro-worlds_collide_heroes_and_promesst_v4.webp",
-          "region_ids": [],
+          "region_ids": [
+            "3,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -112239,7 +112426,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章4"
+          ]
         },
         {
           "level_id": "across_the_fence_old",
@@ -112275,7 +112464,9 @@
             }
           ],
           "preview": "assets/previews/across_the_fence_old.webp",
-          "region_ids": [],
+          "region_ids": [
+            "3,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -112286,7 +112477,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章4"
+          ]
         },
         {
           "level_id": "intro-across_the_fence_vtrader_m_p",
@@ -112322,7 +112515,9 @@
             }
           ],
           "preview": "assets/previews/intro-across_the_fence_vtrader_m_p.webp",
-          "region_ids": [],
+          "region_ids": [
+            "3,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -112333,7 +112528,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章4"
+          ]
         },
         {
           "level_id": "sender",
@@ -112369,7 +112566,9 @@
             }
           ],
           "preview": "assets/previews/sender.webp",
-          "region_ids": [],
+          "region_ids": [
+            "3,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -112380,7 +112579,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章4"
+          ]
         },
         {
           "level_id": "sender_simplified",
@@ -112416,7 +112617,9 @@
             }
           ],
           "preview": "assets/previews/sender_simplified.webp",
-          "region_ids": [],
+          "region_ids": [
+            "3,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -112427,7 +112630,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章4"
+          ]
         },
         {
           "level_id": "intro-sender_simplified_v2",
@@ -112463,7 +112668,9 @@
             }
           ],
           "preview": "assets/previews/intro-sender_simplified_v2.webp",
-          "region_ids": [],
+          "region_ids": [
+            "3,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -112474,7 +112681,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章4"
+          ]
         },
         {
           "level_id": "push_down_a_lot",
@@ -112510,7 +112719,9 @@
             }
           ],
           "preview": "assets/previews/push_down_a_lot.webp",
-          "region_ids": [],
+          "region_ids": [
+            "-3,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -112521,7 +112732,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章5"
+          ]
         },
         {
           "level_id": "intro-push_down_a_lot_small",
@@ -112557,7 +112770,9 @@
             }
           ],
           "preview": "assets/previews/intro-push_down_a_lot_small.webp",
-          "region_ids": [],
+          "region_ids": [
+            "-3,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -112568,7 +112783,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章5"
+          ]
         },
         {
           "level_id": "catching_up_v0",
@@ -112604,7 +112821,9 @@
             }
           ],
           "preview": "assets/previews/catching_up_v0.webp",
-          "region_ids": [],
+          "region_ids": [
+            "-3,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -112615,7 +112834,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章5"
+          ]
         },
         {
           "level_id": "intro-catching_up_v2",
@@ -112651,7 +112872,9 @@
             }
           ],
           "preview": "assets/previews/intro-catching_up_v2.webp",
-          "region_ids": [],
+          "region_ids": [
+            "-3,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -112662,7 +112885,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章5"
+          ]
         },
         {
           "level_id": "strategic_stack",
@@ -112698,7 +112923,9 @@
             }
           ],
           "preview": "assets/previews/strategic_stack.webp",
-          "region_ids": [],
+          "region_ids": [
+            "-3,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -112709,7 +112936,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章5"
+          ]
         },
         {
           "level_id": "intro-triple_gate",
@@ -112745,7 +112974,9 @@
             }
           ],
           "preview": "assets/previews/intro-triple_gate.webp",
-          "region_ids": [],
+          "region_ids": [
+            "-3,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -112756,7 +112987,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章5"
+          ]
         },
         {
           "level_id": "height_chooser",
@@ -112792,7 +113025,9 @@
             }
           ],
           "preview": "assets/previews/height_chooser.webp",
-          "region_ids": [],
+          "region_ids": [
+            "-3,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -112803,7 +113038,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章5"
+          ]
         },
         {
           "level_id": "intro-height_chooser_v0",
@@ -112839,7 +113076,9 @@
             }
           ],
           "preview": "assets/previews/intro-height_chooser_v0.webp",
-          "region_ids": [],
+          "region_ids": [
+            "-3,2"
+          ],
           "manual": {},
           "tags": {
             "big_star": false,
@@ -112850,7 +113089,9 @@
             "big_star": "Joric Level_Entry Hero mesh",
             "multi_save": "manual only"
           },
-          "region_titles": []
+          "region_titles": [
+            "序章5"
+          ]
         }
       ],
       "parts": [
@@ -112865,7 +113106,13 @@
           "unmapped_count": 0,
           "level_count": 2,
           "display_part": 45,
-          "route": []
+          "route": [
+            {
+              "region_id": "2,-1",
+              "start": 3100.0,
+              "first_ordinal": 11
+            }
+          ]
         },
         {
           "part": 68,
@@ -112878,14 +113125,181 @@
           "unmapped_count": 0,
           "level_count": 24,
           "display_part": 69,
-          "route": []
+          "route": [
+            {
+              "region_id": "1,2",
+              "start": 66.875,
+              "first_ordinal": 1
+            },
+            {
+              "region_id": "2,2",
+              "start": 309.875,
+              "first_ordinal": 3
+            },
+            {
+              "region_id": "3,2",
+              "start": 760.25,
+              "first_ordinal": 8
+            },
+            {
+              "region_id": "-3,2",
+              "start": 1826.625,
+              "first_ordinal": 17
+            }
+          ]
         }
       ],
       "offline_zoom": 3,
       "tile_url": "https://raw.githubusercontent.com/joric/ootss_tileset/818260c8b5fe704362722a9369350807ba635e68/tiles/intro_64k/{z}/{y}/{x}.webp",
       "tileset_revision": "818260c8b5fe704362722a9369350807ba635e68",
-      "grid": null,
-      "regions": [],
+      "regions": [
+        {
+          "id": "2,-1",
+          "col": 2,
+          "row": -1,
+          "direction": "南1东2",
+          "theme": "序章",
+          "bounds": [
+            64.5,
+            20.5,
+            77.5,
+            27.5
+          ],
+          "parts": [
+            44
+          ],
+          "first": [
+            44,
+            3100.0
+          ],
+          "level_ids": [
+            "jenga_dispenser",
+            "wizards_true_nature"
+          ],
+          "order": 1,
+          "title": "序章1"
+        },
+        {
+          "id": "1,2",
+          "col": 1,
+          "row": 2,
+          "direction": "北2东1",
+          "theme": "序章",
+          "bounds": [
+            51.5,
+            41.5,
+            64.5,
+            48.5
+          ],
+          "parts": [
+            68
+          ],
+          "first": [
+            68,
+            66.875
+          ],
+          "level_ids": [
+            "heroes1_7",
+            "intro-heroes1_7_v2"
+          ],
+          "order": 2,
+          "title": "序章2"
+        },
+        {
+          "id": "2,2",
+          "col": 2,
+          "row": 2,
+          "direction": "北2东2",
+          "theme": "序章",
+          "bounds": [
+            64.5,
+            41.5,
+            77.5,
+            48.5
+          ],
+          "parts": [
+            68
+          ],
+          "first": [
+            68,
+            309.875
+          ],
+          "level_ids": [
+            "lily_wearing_intro",
+            "intro-tiger_lily_v2",
+            "torcher",
+            "quad_torch_v1",
+            "intro-quad_torch"
+          ],
+          "order": 3,
+          "title": "序章3"
+        },
+        {
+          "id": "3,2",
+          "col": 3,
+          "row": 2,
+          "direction": "北2东3",
+          "theme": "序章",
+          "bounds": [
+            77.5,
+            41.5,
+            90.5,
+            48.5
+          ],
+          "parts": [
+            68
+          ],
+          "first": [
+            68,
+            760.25
+          ],
+          "level_ids": [
+            "worlds_collide_heroes_and_promesst",
+            "worlds_collide_heroes_and_promesst_v2",
+            "worlds_collide_heroes_and_promesst_v3",
+            "intro-worlds_collide_heroes_and_promesst_v4",
+            "across_the_fence_old",
+            "intro-across_the_fence_vtrader_m_p",
+            "sender",
+            "sender_simplified",
+            "intro-sender_simplified_v2"
+          ],
+          "order": 4,
+          "title": "序章4"
+        },
+        {
+          "id": "-3,2",
+          "col": -3,
+          "row": 2,
+          "direction": "北2西3",
+          "theme": "序章",
+          "bounds": [
+            -0.5,
+            41.5,
+            12.5,
+            48.5
+          ],
+          "parts": [
+            68
+          ],
+          "first": [
+            68,
+            1826.625
+          ],
+          "level_ids": [
+            "push_down_a_lot",
+            "intro-push_down_a_lot_small",
+            "catching_up_v0",
+            "intro-catching_up_v2",
+            "strategic_stack",
+            "intro-triple_gate",
+            "height_chooser",
+            "intro-height_chooser_v0"
+          ],
+          "order": 5,
+          "title": "序章5"
+        }
+      ],
       "annotation_version": 1
     }
   ]

@@ -1,6 +1,6 @@
 # 序章专项校对（2026-10-28）
 
-Joric 新增的独立序章入口共26个，已全部对应录像。序章网格经用户反馈有误，暂不显示网格、区域标题或区域划分，保留关卡坐标与分P顺序，待上游修正后恢复。原目录920个入口坐标与身份不变，序章重复名称采用上游 intro- 命名空间。旧审核保存在 superseded_reviews / superseded_events。
+Joric 新增的独立序章入口共26个，已全部对应录像。2026-10-30 已同步上游修正后的13×7网格，恢复区域划分与显示；标点及录像匹配保持原审核。原目录920个入口坐标与身份不变，序章重复名称采用上游 intro- 命名空间。旧审核保存在 superseded_reviews / superseded_events。
 
 - [固定标记源](https://github.com/joric/ootss/blob/cc4d7efeebb8da921167ff22da03285aaae5e23c/data/markers_intro.json)。序章范围 [-50,-63,140,126]，不用主世界投影或高度判断。
 - 现 P45（源 P44）两段原未定位录像：jenga_dispenser 51:40；wizards_true_nature 53:55，均已与新参考图对应。

@@ -277,10 +277,13 @@ def build_atlas(
                 else data["map_commit"],
                 "map_id": map_id,
                 "map_name": map_name,
-                "grid_available": map_id != "intro",
+                "grid_available": True,
                 "bounds": intro["bounds"] if map_id == "intro" else WORLD_BOUNDS,
                 **(
-                    {"tile_coverage": intro.get("tile_coverage", {})}
+                    {
+                        "tile_coverage": intro.get("tile_coverage", {}),
+                        "grid": intro["grid"],
+                    }
                     if map_id == "intro"
                     else {}
                 ),
