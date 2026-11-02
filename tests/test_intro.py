@@ -37,7 +37,9 @@ def test_intro_review_covers_new_entries_without_reusing_old_world_visits(monkey
         if e["event_id"].startswith("p68-intro-")
     }
     assert len(prototypes) == 14
-    assert {l["level_id"] for l in intro.values() if l.get("catch_up_excluded")} == prototypes
+    assert {
+        l["level_id"] for l in intro.values() if l.get("catch_up_excluded")
+    } == prototypes
     assert not any(
         e["level_id"] in {"heroes1_7_v2", "triple_gate"} for e in p68["events"]
     )
