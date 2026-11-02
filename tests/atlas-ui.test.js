@@ -20,6 +20,20 @@ test('catch-up orders all maps by displayed part and ordinal, ignoring filters a
  assert.equal(AtlasUI.nextIncomplete(worlds,{},null).needsConfirmation,true);
 });
 
+test('catch-up ignores gallery progress until all earlier walkthrough levels are complete',()=>{
+ const row=(id,part,ordinal,saveId=id)=>({level_id:id,save_level_id:saveId,visits:[{part,display_part:part+1,ordinal}]});
+ const worlds=[{map_id:'overworld',levels:[row('early',2,1),row('next',3,1),row('later',4,1)]},{map_id:'intro',levels:[row('gallery-gap',68,2),row('gallery-shared',68,5,'early'),row('gallery-last',68,6)]}];
+ const save=AtlasUI.newSaveProgress(['early'],'slot','2026-11-03T00:00:00Z');
+ let next=AtlasUI.nextIncomplete(worlds,{},save);
+ assert.equal(next.target.level.level_id,'next');assert.equal(next.needsConfirmation,true);
+ next=AtlasUI.nextIncomplete(worlds,{later:{completed:true}},save);
+ assert.equal(next.target.level.level_id,'next');assert.equal(next.needsConfirmation,false);
+ next=AtlasUI.nextIncomplete(worlds,{next:{completed:true},later:{completed:true}},save);
+ assert.equal(next.target.level.level_id,'gallery-gap');assert.equal(next.needsConfirmation,false);
+ next=AtlasUI.nextIncomplete(worlds,{next:{completed:true},later:{completed:true},'gallery-gap':{completed:true}},save);
+ assert.equal(next.target.level.level_id,'gallery-last');assert.equal(next.needsConfirmation,true);
+});
+
 test('empty map tiles are selected consistently at every zoom and grid ends at the actual map rows',()=>{
  for(let z=0;z<=7;z++){
   assert.equal(AtlasUI.tileAvailable({z,x:-1,y:0}),false);

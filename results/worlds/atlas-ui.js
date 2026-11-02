@@ -23,7 +23,9 @@ globalThis.AtlasUI = {
     const ordered=worlds.flatMap(m=>m.levels.filter(l=>!l.catch_up_excluded&&l.visits.length).map(level=>({map_id:m.map_id,level,visit:level.visits.map(visit=>({visit})).sort(compare)[0].visit}))).sort(compare);
     const target=ordered.find(r=>!AtlasUI.completed(levels,save,r.level.level_id,r.level.save_level_id));
     if(!target)return null;
-    const latest=ordered.findLast(r=>AtlasUI.completed(levels,save,r.level.level_id,r.level.save_level_id));
+    // Source P68 is the development gallery (currently displayed as P69).
+    const progress=target.visit.part===68?ordered:ordered.filter(r=>r.visit.part!==68);
+    const latest=progress.findLast(r=>AtlasUI.completed(levels,save,r.level.level_id,r.level.save_level_id));
     return {target,needsConfirmation:!latest||compare(target,latest)>0};
   },
   parseSaveProgress(value,levelIds){
