@@ -69,6 +69,7 @@ globalThis.AtlasSave = {
 let forgetGameSaveSelection=()=>{};
 function syncGameSaveButtons(){
   $('save-unbind').hidden=!saveProgress;
+  $('save-catch-up').hidden=!saveProgress;
   $('save-read').title=saveProgress?`已读取：${saveProgress.source}；点击可重新读取`:'在本机读取通关状态，不上传存档';
 }
 
@@ -88,6 +89,17 @@ function initGameSaves(){
     settings(false);message(candidates.length?'已保留所选游戏档案，可直接点击「读取并标记」同步最新进度。':saveProgress?`当前记录：${saveProgress.source}。请选择存档目录，再读取最新进度。`:'请选择游戏存档目录。');dialog.showModal();
   }
   $('save-read').onclick=open;
+  $('save-catch-up').onclick=()=>{
+    const next=AtlasUI.nextIncomplete(worlds,annotations,saveProgress);
+    if(!next){alert('所有可查找的关卡均已完成。');return}
+    if(next.needsConfirmation&&!confirm('【可能剧透提醒】所有进度更靠前的关卡均已完成，将跳转到此进度下的下一关'))return;
+    const {map_id,level,visit}=next.target;
+    if(tune.active)leaveTune();
+    if(data.map_id!==map_id)switchMap(map_id);
+    state.part=visit.part;state.region=null;state.routeIndex=-1;state.search='';$('search').value='';
+    options();render();focusLevel(level.level_id);updateUrl();
+    const url=new URL(location.href);url.searchParams.set('level',level.level_id);history.replaceState(null,'',url);
+  };
   $('game-save-close').onclick=()=>{if(!busy)dialog.close()};dialog.addEventListener('cancel',event=>{if(busy)event.preventDefault()});dialog.addEventListener('close',()=>{generation++;if(candidates.some(candidate=>!candidate.handle))clearCandidates()});
   forgetGameSaveSelection=()=>{generation++;clearCandidates()};
   $('game-save-copy').onclick=async()=>{try{await navigator.clipboard.writeText($('game-save-path').textContent);message('已复制默认存档路径，可粘贴到系统文件选择窗口。')}catch{message('请选中上方路径后复制。')}};

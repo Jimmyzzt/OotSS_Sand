@@ -76,7 +76,7 @@ def theme_for(levels, first_part, col, row):
         "underworld_heroes_and_promesst": "英雄杂项",
         "advanced_bard_and_water": "吟游诗人与水",
         "monsters_and_beams": "怪物穿行",
-        "spawners": "开启界门",
+        "spawners": "局部重置",
         "underworld_mirrors_and_promesst": "魔镜与神器",
         "flat_things": "扁平物件挪一挪",
         "lily_highway_mirrors_and_stones": "魔镜与河流",

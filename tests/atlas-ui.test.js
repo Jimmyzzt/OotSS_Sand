@@ -5,6 +5,21 @@ import '../ootss/templates/atlas-ui.js';
 const {markerLabels,markerRadius}=globalThis.AtlasUI;
 const level=(id,ordinal,x,part=2,region='mixed')=>({level_id:id,shown:[{part,ordinal}],region_ids:[region],entries:[{coordinates:[x,0]}]});
 
+test('catch-up orders all maps by displayed part and ordinal, ignoring filters and old intro versions',()=>{
+ const row=(id,part,ordinal,extra={})=>({level_id:id,visits:[{part,display_part:part+1,ordinal}],...extra});
+ const worlds=[{map_id:'intro',levels:[row('old',1,1,{catch_up_excluded:true}),row('demo',68,2)]},{map_id:'underworld',levels:[row('b',4,2),row('c',4,3)]},{map_id:'overworld',levels:[row('a',2,1,{visits:[{part:43,display_part:44,ordinal:1},{part:2,display_part:3,ordinal:1}]})]}];
+ const save=AtlasUI.newSaveProgress(['a','c'],'test','2026-11-02T00:00:00Z');
+ assert.equal(AtlasUI.nextIncomplete(worlds,{a:{completed:true}},null).needsConfirmation,true);
+ let next=AtlasUI.nextIncomplete(worlds,{},save);
+ assert.equal(next.target.level.level_id,'b');assert.equal(next.target.map_id,'underworld');assert.equal(next.needsConfirmation,false);
+ save.overrides.a=false;
+ assert.equal(AtlasUI.nextIncomplete(worlds,{},save).target.level.level_id,'a');
+ next=AtlasUI.nextIncomplete(worlds,{a:{completed:true},b:{completed:true},c:{completed:true}},null);
+ assert.equal(next.target.level.level_id,'demo');assert.equal(next.needsConfirmation,true);
+ assert.equal(AtlasUI.nextIncomplete(worlds,{a:{completed:true},b:{completed:true},c:{completed:true},demo:{completed:true}},null),null);
+ assert.equal(AtlasUI.nextIncomplete(worlds,{},null).needsConfirmation,true);
+});
+
 test('empty map tiles are selected consistently at every zoom and grid ends at the actual map rows',()=>{
  for(let z=0;z<=7;z++){
   assert.equal(AtlasUI.tileAvailable({z,x:-1,y:0}),false);

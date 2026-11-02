@@ -44710,7 +44710,7 @@
         "multi_save": "manual only"
       },
       "region_titles": [
-        "开启界门1"
+        "局部重置1"
       ]
     },
     {
@@ -44761,7 +44761,7 @@
         "multi_save": "manual only"
       },
       "region_titles": [
-        "开启界门1"
+        "局部重置1"
       ]
     },
     {
@@ -44812,7 +44812,7 @@
         "multi_save": "manual only"
       },
       "region_titles": [
-        "开启界门1"
+        "局部重置1"
       ]
     },
     {
@@ -44863,7 +44863,7 @@
         "multi_save": "manual only"
       },
       "region_titles": [
-        "开启界门2"
+        "局部重置2"
       ]
     },
     {
@@ -44914,7 +44914,7 @@
         "multi_save": "manual only"
       },
       "region_titles": [
-        "开启界门2"
+        "局部重置2"
       ]
     },
     {
@@ -44965,7 +44965,7 @@
         "multi_save": "manual only"
       },
       "region_titles": [
-        "开启界门2"
+        "局部重置2"
       ]
     },
     {
@@ -45016,7 +45016,7 @@
         "multi_save": "manual only"
       },
       "region_titles": [
-        "开启界门2"
+        "局部重置2"
       ]
     },
     {
@@ -45067,7 +45067,7 @@
         "multi_save": "manual only"
       },
       "region_titles": [
-        "开启界门2"
+        "局部重置2"
       ]
     },
     {
@@ -45118,7 +45118,7 @@
         "multi_save": "manual only"
       },
       "region_titles": [
-        "开启界门3"
+        "局部重置3"
       ]
     },
     {
@@ -48274,6 +48274,7 @@
           "display_part": 69
         }
       ],
+      "catch_up_excluded": true,
       "preview": "assets/previews/heroes1_7.webp",
       "region_ids": [
         "1,2"
@@ -48376,6 +48377,7 @@
           "display_part": 69
         }
       ],
+      "catch_up_excluded": true,
       "preview": "assets/previews/lily_wearing_intro.webp",
       "region_ids": [
         "2,2"
@@ -48478,6 +48480,7 @@
           "display_part": 69
         }
       ],
+      "catch_up_excluded": true,
       "preview": "assets/previews/torcher.webp",
       "region_ids": [
         "2,2"
@@ -48529,6 +48532,7 @@
           "display_part": 69
         }
       ],
+      "catch_up_excluded": true,
       "preview": "assets/previews/quad_torch_v1.webp",
       "region_ids": [
         "2,2"
@@ -48631,6 +48635,7 @@
           "display_part": 69
         }
       ],
+      "catch_up_excluded": true,
       "preview": "assets/previews/worlds_collide_heroes_and_promesst.webp",
       "region_ids": [
         "3,2"
@@ -48682,6 +48687,7 @@
           "display_part": 69
         }
       ],
+      "catch_up_excluded": true,
       "preview": "assets/previews/worlds_collide_heroes_and_promesst_v2.webp",
       "region_ids": [
         "3,2"
@@ -48733,6 +48739,7 @@
           "display_part": 69
         }
       ],
+      "catch_up_excluded": true,
       "preview": "assets/previews/worlds_collide_heroes_and_promesst_v3.webp",
       "region_ids": [
         "3,2"
@@ -48835,6 +48842,7 @@
           "display_part": 69
         }
       ],
+      "catch_up_excluded": true,
       "preview": "assets/previews/across_the_fence_old.webp",
       "region_ids": [
         "3,2"
@@ -48937,6 +48945,7 @@
           "display_part": 69
         }
       ],
+      "catch_up_excluded": true,
       "preview": "assets/previews/sender.webp",
       "region_ids": [
         "3,2"
@@ -48988,6 +48997,7 @@
           "display_part": 69
         }
       ],
+      "catch_up_excluded": true,
       "preview": "assets/previews/sender_simplified.webp",
       "region_ids": [
         "3,2"
@@ -49090,6 +49100,7 @@
           "display_part": 69
         }
       ],
+      "catch_up_excluded": true,
       "preview": "assets/previews/push_down_a_lot.webp",
       "region_ids": [
         "-3,2"
@@ -49192,6 +49203,7 @@
           "display_part": 69
         }
       ],
+      "catch_up_excluded": true,
       "preview": "assets/previews/catching_up_v0.webp",
       "region_ids": [
         "-3,2"
@@ -49294,6 +49306,7 @@
           "display_part": 69
         }
       ],
+      "catch_up_excluded": true,
       "preview": "assets/previews/strategic_stack.webp",
       "region_ids": [
         "-3,2"
@@ -49396,6 +49409,7 @@
           "display_part": 69
         }
       ],
+      "catch_up_excluded": true,
       "preview": "assets/previews/height_chooser.webp",
       "region_ids": [
         "-3,2"
@@ -99267,7 +99281,7 @@
             "multi_save": "manual only"
           },
           "region_titles": [
-            "开启界门1"
+            "局部重置1"
           ]
         },
         {
@@ -99318,7 +99332,7 @@
             "multi_save": "manual only"
           },
           "region_titles": [
-            "开启界门1"
+            "局部重置1"
           ]
         },
         {
@@ -99369,7 +99383,7 @@
             "multi_save": "manual only"
           },
           "region_titles": [
-            "开启界门1"
+            "局部重置1"
           ]
         },
         {
@@ -99420,7 +99434,7 @@
             "multi_save": "manual only"
           },
           "region_titles": [
-            "开启界门2"
+            "局部重置2"
           ]
         },
         {
@@ -99471,7 +99485,7 @@
             "multi_save": "manual only"
           },
           "region_titles": [
-            "开启界门2"
+            "局部重置2"
           ]
         },
         {
@@ -99522,7 +99536,7 @@
             "multi_save": "manual only"
           },
           "region_titles": [
-            "开启界门2"
+            "局部重置2"
           ]
         },
         {
@@ -99573,7 +99587,7 @@
             "multi_save": "manual only"
           },
           "region_titles": [
-            "开启界门2"
+            "局部重置2"
           ]
         },
         {
@@ -99624,7 +99638,7 @@
             "multi_save": "manual only"
           },
           "region_titles": [
-            "开启界门2"
+            "局部重置2"
           ]
         },
         {
@@ -99675,7 +99689,7 @@
             "multi_save": "manual only"
           },
           "region_titles": [
-            "开启界门3"
+            "局部重置3"
           ]
         },
         {
@@ -105183,7 +105197,7 @@
           "col": -5,
           "row": -4,
           "direction": "南4西5",
-          "theme": "开启界门",
+          "theme": "局部重置",
           "bounds": [
             -24.5,
             10.5,
@@ -105203,14 +105217,14 @@
             "wrong_reset"
           ],
           "order": 63,
-          "title": "开启界门1"
+          "title": "局部重置1"
         },
         {
           "id": "-5,-3",
           "col": -5,
           "row": -3,
           "direction": "南3西5",
-          "theme": "开启界门",
+          "theme": "局部重置",
           "bounds": [
             -24.5,
             23.5,
@@ -105232,14 +105246,14 @@
             "fall_reset_v2"
           ],
           "order": 64,
-          "title": "开启界门2"
+          "title": "局部重置2"
         },
         {
           "id": "-5,-2",
           "col": -5,
           "row": -2,
           "direction": "南2西5",
-          "theme": "开启界门",
+          "theme": "局部重置",
           "bounds": [
             -24.5,
             36.5,
@@ -105257,7 +105271,7 @@
             "reset_trio"
           ],
           "order": 65,
-          "title": "开启界门3"
+          "title": "局部重置3"
         },
         {
           "id": "4,-5",
@@ -111902,6 +111916,7 @@
               "display_part": 69
             }
           ],
+          "catch_up_excluded": true,
           "preview": "assets/previews/heroes1_7.webp",
           "region_ids": [
             "1,2"
@@ -112004,6 +112019,7 @@
               "display_part": 69
             }
           ],
+          "catch_up_excluded": true,
           "preview": "assets/previews/lily_wearing_intro.webp",
           "region_ids": [
             "2,2"
@@ -112106,6 +112122,7 @@
               "display_part": 69
             }
           ],
+          "catch_up_excluded": true,
           "preview": "assets/previews/torcher.webp",
           "region_ids": [
             "2,2"
@@ -112157,6 +112174,7 @@
               "display_part": 69
             }
           ],
+          "catch_up_excluded": true,
           "preview": "assets/previews/quad_torch_v1.webp",
           "region_ids": [
             "2,2"
@@ -112259,6 +112277,7 @@
               "display_part": 69
             }
           ],
+          "catch_up_excluded": true,
           "preview": "assets/previews/worlds_collide_heroes_and_promesst.webp",
           "region_ids": [
             "3,2"
@@ -112310,6 +112329,7 @@
               "display_part": 69
             }
           ],
+          "catch_up_excluded": true,
           "preview": "assets/previews/worlds_collide_heroes_and_promesst_v2.webp",
           "region_ids": [
             "3,2"
@@ -112361,6 +112381,7 @@
               "display_part": 69
             }
           ],
+          "catch_up_excluded": true,
           "preview": "assets/previews/worlds_collide_heroes_and_promesst_v3.webp",
           "region_ids": [
             "3,2"
@@ -112463,6 +112484,7 @@
               "display_part": 69
             }
           ],
+          "catch_up_excluded": true,
           "preview": "assets/previews/across_the_fence_old.webp",
           "region_ids": [
             "3,2"
@@ -112565,6 +112587,7 @@
               "display_part": 69
             }
           ],
+          "catch_up_excluded": true,
           "preview": "assets/previews/sender.webp",
           "region_ids": [
             "3,2"
@@ -112616,6 +112639,7 @@
               "display_part": 69
             }
           ],
+          "catch_up_excluded": true,
           "preview": "assets/previews/sender_simplified.webp",
           "region_ids": [
             "3,2"
@@ -112718,6 +112742,7 @@
               "display_part": 69
             }
           ],
+          "catch_up_excluded": true,
           "preview": "assets/previews/push_down_a_lot.webp",
           "region_ids": [
             "-3,2"
@@ -112820,6 +112845,7 @@
               "display_part": 69
             }
           ],
+          "catch_up_excluded": true,
           "preview": "assets/previews/catching_up_v0.webp",
           "region_ids": [
             "-3,2"
@@ -112922,6 +112948,7 @@
               "display_part": 69
             }
           ],
+          "catch_up_excluded": true,
           "preview": "assets/previews/strategic_stack.webp",
           "region_ids": [
             "-3,2"
@@ -113024,6 +113051,7 @@
               "display_part": 69
             }
           ],
+          "catch_up_excluded": true,
           "preview": "assets/previews/height_chooser.webp",
           "region_ids": [
             "-3,2"

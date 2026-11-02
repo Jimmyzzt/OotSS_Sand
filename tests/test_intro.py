@@ -31,6 +31,13 @@ def test_intro_review_covers_new_entries_without_reusing_old_world_visits(monkey
     assert found == {"jenga_dispenser", "wizards_true_nature"}
     assert {e["level_id"] for e in p68["events"]} | found == set(intro)
     assert all(l["save_level_id"] is None for l in intro.values())
+    prototypes = {
+        e["level_id"]
+        for e in read_json("data/intro_visits.json")["events"]
+        if e["event_id"].startswith("p68-intro-")
+    }
+    assert len(prototypes) == 14
+    assert {l["level_id"] for l in intro.values() if l.get("catch_up_excluded")} == prototypes
     assert not any(
         e["level_id"] in {"heroes1_7_v2", "triple_gate"} for e in p68["events"]
     )

@@ -31,7 +31,8 @@
         }
       ],
       "mesh": "GAME_OVER_Entry_Available_A",
-      "map_url": "https://joric.github.io/ootss/#across_the_fence_old"
+      "map_url": "https://joric.github.io/ootss/#across_the_fence_old",
+      "catch_up_excluded": true
     },
     {
       "level_id": "intro-across_the_fence_vtrader_m_p",
@@ -73,7 +74,8 @@
         }
       ],
       "mesh": "GAME_OVER_Entry_Available_A",
-      "map_url": "https://joric.github.io/ootss/#catching_up_v0"
+      "map_url": "https://joric.github.io/ootss/#catching_up_v0",
+      "catch_up_excluded": true
     },
     {
       "level_id": "intro-catching_up_v2",
@@ -115,7 +117,8 @@
         }
       ],
       "mesh": "GAME_OVER_Entry_Available_A",
-      "map_url": "https://joric.github.io/ootss/#height_chooser"
+      "map_url": "https://joric.github.io/ootss/#height_chooser",
+      "catch_up_excluded": true
     },
     {
       "level_id": "intro-height_chooser_v0",
@@ -157,7 +160,8 @@
         }
       ],
       "mesh": "GAME_OVER_Entry_Available_A",
-      "map_url": "https://joric.github.io/ootss/#heroes1_7"
+      "map_url": "https://joric.github.io/ootss/#heroes1_7",
+      "catch_up_excluded": true
     },
     {
       "level_id": "intro-heroes1_7_v2",
@@ -220,7 +224,8 @@
         }
       ],
       "mesh": "GAME_OVER_Entry_Available_A",
-      "map_url": "https://joric.github.io/ootss/#lily_wearing_intro"
+      "map_url": "https://joric.github.io/ootss/#lily_wearing_intro",
+      "catch_up_excluded": true
     },
     {
       "level_id": "push_down_a_lot",
@@ -241,7 +246,8 @@
         }
       ],
       "mesh": "GAME_OVER_Entry_Available_A",
-      "map_url": "https://joric.github.io/ootss/#push_down_a_lot"
+      "map_url": "https://joric.github.io/ootss/#push_down_a_lot",
+      "catch_up_excluded": true
     },
     {
       "level_id": "intro-push_down_a_lot_small",
@@ -304,7 +310,8 @@
         }
       ],
       "mesh": "GAME_OVER_Entry_Locked_A",
-      "map_url": "https://joric.github.io/ootss/#quad_torch_v1"
+      "map_url": "https://joric.github.io/ootss/#quad_torch_v1",
+      "catch_up_excluded": true
     },
     {
       "level_id": "sender",
@@ -325,7 +332,8 @@
         }
       ],
       "mesh": "GAME_OVER_Entry_Available_A",
-      "map_url": "https://joric.github.io/ootss/#sender"
+      "map_url": "https://joric.github.io/ootss/#sender",
+      "catch_up_excluded": true
     },
     {
       "level_id": "sender_simplified",
@@ -346,7 +354,8 @@
         }
       ],
       "mesh": "GAME_OVER_Entry_Locked_A",
-      "map_url": "https://joric.github.io/ootss/#sender_simplified"
+      "map_url": "https://joric.github.io/ootss/#sender_simplified",
+      "catch_up_excluded": true
     },
     {
       "level_id": "intro-sender_simplified_v2",
@@ -388,7 +397,8 @@
         }
       ],
       "mesh": "GAME_OVER_Entry_Available_A",
-      "map_url": "https://joric.github.io/ootss/#strategic_stack"
+      "map_url": "https://joric.github.io/ootss/#strategic_stack",
+      "catch_up_excluded": true
     },
     {
       "level_id": "intro-tiger_lily_v2",
@@ -430,7 +440,8 @@
         }
       ],
       "mesh": "GAME_OVER_Entry_Available_A",
-      "map_url": "https://joric.github.io/ootss/#torcher"
+      "map_url": "https://joric.github.io/ootss/#torcher",
+      "catch_up_excluded": true
     },
     {
       "level_id": "intro-triple_gate",
@@ -493,7 +504,8 @@
         }
       ],
       "mesh": "GAME_OVER_Entry_Available_A",
-      "map_url": "https://joric.github.io/ootss/#worlds_collide_heroes_and_promesst"
+      "map_url": "https://joric.github.io/ootss/#worlds_collide_heroes_and_promesst",
+      "catch_up_excluded": true
     },
     {
       "level_id": "worlds_collide_heroes_and_promesst_v2",
@@ -514,7 +526,8 @@
         }
       ],
       "mesh": "GAME_OVER_Entry_Locked_A",
-      "map_url": "https://joric.github.io/ootss/#worlds_collide_heroes_and_promesst_v2"
+      "map_url": "https://joric.github.io/ootss/#worlds_collide_heroes_and_promesst_v2",
+      "catch_up_excluded": true
     },
     {
       "level_id": "worlds_collide_heroes_and_promesst_v3",
@@ -535,7 +548,8 @@
         }
       ],
       "mesh": "GAME_OVER_Entry_Locked_A",
-      "map_url": "https://joric.github.io/ootss/#worlds_collide_heroes_and_promesst_v3"
+      "map_url": "https://joric.github.io/ootss/#worlds_collide_heroes_and_promesst_v3",
+      "catch_up_excluded": true
     },
     {
       "level_id": "intro-worlds_collide_heroes_and_promesst_v4",

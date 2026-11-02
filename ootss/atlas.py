@@ -171,6 +171,8 @@ def build_atlas(
                     "visits": [],
                 },
             )
+            if level.get("catch_up_excluded"):
+                item["catch_up_excluded"] = True
             item["visits"].append(
                 {
                     "part": part,

@@ -18,6 +18,14 @@ globalThis.AtlasUI = {
     return solved.has(saveId)?save.overrides[id]!==false:levels[id]?.completed===true;
   },
   newSaveProgress(solved,source,readAt){return {version:1,source:source.slice(0,300),readAt,solved:[...new Set(solved)],overrides:{}};},
+  nextIncomplete(worlds,levels,save){
+    const compare=(a,b)=>(a.visit.display_part??a.visit.part)-(b.visit.display_part??b.visit.part)||a.visit.ordinal-b.visit.ordinal;
+    const ordered=worlds.flatMap(m=>m.levels.filter(l=>!l.catch_up_excluded&&l.visits.length).map(level=>({map_id:m.map_id,level,visit:level.visits.map(visit=>({visit})).sort(compare)[0].visit}))).sort(compare);
+    const target=ordered.find(r=>!AtlasUI.completed(levels,save,r.level.level_id,r.level.save_level_id));
+    if(!target)return null;
+    const latest=ordered.findLast(r=>AtlasUI.completed(levels,save,r.level.level_id,r.level.save_level_id));
+    return {target,needsConfirmation:!latest||compare(target,latest)>0};
+  },
   parseSaveProgress(value,levelIds){
     if(value===null)return null;
     if(!value||value.version!==1||!Array.isArray(value.solved)||value.solved.length>50000||typeof value.source!=='string'||typeof value.readAt!=='string'||!Number.isFinite(Date.parse(value.readAt)))throw Error('不是有效的存档完成记录');
