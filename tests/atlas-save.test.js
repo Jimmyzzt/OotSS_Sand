@@ -5,19 +5,17 @@ import {createContext,runInContext} from 'node:vm';
 import '../ootss/templates/atlas-save.js';
 import '../ootss/templates/atlas-ui.js';
 
-test('intro completion stays manual and independent from same-name game save records',()=>{
- const save=AtlasUI.newSaveProgress(['heroes1_7_v2'],'slot','2026-10-28T00:00:00Z');
- assert.equal(AtlasUI.completed({},save,'intro-heroes1_7_v2',null),false);
- assert.equal(AtlasUI.completed({},save,'heroes1_7_v2'),true);
- const manual=AtlasUI.manualCompletion({},save,'intro-heroes1_7_v2',true,null);
- const parsed=AtlasUI.parseSaveProgress(manual.saveProgress,new Set(['heroes1_7_v2','intro-heroes1_7_v2']));
- assert.equal(AtlasUI.completed(manual.levels,parsed,'intro-heroes1_7_v2',null),true);
- assert.equal(AtlasUI.completed(manual.levels,parsed,'heroes1_7_v2'),true);
- assert.equal(AtlasUI.completed(manual.levels,null,'intro-heroes1_7_v2',null),true);
- assert.equal(AtlasUI.completed(manual.levels,AtlasUI.newSaveProgress(['heroes1_7_v2'],'new','2026-10-28T01:00:00Z'),'intro-heroes1_7_v2',null),true);
- const cleared=AtlasUI.manualCompletion(manual.levels,save,'intro-heroes1_7_v2',false,null);
- assert.equal(AtlasUI.completed(cleared.levels,cleared.saveProgress,'intro-heroes1_7_v2',null),false);
- assert.equal(AtlasUI.completed(cleared.levels,cleared.saveProgress,'heroes1_7_v2'),true);
+test('intro completion reads original save IDs, including shared IDs and independent prototypes',()=>{
+ const levels=JSON.parse(readFileSync(new URL('../data/intro_map.json',import.meta.url),'utf8')).levels;
+ const save=AtlasUI.newSaveProgress(levels.map(l=>l.source_level_id),'slot','2026-11-02T00:00:00Z');
+ for(const l of levels){
+  assert.equal(l.save_level_id,l.source_level_id);
+  assert.equal(AtlasUI.completed({},save,l.level_id,l.save_level_id),true,l.level_id);
+ }
+ const shared=AtlasUI.newSaveProgress(['heroes1_7_v2'],'slot','2026-11-02T00:00:00Z');
+ assert.equal(AtlasUI.completed({},shared,'intro-heroes1_7_v2','heroes1_7_v2'),true);
+ assert.equal(AtlasUI.completed({},shared,'heroes1_7_v2'),true);
+ assert.equal(AtlasUI.completed({},shared,'heroes1_7','heroes1_7'),false);
 });
 
 // Binary fixtures derived from the documented version gates, with nonzero legacy
