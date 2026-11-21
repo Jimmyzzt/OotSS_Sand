@@ -591,89 +591,6 @@
       "reviewer": "Luna visual comparison"
     },
     {
-      "event_id": "p46-008",
-      "level_id": "jenga_assorted",
-      "puzzle_start_time": 850.0,
-      "puzzle_end_time": 902.5,
-      "entry_transition_time": null,
-      "exit_time": 903.75,
-      "overworld_approach_time": null,
-      "review_status": "confirmed",
-      "status": "visited",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 5,
-      "candidate_levels": [
-        {
-          "level_id": "jenga_assorted",
-          "area": "underworld_heroes_and_promesst",
-          "phash_distance": 14,
-          "hist_distance": 0.1505,
-          "sift_inliers": 55,
-          "sift_good": 57
-        },
-        {
-          "level_id": "vertical_unclone_3",
-          "area": "vertical_mirrors",
-          "phash_distance": 16,
-          "hist_distance": 1.4141,
-          "sift_inliers": 4,
-          "sift_good": 7
-        },
-        {
-          "level_id": "torc_blocked",
-          "area": "beaming_objects",
-          "phash_distance": 16,
-          "hist_distance": 0.7754,
-          "sift_inliers": 0,
-          "sift_good": 1
-        },
-        {
-          "level_id": "tippy_intro",
-          "area": "heroes_in_3d",
-          "phash_distance": 16,
-          "hist_distance": 1.3526,
-          "sift_inliers": 0,
-          "sift_good": 2
-        },
-        {
-          "level_id": "mirror_1",
-          "area": "mirror",
-          "phash_distance": 18,
-          "hist_distance": 1.3885,
-          "sift_inliers": 0,
-          "sift_good": 3
-        }
-      ],
-      "puzzle_match": {
-        "level_id": "jenga_assorted",
-        "area": "underworld_heroes_and_promesst",
-        "phash_distance": 14,
-        "hist_distance": 0.1505,
-        "sift_inliers": 55,
-        "sift_good": 57,
-        "consistent_samples": 10,
-        "status": "visually_confirmed"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "visual_layout_comparison",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p46\\samples\\00875.000.jpg",
-          "time": 875.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\jenga_assorted.webp",
-          "first_sample": 855.0,
-          "last_sample": 900.0,
-          "sample_count": 10,
-          "reason": "A small snowy island is bisected by a tall multicolored Jenga column; the visible laser beams, blue orb and stone obstacles align with the reference static layout. This is a separate later visit after other confirmed entries."
-        }
-      ],
-      "evidence_gallery": "evidence/candidates_01.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
       "event_id": "p46-009",
       "level_id": "how_to_train_your_dragon",
       "puzzle_start_time": 944.75,
@@ -755,6 +672,103 @@
       "evidence_gallery": "evidence/candidates_01.jpg",
       "manual_corrections": [],
       "reviewer": "Luna visual comparison"
+    }
+  ],
+  "superseded_events": [
+    {
+      "event": {
+        "event_id": "p46-008",
+        "level_id": "jenga_assorted",
+        "puzzle_start_time": 850.0,
+        "puzzle_end_time": 902.5,
+        "entry_transition_time": null,
+        "exit_time": 903.75,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 5,
+        "candidate_levels": [
+          {
+            "level_id": "jenga_assorted",
+            "area": "underworld_heroes_and_promesst",
+            "phash_distance": 14,
+            "hist_distance": 0.1505,
+            "sift_inliers": 55,
+            "sift_good": 57
+          },
+          {
+            "level_id": "vertical_unclone_3",
+            "area": "vertical_mirrors",
+            "phash_distance": 16,
+            "hist_distance": 1.4141,
+            "sift_inliers": 4,
+            "sift_good": 7
+          },
+          {
+            "level_id": "torc_blocked",
+            "area": "beaming_objects",
+            "phash_distance": 16,
+            "hist_distance": 0.7754,
+            "sift_inliers": 0,
+            "sift_good": 1
+          },
+          {
+            "level_id": "tippy_intro",
+            "area": "heroes_in_3d",
+            "phash_distance": 16,
+            "hist_distance": 1.3526,
+            "sift_inliers": 0,
+            "sift_good": 2
+          },
+          {
+            "level_id": "mirror_1",
+            "area": "mirror",
+            "phash_distance": 18,
+            "hist_distance": 1.3885,
+            "sift_inliers": 0,
+            "sift_good": 3
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "jenga_assorted",
+          "area": "underworld_heroes_and_promesst",
+          "phash_distance": 14,
+          "hist_distance": 0.1505,
+          "sift_inliers": 55,
+          "sift_good": 57,
+          "consistent_samples": 10,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p46\\samples\\00875.000.jpg",
+            "time": 875.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\jenga_assorted.webp",
+            "first_sample": 855.0,
+            "last_sample": 900.0,
+            "sample_count": 10,
+            "reason": "A small snowy island is bisected by a tall multicolored Jenga column; the visible laser beams, blue orb and stone obstacles align with the reference static layout. This is a separate later visit after other confirmed entries."
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_01.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_feedback": "92e48d21-ae7f-4508-bfc5-b71e921a349e",
+      "reason": "Owner confirmed the second 14:10 timestamp is redundant; retain 07:43."
+    }
+  ],
+  "feedback_corrections": [
+    {
+      "type": "owner_confirmed_feedback",
+      "feedback_id": "92e48d21-ae7f-4508-bfc5-b71e921a349e",
+      "reviewed_at": "2026-11-21",
+      "reason": "Owner confirmed the second 14:10 timestamp is redundant; retain 07:43."
     }
   ]
 }

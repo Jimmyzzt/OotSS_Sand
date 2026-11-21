@@ -1596,93 +1596,6 @@
       "reviewer": "Luna visual comparison"
     },
     {
-      "event_id": "p57-019",
-      "level_id": "ortho2",
-      "puzzle_start_time": 2651.125,
-      "puzzle_end_time": 2657.125,
-      "entry_transition_time": 2650.75,
-      "exit_time": 2657.375,
-      "overworld_approach_time": null,
-      "review_status": "confirmed",
-      "status": "visited",
-      "outcome": "unknown",
-      "timing_uncertainty_seconds": 0.5,
-      "candidate_levels": [
-        {
-          "level_id": "ortho2",
-          "area": "lily_highway_stones_and_promesst",
-          "phash_distance": 6,
-          "hist_distance": 0.1882,
-          "sift_inliers": 27,
-          "sift_good": 34
-        },
-        {
-          "level_id": "security_checkpoints_v2",
-          "area": "beams_and_stones",
-          "phash_distance": 16,
-          "hist_distance": 1.4131,
-          "sift_inliers": 0,
-          "sift_good": 4
-        },
-        {
-          "level_id": "heroes2_6_v3",
-          "area": "heroes2",
-          "phash_distance": 18,
-          "hist_distance": 1.4033,
-          "sift_inliers": 0,
-          "sift_good": 1
-        },
-        {
-          "level_id": "metamirror_different_dir_alt",
-          "area": "metamirrors",
-          "phash_distance": 20,
-          "hist_distance": 1.3295,
-          "sift_inliers": 0,
-          "sift_good": 2
-        },
-        {
-          "level_id": "mirror_15",
-          "area": "mirror",
-          "phash_distance": 20,
-          "hist_distance": 1.4028,
-          "sift_inliers": 0,
-          "sift_good": 2
-        }
-      ],
-      "puzzle_match": {
-        "level_id": "ortho2",
-        "area": "lily_highway_stones_and_promesst",
-        "phash_distance": 6,
-        "hist_distance": 0.1882,
-        "sift_inliers": 27,
-        "sift_good": 34,
-        "consistent_samples": 1,
-        "status": "visually_confirmed"
-      },
-      "overworld_match": {
-        "status": "unverified"
-      },
-      "evidence": [
-        {
-          "type": "candidate_layout",
-          "image": "F:\\Video\\OotSS_Sand\\runs\\p57\\samples\\02655.000.jpg",
-          "time": 2655.0,
-          "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\ortho2.webp",
-          "first_sample": 2655.0,
-          "last_sample": 2655.0,
-          "sample_count": 1,
-          "reason": "候选视频画面与本地 Level_Entry 参考图逐项核对，房间外围边界、主要平台/通路形状及固定机关的相对布局吻合 ortho2；判断依据是静态结构，不以可移动角色或解谜状态作身份依据。"
-        },
-        {
-          "type": "temporal_context",
-          "reason": "核查了事件前后完整5秒全时间轴采样。事件边界参考黑场/切换；没有完整离开证据的连续内部房间及滚屏保留为同一次访问。外部入口未逐帧核实，outcome保持unknown。"
-        }
-      ],
-      "evidence_gallery": "evidence/candidates_04.jpg",
-      "manual_corrections": [],
-      "reviewer": "Luna visual comparison"
-    },
-    {
       "event_id": "p57-020",
       "level_id": "ortho",
       "puzzle_start_time": 2661.625,
@@ -2290,6 +2203,107 @@
       "evidence_gallery": "evidence/candidates_05.jpg",
       "manual_corrections": [],
       "reviewer": "Luna visual comparison"
+    }
+  ],
+  "superseded_events": [
+    {
+      "event": {
+        "event_id": "p57-019",
+        "level_id": "ortho2",
+        "puzzle_start_time": 2651.125,
+        "puzzle_end_time": 2657.125,
+        "entry_transition_time": 2650.75,
+        "exit_time": 2657.375,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 0.5,
+        "candidate_levels": [
+          {
+            "level_id": "ortho2",
+            "area": "lily_highway_stones_and_promesst",
+            "phash_distance": 6,
+            "hist_distance": 0.1882,
+            "sift_inliers": 27,
+            "sift_good": 34
+          },
+          {
+            "level_id": "security_checkpoints_v2",
+            "area": "beams_and_stones",
+            "phash_distance": 16,
+            "hist_distance": 1.4131,
+            "sift_inliers": 0,
+            "sift_good": 4
+          },
+          {
+            "level_id": "heroes2_6_v3",
+            "area": "heroes2",
+            "phash_distance": 18,
+            "hist_distance": 1.4033,
+            "sift_inliers": 0,
+            "sift_good": 1
+          },
+          {
+            "level_id": "metamirror_different_dir_alt",
+            "area": "metamirrors",
+            "phash_distance": 20,
+            "hist_distance": 1.3295,
+            "sift_inliers": 0,
+            "sift_good": 2
+          },
+          {
+            "level_id": "mirror_15",
+            "area": "mirror",
+            "phash_distance": 20,
+            "hist_distance": 1.4028,
+            "sift_inliers": 0,
+            "sift_good": 2
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "ortho2",
+          "area": "lily_highway_stones_and_promesst",
+          "phash_distance": 6,
+          "hist_distance": 0.1882,
+          "sift_inliers": 27,
+          "sift_good": 34,
+          "consistent_samples": 1,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "candidate_layout",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p57\\samples\\02655.000.jpg",
+            "time": 2655.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\ortho2.webp",
+            "first_sample": 2655.0,
+            "last_sample": 2655.0,
+            "sample_count": 1,
+            "reason": "候选视频画面与本地 Level_Entry 参考图逐项核对，房间外围边界、主要平台/通路形状及固定机关的相对布局吻合 ortho2；判断依据是静态结构，不以可移动角色或解谜状态作身份依据。"
+          },
+          {
+            "type": "temporal_context",
+            "reason": "核查了事件前后完整5秒全时间轴采样。事件边界参考黑场/切换；没有完整离开证据的连续内部房间及滚屏保留为同一次访问。外部入口未逐帧核实，outcome保持unknown。"
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_04.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_feedback": "815f3d04-7f88-46e2-b22e-3e091e81277e",
+      "reason": "Owner confirmed this six-second entry immediately exits; retain the full solution at 46:00."
+    }
+  ],
+  "feedback_corrections": [
+    {
+      "type": "owner_confirmed_feedback",
+      "feedback_id": "815f3d04-7f88-46e2-b22e-3e091e81277e",
+      "reviewed_at": "2026-11-21",
+      "reason": "Owner confirmed this six-second entry immediately exits; retain the full solution at 46:00."
     }
   ]
 }

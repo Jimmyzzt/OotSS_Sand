@@ -428,9 +428,9 @@
       "event_id": "p53-006",
       "level_id": "button_and_beam_v3",
       "puzzle_start_time": 801.75,
-      "puzzle_end_time": 950.0,
+      "puzzle_end_time": 937,
       "entry_transition_time": 801.25,
-      "exit_time": 950.5,
+      "exit_time": 937,
       "overworld_approach_time": null,
       "review_status": "confirmed",
       "status": "visited",
@@ -501,6 +501,12 @@
           "last_sample": 875.0,
           "sample_count": 15,
           "reason": "The stone courtyard has a horizontal row of green, yellow, cyan and red blocks, a vertical red beam at right, a dark square device below center and a separate purple-lit tile to the far right. These fixed features match the reference; continuous footage shows the same courtyard until its transition."
+        },
+        {
+          "type": "owner_confirmed_feedback",
+          "feedback_id": "18d7a07a-2ab1-4f73-9ba0-075db0c62efb",
+          "reviewed_at": "2026-11-21",
+          "reason": "Owner confirmed entry is 15:37, not 15:50."
         }
       ],
       "evidence_gallery": "evidence/candidates_01.jpg",
@@ -510,9 +516,9 @@
     {
       "event_id": "p53-007",
       "level_id": "thief_dragger_v2",
-      "puzzle_start_time": 950.0,
+      "puzzle_start_time": 937,
       "puzzle_end_time": 1110.0,
-      "entry_transition_time": 949.5,
+      "entry_transition_time": null,
       "exit_time": 1110.5,
       "overworld_approach_time": null,
       "review_status": "confirmed",
@@ -614,10 +620,23 @@
           "last_sample": 1100.0,
           "sample_count": 1,
           "reason": "The dark stone room has a central engraved floor tile, two standing figures, a dark alcove along the upper edge and a statue/fixture at upper right. Pink barrier blocks move into the room during play, but the underlying layout stays the same across all four candidate fragments, so they are one visit."
+        },
+        {
+          "type": "owner_confirmed_feedback",
+          "feedback_id": "18d7a07a-2ab1-4f73-9ba0-075db0c62efb",
+          "reviewed_at": "2026-11-21",
+          "reason": "Owner confirmed entry is 15:37, not 15:50."
         }
       ],
       "evidence_gallery": "evidence/candidates_01.jpg",
-      "manual_corrections": [],
+      "manual_corrections": [
+        {
+          "type": "owner_confirmed_feedback",
+          "feedback_id": "18d7a07a-2ab1-4f73-9ba0-075db0c62efb",
+          "reviewed_at": "2026-11-21",
+          "reason": "Owner confirmed entry is 15:37, not 15:50."
+        }
+      ],
       "reviewer": "Luna visual comparison"
     },
     {
@@ -1311,6 +1330,210 @@
         "reviewer": "Luna visual comparison"
       },
       "replaced_by_review": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef"
+    },
+    {
+      "event": {
+        "event_id": "p53-007",
+        "level_id": "thief_dragger_v2",
+        "puzzle_start_time": 950.0,
+        "puzzle_end_time": 1110.0,
+        "entry_transition_time": 949.5,
+        "exit_time": 1110.5,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 1,
+        "candidate_levels": [
+          {
+            "level_id": "thief_dragger_v2",
+            "area": "monsters_and_beams",
+            "phash_distance": 4,
+            "hist_distance": 0.3771,
+            "sift_inliers": 97,
+            "sift_good": 101
+          },
+          {
+            "level_id": "shunt2_alt",
+            "area": "beams_and_basic_heroes",
+            "phash_distance": 18,
+            "hist_distance": 1.2294,
+            "sift_inliers": 0,
+            "sift_good": 3
+          },
+          {
+            "level_id": "vertical_unclone_3",
+            "area": "vertical_mirrors",
+            "phash_distance": 18,
+            "hist_distance": 1.4141,
+            "sift_inliers": 0,
+            "sift_good": 0
+          },
+          {
+            "level_id": "heroes1_4",
+            "area": "heroes1",
+            "phash_distance": 20,
+            "hist_distance": 1.0337,
+            "sift_inliers": 0,
+            "sift_good": 0
+          },
+          {
+            "level_id": "3d_intro_skipping",
+            "area": "intro_to_3d",
+            "phash_distance": 20,
+            "hist_distance": 1.1292,
+            "sift_inliers": 0,
+            "sift_good": 1
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "thief_dragger_v2",
+          "area": "monsters_and_beams",
+          "phash_distance": 4,
+          "hist_distance": 0.3771,
+          "sift_inliers": 97,
+          "sift_good": 101,
+          "consistent_samples": 12,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\00940.000.jpg",
+            "time": 940.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\thief_dragger_v2.webp",
+            "first_sample": 940.0,
+            "last_sample": 995.0,
+            "sample_count": 12,
+            "reason": "The dark stone room has a central engraved floor tile, two standing figures, a dark alcove along the upper edge and a statue/fixture at upper right. Pink barrier blocks move into the room during play, but the underlying layout stays the same across all four candidate fragments, so they are one visit."
+          },
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\01020.000.jpg",
+            "time": 1020.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\thief_dragger_v2.webp",
+            "first_sample": 1015.0,
+            "last_sample": 1050.0,
+            "sample_count": 6,
+            "reason": "The dark stone room has a central engraved floor tile, two standing figures, a dark alcove along the upper edge and a statue/fixture at upper right. Pink barrier blocks move into the room during play, but the underlying layout stays the same across all four candidate fragments, so they are one visit."
+          },
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\01070.000.jpg",
+            "time": 1070.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\thief_dragger_v2.webp",
+            "first_sample": 1070.0,
+            "last_sample": 1070.0,
+            "sample_count": 1,
+            "reason": "The dark stone room has a central engraved floor tile, two standing figures, a dark alcove along the upper edge and a statue/fixture at upper right. Pink barrier blocks move into the room during play, but the underlying layout stays the same across all four candidate fragments, so they are one visit."
+          },
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\01100.000.jpg",
+            "time": 1100.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\thief_dragger_v2.webp",
+            "first_sample": 1100.0,
+            "last_sample": 1100.0,
+            "sample_count": 1,
+            "reason": "The dark stone room has a central engraved floor tile, two standing figures, a dark alcove along the upper edge and a statue/fixture at upper right. Pink barrier blocks move into the room during play, but the underlying layout stays the same across all four candidate fragments, so they are one visit."
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_01.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_feedback": "18d7a07a-2ab1-4f73-9ba0-075db0c62efb",
+      "reason": "Owner confirmed entry is 15:37, not 15:50."
+    },
+    {
+      "event": {
+        "event_id": "p53-006",
+        "level_id": "button_and_beam_v3",
+        "puzzle_start_time": 801.75,
+        "puzzle_end_time": 950.0,
+        "entry_transition_time": 801.25,
+        "exit_time": 950.5,
+        "overworld_approach_time": null,
+        "review_status": "confirmed",
+        "status": "visited",
+        "outcome": "unknown",
+        "timing_uncertainty_seconds": 1,
+        "candidate_levels": [
+          {
+            "level_id": "button_and_beam_v3",
+            "area": "monsters_and_beams",
+            "phash_distance": 4,
+            "hist_distance": 0.1457,
+            "sift_inliers": 113,
+            "sift_good": 120
+          },
+          {
+            "level_id": "corner_loop",
+            "area": "beams_and_basic_heroes",
+            "phash_distance": 18,
+            "hist_distance": 1.0204,
+            "sift_inliers": 0,
+            "sift_good": 1
+          },
+          {
+            "level_id": "orange_doubledoubleback",
+            "area": "beams_and_mirrors",
+            "phash_distance": 18,
+            "hist_distance": 1.2106,
+            "sift_inliers": 0,
+            "sift_good": 4
+          },
+          {
+            "level_id": "do_not_want",
+            "area": "underworld_mirrors_and_promesst",
+            "phash_distance": 18,
+            "hist_distance": 1.2754,
+            "sift_inliers": 0,
+            "sift_good": 1
+          },
+          {
+            "level_id": "airmail",
+            "area": "mirrors_and_stones",
+            "phash_distance": 18,
+            "hist_distance": 1.3457,
+            "sift_inliers": 0,
+            "sift_good": 4
+          }
+        ],
+        "puzzle_match": {
+          "level_id": "button_and_beam_v3",
+          "area": "monsters_and_beams",
+          "phash_distance": 4,
+          "hist_distance": 0.1457,
+          "sift_inliers": 113,
+          "sift_good": 120,
+          "consistent_samples": 15,
+          "status": "visually_confirmed"
+        },
+        "overworld_match": {
+          "status": "unverified"
+        },
+        "evidence": [
+          {
+            "type": "visual_layout_comparison",
+            "image": "F:\\Video\\OotSS_Sand\\runs\\p53\\samples\\00805.000.jpg",
+            "time": 805.0,
+            "reference": "F:\\Video\\OotSS_Sand\\cache\\map\\images\\button_and_beam_v3.webp",
+            "first_sample": 805.0,
+            "last_sample": 875.0,
+            "sample_count": 15,
+            "reason": "The stone courtyard has a horizontal row of green, yellow, cyan and red blocks, a vertical red beam at right, a dark square device below center and a separate purple-lit tile to the far right. These fixed features match the reference; continuous footage shows the same courtyard until its transition."
+          }
+        ],
+        "evidence_gallery": "evidence/candidates_01.jpg",
+        "manual_corrections": [],
+        "reviewer": "Luna visual comparison"
+      },
+      "replaced_by_feedback": "18d7a07a-2ab1-4f73-9ba0-075db0c62efb",
+      "reason": "Trim previous visit to the owner-confirmed next entry."
     }
   ],
   "excluded_segments": [
@@ -1389,5 +1612,13 @@
     "source": "docs/校对.md",
     "source_sha256": "b7a6517224c9000df470821853fe059381658a1645db7bfdbbe26424dfe480ef",
     "item_count": 19
-  }
+  },
+  "feedback_corrections": [
+    {
+      "type": "owner_confirmed_feedback",
+      "feedback_id": "18d7a07a-2ab1-4f73-9ba0-075db0c62efb",
+      "reviewed_at": "2026-11-21",
+      "reason": "Owner confirmed entry is 15:37, not 15:50."
+    }
+  ]
 }

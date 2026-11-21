@@ -550,7 +550,7 @@
       "duration": 1291,
       "download_status": "complete",
       "reviewed": true,
-      "visits": 9,
+      "visits": 8,
       "unmapped_count": 0,
       "level_count": 7,
       "display_part": 47
@@ -682,7 +682,7 @@
       "duration": 3160,
       "download_status": "complete",
       "reviewed": true,
-      "visits": 26,
+      "visits": 25,
       "unmapped_count": 0,
       "level_count": 23,
       "display_part": 58
@@ -37067,21 +37067,6 @@
           "ordinal": 6,
           "source_part": 46,
           "display_part": 47
-        },
-        {
-          "part": 46,
-          "event_id": "p46-008",
-          "start": 850.0,
-          "end": 902.5,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=47&t=850",
-          "reviewer": "Luna visual comparison",
-          "context": null,
-          "audit_note": null,
-          "audit_anchor": null,
-          "uncertainty": 5,
-          "ordinal": 6,
-          "source_part": 46,
-          "display_part": 47
         }
       ],
       "preview": "assets/previews/jenga_assorted.webp",
@@ -41140,7 +41125,7 @@
           "part": 53,
           "event_id": "p53-006",
           "start": 801.75,
-          "end": 950.0,
+          "end": 937,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=801",
           "reviewer": "Luna visual comparison",
           "context": null,
@@ -41205,9 +41190,9 @@
         {
           "part": 53,
           "event_id": "p53-007",
-          "start": 950.0,
+          "start": 937,
           "end": 1110.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=950",
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=937",
           "reviewer": "Luna visual comparison",
           "context": null,
           "audit_note": null,
@@ -44021,72 +44006,6 @@
       ]
     },
     {
-      "level_id": "ortho2",
-      "save_level_id": "ortho2",
-      "area": "lily_highway_stones_and_promesst",
-      "map_layer": "underworld",
-      "entries": [
-        {
-          "marker_id": 58730475,
-          "coordinates": [
-            59.0,
-            11.0,
-            -21.0
-          ]
-        }
-      ],
-      "map_url": "https://joric.github.io/ootss/#ortho2",
-      "visits": [
-        {
-          "part": 57,
-          "event_id": "p57-019",
-          "start": 2651.125,
-          "end": 2657.125,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2651",
-          "reviewer": "Luna visual comparison",
-          "context": null,
-          "audit_note": null,
-          "audit_anchor": null,
-          "uncertainty": 0.5,
-          "ordinal": 18,
-          "source_part": 57,
-          "display_part": 58
-        },
-        {
-          "part": 57,
-          "event_id": "p57-021",
-          "start": 2760.375,
-          "end": 2840.875,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2760",
-          "reviewer": "Luna visual comparison",
-          "context": null,
-          "audit_note": null,
-          "audit_anchor": null,
-          "uncertainty": 0.5,
-          "ordinal": 18,
-          "source_part": 57,
-          "display_part": 58
-        }
-      ],
-      "preview": "assets/previews/ortho2.webp",
-      "region_ids": [
-        "-1,-4"
-      ],
-      "manual": {},
-      "tags": {
-        "big_star": false,
-        "multi_save": false,
-        "notes": ""
-      },
-      "tag_source": {
-        "big_star": "Joric Level_Entry Hero mesh",
-        "multi_save": "manual only"
-      },
-      "region_titles": [
-        "飞跃与光束1"
-      ]
-    },
-    {
       "level_id": "ortho",
       "save_level_id": "ortho",
       "area": "lily_highway_stones_and_promesst",
@@ -44114,12 +44033,63 @@
           "audit_note": null,
           "audit_anchor": null,
           "uncertainty": 0.5,
-          "ordinal": 19,
+          "ordinal": 18,
           "source_part": 57,
           "display_part": 58
         }
       ],
       "preview": "assets/previews/ortho.webp",
+      "region_ids": [
+        "-1,-4"
+      ],
+      "manual": {},
+      "tags": {
+        "big_star": false,
+        "multi_save": false,
+        "notes": ""
+      },
+      "tag_source": {
+        "big_star": "Joric Level_Entry Hero mesh",
+        "multi_save": "manual only"
+      },
+      "region_titles": [
+        "飞跃与光束1"
+      ]
+    },
+    {
+      "level_id": "ortho2",
+      "save_level_id": "ortho2",
+      "area": "lily_highway_stones_and_promesst",
+      "map_layer": "underworld",
+      "entries": [
+        {
+          "marker_id": 58730475,
+          "coordinates": [
+            59.0,
+            11.0,
+            -21.0
+          ]
+        }
+      ],
+      "map_url": "https://joric.github.io/ootss/#ortho2",
+      "visits": [
+        {
+          "part": 57,
+          "event_id": "p57-021",
+          "start": 2760.375,
+          "end": 2840.875,
+          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2760",
+          "reviewer": "Luna visual comparison",
+          "context": null,
+          "audit_note": null,
+          "audit_anchor": null,
+          "uncertainty": 0.5,
+          "ordinal": 19,
+          "source_part": 57,
+          "display_part": 58
+        }
+      ],
+      "preview": "assets/previews/ortho2.webp",
       "region_ids": [
         "-1,-4"
       ],
@@ -91638,21 +91608,6 @@
               "ordinal": 6,
               "source_part": 46,
               "display_part": 47
-            },
-            {
-              "part": 46,
-              "event_id": "p46-008",
-              "start": 850.0,
-              "end": 902.5,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=47&t=850",
-              "reviewer": "Luna visual comparison",
-              "context": null,
-              "audit_note": null,
-              "audit_anchor": null,
-              "uncertainty": 5,
-              "ordinal": 6,
-              "source_part": 46,
-              "display_part": 47
             }
           ],
           "preview": "assets/previews/jenga_assorted.webp",
@@ -95711,7 +95666,7 @@
               "part": 53,
               "event_id": "p53-006",
               "start": 801.75,
-              "end": 950.0,
+              "end": 937,
               "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=801",
               "reviewer": "Luna visual comparison",
               "context": null,
@@ -95776,9 +95731,9 @@
             {
               "part": 53,
               "event_id": "p53-007",
-              "start": 950.0,
+              "start": 937,
               "end": 1110.0,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=950",
+              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=937",
               "reviewer": "Luna visual comparison",
               "context": null,
               "audit_note": null,
@@ -98592,72 +98547,6 @@
           ]
         },
         {
-          "level_id": "ortho2",
-          "save_level_id": "ortho2",
-          "area": "lily_highway_stones_and_promesst",
-          "map_layer": "underworld",
-          "entries": [
-            {
-              "marker_id": 58730475,
-              "coordinates": [
-                59.0,
-                11.0,
-                -21.0
-              ]
-            }
-          ],
-          "map_url": "https://joric.github.io/ootss/#ortho2",
-          "visits": [
-            {
-              "part": 57,
-              "event_id": "p57-019",
-              "start": 2651.125,
-              "end": 2657.125,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2651",
-              "reviewer": "Luna visual comparison",
-              "context": null,
-              "audit_note": null,
-              "audit_anchor": null,
-              "uncertainty": 0.5,
-              "ordinal": 18,
-              "source_part": 57,
-              "display_part": 58
-            },
-            {
-              "part": 57,
-              "event_id": "p57-021",
-              "start": 2760.375,
-              "end": 2840.875,
-              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2760",
-              "reviewer": "Luna visual comparison",
-              "context": null,
-              "audit_note": null,
-              "audit_anchor": null,
-              "uncertainty": 0.5,
-              "ordinal": 18,
-              "source_part": 57,
-              "display_part": 58
-            }
-          ],
-          "preview": "assets/previews/ortho2.webp",
-          "region_ids": [
-            "-1,-4"
-          ],
-          "manual": {},
-          "tags": {
-            "big_star": false,
-            "multi_save": false,
-            "notes": ""
-          },
-          "tag_source": {
-            "big_star": "Joric Level_Entry Hero mesh",
-            "multi_save": "manual only"
-          },
-          "region_titles": [
-            "飞跃与光束1"
-          ]
-        },
-        {
           "level_id": "ortho",
           "save_level_id": "ortho",
           "area": "lily_highway_stones_and_promesst",
@@ -98685,12 +98574,63 @@
               "audit_note": null,
               "audit_anchor": null,
               "uncertainty": 0.5,
-              "ordinal": 19,
+              "ordinal": 18,
               "source_part": 57,
               "display_part": 58
             }
           ],
           "preview": "assets/previews/ortho.webp",
+          "region_ids": [
+            "-1,-4"
+          ],
+          "manual": {},
+          "tags": {
+            "big_star": false,
+            "multi_save": false,
+            "notes": ""
+          },
+          "tag_source": {
+            "big_star": "Joric Level_Entry Hero mesh",
+            "multi_save": "manual only"
+          },
+          "region_titles": [
+            "飞跃与光束1"
+          ]
+        },
+        {
+          "level_id": "ortho2",
+          "save_level_id": "ortho2",
+          "area": "lily_highway_stones_and_promesst",
+          "map_layer": "underworld",
+          "entries": [
+            {
+              "marker_id": 58730475,
+              "coordinates": [
+                59.0,
+                11.0,
+                -21.0
+              ]
+            }
+          ],
+          "map_url": "https://joric.github.io/ootss/#ortho2",
+          "visits": [
+            {
+              "part": 57,
+              "event_id": "p57-021",
+              "start": 2760.375,
+              "end": 2840.875,
+              "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2760",
+              "reviewer": "Luna visual comparison",
+              "context": null,
+              "audit_note": null,
+              "audit_anchor": null,
+              "uncertainty": 0.5,
+              "ordinal": 19,
+              "source_part": 57,
+              "display_part": 58
+            }
+          ],
+          "preview": "assets/previews/ortho2.webp",
           "region_ids": [
             "-1,-4"
           ],
@@ -102840,7 +102780,7 @@
           "duration": 1291,
           "download_status": "complete",
           "reviewed": true,
-          "visits": 9,
+          "visits": 8,
           "unmapped_count": 0,
           "level_count": 7,
           "display_part": 47,
@@ -103259,7 +103199,7 @@
           "duration": 3160,
           "download_status": "complete",
           "reviewed": true,
-          "visits": 26,
+          "visits": 25,
           "unmapped_count": 0,
           "level_count": 23,
           "display_part": 58,
@@ -105104,8 +105044,8 @@
           ],
           "level_ids": [
             "skybridge",
-            "ortho2",
             "ortho",
+            "ortho2",
             "frontier",
             "zap_bridge",
             "zap_bridge_perp",

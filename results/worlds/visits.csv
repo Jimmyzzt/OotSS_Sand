@@ -717,7 +717,6 @@
 46,47,4,,,p46-005,torus_blocks_alt_v4,underworld,,underworld_heroes_and_promesst,"[[81.0, 91.0, -14.0]]",280.0,305.25,https://www.bilibili.com/video/BV13FH96bE4m/?p=47&t=280,https://joric.github.io/ootss/#torus_blocks_alt_v4
 46,47,5,,,p46-006,grid_hopping0,underworld,,underworld_heroes_and_promesst,"[[74.0, 94.0, -14.0]]",317.375,403.625,https://www.bilibili.com/video/BV13FH96bE4m/?p=47&t=317,https://joric.github.io/ootss/#grid_hopping0
 46,47,6,,,p46-007,jenga_assorted,underworld,,underworld_heroes_and_promesst,"[[87.0, 108.0, -18.0]]",463.5,490.0,https://www.bilibili.com/video/BV13FH96bE4m/?p=47&t=463,https://joric.github.io/ootss/#jenga_assorted
-46,47,6,,,p46-008,jenga_assorted,underworld,,underworld_heroes_and_promesst,"[[87.0, 108.0, -18.0]]",850.0,902.5,https://www.bilibili.com/video/BV13FH96bE4m/?p=47&t=850,https://joric.github.io/ootss/#jenga_assorted
 46,47,7,,,p46-009,how_to_train_your_dragon,underworld,,underworld_heroes_and_promesst,"[[83.0, 104.0, -18.0]]",944.75,1245.125,https://www.bilibili.com/video/BV13FH96bE4m/?p=47&t=944,https://joric.github.io/ootss/#how_to_train_your_dragon
 47,48,1,,,p47-001,ice_climbers,underworld,,underworld_heroes_and_promesst,"[[63.0, 106.0, -15.0]]",20.125,122.375,https://www.bilibili.com/video/BV13FH96bE4m/?p=48&t=20,https://joric.github.io/ootss/#ice_climbers
 47,48,2,,,p47-002,battle_royale_v2,underworld,,underworld_heroes_and_promesst,"[[56.0, 102.0, -17.0]]",147.75,330.0,https://www.bilibili.com/video/BV13FH96bE4m/?p=48&t=147,https://joric.github.io/ootss/#battle_royale_v2
@@ -801,9 +800,9 @@
 53,54,3,,,p53-003,dragonsweeper,underworld,,monsters_and_beams,"[[57.0, 84.0, -21.0]]",205.0,398.75,https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=205,https://joric.github.io/ootss/#dragonsweeper
 53,54,4,,,p53-004,green_goblins,underworld,,monsters_and_beams,"[[65.0, 84.0, -21.0]]",432.5,615.0,https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=432,https://joric.github.io/ootss/#green_goblins
 53,54,5,,,p53-005,en_root_alt,underworld,,monsters_and_beams,"[[61.0, 95.0, -23.0]]",631.88,775.0,https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=631,https://joric.github.io/ootss/#en_root_alt
-53,54,6,,,p53-006,button_and_beam_v3,underworld,,monsters_and_beams,"[[48.0, 95.0, -21.0]]",801.75,950.0,https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=801,https://joric.github.io/ootss/#button_and_beam_v3
+53,54,6,,,p53-006,button_and_beam_v3,underworld,,monsters_and_beams,"[[48.0, 95.0, -21.0]]",801.75,937,https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=801,https://joric.github.io/ootss/#button_and_beam_v3
 53,54,6,,,p53-017,button_and_beam_v3,underworld,,monsters_and_beams,"[[48.0, 95.0, -21.0]]",1290.0,1300.0,https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=1290,https://joric.github.io/ootss/#button_and_beam_v3
-53,54,7,,,p53-007,thief_dragger_v2,underworld,,monsters_and_beams,"[[38.0, 96.0, -21.0]]",950.0,1110.0,https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=950,https://joric.github.io/ootss/#thief_dragger_v2
+53,54,7,,,p53-007,thief_dragger_v2,underworld,,monsters_and_beams,"[[38.0, 96.0, -21.0]]",937,1110.0,https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=937,https://joric.github.io/ootss/#thief_dragger_v2
 53,54,8,,,p53-011,open_monster,underworld,,monsters_and_beams,"[[36.0, 96.0, -21.0]]",1118.0,1285.0,https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=1118,https://joric.github.io/ootss/#open_monster
 53,54,9,,,p53-013,monster_promesst_v3,underworld,,monsters_and_beams,"[[37.0, 99.0, -21.0]]",1305.0,1555,https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=1305,https://joric.github.io/ootss/#monster_promesst_v3
 53,54,10,,,p53-015,goblin_two_rovers_alt,underworld,,monsters_and_beams,"[[50.0, 108.0, -21.0]]",1571.12,1692.38,https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=1571,https://joric.github.io/ootss/#goblin_two_rovers_alt
@@ -860,9 +859,8 @@
 57,58,15,,,p57-016,juggalos,underworld,,underworld_skipping_and_promesst,"[[49.0, 15.0, -21.0]]",2047.125,2115.875,https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2047,https://joric.github.io/ootss/#juggalos
 57,58,16,,,p57-017,defender,underworld,,underworld_skipping_and_promesst,"[[41.0, 20.0, -21.0]]",2185.625,2458.625,https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2185,https://joric.github.io/ootss/#defender
 57,58,17,,,p57-018,skybridge,underworld,,lily_highway_stones_and_promesst,"[[65.0, 23.0, -21.0]]",2501.125,2619.25,https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2501,https://joric.github.io/ootss/#skybridge
-57,58,18,,,p57-019,ortho2,underworld,,lily_highway_stones_and_promesst,"[[59.0, 11.0, -21.0]]",2651.125,2657.125,https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2651,https://joric.github.io/ootss/#ortho2
-57,58,18,,,p57-021,ortho2,underworld,,lily_highway_stones_and_promesst,"[[59.0, 11.0, -21.0]]",2760.375,2840.875,https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2760,https://joric.github.io/ootss/#ortho2
-57,58,19,,,p57-020,ortho,underworld,,lily_highway_stones_and_promesst,"[[58.0, 11.0, -21.0]]",2661.625,2760.0,https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2661,https://joric.github.io/ootss/#ortho
+57,58,18,,,p57-020,ortho,underworld,,lily_highway_stones_and_promesst,"[[58.0, 11.0, -21.0]]",2661.625,2760.0,https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2661,https://joric.github.io/ootss/#ortho
+57,58,19,,,p57-021,ortho2,underworld,,lily_highway_stones_and_promesst,"[[59.0, 11.0, -21.0]]",2760.375,2840.875,https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2760,https://joric.github.io/ootss/#ortho2
 57,58,20,,,p57-022,frontier,underworld,,lily_highway_stones_and_promesst,"[[69.0, 14.0, -21.0]]",2889.5,2892.125,https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2889,https://joric.github.io/ootss/#frontier
 57,58,20,,,p57-025,frontier,underworld,,lily_highway_stones_and_promesst,"[[69.0, 14.0, -21.0]]",2956.375,3021.5,https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2956,https://joric.github.io/ootss/#frontier
 57,58,21,,,p57-023,zap_bridge,underworld,,lily_highway_stones_and_promesst,"[[69.0, 16.0, -21.0]]",2895.75,2921.375,https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2895,https://joric.github.io/ootss/#zap_bridge

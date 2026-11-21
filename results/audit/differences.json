@@ -4,10 +4,10 @@
   "counts": {
     "catalog_entries": 946,
     "mapped_entries": 946,
-    "time_records": 972,
+    "time_records": 970,
     "unlocated_segments": 0,
     "absent_catalog_entries": 0,
-    "repeated_identity_groups": 20,
+    "repeated_identity_groups": 18,
     "world_segments_excluded": 38
   },
   "decisions": [
@@ -301,32 +301,6 @@
       ]
     },
     {
-      "level_id": "jenga_assorted",
-      "map_layer": "underworld",
-      "events": [
-        {
-          "part": 46,
-          "event_id": "p46-007",
-          "start": 463.5,
-          "end": 490.0,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=47&t=463",
-          "review_status": "confirmed",
-          "level_id": "jenga_assorted",
-          "note": ""
-        },
-        {
-          "part": 46,
-          "event_id": "p46-008",
-          "start": 850.0,
-          "end": 902.5,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=47&t=850",
-          "review_status": "confirmed",
-          "level_id": "jenga_assorted",
-          "note": ""
-        }
-      ]
-    },
-    {
       "level_id": "moving_through_mirrors_v3",
       "map_layer": "underworld",
       "events": [
@@ -458,7 +432,7 @@
           "part": 53,
           "event_id": "p53-006",
           "start": 801.75,
-          "end": 950.0,
+          "end": 937,
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=54&t=801",
           "review_status": "confirmed",
           "level_id": "button_and_beam_v3",
@@ -524,32 +498,6 @@
           "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=355",
           "review_status": "confirmed",
           "level_id": "boot_cycle_warrior",
-          "note": ""
-        }
-      ]
-    },
-    {
-      "level_id": "ortho2",
-      "map_layer": "underworld",
-      "events": [
-        {
-          "part": 57,
-          "event_id": "p57-019",
-          "start": 2651.125,
-          "end": 2657.125,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2651",
-          "review_status": "confirmed",
-          "level_id": "ortho2",
-          "note": ""
-        },
-        {
-          "part": 57,
-          "event_id": "p57-021",
-          "start": 2760.375,
-          "end": 2840.875,
-          "url": "https://www.bilibili.com/video/BV13FH96bE4m/?p=58&t=2760",
-          "review_status": "confirmed",
-          "level_id": "ortho2",
           "note": ""
         }
       ]
